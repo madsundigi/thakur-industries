@@ -1,16 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CTA_PRIMARY, CTA_SECONDARY } from '@/lib/constants';
 import { ArrowRight, Phone } from 'lucide-react';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'heroMachine');
-
   const headline = "Precision Induction Heat Treatment & Case Hardening — Ludhiana";
   const words = headline.split(" ");
 
@@ -51,16 +47,15 @@ export function Hero() {
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt="Advanced induction heat treatment machine in Ludhiana, Punjab"
-            data-ai-hint={heroImage.imageHint}
-            fill
-            priority
-            className="object-cover"
-          />
-        )}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute z-0 w-full h-full object-cover"
+          src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4"
+          poster="https://images.unsplash.com/photo-1733683296842-c5c32fe36a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0MjQ0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
       <div className="relative z-10 flex h-full items-center justify-center">
