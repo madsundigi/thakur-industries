@@ -1,3 +1,4 @@
+
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -77,7 +78,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-pt-[5rem] dark">
+    <html lang="en" className="scroll-pt-[5rem] dark" suppressHydrationWarning>
       <head>
         <JsonLd data={organizationSchema} />
       </head>
