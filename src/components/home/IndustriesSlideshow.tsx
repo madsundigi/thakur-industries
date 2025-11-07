@@ -2,7 +2,7 @@
 
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { motion, useMotionValue } from 'framer-motion';
+import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { INDUSTRIES } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import PageHeader from '../shared/PageHeader';
@@ -42,7 +42,7 @@ export function IndustriesSlideshow() {
                 <PageHeader
                     title="Industries We Serve"
                     description="Our precision processes are trusted by leaders in demanding industries for everything from automotive heat treatment to aerospace part hardening."
-                    className="text-center mb-24"
+                    className="text-center mb-36"
                 />
                 <motion.div
                     ref={containerRef}
@@ -65,55 +65,81 @@ export function IndustriesSlideshow() {
                             if (!industry.image) return null;
 
                             const itemAngle = anglePerItem * i;
-                            const z = Math.cos(Math.PI / 180 * itemAngle) * CYLINDER_RADIUS;
-                            const x = Math.sin(Math.PI / 180 * itemAngle) * CYLINDER_RADIUS;
-
+                            
                             return (
-                                <motion.div
+                                <CylinderItem 
                                     key={industry.id}
-                                    className="absolute top-0 left-1/2 w-[240px] h-[280px] -ml-[120px]"
-                                    style={{
-                                        transform: `translateX(${x}px) translateZ(${z}px) rotateY(${itemAngle}deg)`,
-                                    }}
-                                >
-                                    <div className="relative w-full h-full rounded-lg overflow-hidden border-2 border-primary/20 shadow-2xl group">
-                                        <Image
-                                            src={industry.image.imageUrl}
-                                            alt={industry.title}
-                                            fill
-                                            className="object-cover"
-                                            data-ai-hint={industry.image.imageHint}
-                                        />
-                                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/60 backdrop-blur-sm">
-                                            <h3 className="text-white font-bold text-lg">{industry.title}</h3>
-                                        </div>
-                                    </div>
-                                    {/* Mirror Reflection Effect */}
-                                    <div 
-                                        className="absolute top-full left-0 right-0 h-1/2 w-full origin-top"
-                                        style={{
-                                            background: `linear-gradient(to bottom, rgba(30,30,30,0.2), transparent)`,
-                                            transform: 'scaleY(-1)',
-                                            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
-                                            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
-                                        }}
-                                    >
-                                        <div className="relative w-full h-full brightness-50 blur-sm">
-                                            <Image
-                                                src={industry.image.imageUrl}
-                                                alt=""
-                                                fill
-                                                className="object-cover"
-                                                aria-hidden="true"
-                                            />
-                                        </div>
-                                    </div>
-                                </motion.div>
+                                    industry={industry}
+                                    itemAngle={itemAngle}
+                                    rotationY={rotationY}
+                                    radius={CYLINDER_RADIUS}
+                                />
                             );
                         })}
                     </motion.div>
                 </motion.div>
             </div>
         </section>
+    );
+}
+
+
+function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: any, itemAngle: number, rotationY: any, radius: number }) {
+    const z = Math.cos(Math.PI / 180 * itemAngle) * radius;
+    const x = Math.sin(Math.PI / 180 * itemAngle) * radius;
+
+    // This useTransform will calculate the opacity based on the card's rotation relative to the viewer.
+    // When a card is facing the front (0 degrees difference), it will be fully opaque.
+    // When it's at the side (90 degrees), it will be partially transparent.
+    const opacity = useTransform(rotationY, (value) => {
+        const itemRotation = (value + itemAngle) % 360;
+        const normalizedRotation = Math.abs(itemRotation > 180 ? itemRotation - 360 : itemRotation);
+        // Map rotation (0-90 degrees) to opacity (1-0.4)
+        return 1 - Math.min(normalizedRotation / 90, 1) * 0.6;
+    });
+
+    return (
+        <motion.div
+            className="absolute top-0 left-1/2 w-[240px] h-[280px] -ml-[120px]"
+            style={{
+                transform: `translateX(${x}px) translateZ(${z}px) rotateY(${itemAngle}deg)`,
+            }}
+        >
+            <div className="relative w-full h-full rounded-lg overflow-hidden border-2 border-primary/20 shadow-2xl group">
+                <Image
+                    src={industry.image.imageUrl}
+                    alt={industry.title}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={industry.image.imageHint}
+                />
+                <motion.div 
+                    className="absolute bottom-0 left-0 right-0 p-4 bg-black/60 backdrop-blur-sm"
+                    style={{ opacity }}
+                >
+                    <h3 className="text-white font-bold text-lg">{industry.title}</h3>
+                </motion.div>
+            </div>
+            {/* Mirror Reflection Effect */}
+            <div 
+                className="absolute top-full left-0 right-0 h-1/2 w-full origin-top"
+                style={{
+                    background: `linear-gradient(to bottom, rgba(30,30,30,0.2), transparent)`,
+                    transform: 'scaleY(-1)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
+                    maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
+                }}
+            >
+                <div className="relative w-full h-full brightness-50 blur-sm">
+                    <Image
+                        src={industry.image.imageUrl}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        aria-hidden="true"
+                    />
+                </div>
+            </div>
+        </motion.div>
     );
 }
