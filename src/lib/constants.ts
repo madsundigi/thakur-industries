@@ -1,3 +1,4 @@
+
 export const SITE_NAME = 'Thakur Industries';
 export const SITE_TAGLINE = 'Your Durability is Our Responsibility.';
 export const SITE_DESCRIPTION = 'Top induction heat treatment Ludhiana. We offer induction hardening, case hardening, and steel hardening services in Punjab, India.';
@@ -75,3 +76,5 @@ export const INDUSTRIES = [
     image: 'industryConstruction'
   },
 ];
+
+    
