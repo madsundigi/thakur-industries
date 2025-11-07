@@ -2,7 +2,7 @@
 
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { motion, useMotionValue } from 'framer-motion';
 import { INDUSTRIES } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import PageHeader from '../shared/PageHeader';
@@ -42,7 +42,7 @@ export function IndustriesSlideshow() {
                 <PageHeader
                     title="Industries We Serve"
                     description="Our precision processes are trusted by leaders in demanding industries for everything from automotive heat treatment to aerospace part hardening."
-                    className="text-center mb-16"
+                    className="text-center mb-24"
                 />
                 <motion.div
                     ref={containerRef}
@@ -92,7 +92,7 @@ export function IndustriesSlideshow() {
                                     <div 
                                         className="absolute top-full left-0 right-0 h-1/2 w-full origin-top"
                                         style={{
-                                            background: `linear-gradient(to bottom, rgba(255,255,255,0.1), transparent)`,
+                                            background: `linear-gradient(to bottom, rgba(30,30,30,0.2), transparent)`,
                                             transform: 'scaleY(-1)',
                                             WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
                                             maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
