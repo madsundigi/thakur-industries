@@ -1,22 +1,12 @@
 
 'use client';
 
-import { motion, useAnimation, useMotionValue, AnimatePresence, useMotionValueEvent } from 'framer-motion';
+import { motion, useAnimation, useMotionValue, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SERVICES } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useEffect, useMemo, useState } from 'react';
-
-// Icons for the center
-import { Zap, HardHat, Settings, TestTube } from 'lucide-react';
-
-const icons = [
-    <Zap key="zap" className="w-8 h-8 text-primary" />,
-    <HardHat key="hardhat" className="w-8 h-8 text-primary" />,
-    <Settings key="settings" className="w-8 h-8 text-primary" />,
-    <TestTube key="testtube" className="w-8 h-8 text-primary" />,
-];
 
 export function OrbitingServices() {
     const orbitRadius = 300;
@@ -49,11 +39,9 @@ export function OrbitingServices() {
     useMotionValueEvent(rotation, "change", (latest) => {
         const numServices = servicesWithImages.length;
         const anglePerService = 360 / numServices;
-        // Offset by -90 degrees because 0 degrees is on the right, we want the top (270 or -90 deg)
         const normalizedRotation = (latest + 90) % 360; 
         const activeIndex = Math.floor(normalizedRotation / anglePerService);
         
-        // Ensure index is within bounds and handle the wrap-around case
         const currentActiveIndex = (numServices - 1 - activeIndex + numServices) % numServices;
 
         if (servicesWithImages[currentActiveIndex]) {
@@ -98,8 +86,7 @@ export function OrbitingServices() {
                             const y = Math.sin(angle) * orbitRadius;
 
                             return (
-                                <Link
-                                    href={`/services#${service.id}`}
+                                <motion.div
                                     key={service.id}
                                     className="absolute"
                                     style={{
@@ -108,29 +95,31 @@ export function OrbitingServices() {
                                         transform: `translate(${x}px, ${y}px)`,
                                     }}
                                 >
-                                    <motion.div
-                                        className="flex flex-col items-center gap-2 group"
-                                        style={{ rotate: -rotation.get() }}
-                                    >
-                                        <div
-                                            className="relative rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300"
-                                            style={{ width: itemSize, height: itemSize }}
+                                    <motion.div style={{ rotate: -rotation.get() }}>
+                                        <Link
+                                            href={`/services#${service.id}`}
+                                            className="flex flex-col items-center gap-2 group"
                                         >
-                                            {service.image && (
-                                                <Image
-                                                    src={service.image.imageUrl}
-                                                    alt={service.title}
-                                                    data-ai-hint={service.image.imageHint}
-                                                    fill
-                                                    className="object-cover"
-                                                />
-                                            )}
-                                        </div>
-                                         <span className="text-white text-center font-bold text-sm p-2">
-                                            {service.title}
-                                        </span>
+                                            <div
+                                                className="relative rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300"
+                                                style={{ width: itemSize, height: itemSize }}
+                                            >
+                                                {service.image && (
+                                                    <Image
+                                                        src={service.image.imageUrl}
+                                                        alt={service.title}
+                                                        data-ai-hint={service.image.imageHint}
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                )}
+                                            </div>
+                                            <span className="text-white text-center font-bold text-sm p-2">
+                                                {service.title}
+                                            </span>
+                                        </Link>
                                     </motion.div>
-                                </Link>
+                                </motion.div>
                             );
                         })}
                     </motion.div>
