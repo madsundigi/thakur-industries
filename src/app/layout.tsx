@@ -87,6 +87,7 @@ export default function RootLayout({
           'min-h-screen bg-background font-sans antialiased',
           inter.variable
         )}
+        suppressHydrationWarning
       >
         <Header />
         <main className="flex-1">{children}</main>
