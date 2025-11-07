@@ -1,6 +1,5 @@
 'use client'
 
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -23,15 +22,6 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { Mail, Phone, MapPin } from 'lucide-react';
-
-// This is a client component, so metadata is handled in the root layout.
-// The title and description are dynamically set there.
-/*
-export const metadata: Metadata = {
-  title: `Contact ${SITE_NAME}`,
-  description: `Get in touch with ${SITE_NAME} in Ludhiana for a free sample or consultation. Call ${SITE_PHONE_NUMBER} or visit us.`,
-};
-*/
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -61,8 +51,8 @@ export default function ContactPage() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'IndustrialBusiness',
-    name: SITE_NAME,
-    address: {
+    'name': SITE_NAME,
+    'address': {
       '@type': 'PostalAddress',
       'streetAddress': '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
       'addressLocality': 'Ludhiana',
@@ -70,8 +60,11 @@ export default function ContactPage() {
       'postalCode': '141003',
       'addressCountry': 'IN',
     },
-    telephone: SITE_PHONE_NUMBER,
-    url: 'https://thakurinduction.com/contact',
+    'telephone': SITE_PHONE_NUMBER,
+    'url': `https://thakurinduction.com/contact`,
+    'image': 'https://thakurinduction.com/logo.png', // Replace with actual logo URL
+    'description': 'Thakur Industries is a leading heat treatment specialist in Punjab, located at our induction hardening plant in Ludhiana.',
+    'areaServed': ['Ludhiana', 'Punjab', 'India'],
   };
 
   return (
@@ -79,8 +72,8 @@ export default function ContactPage() {
       <JsonLd data={localBusinessSchema} />
       <div className="container mx-auto px-4 md:px-6">
         <PageHeader
-          title="Get In Touch"
-          description="We're here to help with your industrial heat treatment needs. Reach out for a consultation, quote, or a free test sample."
+          title="Contact Thakur Industries"
+          description="We're here to help. Reach out to our induction hardening plant in Ludhiana for a consultation, quote, or a free test sample."
           className="mb-12 text-center"
         />
 
@@ -136,7 +129,7 @@ export default function ContactPage() {
                     <FormItem>
                       <FormLabel>Your Message</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Tell us about your project or requirements..." {...field} rows={6} />
+                        <Textarea placeholder="Tell us about your project or requirements for custom heat treatment..." {...field} rows={6} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -166,12 +159,12 @@ export default function ContactPage() {
         </div>
 
         <div className="mt-16 md:mt-24">
-            <h3 className="text-3xl font-bold text-center mb-8">Our Location</h3>
+            <h3 className="text-3xl font-bold text-center mb-8">Our Location in Ludhiana</h3>
              {mapImage && (
                 <div className="relative h-[400px] w-full overflow-hidden rounded-lg border">
                      <Image
                         src={mapImage.imageUrl}
-                        alt="Map showing location of Thakur Industries"
+                        alt="Map showing location of Thakur Industries, a heat treatment specialist in Punjab"
                         data-ai-hint={mapImage.imageHint}
                         fill
                         className="object-cover"

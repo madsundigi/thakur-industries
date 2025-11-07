@@ -9,8 +9,8 @@ import { INDUSTRIES, SITE_NAME } from '@/lib/constants';
 import PageHeader from '@/components/shared/PageHeader';
 
 export const metadata: Metadata = {
-  title: `Industries We Serve`,
-  description: `Providing specialized heat treatment for Automotive, Aerospace, Railway, and more at ${SITE_NAME}.`,
+  title: `Industries We Serve | Automotive & Aerospace Heat Treatment`,
+  description: `Providing specialized heat treatment for Automotive, Aerospace, Railway, and more. We are experts in automotive component hardening and aerospace part hardening in India.`,
 };
 
 export default function IndustriesPage() {

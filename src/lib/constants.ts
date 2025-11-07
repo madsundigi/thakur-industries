@@ -1,6 +1,6 @@
 export const SITE_NAME = 'Thakur Industries';
 export const SITE_TAGLINE = 'Your Durability is Our Responsibility.';
-export const SITE_DESCRIPTION = 'Precision induction heat treatment & case hardening in Ludhiana. Get 1 free testing sample. Call +91 7900000776.';
+export const SITE_DESCRIPTION = 'Top induction heat treatment Ludhiana. We offer induction hardening, case hardening, and steel hardening services in Punjab, India.';
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://thakurinduction.com';
 export const SITE_PHONE_NUMBER = '+91 7900000776';
 export const SITE_ADDRESS = '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri, Ludhiana, Punjab 141003';
@@ -20,25 +20,25 @@ export const SERVICES = [
   {
     id: 'induction-hardening',
     title: 'Induction Hardening',
-    description: 'Precision surface hardening process to increase the hardness, wear resistance, and fatigue life of steel components.',
+    description: 'A precision surface hardening process to increase the hardness, wear resistance, and fatigue life of steel components. We are a leader in induction hardening in Ludhiana.',
     image: 'serviceInductionHardening'
   },
   {
     id: 'case-hardening',
     title: 'Case Hardening',
-    description: 'Hardening the surface of a metal object while allowing the metal deeper underneath to remain soft, thus forming a thin layer of harder metal (the "case") at the surface.',
+    description: 'We provide expert case hardening job work in Punjab, hardening the surface of a metal object while the core remains soft, creating a durable "case".',
     image: 'serviceCaseHardening'
   },
   {
-    id: 'heat-treatment',
-    title: 'Heat Treatment',
-    description: 'A group of industrial, thermal and metalworking processes used to alter the physical, and sometimes chemical, properties of a material.',
+    id: 'heat-treatment-job-work',
+    title: 'Heat Treatment Job Work',
+    description: 'A full range of industrial and metalworking processes to alter the physical properties of materials. Your top choice for heat treatment services in Punjab.',
     image: 'serviceHeatTreatment'
   },
   {
-    id: 'custom-solutions',
-    title: 'Custom Industrial Solutions',
-    description: 'Tailored heat treatment solutions to meet unique client specifications and complex industrial requirements.',
+    id: 'custom-heat-treatment',
+    title: 'Custom Heat Treatment',
+    description: 'We develop tailored and custom heat treatment solutions to meet unique client specifications and complex industrial requirements in Ludhiana.',
     image: 'serviceCustomSolutions'
   },
 ];
@@ -47,25 +47,25 @@ export const INDUSTRIES = [
   {
     id: 'automotive',
     title: 'Automotive',
-    description: 'Providing critical heat treatment for engine components, transmission parts, and structural elements to enhance performance and durability.',
+    description: 'Providing critical automotive component hardening for engine parts, gears, and transmission components to enhance performance and durability in Ludhiana.',
     image: 'industryAutomotive'
   },
   {
     id: 'aerospace',
     title: 'Aerospace',
-    description: 'Meeting stringent aerospace standards with precise heat treatments for landing gear, turbine blades, and other flight-critical components.',
+    description: 'Meeting stringent standards with precise aerospace part hardening for landing gear, turbine blades, and other flight-critical components for clients across India.',
     image: 'industryAerospace'
   },
   {
     id: 'railway',
     title: 'Railway',
-    description: 'Enhancing the strength and wear resistance of railway components like axles, wheels, and tracks for improved safety and longevity.',
+    description: 'Enhancing the strength and wear resistance of railway components like axles, wheels, and tracks with specialized metal heat treatment in Punjab.',
     image: 'industryRailway'
   },
   {
     id: 'agriculture',
     title: 'Agriculture',
-    description: 'Hardening agricultural machinery parts such as plowshares, harvester blades, and gearbox components to withstand harsh field conditions.',
+    description: 'Specializing in agricultural tool heat treatment, hardening parts such as plowshares, harvester blades, and gearbox components to withstand harsh field conditions.',
     image: 'industryAgriculture'
   },
   {

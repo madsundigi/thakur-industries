@@ -3,20 +3,19 @@ import Image from 'next/image';
 import { SERVICES, SITE_NAME } from '@/lib/constants';
 import PageHeader from '@/components/shared/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: `Industrial Heat Treatment Services`,
-  description: `Explore our expert services: Induction Hardening, Case Hardening, and Custom Heat Treatment solutions at ${SITE_NAME} in Ludhiana.`,
+  title: `Induction Hardening & Case Hardening Services in Ludhiana`,
+  description: `Explore our expert services: Induction Hardening, Case Hardening, and custom heat treatment solutions for alloy steel and stainless steel at ${SITE_NAME} in Ludhiana, Punjab.`,
 };
 
 export default function ServicesPage() {
   return (
     <div className="container mx-auto px-4 md:px-6">
       <PageHeader
-        title="Our Services"
-        description="Precision, power, and performance. Our heat treatment services are engineered to meet the highest industrial standards."
+        title="Our Heat Treatment Services"
+        description="Precision, power, and performance. Our heat treatment services in Punjab are engineered to meet the highest industrial standards for steel hardening."
         className="mb-12 text-center"
       />
       <div className="space-y-20">
@@ -30,7 +29,7 @@ export default function ServicesPage() {
                   <div className="relative aspect-video overflow-hidden rounded-lg shadow-xl">
                     <Image
                       src={image.imageUrl}
-                      alt={service.title}
+                      alt={`${service.title} service for metal heat treatment in Punjab`}
                       data-ai-hint={image.imageHint}
                       fill
                       className="object-cover transition-transform duration-500 hover:scale-105"
@@ -41,7 +40,8 @@ export default function ServicesPage() {
               <div className={isReversed ? 'lg:order-1' : ''}>
                 <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">{service.title}</h3>
                 <p className="mt-4 text-muted-foreground">{service.description}</p>
-                <ul className="mt-6 space-y-3">
+                <h4 className="mt-6 font-semibold">Key Benefits:</h4>
+                <ul className="mt-2 space-y-3">
                   <li className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary" />
                     <span>Increased Hardness & Strength</span>

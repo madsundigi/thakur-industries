@@ -54,7 +54,7 @@ export function Hero() {
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
-            alt={heroImage.description}
+            alt="Advanced induction heat treatment machine in Ludhiana, Punjab"
             data-ai-hint={heroImage.imageHint}
             fill
             priority
@@ -62,7 +62,7 @@ export function Hero() {
           />
         )}
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
           <motion.h1
@@ -83,12 +83,12 @@ export function Hero() {
           </motion.h1>
 
           <motion.p 
-            className="mx-auto mt-6 max-w-2xl text-lg text-gray-200 md:text-xl"
+            className="mx-auto mt-6 max-w-3xl text-lg text-gray-200 md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.5 }}
           >
-            Your Durability is Our Responsibility. Serving Ludhiana with industry-leading heat treatment solutions.
+            Your Durability is Our Responsibility. Leading provider of induction hardening and steel hardening services in Ludhiana for clients across India.
           </motion.p>
           
           <motion.div 

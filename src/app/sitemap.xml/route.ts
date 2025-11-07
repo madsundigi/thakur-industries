@@ -1,11 +1,14 @@
-import { SITE_URL, NAV_LINKS } from '@/lib/constants';
+import { SITE_URL, NAV_LINKS, SERVICES } from '@/lib/constants';
 
 export async function GET() {
   const staticPaths = NAV_LINKS.map(link => link.href);
+  const servicePaths = SERVICES.map(service => `/services#${service.id}`);
   
+  const allPaths = [...new Set([...staticPaths, ...servicePaths])];
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${staticPaths.map((path) => `
+  ${allPaths.map((path) => `
     <url>
       <loc>${SITE_URL}${path}</loc>
       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>

@@ -15,10 +15,10 @@ export function IndustriesSection() {
                     <div className="order-2 lg:order-1">
                         <PageHeader
                             title="Industries We Serve"
-                            description="From automotive to aerospace, our precision heat treatment processes are trusted by leaders in a wide range of demanding industries."
+                            description="From automotive heat treatment in Ludhiana to aerospace part hardening for India, our precision processes are trusted by leaders in demanding industries."
                         />
 
-                        <ul className="mt-8 grid grid-cols-2 gap-4">
+                        <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {INDUSTRIES.map((industry) => (
                                 <li key={industry.id} className="flex items-center gap-3">
                                     <CheckCircle className="h-5 w-5 text-primary" />
@@ -37,7 +37,7 @@ export function IndustriesSection() {
                         <div className="relative aspect-square overflow-hidden rounded-lg shadow-xl">
                             <Image
                                 src={industryImage.imageUrl}
-                                alt="Automotive industry manufacturing"
+                                alt="Automotive component hardening at our factory"
                                 data-ai-hint={industryImage.imageHint}
                                 fill
                                 className="object-cover transition-transform duration-500 hover:scale-105"

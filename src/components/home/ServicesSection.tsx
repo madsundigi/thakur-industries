@@ -12,8 +12,8 @@ export function ServicesSection() {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <PageHeader 
-            title="Our Core Services"
-            description="We deliver a comprehensive range of heat treatment services, ensuring optimal material properties for any industrial application."
+            title="Our Core Heat Treatment Services"
+            description="We deliver a comprehensive range of industrial heat treatment services in Ludhiana, ensuring optimal material properties for any application."
             className="text-center mb-12"
         />
 
@@ -26,7 +26,7 @@ export function ServicesSection() {
                   <div className="relative h-48 w-full">
                      <Image
                         src={image.imageUrl}
-                        alt={service.title}
+                        alt={`Image for ${service.title} in Ludhiana`}
                         data-ai-hint={image.imageHint}
                         fill
                         className="object-cover"

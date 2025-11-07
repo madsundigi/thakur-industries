@@ -6,16 +6,16 @@ import { SITE_NAME } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
-  title: `About ${SITE_NAME}`,
-  description: `Learn about our history, commitment to quality, and the expert team at ${SITE_NAME}, Ludhiana's trusted heat treatment specialists.`,
+  title: `About ${SITE_NAME} | Trusted Heat Treatment Specialist in India`,
+  description: `Learn about our history, commitment to quality, and the expert team at ${SITE_NAME}, a trusted heat treatment company in Ludhiana, Punjab, serving clients across India.`,
 };
 
 const timelineEvents = [
-  { year: '1998', event: 'Founded Thakur Industries with a vision to provide top-tier heat treatment services in Ludhiana.' },
-  { year: '2005', event: 'Expanded facility and invested in our first advanced induction hardening machine.' },
-  { year: '2012', event: 'Achieved ISO 9001 certification, underscoring our commitment to quality.' },
-  { year: '2018', event: 'Introduced custom aerospace solutions, becoming a key regional partner.' },
-  { year: '2023', event: 'Upgraded to next-generation automated systems for enhanced precision and efficiency.' },
+  { year: '1998', event: `Founded Thakur Industries with a vision to provide top-tier heat treatment services in Ludhiana.` },
+  { year: '2005', event: 'Expanded facility and invested in our first advanced induction hardening machine, becoming a key induction hardening plant in Ludhiana.' },
+  { year: '2012', event: 'Achieved ISO 9001 certification, underscoring our commitment to quality in all heat treatment job work.' },
+  { year: '2018', event: 'Introduced custom aerospace part hardening solutions, becoming a key regional partner for specialized industrial heat treatment.' },
+  { year: '2023', event: 'Upgraded to next-generation automated systems for enhanced precision and efficiency in steel hardening services.' },
 ];
 
 const stats = [
@@ -32,7 +32,7 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 md:px-6">
       <PageHeader
         title="Our Story of Precision and Durability"
-        description="For over two decades, Thakur Industries has been at the forefront of industrial innovation in Ludhiana, forging a reputation for uncompromising quality and reliability."
+        description={`For over two decades, ${SITE_NAME} has been at the forefront of industrial innovation in Ludhiana, forging a reputation for uncompromising quality. We are a trusted induction hardening specialist in India.`}
         className="mb-12 text-center"
       />
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
             <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl">
                 <Image
                     src={aboutImage.imageUrl}
-                    alt="Modern factory floor"
+                    alt="Thakur Industries factory floor showing advanced heat treatment machinery"
                     data-ai-hint={aboutImage.imageHint}
                     fill
                     className="object-cover"
@@ -55,7 +55,7 @@ export default function AboutPage() {
       </div>
       
       <div className="py-16 md:py-24">
-        <h3 className="text-3xl font-bold text-center mb-12">Our Journey</h3>
+        <h3 className="text-3xl font-bold text-center mb-12">Our Journey as a Heat Treatment Company in Ludhiana</h3>
         <div className="relative">
           <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
           {timelineEvents.map((item, index) => (

@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_TAGLINE, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { JsonLd } from '@/components/shared/JsonLd';
 import StickyCTA from '@/components/shared/StickyCTA';
 
@@ -17,13 +17,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Induction Heat Treatment & Case Hardening - Ludhiana`,
+    default: `Induction Heat Treatment & Case Hardening | ${SITE_NAME} Ludhiana`,
     template: `%s | ${SITE_NAME}`,
   },
-  description: SITE_DESCRIPTION,
+  description: `Top induction heat treatment Ludhiana. We offer induction hardening, case hardening, and steel hardening services in Punjab, India. Call ${SITE_PHONE_NUMBER}.`,
   openGraph: {
-    title: `${SITE_NAME} | Ludhiana, Punjab`,
-    description: SITE_DESCRIPTION,
+    title: `${SITE_NAME} | Industrial Heat Treatment Ludhiana, Punjab`,
+    description: SITE_TAGLINE,
     url: SITE_URL,
     siteName: SITE_NAME,
     images: [
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_NAME} | Ludhiana, Punjab`,
-    description: SITE_DESCRIPTION,
+    title: `${SITE_NAME} | Industrial Heat Treatment Ludhiana, Punjab`,
+    description: SITE_TAGLINE,
     images: [`/og-image.jpg`],
   },
   alternates: {
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#E0E0E0' },
-    { media: '(prefers-color-scheme: dark)', color: '#0b0c0e' },
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
+    { media: '(prefers-color-scheme: dark)', color: '#0A0A0A' },
   ],
 };
 
@@ -63,14 +63,17 @@ export default function RootLayout({
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Thakur Industries',
-    url: 'https://thakurinduction.com',
-    logo: 'https://thakurinduction.com/logo.png', // Replace with actual logo URL
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+91-7900000776',
+      telephone: SITE_PHONE_NUMBER,
       contactType: 'Customer Service',
+      areaServed: ["Ludhiana", "Punjab", "India"],
+      availableLanguage: ["en", "pa", "hi"]
     },
+    description: 'Thakur Industries is a leading provider of induction heat treatment and case hardening services in Ludhiana, Punjab.',
   };
 
   return (

@@ -33,15 +33,15 @@ export function Footer() {
           </div>
           <div>
             <h3 className="font-semibold tracking-wider text-sm uppercase">Contact Us</h3>
-            <div className="mt-4 space-y-2 text-sm text-secondary-foreground/80">
+            <address className="mt-4 space-y-2 text-sm text-secondary-foreground/80 not-italic">
                 <p>
                     <a href={`tel:${SITE_PHONE_NUMBER}`} className="hover:text-primary transition-colors">{SITE_PHONE_NUMBER}</a>
                 </p>
                 <p>
-                    <a href="#" className="hover:text-primary transition-colors">sales@thakurindustries.com</a>
+                    <a href="mailto:sales@thakurinduction.com" className="hover:text-primary transition-colors">sales@thakurinduction.com</a>
                 </p>
                 <p>{SITE_ADDRESS}</p>
-            </div>
+            </address>
           </div>
           <div>
              <h3 className="font-semibold tracking-wider text-sm uppercase">Our Hours</h3>
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-secondary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} {SITE_NAME}. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {SITE_NAME}. All Rights Reserved. | Heat Treatment Company Ludhiana</p>
         </div>
       </div>
     </footer>
