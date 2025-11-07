@@ -24,9 +24,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { Mail, Phone, MapPin } from 'lucide-react';
 
-// This is a client component, so we can't export metadata directly.
-// We'll rely on the title from a parent layout or a default.
-// For server components, you would export this const.
+// This is a client component, so metadata is handled in the root layout.
+// The title and description are dynamically set there.
 /*
 export const metadata: Metadata = {
   title: `Contact ${SITE_NAME}`,
@@ -77,11 +76,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <head>
-          <title>Contact {SITE_NAME}</title>
-          <meta name="description" content={`Get in touch with ${SITE_NAME} in Ludhiana for a free sample or consultation. Call ${SITE_PHONE_NUMBER} or visit us.`} />
-          <JsonLd data={localBusinessSchema} />
-      </head>
+      <JsonLd data={localBusinessSchema} />
       <div className="container mx-auto px-4 md:px-6">
         <PageHeader
           title="Get In Touch"
