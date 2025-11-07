@@ -61,6 +61,54 @@
       "imageHint": "excavator construction"
     },
     {
+      "id": "industryMachineTool",
+      "description": "A CNC machine cutting a piece of metal.",
+      "imageUrl": "https://images.unsplash.com/photo-1618362367448-5527f31c034a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxDTkMlMjBtYWNoaW5lfGVufDB8fHx8MTc2MjU3ODg4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "CNC machine"
+    },
+    {
+      "id": "industryEnergy",
+      "description": "A wind turbine against a sunset sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1508272097943-348b61e73545?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3aW5kJTIwdHVyYmluZXxlbnwwfHx8fDE3NjI1Nzg4ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wind turbine"
+    },
+    {
+      "id": "industryOilGas",
+      "description": "An offshore oil rig at sea.",
+      "imageUrl": "https://images.unsplash.com/photo-1619468352229-38a395133d16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjI1Nzg4ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "oil rig"
+    },
+    {
+      "id": "industryDefense",
+      "description": "A military jet fighter in flight.",
+      "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWxpdGFyeSUyMGpldHxlbnwwfHx8fDE3NjI1Nzg4ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "military jet"
+    },
+    {
+      "id": "industryTextile",
+      "description": "A loom in a textile factory weaving colorful fabric.",
+      "imageUrl": "https://images.unsplash.com/photo-1596541323425-635b7e3810a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZXh0aWxlJTIwbWFjaGluZXJ5fGVufDB8fHx8MTc2MjU3ODg4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "textile machinery"
+    },
+    {
+      "id": "industryMarine",
+      "description": "A large cargo ship sailing on the ocean.",
+      "imageUrl": "https://images.unsplash.com/photo-1593577368322-263e3215eea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHNoaXB8ZW58MHx8fHwxNzYyNTc4ODgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cargo ship"
+    },
+    {
+      "id": "industryRobotics",
+      "description": "A robotic arm assembling a circuit board.",
+      "imageUrl": "https://images.unsplash.com/photo-1534723452862-4c874018d66d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2JvdGljJTIwYXJtfGVufDB8fHx8MTc2MjU3ODg4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robotic arm"
+    },
+    {
+      "id": "industryMining",
+      "description": "Heavy machinery in an open-pit mine.",
+      "imageUrl": "https://images.unsplash.com/photo-1629285489887-353d54a72d7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW5pbmclMjBlcXVpcG1lbnR8ZW58MHx8fHwxNzYyNTc4ODgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mining equipment"
+    },
+    {
       "id": "aboutTimeline",
       "description": "A modern factory floor with multiple machines.",
       "imageUrl": "https://images.unsplash.com/photo-1654703681116-3988648da2b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYWN0b3J5JTIwZmxvb3J8ZW58MHx8fHwxNzYyNDk3Mjg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
