@@ -1,12 +1,12 @@
 
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useAnimation, useMotionValue, AnimatePresence, useMotionValueEvent } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SERVICES } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 // Icons for the center
 import { Zap, HardHat, Settings, TestTube } from 'lucide-react';
@@ -19,8 +19,9 @@ const icons = [
 ];
 
 export function OrbitingServices() {
-    const orbitRadius = 300; // Diameter would be 600
-    const itemSize = 150; // Width/Height of the orbiting items
+    const orbitRadius = 300;
+    const itemSize = 150;
+    const animationDuration = 40;
 
     const servicesWithImages = useMemo(() => {
         return SERVICES.map(service => ({
@@ -28,6 +29,37 @@ export function OrbitingServices() {
             image: PlaceHolderImages.find(img => img.id === service.image),
         }));
     }, []);
+
+    const [activeServiceTitle, setActiveServiceTitle] = useState(servicesWithImages[0]?.title || '');
+    const rotation = useMotionValue(0);
+    const controls = useAnimation();
+
+    useEffect(() => {
+        const animation = controls.start({
+            rotate: 360,
+            transition: {
+                duration: animationDuration,
+                ease: 'linear',
+                repeat: Infinity,
+            },
+        });
+        return () => animation.stop();
+    }, [controls, animationDuration]);
+
+    useMotionValueEvent(rotation, "change", (latest) => {
+        const numServices = servicesWithImages.length;
+        const anglePerService = 360 / numServices;
+        // Offset by -90 degrees because 0 degrees is on the right, we want the top (270 or -90 deg)
+        const normalizedRotation = (latest + 90) % 360; 
+        const activeIndex = Math.floor(normalizedRotation / anglePerService);
+        
+        // Ensure index is within bounds and handle the wrap-around case
+        const currentActiveIndex = (numServices - 1 - activeIndex + numServices) % numServices;
+
+        if (servicesWithImages[currentActiveIndex]) {
+            setActiveServiceTitle(servicesWithImages[currentActiveIndex].title);
+        }
+    });
 
     return (
         <section className="relative py-24 md:py-48 bg-background overflow-hidden">
@@ -40,30 +72,25 @@ export function OrbitingServices() {
                 </p>
 
                 <div className="relative flex items-center justify-center" style={{ height: `${orbitRadius * 2}px` }}>
-                    {/* Central decorative element */}
-                     <div className="absolute z-10 w-48 h-48 rounded-full border-2 border-primary/20 bg-secondary flex flex-wrap items-center justify-center p-4 gap-4 shadow-2xl">
-                        {icons.map((icon, index) => (
-                             <motion.div
-                                key={index}
-                                initial={{ opacity: 0, scale: 0.5 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ delay: index * 0.2 + 1, type: 'spring' }}
+                    <div className="absolute z-10 w-48 h-48 rounded-full border-2 border-primary/20 bg-secondary flex flex-col items-center justify-center p-4 gap-2 shadow-2xl text-center">
+                         <AnimatePresence mode="wait">
+                            <motion.p
+                                key={activeServiceTitle}
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 10 }}
+                                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                                className="font-bold text-primary text-base"
                             >
-                                {icon}
-                            </motion.div>
-                        ))}
+                                {activeServiceTitle}
+                            </motion.p>
+                        </AnimatePresence>
                     </div>
 
-
-                    {/* Orbiting items */}
                     <motion.div
                         className="absolute w-full h-full"
-                        animate={{ rotate: 360 }}
-                        transition={{
-                            duration: 40, // Animation speed
-                            ease: 'linear',
-                            repeat: Infinity, // Repeat type
-                        }}
+                        style={{ rotate: rotation }}
+                        animate={controls}
                     >
                         {servicesWithImages.map((service, index) => {
                             const angle = (index / servicesWithImages.length) * 2 * Math.PI;
@@ -83,15 +110,13 @@ export function OrbitingServices() {
                                 >
                                     <motion.div
                                         className="flex flex-col items-center gap-2 group"
-                                        animate={{ rotate: -360 }}
-                                        transition={{
-                                            duration: 40,
-                                            ease: 'linear',
-                                            repeat: Infinity,
-                                        }}
+                                        style={{ rotate: -rotation.get() }}
+                                        initial={false}
+                                        animate={{ rotate: -rotation.get() }}
+                                        transition={{ duration: 0, ease: "linear" }}
                                     >
                                         <div
-                                            className="relative rounded-lg overflow-hidden"
+                                            className="relative rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300"
                                             style={{ width: itemSize, height: itemSize }}
                                         >
                                             {service.image && (
@@ -100,11 +125,9 @@ export function OrbitingServices() {
                                                     alt={service.title}
                                                     data-ai-hint={service.image.imageHint}
                                                     fill
-                                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                                    className="object-cover"
                                                 />
                                             )}
-                                            <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                            </div>
                                         </div>
                                          <span className="text-white text-center font-bold text-sm p-2">
                                             {service.title}
