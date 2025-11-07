@@ -74,7 +74,7 @@ export function OrbitingServices() {
                                 <Link
                                     href={`/services#${service.id}`}
                                     key={service.id}
-                                    className="absolute group flex flex-col items-center gap-2"
+                                    className="absolute"
                                     style={{
                                         left: `calc(50% - ${itemSize / 2}px)`,
                                         top: `calc(50% - ${itemSize / 2}px)`,
@@ -82,8 +82,7 @@ export function OrbitingServices() {
                                     }}
                                 >
                                     <motion.div
-                                        className="relative rounded-lg overflow-hidden"
-                                        style={{ width: itemSize, height: itemSize }}
+                                        className="flex flex-col items-center gap-2 group"
                                         animate={{ rotate: -360 }}
                                         transition={{
                                             duration: 40,
@@ -91,29 +90,26 @@ export function OrbitingServices() {
                                             repeat: Infinity,
                                         }}
                                     >
-                                        {service.image && (
-                                            <Image
-                                                src={service.image.imageUrl}
-                                                alt={service.title}
-                                                data-ai-hint={service.image.imageHint}
-                                                fill
-                                                className="object-cover transition-transform duration-300 group-hover:scale-110"
-                                            />
-                                        )}
-                                        <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div
+                                            className="relative rounded-lg overflow-hidden"
+                                            style={{ width: itemSize, height: itemSize }}
+                                        >
+                                            {service.image && (
+                                                <Image
+                                                    src={service.image.imageUrl}
+                                                    alt={service.title}
+                                                    data-ai-hint={service.image.imageHint}
+                                                    fill
+                                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                                />
+                                            )}
+                                            <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            </div>
                                         </div>
+                                         <span className="text-white text-center font-bold text-sm p-2">
+                                            {service.title}
+                                        </span>
                                     </motion.div>
-                                     <motion.span 
-                                        className="text-white text-center font-bold text-sm p-2"
-                                        animate={{ rotate: -360 }}
-                                        transition={{
-                                            duration: 40,
-                                            ease: 'linear',
-                                            repeat: Infinity,
-                                        }}
-                                    >
-                                        {service.title}
-                                    </motion.span>
                                 </Link>
                             );
                         })}
