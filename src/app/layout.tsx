@@ -78,7 +78,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-pt-[5rem] dark" suppressHydrationWarning>
+    <html lang="en" className="scroll-pt-[5rem]" suppressHydrationWarning>
       <head>
         <JsonLd data={organizationSchema} />
       </head>
