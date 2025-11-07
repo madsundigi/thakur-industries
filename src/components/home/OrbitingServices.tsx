@@ -25,7 +25,7 @@ export function OrbitingServices() {
     const controls = useAnimation();
 
     useEffect(() => {
-        const animation = controls.start({
+        controls.start({
             rotate: 360,
             transition: {
                 duration: animationDuration,
@@ -33,7 +33,7 @@ export function OrbitingServices() {
                 repeat: Infinity,
             },
         });
-        return () => animation.stop();
+        return () => controls.stop();
     }, [controls, animationDuration]);
 
     useMotionValueEvent(rotation, "change", (latest) => {
