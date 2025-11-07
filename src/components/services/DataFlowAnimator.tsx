@@ -1,11 +1,11 @@
 
 'use client';
 
-import React, { useMemo, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
-import { CheckCircle, ChevronRight, HardHat, Zap, Award, Gauge, TestTube, Settings, Scale, ClipboardCheck } from 'lucide-react';
+import { CheckCircle, HardHat, Zap, Gauge, TestTube, Settings, ClipboardCheck } from 'lucide-react';
 
 const INPUTS = [
     { icon: HardHat, label: 'Preparation & Preheating', items: ['Component Cleaning', 'Quality Inspection', 'Uniform Preheating'] },
@@ -29,22 +29,6 @@ export function DataFlowAnimator() {
     const isInView = useInView(ref, { once: true, amount: 0.4 });
     const prefersReducedMotion = usePrefersReducedMotion();
 
-    const particleVariants = {
-        hidden: { opacity: 0, pathLength: 0 },
-        visible: (i: number) => ({
-            opacity: [0, 1, 1, 0],
-            pathLength: [0, 1, 1, 1],
-            transition: {
-                opacity: { duration: 1, times: [0, 0.2, 0.8, 1] },
-                pathLength: { duration: 1, ease: 'linear' },
-                delay: (i * 4) / PARTICLE_COUNT,
-                repeat: Infinity,
-                repeatDelay: 4,
-                duration: 4,
-            },
-        }),
-    };
-    
     const cardVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: {
@@ -104,79 +88,47 @@ export function DataFlowAnimator() {
             </motion.div>
 
             {/* SVG Paths and Particles */}
-            <svg
-                width="100%"
-                height="100%"
-                className="absolute top-0 left-0"
-                style={{ zIndex: 1 }}
-                preserveAspectRatio="none"
-            >
-                <defs>
-                    <motion.path
-                        id="path-left"
-                        fill="none"
-                        stroke="none"
-                        d="M 25%,50% C 35%,50% 35%,50% 50%,50%"
-                    />
-                    <motion.path
-                        id="path-right-top"
-                        fill="none"
-                        stroke="none"
-                        d="M 50%,50% C 65%,50% 65%,30% 75%,30%"
-                    />
-                    <motion.path
-                        id="path-right-bottom"
-                        fill="none"
-                        stroke="none"
-                        d="M 50%,50% C 65%,50% 65%,70% 75%,70%"
-                    />
-                </defs>
+            <div className="absolute top-0 left-0 w-full h-full" style={{ zIndex: 1 }}>
+                <svg
+                    width="100%"
+                    height="100%"
+                    preserveAspectRatio="none"
+                    className='pointer-events-none'
+                >
+                    <defs>
+                        <path
+                            id="path-left"
+                            d="M 25%,50% C 35%,50% 35%,50% 50%,50%"
+                            fill="none"
+                            stroke="none"
+                        />
+                        <path
+                            id="path-right-top"
+                            d="M 50%,50% C 65%,50% 65%,30% 75%,30%"
+                            fill="none"
+                            stroke="none"
+                        />
+                        <path
+                            id="path-right-bottom"
+                            d="M 50%,50% C 65%,50% 65%,70% 75%,70%"
+                            fill="none"
+                            stroke="none"
+                        />
+                    </defs>
 
-                {/* Particles for left path */}
-                {Array.from({ length: PARTICLE_COUNT / 2 }).map((_, i) => (
-                    <motion.circle
-                        key={`left-${i}`}
-                        r="3"
-                        fill="hsl(var(--primary))"
-                        variants={particleVariants}
-                        custom={i}
-                    >
-                        <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
-                            <mpath href="#path-left" />
-                        </animateMotion>
-                    </motion.circle>
-                ))}
-
-                 {/* Particles for top right path */}
-                {Array.from({ length: PARTICLE_COUNT / 4 }).map((_, i) => (
-                    <motion.circle
-                        key={`top-right-${i}`}
-                        r="3"
-                        fill="hsl(var(--primary))"
-                        variants={particleVariants}
-                        custom={i + PARTICLE_COUNT / 2}
-                    >
-                        <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
-                            <mpath href="#path-right-top" />
-                        </animateMotion>
-                    </motion.circle>
-                ))}
-
-                 {/* Particles for bottom right path */}
-                {Array.from({ length: PARTICLE_COUNT / 4 }).map((_, i) => (
-                    <motion.circle
-                        key={`bottom-right-${i}`}
-                        r="3"
-                        fill="hsl(var(--primary))"
-                        variants={particleVariants}
-                        custom={i + (PARTICLE_COUNT / 4) * 3}
-                    >
-                        <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
-                            <mpath href="#path-right-bottom" />
-                        </animateMotion>
-                    </motion.circle>
-                ))}
-            </svg>
+                    <g>
+                        {Array.from({ length: PARTICLE_COUNT / 2 }).map((_, i) => (
+                            <Particle key={`left-${i}`} pathId="#path-left" delay={i * 0.15} />
+                        ))}
+                        {Array.from({ length: PARTICLE_COUNT / 4 }).map((_, i) => (
+                            <Particle key={`top-${i}`} pathId="#path-right-top" delay={i * 0.3} />
+                        ))}
+                        {Array.from({ length: PARTICLE_COUNT / 4 }).map((_, i) => (
+                            <Particle key={`bottom-${i}`} pathId="#path-right-bottom" delay={i * 0.3} />
+                        ))}
+                    </g>
+                </svg>
+            </div>
             
             {/* Center Engine */}
             <motion.div variants={cardVariants} className="relative w-1/3 h-2/3 flex items-center justify-center" style={{ zIndex: 2 }}>
@@ -213,6 +165,39 @@ export function DataFlowAnimator() {
         </motion.div>
     );
 }
+
+const Particle = ({ pathId, delay }: { pathId: string; delay: number }) => {
+  const pathRef = useRef<SVGPathElement | null>(null);
+
+  React.useEffect(() => {
+    const element = document.querySelector(pathId);
+    if (element instanceof SVGPathElement) {
+      pathRef.current = element;
+    }
+  }, [pathId]);
+
+  return (
+    <motion.circle
+      r="3"
+      fill="hsl(var(--primary))"
+      animate={{
+        offsetDistance: ['0%', '100%'],
+        opacity: [0, 1, 1, 0]
+      }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        repeatDelay: 1,
+        delay,
+        ease: 'linear'
+      }}
+    >
+      <animateMotion dur="4s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode='linear'>
+        <mpath href={pathId} />
+      </animateMotion>
+    </motion.circle>
+  );
+};
 
 interface FlowCardProps {
     icon: React.ElementType;
