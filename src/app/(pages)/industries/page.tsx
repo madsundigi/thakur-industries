@@ -30,7 +30,7 @@ export default function IndustriesPage() {
           const image = PlaceHolderImages.find(img => img.id === industry.image);
           const isReversed = index % 2 !== 0;
           return (
-            <div key={industry.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div key={industry.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div className={`relative h-80 w-full overflow-hidden rounded-lg shadow-xl ${isReversed ? 'lg:order-last' : ''}`}>
                 {image && (
                   <Image
