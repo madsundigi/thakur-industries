@@ -74,7 +74,7 @@ export function OrbitingServices() {
                                 <Link
                                     href={`/services#${service.id}`}
                                     key={service.id}
-                                    className="absolute group"
+                                    className="absolute group flex flex-col items-center gap-2"
                                     style={{
                                         left: `calc(50% - ${itemSize / 2}px)`,
                                         top: `calc(50% - ${itemSize / 2}px)`,
@@ -101,11 +101,19 @@ export function OrbitingServices() {
                                             />
                                         )}
                                         <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                            <span className="text-white text-center font-bold text-sm p-2">
-                                                {service.title}
-                                            </span>
                                         </div>
                                     </motion.div>
+                                     <motion.span 
+                                        className="text-white text-center font-bold text-sm p-2"
+                                        animate={{ rotate: -360 }}
+                                        transition={{
+                                            duration: 40,
+                                            ease: 'linear',
+                                            repeat: Infinity,
+                                        }}
+                                    >
+                                        {service.title}
+                                    </motion.span>
                                 </Link>
                             );
                         })}
