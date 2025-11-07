@@ -7,9 +7,9 @@ import { INDUSTRIES } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import PageHeader from '../shared/PageHeader';
 
-const CYLINDER_RADIUS = 250; // Adjust this to change the size of the cylinder
-const ROTATION_SPEED = 0.05; // Adjust this for auto-rotation speed
-const DRAG_FACTOR = 0.1; // Adjust this for drag sensitivity
+const CYLINDER_RADIUS = 400; // Increased radius
+const ROTATION_SPEED = 0.05;
+const DRAG_FACTOR = 0.1; 
 
 export function IndustriesSlideshow() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -27,7 +27,6 @@ export function IndustriesSlideshow() {
 
     const anglePerItem = 360 / industriesWithImages.length;
 
-    // Auto-rotation effect
     useEffect(() => {
         if (!isMounted) return;
 
@@ -44,7 +43,7 @@ export function IndustriesSlideshow() {
     }, [rotationY, isMounted]);
     
     if (!isMounted) {
-        return null; // Or a placeholder/skeleton
+        return null; 
     }
 
     return (
@@ -58,7 +57,7 @@ export function IndustriesSlideshow() {
                 <motion.div
                     ref={containerRef}
                     className="relative w-full h-[300px] cursor-grab active:cursor-grabbing"
-                    style={{ perspective: '1000px' }}
+                    style={{ perspective: '2000px' }} // Adjusted perspective
                     drag="x"
                     dragConstraints={{ left: 0, right: 0 }}
                     onDrag={(event, info) => {
@@ -99,20 +98,15 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
     const z = Math.cos(Math.PI / 180 * itemAngle) * radius;
     const x = Math.sin(Math.PI / 180 * itemAngle) * radius;
 
-    // This useTransform will calculate the opacity based on the card's rotation relative to the viewer.
-    // When a card is facing the front (0 degrees difference), it will be fully opaque.
-    // When it's at the side (90 degrees), it will be partially transparent.
     const opacity = useTransform(rotationY, (value) => {
         const itemRotation = (value + itemAngle) % 360;
         const normalizedRotation = Math.abs(itemRotation > 180 ? itemRotation - 360 : itemRotation);
-        // Map rotation (0-90 degrees) to opacity (1-0.2)
         return 1 - Math.min(normalizedRotation / 90, 1) * 0.8;
     });
 
     const titleOpacity = useTransform(rotationY, (value) => {
         const itemRotation = (value + itemAngle) % 360;
         const normalizedRotation = Math.abs(itemRotation > 180 ? itemRotation - 360 : itemRotation);
-        // Becomes fully opaque when within ~20 degrees of the front
         return 1 - Math.min(normalizedRotation / 20, 1);
     });
 
