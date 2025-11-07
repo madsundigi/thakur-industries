@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { INDUSTRIES } from '@/lib/constants';
@@ -14,6 +14,11 @@ const DRAG_FACTOR = 0.1; // Adjust this for drag sensitivity
 export function IndustriesSlideshow() {
     const containerRef = useRef<HTMLDivElement>(null);
     const rotationY = useMotionValue(0);
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     const industriesWithImages = INDUSTRIES.map(industry => ({
         ...industry,
@@ -24,6 +29,8 @@ export function IndustriesSlideshow() {
 
     // Auto-rotation effect
     useEffect(() => {
+        if (!isMounted) return;
+
         let animationFrameId: number;
 
         const animate = () => {
@@ -34,7 +41,11 @@ export function IndustriesSlideshow() {
         animationFrameId = requestAnimationFrame(animate);
 
         return () => cancelAnimationFrame(animationFrameId);
-    }, [rotationY]);
+    }, [rotationY, isMounted]);
+    
+    if (!isMounted) {
+        return null; // Or a placeholder/skeleton
+    }
 
     return (
         <section className="py-24 md:py-32 bg-secondary overflow-hidden">
@@ -94,8 +105,15 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
     const opacity = useTransform(rotationY, (value) => {
         const itemRotation = (value + itemAngle) % 360;
         const normalizedRotation = Math.abs(itemRotation > 180 ? itemRotation - 360 : itemRotation);
-        // Map rotation (0-90 degrees) to opacity (1-0.4)
-        return 1 - Math.min(normalizedRotation / 90, 1) * 0.6;
+        // Map rotation (0-90 degrees) to opacity (1-0.2)
+        return 1 - Math.min(normalizedRotation / 90, 1) * 0.8;
+    });
+
+    const titleOpacity = useTransform(rotationY, (value) => {
+        const itemRotation = (value + itemAngle) % 360;
+        const normalizedRotation = Math.abs(itemRotation > 180 ? itemRotation - 360 : itemRotation);
+        // Becomes fully opaque when within ~20 degrees of the front
+        return 1 - Math.min(normalizedRotation / 20, 1);
     });
 
     return (
@@ -105,7 +123,10 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
                 transform: `translateX(${x}px) translateZ(${z}px) rotateY(${itemAngle}deg)`,
             }}
         >
-            <div className="relative w-full h-full rounded-lg overflow-hidden border-2 border-primary/20 shadow-2xl group">
+            <motion.div 
+                className="relative w-full h-full rounded-lg overflow-hidden border-2 border-primary/20 shadow-2xl group"
+                style={{ opacity }}
+            >
                 <Image
                     src={industry.image.imageUrl}
                     alt={industry.title}
@@ -115,11 +136,11 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
                 />
                 <motion.div 
                     className="absolute bottom-0 left-0 right-0 p-4 bg-black/60 backdrop-blur-sm"
-                    style={{ opacity }}
+                    style={{ opacity: titleOpacity }}
                 >
                     <h3 className="text-white font-bold text-lg">{industry.title}</h3>
                 </motion.div>
-            </div>
+            </motion.div>
             {/* Mirror Reflection Effect */}
             <div 
                 className="absolute top-full left-0 right-0 h-1/2 w-full origin-top"
@@ -130,7 +151,10 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
                     maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)',
                 }}
             >
-                <div className="relative w-full h-full brightness-50 blur-sm">
+                <motion.div 
+                    className="relative w-full h-full brightness-50 blur-sm"
+                    style={{ opacity }}
+                >
                     <Image
                         src={industry.image.imageUrl}
                         alt=""
@@ -138,7 +162,7 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
                         className="object-cover"
                         aria-hidden="true"
                     />
-                </div>
+                </motion.div>
             </div>
         </motion.div>
     );
