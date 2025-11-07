@@ -1,3 +1,6 @@
+
+'use client';
+
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -7,82 +10,152 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Star } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import PageHeader from "@/components/shared/PageHeader";
+import { Button } from "@/components/ui/button";
+import { JsonLd } from "@/components/shared/JsonLd";
 
 const testimonials = [
   {
-    name: "Rajesh Kumar",
-    company: "Automotive Parts Mfg.",
-    quote: "Thakur Industries transformed our production line. Their induction hardening is consistent and reliable, which has drastically reduced our part failure rate. Unmatched quality in Ludhiana.",
+    name: "Rajiv Mehta",
+    company: "Auto Parts Manufacturer, Ludhiana",
+    quote: "We approached Thakur Industries for induction hardening of our automotive shafts. Their heat treatment services in Punjab are precise and delivered excellent hardness consistency. Highly recommended for automotive component manufacturers.",
     avatarId: "testimonialAvatar1",
+    rating: 5,
   },
   {
     name: "Priya Singh",
-    company: "Aerospace Components Inc.",
-    quote: "The precision and adherence to specs from Thakur Industries are second to none. Their team provided a custom heat treatment solution that met our stringent aerospace requirements perfectly.",
+    company: "Machinery Supplier, Jalandhar",
+    quote: "As a machine parts supplier from Punjab, we needed case hardening job work for a large batch of steel gears. Thakur Industries’ industrial heat treatment process ensured perfect results and fast turnaround. Their quality is unmatched.",
     avatarId: "testimonialAvatar2",
+    rating: 5,
   },
   {
     name: "Amit Patel",
-    company: "Construction Equipment Co.",
-    quote: "We've been working with them for over 5 years. Their durability claim isn't just a tagline; it's a promise they deliver on. Our equipment's longevity has improved significantly.",
+    company: "Engineering Firm, Delhi",
+    quote: "Thakur Industries is our go-to partner in India for custom gear hardening. Their induction technology is reliable and their team ensures we meet ISO quality standards every time. Truly a top-tier metal heat treatment specialist.",
     avatarId: "testimonialAvatar3",
+    rating: 5,
+  },
+  {
+    name: "Sanjay Verma",
+    company: "Agricultural Equipment Co, Patiala",
+    quote: "For our agricultural equipment, the durability provided by the case hardening job work in Punjab from Thakur Industries has been a game-changer. Their team in Ludhiana understands the demands of our industry.",
+    avatarId: "testimonialAvatar4",
+    rating: 5,
+  },
+  {
+    name: "Anjali Desai",
+    company: "Aerospace Components Inc, Bangalore",
+    quote: "Finding a reliable industrial heat treatment company in India for aerospace parts is tough. Thakur Industries delivered with exceptional precision and met all our stringent specifications for aerospace part hardening.",
+    avatarId: "testimonialAvatar5",
+    rating: 5,
   },
 ];
 
+const generateReviewSchema = (testimonial: typeof testimonials[0]) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    'itemReviewed': {
+      '@type': 'LocalBusiness',
+      'name': 'Thakur Industries',
+      'image': 'https://thakurinduction.com/logo.png',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
+        'addressLocality': 'Ludhiana',
+        'addressRegion': 'Punjab',
+        'postalCode': '141003',
+        'addressCountry': 'IN'
+      },
+      'telephone': '+91 7900000776'
+    },
+    'reviewRating': {
+      '@type': 'Rating',
+      'ratingValue': testimonial.rating.toString(),
+      'bestRating': '5'
+    },
+    'author': {
+      '@type': 'Person',
+      'name': `${testimonial.name}, ${testimonial.company}`
+    },
+    'reviewBody': testimonial.quote
+});
+
 export function Testimonials() {
   return (
-    <section className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <PageHeader
-          title="What Our Clients Say"
-          description="Building lasting partnerships through reliable results and exceptional service."
-          className="text-center mb-12"
-        />
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full"
-        >
-          <CarouselContent>
-            {testimonials.map((testimonial, index) => {
-              const avatar = PlaceHolderImages.find(img => img.id === testimonial.avatarId);
-              return (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="h-full flex flex-col justify-between">
-                      <CardContent className="p-6 flex flex-col items-start gap-6">
-                        <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
-                        <div className="flex items-center gap-4">
-                          {avatar && (
-                            <Image
-                              src={avatar.imageUrl}
-                              alt={testimonial.name}
-                              data-ai-hint={avatar.imageHint}
-                              width={48}
-                              height={48}
-                              className="rounded-full"
-                            />
-                          )}
-                          <div>
-                            <p className="font-semibold">{testimonial.name}</p>
-                            <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
-        </Carousel>
+    <>
+      <div className="hidden">
+        {testimonials.map((testimonial, index) => (
+          <JsonLd key={index} data={generateReviewSchema(testimonial)} />
+        ))}
       </div>
-    </section>
+      <section id="testimonials" aria-label="Client Testimonials" className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <PageHeader
+            title="Trusted by Manufacturers Across Punjab"
+            description="Building lasting partnerships through reliable results, technical excellence, and exceptional service."
+            className="text-center mb-12"
+          />
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => {
+                const avatar = PlaceHolderImages.find(img => img.id === testimonial.avatarId);
+                return (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1 h-full">
+                      <Card className="h-full flex flex-col justify-between border-2">
+                        <CardContent className="p-6 flex flex-col items-start gap-6">
+                          <div className="flex">
+                            {Array.from({ length: testimonial.rating }).map((_, i) => (
+                              <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                            ))}
+                          </div>
+                          <p className="text-muted-foreground italic flex-grow">"{testimonial.quote}"</p>
+                          <div className="flex items-center gap-4 pt-4">
+                            {avatar && (
+                              <Image
+                                src={avatar.imageUrl}
+                                alt={`Portrait of ${testimonial.name}`}
+                                data-ai-hint={avatar.imageHint}
+                                width={48}
+                                height={48}
+                                className="rounded-full object-cover"
+                              />
+                            )}
+                            <div>
+                              <p className="font-semibold">{testimonial.name}</p>
+                              <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+
+          <div className="text-center mt-12">
+            <Button asChild variant="link" size="lg">
+              <Link href="/contact">
+                Discuss Your Project With Us <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
