@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Hero } from '@/components/home/Hero';
-import { ServicesSection } from '@/components/home/ServicesSection';
+import { OrbitingServices } from '@/components/home/OrbitingServices';
 import { IndustriesSection } from '@/components/home/IndustriesSection';
 import { AboutSection } from '@/components/home/AboutSection';
 import { Testimonials } from '@/components/home/Testimonials';
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ServicesSection />
+      <OrbitingServices />
       <IndustriesSection />
       <AboutSection />
       <Testimonials />
