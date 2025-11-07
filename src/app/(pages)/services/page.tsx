@@ -1,7 +1,6 @@
 
 'use client';
 
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -13,24 +12,19 @@ import {
 import { SERVICES, SITE_NAME, SITE_PHONE_NUMBER, CTA_PRIMARY, INDUSTRIES } from '@/lib/constants';
 import PageHeader from '@/components/shared/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle, ChevronRight, HardHat, Zap, Award, Gauge, TestTube, Settings } from 'lucide-react';
+import { ChevronRight, HardHat, Zap, Award, Gauge } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Testimonials } from '@/components/home/Testimonials';
 import { CTASection } from '@/components/home/CTASection';
+import { DataFlowAnimator } from '@/components/services/DataFlowAnimator';
 
 const benefits = [
     { icon: Zap, title: "Precision & Consistency", description: "Achieve uniform hardness and case depth with our advanced induction hardening process, ensuring every component meets exact specifications." },
     { icon: Gauge, title: "Faster Turnaround", description: "Our efficient heat treatment job work in Ludhiana ensures your production timelines are met without compromising on quality." },
     { icon: HardHat, title: "Enhanced Durability", description: "Significantly increase wear resistance and fatigue life of your parts with our expert steel hardening services." },
     { icon: Award, title: "ISO 9001 Certified", description: "As a leading heat treatment company in Punjab, our commitment to quality is validated by international standards." },
-];
-
-const technicalDetails = [
-    { icon: Settings, label: "Material Compatibility", value: "Carbon Steel, Alloy Steel, Stainless Steel, Tool Steel" },
-    { icon: Gauge, label: "Power Range", value: "40 kW – 70 kW high-frequency induction units" },
-    { icon: TestTube, label: "Maximum Component Length", value: "Up to 1500mm for shaft hardening services" },
 ];
 
 const faqs = [
@@ -183,47 +177,11 @@ export default function ServicesPage() {
         <section className="py-16 md:py-24">
             <div className="container mx-auto px-4 md:px-6">
                 <PageHeader
-                    title="Technical Specifications & Process"
+                    title="The Induction Hardening Process Explained"
                     description="We utilize state-of-the-art equipment to deliver precise and repeatable results for all gear and shaft hardening job work."
                     className="text-center mb-12"
                 />
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div>
-                        <h3 className="text-2xl font-bold mb-6">Our Capabilities</h3>
-                        <ul className="space-y-4">
-                           {technicalDetails.map(detail => (
-                                <li key={detail.label} className="flex items-start gap-4 p-4 border rounded-lg">
-                                    <detail.icon className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                                    <div>
-                                        <p className="font-semibold text-lg">{detail.label}</p>
-                                        <p className="text-muted-foreground">{detail.value}</p>
-                                    </div>
-                                </li>
-                           ))}
-                        </ul>
-                    </div>
-                     <div>
-                        <h3 className="text-2xl font-bold mb-6">The Induction Hardening Process Explained</h3>
-                        <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="item-1">
-                                <AccordionTrigger>1. Preparation & Preheating</AccordionTrigger>
-                                <AccordionContent>Components are cleaned and inspected. Depending on the material and desired outcome, a preheating phase may be applied to ensure a uniform base temperature before the primary induction heating cycle.</AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-2">
-                                <AccordionTrigger>2. Induction Heating Phase</AccordionTrigger>
-                                <AccordionContent>An alternating current is passed through an induction coil, creating a magnetic field. When the steel component is placed within this field, it rapidly heats to a precise temperature above its transformation range. This is the core of our induction heat treatment in Ludhiana.</AccordionContent>
-                            </AccordionItem>
-                             <AccordionItem value="item-3">
-                                <AccordionTrigger>3. Quenching & Cooling</AccordionTrigger>
-                                <AccordionContent>Immediately after heating, the component is quenched in a controlled medium (like water or polymer) to cool it rapidly. This rapid cooling transforms the surface layer into a hard martensitic structure, achieving the desired hardness.</AccordionContent>
-                            </AccordionItem>
-                             <AccordionItem value="item-4">
-                                <AccordionTrigger>4. Quality Testing & Certification</AccordionTrigger>
-                                <AccordionContent>Post-treatment, we conduct rigorous quality checks, including hardness testing and case depth analysis, to certify that every part meets customer specifications. This guarantees the quality of our steel hardening services in Punjab.</AccordionContent>
-                            </AccordionItem>
-                        </Accordion>
-                    </div>
-                </div>
+                <DataFlowAnimator />
             </div>
         </section>
 
@@ -276,5 +234,3 @@ export default function ServicesPage() {
     </>
   );
 }
-
-    
