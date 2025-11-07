@@ -18,7 +18,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Testimonials } from '@/components/home/Testimonials';
 import { CTASection } from '@/components/home/CTASection';
-import { DataFlowAnimator } from '@/components/services/DataFlowAnimator';
+import { ProgressCards } from '@/components/services/ProgressCards';
 
 const benefits = [
     { icon: Zap, title: "Precision & Consistency", description: "Achieve uniform hardness and case depth with our advanced induction hardening process, ensuring every component meets exact specifications." },
@@ -181,7 +181,7 @@ export default function ServicesPage() {
                     description="We utilize state-of-the-art equipment to deliver precise and repeatable results for all gear and shaft hardening job work."
                     className="text-center mb-12"
                 />
-                <DataFlowAnimator />
+                <ProgressCards />
             </div>
         </section>
 
