@@ -11,6 +11,7 @@ import { JsonLd } from "@/components/shared/JsonLd";
 
 const testimonialsData = [
   {
+    id: "testimonial1",
     name: "Rajiv Mehta",
     company: "Auto Parts Manufacturer, Ludhiana",
     quote: "We approached Thakur Industries for induction hardening of our automotive shafts. Their heat treatment services in Punjab are precise and delivered excellent hardness consistency. Highly recommended for automotive component manufacturers.",
@@ -18,6 +19,7 @@ const testimonialsData = [
     rating: 5,
   },
   {
+    id: "testimonial2",
     name: "Priya Singh",
     company: "Machinery Supplier, Jalandhar",
     quote: "As a machine parts supplier from Punjab, we needed case hardening job work for a large batch of steel gears. Thakur Industries’ industrial heat treatment process ensured perfect results and fast turnaround. Their quality is unmatched.",
@@ -25,6 +27,7 @@ const testimonialsData = [
     rating: 5,
   },
   {
+    id: "testimonial3",
     name: "Amit Patel",
     company: "Engineering Firm, Delhi",
     quote: "Thakur Industries is our go-to partner in India for custom gear hardening. Their induction technology is reliable and their team ensures we meet ISO quality standards every time. Truly a top-tier metal heat treatment specialist.",
@@ -32,6 +35,7 @@ const testimonialsData = [
     rating: 5,
   },
   {
+    id: "testimonial4",
     name: "Sanjay Verma",
     company: "Agricultural Equipment Co, Patiala",
     quote: "For our agricultural equipment, the durability provided by the case hardening job work in Punjab from Thakur Industries has been a game-changer. Their team in Ludhiana understands the demands of our industry.",
@@ -39,6 +43,7 @@ const testimonialsData = [
     rating: 5,
   },
   {
+    id: "testimonial5",
     name: "Anjali Desai",
     company: "Aerospace Components Inc, Bangalore",
     quote: "Finding a reliable industrial heat treatment company in India for aerospace parts is tough. Thakur Industries delivered with exceptional precision and met all our stringent specifications for aerospace part hardening.",
@@ -121,14 +126,13 @@ export function Testimonials() {
           </motion.div>
           
           <div className="relative h-[500px] w-full max-w-4xl mx-auto">
-            <AnimatePresence>
+            <AnimatePresence initial={false}>
                 {cards.slice(0, 4).map((testimonial, index) => {
                      const avatar = PlaceHolderImages.find(img => img.id === testimonial.avatarId);
-                     const isCenter = index === 0;
 
                      return (
                         <motion.div
-                            key={testimonial.name}
+                            key={testimonial.id}
                             layout
                             initial={{ scale: 0.8, opacity: 0, y: 50 }}
                             animate={{ 
@@ -137,7 +141,7 @@ export function Testimonials() {
                                 y: index * -20,
                                 zIndex: cards.length - index
                             }}
-                            exit={{ scale: 0.8, opacity: 0, y: 50 }}
+                            exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 } }}
                             transition={{ type: "spring", stiffness: 260, damping: 20 }}
                             className="absolute w-full"
                         >
