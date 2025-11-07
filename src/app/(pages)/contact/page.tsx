@@ -159,7 +159,7 @@ export default function ContactPage() {
             <h3 className="text-3xl font-bold text-center mb-8">Our Location in Ludhiana</h3>
              <div className="relative h-[400px] w-full overflow-hidden rounded-lg border">
                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.498305727938!2d75.875935!3d30.871576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a82605f8c6b75%3A0x2d81577c38724734!2sThakur%20Induction!5e0!3m2!1sen!2sus!4v1762572000000"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.498305727938!2d75.875935!3d30.871576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a82605f8c6b75%3A0x2d81577c38724734!2sThakur%20Induction!5e0!3m2!1sen!2sus!4v1646322895696"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
