@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { INDUSTRIES, SITE_NAME } from '@/lib/constants';
+import { INDUSTRIES } from '@/lib/constants';
 import PageHeader from '@/components/shared/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Check } from 'lucide-react';
@@ -31,7 +31,7 @@ export default function IndustriesPage() {
           const isReversed = index % 2 !== 0;
           return (
             <div key={industry.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className={`relative h-96 w-full overflow-hidden rounded-lg shadow-xl ${isReversed ? 'lg:order-last' : ''}`}>
+              <div className={`relative h-80 w-full overflow-hidden rounded-lg shadow-xl ${isReversed ? 'lg:order-last' : ''}`}>
                 {image && (
                   <Image
                     src={image.imageUrl}
