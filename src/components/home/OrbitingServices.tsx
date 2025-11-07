@@ -111,9 +111,6 @@ export function OrbitingServices() {
                                     <motion.div
                                         className="flex flex-col items-center gap-2 group"
                                         style={{ rotate: -rotation.get() }}
-                                        initial={false}
-                                        animate={{ rotate: -rotation.get() }}
-                                        transition={{ duration: 0, ease: "linear" }}
                                     >
                                         <div
                                             className="relative rounded-lg overflow-hidden group-hover:scale-110 transition-transform duration-300"
