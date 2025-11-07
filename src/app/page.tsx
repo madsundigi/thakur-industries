@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Hero } from '@/components/home/Hero';
 import { OrbitingServices } from '@/components/home/OrbitingServices';
-import { IndustriesSection } from '@/components/home/IndustriesSection';
+import { IndustriesSlideshow } from '@/components/home/IndustriesSlideshow';
 import { AboutSection } from '@/components/home/AboutSection';
 import { Testimonials } from '@/components/home/Testimonials';
 import { CTASection } from '@/components/home/CTASection';
@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <OrbitingServices />
-      <IndustriesSection />
+      <IndustriesSlideshow />
       <AboutSection />
       <Testimonials />
       <CTASection />
