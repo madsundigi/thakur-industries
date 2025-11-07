@@ -1,13 +1,11 @@
 'use client'
 
-import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 
 import PageHeader from '@/components/shared/PageHeader';
 import { SITE_NAME, SITE_ADDRESS, SITE_PHONE_NUMBER } from '@/lib/constants';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Button } from "@/components/ui/button"
 import {
@@ -32,7 +30,6 @@ const formSchema = z.object({
 
 export default function ContactPage() {
   const { toast } = useToast();
-  const mapImage = PlaceHolderImages.find(img => img.id === 'contactMap');
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -160,17 +157,18 @@ export default function ContactPage() {
 
         <div className="mt-16 md:mt-24">
             <h3 className="text-3xl font-bold text-center mb-8">Our Location in Ludhiana</h3>
-             {mapImage && (
-                <div className="relative h-[400px] w-full overflow-hidden rounded-lg border">
-                     <Image
-                        src={mapImage.imageUrl}
-                        alt="Map showing location of Thakur Industries, a heat treatment specialist in Punjab"
-                        data-ai-hint={mapImage.imageHint}
-                        fill
-                        className="object-cover"
-                     />
-                </div>
-             )}
+             <div className="relative h-[400px] w-full overflow-hidden rounded-lg border">
+                 <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.498305727938!2d75.875935!3d30.871576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a82605f8c6b75%3A0x2d81577c38724734!2sThakur%20Induction!5e0!3m2!1sen!2sus!4v1762572000000"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={false}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Thakur Industries Location"
+                  ></iframe>
+            </div>
         </div>
       </div>
     </>
