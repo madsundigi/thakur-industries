@@ -40,7 +40,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative h-[90vh] min-h-[600px] w-full overflow-hidden">
+    <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-black flex items-center justify-center">
       <motion.div 
         className="absolute inset-0 z-0"
         initial={{ scale: 1.1, opacity: 0 }}
@@ -57,12 +57,12 @@ export function Hero() {
         >
           <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
         </video>
+        <div className="absolute inset-0 bg-black/70" />
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
           <motion.h1
-            className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+            className="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
             variants={container}
             initial="hidden"
             animate="visible"
@@ -70,7 +70,7 @@ export function Hero() {
             {words.map((word, index) => (
               <motion.span
                 key={index}
-                className="inline-block mr-2 md:mr-4"
+                className="inline-block mr-3 md:mr-5"
                 variants={child}
               >
                 {word}
@@ -79,7 +79,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p 
-            className="mx-auto mt-6 max-w-3xl text-lg text-gray-200 md:text-xl"
+            className="mx-auto mt-8 max-w-3xl text-lg text-gray-300 md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.5 }}
@@ -88,18 +88,18 @@ export function Hero() {
           </motion.p>
           
           <motion.div 
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.5 }}
           >
-            <Button asChild size="lg" className="w-full sm:w-auto">
+            <Button asChild size="lg" className="w-full sm:w-auto text-lg py-7 px-10">
               <Link href="/contact">
                 {CTA_PRIMARY}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
+            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto text-lg py-7 px-10">
               <Link href="/contact">
                 {CTA_SECONDARY}
                 <Phone className="ml-2 h-5 w-5" />

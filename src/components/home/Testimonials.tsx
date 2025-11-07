@@ -16,6 +16,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import PageHeader from "@/components/shared/PageHeader";
 import { Button } from "@/components/ui/button";
 import { JsonLd } from "@/components/shared/JsonLd";
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
@@ -92,13 +93,20 @@ export function Testimonials() {
           <JsonLd key={index} data={generateReviewSchema(testimonial)} />
         ))}
       </div>
-      <section id="testimonials" aria-label="Client Testimonials" className="py-16 md:py-24 bg-background">
+      <section id="testimonials" aria-label="Client Testimonials" className="py-24 md:py-32 bg-secondary">
         <div className="container mx-auto px-4 md:px-6">
-          <PageHeader
-            title="Trusted by Manufacturers Across Punjab"
-            description="Building lasting partnerships through reliable results, technical excellence, and exceptional service."
-            className="text-center mb-12"
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <PageHeader
+              title="Trusted by Industry Leaders"
+              description="Building lasting partnerships through reliable results, technical excellence, and exceptional service across India."
+              className="text-center mb-16"
+            />
+          </motion.div>
           <Carousel
             opts={{
               align: "start",
@@ -112,14 +120,14 @@ export function Testimonials() {
                 return (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Card className="h-full flex flex-col justify-between border-2">
-                        <CardContent className="p-6 flex flex-col items-start gap-6">
+                      <Card className="h-full flex flex-col justify-between bg-background border-white/10 p-8">
+                        <CardContent className="p-0 flex flex-col items-start gap-6">
                           <div className="flex">
                             {Array.from({ length: testimonial.rating }).map((_, i) => (
                               <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                             ))}
                           </div>
-                          <p className="text-muted-foreground italic flex-grow">"{testimonial.quote}"</p>
+                          <p className="text-muted-foreground text-lg italic flex-grow">"{testimonial.quote}"</p>
                           <div className="flex items-center gap-4 pt-4">
                             {avatar && (
                               <Image
@@ -132,7 +140,7 @@ export function Testimonials() {
                               />
                             )}
                             <div>
-                              <p className="font-semibold">{testimonial.name}</p>
+                              <p className="font-semibold text-lg">{testimonial.name}</p>
                               <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                             </div>
                           </div>
@@ -143,17 +151,10 @@ export function Testimonials() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious className="hidden md:flex left-[-50px] bg-background/50 border-white/20 hover:bg-primary" />
+            <CarouselNext className="hidden md:flex right-[-50px] bg-background/50 border-white/20 hover:bg-primary" />
           </Carousel>
 
-          <div className="text-center mt-12">
-            <Button asChild variant="link" size="lg">
-              <Link href="/contact">
-                Discuss Your Project With Us <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
         </div>
       </section>
     </>
