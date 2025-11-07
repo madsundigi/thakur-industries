@@ -1,24 +1,15 @@
 
 'use client';
 
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import PageHeader from "@/components/shared/PageHeader";
-import { Button } from "@/components/ui/button";
 import { JsonLd } from "@/components/shared/JsonLd";
-import { motion } from 'framer-motion';
 
-const testimonials = [
+const testimonialsData = [
   {
     name: "Rajiv Mehta",
     company: "Auto Parts Manufacturer, Ludhiana",
@@ -56,7 +47,7 @@ const testimonials = [
   },
 ];
 
-const generateReviewSchema = (testimonial: typeof testimonials[0]) => ({
+const generateReviewSchema = (testimonial: typeof testimonialsData[0]) => ({
     '@context': 'https://schema.org',
     '@type': 'Review',
     'itemReviewed': {
@@ -85,11 +76,32 @@ const generateReviewSchema = (testimonial: typeof testimonials[0]) => ({
     'reviewBody': testimonial.quote
 });
 
+
 export function Testimonials() {
+  const [cards, setCards] = useState(testimonialsData);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCards(shuffle([...testimonialsData]));
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const shuffle = (array: typeof testimonialsData) => {
+    let currentIndex = array.length, randomIndex;
+    while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+    return array;
+  };
+
   return (
-    <>
+     <>
       <div className="hidden">
-        {testimonials.map((testimonial, index) => (
+        {testimonialsData.map((testimonial, index) => (
           <JsonLd key={index} data={generateReviewSchema(testimonial)} />
         ))}
       </div>
@@ -107,53 +119,61 @@ export function Testimonials() {
               className="text-center mb-16"
             />
           </motion.div>
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => {
-                const avatar = PlaceHolderImages.find(img => img.id === testimonial.avatarId);
-                return (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1 h-full">
-                      <Card className="h-full flex flex-col justify-between bg-background border-white/10 p-8">
-                        <CardContent className="p-0 flex flex-col items-start gap-6">
-                          <div className="flex">
-                            {Array.from({ length: testimonial.rating }).map((_, i) => (
-                              <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                            ))}
-                          </div>
-                          <p className="text-muted-foreground text-lg italic flex-grow">"{testimonial.quote}"</p>
-                          <div className="flex items-center gap-4 pt-4">
-                            {avatar && (
-                              <Image
-                                src={avatar.imageUrl}
-                                alt={`Portrait of ${testimonial.name}`}
-                                data-ai-hint={avatar.imageHint}
-                                width={48}
-                                height={48}
-                                className="rounded-full object-cover"
-                              />
-                            )}
-                            <div>
-                              <p className="font-semibold text-lg">{testimonial.name}</p>
-                              <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+          
+          <div className="relative h-[500px] w-full max-w-4xl mx-auto">
+            <AnimatePresence>
+                {cards.slice(0, 4).map((testimonial, index) => {
+                     const avatar = PlaceHolderImages.find(img => img.id === testimonial.avatarId);
+                     const isCenter = index === 0;
+
+                     return (
+                        <motion.div
+                            key={testimonial.name}
+                            layout
+                            initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                            animate={{ 
+                                scale: 1 - (index * 0.05), 
+                                opacity: 1 - (index * 0.2), 
+                                y: index * -20,
+                                zIndex: cards.length - index
+                            }}
+                            exit={{ scale: 0.8, opacity: 0, y: 50 }}
+                            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                            className="absolute w-full"
+                        >
+                            <div className="p-1 h-full">
+                                <div className="h-full flex flex-col justify-between bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-2xl">
+                                    <div className="p-0 flex flex-col items-start gap-6">
+                                        <div className="flex">
+                                            {Array.from({ length: testimonial.rating }).map((_, i) => (
+                                            <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                                            ))}
+                                        </div>
+                                        <p className="text-muted-foreground text-lg italic flex-grow">"{testimonial.quote}"</p>
+                                        <div className="flex items-center gap-4 pt-4">
+                                            {avatar && (
+                                            <Image
+                                                src={avatar.imageUrl}
+                                                alt={`Portrait of ${testimonial.name}`}
+                                                data-ai-hint={avatar.imageHint}
+                                                width={48}
+                                                height={48}
+                                                className="rounded-full object-cover"
+                                            />
+                                            )}
+                                            <div>
+                                            <p className="font-semibold text-lg">{testimonial.name}</p>
+                                            <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                );
-              })}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex left-[-50px] bg-background/50 border-white/20 hover:bg-primary" />
-            <CarouselNext className="hidden md:flex right-[-50px] bg-background/50 border-white/20 hover:bg-primary" />
-          </Carousel>
+                        </motion.div>
+                     );
+                })}
+            </AnimatePresence>
+          </div>
 
         </div>
       </section>
