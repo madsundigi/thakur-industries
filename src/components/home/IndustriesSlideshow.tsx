@@ -7,7 +7,7 @@ import { INDUSTRIES } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import PageHeader from '../shared/PageHeader';
 
-const CYLINDER_RADIUS = 350; // Adjust this to change the size of the cylinder
+const CYLINDER_RADIUS = 250; // Adjust this to change the size of the cylinder
 const ROTATION_SPEED = 0.05; // Adjust this for auto-rotation speed
 const DRAG_FACTOR = 0.1; // Adjust this for drag sensitivity
 
@@ -118,7 +118,7 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
 
     return (
         <motion.div
-            className="absolute top-0 left-1/2 w-[240px] h-[280px] -ml-[120px]"
+            className="absolute top-0 left-1/2 w-[180px] h-[210px] -ml-[90px]"
             style={{
                 transform: `translateX(${x}px) translateZ(${z}px) rotateY(${itemAngle}deg)`,
             }}
@@ -138,7 +138,7 @@ function CylinderItem({ industry, itemAngle, rotationY, radius }: { industry: an
                     className="absolute bottom-0 left-0 right-0 p-4 bg-black/60 backdrop-blur-sm"
                     style={{ opacity: titleOpacity }}
                 >
-                    <h3 className="text-white font-bold text-lg">{industry.title}</h3>
+                    <h3 className="text-white font-bold text-base">{industry.title}</h3>
                 </motion.div>
             </motion.div>
             {/* Mirror Reflection Effect */}
