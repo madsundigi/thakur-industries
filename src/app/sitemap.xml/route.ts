@@ -24,7 +24,9 @@ const blogPosts = [
     'induction-hardening-for-gears-and-pinions',
     'induction-hardening-for-tool-steel-components',
     'induction-hardening-for-gearbox-components',
-    'common-materials-used-in-induction-hardening'
+    'common-materials-used-in-induction-hardening',
+    'induction-hardening-vs-nitriding',
+    'induction-hardening-job-work-for-oems'
 ];
 
 export async function GET() {
@@ -61,6 +63,3 @@ export async function GET() {
     },
   });
 }
-
-    
-    

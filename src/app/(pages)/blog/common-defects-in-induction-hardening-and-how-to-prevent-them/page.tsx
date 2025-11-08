@@ -67,7 +67,7 @@ export default function BlogPostPage() {
                 </div>
             )}
 
-            <p>At {SITE_NAME}, we combine ISO-certified process control, precision instrumentation, and real-time monitoring to eliminate these issues before they occur.</p>
+            <p>At ${SITE_NAME}, we combine ISO-certified process control, precision instrumentation, and real-time monitoring to eliminate these issues before they occur.</p>
             
             <h2 className="text-3xl font-bold mt-12">1. Surface Cracking — The Most Critical Defect</h2>
             <p>Fine cracks appear on the surface or edges of the hardened area. This is often caused by overheating, an excessive quenching rate, or sharp geometric transitions.</p>
@@ -137,11 +137,11 @@ export default function BlogPostPage() {
             </div>
             
             <h2 className="text-3xl font-bold mt-12">Conclusion: Prevention Is the Best Quality Assurance</h2>
-            <p>While heat treatment defects can be costly, they are preventable with the right process control. At {SITE_NAME}, we ensure defect-free induction hardening job work by combining skilled operators, advanced machines, and controlled quenching systems.</p>
+            <p>While heat treatment defects can be costly, they are preventable with the right process control. At ${SITE_NAME}, we ensure defect-free induction hardening job work by combining skilled operators, advanced machines, and controlled quenching systems.</p>
             
             <div className="mt-12 not-prose rounded-lg bg-secondary p-8 text-center">
                 <h3 className="text-2xl font-bold">Need Reliable Induction Hardening Job Work in Ludhiana?</h3>
-                <p className="mt-2 text-muted-foreground">Partner with {SITE_NAME} for defect-free induction hardening and heat treatment services.</p>
+                <p className="mt-2 text-muted-foreground">Partner with ${SITE_NAME} for defect-free induction hardening and heat treatment services.</p>
                 <div className="mt-6 flex justify-center gap-4">
                     <Button asChild>
                         <Link href="/contact">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>

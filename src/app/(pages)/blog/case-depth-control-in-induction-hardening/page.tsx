@@ -112,11 +112,11 @@ export default function BlogPostPage() {
             </div>
             
             <h2 className="text-3xl font-bold mt-12">Conclusion: Precision That Defines Performance</h2>
-            <p>Accurate case-depth control in induction hardening is not just a quality metric—it’s a performance guarantee. At {SITE_NAME}, we ensure micron-level consistency and defect-free results for every job.</p>
+            <p>Accurate case-depth control in induction hardening is not just a quality metric—it’s a performance guarantee. At ${SITE_NAME}, we ensure micron-level consistency and defect-free results for every job.</p>
             
             <div className="mt-12 not-prose rounded-lg bg-secondary p-8 text-center">
                 <h3 className="text-2xl font-bold">Need Reliable Case-Depth Control?</h3>
-                <p className="mt-2 text-muted-foreground">Contact {SITE_NAME} in Ludhiana for precision heat treatment job work.</p>
+                <p className="mt-2 text-muted-foreground">Contact ${SITE_NAME} in Ludhiana for precision heat treatment job work.</p>
                 <div className="mt-6 flex justify-center gap-4">
                     <Button asChild>
                         <Link href="/contact">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
