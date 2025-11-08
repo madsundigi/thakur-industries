@@ -18,6 +18,7 @@ export const NAV_LINKS = [
       { href: '/induction-hardening', label: 'Induction Hardening' },
       { href: '/case-hardening', label: 'Case Hardening' },
       { href: '/surface-hardening', label: 'Surface Hardening' },
+      { href: '/quenching-process', label: 'Quenching Process' },
     ] 
   },
   { href: '/industries', label: 'Industries' },
