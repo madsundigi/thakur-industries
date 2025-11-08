@@ -35,6 +35,24 @@
       "description": "A panoramic view of an industrial factory floor with large machinery and workers, symbolizing the company's journey.",
       "imageUrl": "https://images.unsplash.com/photo-1640494958956-f3b8c57a48ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFjdG9yeSUyMGZsb29yfGVufDB8fHx8MTc2MjQ5NzI4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "factory floor"
+    },
+    {
+      "id": "testimonialAvatar1",
+      "description": "Avatar for Karan Singh.",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyNTc1NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male portrait"
+    },
+    {
+      "id": "testimonialAvatar2",
+      "description": "Avatar for Harpreet Singh.",
+      "imageUrl": "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyNTc1NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male portrait"
+    },
+    {
+      "id": "testimonialAvatar3",
+      "description": "Avatar for Rohit Verma.",
+      "imageUrl": "https://images.unsplash.com/photo-1715412507413-c7416b47cacb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyNTc1NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male portrait"
     }
   ]
 }

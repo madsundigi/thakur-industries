@@ -1,186 +1,159 @@
 
 'use client';
 
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import { Star } from "lucide-react";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import PageHeader from "@/components/shared/PageHeader";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card"
 import { JsonLd } from "@/components/shared/JsonLd";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Star } from "lucide-react";
 
 const testimonialsData = [
   {
-    id: "testimonial1",
-    name: "Rajiv Mehta",
-    company: "Auto Parts Manufacturer, Ludhiana",
-    quote: "We approached Thakur Industries for induction hardening of our automotive shafts. Their heat treatment services in Punjab are precise and delivered excellent hardness consistency. Highly recommended for automotive component manufacturers.",
-    avatarId: "testimonialAvatar1",
+    name: "Karan Singh",
+    company: "Ludhiana Gears Pvt. Ltd.",
+    quote: "Reliable and precise hardening job work every time. Their induction hardening process in Ludhiana is top-notch.",
     rating: 5,
+    avatarId: "testimonialAvatar1"
   },
   {
-    id: "testimonial2",
-    name: "Priya Singh",
-    company: "Machinery Supplier, Jalandhar",
-    quote: "As a machine parts supplier from Punjab, we needed case hardening job work for a large batch of steel gears. Thakur Industries’ industrial heat treatment process ensured perfect results and fast turnaround. Their quality is unmatched.",
-    avatarId: "testimonialAvatar2",
+    name: "Harpreet Singh",
+    company: "Harpreet Engineering Works, Rajpura",
+    quote: "One of the best induction heat treatment companies in Punjab. Quality and delivery always on time for our case hardening needs.",
     rating: 5,
+    avatarId: "testimonialAvatar2"
   },
   {
-    id: "testimonial3",
-    name: "Amit Patel",
-    company: "Engineering Firm, Delhi",
-    quote: "Thakur Industries is our go-to partner in India for custom gear hardening. Their induction technology is reliable and their team ensures we meet ISO quality standards every time. Truly a top-tier metal heat treatment specialist.",
-    avatarId: "testimonialAvatar3",
+    name: "Rohit Verma",
+    company: "Rohit Manufacturing Co., Ambala",
+    quote: "Professional service and consistent quality for our automotive shafts. A great surface hardening company to work with.",
     rating: 5,
-  },
-  {
-    id: "testimonial4",
-    name: "Sanjay Verma",
-    company: "Agricultural Equipment Co, Patiala",
-    quote: "For our agricultural equipment, the durability provided by the case hardening job work in Punjab from Thakur Industries has been a game-changer. Their team in Ludhiana understands the demands of our industry.",
-    avatarId: "testimonialAvatar4",
-    rating: 5,
-  },
-  {
-    id: "testimonial5",
-    name: "Anjali Desai",
-    company: "Aerospace Components Inc, Bangalore",
-    quote: "Finding a reliable industrial heat treatment company in India for aerospace parts is tough. Thakur Industries delivered with exceptional precision and met all our stringent specifications for aerospace part hardening.",
-    avatarId: "testimonialAvatar5",
-    rating: 5,
-  },
+    avatarId: "testimonialAvatar3"
+  }
 ];
 
-const generateReviewSchema = (testimonial: typeof testimonialsData[0]) => ({
-    '@context': 'https://schema.org',
-    '@type': 'Review',
-    'itemReviewed': {
-      '@type': 'LocalBusiness',
-      'name': 'Thakur Industries',
-      'image': 'https://thakurinduction.com/logo.png',
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
-        'addressLocality': 'Ludhiana',
-        'addressRegion': 'Punjab',
-        'postalCode': '141003',
-        'addressCountry': 'IN'
-      },
-      'telephone': '+91 7900000776'
-    },
-    'reviewRating': {
-      '@type': 'Rating',
-      'ratingValue': testimonial.rating.toString(),
-      'bestRating': '5'
-    },
-    'author': {
-      '@type': 'Person',
-      'name': `${testimonial.name}, ${testimonial.company}`
-    },
-    'reviewBody': testimonial.quote
-});
-
-
 export function Testimonials() {
-  const [cards, setCards] = useState(testimonialsData);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCards(shuffle([...testimonialsData]));
-    }, 2000);
+    const reviewSchema = {
+        "@context": "https://schema.org/",
+        "@type": "LocalBusiness",
+        "name": "Thakur Induction",
+        "image": "https://thakurinduction.com/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri",
+            "addressLocality": "Ludhiana",
+            "addressRegion": "Punjab",
+            "postalCode": "141003",
+            "addressCountry": "IN"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "38"
+        },
+        "review": testimonialsData.map(t => ({
+          "@type": "Review",
+          "author": {"@type": "Person", "name": t.name },
+          "reviewBody": t.quote,
+          "reviewRating": {"@type": "Rating", "ratingValue": t.rating.toString()}
+        }))
+    };
 
-    return () => clearInterval(interval);
-  }, []);
+    return (
+        <section className="py-20 md:py-28 bg-secondary">
+            <JsonLd data={reviewSchema} />
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center max-w-3xl mx-auto">
+                    <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                        What Our Clients Say About Our Heat Treatment Services
+                    </h2>
+                    <p className="mt-4 text-lg text-muted-foreground">
+                        Trusted by Manufacturers Across Ludhiana, Punjab & Haryana for Precision Hardening Job Work
+                    </p>
+                </div>
 
-  const shuffle = (array: typeof testimonialsData) => {
-    let currentIndex = array.length, randomIndex;
-    while (currentIndex !== 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-    }
-    return array;
-  };
-
-  return (
-     <>
-      <div className="hidden">
-        {testimonialsData.map((testimonial, index) => (
-          <JsonLd key={index} data={generateReviewSchema(testimonial)} />
-        ))}
-      </div>
-      <section id="testimonials" aria-label="Client Testimonials" className="py-24 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <PageHeader
-              title="Trusted by Industry Leaders"
-              description="Building lasting partnerships through reliable results, technical excellence, and exceptional service across India."
-              className="text-center mb-16"
-            />
-          </motion.div>
-          
-          <div className="relative h-[500px] w-full max-w-4xl mx-auto">
-            <AnimatePresence initial={false}>
-                {cards.slice(0, 4).map((testimonial, index) => {
-                     const avatar = PlaceHolderImages.find(img => img.id === testimonial.avatarId);
-
-                     return (
-                        <motion.div
-                            key={testimonial.id}
-                            layout
-                            initial={{ scale: 0.8, opacity: 0, y: 50 }}
-                            animate={{ 
-                                scale: 1 - (index * 0.05), 
-                                opacity: 1 - (index * 0.2), 
-                                y: index * -20,
-                                zIndex: cards.length - index
-                            }}
-                            exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 } }}
-                            transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                            className="absolute w-full"
-                        >
-                            <div className="p-1 h-full">
-                                <div className="h-full flex flex-col justify-between bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-2xl">
-                                    <div className="p-0 flex flex-col items-start gap-6">
-                                        <div className="flex">
-                                            {Array.from({ length: testimonial.rating }).map((_, i) => (
-                                            <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                                            ))}
-                                        </div>
-                                        <p className="text-muted-foreground text-lg italic flex-grow">"{testimonial.quote}"</p>
-                                        <div className="flex items-center gap-4 pt-4">
-                                            {avatar && (
-                                            <Image
-                                                src={avatar.imageUrl}
-                                                alt={`Portrait of ${testimonial.name}`}
-                                                data-ai-hint={avatar.imageHint}
-                                                width={48}
-                                                height={48}
-                                                className="rounded-full object-cover"
-                                            />
-                                            )}
-                                            <div>
-                                            <p className="font-semibold text-lg">{testimonial.name}</p>
-                                            <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                                            </div>
-                                        </div>
+                {/* Desktop Grid */}
+                <div className="hidden md:grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
+                    {testimonialsData.map((testimonial) => {
+                        const avatar = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
+                        return (
+                        <Card key={testimonial.name} className="bg-card">
+                            <CardContent className="p-6 flex flex-col items-center text-center">
+                                <div className="flex mb-4">
+                                    {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
+                                </div>
+                                <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
+                                <div className="flex items-center gap-4 mt-6">
+                                     {avatar && (
+                                        <Image
+                                            src={avatar.imageUrl}
+                                            alt={`Avatar of ${testimonial.name}`}
+                                            width={48}
+                                            height={48}
+                                            className="rounded-full"
+                                            data-ai-hint={avatar.imageHint}
+                                        />
+                                     )}
+                                    <div>
+                                        <p className="font-semibold text-foreground">{testimonial.name}</p>
+                                        <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                                     </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                     );
-                })}
-            </AnimatePresence>
-          </div>
+                            </CardContent>
+                        </Card>
+                    )})}
+                </div>
 
-        </div>
-      </section>
-    </>
-  );
+                 {/* Mobile Carousel */}
+                <Carousel
+                    opts={{ align: "start", loop: true }}
+                    className="w-full max-w-md mx-auto md:hidden mt-12"
+                >
+                    <CarouselContent>
+                        {testimonialsData.map((testimonial, index) => {
+                             const avatar = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
+                            return (
+                            <CarouselItem key={index}>
+                                <div className="p-1">
+                                <Card>
+                                    <CardContent className="p-6 flex flex-col items-center text-center">
+                                         <div className="flex mb-4">
+                                            {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
+                                        </div>
+                                        <p className="text-muted-foreground italic text-base">"{testimonial.quote}"</p>
+                                        <div className="flex items-center gap-4 mt-6">
+                                            {avatar && (
+                                                <Image
+                                                    src={avatar.imageUrl}
+                                                    alt={`Avatar of ${testimonial.name}`}
+                                                    width={40}
+                                                    height={40}
+                                                    className="rounded-full"
+                                                    data-ai-hint={avatar.imageHint}
+                                                />
+                                            )}
+                                            <div>
+                                                <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
+                                                <p className="text-xs text-muted-foreground">{testimonial.company}</p>
+                                            </div>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                                </div>
+                            </CarouselItem>
+                        )})}
+                    </CarouselContent>
+                    <CarouselPrevious className="-left-4" />
+                    <CarouselNext className="-right-4" />
+                </Carousel>
+            </div>
+        </section>
+    );
 }

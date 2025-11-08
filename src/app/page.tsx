@@ -8,6 +8,8 @@ import { MaterialExpertise } from '@/components/home/MaterialExpertise';
 import { ProcessSection } from '@/components/home/ProcessSection';
 import { ServiceArea } from '@/components/home/ServiceArea';
 import { CTASection } from '@/components/home/CTASection';
+import { Testimonials } from '@/components/home/Testimonials';
+import { Faq } from '@/components/home/Faq';
 
 export const metadata: Metadata = {
   title: 'Induction Hardening & Heat Treatment in Ludhiana, Punjab',
@@ -22,9 +24,11 @@ export default function Home() {
       <AboutSection />
       <ServicesOverview />
       <IndustriesServed />
+      <Testimonials />
       <MaterialExpertise />
       <ProcessSection />
       <ServiceArea />
+      <Faq />
       <CTASection />
     </>
   );
