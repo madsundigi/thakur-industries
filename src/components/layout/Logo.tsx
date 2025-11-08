@@ -1,3 +1,5 @@
+import { SITE_NAME } from "@/lib/constants";
+
 export function Logo() {
   return (
     <div className="flex items-center gap-2">
@@ -20,7 +22,7 @@ export function Logo() {
           fill="currentColor"
         />
       </svg>
-      <span className="font-bold text-xl text-foreground hidden sm:inline-block">Thakur Industries</span>
+      <span className="font-bold text-lg text-foreground hidden sm:inline-block">{SITE_NAME}</span>
     </div>
   );
 }

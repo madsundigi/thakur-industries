@@ -1,3 +1,4 @@
+
 export function JsonLd({ data }: { data: object }) {
   return (
     <script

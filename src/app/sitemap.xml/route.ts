@@ -1,3 +1,4 @@
+
 import { SITE_URL, NAV_LINKS, SERVICES } from '@/lib/constants';
 
 export async function GET() {

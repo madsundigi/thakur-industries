@@ -1,20 +1,18 @@
+
 'use client';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { CTA_PRIMARY, CTA_SECONDARY } from '@/lib/constants';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
-  const headline = "Precision Induction Heat Treatment & Case Hardening — Ludhiana";
-  const words = headline.split(" ");
 
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.08, delayChildren: 0.2 * i },
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 * i },
     }),
   };
 
@@ -40,10 +38,10 @@ export function Hero() {
   };
 
   return (
-    <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-black flex items-center justify-center">
+    <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden bg-black flex items-center justify-center">
       <motion.div 
         className="absolute inset-0 z-0"
-        initial={{ scale: 1.1, opacity: 0 }}
+        initial={{ scale: 1.1, opacity: 0.8 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       >
@@ -57,52 +55,43 @@ export function Hero() {
         >
           <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/60" />
       </motion.div>
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
           <motion.h1
-            className="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+            className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
             variants={container}
             initial="hidden"
             animate="visible"
           >
-            {words.map((word, index) => (
-              <motion.span
-                key={index}
-                className="inline-block mr-3 md:mr-5"
-                variants={child}
-              >
-                {word}
-              </motion.span>
-            ))}
+            Induction Hardening & Heat Treatment Services in Ludhiana, Punjab
           </motion.h1>
 
           <motion.p 
-            className="mx-auto mt-8 max-w-3xl text-lg text-gray-300 md:text-xl"
+            className="mx-auto mt-6 max-w-2xl text-lg text-gray-200"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.5 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
           >
-            Your Durability is Our Responsibility. Leading provider of induction hardening and steel hardening services in Ludhiana for clients across India.
+            Precision Heat Treatment Job Work for Automotive, Agricultural & Industrial Components.
           </motion.p>
           
           <motion.div 
-            className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 0.5 }}
+            transition={{ delay: 1.0, duration: 0.5 }}
           >
-            <Button asChild size="lg" className="w-full sm:w-auto text-lg py-7 px-10">
+            <Button asChild size="lg" className="w-full sm:w-auto text-lg py-6 px-8 bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link href="/contact">
-                {CTA_PRIMARY}
+                Get a Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto text-lg py-7 px-10">
-              <Link href="/contact">
-                {CTA_SECONDARY}
-                <Phone className="ml-2 h-5 w-5" />
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto text-lg py-6 px-8 border-white text-white hover:bg-white hover:text-black">
+              <Link href="/services">
+                View Our Services
               </Link>
             </Button>
           </motion.div>

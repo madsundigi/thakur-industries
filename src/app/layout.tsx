@@ -4,11 +4,10 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
-import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { SITE_NAME, SITE_TAGLINE, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
+import { SITE_NAME, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { JsonLd } from '@/components/shared/JsonLd';
-import StickyCTA from '@/components/shared/StickyCTA';
+import { AeroNav } from '@/components/layout/AeroNav';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,14 +16,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: `Induction Heat Treatment & Case Hardening | ${SITE_NAME} Ludhiana`,
-    template: `%s | ${SITE_NAME}`,
-  },
-  description: `Top induction heat treatment Ludhiana. We offer induction hardening, case hardening, and steel hardening services in Punjab, India. Call ${SITE_PHONE_NUMBER}.`,
+  title: 'Induction Hardening & Heat Treatment in Ludhiana, Punjab',
+  description: `Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab. Serving nearby Haryana & Delhi industries.`,
   openGraph: {
-    title: `${SITE_NAME} | Industrial Heat Treatment Ludhiana, Punjab`,
-    description: SITE_TAGLINE,
+    title: `${SITE_NAME} | Induction Hardening & Heat Treatment in Ludhiana, Punjab`,
+    description: 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab.',
     url: SITE_URL,
     siteName: SITE_NAME,
     images: [
@@ -39,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_NAME} | Industrial Heat Treatment Ludhiana, Punjab`,
-    description: SITE_TAGLINE,
+    title: `${SITE_NAME} | Induction Hardening & Heat Treatment in Ludhiana, Punjab`,
+    description: 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab.',
     images: [`/og-image.jpg`],
   },
   alternates: {
@@ -50,8 +46,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#000000' },
-    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
+    { media: '(prefers-color-scheme: dark)', color: '#E0E0E0' },
   ],
 };
 
@@ -63,24 +59,57 @@ export default function RootLayout({
 }>) {
   const organizationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'LocalBusiness',
     name: SITE_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
+    telephone: SITE_PHONE_NUMBER,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
+      addressLocality: 'Ludhiana',
+      addressRegion: 'Punjab',
+      postalCode: '141003',
+      addressCountry: 'IN',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 30.871576,
+      longitude: 75.875935,
+    },
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: SITE_PHONE_NUMBER,
       contactType: 'Customer Service',
-      areaServed: ["Ludhiana", "Punjab", "India"],
+      areaServed: ["Ludhiana", "Punjab", "India", "Haryana", "Delhi"],
       availableLanguage: ["en", "pa", "hi"]
     },
-    description: 'Thakur Industries is a leading provider of induction heat treatment and case hardening services in Ludhiana, Punjab.',
+    description: 'Thakur Induction provides precision heat treatment and induction hardening job work for industries in Ludhiana, Punjab, Haryana & Delhi NCR.',
   };
 
+  const serviceSchema = {
+      '@context': "https://schema.org",
+      '@type': "Service",
+      "serviceType": "Induction Hardening Job Work",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Thakur Induction"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Punjab"
+      },
+      "broker": {
+        "@type": "Organization",
+        "name": "Thakur Induction"
+      }
+  }
+
   return (
-    <html lang="en" className="scroll-pt-[5rem]" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <JsonLd data={organizationSchema} />
+        <JsonLd data={serviceSchema} />
       </head>
       <body
         className={cn(
@@ -89,10 +118,9 @@ export default function RootLayout({
         )}
         suppressHydrationWarning
       >
-        <Header />
+        <AeroNav />
         <main className="flex-1">{children}</main>
         <Footer />
-        <StickyCTA />
         <Toaster />
       </body>
     </html>
