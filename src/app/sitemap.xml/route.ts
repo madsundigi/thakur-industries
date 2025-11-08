@@ -23,7 +23,8 @@ const blogPosts = [
     'case-depth-control-in-induction-hardening',
     'induction-hardening-for-gears-and-pinions',
     'induction-hardening-for-tool-steel-components',
-    'induction-hardening-for-gearbox-components'
+    'induction-hardening-for-gearbox-components',
+    'common-materials-used-in-induction-hardening'
 ];
 
 export async function GET() {
@@ -61,4 +62,5 @@ export async function GET() {
   });
 }
 
+    
     

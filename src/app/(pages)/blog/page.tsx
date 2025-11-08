@@ -160,6 +160,13 @@ const blogPosts = [
     date: 'November 05, 2024',
     imageId: 'blogGearbox'
   },
+  {
+    slug: 'common-materials-used-in-induction-hardening',
+    title: 'Common Steels Used for Induction Hardening',
+    description: 'A guide to materials that respond best to induction hardening and their ideal applications.',
+    date: 'November 12, 2024',
+    imageId: 'blogCommonMaterials'
+  },
 ];
 
 export default function BlogPage() {
@@ -204,4 +211,5 @@ export default function BlogPage() {
   );
 }
 
+    
     
