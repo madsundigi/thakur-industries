@@ -63,37 +63,37 @@
     {
       "id": "processFinishing",
       "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
-      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gear"
     },
     {
       "id": "processPreparation",
       "description": "A clean and polished metal shaft ready for the heat treatment process.",
-      "imageUrl": "https://images.unsplash.com/photo-1617966225282-39583a48790b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNoYWZ0fGVufDB8fHx8MTc2MjQ5NzUwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617966225282-39583a48790b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNoYWZ0fGVufDB8fHx8MTc2MjQ5NzUwOXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal shaft"
     },
     {
       "id": "appShaftHardening",
       "description": "Close-up of a polished crankshaft with perfectly smooth journals.",
-      "imageUrl": "https://images.unsplash.com/photo-1629895431631-699763e185b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629895431631-699763e185b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "crankshaft close-up"
     },
     {
       "id": "appGearHardening",
       "description": "An assortment of different sized industrial gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial gears"
     },
     {
       "id": "appBearingHardening",
       "description": "A large industrial ball bearing, clean and shiny.",
-      "imageUrl": "https://images.unsplash.com/photo-1611689103223-be9059357989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmVhгіbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611689103223-be9059357989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmVhгіbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial bearing"
     },
     {
       "id": "industryAutomotive",
       "description": "An automated robotic arm assembling a car on a modern production line.",
-      "imageUrl": "https://images.unsplash.com/photo-1581291519209-85e056557352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581291519209-85e056557352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive factory"
     },
     {
@@ -185,6 +185,12 @@
       "description": "A graph showing a component's lifespan increasing over time with induction hardening.",
       "imageUrl": "https://images.unsplash.com/photo-1611118677953-5593a15c8c63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmFwaCUyMGNvbXBvbmVudCUyMGxpZmV8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "component life graph"
+    },
+    {
+      "id": "blogDefects",
+      "description": "A magnified image showing a crack on a metal surface, illustrating a hardening defect.",
+      "imageUrl": "https://images.unsplash.com/photo-1576153629013-15a4220268de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGNyYWNrfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal crack"
     }
   ]
 }

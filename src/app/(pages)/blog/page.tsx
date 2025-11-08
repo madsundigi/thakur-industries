@@ -76,6 +76,13 @@ const blogPosts = [
     date: 'September 05, 2024',
     imageId: 'blogComponentLife'
   },
+  {
+    slug: 'common-defects-in-induction-hardening-and-how-to-prevent-them',
+    title: 'Top 5 Common Defects in Induction Hardening and How to Avoid Them',
+    description: 'Know the main reasons behind defects like soft spots and cracks in induction hardening, and how to prevent them.',
+    date: 'September 10, 2024',
+    imageId: 'blogDefects'
+  },
 ];
 
 export default function BlogPage() {
@@ -105,6 +112,7 @@ export default function BlogPage() {
                 )}
                 <CardHeader>
                   <CardTitle className="group-hover:text-primary transition-colors">{post.title}</CardTitle>
+
                   <CardDescription>{post.date}</CardDescription>
                 </CardHeader>
                 <CardContent>

@@ -11,7 +11,8 @@ const blogPosts = [
     'role-of-quenching-in-induction-hardening',
     'surface-vs-through-hardening',
     'heat-treatment-for-en-series-steels',
-    'how-induction-hardening-increases-component-life'
+    'how-induction-hardening-increases-component-life',
+    'common-defects-in-induction-hardening-and-how-to-prevent-them'
 ];
 
 export async function GET() {
