@@ -1,75 +1,39 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { Logo } from '@/components/layout/Logo';
 import { NAV_LINKS } from '@/lib/constants';
 import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { cn } from '@/lib/utils';
 
 export function AeroNav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // 3D tilt effect
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  const rotateX = useTransform(mouseY, [-0.5, 0.5], ['10deg', '-10deg']);
-  const rotateY = useTransform(mouseX, [-0.5, 0.5], ['-10deg', '10deg']);
-  
-  const springConfig = { stiffness: 300, damping: 30, mass: 1 };
-  const rotateXSpring = useSpring(rotateX, springConfig);
-  const rotateYSpring = useSpring(rotateY, springConfig);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-    const mouseXVal = e.clientX - rect.left;
-    const mouseYVal = e.clientY - rect.top;
-    const xPct = mouseXVal / width - 0.5;
-    const yPct = mouseYVal / height - 0.5;
-    mouseX.set(xPct);
-    mouseY.set(yPct);
-  };
-
-  const handleMouseLeave = () => {
-    mouseX.set(0);
-    mouseY.set(0);
-  };
-
-  // Scroll detection
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check on initial load
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
   return (
     <>
-      <motion.nav
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          rotateX: rotateXSpring,
-          rotateY: rotateYSpring,
-          transformStyle: 'preserve-3d',
-        }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-xl border transition-all duration-300 w-[90vw] md:w-auto ${
-          isScrolled 
-            ? 'border-neutral-300/50 bg-white/50 backdrop-blur-lg' 
-            : 'border-white/20 bg-white/20 backdrop-blur-md'
-        }`}
+      <header
+        className={cn(
+          'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+          isScrolled ? 'bg-background/80 backdrop-blur-sm shadow-md' : 'bg-transparent'
+        )}
       >
-        <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2" aria-label="Back to homepage">
             <Logo />
           </Link>
-          <div className="hidden md:flex md:items-center md:gap-1">
+          <nav className="hidden md:flex items-center gap-2">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -79,18 +43,26 @@ export function AeroNav() {
                 {link.label}
               </Link>
             ))}
-          </div>
+          </nav>
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-foreground">
-              {isOpen ? <X size={24}/> : <Menu size={24} />}
+            <button onClick={() => setIsOpen(!isOpen)} className="text-foreground" aria-label="Toggle mobile menu">
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
-      </motion.nav>
+      </header>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="fixed inset-0 top-24 z-40 bg-background/95 backdrop-blur-sm md:hidden">
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            className="fixed inset-x-0 top-20 z-40 bg-background/95 backdrop-blur-sm md:hidden"
+            onClick={() => setIsOpen(false)}
+          >
            <div className="flex h-full flex-col">
              <nav className="flex flex-col items-center gap-6 p-8">
                {NAV_LINKS.map((link) => (
@@ -105,8 +77,9 @@ export function AeroNav() {
                ))}
              </nav>
            </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
