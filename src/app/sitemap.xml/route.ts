@@ -8,7 +8,8 @@ const blogPosts = [
     'top-benefits-of-induction-heat-treatment',
     'materials-suitable-for-induction-hardening',
     'induction-hardening-for-automotive-parts',
-    'role-of-quenching-in-induction-hardening'
+    'role-of-quenching-in-induction-hardening',
+    'surface-vs-through-hardening'
 ];
 
 export async function GET() {

@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -53,6 +54,13 @@ const blogPosts = [
     description: 'Explore how polymer and water quenching affect the hardness, cooling rate, and structure of heat-treated metals.',
     date: 'August 15, 2024',
     imageId: 'blogQuenchingRole'
+  },
+  {
+    slug: 'surface-vs-through-hardening',
+    title: 'Surface Hardening vs. Through Hardening: Which is Right for You?',
+    description: 'Understand the differences between surface hardening and through hardening and which process is right for your industrial components.',
+    date: 'August 20, 2024',
+    imageId: 'blogHardeningComparison'
   },
 ];
 
