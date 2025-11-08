@@ -4,7 +4,8 @@ import { SITE_URL, NAV_LINKS, SERVICES } from '@/lib/constants';
 const blogPosts = [
     'what-is-induction-hardening-ludhiana',
     'difference-between-induction-and-case-hardening',
-    'energy-efficient-induction-heating-india'
+    'energy-efficient-induction-heating-india',
+    'top-benefits-of-induction-heat-treatment'
 ];
 
 export async function GET() {

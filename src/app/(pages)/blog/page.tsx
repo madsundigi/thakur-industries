@@ -28,6 +28,13 @@ const blogPosts = [
     imageId: 'blogPost2'
   },
   {
+    slug: 'top-benefits-of-induction-heat-treatment',
+    title: 'Top Benefits of Induction Heat Treatment for Industrial Components',
+    description: 'Discover how induction heat treatment improves component strength, precision, and durability in Ludhiana and Punjab industries.',
+    date: 'July 26, 2024',
+    imageId: 'blogPost4'
+  },
+  {
     slug: 'energy-efficient-induction-heating-india',
     title: 'Energy-Efficient Induction Heating in India’s Manufacturing',
     description: 'Discover how modern induction heating provides an energy-efficient and cost-effective solution for industrial applications across India.',

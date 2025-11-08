@@ -133,6 +133,12 @@
       "imageHint": "industrial furnace"
     },
     {
+      "id": "blogPost4",
+      "description": "A chart illustrating the benefits and efficiency gains from induction heat treatment.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZhbnRhZ2VzJTIwY2hhcnR8ZW58MHx8fHwxNzYzMzgxODExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "advantages chart"
+    },
+    {
       "id": "industryAutomotive",
       "description": "A robotic arm working on a car chassis in an automotive factory.",
       "imageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBdXRvbW90aXZlfGVufDB8fHx8MTc2MzExMDk4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
