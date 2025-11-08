@@ -14,10 +14,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
     
-    --primary: 210 40% 40%; /* Steel Blue */
+    --primary: 210 40% 35%; /* Darker Steel Blue */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 210 40% 90%; /* Lighter Steel Blue/Gray */
+    --secondary: 210 40% 95%; /* Lighter Steel Blue/Gray */
     --secondary-foreground: 224 71.4% 4.1%;
     
     --muted: 210 40% 96.1%;
@@ -42,6 +42,7 @@
   }
   html {
     @apply scroll-smooth;
+    scroll-padding-top: 6rem;
   }
   body {
     @apply bg-background text-foreground;

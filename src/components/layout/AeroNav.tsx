@@ -15,8 +15,8 @@ export function AeroNav() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const rotateX = useTransform(mouseY, [-0.5, 0.5], ['12deg', '-12deg']);
-  const rotateY = useTransform(mouseX, [-0.5, 0.5], ['-12deg', '12deg']);
+  const rotateX = useTransform(mouseY, [-0.5, 0.5], ['10deg', '-10deg']);
+  const rotateY = useTransform(mouseX, [-0.5, 0.5], ['-10deg', '10deg']);
   
   const springConfig = { stiffness: 300, damping: 30, mass: 1 };
   const rotateXSpring = useSpring(rotateX, springConfig);
@@ -59,13 +59,13 @@ export function AeroNav() {
           rotateY: rotateYSpring,
           transformStyle: 'preserve-3d',
         }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-xl border transition-all duration-300 ${
+        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-xl border transition-all duration-300 w-[90vw] md:w-auto ${
           isScrolled 
             ? 'border-neutral-300/50 bg-white/50 backdrop-blur-lg' 
             : 'border-white/20 bg-white/20 backdrop-blur-md'
         }`}
       >
-        <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2" aria-label="Back to homepage">
             <Logo />
           </Link>
@@ -74,14 +74,14 @@ export function AeroNav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-primary rounded-md"
+                className="px-3 py-2 text-sm font-medium text-foreground transition-colors hover:text-primary rounded-md"
               >
                 {link.label}
               </Link>
             ))}
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-foreground">
               {isOpen ? <X size={24}/> : <Menu size={24} />}
             </button>
           </div>
