@@ -83,6 +83,42 @@
       "description": "Interior of an industrial furnace with glowing metal parts.",
       "imageUrl": "https://images.unsplash.com/photo-1676745573126-d6ae4631d642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwZnVybmFjZXxlbnwwfHx8fDE3NjI0OTcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial furnace"
+    },
+    {
+      "id": "industryAutomotive",
+      "description": "A robotic arm working on a car chassis in an automotive factory.",
+      "imageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBdXRvbW90aXZlfGVufDB8fHx8MTc2MzExMDk4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automotive industry"
+    },
+    {
+      "id": "industryAgriculture",
+      "description": "A tractor working in a field at sunset.",
+      "imageUrl": "https://images.unsplash.com/photo-1560493676-04071c5bf627?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZ3JpY3VsdHVyZXxlbnwwfHx8fDE3NjMzNjIxNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "agriculture tractor"
+    },
+    {
+      "id": "industryMachineTool",
+      "description": "Close-up of a CNC machine cutting a piece of metal.",
+      "imageUrl": "https://images.unsplash.com/photo-1619642751225-78d7df17992b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNYWNoaW5lJTIwVG9vbHxlbnwwfHx8fDE3NjMzNjIyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "machine tool"
+    },
+    {
+      "id": "serviceCustomSolutions",
+      "description": "A person sketching a custom engineering design on a blueprint.",
+      "imageUrl": "https://images.unsplash.com/photo-1516131206008-dd95a8420954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxDdXN0b20lMjBTb2x1dGlvbnN8ZW58MHx8fHwxNzYzMzYyMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "custom solutions"
+    },
+    {
+      "id": "industryAerospace",
+      "description": "An airplane wing with the sun setting in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1432889490240-84df33d47092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBaXJwbGFuZXxlbnwwfHx8fDE3NjMzNjIzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aerospace industry"
+    },
+    {
+      "id": "industryRailway",
+      "description": "A high-speed train moving on a railway track.",
+      "imageUrl": "https://images.unsplash.com/photo-1596541223939-505877f4c02f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSYWlsd2F5fGVufDB8fHx8MTc2MzM2MjM0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "railway train"
     }
   ]
 }
