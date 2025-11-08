@@ -7,6 +7,12 @@
       "imageHint": "industrial machine"
     },
     {
+      "id": "heroIndustries",
+      "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
+      "imageUrl": "https://images.unsplash.com/photo-1573153178631-49e3aa9e018b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5kdXN0cmlhbCUyMGNvbGxhZ2V8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial collage"
+    },
+    {
       "id": "serviceInductionHardening",
       "description": "A glowing red-hot metal cog being treated by an induction hardening machine.",
       "imageUrl": "https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -21,7 +27,7 @@
     {
       "id": "caseHardeningProcess",
       "description": "A diagram or illustration showing the cross-section of a gear with a highlighted hardened outer case and a softer inner core.",
-      "imageUrl": "https://picsum.photos/seed/casehardening/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1591658904677-c2535520d960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnZWFyJTIwY3Jvc3Mtc2VjdGlvbnxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gear cross-section"
     },
     {
@@ -33,31 +39,31 @@
     {
       "id": "serviceSurfaceHardening",
       "description": "Close-up of a shaft being treated with localized induction heating, showing a glowing red ring.",
-      "imageUrl": "https://picsum.photos/seed/shaft-hardening/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1712471010531-bad62e5b357b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGFmdCUyMGhhcmRlbmluZ3xlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "shaft hardening"
     },
     {
       "id": "serviceCrossSection",
       "description": "Diagram showing the cross-section of a shaft with a hardened outer layer and a softer, ductile core.",
-      "imageUrl": "https://picsum.photos/seed/cross-section/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1718923217589-af144c13c471?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtZXRhbCUyMGNyb3NzLXNlY3Rpb258ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal cross-section"
     },
     {
       "id": "appShaftHardening",
       "description": "A close-up shot of a polished steel shaft after hardening.",
-      "imageUrl": "https://picsum.photos/seed/shaft-app/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1712471010531-bad62e5b357b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXJkZW5lZCUyMHNoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hardened shaft"
     },
     {
       "id": "appGearHardening",
       "description": "A close-up shot of the teeth of a large industrial gear after hardening.",
-      "imageUrl": "https://picsum.photos/seed/gear-app/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1581166418878-11f0dde922c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXJkZW5lZCUyMGdlYXJ8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hardened gear"
     },
     {
       "id": "appBearingHardening",
       "description": "A close-up shot of a large industrial bearing after hardening.",
-      "imageUrl": "https://picsum.photos/seed/bearing-app/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1569783899662-4bad53b57e3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXJkZW5lZCUyMGJlYXJpbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hardened bearing"
     },
     {
@@ -77,6 +83,12 @@
       "description": "A technician using a micrometer to measure the precision of a finished metal gear.",
       "imageUrl": "https://images.unsplash.com/photo-1621293883838-3725e369b3f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHF1YWxpdHklMjBjb250cm9sfGVufDB8fHx8MTc2MzExMTgwNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "quality control"
+    },
+    {
+      "id": "processQuenching",
+      "description": "A red-hot metal part being submerged in a quenching tank, with steam rising.",
+      "imageUrl": "https://images.unsplash.com/photo-1604393587377-bbe4a437ec80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdWVuY2hpbmclMjB0YW5rfGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quenching tank"
     },
     {
       "id": "aboutTimeline",
