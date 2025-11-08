@@ -101,3 +101,5 @@ export const INDUSTRIES = [
     components: ['Axles', 'Gear wheels', 'Coupling rods', 'Rail pins', 'Brake discs']
   },
 ];
+
+    
