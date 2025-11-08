@@ -90,6 +90,13 @@ const blogPosts = [
     date: 'September 15, 2024',
     imageId: 'blogFlameVsInduction'
   },
+  {
+    slug: 'importance-of-frequency-in-induction-hardening',
+    title: 'Choosing the Right Frequency for Induction Hardening Applications',
+    description: 'Learn how frequency impacts heat penetration, case depth, and hardness during the induction hardening process.',
+    date: 'September 20, 2024',
+    imageId: 'blogFrequency'
+  },
 ];
 
 export default function BlogPage() {
