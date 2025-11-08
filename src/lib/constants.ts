@@ -17,7 +17,7 @@ export const NAV_LINKS = [
     subLinks: [
       { href: '/induction-hardening', label: 'Induction Hardening' },
       { href: '/case-hardening', label: 'Case Hardening' },
-      { href: '/services#surface-hardening', label: 'Surface Hardening' },
+      { href: '/surface-hardening', label: 'Surface Hardening' },
     ] 
   },
   { href: '/industries', label: 'Industries' },
@@ -45,7 +45,7 @@ export const SERVICES = [
   {
     id: 'surface-hardening',
     title: 'Surface Hardening',
-    href: '/services#surface-hardening',
+    href: '/surface-hardening',
     description: 'Our surface hardening services in Punjab cover a range of processes to improve the mechanical properties of component surfaces for enhanced durability.',
     shortDescription: 'A range of processes to improve the mechanical properties of component surfaces.',
     image: 'serviceHeatTreatment'

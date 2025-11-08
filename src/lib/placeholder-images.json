@@ -31,6 +31,36 @@
       "imageHint": "industrial furnace"
     },
     {
+      "id": "serviceSurfaceHardening",
+      "description": "Close-up of a shaft being treated with localized induction heating, showing a glowing red ring.",
+      "imageUrl": "https://picsum.photos/seed/shaft-hardening/600/400",
+      "imageHint": "shaft hardening"
+    },
+    {
+      "id": "serviceCrossSection",
+      "description": "Diagram showing the cross-section of a shaft with a hardened outer layer and a softer, ductile core.",
+      "imageUrl": "https://picsum.photos/seed/cross-section/600/400",
+      "imageHint": "metal cross-section"
+    },
+    {
+      "id": "appShaftHardening",
+      "description": "A close-up shot of a polished steel shaft after hardening.",
+      "imageUrl": "https://picsum.photos/seed/shaft-app/600/400",
+      "imageHint": "hardened shaft"
+    },
+    {
+      "id": "appGearHardening",
+      "description": "A close-up shot of the teeth of a large industrial gear after hardening.",
+      "imageUrl": "https://picsum.photos/seed/gear-app/600/400",
+      "imageHint": "hardened gear"
+    },
+    {
+      "id": "appBearingHardening",
+      "description": "A close-up shot of a large industrial bearing after hardening.",
+      "imageUrl": "https://picsum.photos/seed/bearing-app/600/400",
+      "imageHint": "hardened bearing"
+    },
+    {
       "id": "processPreparation",
       "description": "A worker carefully inspecting a metal component before treatment.",
       "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbnNwZWN0aW5nJTIwbWV0YWx8ZW58MHx8fHwxNzYzMTExNzU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
