@@ -104,6 +104,13 @@ const blogPosts = [
     date: 'September 25, 2024',
     imageId: 'blogAgricultural'
   },
+  {
+    slug: 'gear-hardening-process-explained',
+    title: 'Understanding the Gear Hardening Process in Induction Heat Treatment',
+    description: 'Step-by-step explanation of induction gear hardening, quenching, and hardness testing in Ludhiana & Punjab.',
+    date: 'October 01, 2024',
+    imageId: 'blogGearProcess'
+  },
 ];
 
 export default function BlogPage() {

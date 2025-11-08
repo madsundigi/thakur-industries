@@ -171,7 +171,7 @@
     {
       "id": "blogHardeningComparison",
       "description": "A split-screen image showing a tough, flexible metal core on one side and a hard, crystalline surface on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJkZW5pbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJkZW5pbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "hardening comparison"
     },
     {
@@ -183,19 +183,19 @@
     {
       "id": "blogComponentLife",
       "description": "A graph showing a component's lifespan increasing over time with induction hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1611118677953-5593a15c8c63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmFwaCUyMGNvbXBvbmVudCUyMGxpZmV8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611118677953-5593a15c8c63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmFwaCUyMGNvbXBvbmVudCUyMGxpZmV8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "component life graph"
     },
     {
       "id": "blogDefects",
       "description": "A magnified image showing a crack on a metal surface, illustrating a hardening defect.",
-      "imageUrl": "https://images.unsplash.com/photo-1576153629013-15a4220268de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGNyYWNrfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576153629013-15a4220268de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGNyYWNrfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "metal crack"
     },
     {
       "id": "blogFlameVsInduction",
       "description": "A split image showing an induction coil on one side and a flame torch on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1529612423873-e3e9b88a5c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbGFtZSUyMHRvcmNofGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1529612423873-e3e9b88a5c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbGFtZSUyMHRvcmNofGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "flame vs induction"
     },
     {
@@ -207,8 +207,14 @@
     {
       "id": "blogAgricultural",
       "description": "A close-up shot of a modern tractor in a field, highlighting its powerful machinery.",
-      "imageUrl": "https://images.unsplash.com/photo-1625246333195-78d9c38AD449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFjdG9yJTIwZmFybWluZ3xlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625246333195-78d9c38AD449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFjdG9yJTIwZmFybWluZ3xlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tractor farming"
+    },
+    {
+      "id": "blogGearProcess",
+      "description": "An illustration of gear teeth being heated by an induction coil, showing the precision of the process.",
+      "imageUrl": "https://images.unsplash.com/photo-1601762744187-e6e17e454a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1Y3Rpb24lMjBjb2lsJTIwZ2VhcnxlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "induction coil gear"
     }
   ]
 }
