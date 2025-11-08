@@ -22,6 +22,7 @@ export const NAV_LINKS = [
       { href: '/material-heat-treatment', label: 'Material Treatment' },
       { href: '/component-hardening', label: 'Component Hardening' },
       { href: '/gear-hardening', label: 'Gear Hardening' },
+      { href: '/shaft-hardening', label: 'Shaft Hardening' },
     ] 
   },
   { href: '/industries', label: 'Industries' },
