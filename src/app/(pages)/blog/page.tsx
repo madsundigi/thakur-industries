@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -20,10 +21,10 @@ const blogPosts = [
     imageId: 'blogPost1'
   },
   {
-    slug: 'case-hardening-vs-induction-hardening',
-    title: 'Case Hardening vs. Induction Hardening for Steel Shafts',
+    slug: 'difference-between-induction-and-case-hardening',
+    title: 'Induction Hardening vs Case Hardening – Which Is Better for Steel Components?',
     description: 'Understand the key differences, benefits, and applications when choosing between case hardening and induction hardening for your components.',
-    date: 'November 10, 2023',
+    date: 'November 08, 2024',
     imageId: 'blogPost2'
   },
   {

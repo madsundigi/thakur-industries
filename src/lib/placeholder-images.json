@@ -65,6 +65,24 @@
       "description": "Avatar for Rohit Verma.",
       "imageUrl": "https://images.unsplash.com/photo-1715412507413-c7416b47cacb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyNTc1NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male portrait"
+    },
+    {
+      "id": "blogPost1",
+      "description": "A glowing red-hot metal cog being treated by an induction hardening machine.",
+      "imageUrl": "https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal gear"
+    },
+    {
+      "id": "blogPost2",
+      "description": "Cross-section of a metal part showing the hardened outer case and softer core.",
+      "imageUrl": "https://images.unsplash.com/photo-1687430940898-f245095d8f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNDk3Mjg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal part"
+    },
+    {
+      "id": "blogPost3",
+      "description": "Interior of an industrial furnace with glowing metal parts.",
+      "imageUrl": "https://images.unsplash.com/photo-1676745573126-d6ae4631d642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwZnVybmFjZXxlbnwwfHx8fDE3NjI0OTcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial furnace"
     }
   ]
 }
