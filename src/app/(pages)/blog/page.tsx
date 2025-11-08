@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     slug: 'what-is-induction-hardening-ludhiana',
-    title: 'What is Induction Hardening and Why It’s Used in Ludhiana?',
+    title: 'A Step-by-Step Guide to the Induction Hardening Process',
     description: 'A look into the induction hardening process, its advantages, and why it is a critical manufacturing step for Ludhiana\'s industrial sector.',
     date: 'October 25, 2023',
     imageId: 'blogPost1'
