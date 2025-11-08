@@ -1,11 +1,18 @@
 
 import { SITE_URL, NAV_LINKS, SERVICES } from '@/lib/constants';
 
+const blogPosts = [
+    'what-is-induction-hardening-ludhiana',
+    'difference-between-induction-and-case-hardening',
+    'energy-efficient-induction-heating-india'
+];
+
 export async function GET() {
   const staticPaths = NAV_LINKS.map(link => link.href);
   const servicePaths = SERVICES.map(service => `/services#${service.id}`);
+  const blogPaths = blogPosts.map(slug => `/blog/${slug}`);
   
-  const allPaths = [...new Set([...staticPaths, ...servicePaths, '/about'])];
+  const allPaths = [...new Set([...staticPaths, ...servicePaths, ...blogPaths])];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -13,6 +13,7 @@ export const NAV_LINKS = [
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
   { href: '/industries', label: 'Industries' },
+  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact Us' },
 ];
 
