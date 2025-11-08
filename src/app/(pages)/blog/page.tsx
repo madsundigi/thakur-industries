@@ -132,6 +132,13 @@ const blogPosts = [
     date: 'October 15, 2024',
     imageId: 'blogShaftsAndAxles'
   },
+  {
+    slug: 'case-depth-control-in-induction-hardening',
+    title: 'Case Depth Control & Accuracy in Induction Hardening',
+    description: 'Understand how case depth and hardness control determine the success of induction heat treatment.',
+    date: 'October 20, 2024',
+    imageId: 'blogCaseDepth'
+  },
 ];
 
 export default function BlogPage() {

@@ -19,7 +19,8 @@ const blogPosts = [
     'gear-hardening-process-explained',
     'induction-hardening-services-in-north-india',
     'induction-hardening-process-explained',
-    'induction-hardening-for-shafts-and-axles'
+    'induction-hardening-for-shafts-and-axles',
+    'case-depth-control-in-induction-hardening'
 ];
 
 export async function GET() {
