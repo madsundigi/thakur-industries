@@ -153,6 +153,13 @@ const blogPosts = [
     date: 'November 01, 2024',
     imageId: 'blogToolSteel'
   },
+  {
+    slug: 'induction-hardening-for-gearbox-components',
+    title: 'Induction Hardening for Gearbox Components',
+    description: 'Discover how induction heat treatment improves the durability and performance of gearbox parts.',
+    date: 'November 05, 2024',
+    imageId: 'blogGearbox'
+  },
 ];
 
 export default function BlogPage() {
@@ -196,3 +203,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

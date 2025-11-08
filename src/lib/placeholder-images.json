@@ -57,7 +57,7 @@
     {
       "id": "processHardening",
       "description": "A close-up of a technician monitoring the induction hardening process on a control panel.",
-      "imageUrl": "https://images.unsplash.com/photo-1581092446347-a8bce7262044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNobmljaWFuJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0OTc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581092446347-a8bce7262044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNobmljaWFuJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0OTc0MDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "technician machine"
     },
     {
@@ -243,8 +243,14 @@
     {
       "id": "blogToolSteel",
       "description": "Various tool steel components like dies, punches, and molds arranged neatly.",
-      "imageUrl": "https://images.unsplash.com/photo-1557224259-d46537b0d7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwc3RlZWx8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557224259-d46537b0d7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwc3RlZWx8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tool steel"
+    },
+    {
+      "id": "blogGearbox",
+      "description": "A close-up view of the internal gears and components of an industrial gearbox.",
+      "imageUrl": "https://images.unsplash.com/photo-1616763355548-1b606f439f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZ2VhcmJveHxlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial gearbox"
     }
   ]
 }
