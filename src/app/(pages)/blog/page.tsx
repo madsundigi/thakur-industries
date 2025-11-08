@@ -97,6 +97,13 @@ const blogPosts = [
     date: 'September 20, 2024',
     imageId: 'blogFrequency'
   },
+  {
+    slug: 'induction-hardening-for-agricultural-implements',
+    title: 'Induction Hardening Job Work for Agricultural Implements in Punjab',
+    description: "Induction hardening for agricultural & tractor components enhances strength & wear resistance for Punjab's farm sector.",
+    date: 'September 25, 2024',
+    imageId: 'blogAgricultural'
+  },
 ];
 
 export default function BlogPage() {

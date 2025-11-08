@@ -63,43 +63,43 @@
     {
       "id": "processFinishing",
       "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
-      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gear"
     },
     {
       "id": "processPreparation",
       "description": "A clean and polished metal shaft ready for the heat treatment process.",
-      "imageUrl": "https://images.unsplash.com/photo-1617966225282-39583a48790b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNoYWZ0fGVufDB8fHx8MTc2MjQ5NzUwOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617966225282-39583a48790b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNoYWZ0fGVufDB8fHx8MTc2MjQ5NzUwOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal shaft"
     },
     {
       "id": "appShaftHardening",
       "description": "Close-up of a polished crankshaft with perfectly smooth journals.",
-      "imageUrl": "https://images.unsplash.com/photo-1629895431631-699763e185b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629895431631-699763e185b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "crankshaft close-up"
     },
     {
       "id": "appGearHardening",
       "description": "An assortment of different sized industrial gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial gears"
     },
     {
       "id": "appBearingHardening",
       "description": "A large industrial ball bearing, clean and shiny.",
-      "imageUrl": "https://images.unsplash.com/photo-1611689103223-be9059357989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmVhгіbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611689103223-be9059357989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmVhгіbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial bearing"
     },
     {
       "id": "industryAutomotive",
       "description": "An automated robotic arm assembling a car on a modern production line.",
-      "imageUrl": "https://images.unsplash.com/photo-1581291519209-85e056557352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581291519209-85e056557352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive factory"
     },
     {
       "id": "industryAgriculture",
       "description": "A close-up of a tractor's rotavator tilling the soil on a farm.",
-      "imageUrl": "https://images.unsplash.com/photo-1589551422333-f529d3321946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBtYWNoaW5lcnl8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589551422333-f529d3321946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBtYWNoaW5lcnl8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "agricultural machinery"
     },
     {
@@ -111,25 +111,25 @@
     {
       "id": "aboutTimeline",
       "description": "A timeline graphic with icons representing company milestones.",
-      "imageUrl": "https://images.unsplash.com/photo-1677695154167-b59e10b473be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tcGFueSUyMGhpc3Rvcnl8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1677695154167-b59e10b473be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tcGFueSUyMGhpc3Rvcnl8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "company history"
     },
     {
       "id": "testimonialAvatar1",
       "description": "Avatar for Karan Singh",
-      "imageUrl": "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male avatar"
     },
     {
       "id": "testimonialAvatar2",
       "description": "Avatar for Harpreet Singh",
-      "imageUrl": "https://images.unsplash.com/photo-1640951613773-54706e06851d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1640951613773-54706e06851d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male avatar"
     },
     {
       "id": "testimonialAvatar3",
       "description": "Avatar for Rohit Verma",
-      "imageUrl": "https://images.unsplash.com/photo-1643732994192-03856731da2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1643732994192-03856731da2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male avatar"
     },
     {
@@ -141,13 +141,13 @@
     {
       "id": "blogPost2",
       "description": "A side-by-side comparison of two different metal gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1595208599319-c1dcf5776170?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMGdlYXJzfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1595208599319-c1dcf5776170?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMGdlYXJzfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gears"
     },
     {
       "id": "blogPost4",
       "description": "Glowing red hot metal bar being treated.",
-      "imageUrl": "https://images.unsplash.com/photo-1585751119414-ef2636f8aede?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZWF0JTIwdHJlYXRtZW50fGVufDB8fHx8MTc2MjU3Mzc0M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1585751119414-ef2636f8aede?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZWF0JTIwdHJlYXRtZW50fGVufDB8fHx8MTc2MjU3Mzc0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "heat treatment"
     },
     {
@@ -159,7 +159,7 @@
     {
       "id": "blogAutomotiveParts",
       "description": "A collection of automotive parts like gears, shafts, and bearings.",
-      "imageUrl": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdXRvbW90aXZlJTIwcGFydHN8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdXRvbW90aXZlJTIwcGFydHN8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive parts"
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": "blogHardeningComparison",
       "description": "A split-screen image showing a tough, flexible metal core on one side and a hard, crystalline surface on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJkZW5pbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJkZW5pbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hardening comparison"
     },
     {
@@ -183,19 +183,19 @@
     {
       "id": "blogComponentLife",
       "description": "A graph showing a component's lifespan increasing over time with induction hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1611118677953-5593a15c8c63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmFwaCUyMGNvbXBvbmVudCUyMGxpZmV8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611118677953-5593a15c8c63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmFwaCUyMGNvbXBvbmVudCUyMGxpZmV8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "component life graph"
     },
     {
       "id": "blogDefects",
       "description": "A magnified image showing a crack on a metal surface, illustrating a hardening defect.",
-      "imageUrl": "https://images.unsplash.com/photo-1576153629013-15a4220268de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGNyYWNrfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576153629013-15a4220268de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGNyYWNrfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal crack"
     },
     {
       "id": "blogFlameVsInduction",
       "description": "A split image showing an induction coil on one side and a flame torch on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1529612423873-e3e9b88a5c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbGFtZSUyMHRvcmNofGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1529612423873-e3e9b88a5c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbGFtZSUyMHRvcmNofGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "flame vs induction"
     },
     {
@@ -203,6 +203,12 @@
       "description": "A diagram illustrating different electromagnetic frequencies (low, medium, high) and their effect on heat penetration in a metal part.",
       "imageUrl": "https://images.unsplash.com/photo-1632159266395-2a281def5f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVjdHJvbWFnbmV0aWMlMjBmcmVxdWVuY3l8ZW58MHx8fHwxNzYyNjA1MDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "electromagnetic frequency"
+    },
+    {
+      "id": "blogAgricultural",
+      "description": "A close-up shot of a modern tractor in a field, highlighting its powerful machinery.",
+      "imageUrl": "https://images.unsplash.com/photo-1625246333195-78d9c38AD449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFjdG9yJTIwZmFybWluZ3xlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tractor farming"
     }
   ]
 }

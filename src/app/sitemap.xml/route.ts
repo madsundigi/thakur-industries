@@ -14,7 +14,8 @@ const blogPosts = [
     'how-induction-hardening-increases-component-life',
     'common-defects-in-induction-hardening-and-how-to-prevent-them',
     'induction-hardening-vs-flame-hardening',
-    'importance-of-frequency-in-induction-hardening'
+    'importance-of-frequency-in-induction-hardening',
+    'induction-hardening-for-agricultural-implements'
 ];
 
 export async function GET() {
