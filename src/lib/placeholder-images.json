@@ -51,7 +51,7 @@
     {
       "id": "processQuenching",
       "description": "A glowing hot metal part being submerged into a quenching tank, creating steam and bubbles.",
-      "imageUrl": "https://images.unsplash.com/photo-1618497827863-1454841946a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI0OTczNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618497827863-1454841946a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI0OTczNTJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal quenching"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "processFinishing",
       "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
-      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gear"
     },
     {
@@ -239,6 +239,12 @@
       "description": "A close-up of interconnected industrial gears and pinions.",
       "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gears pinions"
+    },
+    {
+      "id": "blogToolSteel",
+      "description": "Various tool steel components like dies, punches, and molds arranged neatly.",
+      "imageUrl": "https://images.unsplash.com/photo-1557224259-d46537b0d7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwc3RlZWx8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tool steel"
     }
   ]
 }

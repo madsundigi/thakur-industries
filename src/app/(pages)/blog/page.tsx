@@ -146,6 +146,13 @@ const blogPosts = [
     date: 'October 22, 2024',
     imageId: 'blogGearsAndPinions'
   },
+  {
+    slug: 'induction-hardening-for-tool-steel-components',
+    title: 'Tool Steel Induction Hardening Services in Ludhiana',
+    description: 'Learn how induction hardening enhances D2, H13, and M2 tool steels for superior strength and durability.',
+    date: 'November 01, 2024',
+    imageId: 'blogToolSteel'
+  },
 ];
 
 export default function BlogPage() {

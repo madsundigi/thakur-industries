@@ -21,7 +21,8 @@ const blogPosts = [
     'induction-hardening-process-explained',
     'induction-hardening-for-shafts-and-axles',
     'case-depth-control-in-induction-hardening',
-    'induction-hardening-for-gears-and-pinions'
+    'induction-hardening-for-gears-and-pinions',
+    'induction-hardening-for-tool-steel-components'
 ];
 
 export async function GET() {
