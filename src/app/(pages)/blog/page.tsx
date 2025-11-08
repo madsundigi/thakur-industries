@@ -139,6 +139,13 @@ const blogPosts = [
     date: 'October 20, 2024',
     imageId: 'blogCaseDepth'
   },
+  {
+    slug: 'induction-hardening-for-gears-and-pinions',
+    title: 'Gear & Pinion Induction Hardening Services in Punjab',
+    description: 'Explore gear and pinion hardening processes that enhance wear resistance for automotive and farm machinery parts.',
+    date: 'October 22, 2024',
+    imageId: 'blogGearsAndPinions'
+  },
 ];
 
 export default function BlogPage() {
