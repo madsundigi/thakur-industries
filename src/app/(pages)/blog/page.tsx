@@ -35,11 +35,11 @@ const blogPosts = [
     imageId: 'blogPost4'
   },
   {
-    slug: 'energy-efficient-induction-heating-india',
-    title: 'Energy-Efficient Induction Heating in India’s Manufacturing',
-    description: 'Discover how modern induction heating provides an energy-efficient and cost-effective solution for industrial applications across India.',
-    date: 'December 02, 2023',
-    imageId: 'blogPost3'
+    slug: 'materials-suitable-for-induction-hardening',
+    title: 'Top Materials Suitable for Induction Hardening — EN8, EN19, 4140 & More',
+    description: 'Find out which steel materials give the best results under induction hardening for industrial components in Punjab.',
+    date: 'January 15, 2024',
+    imageId: 'blogPost5'
   },
 ];
 

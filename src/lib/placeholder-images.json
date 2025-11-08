@@ -139,6 +139,12 @@
       "imageHint": "advantages chart"
     },
     {
+      "id": "blogPost5",
+      "description": "A collection of various steel grades like EN8, EN19, and 4140.",
+      "imageUrl": "https://images.unsplash.com/photo-1581092448348-523e44439c9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGVjaWFsdHklMjBzdGVlbHN8ZW58MHx8fHwxNzYzOTAwNTM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "specialty steels"
+    },
+    {
       "id": "industryAutomotive",
       "description": "A robotic arm working on a car chassis in an automotive factory.",
       "imageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBdXRvbW90aXZlfGVufDB8fHx8MTc2MzExMDk4N3ww&ixlib=rb-4.1.0&q=80&w=1080",

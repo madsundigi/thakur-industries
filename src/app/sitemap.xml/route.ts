@@ -5,7 +5,8 @@ const blogPosts = [
     'what-is-induction-hardening-ludhiana',
     'difference-between-induction-and-case-hardening',
     'energy-efficient-induction-heating-india',
-    'top-benefits-of-induction-heat-treatment'
+    'top-benefits-of-induction-heat-treatment',
+    'materials-suitable-for-induction-hardening'
 ];
 
 export async function GET() {
