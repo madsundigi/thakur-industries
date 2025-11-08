@@ -8,22 +8,30 @@ const blogPosts = [
 ];
 
 export async function GET() {
-  const staticPaths = NAV_LINKS.map(link => link.href);
-  const servicePaths = SERVICES.map(service => `/services#${service.id}`);
+  const staticPaths = NAV_LINKS.map(link => {
+    if (link.subLinks) {
+      return [link.href, ...link.subLinks.map(sl => sl.href)];
+    }
+    return link.href;
+  }).flat();
+  
+  const servicePaths = SERVICES.map(service => service.href);
   const blogPaths = blogPosts.map(slug => `/blog/${slug}`);
   
-  const allPaths = [...new Set([...staticPaths, ...servicePaths, ...blogPaths])];
+  const allPaths = [...new Set([...staticPaths, ...servicePaths, ...blogPaths, '/about', '/blog'])];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${allPaths.map((path) => `
+  ${allPaths.map((path) => {
+    if(!path) return '';
+    return `
     <url>
       <loc>${SITE_URL}${path}</loc>
       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>${path === '/' ? '1.0' : '0.8'}</priority>
     </url>
-  `).join('')}
+  `}).join('')}
 </urlset>`;
 
   return new Response(sitemap, {

@@ -45,7 +45,7 @@ export function ServicesOverview() {
             const image = PlaceHolderImages.find(img => img.id === service.image);
             return (
               <motion.div key={service.id} variants={fadeIn}>
-                <Link href={`/services#${service.id}`} className="block group">
+                <Link href={service.href || `/services#${service.id}`} className="block group">
                   <Card className="h-full overflow-hidden transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
                     {image && (
                       <div className="relative h-48 w-full">

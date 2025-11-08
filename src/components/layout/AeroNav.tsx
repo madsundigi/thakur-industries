@@ -1,12 +1,22 @@
+
 'use client';
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Logo } from '@/components/layout/Logo';
 import { NAV_LINKS } from '@/lib/constants';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
 export function AeroNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,17 +43,37 @@ export function AeroNav() {
           <Link href="/" className="flex items-center gap-2" aria-label="Back to homepage">
             <Logo />
           </Link>
-          <nav className="hidden md:flex items-center gap-2">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-3 py-2 text-sm font-medium text-foreground transition-colors hover:text-primary rounded-md"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+
+          {/* Desktop Navigation */}
+          <NavigationMenu className="hidden md:flex">
+            <NavigationMenuList>
+              {NAV_LINKS.map((link) => (
+                <NavigationMenuItem key={link.href}>
+                  {link.subLinks ? (
+                    <>
+                      <NavigationMenuTrigger className="bg-transparent text-foreground hover:text-primary focus:text-primary data-[active]:bg-transparent data-[state=open]:bg-transparent">
+                        <Link href={link.href} className="font-medium">{link.label}</Link>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid w-[150px] gap-3 p-4 md:w-[200px]">
+                          {link.subLinks.map((subLink) => (
+                            <ListItem key={subLink.label} href={subLink.href} title={subLink.label} />
+                          ))}
+                        </ul>
+                      </NavigationMenuContent>
+                    </>
+                  ) : (
+                    <Link href={link.href} legacyBehavior passHref>
+                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent text-foreground hover:text-primary focus:text-primary")}>
+                        {link.label}
+                      </NavigationMenuLink>
+                    </Link>
+                  )}
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
+
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="text-foreground" aria-label="Toggle mobile menu">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -83,3 +113,29 @@ export function AeroNav() {
     </>
   );
 }
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  )
+})
+ListItem.displayName = "ListItem"

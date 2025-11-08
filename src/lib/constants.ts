@@ -11,7 +11,15 @@ export const CTA_SECONDARY = 'View Our Services';
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
+  { 
+    href: '/services', 
+    label: 'Services',
+    subLinks: [
+      { href: '/induction-hardening', label: 'Induction Hardening' },
+      { href: '/services#case-hardening', label: 'Case Hardening' },
+      { href: '/services#surface-hardening', label: 'Surface Hardening' },
+    ] 
+  },
   { href: '/industries', label: 'Industries' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact Us' },
@@ -21,6 +29,7 @@ export const SERVICES = [
   {
     id: 'induction-hardening',
     title: 'Induction Hardening',
+    href: '/induction-hardening',
     description: 'A precision surface hardening process using electromagnetic induction to increase wear resistance and fatigue life of steel components. We are a leader in induction hardening in Ludhiana.',
     shortDescription: 'Precision surface hardening to increase wear resistance and fatigue life of steel parts.',
     image: 'serviceInductionHardening'
@@ -28,6 +37,7 @@ export const SERVICES = [
   {
     id: 'case-hardening',
     title: 'Case Hardening',
+    href: '/services#case-hardening',
     description: 'We provide expert case hardening job work in Punjab, hardening the surface of a metal object while the core remains soft, creating a durable "case". Ideal for gears and shafts.',
     shortDescription: 'Hardening the surface of a metal object while the core remains soft, creating a durable "case".',
     image: 'serviceCaseHardening'
@@ -35,6 +45,7 @@ export const SERVICES = [
   {
     id: 'surface-hardening',
     title: 'Surface Hardening',
+    href: '/services#surface-hardening',
     description: 'Our surface hardening services in Punjab cover a range of processes to improve the mechanical properties of component surfaces for enhanced durability.',
     shortDescription: 'A range of processes to improve the mechanical properties of component surfaces.',
     image: 'serviceHeatTreatment'
