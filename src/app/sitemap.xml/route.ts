@@ -8,9 +8,8 @@ const blogPosts = [
 ];
 
 export async function GET() {
-  const staticPaths = NAV_LINKS.map(link => {
+  const navLinks = NAV_LINKS.map(link => {
     if (link.subLinks) {
-      // Filter out anchor links before adding to sitemap
       const mainLinks = link.subLinks.map(sl => sl.href).filter(href => !href.includes('#'));
       return [link.href, ...mainLinks];
     }
@@ -20,7 +19,7 @@ export async function GET() {
   const servicePaths = SERVICES.map(service => service.href).filter(href => !href.includes('#'));
   const blogPaths = blogPosts.map(slug => `/blog/${slug}`);
   
-  const allPaths = [...new Set([...staticPaths, ...servicePaths, ...blogPaths, '/about', '/blog', '/quenching-process'])];
+  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening'])];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
