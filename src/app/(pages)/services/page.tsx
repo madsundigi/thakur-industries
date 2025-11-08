@@ -139,7 +139,7 @@ export default function ServicesPage() {
                     description="From induction hardening job work in Ludhiana to comprehensive case hardening in Punjab, we offer a full spectrum of steel hardening services."
                     className="text-center mb-12"
                 />
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {SERVICES.map((service, index) => {
                     const image = PlaceHolderImages.find(img => img.id === service.image);
                     return (
@@ -159,7 +159,7 @@ export default function ServicesPage() {
                             <CardTitle className="text-xl">{service.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow flex flex-col">
-                        <p className="text-muted-foreground text-sm flex-grow">{service.description}</p>
+                        <p className="text-muted-foreground text-sm flex-grow">{service.shortDescription}</p>
                         <Button asChild variant="link" className="p-0 h-auto justify-start mt-4">
                             <Link href={`/services#${service.id}`}>
                                 Learn More <ChevronRight className="ml-1 h-4 w-4" />
@@ -234,3 +234,5 @@ export default function ServicesPage() {
     </>
   );
 }
+
+    

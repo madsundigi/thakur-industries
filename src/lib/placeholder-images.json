@@ -25,10 +25,22 @@
       "imageHint": "industrial furnace"
     },
     {
+      "id": "processPreparation",
+      "description": "A worker carefully inspecting a metal component before treatment.",
+      "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbnNwZWN0aW5nJTIwbWV0YWx8ZW58MHx8fHwxNzYzMTExNzU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal inspection"
+    },
+    {
       "id": "processHardening",
       "description": "Close-up of a red-hot metal gear during the induction hardening process.",
       "imageUrl": "https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "induction heating"
+    },
+    {
+      "id": "processFinishing",
+      "description": "A technician using a micrometer to measure the precision of a finished metal gear.",
+      "imageUrl": "https://images.unsplash.com/photo-1621293883838-3725e369b3f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHF1YWxpdHklMjBjb250cm9sfGVufDB8fHx8MTc2MzExMTgwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quality control"
     },
     {
       "id": "aboutTimeline",
