@@ -177,7 +177,7 @@
     {
       "id": "blogEnSeries",
       "description": "An array of EN series steel bars and components.",
-      "imageUrl": "https://images.unsplash.com/photo-1617994899326-9c4c4b6f1e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZWNoJTIwc3RlZWxzfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617994899326-9c4c4b6f1e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZWNoJTIwc3RlZWxzfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "EN series steels"
     },
     {
@@ -201,20 +201,26 @@
     {
       "id": "blogFrequency",
       "description": "A diagram illustrating different electromagnetic frequencies (low, medium, high) and their effect on heat penetration in a metal part.",
-      "imageUrl": "https://images.unsplash.com/photo-1632159266395-2a281def5f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVjdHJvbWFnbmV0aWMlMjBmcmVxdWVuY3l8ZW58MHx8fHwxNzYyNjA1MDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1632159266395-2a281def5f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVjdHJvbWFnbmV0aWMlMjBmcmVxdWVuY3l8ZW58MHx8fHwxNzYyNjA1MDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "electromagnetic frequency"
     },
     {
       "id": "blogAgricultural",
       "description": "A close-up shot of a modern tractor in a field, highlighting its powerful machinery.",
-      "imageUrl": "https://images.unsplash.com/photo-1625246333195-78d9c38AD449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFjdG9yJTIwZmFybWluZ3xlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625246333195-78d9c38AD449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFjdG9yJTIwZmFybWluZ3xlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tractor farming"
     },
     {
       "id": "blogGearProcess",
       "description": "An illustration of gear teeth being heated by an induction coil, showing the precision of the process.",
-      "imageUrl": "https://images.unsplash.com/photo-1601762744187-e6e17e454a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1Y3Rpb24lMjBjb2lsJTIwZ2VhcnxlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601762744187-e6e17e454a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1Y3Rpb24lMjBjb2lsJTIwZ2VhcnxlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "induction coil gear"
+    },
+    {
+      "id": "blogNorthIndia",
+      "description": "Map of North India highlighting industrial regions in Punjab, Haryana, and Delhi NCR.",
+      "imageUrl": "https://images.unsplash.com/photo-1588691522856-3a83ab8414a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYSUyMG1hcCUyMHJlZ2lvbnxlbnwwfHx8fDE3NjI2MDExNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "India map region"
     }
   ]
 }

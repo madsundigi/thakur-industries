@@ -111,6 +111,13 @@ const blogPosts = [
     date: 'October 01, 2024',
     imageId: 'blogGearProcess'
   },
+  {
+    slug: 'induction-hardening-services-in-north-india',
+    title: 'Thakur Induction – Leading Induction Hardening Services in North India',
+    description: 'Serving Ludhiana, Punjab, Haryana & Delhi NCR with professional induction heat treatment & case hardening services.',
+    date: 'October 05, 2024',
+    imageId: 'blogNorthIndia'
+  },
 ];
 
 export default function BlogPage() {
