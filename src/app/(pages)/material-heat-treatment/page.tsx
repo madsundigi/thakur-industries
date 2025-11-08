@@ -207,7 +207,7 @@ export default function MaterialHeatTreatmentPage() {
                             <h2 className="text-3xl font-bold mb-4">Controlled Quenching for Alloy Steel Components</h2>
                             <p className="text-muted-foreground text-lg mb-6">Every heat treatment process at Thakur Induction is paired with customized quenching media — either polymer-based or water-based — depending on the alloy and desired hardness depth. This ensures minimal distortion, clean surface finish, and maximum hardness retention.</p>
                             <Button asChild>
-                                <Link href="/quenching-process">Learn more about our Quenching Process <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                <Link href="/component-hardening">Learn more about our Component Hardening Process <ArrowRight className="ml-2 h-4 w-4" /></Link>
                             </Button>
                         </div>
                     </div>

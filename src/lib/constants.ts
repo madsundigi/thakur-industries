@@ -20,6 +20,7 @@ export const NAV_LINKS = [
       { href: '/surface-hardening', label: 'Surface Hardening' },
       { href: '/quenching-process', label: 'Quenching Process' },
       { href: '/material-heat-treatment', label: 'Material Treatment' },
+      { href: '/component-hardening', label: 'Component Hardening' },
     ] 
   },
   { href: '/industries', label: 'Industries' },
