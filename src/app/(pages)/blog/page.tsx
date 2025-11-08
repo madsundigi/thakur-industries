@@ -69,6 +69,13 @@ const blogPosts = [
     date: 'August 25, 2024',
     imageId: 'blogEnSeries'
   },
+  {
+    slug: 'how-induction-hardening-increases-component-life',
+    title: 'How Induction Hardening Extends the Life of Shafts, Gears, and Tools',
+    description: 'Learn how surface hardening and induction processes enhance wear resistance and durability of metal components.',
+    date: 'September 05, 2024',
+    imageId: 'blogComponentLife'
+  },
 ];
 
 export default function BlogPage() {

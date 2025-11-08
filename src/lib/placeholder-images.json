@@ -33,7 +33,7 @@
     {
       "id": "serviceHeatTreatment",
       "description": "Interior of an industrial furnace with glowing metal parts.",
-      "imageUrl": "https://images.unsplash.com/photo-1676745573126-d6ae4631d642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwZnVybmFjZXxlbnwwfHx8fDE3NjI0OTcyODZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1676745573126-d6ae4631d642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwZnVybmFjZXxlbnwwfHx8fDE3NjI0OTcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial furnace"
     },
     {
@@ -51,49 +51,49 @@
     {
       "id": "processQuenching",
       "description": "A glowing hot metal part being submerged into a quenching tank, creating steam and bubbles.",
-      "imageUrl": "https://images.unsplash.com/photo-1618497827863-1454841946a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI0OTczNTJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618497827863-1454841946a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI0OTczNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal quenching"
     },
     {
       "id": "processHardening",
       "description": "A close-up of a technician monitoring the induction hardening process on a control panel.",
-      "imageUrl": "https://images.unsplash.com/photo-1581092446347-a8bce7262044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNobmljaWFuJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0OTc0MDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581092446347-a8bce7262044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNobmljaWFuJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0OTc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "technician machine"
     },
     {
       "id": "processFinishing",
       "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
-      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gear"
     },
     {
       "id": "processPreparation",
       "description": "A clean and polished metal shaft ready for the heat treatment process.",
-      "imageUrl": "https://images.unsplash.com/photo-1617966225282-39583a48790b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNoYWZ0fGVufDB8fHx8MTc2MjQ5NzUwOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617966225282-39583a48790b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNoYWZ0fGVufDB8fHx8MTc2MjQ5NzUwOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal shaft"
     },
     {
       "id": "appShaftHardening",
       "description": "Close-up of a polished crankshaft with perfectly smooth journals.",
-      "imageUrl": "https://images.unsplash.com/photo-1629895431631-699763e185b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629895431631-699763e185b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "crankshaft close-up"
     },
     {
       "id": "appGearHardening",
       "description": "An assortment of different sized industrial gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial gears"
     },
     {
       "id": "appBearingHardening",
       "description": "A large industrial ball bearing, clean and shiny.",
-      "imageUrl": "https://images.unsplash.com/photo-1611689103223-be9059357989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmVhгіbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611689103223-be9059357989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmVhгіbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial bearing"
     },
     {
       "id": "industryAutomotive",
       "description": "An automated robotic arm assembling a car on a modern production line.",
-      "imageUrl": "https://images.unsplash.com/photo-1581291519209-85e056557352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581291519209-85e056557352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive factory"
     },
     {
@@ -179,6 +179,12 @@
       "description": "An array of EN series steel bars and components.",
       "imageUrl": "https://images.unsplash.com/photo-1617994899326-9c4c4b6f1e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZWNoJTIwc3RlZWxzfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "EN series steels"
+    },
+    {
+      "id": "blogComponentLife",
+      "description": "A graph showing a component's lifespan increasing over time with induction hardening.",
+      "imageUrl": "https://images.unsplash.com/photo-1611118677953-5593a15c8c63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmFwaCUyMGNvbXBvbmVudCUyMGxpZmV8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "component life graph"
     }
   ]
 }
