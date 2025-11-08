@@ -5,7 +5,7 @@ import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-black text-gray-400 border-t border-white/10">
+    <footer className="bg-card text-gray-400 border-t border-border">
       <div className="container mx-auto px-4 py-16 md:px-6">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="flex flex-col gap-4">
@@ -51,7 +51,7 @@ export function Footer() {
              </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-white/10 pt-8 text-center text-sm text-gray-500">
+        <div className="mt-16 border-t border-border pt-8 text-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} {SITE_NAME}. All Rights Reserved. | Heat Treatment Company Ludhiana</p>
         </div>
       </div>

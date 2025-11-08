@@ -8,11 +8,13 @@ import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
 
+  const title = "Induction Hardening & Heat Treatment Services in Ludhiana, Punjab".split(" ");
+
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.2 * i },
+      transition: { staggerChildren: 0.05, delayChildren: 0.2 * i },
     }),
   };
 
@@ -55,7 +57,7 @@ export function Hero() {
         >
           <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/70" />
       </motion.div>
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
@@ -65,7 +67,15 @@ export function Hero() {
             initial="hidden"
             animate="visible"
           >
-            Induction Hardening & Heat Treatment Services in Ludhiana, Punjab
+            {title.map((word, index) => (
+              <motion.span
+                key={index}
+                variants={child}
+                className="inline-block mr-2"
+              >
+                {word}
+              </motion.span>
+            ))}
           </motion.h1>
 
           <motion.p 
@@ -83,7 +93,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.0, duration: 0.5 }}
           >
-            <Button asChild size="lg" className="w-full sm:w-auto text-lg py-6 px-8 bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button asChild size="lg" className="w-full sm:w-auto text-lg py-6 px-8 bg-primary hover:bg-primary/80 text-primary-foreground">
               <Link href="/contact">
                 Get a Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
