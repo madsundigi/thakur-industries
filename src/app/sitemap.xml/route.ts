@@ -10,12 +10,14 @@ const blogPosts = [
 export async function GET() {
   const staticPaths = NAV_LINKS.map(link => {
     if (link.subLinks) {
-      return [link.href, ...link.subLinks.map(sl => sl.href)];
+      // Filter out anchor links before adding to sitemap
+      const mainLinks = link.subLinks.map(sl => sl.href).filter(href => !href.includes('#'));
+      return [link.href, ...mainLinks];
     }
     return link.href;
   }).flat();
   
-  const servicePaths = SERVICES.map(service => service.href);
+  const servicePaths = SERVICES.map(service => service.href).filter(href => !href.includes('#'));
   const blogPaths = blogPosts.map(slug => `/blog/${slug}`);
   
   const allPaths = [...new Set([...staticPaths, ...servicePaths, ...blogPaths, '/about', '/blog'])];

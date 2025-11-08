@@ -16,7 +16,7 @@ export const NAV_LINKS = [
     label: 'Services',
     subLinks: [
       { href: '/induction-hardening', label: 'Induction Hardening' },
-      { href: '/services#case-hardening', label: 'Case Hardening' },
+      { href: '/case-hardening', label: 'Case Hardening' },
       { href: '/services#surface-hardening', label: 'Surface Hardening' },
     ] 
   },
@@ -37,7 +37,7 @@ export const SERVICES = [
   {
     id: 'case-hardening',
     title: 'Case Hardening',
-    href: '/services#case-hardening',
+    href: '/case-hardening',
     description: 'We provide expert case hardening job work in Punjab, hardening the surface of a metal object while the core remains soft, creating a durable "case". Ideal for gears and shafts.',
     shortDescription: 'Hardening the surface of a metal object while the core remains soft, creating a durable "case".',
     image: 'serviceCaseHardening'
