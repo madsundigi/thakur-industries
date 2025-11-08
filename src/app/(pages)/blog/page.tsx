@@ -125,6 +125,13 @@ const blogPosts = [
     date: 'October 10, 2024',
     imageId: 'blogGearProcess'
   },
+  {
+    slug: 'induction-hardening-for-shafts-and-axles',
+    title: 'Induction Hardening for Shafts & Axles in Ludhiana, Punjab',
+    description: 'Learn how induction hardening improves the strength and fatigue life of shafts and axles in Punjab’s industries.',
+    date: 'October 15, 2024',
+    imageId: 'blogShaftsAndAxles'
+  },
 ];
 
 export default function BlogPage() {

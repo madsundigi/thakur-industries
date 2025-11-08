@@ -18,7 +18,8 @@ const blogPosts = [
     'induction-hardening-for-agricultural-implements',
     'gear-hardening-process-explained',
     'induction-hardening-services-in-north-india',
-    'induction-hardening-process-explained'
+    'induction-hardening-process-explained',
+    'induction-hardening-for-shafts-and-axles'
 ];
 
 export async function GET() {
