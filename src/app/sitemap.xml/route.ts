@@ -5,7 +5,7 @@ export async function GET() {
   const staticPaths = NAV_LINKS.map(link => link.href);
   const servicePaths = SERVICES.map(service => `/services#${service.id}`);
   
-  const allPaths = [...new Set([...staticPaths, ...servicePaths])];
+  const allPaths = [...new Set([...staticPaths, ...servicePaths, '/about'])];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

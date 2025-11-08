@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Award, Factory, Users, Zap } from 'lucide-react';
