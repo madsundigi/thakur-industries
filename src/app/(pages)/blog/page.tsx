@@ -62,6 +62,13 @@ const blogPosts = [
     date: 'August 20, 2024',
     imageId: 'blogHardeningComparison'
   },
+  {
+    slug: 'heat-treatment-for-en-series-steels',
+    title: 'Heat Treatment & Induction Hardening for EN Series Steels — EN8, EN19, EN24',
+    description: 'Detailed guide on induction hardening & heat treatment processes for EN steels widely used in Punjab\'s industries.',
+    date: 'August 25, 2024',
+    imageId: 'blogEnSeries'
+  },
 ];
 
 export default function BlogPage() {

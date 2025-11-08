@@ -9,7 +9,8 @@ const blogPosts = [
     'materials-suitable-for-induction-hardening',
     'induction-hardening-for-automotive-parts',
     'role-of-quenching-in-induction-hardening',
-    'surface-vs-through-hardening'
+    'surface-vs-through-hardening',
+    'heat-treatment-for-en-series-steels'
 ];
 
 export async function GET() {
