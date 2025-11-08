@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -40,6 +39,13 @@ const blogPosts = [
     description: 'Find out which steel materials give the best results under induction hardening for industrial components in Punjab.',
     date: 'January 15, 2024',
     imageId: 'blogPost5'
+  },
+  {
+    slug: 'induction-hardening-for-automotive-parts',
+    title: 'Induction Hardening for Automotive Parts — Strength That Drives Performance',
+    description: 'Specialized induction hardening for automotive gears, shafts, and crankshafts for Punjab\'s automotive industry.',
+    date: 'July 30, 2024',
+    imageId: 'blogAutomotiveParts'
   },
 ];
 

@@ -49,136 +49,118 @@
       "imageHint": "metal cross-section"
     },
     {
-      "id": "appShaftHardening",
-      "description": "A close-up shot of a polished steel shaft after hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1712471010531-bad62e5b357b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXJkZW5lZCUyMHNoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "hardened shaft"
-    },
-    {
-      "id": "appGearHardening",
-      "description": "A close-up shot of the teeth of a large industrial gear after hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1581166418878-11f0dde922c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXJkZW5lZCUyMGdlYXJ8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "hardened gear"
-    },
-    {
-      "id": "appBearingHardening",
-      "description": "A close-up shot of a large industrial bearing after hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1569783899662-4bad53b57e3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXJkZW5lZCUyMGJlYXJpbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "hardened bearing"
-    },
-    {
-      "id": "processPreparation",
-      "description": "A worker carefully inspecting a metal component before treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbnNwZWN0aW5nJTIwbWV0YWx8ZW58MHx8fHwxNzYzMTExNzU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "metal inspection"
+      "id": "processQuenching",
+      "description": "A glowing hot metal part being submerged into a quenching tank, creating steam and bubbles.",
+      "imageUrl": "https://images.unsplash.com/photo-1618497827863-1454841946a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI0OTczNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal quenching"
     },
     {
       "id": "processHardening",
-      "description": "Close-up of a red-hot metal gear during the induction hardening process.",
-      "imageUrl": "https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "induction heating"
+      "description": "A close-up of a technician monitoring the induction hardening process on a control panel.",
+      "imageUrl": "https://images.unsplash.com/photo-1581092446347-a8bce7262044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWNobmljaWFuJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0OTc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technician machine"
     },
     {
       "id": "processFinishing",
-      "description": "A technician using a micrometer to measure the precision of a finished metal gear.",
-      "imageUrl": "https://images.unsplash.com/photo-1621293883838-3725e369b3f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHF1YWxpdHklMjBjb250cm9sfGVufDB8fHx8MTc2MzExMTgwNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "quality control"
-    },
-    {
-      "id": "processQuenching",
-      "description": "A red-hot metal part being submerged in a quenching tank, with steam rising.",
-      "imageUrl": "https://images.unsplash.com/photo-1604393587377-bbe4a437ec80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdWVuY2hpbmclMjB0YW5rfGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "quenching tank"
-    },
-    {
-      "id": "aboutTimeline",
-      "description": "A panoramic view of an industrial factory floor with large machinery and workers, symbolizing the company's journey.",
-      "imageUrl": "https://images.unsplash.com/photo-1640494958956-f3b8c57a48ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFjdG9yeSUyMGZsb29yfGVufDB8fHx8MTc2MjQ5NzI4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "factory floor"
-    },
-    {
-      "id": "testimonialAvatar1",
-      "description": "Avatar for Karan Singh.",
-      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyNTc1NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "male portrait"
-    },
-    {
-      "id": "testimonialAvatar2",
-      "description": "Avatar for Harpreet Singh.",
-      "imageUrl": "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyNTc1NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "male portrait"
-    },
-    {
-      "id": "testimonialAvatar3",
-      "description": "Avatar for Rohit Verma.",
-      "imageUrl": "https://images.unsplash.com/photo-1715412507413-c7416b47cacb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyNTc1NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "male portrait"
-    },
-    {
-      "id": "blogPost1",
-      "description": "A glowing red-hot metal cog being treated by an induction hardening machine.",
-      "imageUrl": "https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
+      "imageUrl": "https://images.unsplash.com/photo-1599331139446-9d3ce7786438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNDA3OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gear"
     },
     {
-      "id": "blogPost2",
-      "description": "Cross-section of a metal part showing the hardened outer case and softer core.",
-      "imageUrl": "https://images.unsplash.com/photo-1687430940898-f245095d8f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNDk3Mjg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "metal part"
+      "id": "processPreparation",
+      "description": "A clean and polished metal shaft ready for the heat treatment process.",
+      "imageUrl": "https://images.unsplash.com/photo-1617966225282-39583a48790b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNoYWZ0fGVufDB8fHx8MTc2MjQ5NzUwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal shaft"
     },
     {
-      "id": "blogPost3",
-      "description": "Interior of an industrial furnace with glowing metal parts.",
-      "imageUrl": "https://images.unsplash.com/photo-1676745573126-d6ae4631d642?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwZnVybmFjZXxlbnwwfHx8fDE3NjI0OTcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "industrial furnace"
+      "id": "appShaftHardening",
+      "description": "Close-up of a polished crankshaft with perfectly smooth journals.",
+      "imageUrl": "https://images.unsplash.com/photo-1629895431631-699763e185b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "crankshaft close-up"
     },
     {
-      "id": "blogPost4",
-      "description": "A chart illustrating the benefits and efficiency gains from induction heat treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZhbnRhZ2VzJTIwY2hhcnR8ZW58MHx8fHwxNzYzMzgxODExfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "advantages chart"
+      "id": "appGearHardening",
+      "description": "An assortment of different sized industrial gears.",
+      "imageUrl": "https://images.unsplash.com/photo-1562254922-543999a8596a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial gears"
     },
     {
-      "id": "blogPost5",
-      "description": "A collection of various steel grades like EN8, EN19, and 4140.",
-      "imageUrl": "https://images.unsplash.com/photo-1581092448348-523e44439c9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGVjaWFsdHklMjBzdGVlbHN8ZW58MHx8fHwxNzYzOTAwNTM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "specialty steels"
+      "id": "appBearingHardening",
+      "description": "A large industrial ball bearing, clean and shiny.",
+      "imageUrl": "https://images.unsplash.com/photo-1611689103223-be9059357989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYmVhгіbmd8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial bearing"
     },
     {
       "id": "industryAutomotive",
-      "description": "A robotic arm working on a car chassis in an automotive factory.",
-      "imageUrl": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBdXRvbW90aXZlfGVufDB8fHx8MTc2MzExMDk4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "automotive industry"
+      "description": "An automated robotic arm assembling a car on a modern production line.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291519209-85e056557352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZmFjdG9yeXxlbnwwfHx8fDE3NjI1OTk1Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automotive factory"
     },
     {
       "id": "industryAgriculture",
-      "description": "A tractor working in a field at sunset.",
-      "imageUrl": "https://images.unsplash.com/photo-1560493676-04071c5bf627?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZ3JpY3VsdHVyZXxlbnwwfHx8fDE3NjMzNjIxNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "agriculture tractor"
+      "description": "A close-up of a tractor's rotavator tilling the soil on a farm.",
+      "imageUrl": "https://images.unsplash.com/photo-1589551422333-f529d3321946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBtYWNoaW5lcnl8ZW58MHx8fHwxNzYyNTk5NTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "agricultural machinery"
     },
     {
       "id": "industryMachineTool",
-      "description": "Close-up of a CNC machine cutting a piece of metal.",
-      "imageUrl": "https://images.unsplash.com/photo-1619642751225-78d7df17992b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNYWNoaW5lJTIwVG9vbHxlbnwwfHx8fDE3NjMzNjIyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "machine tool"
+      "description": "A CNC machine cutting a metal part with sparks flying.",
+      "imageUrl": "https://images.unsplash.com/photo-1664392485987-8595d2493540?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxDTkMlMjBtYWNoaW5lfGVufDB8fHx8MTc2MjU5OTUyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "CNC machine"
     },
     {
-      "id": "serviceCustomSolutions",
-      "description": "A person sketching a custom engineering design on a blueprint.",
-      "imageUrl": "https://images.unsplash.com/photo-1516131206008-dd95a8420954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxDdXN0b20lMjBTb2x1dGlvbnN8ZW58MHx8fHwxNzYzMzYyMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "custom solutions"
+      "id": "aboutTimeline",
+      "description": "A timeline graphic with icons representing company milestones.",
+      "imageUrl": "https://images.unsplash.com/photo-1677695154167-b59e10b473be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tcGFueSUyMGhpc3Rvcnl8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company history"
     },
     {
-      "id": "industryAerospace",
-      "description": "An airplane wing with the sun setting in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1432889490240-84df33d47092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBaXJwbGFuZXxlbnwwfHx8fDE3NjMzNjIzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "aerospace industry"
+      "id": "testimonialAvatar1",
+      "description": "Avatar for Karan Singh",
+      "imageUrl": "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male avatar"
     },
     {
-      "id": "industryRailway",
-      "description": "A high-speed train moving on a railway track.",
-      "imageUrl": "https://images.unsplash.com/photo-1596541223939-505877f4c02f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSYWlsd2F5fGVufDB8fHx8MTc2MzM2MjM0NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "railway train"
+      "id": "testimonialAvatar2",
+      "description": "Avatar for Harpreet Singh",
+      "imageUrl": "https://images.unsplash.com/photo-1640951613773-54706e06851d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male avatar"
+    },
+    {
+      "id": "testimonialAvatar3",
+      "description": "Avatar for Rohit Verma",
+      "imageUrl": "https://images.unsplash.com/photo-1643732994192-03856731da2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYWxlJTIwYXZhdGFyfGVufDB8fHx8MTc2MjU0ODg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male avatar"
+    },
+    {
+      "id": "blogPost1",
+      "description": "A diagram explaining the induction hardening process.",
+      "imageUrl": "https://images.unsplash.com/photo-1664790702707-5de8895af266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpbmR1Y3Rpb24lMjBwcm9jZXNzfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "induction process"
+    },
+    {
+      "id": "blogPost2",
+      "description": "A side-by-side comparison of two different metal gears.",
+      "imageUrl": "https://images.unsplash.com/photo-1595208599319-c1dcf5776170?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMGdlYXJzfGVufDB8fHx8MTc2MjYwMTAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal gears"
+    },
+    {
+      "id": "blogPost4",
+      "description": "Glowing red hot metal bar being treated.",
+      "imageUrl": "https://images.unsplash.com/photo-1585751119414-ef2636f8aede?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZWF0JTIwdHJlYXRtZW50fGVufDB8fHx8MTc2MjU3Mzc0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "heat treatment"
+    },
+    {
+      "id": "blogPost5",
+      "description": "An assortment of various steel grades and alloys.",
+      "imageUrl": "https://images.unsplash.com/photo-1760008699720-fcee09c25b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdGVlbCUyMGFsbG95c3xlbnwwfHx8fDE3NjI2MDEwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "steel alloys"
+    },
+    {
+      "id": "blogAutomotiveParts",
+      "description": "A collection of automotive parts like gears, shafts, and bearings.",
+      "imageUrl": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdXRvbW90aXZlJTIwcGFydHN8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automotive parts"
     }
   ]
 }
