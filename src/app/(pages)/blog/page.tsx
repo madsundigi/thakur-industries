@@ -83,6 +83,13 @@ const blogPosts = [
     date: 'September 10, 2024',
     imageId: 'blogDefects'
   },
+  {
+    slug: 'induction-hardening-vs-flame-hardening',
+    title: 'Induction Hardening vs Flame Hardening - Which Is Better?',
+    description: 'Comparing induction and flame hardening for precision, speed, and energy efficiency in industrial metal parts.',
+    date: 'September 15, 2024',
+    imageId: 'blogFlameVsInduction'
+  },
 ];
 
 export default function BlogPage() {

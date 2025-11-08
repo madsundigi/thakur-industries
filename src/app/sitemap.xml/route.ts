@@ -12,7 +12,8 @@ const blogPosts = [
     'surface-vs-through-hardening',
     'heat-treatment-for-en-series-steels',
     'how-induction-hardening-increases-component-life',
-    'common-defects-in-induction-hardening-and-how-to-prevent-them'
+    'common-defects-in-induction-hardening-and-how-to-prevent-them',
+    'induction-hardening-vs-flame-hardening'
 ];
 
 export async function GET() {
