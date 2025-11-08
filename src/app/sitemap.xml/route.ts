@@ -6,7 +6,9 @@ const blogPosts = [
     'difference-between-induction-and-case-hardening',
     'energy-efficient-induction-heating-india',
     'top-benefits-of-induction-heat-treatment',
-    'materials-suitable-for-induction-hardening'
+    'materials-suitable-for-induction-hardening',
+    'induction-hardening-for-automotive-parts',
+    'role-of-quenching-in-induction-hardening'
 ];
 
 export async function GET() {

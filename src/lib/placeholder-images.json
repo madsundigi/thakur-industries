@@ -161,6 +161,12 @@
       "description": "A collection of automotive parts like gears, shafts, and bearings.",
       "imageUrl": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdXRvbW90aXZlJTIwcGFydHN8ZW58MHx8fHwxNzYyNjAxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive parts"
+    },
+    {
+      "id": "blogQuenchingRole",
+      "description": "Close-up of a glowing hot metal part being dipped into a quenching bath, with steam rising dramatically.",
+      "imageUrl": "https://images.unsplash.com/photo-1618497827863-1454841946a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI0OTczNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quenching process"
     }
   ]
 }

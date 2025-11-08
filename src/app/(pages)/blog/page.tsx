@@ -47,6 +47,13 @@ const blogPosts = [
     date: 'July 30, 2024',
     imageId: 'blogAutomotiveParts'
   },
+  {
+    slug: 'role-of-quenching-in-induction-hardening',
+    title: 'Understanding the Role of Polymer & Water Quenching in Induction Hardening',
+    description: 'Explore how polymer and water quenching affect the hardness, cooling rate, and structure of heat-treated metals.',
+    date: 'August 15, 2024',
+    imageId: 'blogQuenchingRole'
+  },
 ];
 
 export default function BlogPage() {
