@@ -118,6 +118,13 @@ const blogPosts = [
     date: 'October 05, 2024',
     imageId: 'blogNorthIndia'
   },
+  {
+    slug: 'induction-hardening-process-explained',
+    title: 'Step-by-Step Guide to the Induction Hardening Process',
+    description: 'Learn about the induction hardening process, frequency selection, quenching types, and its use for gears and shafts.',
+    date: 'October 10, 2024',
+    imageId: 'blogGearProcess'
+  },
 ];
 
 export default function BlogPage() {

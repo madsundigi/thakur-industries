@@ -17,7 +17,8 @@ const blogPosts = [
     'importance-of-frequency-in-induction-hardening',
     'induction-hardening-for-agricultural-implements',
     'gear-hardening-process-explained',
-    'induction-hardening-services-in-north-india'
+    'induction-hardening-services-in-north-india',
+    'induction-hardening-process-explained'
 ];
 
 export async function GET() {
