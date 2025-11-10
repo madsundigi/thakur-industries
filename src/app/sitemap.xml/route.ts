@@ -4,7 +4,6 @@ import { SITE_URL, NAV_LINKS, SERVICES } from '@/lib/constants';
 const blogPosts = [
     'what-is-induction-hardening-ludhiana',
     'difference-between-induction-and-case-hardening',
-    'energy-efficient-induction-heating-india',
     'top-benefits-of-induction-heat-treatment',
     'materials-suitable-for-induction-hardening',
     'induction-hardening-for-automotive-parts',
@@ -29,6 +28,7 @@ const blogPosts = [
     'induction-hardening-job-work-for-oems',
     'surface-hardening-benefits-for-automotive-gears',
     'induction-hardening-for-crankshafts-and-camshafts',
+    'energy-efficient-induction-heating-india',
     'induction-hardening-for-forged-and-machined-parts',
     'hardness-testing-after-induction-hardening',
     'how-to-prevent-distortion-in-induction-hardening',

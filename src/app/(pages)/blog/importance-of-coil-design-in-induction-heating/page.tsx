@@ -171,7 +171,7 @@ export default function BlogPostPage() {
             <p>Our in-house coil fabrication shop ensures short lead times and complete process control.</p>
 
             <h2 className="text-3xl font-bold mt-12">Case Study: Coil Optimization for Shaft Hardening in Ludhiana</h2>
-            <p>A machine tool manufacturer in Ludhiana faced inconsistent hardness along a 45 mm EN19 shaft using a standard helical coil. The problem was uneven heat concentration and case depth variation. {SITE_NAME} designed a custom 2-turn progressive coil with improved magnetic coupling.</p>
+            <p>A machine tool manufacturer in Ludhiana faced inconsistent hardness along a 45 mm EN19 shaft using a standard helical coil.</p>
             <p><strong>Results:</strong> Surface hardness increased from 54 to 58 HRC, case depth uniformity improved by 25%, power efficiency increased by 12%, and there was zero overheating or distortion. This design upgrade delivered measurable improvement in product quality and production efficiency.</p>
             
             <h2 className="text-3xl font-bold mt-12">Applications of Custom Coil Design Across Punjab</h2>
