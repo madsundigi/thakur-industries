@@ -167,6 +167,13 @@ const blogPosts = [
     date: 'November 12, 2024',
     imageId: 'blogCommonMaterials'
   },
+  {
+    slug: 'induction-hardening-vs-nitriding',
+    title: 'Induction Hardening vs Nitriding: Key Differences',
+    description: 'Compare induction hardening and nitriding for surface hardness, depth, and cost-effectiveness.',
+    date: 'November 15, 2024',
+    imageId: 'blogNitriding'
+  },
 ];
 
 export default function BlogPage() {
@@ -210,3 +217,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    
