@@ -271,6 +271,13 @@ const blogPosts = [
     description: 'Explore how coil geometry affects heat distribution and hardness uniformity in induction systems.',
     date: 'December 28, 2024',
     imageId: 'blogCoilDesign'
+  },
+  {
+    slug: 'surface-hardening-for-heavy-machinery-shafts',
+    title: 'Surface Hardening for Heavy Machinery Shafts',
+    description: 'Improve load-bearing capacity and wear resistance of heavy-duty shafts using induction hardening.',
+    date: 'December 30, 2024',
+    imageId: 'blogHeavyMachineryShafts'
   }
 ];
 

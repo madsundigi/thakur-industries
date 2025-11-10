@@ -9,7 +9,7 @@
     {
       "id": "heroIndustries",
       "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial collage"
     },
     {
@@ -377,6 +377,12 @@
       "description": "A close-up of a custom-wound copper induction coil.",
       "imageUrl": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1Y3Rpb24lMjBjb2lsfGVufDB8fHx8MTc2Mzk2MDE4NHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "induction coil"
+    },
+    {
+      "id": "blogHeavyMachineryShafts",
+      "description": "A large, heavy-duty industrial shaft used in machinery.",
+      "imageUrl": "https://images.unsplash.com/photo-1616422285852-24318c651f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2hhZnR8ZW58MHx8fHwxNzYzOTYxMjMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial shaft"
     }
   ]
 }
