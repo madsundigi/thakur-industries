@@ -36,7 +36,8 @@ const blogPosts = [
     'transmission-shaft-induction-hardening',
     'how-induction-heating-works-in-metal-hardening',
     'induction-hardening-for-heavy-duty-rollers',
-    'importance-of-temperature-control-in-induction-hardening'
+    'importance-of-temperature-control-in-induction-hardening',
+    'advantages-of-medium-frequency-induction-hardening'
 ];
 
 export async function GET() {

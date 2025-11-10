@@ -243,6 +243,13 @@ const blogPosts = [
     description: 'Discover how temperature control ensures hardness accuracy and prevents metallurgical defects.',
     date: 'December 20, 2024',
     imageId: 'blogTemperatureControl'
+  },
+  {
+    slug: 'advantages-of-medium-frequency-induction-hardening',
+    title: 'Advantages of Medium Frequency Induction Hardening',
+    description: 'Discover why medium frequency induction hardening is ideal for shafts, gears, and heavy components in Punjab.',
+    date: 'December 22, 2024',
+    imageId: 'blogMediumFrequency'
   }
 ];
 
