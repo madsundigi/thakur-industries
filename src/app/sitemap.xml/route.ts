@@ -41,7 +41,8 @@ const blogPosts = [
     'polymer-vs-water-quenching',
     'importance-of-coil-design-in-induction-heating',
     'surface-hardening-for-heavy-machinery-shafts',
-    'how-to-prevent-cracks-in-induction-hardened-components'
+    'how-to-prevent-cracks-in-induction-hardened-components',
+    'induction-hardening-for-hydraulic-cylinder-rods'
 ];
 
 export async function GET() {

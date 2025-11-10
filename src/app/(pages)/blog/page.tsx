@@ -285,6 +285,13 @@ const blogPosts = [
     description: 'Learn techniques to control quenching and minimize surface cracking during induction hardening.',
     date: 'December 31, 2024',
     imageId: 'blogCracks'
+  },
+  {
+    slug: 'induction-hardening-for-hydraulic-cylinder-rods',
+    title: 'Induction Hardening for Hydraulic Cylinder Rods',
+    description: 'Explore induction hardening methods used to enhance wear resistance in hydraulic and pneumatic rods.',
+    date: 'January 02, 2025',
+    imageId: 'blogHydraulicRods'
   }
 ];
 
