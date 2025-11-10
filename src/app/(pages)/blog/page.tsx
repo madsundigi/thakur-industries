@@ -70,7 +70,7 @@ const blogPosts = [
     imageId: 'blogEnSeries'
   },
   {
-    slug: 'how-induction-hardening-increases-component-life',
+    slug: 'how-induction-heat-treatment-extends-tool-life',
     title: 'How Induction Heat Treatment Extends Tool Life',
     description: 'Discover how proper heat treatment increases tool hardness, wear resistance, and lifespan.',
     date: 'November 25, 2024',
@@ -187,6 +187,13 @@ const blogPosts = [
     description: 'Explore how induction hardening improves crankshaft and camshaft durability in tractors and engines.',
     date: 'November 22, 2024',
     imageId: 'blogCrankshafts'
+  },
+  {
+    slug: 'energy-efficient-induction-heating-india',
+    title: 'Energy-Efficient Induction Hardening for Punjab Industries',
+    description: 'Learn how induction heating saves energy and supports sustainable manufacturing.',
+    date: 'November 28, 2024',
+    imageId: 'blogEnergyEfficient'
   }
 ];
 

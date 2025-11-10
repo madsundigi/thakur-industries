@@ -11,7 +11,7 @@ const blogPosts = [
     'role-of-quenching-in-induction-hardening',
     'surface-vs-through-hardening',
     'heat-treatment-for-en-series-steels',
-    'how-induction-hardening-increases-component-life',
+    'how-induction-heat-treatment-extends-tool-life',
     'common-defects-in-induction-hardening-and-how-to-prevent-them',
     'induction-hardening-vs-flame-hardening',
     'importance-of-frequency-in-induction-hardening',
