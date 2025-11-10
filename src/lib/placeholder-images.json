@@ -15,13 +15,13 @@
     {
       "id": "serviceInductionHardening",
       "description": "A glowing red-hot metal cog being treated by an induction hardening machine.",
-      "imageUrl": "https://images.unsplash.com/photo-1557201874-98d4f7c33eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557201874-98d4f7c33eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gear"
     },
     {
       "id": "serviceCaseHardening",
       "description": "Cross-section of a metal part showing the hardened outer case and softer core.",
-      "imageUrl": "https://images.unsplash.com/photo-1609192492693-15c6b06abfb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609192492693-15c6b06abfb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal part"
     },
     {
