@@ -99,7 +99,7 @@
     {
       "id": "industryAgriculture",
       "description": "A modern tractor working in a vast agricultural field.",
-      "imageUrl": "https://images.unsplash.com/photo-1643007654379-201cf8940ed4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhZ3JpY3VsdHVyYWwlMjBmaWVsZHxlbnwwfHx8fDE3NjI2OTk2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1643007654379-201cf89940ed4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhZ3JpY3VsdHVyYWwlMjBmaWVsZHxlbnwwfHx8fDE3NjI2OTk2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "agricultural field"
     },
     {
@@ -183,7 +183,7 @@
     {
       "id": "blogQuenchingRole",
       "description": "Polymer and water quenching process.",
-      "imageUrl": "https://images.unsplash.com/photo-1712025853995-d59634cf286e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWVuY2hpbmclMjBwcm9jZXNzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1712025853995-d59634cf86e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWVuY2hpbmclMjBwcm9jZXNzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "quenching process"
     },
     {
@@ -287,6 +287,12 @@
       "description": "A chart comparing the properties of induction hardening and nitriding.",
       "imageUrl": "https://images.unsplash.com/photo-1666537072206-6a7a01ecb7d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYXJpc29uJTIwY2hhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "comparison chart"
+    },
+    {
+      "id": "blogAutomotiveGears",
+      "description": "A close-up shot of clean, polished automotive gears.",
+      "imageUrl": "https://images.unsplash.com/photo-1726492740972-ea8d3b20b542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvbW90aXZlJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNzcwNDU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automotive gears"
     }
   ]
 }

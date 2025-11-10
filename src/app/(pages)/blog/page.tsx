@@ -174,6 +174,13 @@ const blogPosts = [
     date: 'November 15, 2024',
     imageId: 'blogNitriding'
   },
+  {
+    slug: 'surface-hardening-benefits-for-automotive-gears',
+    title: 'Surface Hardening Benefits for Automotive Gears',
+    description: 'Learn how surface hardening boosts gear life and performance in Punjab’s automotive industry.',
+    date: 'November 18, 2024',
+    imageId: 'blogAutomotiveGears'
+  },
 ];
 
 export default function BlogPage() {

@@ -26,7 +26,8 @@ const blogPosts = [
     'induction-hardening-for-gearbox-components',
     'common-materials-used-in-induction-hardening',
     'induction-hardening-vs-nitriding',
-    'induction-hardening-job-work-for-oems'
+    'induction-hardening-job-work-for-oems',
+    'surface-hardening-benefits-for-automotive-gears'
 ];
 
 export async function GET() {
