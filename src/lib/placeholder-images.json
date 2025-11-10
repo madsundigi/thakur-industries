@@ -315,7 +315,7 @@
     {
       "id": "blogForgedParts",
       "description": "A pile of newly forged, rough metal components.",
-      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JnZWQlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JnZWQlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "forged components"
     },
     {
@@ -345,7 +345,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1605334889058-294c65a363d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjM5NjAwMDB8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605334889058-294c65a363d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjM5NjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "steel roller"
     },
     {
@@ -363,8 +363,14 @@
     {
       "id": "blogEn24_4340",
       "description": "A close-up of a high-strength EN24 or 4340 alloy steel shaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1745449562896-71ba57d1e2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhbGxveSUyMHN0ZWVsfGVufDB8fHx8MTc2Mjc4MDMzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1745449562896-71ba57d1e2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhbGxveSUyMHN0ZWVsfGVufDB8fHx8MTc2Mjc4MDMzMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "alloy steel"
+    },
+    {
+      "id": "blogQuenchingComparison",
+      "description": "A split-screen image showing water quenching on one side and polymer quenching on the other.",
+      "imageUrl": "https://images.unsplash.com/photo-1557256611-210fcc4476d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2Mjc4MDYxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quenching comparison"
     }
   ]
 }

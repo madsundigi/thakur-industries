@@ -257,6 +257,13 @@ const blogPosts = [
     description: 'Learn how EN24 and 4340 alloy steels respond to induction heat treatment and offer superior hardness.',
     date: 'December 24, 2024',
     imageId: 'blogEn24_4340'
+  },
+  {
+    slug: 'polymer-vs-water-quenching',
+    title: 'Polymer Quenching vs Water Quenching in Induction Hardening',
+    description: 'Compare polymer and water quenching methods for achieving precise cooling and minimal distortion.',
+    date: 'December 26, 2024',
+    imageId: 'blogQuenchingComparison'
   }
 ];
 

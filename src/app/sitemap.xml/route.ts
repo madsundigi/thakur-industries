@@ -38,7 +38,8 @@ const blogPosts = [
     'induction-hardening-for-heavy-duty-rollers',
     'importance-of-temperature-control-in-induction-hardening',
     'advantages-of-medium-frequency-induction-hardening',
-    'induction-hardening-for-en24-and-4340-alloy-steels'
+    'induction-hardening-for-en24-and-4340-alloy-steels',
+    'polymer-vs-water-quenching'
 ];
 
 export async function GET() {
