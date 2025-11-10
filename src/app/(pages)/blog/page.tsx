@@ -134,8 +134,8 @@ const blogPosts = [
   },
   {
     slug: 'case-depth-control-in-induction-hardening',
-    title: 'Case Depth Control & Accuracy in Induction Hardening',
-    description: 'Understand how case depth and hardness control determine the success of induction heat treatment.',
+    title: 'How Case Depth Impacts Component Performance',
+    description: 'Understand how controlling case depth enhances component strength and fatigue life.',
     date: 'October 20, 2024',
     imageId: 'blogCaseDepth'
   },
