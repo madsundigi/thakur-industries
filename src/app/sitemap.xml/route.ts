@@ -28,7 +28,8 @@ const blogPosts = [
     'induction-hardening-vs-nitriding',
     'induction-hardening-job-work-for-oems',
     'surface-hardening-benefits-for-automotive-gears',
-    'induction-hardening-for-crankshafts-and-camshafts'
+    'induction-hardening-for-crankshafts-and-camshafts',
+    'how-induction-heat-treatment-extends-tool-life'
 ];
 
 export async function GET() {
@@ -65,3 +66,5 @@ export async function GET() {
     },
   });
 }
+
+    

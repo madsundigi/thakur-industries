@@ -71,10 +71,10 @@ const blogPosts = [
   },
   {
     slug: 'how-induction-hardening-increases-component-life',
-    title: 'How Induction Hardening Extends the Life of Shafts, Gears, and Tools',
-    description: 'Learn how surface hardening and induction processes enhance wear resistance and durability of metal components.',
-    date: 'September 05, 2024',
-    imageId: 'blogComponentLife'
+    title: 'How Induction Heat Treatment Extends Tool Life',
+    description: 'Discover how proper heat treatment increases tool hardness, wear resistance, and lifespan.',
+    date: 'November 25, 2024',
+    imageId: 'blogToolLife'
   },
   {
     slug: 'common-defects-in-induction-hardening-and-how-to-prevent-them',
@@ -231,3 +231,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    
