@@ -306,6 +306,13 @@ const blogPosts = [
     description: 'Understand how induction hardening ensures fatigue strength and dimensional control in aerospace parts.',
     date: 'January 08, 2025',
     imageId: 'blogAerospace'
+  },
+  {
+    slug: 'power-density-in-induction-hardening',
+    title: 'Understanding Power Density in Induction Hardening',
+    description: 'Learn how adjusting power density controls heating efficiency and surface hardness depth.',
+    date: 'January 10, 2025',
+    imageId: 'blogPowerDensity'
   }
 ];
 
@@ -350,5 +357,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    

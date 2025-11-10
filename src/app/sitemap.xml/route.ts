@@ -44,7 +44,8 @@ const blogPosts = [
     'how-to-prevent-cracks-in-induction-hardened-components',
     'induction-hardening-for-hydraulic-cylinder-rods',
     'induction-heat-treatment-for-4140-and-4150-steel-grades',
-    'induction-hardening-for-aerospace-industry-components'
+    'induction-hardening-for-aerospace-industry-components',
+    'power-density-in-induction-hardening'
 ];
 
 export async function GET() {
@@ -81,5 +82,3 @@ export async function GET() {
     },
   });
 }
-
-    
