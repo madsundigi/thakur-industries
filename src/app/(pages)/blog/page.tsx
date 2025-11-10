@@ -229,6 +229,13 @@ const blogPosts = [
     description: 'A detailed explanation of electromagnetic heating used in industrial hardening processes.',
     date: 'December 15, 2024',
     imageId: 'blogInductionHeatingWorks'
+  },
+  {
+    slug: 'induction-hardening-for-heavy-duty-rollers',
+    title: 'Induction Hardening for Heavy-Duty Rollers in Punjab',
+    description: 'Learn about induction hardening techniques for large rollers used in machinery and manufacturing.',
+    date: 'December 18, 2024',
+    imageId: 'blogRollerHardening'
   }
 ];
 
@@ -273,5 +280,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    

@@ -34,7 +34,8 @@ const blogPosts = [
     'hardness-testing-after-induction-hardening',
     'how-to-prevent-distortion-in-induction-hardening',
     'transmission-shaft-induction-hardening',
-    'how-induction-heating-works-in-metal-hardening'
+    'how-induction-heating-works-in-metal-hardening',
+    'induction-hardening-for-heavy-duty-rollers'
 ];
 
 export async function GET() {
@@ -71,5 +72,3 @@ export async function GET() {
     },
   });
 }
-
-    

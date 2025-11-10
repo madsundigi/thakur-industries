@@ -9,7 +9,7 @@
     {
       "id": "heroIndustries",
       "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial collage"
     },
     {
@@ -165,7 +165,7 @@
     {
       "id": "blogPost4",
       "description": "Visual showing benefits of induction heat treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1679387062363-f589df49da6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZW5lZml0cyUyMGluZm9ncmFwaGljfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679387062363-f589df49da6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZW5lZml0cyUyMGluZm9ncmFwaGljfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "benefits infographic"
     },
     {
@@ -339,8 +339,14 @@
     {
       "id": "blogInductionHeatingWorks",
       "description": "Diagram showing the working principle of induction heating with a coil and metal part.",
-      "imageUrl": "https://images.unsplash.com/photo-1635179885954-c778885a1197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5kdWN0aW9uJTIwaGVhdGluZyUyMGRpYWdyYW18ZW58MHx8fHwxNzYyNzczNDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635179885954-c778885a1197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5kdWN0aW9uJTIwaGVhdGluZyUyMGRpYWdyYW18ZW58MHx8fHwxNzYyNzczNDI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "induction heating diagram"
+    },
+    {
+      "id": "blogRollerHardening",
+      "description": "A large industrial steel roller being manufactured.",
+      "imageUrl": "https://images.unsplash.com/photo-1605334889058-294c65a363d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjM5NjAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "steel roller"
     }
   ]
 }
