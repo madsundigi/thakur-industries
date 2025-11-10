@@ -27,7 +27,7 @@
     {
       "id": "caseHardeningProcess",
       "description": "A diagram or illustration showing the cross-section of a gear with a highlighted hardened outer case and a softer inner core.",
-      "imageUrl": "https://images.unsplash.com/photo-1640556795357-71d4078d6228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZWFyJTIwY3Jvc3Mtc2VjdGlvbnxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1640556795357-71d4w4078d6228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZWFyJTIwY3Jvc3Mtc2VjdGlvbnxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gear cross-section"
     },
     {
@@ -323,6 +323,12 @@
       "description": "A technician using a Rockwell hardness tester on a metal part.",
       "imageUrl": "https://picsum.photos/seed/hardnessTest/600/400",
       "imageHint": "hardness testing"
+    },
+    {
+      "id": "blogDistortionControl",
+      "description": "An engineer measuring a metal part with calipers to ensure dimensional accuracy.",
+      "imageUrl": "https://images.unsplash.com/photo-1555627044-6aae1a7b4478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMG1lYXN1cmVtZW50fGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal measurement"
     }
   ]
 }

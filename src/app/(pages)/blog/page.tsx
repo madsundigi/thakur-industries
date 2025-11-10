@@ -208,6 +208,13 @@ const blogPosts = [
     description: 'Learn how hardness and case depth testing ensure quality and reliability in induction-treated parts.',
     date: 'December 05, 2024',
     imageId: 'blogHardnessTesting'
+  },
+  {
+    slug: 'how-to-prevent-distortion-in-induction-hardening',
+    title: 'How to Prevent Distortion in Induction Hardening',
+    description: 'Explore techniques to control distortion and maintain dimensional accuracy during heat treatment.',
+    date: 'December 10, 2024',
+    imageId: 'blogDistortionControl'
   }
 ];
 
