@@ -303,7 +303,7 @@
     {
       "id": "blogToolLife",
       "description": "A set of industrial tools like dies and punches after heat treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1751486403850-fae53b6ab0e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwdG9vbHN8ZW58MHx8fHwxNzYyNzA5MTg2fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1751486403850-fae53b6ab0e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwdG9vbHN8ZW58MHx8fHwxNzYyNzA5MTg2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial tools"
     },
     {
@@ -345,7 +345,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1605334889058-294c65a363d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjM5NjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605334889058-294c65a363d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjM5NjAwMDB8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "steel roller"
     },
     {
@@ -357,8 +357,14 @@
     {
       "id": "blogMediumFrequency",
       "description": "An induction coil glowing around a metal shaft, demonstrating medium frequency heating.",
-      "imageUrl": "https://images.unsplash.com/photo-1547186577-a3f4fa07c2ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpdW0lMjBmcmVxdWVuY3klMjBoZWF0aW5nfGVufDB8fHx8MTc2Mjc3NDU1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1547186577-a3f4fa07c2ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpdW0lMjBmcmVxdWVuY3klMjBoZWF0aW5nfGVufDB8fHx8MTc2Mjc3NDU1OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "medium frequency heating"
+    },
+    {
+      "id": "blogEn24_4340",
+      "description": "A close-up of a high-strength EN24 or 4340 alloy steel shaft.",
+      "imageUrl": "https://images.unsplash.com/photo-1745449562896-71ba57d1e2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhbGxveSUyMHN0ZWVsfGVufDB8fHx8MTc2Mjc4MDMzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "alloy steel"
     }
   ]
 }

@@ -250,6 +250,13 @@ const blogPosts = [
     description: 'Discover why medium frequency induction hardening is ideal for shafts, gears, and heavy components in Punjab.',
     date: 'December 22, 2024',
     imageId: 'blogMediumFrequency'
+  },
+  {
+    slug: 'induction-hardening-for-en24-and-4340-alloy-steels',
+    title: 'Induction Hardening for EN24 & 4340 Alloy Steels',
+    description: 'Learn how EN24 and 4340 alloy steels respond to induction heat treatment and offer superior hardness.',
+    date: 'December 24, 2024',
+    imageId: 'blogEn24_4340'
   }
 ];
 

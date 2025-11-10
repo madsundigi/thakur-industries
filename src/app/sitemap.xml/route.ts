@@ -37,7 +37,8 @@ const blogPosts = [
     'how-induction-heating-works-in-metal-hardening',
     'induction-hardening-for-heavy-duty-rollers',
     'importance-of-temperature-control-in-induction-hardening',
-    'advantages-of-medium-frequency-induction-hardening'
+    'advantages-of-medium-frequency-induction-hardening',
+    'induction-hardening-for-en24-and-4340-alloy-steels'
 ];
 
 export async function GET() {
