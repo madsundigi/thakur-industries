@@ -42,7 +42,8 @@ const blogPosts = [
     'importance-of-coil-design-in-induction-heating',
     'surface-hardening-for-heavy-machinery-shafts',
     'how-to-prevent-cracks-in-induction-hardened-components',
-    'induction-hardening-for-hydraulic-cylinder-rods'
+    'induction-hardening-for-hydraulic-cylinder-rods',
+    'induction-heat-treatment-for-4140-and-4150-steel-grades'
 ];
 
 export async function GET() {

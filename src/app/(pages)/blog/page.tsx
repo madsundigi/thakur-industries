@@ -292,6 +292,13 @@ const blogPosts = [
     description: 'Explore induction hardening methods used to enhance wear resistance in hydraulic and pneumatic rods.',
     date: 'January 02, 2025',
     imageId: 'blogHydraulicRods'
+  },
+  {
+    slug: 'induction-heat-treatment-for-4140-and-4150-steel-grades',
+    title: 'Induction Heat Treatment for 4140 & 4150 Steel Grades',
+    description: 'Detailed guide to hardening processes and ideal temperatures for 4140 and 4150 alloy steels.',
+    date: 'January 05, 2025',
+    imageId: 'blog4140_4150'
   }
 ];
 
