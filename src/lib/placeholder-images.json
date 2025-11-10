@@ -315,7 +315,7 @@
     {
       "id": "blogForgedParts",
       "description": "A pile of newly forged, rough metal components.",
-      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JnZWQlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JnZWQlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "forged components"
     },
     {
@@ -333,8 +333,14 @@
     {
       "id": "blogTransmissionShaft",
       "description": "A close-up of a transmission shaft with gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1676387164929-b647846873cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmFuc21pc3Npb24lMjBzaGFmdHxlbnwwfHx8fDE3NjI3NzMxNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1676387164929-b647846873cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmFuc21pc3Npb24lMjBzaGFmdHxlbnwwfHx8fDE3NjI3NzMxNjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "transmission shaft"
+    },
+    {
+      "id": "blogInductionHeatingWorks",
+      "description": "Diagram showing the working principle of induction heating with a coil and metal part.",
+      "imageUrl": "https://images.unsplash.com/photo-1635179885954-c778885a1197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5kdWN0aW9uJTIwaGVhdGluZyUyMGRpYWdyYW18ZW58MHx8fHwxNzYyNzczNDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "induction heating diagram"
     }
   ]
 }

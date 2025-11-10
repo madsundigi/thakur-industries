@@ -222,6 +222,13 @@ const blogPosts = [
     description: 'Learn how induction hardening increases the strength and fatigue resistance of transmission shafts.',
     date: 'December 12, 2024',
     imageId: 'blogTransmissionShaft'
+  },
+  {
+    slug: 'how-induction-heating-works-in-metal-hardening',
+    title: 'How Induction Heating Works in Metal Hardening',
+    description: 'A detailed explanation of electromagnetic heating used in industrial hardening processes.',
+    date: 'December 15, 2024',
+    imageId: 'blogInductionHeatingWorks'
   }
 ];
 
@@ -266,3 +273,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

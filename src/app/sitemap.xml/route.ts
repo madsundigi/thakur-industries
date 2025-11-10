@@ -33,7 +33,8 @@ const blogPosts = [
     'induction-hardening-for-forged-and-machined-parts',
     'hardness-testing-after-induction-hardening',
     'how-to-prevent-distortion-in-induction-hardening',
-    'transmission-shaft-induction-hardening'
+    'transmission-shaft-induction-hardening',
+    'how-induction-heating-works-in-metal-hardening'
 ];
 
 export async function GET() {
@@ -70,3 +71,5 @@ export async function GET() {
     },
   });
 }
+
+    
