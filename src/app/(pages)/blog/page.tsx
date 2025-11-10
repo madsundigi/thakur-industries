@@ -201,6 +201,13 @@ const blogPosts = [
     description: 'Strengthen forged components with precise induction hardening and polymer quenching techniques.',
     date: 'December 02, 2024',
     imageId: 'blogForgedParts'
+  },
+  {
+    slug: 'hardness-testing-after-induction-hardening',
+    title: 'Hardness Testing After Induction Hardening',
+    description: 'Learn how hardness and case depth testing ensure quality and reliability in induction-treated parts.',
+    date: 'December 05, 2024',
+    imageId: 'blogHardnessTesting'
   }
 ];
 

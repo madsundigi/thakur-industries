@@ -30,7 +30,8 @@ const blogPosts = [
     'surface-hardening-benefits-for-automotive-gears',
     'induction-hardening-for-crankshafts-and-camshafts',
     'how-induction-heat-treatment-extends-tool-life',
-    'induction-hardening-for-forged-and-machined-parts'
+    'induction-hardening-for-forged-and-machined-parts',
+    'hardness-testing-after-induction-hardening'
 ];
 
 export async function GET() {
