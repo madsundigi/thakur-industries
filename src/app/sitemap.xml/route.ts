@@ -46,7 +46,8 @@ const blogPosts = [
     'induction-heat-treatment-for-4140-and-4150-steel-grades',
     'induction-hardening-for-aerospace-industry-components',
     'power-density-in-induction-hardening',
-    'surface-finish-and-machining-after-induction-hardening'
+    'surface-finish-and-machining-after-induction-hardening',
+    'importance-of-cooling-time-in-quenching'
 ];
 
 export async function GET() {
@@ -83,3 +84,5 @@ export async function GET() {
     },
   });
 }
+
+    

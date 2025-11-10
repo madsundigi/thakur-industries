@@ -320,6 +320,13 @@ const blogPosts = [
     description: 'Know how finishing operations restore dimensional accuracy and maintain surface quality post-hardening.',
     date: 'January 12, 2025',
     imageId: 'blogSurfaceFinish'
+  },
+  {
+    slug: 'importance-of-cooling-time-in-quenching',
+    title: 'Importance of Cooling Time in Quenching',
+    description: 'Discover how quenching delay and cooling time affect final hardness and structural integrity.',
+    date: 'January 14, 2025',
+    imageId: 'blogCoolingTime'
   }
 ];
 
@@ -364,3 +371,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    
