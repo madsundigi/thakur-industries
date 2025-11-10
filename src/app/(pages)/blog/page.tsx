@@ -181,6 +181,13 @@ const blogPosts = [
     date: 'November 18, 2024',
     imageId: 'blogAutomotiveGears'
   },
+  {
+    slug: 'induction-hardening-for-crankshafts-and-camshafts',
+    title: 'Induction Hardening for Crankshafts & Camshafts',
+    description: 'Explore how induction hardening improves crankshaft and camshaft durability in tractors and engines.',
+    date: 'November 22, 2024',
+    imageId: 'blogCrankshafts'
+  }
 ];
 
 export default function BlogPage() {

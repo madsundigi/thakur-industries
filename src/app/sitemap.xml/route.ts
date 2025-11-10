@@ -27,7 +27,8 @@ const blogPosts = [
     'common-materials-used-in-induction-hardening',
     'induction-hardening-vs-nitriding',
     'induction-hardening-job-work-for-oems',
-    'surface-hardening-benefits-for-automotive-gears'
+    'surface-hardening-benefits-for-automotive-gears',
+    'induction-hardening-for-crankshafts-and-camshafts'
 ];
 
 export async function GET() {
@@ -64,5 +65,3 @@ export async function GET() {
     },
   });
 }
-
-    
