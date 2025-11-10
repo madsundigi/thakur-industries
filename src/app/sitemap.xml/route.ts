@@ -40,7 +40,8 @@ const blogPosts = [
     'induction-hardening-for-en24-and-4340-alloy-steels',
     'polymer-vs-water-quenching',
     'importance-of-coil-design-in-induction-heating',
-    'surface-hardening-for-heavy-machinery-shafts'
+    'surface-hardening-for-heavy-machinery-shafts',
+    'how-to-prevent-cracks-in-induction-hardened-components'
 ];
 
 export async function GET() {

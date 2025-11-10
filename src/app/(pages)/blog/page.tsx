@@ -278,6 +278,13 @@ const blogPosts = [
     description: 'Improve load-bearing capacity and wear resistance of heavy-duty shafts using induction hardening.',
     date: 'December 30, 2024',
     imageId: 'blogHeavyMachineryShafts'
+  },
+  {
+    slug: 'how-to-prevent-cracks-in-induction-hardened-components',
+    title: 'How to Prevent Cracks in Induction Hardened Components',
+    description: 'Learn techniques to control quenching and minimize surface cracking during induction hardening.',
+    date: 'December 31, 2024',
+    imageId: 'blogCracks'
   }
 ];
 
