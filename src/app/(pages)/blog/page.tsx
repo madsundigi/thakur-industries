@@ -313,6 +313,13 @@ const blogPosts = [
     description: 'Learn how adjusting power density controls heating efficiency and surface hardness depth.',
     date: 'January 10, 2025',
     imageId: 'blogPowerDensity'
+  },
+  {
+    slug: 'surface-finish-and-machining-after-induction-hardening',
+    title: 'Surface Finish and Machining After Induction Hardening',
+    description: 'Know how finishing operations restore dimensional accuracy and maintain surface quality post-hardening.',
+    date: 'January 12, 2025',
+    imageId: 'blogSurfaceFinish'
   }
 ];
 

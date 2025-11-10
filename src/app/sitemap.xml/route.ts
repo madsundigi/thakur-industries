@@ -45,7 +45,8 @@ const blogPosts = [
     'induction-hardening-for-hydraulic-cylinder-rods',
     'induction-heat-treatment-for-4140-and-4150-steel-grades',
     'induction-hardening-for-aerospace-industry-components',
-    'power-density-in-induction-hardening'
+    'power-density-in-induction-hardening',
+    'surface-finish-and-machining-after-induction-hardening'
 ];
 
 export async function GET() {
