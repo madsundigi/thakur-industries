@@ -9,7 +9,7 @@
     {
       "id": "heroIndustries",
       "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial collage"
     },
     {
@@ -291,13 +291,13 @@
     {
       "id": "blogAutomotiveGears",
       "description": "A close-up shot of clean, polished automotive gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1726492740972-ea8d3b20b542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvbW90aXZlJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNzcwNDU5fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1726492740972-ea8d3b20b542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvbW90aXZlJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNzcwNDU5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive gears"
     },
     {
       "id": "blogCrankshafts",
       "description": "A close-up of a polished crankshaft and camshaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1616954288339-16474b7137f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616954288339-16474b7137f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmFua3NoYWZ0fGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "crankshaft camshaft"
     },
     {
@@ -369,8 +369,14 @@
     {
       "id": "blogQuenchingComparison",
       "description": "A split-screen image showing water quenching on one side and polymer quenching on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1557256611-210fcc4476d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2Mjc4MDYxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557256611-210fcc4476d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2Mjc4MDYxNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "quenching comparison"
+    },
+    {
+      "id": "blogCoilDesign",
+      "description": "A close-up of a custom-wound copper induction coil.",
+      "imageUrl": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1Y3Rpb24lMjBjb2lsfGVufDB8fHx8MTc2Mzk2MDE4NHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "induction coil"
     }
   ]
 }

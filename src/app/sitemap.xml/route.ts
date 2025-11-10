@@ -39,7 +39,8 @@ const blogPosts = [
     'importance-of-temperature-control-in-induction-hardening',
     'advantages-of-medium-frequency-induction-hardening',
     'induction-hardening-for-en24-and-4340-alloy-steels',
-    'polymer-vs-water-quenching'
+    'polymer-vs-water-quenching',
+    'importance-of-coil-design-in-induction-heating'
 ];
 
 export async function GET() {

@@ -264,6 +264,13 @@ const blogPosts = [
     description: 'Compare polymer and water quenching methods for achieving precise cooling and minimal distortion.',
     date: 'December 26, 2024',
     imageId: 'blogQuenchingComparison'
+  },
+  {
+    slug: 'importance-of-coil-design-in-induction-heating',
+    title: 'Importance of Coil Design in Induction Heating',
+    description: 'Explore how coil geometry affects heat distribution and hardness uniformity in induction systems.',
+    date: 'December 28, 2024',
+    imageId: 'blogCoilDesign'
   }
 ];
 
