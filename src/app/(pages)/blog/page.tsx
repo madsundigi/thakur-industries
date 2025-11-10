@@ -194,6 +194,13 @@ const blogPosts = [
     description: 'Learn how induction heating saves energy and supports sustainable manufacturing.',
     date: 'November 28, 2024',
     imageId: 'blogEnergyEfficient'
+  },
+  {
+    slug: 'induction-hardening-for-forged-and-machined-parts',
+    title: 'Induction Hardening for Forged and Machined Parts',
+    description: 'Strengthen forged components with precise induction hardening and polymer quenching techniques.',
+    date: 'December 02, 2024',
+    imageId: 'blogForgedParts'
   }
 ];
 
@@ -238,5 +245,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    

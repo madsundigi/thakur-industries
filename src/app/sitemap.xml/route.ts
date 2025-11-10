@@ -29,7 +29,8 @@ const blogPosts = [
     'induction-hardening-job-work-for-oems',
     'surface-hardening-benefits-for-automotive-gears',
     'induction-hardening-for-crankshafts-and-camshafts',
-    'how-induction-heat-treatment-extends-tool-life'
+    'how-induction-heat-treatment-extends-tool-life',
+    'induction-hardening-for-forged-and-machined-parts'
 ];
 
 export async function GET() {
@@ -66,5 +67,3 @@ export async function GET() {
     },
   });
 }
-
-    
