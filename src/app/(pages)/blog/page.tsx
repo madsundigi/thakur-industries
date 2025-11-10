@@ -78,8 +78,8 @@ const blogPosts = [
   },
   {
     slug: 'common-defects-in-induction-hardening-and-how-to-prevent-them',
-    title: 'Top 5 Common Defects in Induction Hardening and How to Avoid Them',
-    description: 'Know the main reasons behind defects like soft spots and cracks in induction hardening, and how to prevent them.',
+    title: 'Common Challenges in Induction Heat Treatment and How to Overcome Them',
+    description: 'Identify and solve common induction heat treatment issues such as distortion, cracking, and uneven hardness.',
     date: 'September 10, 2024',
     imageId: 'blogDefects'
   },
