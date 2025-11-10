@@ -159,7 +159,7 @@
     {
       "id": "blogPost2",
       "description": "Visual comparison of induction hardening and case hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1647032713701-a80d2b69e502?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYXJpc29uJTIwZGlhZ3JhbXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1647032713701-a80d2b69e502?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHhjYWNlc2VzJTIwY29tcGFyaXNvbnxlbnwwfHx8fDE3NjM0MDI3ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "comparison diagram"
     },
     {
@@ -273,25 +273,25 @@
     {
       "id": "blogOem",
       "description": "OEM components being prepared for induction hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1654965807196-5dbeffb70a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxPRU0lMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1654965807196-5dbeffb70a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxPRU0lMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "OEM components"
     },
     {
       "id": "blogCommonMaterials",
       "description": "An assortment of different steel bars and components suitable for induction hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1696582640607-150542f1eff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdGVlbCUyMGJhcnN8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1696582640607-150542f1eff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdGVlbCUyMGJhcnN8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "steel bars"
     },
     {
       "id": "blogNitriding",
       "description": "A chart comparing the properties of induction hardening and nitriding.",
-      "imageUrl": "https://images.unsplash.com/photo-1666537072206-6a7a01ecb7d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYXJpc29uJTIwY2hhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666537072206-6a7a01ecb7d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYXJpc29uJTIwY2hhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "comparison chart"
     },
     {
       "id": "blogAutomotiveGears",
       "description": "A close-up shot of clean, polished automotive gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1726492740972-ea8d3b20b542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvbW90aXZlJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNzcwNDU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1726492740972-ea8d3b20b542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvbW90aXZlJTIwZ2VhcnN8ZW58MHx8fHwxNzYyNzcwNDU5fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive gears"
     }
   ]
