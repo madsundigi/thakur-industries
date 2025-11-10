@@ -13,6 +13,7 @@ const blogPosts = [
     'how-induction-heat-treatment-extends-tool-life',
     'common-defects-in-induction-hardening-and-how-to-prevent-them',
     'induction-hardening-vs-flame-hardening',
+    'high-frequency-vs-medium-frequency-induction-hardening',
     'importance-of-frequency-in-induction-hardening',
     'induction-hardening-for-agricultural-implements',
     'gear-hardening-process-explained',
@@ -85,5 +86,3 @@ export async function GET() {
     },
   });
 }
-
-    

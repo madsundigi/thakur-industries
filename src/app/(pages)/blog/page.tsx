@@ -91,6 +91,13 @@ const blogPosts = [
     imageId: 'blogFlameVsInduction'
   },
   {
+    slug: 'high-frequency-vs-medium-frequency-induction-hardening',
+    title: 'High-Frequency vs Medium-Frequency Induction Hardening Systems',
+    description: 'Compare frequency systems and their influence on case depth, heating rate, and metallurgical structure.',
+    date: 'September 18, 2024',
+    imageId: 'blogFrequencyComparison'
+  },
+  {
     slug: 'importance-of-frequency-in-induction-hardening',
     title: 'Choosing the Right Frequency for Induction Hardening Applications',
     description: 'Learn how frequency impacts heat penetration, case depth, and hardness during the induction hardening process.',
@@ -378,5 +385,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    
