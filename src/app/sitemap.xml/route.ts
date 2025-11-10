@@ -50,7 +50,8 @@ const blogPosts = [
     'surface-finish-and-machining-after-induction-hardening',
     'importance-of-cooling-time-in-quenching',
     'induction-hardening-for-automotive-axles',
-    'role-of-process-automation-in-induction-heat-treatment'
+    'role-of-process-automation-in-induction-heat-treatment',
+    'induction-hardening-for-industrial-tools-and-dies'
 ];
 
 export async function GET() {

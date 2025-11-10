@@ -348,6 +348,13 @@ const blogPosts = [
     description: 'Learn how PLC and sensor-based systems improve repeatability and efficiency in heat treatment.',
     date: 'January 18, 2025',
     imageId: 'blogAutomation'
+  },
+  {
+    slug: 'induction-hardening-for-industrial-tools-and-dies',
+    title: 'Induction Hardening for Industrial Tools & Dies',
+    description: 'Enhance the lifespan and performance of dies and industrial tools through precision induction hardening.',
+    date: 'January 20, 2025',
+    imageId: 'blogToolAndDie'
   }
 ];
 
