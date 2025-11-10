@@ -236,6 +236,13 @@ const blogPosts = [
     description: 'Learn about induction hardening techniques for large rollers used in machinery and manufacturing.',
     date: 'December 18, 2024',
     imageId: 'blogRollerHardening'
+  },
+  {
+    slug: 'importance-of-temperature-control-in-induction-hardening',
+    title: 'Importance of Temperature Control in Induction Hardening',
+    description: 'Discover how temperature control ensures hardness accuracy and prevents metallurgical defects.',
+    date: 'December 20, 2024',
+    imageId: 'blogTemperatureControl'
   }
 ];
 
