@@ -49,7 +49,8 @@ const blogPosts = [
     'power-density-in-induction-hardening',
     'surface-finish-and-machining-after-induction-hardening',
     'importance-of-cooling-time-in-quenching',
-    'induction-hardening-for-automotive-axles'
+    'induction-hardening-for-automotive-axles',
+    'role-of-process-automation-in-induction-heat-treatment'
 ];
 
 export async function GET() {

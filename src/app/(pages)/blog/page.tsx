@@ -341,6 +341,13 @@ const blogPosts = [
     description: 'Find out how induction hardening improves wear resistance and load capacity in automotive axles.',
     date: 'January 16, 2025',
     imageId: 'blogAutomotiveAxles'
+  },
+  {
+    slug: 'role-of-process-automation-in-induction-heat-treatment',
+    title: 'Role of Process Automation in Induction Heat Treatment',
+    description: 'Learn how PLC and sensor-based systems improve repeatability and efficiency in heat treatment.',
+    date: 'January 18, 2025',
+    imageId: 'blogAutomation'
   }
 ];
 
