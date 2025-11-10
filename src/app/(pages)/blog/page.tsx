@@ -299,6 +299,13 @@ const blogPosts = [
     description: 'Detailed guide to hardening processes and ideal temperatures for 4140 and 4150 alloy steels.',
     date: 'January 05, 2025',
     imageId: 'blog4140_4150'
+  },
+  {
+    slug: 'induction-hardening-for-aerospace-industry-components',
+    title: 'Induction Hardening for Aerospace Industry Components',
+    description: 'Understand how induction hardening ensures fatigue strength and dimensional control in aerospace parts.',
+    date: 'January 08, 2025',
+    imageId: 'blogAerospace'
   }
 ];
 
@@ -343,3 +350,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

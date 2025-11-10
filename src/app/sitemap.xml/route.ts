@@ -43,7 +43,8 @@ const blogPosts = [
     'surface-hardening-for-heavy-machinery-shafts',
     'how-to-prevent-cracks-in-induction-hardened-components',
     'induction-hardening-for-hydraulic-cylinder-rods',
-    'induction-heat-treatment-for-4140-and-4150-steel-grades'
+    'induction-heat-treatment-for-4140-and-4150-steel-grades',
+    'induction-hardening-for-aerospace-industry-components'
 ];
 
 export async function GET() {
@@ -80,3 +81,5 @@ export async function GET() {
     },
   });
 }
+
+    
