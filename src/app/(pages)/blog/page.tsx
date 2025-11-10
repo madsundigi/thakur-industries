@@ -197,8 +197,8 @@ const blogPosts = [
   },
   {
     slug: 'induction-hardening-for-forged-and-machined-parts',
-    title: 'Induction Hardening for Forged and Machined Parts',
-    description: 'Strengthen forged components with precise induction hardening and polymer quenching techniques.',
+    title: 'Induction Hardening for Forged Shafts and Spindles',
+    description: 'Boost the fatigue resistance of forged shafts and spindles with localized induction hardening.',
     date: 'December 02, 2024',
     imageId: 'blogForgedParts'
   },
