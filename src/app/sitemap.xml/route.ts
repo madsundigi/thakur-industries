@@ -47,7 +47,8 @@ const blogPosts = [
     'induction-hardening-for-aerospace-industry-components',
     'power-density-in-induction-hardening',
     'surface-finish-and-machining-after-induction-hardening',
-    'importance-of-cooling-time-in-quenching'
+    'importance-of-cooling-time-in-quenching',
+    'induction-hardening-for-automotive-axles'
 ];
 
 export async function GET() {

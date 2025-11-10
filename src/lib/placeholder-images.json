@@ -419,6 +419,12 @@
       "description": "An infographic showing a temperature-time cooling curve for quenching.",
       "imageUrl": "https://images.unsplash.com/photo-1633519528991-3a8633912953?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb29saW5nJTIwY3VydmUlMjBkaWFncmFtfGVufDB8fHx8MTc2NDc4NjM0NXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "cooling curve diagram"
+    },
+    {
+      "id": "blogAutomotiveAxles",
+      "description": "A close-up of several polished automotive axles lined up.",
+      "imageUrl": "https://images.unsplash.com/photo-1606571599814-8208f029c78d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwYXhsZXN8ZW58MHx8fHwxNzY0ODczNTY0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "automotive axles"
     }
   ]
 }

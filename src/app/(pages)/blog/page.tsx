@@ -327,6 +327,13 @@ const blogPosts = [
     description: 'Discover how quenching delay and cooling time affect final hardness and structural integrity.',
     date: 'January 14, 2025',
     imageId: 'blogCoolingTime'
+  },
+  {
+    slug: 'induction-hardening-for-automotive-axles',
+    title: 'Induction Hardening for Automotive Axles in Punjab',
+    description: 'Find out how induction hardening improves wear resistance and load capacity in automotive axles.',
+    date: 'January 16, 2025',
+    imageId: 'blogAutomotiveAxles'
   }
 ];
 
