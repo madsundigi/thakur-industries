@@ -32,7 +32,8 @@ const blogPosts = [
     'how-induction-heat-treatment-extends-tool-life',
     'induction-hardening-for-forged-and-machined-parts',
     'hardness-testing-after-induction-hardening',
-    'how-to-prevent-distortion-in-induction-hardening'
+    'how-to-prevent-distortion-in-induction-hardening',
+    'transmission-shaft-induction-hardening'
 ];
 
 export async function GET() {

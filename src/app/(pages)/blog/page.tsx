@@ -215,6 +215,13 @@ const blogPosts = [
     description: 'Explore techniques to control distortion and maintain dimensional accuracy during heat treatment.',
     date: 'December 10, 2024',
     imageId: 'blogDistortionControl'
+  },
+  {
+    slug: 'transmission-shaft-induction-hardening',
+    title: 'Transmission Shaft Induction Hardening Services in Punjab',
+    description: 'Learn how induction hardening increases the strength and fatigue resistance of transmission shafts.',
+    date: 'December 12, 2024',
+    imageId: 'blogTransmissionShaft'
   }
 ];
 

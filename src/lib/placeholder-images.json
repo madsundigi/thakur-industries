@@ -329,6 +329,12 @@
       "description": "An engineer measuring a metal part with calipers to ensure dimensional accuracy.",
       "imageUrl": "https://images.unsplash.com/photo-1555627044-6aae1a7b4478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMG1lYXN1cmVtZW50fGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "metal measurement"
+    },
+    {
+      "id": "blogTransmissionShaft",
+      "description": "A close-up of a transmission shaft with gears.",
+      "imageUrl": "https://images.unsplash.com/photo-1676387164929-b647846873cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmFuc21pc3Npb24lMjBzaGFmdHxlbnwwfHx8fDE3NjI3NzMxNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "transmission shaft"
     }
   ]
 }
