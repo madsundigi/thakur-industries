@@ -362,6 +362,13 @@ const blogPosts = [
     description: 'Learn how induction hardening enhances powertrain durability and strength for automotive applications in Ludhiana and Punjab.',
     date: 'January 22, 2025',
     imageId: 'blogPowertrain'
+  },
+  {
+    slug: 'heat-treatment-for-high-performance-alloy-steels',
+    title: 'Heat Treatment for High-Performance Alloy Steels',
+    description: 'Discover the heat treatment process that strengthens EN and alloy steels for industrial machinery and automotive parts.',
+    date: 'January 24, 2025',
+    imageId: 'blogAlloySteels'
   }
 ];
 
@@ -406,5 +413,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    

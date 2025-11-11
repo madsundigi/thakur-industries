@@ -52,7 +52,8 @@ const blogPosts = [
     'induction-hardening-for-automotive-axles',
     'role-of-process-automation-in-induction-heat-treatment',
     'induction-hardening-for-industrial-tools-and-dies',
-    'induction-hardening-for-powertrain-components'
+    'induction-hardening-for-powertrain-components',
+    'heat-treatment-for-high-performance-alloy-steels'
 ];
 
 export async function GET() {
@@ -89,5 +90,3 @@ export async function GET() {
     },
   });
 }
-
-    
