@@ -446,6 +446,13 @@ const blogPosts = [
     description: 'Enhance transmission performance and reliability through case hardening of gears, shafts, and couplings.',
     date: 'February 19, 2025',
     imageId: 'blogTransmissionComponents'
+  },
+   {
+    slug: 'induction-hardening-job-work-for-oems',
+    title: 'Precision Induction Hardening Services for OEMs',
+    description: 'Delivering OEM-standard induction hardening services with tight tolerance and high-quality assurance across Punjab.',
+    date: 'February 21, 2025',
+    imageId: 'blogOem'
   }
 ];
 
@@ -490,3 +497,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    
