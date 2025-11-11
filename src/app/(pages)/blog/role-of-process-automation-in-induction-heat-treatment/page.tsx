@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ChevronRight, CheckCircle, Zap } from 'lucide-react';
+import { ArrowRight, ChevronRight, CheckCircle, Zap, Shield, Thermometer, Cpu } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { SITE_NAME } from '@/lib/constants';
 
