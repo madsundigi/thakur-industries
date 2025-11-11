@@ -66,7 +66,8 @@ const blogPosts = [
     'advantages-of-polymer-quenching-over-oil',
     'case-hardening-for-automotive-transmission-components',
     'advanced-induction-hardening-for-precision-components',
-    'heat-treatment-for-heavy-duty-shafts-and-rollers'
+    'heat-treatment-for-heavy-duty-shafts-and-rollers',
+    'surface-hardening-for-automotive-engine-parts'
 ];
 
 export async function GET() {

@@ -296,7 +296,7 @@ const blogPosts = [
   {
     slug: 'induction-hardening-for-hydraulic-cylinder-rods',
     title: 'Induction Hardening for Hydraulic Cylinder Rods',
-    description: 'Explore induction hardening methods used to enhance wear resistance in hydraulic and pneumatic rods.',
+    description: 'Explore induction hardening methods to enhance wear resistance in hydraulic and pneumatic rods.',
     date: 'January 02, 2025',
     imageId: 'blogHydraulicRods'
   },
@@ -467,6 +467,13 @@ const blogPosts = [
     description: 'Learn how heat treatment improves durability and surface strength of heavy-duty shafts and rollers in Ludhiana industries.',
     date: 'February 25, 2025',
     imageId: 'blogHeavyDutyShafts'
+  },
+  {
+    slug: 'surface-hardening-for-automotive-engine-parts',
+    title: 'Surface Hardening for Automotive Engine Parts',
+    description: 'See how surface hardening strengthens automotive engine components for improved wear resistance and performance.',
+    date: 'February 27, 2025',
+    imageId: 'blogEngineParts'
   }
 ];
 
