@@ -453,6 +453,13 @@ const blogPosts = [
     description: 'Delivering OEM-standard induction hardening services with tight tolerance and high-quality assurance across Punjab.',
     date: 'February 21, 2025',
     imageId: 'blogOem'
+  },
+  {
+    slug: 'advanced-induction-hardening-for-precision-components',
+    title: 'Advanced Induction Hardening for Precision Components',
+    description: 'Discover how advanced induction hardening enhances precision component reliability and performance in Punjab industries.',
+    date: 'February 23, 2025',
+    imageId: 'heroMachine'
   }
 ];
 
@@ -497,5 +504,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    
