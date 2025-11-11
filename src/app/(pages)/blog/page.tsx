@@ -323,8 +323,8 @@ const blogPosts = [
   },
   {
     slug: 'surface-finish-and-machining-after-induction-hardening',
-    title: 'Surface Finish and Machining After Induction Hardening',
-    description: 'Know how finishing operations restore dimensional accuracy and maintain surface quality post-hardening.',
+    title: 'Improving Surface Finish After Induction Hardening',
+    description: 'Learn post-hardening machining and grinding techniques that ensure precise surface finishes.',
     date: 'January 12, 2025',
     imageId: 'blogSurfaceFinish'
   },
