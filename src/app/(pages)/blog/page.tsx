@@ -357,6 +357,13 @@ const blogPosts = [
     imageId: 'blogToolAndDie'
   },
   {
+    slug: 'tool-and-die-induction-hardening-processes-explained',
+    title: 'Tool and Die Induction Hardening Processes Explained',
+    description: 'Explore the process and benefits of induction hardening for tools and dies used in precision manufacturing.',
+    date: 'January 21, 2025',
+    imageId: 'blogToolAndDieHardening'
+  },
+  {
     slug: 'induction-hardening-for-powertrain-components',
     title: 'Induction Hardening for Powertrain Components in Punjab',
     description: 'Learn how induction hardening enhances powertrain durability and strength for automotive applications in Ludhiana and Punjab.',
@@ -539,3 +546,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

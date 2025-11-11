@@ -70,7 +70,8 @@ const blogPosts = [
     'surface-hardening-for-automotive-engine-parts',
     'en19-and-en24-alloy-steel-induction-hardening-guide',
     'preventing-soft-spots-in-induction-hardening',
-    'induction-heating-safety-standards'
+    'induction-heating-safety-standards',
+    'tool-and-die-induction-hardening-processes-explained'
 ];
 
 export async function GET() {
@@ -107,3 +108,5 @@ export async function GET() {
     },
   });
 }
+
+    
