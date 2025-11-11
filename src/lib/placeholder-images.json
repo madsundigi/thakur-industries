@@ -491,6 +491,12 @@
       "description": "A shipping container being loaded onto a cargo ship, with a globe overlay, representing global export.",
       "imageUrl": "https://images.unsplash.com/photo-1614036118491-a6bd838969a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbCUyMHNoaXAlMjBleHBvcnR8ZW58MHx8fHwxNzY2OTY1NTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "cargo ship export"
+    },
+    {
+      "id": "blogMisconceptions",
+      "description": "A magnifying glass over a metal gear, with question marks around, representing myths.",
+      "imageUrl": "https://images.unsplash.com/photo-1508345217145-99602e1b12b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdQE0fGVufDB8fHx8MTc2NzE2MzkxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "myth fact"
     }
   ]
 }

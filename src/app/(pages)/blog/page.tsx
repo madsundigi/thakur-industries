@@ -418,6 +418,13 @@ const blogPosts = [
     description: 'Providing precise induction heat treatment solutions tailored for export and OEM-grade industrial components.',
     date: 'February 11, 2025',
     imageId: 'blogExport'
+  },
+  {
+    slug: 'common-misconceptions-about-induction-hardening',
+    title: 'Common Misconceptions About Induction Hardening',
+    description: 'Debunk myths about induction hardening and learn why it\'s the most effective surface hardening method available.',
+    date: 'February 13, 2025',
+    imageId: 'blogMisconceptions'
   }
 ];
 
@@ -462,5 +469,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    
