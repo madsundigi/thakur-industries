@@ -307,22 +307,10 @@
       "imageHint": "crankshaft camshaft"
     },
     {
-      "id": "blogEnergyEfficient",
-      "description": "A diagram showing energy savings with induction heating, with green leaves and a power icon.",
-      "imageUrl": "https://images.unsplash.com/photo-1497440001374-f26997328c1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlbmVyZ3klMjBzYXZpbmd8ZW58MHx8fHwxNzYyNzcyMDY2fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "energy saving"
-    },
-    {
       "id": "blogForgedParts",
       "description": "A pile of newly forged, rough metal components.",
       "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JnZWQlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "forged components"
-    },
-    {
-      "id": "blogHardnessTesting",
-      "description": "A technician using a Rockwell hardness tester on a metal part.",
-      "imageUrl": "https://picsum.photos/seed/hardnessTest/600/400",
-      "imageHint": "hardness testing"
     },
     {
       "id": "blogDistortionControl",
@@ -415,6 +403,12 @@
       "imageHint": "energy diagram"
     },
     {
+      "id": "blogHardnessTesting",
+      "description": "A technician using a Rockwell hardness tester on a metal part.",
+      "imageUrl": "https://images.unsplash.com/photo-1664574653733-6a053c940645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJkbmVzcyUyMHRlc3Rpbmd8ZW58MHx8fHwxNzY1MzAxNTc0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "hardness testing"
+    },
+    {
       "id": "blogSurfaceFinish",
       "description": "A close-up of a perfectly smooth, polished metal shaft reflecting light, showing a high-quality surface finish.",
       "imageUrl": "https://images.unsplash.com/photo-1618172193763-c5242db039f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHN1cmZhY2V8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
@@ -455,6 +449,12 @@
       "description": "A collection of various high-performance alloy steel bars and components.",
       "imageUrl": "https://images.unsplash.com/photo-1558532454-9e7c5b6b1a45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhbGxveSUyMHN0ZWVsJTIwYmFyc3xlbnwwfHx8fDE3NjY1NTYyMDV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "alloy steel bars"
+    },
+    {
+      "id": "blogInductionRole",
+      "description": "An infographic or diagram showing the various applications of induction heating in modern manufacturing.",
+      "imageUrl": "https://images.unsplash.com/photo-1601520525418-4d7ff1314879?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpbmR1Y3Rpb24lMjBoZWF0aW5nJTIwaW5mb2dyYXBoaWN8ZW58MHx8fHwxNzYyODU5NjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "induction heating infographic"
     }
   ]
 }

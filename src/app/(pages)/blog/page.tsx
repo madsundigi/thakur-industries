@@ -369,6 +369,13 @@ const blogPosts = [
     description: 'Discover the heat treatment process that strengthens EN and alloy steels for industrial machinery and automotive parts.',
     date: 'January 24, 2025',
     imageId: 'blogAlloySteels'
+  },
+  {
+    slug: 'role-of-induction-heating-in-modern-manufacturing',
+    title: 'Role of Induction Heating in Modern Manufacturing',
+    description: 'Explore how induction heating revolutionizes modern manufacturing with precise, clean, and efficient heating.',
+    date: 'January 26, 2025',
+    imageId: 'blogInductionRole'
   }
 ];
 

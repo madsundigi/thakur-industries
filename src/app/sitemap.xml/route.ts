@@ -53,7 +53,8 @@ const blogPosts = [
     'role-of-process-automation-in-induction-heat-treatment',
     'induction-hardening-for-industrial-tools-and-dies',
     'induction-hardening-for-powertrain-components',
-    'heat-treatment-for-high-performance-alloy-steels'
+    'heat-treatment-for-high-performance-alloy-steels',
+    'role-of-induction-heating-in-modern-manufacturing'
 ];
 
 export async function GET() {
