@@ -141,8 +141,8 @@ const blogPosts = [
   },
   {
     slug: 'case-depth-control-in-induction-hardening',
-    title: 'How Case Depth Impacts Component Performance',
-    description: 'Understand how controlling case depth enhances component strength and fatigue life.',
+    title: 'Factors Affecting Case Depth in Induction Hardening',
+    description: 'Understand the variables that influence case depth, including power, frequency, and quenching conditions.',
     date: 'October 20, 2024',
     imageId: 'blogCaseDepth'
   },
