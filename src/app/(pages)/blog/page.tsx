@@ -383,6 +383,13 @@ const blogPosts = [
     description: 'Enhance durability and surface wear resistance of rolling mill rolls using precision induction hardening.',
     date: 'February 01, 2025',
     imageId: 'blogRollingMill'
+  },
+  {
+    slug: 'automotive-gear-and-shaft-induction-hardening',
+    title: 'Automotive Gear and Shaft Induction Hardening',
+    description: 'Understand how induction hardening improves fatigue life and reduces wear in automotive gears and shafts.',
+    date: 'February 03, 2025',
+    imageId: 'blogAutomotiveGearShaft'
   }
 ];
 
