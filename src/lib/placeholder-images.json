@@ -423,7 +423,7 @@
     {
       "id": "blogToolAndDie",
       "description": "A close-up of various industrial tool and die components.",
-      "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b717b9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b7179b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tool die"
     },
     {
@@ -491,6 +491,12 @@
       "description": "An induction coil perfectly aligned around a metal shaft, glowing red hot during the heating process.",
       "imageUrl": "https://images.unsplash.com/photo-1557201874-98d4f7c33eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1Y3Rpb24lMjBoZWF0aW5nJTIwc2hhZnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "induction heating shaft"
+    },
+    {
+      "id": "blogPolymerVsOil",
+      "description": "A split image showing a clean polymer quenching bath on one side and a dark oil bath on the other.",
+      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2NzI0NzExNHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "quenching comparison"
     }
   ]
 }

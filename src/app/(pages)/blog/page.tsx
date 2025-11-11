@@ -432,6 +432,13 @@ const blogPosts = [
     description: 'Discover how correct coil alignment ensures uniform heating, prevents overheating, and maintains quality control.',
     date: 'February 15, 2025',
     imageId: 'blogCoilAlignment'
+  },
+  {
+    slug: 'advantages-of-polymer-quenching-over-oil',
+    title: 'Advantages of Polymer Quenching Over Oil Cooling',
+    description: 'See how polymer quenching provides better control, safety, and environmental benefits over traditional oil cooling.',
+    date: 'February 17, 2025',
+    imageId: 'blogPolymerVsOil'
   }
 ];
 

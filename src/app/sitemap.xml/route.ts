@@ -62,7 +62,8 @@ const blogPosts = [
     'induction-heat-treatment-for-en8-steel-components',
     'induction-hardening-job-work-for-export-units',
     'common-misconceptions-about-induction-hardening',
-    'importance-of-proper-coil-alignment-in-induction-systems'
+    'importance-of-proper-coil-alignment-in-induction-systems',
+    'advantages-of-polymer-quenching-over-oil'
 ];
 
 export async function GET() {
