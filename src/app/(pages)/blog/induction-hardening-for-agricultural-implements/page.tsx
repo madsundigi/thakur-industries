@@ -84,6 +84,7 @@ export default function BlogPostPage() {
             )}
 
             <p>That’s where induction hardening becomes a game changer. At {SITE_NAME}, Ludhiana, we specialize in heat treatment job work for agricultural machinery components, ensuring enhanced hardness, toughness, and wear resistance.</p>
+            <p className='font-semibold text-foreground'>We harden the heart of every machine that feeds the nation.</p>
             
             <h2 className="text-3xl font-bold mt-12">Why Induction Hardening for Agricultural Equipment?</h2>
             <p>Agricultural equipment operates under heavy load, abrasive soil contact, and frequent impact. Standard steel components can quickly wear down without proper surface hardening. Induction hardening offers an ideal solution by transforming the surface into a hardened martensitic layer, while keeping the inner structure tough and flexible.</p>
@@ -94,8 +95,10 @@ export default function BlogPostPage() {
                 <li>Reduced downtime and replacement costs</li>
                 <li>Enhanced resistance to bending and deformation</li>
             </ul>
+            <p className='font-semibold text-foreground mt-4'>When farm work gets tough, induction-hardened parts stay tougher.</p>
             
             <h2 className="text-3xl font-bold mt-12">Common Agricultural Components Treated with Induction Hardening</h2>
+            <p>At {SITE_NAME}, we handle a wide range of tractor and implement components used in tillage, seeding, harvesting, and soil preparation.</p>
             <div className="my-8 overflow-x-auto">
                 <Table>
                     <TableHeader>
@@ -116,15 +119,19 @@ export default function BlogPostPage() {
                     </TableBody>
                 </Table>
             </div>
+             <p className='font-semibold text-foreground'>From small spindles to large shafts, our induction systems are calibrated for precision and consistency.</p>
 
             <h2 className="text-3xl font-bold mt-12">The Induction Hardening Process for Agricultural Parts</h2>
-            <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
+            <p>At {SITE_NAME}, Ludhiana, we follow a controlled electromagnetic process customized for agricultural-grade steels.</p>
+            <h3 className='text-2xl font-semibold mt-4'>Step-by-Step Process:</h3>
+            <ol className="list-decimal list-inside space-y-2 text-muted-foreground mt-4">
                 <li><strong>Pre-cleaning & Setup:</strong> Remove rust, oil, and contaminants before heating.</li>
                 <li><strong>Induction Heating:</strong> Electromagnetic coils generate heat in the desired surface zone (typically 850°C–950°C).</li>
                 <li><strong>Rapid Quenching:</strong> Polymer or water quenching transforms the structure into hard martensite.</li>
                 <li><strong>Tempering (Optional):</strong> Reduces internal stress, maintaining toughness.</li>
                 <li><strong>Testing:</strong> Surface hardness and case depth verified using digital testers.</li>
             </ol>
+            <p className='font-semibold text-foreground mt-4'>Each part undergoes digitally controlled heating and cooling cycles for uniform hardness and zero distortion.</p>
 
             <h2 className="text-3xl font-bold mt-12">Typical Hardness Results for Agricultural Components</h2>
             <div className="my-8 overflow-x-auto">
@@ -151,6 +158,7 @@ export default function BlogPostPage() {
                     </TableBody>
                 </Table>
             </div>
+            <p className='font-semibold text-foreground'>We match the hardening parameters with the working load and application of each part.</p>
 
             <h2 className="text-3xl font-bold mt-12">Advantages of Induction Hardening for Agricultural Industries</h2>
             <ul className='list-disc list-inside space-y-2 text-muted-foreground'>
@@ -160,6 +168,7 @@ export default function BlogPostPage() {
                 <li><span className='font-bold text-foreground'>Localized Heating:</span> Only specific zones are treated, minimizing energy use and distortion.</li>
                 <li><span className='font-bold text-foreground'>Eco-Friendly & Clean Process:</span> No open flames or fumes — ideal for sustainable manufacturing setups.</li>
             </ul>
+             <p className='font-semibold text-foreground mt-4'>Harder parts mean stronger harvests and reduced downtime for farmers.</p>
 
             <h2 className="text-3xl font-bold mt-12">Induction vs Conventional Hardening for Agricultural Equipment</h2>
             <div className="my-8 overflow-x-auto">
@@ -182,6 +191,7 @@ export default function BlogPostPage() {
                     </TableBody>
                 </Table>
             </div>
+            <p className='font-semibold text-foreground'>Induction hardening is faster, cleaner, and far more precise — ideal for modern agricultural manufacturing.</p>
             
             <h2 className="text-3xl font-bold mt-12">Why Choose Thakur Induction in Ludhiana</h2>
             <p>As one of Punjab’s leading induction hardening service providers, {SITE_NAME} works closely with tractor OEMs, implement manufacturers, and farm machinery suppliers to deliver reliable, high-quality heat treatment job work.</p>
@@ -193,10 +203,12 @@ export default function BlogPostPage() {
                 <li>Expertise in EN-series and 41XX steels</li>
                 <li>Digital process control and hardness testing</li>
             </ul>
+            <p className='font-semibold text-foreground mt-4'>Trusted by Punjab’s leading tractor and implement manufacturers for precision heat treatment.</p>
 
             <h2 className="text-3xl font-bold mt-12">Conclusion: The Backbone of Stronger Agricultural Equipment</h2>
             <p>In agriculture, equipment reliability directly affects productivity and profits. Induction hardening ensures that essential components like spindles, axles, and shafts remain strong, precise, and long-lasting — even under harsh field conditions.</p>
             <p>At {SITE_NAME}, Ludhiana, we provide agricultural component heat treatment job work that meets OEM standards and helps farmers get more value from their machinery.</p>
+             <p className='font-semibold text-foreground mt-4'>Precision hardening for the parts that power Punjab’s fields.</p>
             
             <div className="mt-12 not-prose rounded-lg bg-secondary p-8 text-center">
                 <h3 className="text-2xl font-bold">Need Reliable Tractor Component Hardening?</h3>
