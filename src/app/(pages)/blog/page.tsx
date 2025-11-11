@@ -488,6 +488,13 @@ const blogPosts = [
     description: 'Understand causes of soft spots in induction hardening and how to ensure uniform surface hardness for industrial parts.',
     date: 'March 03, 2025',
     imageId: 'blogSoftSpots'
+  },
+  {
+    slug: 'induction-heating-safety-standards',
+    title: 'Induction Heating Safety Standards for Industries',
+    description: 'Learn essential safety standards and best practices for operating induction heat treatment equipment.',
+    date: 'March 05, 2025',
+    imageId: 'blogSafetyStandards'
   }
 ];
 
@@ -532,5 +539,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    

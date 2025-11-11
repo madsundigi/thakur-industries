@@ -527,6 +527,12 @@
       "description": "A magnified view of a metal surface showing uniform hardness versus one with soft spots.",
       "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMHN1cmZhY2V8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal surface"
+    },
+    {
+      "id": "blogSafetyStandards",
+      "description": "A factory worker wearing full Personal Protective Equipment (PPE), including a hard hat, safety glasses, and gloves, operating industrial machinery.",
+      "imageUrl": "https://images.unsplash.com/photo-1581092921434-80a133939a86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2FmZXR5fGVufDB8fHx8MTc2NzM4NTMwMnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial safety"
     }
   ]
 }

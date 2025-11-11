@@ -69,7 +69,8 @@ const blogPosts = [
     'heat-treatment-for-heavy-duty-shafts-and-rollers',
     'surface-hardening-for-automotive-engine-parts',
     'en19-and-en24-alloy-steel-induction-hardening-guide',
-    'preventing-soft-spots-in-induction-hardening'
+    'preventing-soft-spots-in-induction-hardening',
+    'induction-heating-safety-standards'
 ];
 
 export async function GET() {
@@ -106,5 +107,3 @@ export async function GET() {
     },
   });
 }
-
-    
