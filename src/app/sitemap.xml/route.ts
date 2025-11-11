@@ -59,7 +59,8 @@ const blogPosts = [
     'automotive-gear-and-shaft-induction-hardening',
     'surface-hardening-techniques-for-heavy-engineering-components',
     'temperature-monitoring-systems-in-induction-hardening',
-    'induction-heat-treatment-for-en8-steel-components'
+    'induction-heat-treatment-for-en8-steel-components',
+    'induction-hardening-job-work-for-export-units'
 ];
 
 export async function GET() {
@@ -96,3 +97,5 @@ export async function GET() {
     },
   });
 }
+
+    

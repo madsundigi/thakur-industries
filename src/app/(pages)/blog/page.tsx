@@ -411,6 +411,13 @@ const blogPosts = [
     description: 'Find out how EN8 steel benefits from controlled induction heat treatment for superior strength and hardness.',
     date: 'February 09, 2025',
     imageId: 'blogEN8Steel'
+  },
+  {
+    slug: 'induction-hardening-job-work-for-export-units',
+    title: 'Induction Hardening Job Work for Export Units',
+    description: 'Providing precise induction heat treatment solutions tailored for export and OEM-grade industrial components.',
+    date: 'February 11, 2025',
+    imageId: 'blogExport'
   }
 ];
 
@@ -455,3 +462,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

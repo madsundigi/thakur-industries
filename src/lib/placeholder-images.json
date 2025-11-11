@@ -9,7 +9,7 @@
     {
       "id": "heroIndustries",
       "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial collage"
     },
     {
@@ -485,6 +485,12 @@
       "description": "A close-up of a polished EN8 medium carbon steel shaft.",
       "imageUrl": "https://images.unsplash.com/photo-1543252554-b58a183a651f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpdW0lMjBjYXJib24lMjBzdGVlbCUyMHNoYWZ0fGVufDB8fHx8MTc2Njg1NTM2MXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "EN8 steel shaft"
+    },
+    {
+      "id": "blogExport",
+      "description": "A shipping container being loaded onto a cargo ship, with a globe overlay, representing global export.",
+      "imageUrl": "https://images.unsplash.com/photo-1614036118491-a6bd838969a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbCUyMHNoaXAlMjBleHBvcnR8ZW58MHx8fHwxNzY2OTY1NTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "cargo ship export"
     }
   ]
 }
