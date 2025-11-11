@@ -3,7 +3,7 @@
     {
       "id": "heroMachine",
       "description": "A close-up of a modern industrial machine with glowing blue lights, representing precision engineering.",
-      "imageUrl": "https://images.unsplash.com/photo-1733683296842-c5c32fe36a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI3MTkwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1733683296842-c5c32fe36a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI3MTkwMDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial machine"
     },
     {
@@ -443,6 +443,12 @@
       "description": "A close-up of various industrial tool and die components.",
       "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b717b9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tool die"
+    },
+    {
+      "id": "blogPowertrain",
+      "description": "A close-up of powertrain components like gears and shafts.",
+      "imageUrl": "https://images.unsplash.com/photo-1629828522336-f94236a29731?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3dlcnRyYWluJTIwY29tcG9uZW50c3xlbnwwfHx8fDE3NjUyNzU4ODd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "powertrain components"
     }
   ]
 }

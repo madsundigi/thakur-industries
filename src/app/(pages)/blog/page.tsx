@@ -355,6 +355,13 @@ const blogPosts = [
     description: 'Enhance the lifespan and performance of dies and industrial tools through precision induction hardening.',
     date: 'January 20, 2025',
     imageId: 'blogToolAndDie'
+  },
+  {
+    slug: 'induction-hardening-for-powertrain-components',
+    title: 'Induction Hardening for Powertrain Components in Punjab',
+    description: 'Learn how induction hardening enhances powertrain durability and strength for automotive applications in Ludhiana and Punjab.',
+    date: 'January 22, 2025',
+    imageId: 'blogPowertrain'
   }
 ];
 
@@ -399,3 +406,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    
