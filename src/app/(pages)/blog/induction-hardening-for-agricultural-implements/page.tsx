@@ -5,42 +5,50 @@ import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ChevronRight } from 'lucide-react';
+import { ArrowRight, ChevronRight, CheckCircle, Zap } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Induction Hardening for Tractor Components in Punjab',
-  description: "Learn how induction hardening improves durability and performance of tractor shafts and implements.",
+  title: 'Induction Hardening for Agricultural Equipment Parts',
+  description: 'Increase the strength and life of agricultural machinery parts like spindles, axles, and blades using induction hardening.',
 };
 
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Induction Hardening for Tractor Components in Punjab",
+  "headline": "Induction Hardening for Agricultural Equipment Parts",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
   "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Agricultural Heat Treatment",
-  "keywords": ["tractor component hardening", "agricultural implements heat treatment Punjab", "spindle hardening Ludhiana"],
+  "keywords": ["agricultural equipment heat treatment", "tractor component hardening Punjab", "spindle heat treatment Ludhiana"],
   "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-agricultural-implements",
   "inLanguage": "en"
 };
 
 const componentsData = [
-    { component: "Front & Rear Axles", material: "EN8 / EN19", process: "Induction + Polymer Quenching", purpose: "Wear & fatigue resistance" },
-    { component: "Spindles & Kingpins", material: "EN24 / 4140", process: "Medium-Frequency Hardening", purpose: "Surface hardness + impact strength" },
-    { component: "PTO Shafts", material: "EN8 / 20MnCr5", process: "Progressive Induction Hardening", purpose: "Torque resistance" },
-    { component: "Gear Shafts & Couplings", material: "EN19 / EN24", process: "Case Hardening + Induction", purpose: "Tooth durability" },
-    { component: "Lift Arms & Levers", material: "EN8", process: "Localized Surface Hardening", purpose: "Shock absorption" },
-    { component: "Hydraulic Rods", material: "4340 / EN24", process: "Induction + Polishing", purpose: "Corrosion & wear resistance" },
+    { component: "Tractor Spindles & Axles", material: "EN19, EN24", purpose: "Improved fatigue and bending strength" },
+    { component: "Tiller Blades & Shafts", material: "EN8, EN9", purpose: "Surface hardness for soil abrasion" },
+    { component: "Rotavator Shafts", material: "4140, 4340", purpose: "Enhanced torsional strength" },
+    { component: "Couplings & Hubs", material: "EN19", purpose: "Longer service under load" },
+    { component: "Gear & Pinion Sets", material: "EN36, 20MnCr5", purpose: "Increased surface wear resistance" },
 ];
 
-const materialsData = [
-    { grade: "EN8 / C45", use: "Shafts, axles", hardness: "52–56" },
-    { grade: "EN19 / 4140", use: "Gear shafts, couplings", hardness: "54–58" },
-    { grade: "EN24 / 4340", use: "Spindles, PTO shafts", hardness: "56–60" },
-    { grade: "20MnCr5", use: "Gears, hubs", hardness: "58–62" },
+const hardnessData = [
+    { component: "Tractor Spindle", material: "EN19", hardness: "55–58", depth: "2.5–3.0", quench: "Polymer" },
+    { component: "Axle Shaft", material: "EN24", hardness: "58–60", depth: "3.0–4.0", quench: "Water" },
+    { component: "Rotavator Shaft", material: "4140", hardness: "54–57", depth: "2.0–3.5", quench: "Polymer" },
+    { component: "Tiller Blade", material: "EN8", hardness: "50–54", depth: "1.5–2.0", quench: "Water" },
+];
+
+const comparisonData = [
+    { parameter: 'Heating Method', induction: 'Electromagnetic', flame: 'Flame / Furnace' },
+    { parameter: 'Cycle Time', induction: '10–30 seconds', flame: '1–2 hours' },
+    { parameter: 'Energy Efficiency', induction: '85–90%', flame: '40–50%' },
+    { parameter: 'Surface Control', induction: 'Precise', flame: 'Variable' },
+    { parameter: 'Distortion', induction: 'Minimal', flame: 'Moderate to High' },
+    { parameter: 'Environmental Impact', induction: 'Clean', flame: 'Polluting' }
 ];
 
 export default function BlogPostPage() {
@@ -57,41 +65,44 @@ export default function BlogPostPage() {
                     <ChevronRight className="inline-block w-4 h-4 mx-1" />
                     <Link href="/blog" className="hover:text-primary">Blog</Link>
                     <ChevronRight className="inline-block w-4 h-4 mx-1" />
-                    <span className='truncate'>Tractor Component Hardening</span>
+                    <span className='truncate'>Agricultural Equipment Hardening</span>
                 </div>
-                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Induction Hardening for Tractor Components in Punjab</h1>
-                <p className="mt-4 text-xl text-muted-foreground">Learn how induction hardening improves durability and performance of tractor shafts and implements.</p>
+                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Induction Hardening for Agricultural Equipment Parts</h1>
+                <p className="mt-4 text-xl text-muted-foreground">Punjab, known as the agricultural hub of India, depends on reliable and high-performance machinery — from tractors and tillers to harvesters and ploughing tools. The performance and lifespan of these machines depend on the durability of critical metal parts, which undergo constant wear and tear in harsh conditions.</p>
             </div>
           
             {featureImage && (
                 <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl my-8">
                     <Image
                         src={featureImage.imageUrl}
-                        alt="Induction hardening of tractor components"
+                        alt="Induction hardening of agricultural equipment parts"
                         data-ai-hint={featureImage.imageHint}
                         fill
                         className="object-cover"
                     />
                 </div>
             )}
+
+            <p>That’s where induction hardening becomes a game changer. At {SITE_NAME}, Ludhiana, we specialize in heat treatment job work for agricultural machinery components, ensuring enhanced hardness, toughness, and wear resistance.</p>
             
-            <h2 className="text-3xl font-bold mt-12">Introduction: Strengthening the Backbone of Punjab’s Agriculture</h2>
-            <p>Punjab is known as the agricultural powerhouse of India, and Ludhiana is its manufacturing hub for tractors, spares, and implements. From Mahindra, Swaraj, and Preet, to numerous local OEMs and ancillary suppliers, the need for durable, wear-resistant tractor parts has never been greater.</p>
-            <p>Tractor components endure extreme mechanical stress, vibration, and continuous loading, especially in ploughing, tilling, and harvesting operations. That’s where induction hardening plays a critical role — transforming standard steel parts into high-performance, long-lasting components that can withstand the toughest farm conditions.</p>
-            <p>At {SITE_NAME}, Ludhiana, we specialize in tractor component hardening job work, providing precision-controlled heat treatment services for manufacturers across Punjab and North India.</p>
-
-            <h2 className="text-3xl font-bold mt-12">What Is Induction Hardening for Tractor Components?</h2>
-            <p>Induction hardening is a surface heat treatment process that strengthens only the outer layer of a component, keeping the inner core tough and ductile. The result: A part with a tough core to handle shock and a hard surface to resist wear.</p>
-
-            <h2 className="text-3xl font-bold mt-12">Tractor Components Commonly Hardened by Induction Process</h2>
+            <h2 className="text-3xl font-bold mt-12">Why Induction Hardening for Agricultural Equipment?</h2>
+            <p>Agricultural equipment operates under heavy load, abrasive soil contact, and frequent impact. Standard steel components can quickly wear down without proper surface hardening. Induction hardening offers an ideal solution by transforming the surface into a hardened martensitic layer, while keeping the inner structure tough and flexible.</p>
+            <h3 className="text-2xl font-semibold mt-6">Benefits for Farm Machinery Components:</h3>
+            <ul className='list-disc list-inside space-y-2 text-muted-foreground'>
+                <li>Increased wear and abrasion resistance</li>
+                <li>Improved fatigue strength and load-bearing capacity</li>
+                <li>Reduced downtime and replacement costs</li>
+                <li>Enhanced resistance to bending and deformation</li>
+            </ul>
+            
+            <h2 className="text-3xl font-bold mt-12">Common Agricultural Components Treated with Induction Hardening</h2>
             <div className="my-8 overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow>
                             <TableHead>Component</TableHead>
-                            <TableHead>Material</TableHead>
-                            <TableHead>Process Used</TableHead>
-                            <TableHead>Purpose</TableHead>
+                            <TableHead>Typical Material</TableHead>
+                            <TableHead>Purpose of Hardening</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -99,57 +110,97 @@ export default function BlogPostPage() {
                             <TableRow key={row.component}>
                                 <TableCell className="font-medium">{row.component}</TableCell>
                                 <TableCell>{row.material}</TableCell>
-                                <TableCell>{row.process}</TableCell>
                                 <TableCell>{row.purpose}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
                 </Table>
             </div>
-            
-            <h2 className="text-3xl font-bold mt-12">Why Tractor Components Need Induction Hardening</h2>
-            <h3 className="text-2xl font-semibold mt-6">1. Increased Wear Resistance</h3>
-            <p>The hardened surface resists friction and abrasion during field operation.</p>
-            <h3 className="text-2xl font-semibold mt-6">2. Improved Fatigue Life</h3>
-            <p>The tough core absorbs dynamic stresses, preventing cracks and fractures.</p>
-            <h3 className="text-2xl font-semibold mt-6">3. Reduced Maintenance Costs</h3>
-            <p>Longer service life means fewer replacements and lower operational costs for farmers.</p>
-            <h3 className="text-2xl font-semibold mt-6">4. High Dimensional Accuracy</h3>
-            <p>Induction hardening produces minimal distortion compared to furnace or flame hardening.</p>
-            <h3 className="text-2xl font-semibold mt-6">5. Localized Hardening</h3>
-            <p>Only specific areas (gear teeth, shaft ends, journals) are heated — saving time and energy.</p>
-            
-            <h2 className="text-3xl font-bold mt-12">Case Study: Induction Hardening of Tractor Spindles in Ludhiana</h2>
-            <p>A leading agricultural OEM supplier in Ludhiana faced premature wear and bending on EN24 Front Spindles after only 500 hours of operation. After switching to Thakur Induction, we optimized the process with a 25 kHz medium-frequency induction system and 10% polymer quenching. The results were a 45% improvement in fatigue life and a 70% reduction in distortion, with surface hardness maintained at 58 HRC and a case depth of 3.2 mm.</p>
 
-            <h2 className="text-3xl font-bold mt-12">Materials Commonly Used for Tractor Hardening in Punjab</h2>
+            <h2 className="text-3xl font-bold mt-12">The Induction Hardening Process for Agricultural Parts</h2>
+            <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
+                <li><strong>Pre-cleaning & Setup:</strong> Remove rust, oil, and contaminants before heating.</li>
+                <li><strong>Induction Heating:</strong> Electromagnetic coils generate heat in the desired surface zone (typically 850°C–950°C).</li>
+                <li><strong>Rapid Quenching:</strong> Polymer or water quenching transforms the structure into hard martensite.</li>
+                <li><strong>Tempering (Optional):</strong> Reduces internal stress, maintaining toughness.</li>
+                <li><strong>Testing:</strong> Surface hardness and case depth verified using digital testers.</li>
+            </ol>
+
+            <h2 className="text-3xl font-bold mt-12">Typical Hardness Results for Agricultural Components</h2>
             <div className="my-8 overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow>
-                            <TableHead>Material Grade</TableHead>
-                            <TableHead>Typical Use</TableHead>
-                            <TableHead>Hardness Range (HRC)</TableHead>
+                            <TableHead>Component</TableHead>
+                            <TableHead>Material</TableHead>
+                            <TableHead>Surface Hardness (HRC)</TableHead>
+                            <TableHead>Case Depth (mm)</TableHead>
+                            <TableHead>Quenching Medium</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        {materialsData.map((row) => (
-                            <TableRow key={row.grade}>
-                                <TableCell className="font-medium">{row.grade}</TableCell>
-                                <TableCell>{row.use}</TableCell>
+                        {hardnessData.map((row) => (
+                            <TableRow key={row.component}>
+                                <TableCell className="font-medium">{row.component}</TableCell>
+                                <TableCell>{row.material}</TableCell>
                                 <TableCell>{row.hardness}</TableCell>
+                                <TableCell>{row.depth}</TableCell>
+                                <TableCell>{row.quench}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
                 </Table>
             </div>
 
-            <h2 className="text-3xl font-bold mt-12">Conclusion: Hardening That Powers Punjab’s Fields</h2>
-            <p>From shafts and axles to spindles and PTO assemblies, induction hardening ensures that tractor components deliver maximum performance and durability under rugged conditions. At {SITE_NAME}, we combine material-specific heat treatment expertise, precision coil design, and automated polymer quenching systems to deliver reliable, repeatable, and distortion-free hardening solutions for Punjab’s growing tractor and agricultural machinery industry.</p>
+            <h2 className="text-3xl font-bold mt-12">Advantages of Induction Hardening for Agricultural Industries</h2>
+            <ul className='list-disc list-inside space-y-2 text-muted-foreground'>
+                <li><span className='font-bold text-foreground'>Extended Component Life:</span> Hardened surfaces resist abrasive wear caused by soil, stones, and constant rotation.</li>
+                <li><span className='font-bold text-foreground'>Reduced Maintenance Costs:</span> Longer-lasting components mean fewer breakdowns and replacements.</li>
+                <li><span className='font-bold text-foreground'>Improved Field Performance:</span> Toughened shafts, axles, and spindles ensure smoother and more efficient operation in demanding terrains.</li>
+                <li><span className='font-bold text-foreground'>Localized Heating:</span> Only specific zones are treated, minimizing energy use and distortion.</li>
+                <li><span className='font-bold text-foreground'>Eco-Friendly & Clean Process:</span> No open flames or fumes — ideal for sustainable manufacturing setups.</li>
+            </ul>
+
+            <h2 className="text-3xl font-bold mt-12">Induction vs Conventional Hardening for Agricultural Equipment</h2>
+            <div className="my-8 overflow-x-auto">
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead>Parameter</TableHead>
+                            <TableHead>Induction Hardening</TableHead>
+                            <TableHead>Flame / Furnace Hardening</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {comparisonData.map((row) => (
+                            <TableRow key={row.parameter}>
+                                <TableCell className="font-medium">{row.parameter}</TableCell>
+                                <TableCell>{row.induction}</TableCell>
+                                <TableCell>{row.flame}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </div>
+            
+            <h2 className="text-3xl font-bold mt-12">Why Choose Thakur Induction in Ludhiana</h2>
+            <p>As one of Punjab’s leading induction hardening service providers, {SITE_NAME} works closely with tractor OEMs, implement manufacturers, and farm machinery suppliers to deliver reliable, high-quality heat treatment job work.</p>
+            <h3 className="text-2xl font-semibold mt-6">Our Capabilities Include:</h3>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>State-of-the-art induction machines (medium & high-frequency)</li>
+                <li>Custom coil designs for spindles, axles, and gears</li>
+                <li>Water & polymer quenching systems for controlled cooling</li>
+                <li>Expertise in EN-series and 41XX steels</li>
+                <li>Digital process control and hardness testing</li>
+            </ul>
+
+            <h2 className="text-3xl font-bold mt-12">Conclusion: The Backbone of Stronger Agricultural Equipment</h2>
+            <p>In agriculture, equipment reliability directly affects productivity and profits. Induction hardening ensures that essential components like spindles, axles, and shafts remain strong, precise, and long-lasting — even under harsh field conditions.</p>
+            <p>At {SITE_NAME}, Ludhiana, we provide agricultural component heat treatment job work that meets OEM standards and helps farmers get more value from their machinery.</p>
             
             <div className="mt-12 not-prose rounded-lg bg-secondary p-8 text-center">
-                <h3 className="text-2xl font-bold">Contact Thakur Induction for Tractor Component Hardening Services</h3>
-                <p className="mt-2 text-muted-foreground">For tractor spindle, shaft, and implement hardening job work, contact {SITE_NAME}, Ludhiana. We offer high-quality induction heat treatment services for OEMs and suppliers across Punjab and North India.</p>
+                <h3 className="text-2xl font-bold">Need Reliable Tractor Component Hardening?</h3>
+                <p className="mt-2 text-muted-foreground">Connect with {SITE_NAME}, Ludhiana’s trusted partner for industrial heat treatment services.</p>
                 <div className="mt-6 flex justify-center gap-4">
                     <Button asChild>
                         <Link href="/contact">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>

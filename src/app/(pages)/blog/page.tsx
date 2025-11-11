@@ -106,8 +106,8 @@ const blogPosts = [
   },
   {
     slug: 'induction-hardening-for-agricultural-implements',
-    title: 'Induction Hardening for Tractor Components in Punjab',
-    description: 'Learn how induction hardening improves durability and performance of tractor shafts and implements.',
+    title: 'Induction Hardening for Agricultural Equipment Parts',
+    description: 'Increase the strength and life of agricultural machinery parts like spindles, axles, and blades using induction hardening.',
     date: 'September 25, 2024',
     imageId: 'blogAgricultural'
   },
