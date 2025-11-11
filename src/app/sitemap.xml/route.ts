@@ -61,7 +61,8 @@ const blogPosts = [
     'temperature-monitoring-systems-in-induction-hardening',
     'induction-heat-treatment-for-en8-steel-components',
     'induction-hardening-job-work-for-export-units',
-    'common-misconceptions-about-induction-hardening'
+    'common-misconceptions-about-induction-hardening',
+    'importance-of-proper-coil-alignment-in-induction-systems'
 ];
 
 export async function GET() {

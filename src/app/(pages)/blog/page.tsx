@@ -425,6 +425,13 @@ const blogPosts = [
     description: 'Debunk myths about induction hardening and learn why it\'s the most effective surface hardening method available.',
     date: 'February 13, 2025',
     imageId: 'blogMisconceptions'
+  },
+  {
+    slug: 'importance-of-proper-coil-alignment-in-induction-systems',
+    title: 'Importance of Proper Coil Alignment in Induction Systems',
+    description: 'Discover how correct coil alignment ensures uniform heating, prevents overheating, and maintains quality control.',
+    date: 'February 15, 2025',
+    imageId: 'blogCoilAlignment'
   }
 ];
 
