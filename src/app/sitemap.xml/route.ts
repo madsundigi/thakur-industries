@@ -58,7 +58,8 @@ const blogPosts = [
     'induction-hardening-for-rolling-mill-components',
     'automotive-gear-and-shaft-induction-hardening',
     'surface-hardening-techniques-for-heavy-engineering-components',
-    'temperature-monitoring-systems-in-induction-hardening'
+    'temperature-monitoring-systems-in-induction-hardening',
+    'induction-heat-treatment-for-en8-steel-components'
 ];
 
 export async function GET() {

@@ -404,6 +404,13 @@ const blogPosts = [
     description: 'Explore how advanced temperature monitoring systems improve accuracy and control in induction hardening operations.',
     date: 'February 07, 2025',
     imageId: 'blogTempMonitoring'
+  },
+  {
+    slug: 'induction-heat-treatment-for-en8-steel-components',
+    title: 'Induction Heat Treatment for EN8 Steel Components',
+    description: 'Find out how EN8 steel benefits from controlled induction heat treatment for superior strength and hardness.',
+    date: 'February 09, 2025',
+    imageId: 'blogEN8Steel'
   }
 ];
 
