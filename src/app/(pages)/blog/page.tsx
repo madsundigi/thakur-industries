@@ -190,8 +190,8 @@ const blogPosts = [
   },
   {
     slug: 'induction-hardening-for-crankshafts-and-camshafts',
-    title: 'Induction Hardening for Crankshafts & Camshafts',
-    description: 'Explore how induction hardening improves crankshaft and camshaft durability in tractors and engines.',
+    title: 'Induction Hardening for Crankshafts in Automotive Engines',
+    description: 'Understand how induction hardening enhances durability and torque performance of automotive crankshafts.',
     date: 'November 22, 2024',
     imageId: 'blogCrankshafts'
   },
@@ -553,3 +553,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

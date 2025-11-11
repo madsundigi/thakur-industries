@@ -10,48 +10,38 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Induction Hardening for Crankshafts & Camshafts',
-  description: 'Explore how induction hardening improves crankshaft and camshaft durability in tractors and engines.',
+  title: 'Induction Hardening for Crankshafts in Automotive Engines',
+  description: 'Understand how induction hardening enhances durability and torque performance of automotive crankshafts.',
 };
 
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Induction Hardening for Crankshafts & Camshafts",
+  "headline": "Induction Hardening for Crankshafts in Automotive Engines",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
   "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Automotive Heat Treatment",
-  "keywords": ["crankshaft induction hardening", "camshaft heat treatment Punjab", "engine component hardening"],
+  "keywords": ["automotive crankshaft hardening", "engine component heat treatment Ludhiana", "precision hardening Punjab"],
   "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-crankshafts-and-camshafts",
   "inLanguage": "en"
 };
 
-const benefitsData = [
-    { benefit: "High Surface Hardness (50–62 HRC)", result: "Improved wear resistance & load capacity" },
-    { benefit: "Deep Case Hardening", result: "Longer fatigue life" },
-    { benefit: "Tough, Ductile Core", result: "Resistance to bending & torsion" },
-    { benefit: "Minimal Distortion", result: "Precision geometry for smooth rotation" },
-    { benefit: "Localized Hardening", result: "Efficient and energy-saving process" },
-    { benefit: "Consistent Quality", result: "Ideal for OEM and batch production" },
-];
-
 const materialsData = [
-    { material: "EN8 (C40)", type: "Medium Carbon Steel", application: "Light-duty crankshafts" },
-    { material: "EN19 (4140)", type: "Alloy Steel", application: "Heavy-duty shafts & pins" },
-    { material: "EN24 (4340)", type: "Ni-Cr-Mo Steel", application: "Tractor & industrial crankshafts" },
-    { material: "20MnCr5", type: "Case Hardening Steel", application: "Camshafts, pinions" },
-    { material: "SG Iron / Cast Iron", type: "Chilled camshafts", application: "Selective heat treatment on lobes" },
+    { material: "EN8", type: "Medium Carbon Steel", application: "Light vehicle crankshafts" },
+    { material: "EN19 (AISI 4140)", type: "Alloy Steel", application: "Automotive & industrial crankshafts" },
+    { material: "EN24 (AISI 4340)", type: "Nickel Chromium Steel", application: "Heavy-duty crankshafts" },
+    { material: "42CrMo4", type: "Alloy Steel", application: "High-torque engine crankshafts" },
+    { material: "20MnCr5", type: "Case Hardening Steel", application: "Tractor and gear-driven engines" },
 ];
 
-const comparisonData = [
-    { parameter: "Heating Method", induction: "Localized electromagnetic", conventional: "Full furnace heating" },
-    { parameter: "Cycle Time", induction: "Seconds", conventional: "Hours" },
-    { parameter: "Distortion Risk", induction: "Low", conventional: "High" },
-    { parameter: "Energy Efficiency", induction: "High", conventional: "Moderate" },
-    { parameter: "Repeatability", induction: "Excellent", conventional: "Variable" },
-    { parameter: "Cost Efficiency", induction: "Suitable for mass OEM production", conventional: "Expensive for selective zones" },
-];
+const caseStudyResults = {
+    surfaceHardness: "59 HRC",
+    caseDepth: "2.82 mm",
+    fatigueLifeImprovement: "35%",
+    dimensionalAccuracy: "within ±0.05 mm"
+};
+
 
 export default function BlogPostPage() {
   const featureImage = PlaceHolderImages.find(img => img.id === 'blogCrankshafts');
@@ -67,10 +57,10 @@ export default function BlogPostPage() {
                     <ChevronRight className="inline-block w-4 h-4 mx-1" />
                     <Link href="/blog" className="hover:text-primary">Blog</Link>
                     <ChevronRight className="inline-block w-4 h-4 mx-1" />
-                    <span className='truncate'>Crankshaft & Camshaft Hardening</span>
+                    <span className='truncate'>Crankshaft Hardening</span>
                 </div>
-                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Induction Hardening for Crankshafts & Camshafts</h1>
-                <p className="mt-4 text-xl text-muted-foreground">Explore how induction hardening improves crankshaft and camshaft durability in tractors and engines.</p>
+                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Induction Hardening for Crankshafts in Automotive Engines</h1>
+                <p className="mt-4 text-xl text-muted-foreground">In an automotive engine, the crankshaft is the heart of the powertrain — converting linear piston motion into rotational torque. It operates under extreme pressure, load, and friction, making surface durability essential for engine efficiency and longevity.</p>
             </div>
           
             {featureImage && (
@@ -85,62 +75,42 @@ export default function BlogPostPage() {
                 </div>
             )}
             
-            <h2 className="text-3xl font-bold mt-12">Introduction: The Importance of Crankshaft and Camshaft Hardening</h2>
-            <p>The crankshaft and camshaft are two of the most critical components in any internal combustion engine. They are subjected to extreme dynamic loads, friction, and cyclic stresses during engine operation. Without proper hardening, these components quickly wear out, causing reduced engine efficiency, increased friction and vibration, and premature part failure.</p>
-            <p>That’s why induction hardening has become the industry standard for enhancing durability and performance of crankshafts and camshafts — especially in automotive, tractor, and industrial engines. At {SITE_NAME}, Ludhiana, we specialize in precision-controlled crankshaft induction hardening and camshaft heat treatment job work, serving OEMs and component suppliers across Punjab and North India.</p>
+            <h2 className="text-3xl font-bold mt-12">Introduction: Building the Heart of Every Engine</h2>
+            <p>That’s where induction hardening comes in. This advanced localized heat treatment process enhances the fatigue strength, wear resistance, and lifespan of crankshafts used in cars, tractors, and heavy vehicles.</p>
+            <p>At {SITE_NAME}, Ludhiana, we provide precision crankshaft hardening services for OEMs and industrial manufacturers across Punjab and North India, ensuring unmatched strength and performance.</p>
 
-            <h2 className="text-3xl font-bold mt-12">What Is Induction Hardening for Crankshafts and Camshafts?</h2>
-            <p>Induction hardening is a surface heat treatment process that strengthens the outer layer of steel components by using electromagnetic induction to heat specific areas to the hardening temperature (typically 850–950°C), followed by controlled quenching. The result is a hard martensitic layer that resists wear, while the core remains tough and elastic to absorb shocks and torsional stresses.</p>
+            <h2 className="text-3xl font-bold mt-12">Why Induction Hardening Is Ideal for Crankshafts</h2>
+            <p>Crankshafts experience constant cyclic stress and torsional load. The surface of bearing journals and fillets must resist wear, bending, and fatigue while maintaining a tough, shock-absorbing core. Induction hardening provides the perfect metallurgical solution by hardening only the surface layer, leaving the core ductile for flexibility.</p>
+            <h3 className="text-2xl font-semibold mt-6">Key Advantages:</h3>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>Improved fatigue strength and torsional durability</li>
+                <li>Increased wear resistance of journals and fillets</li>
+                <li>Controlled case depth (1.5–3 mm) for optimized hardness</li>
+                <li>Minimal distortion or warping after treatment</li>
+                <li>Fast, energy-efficient, and repeatable process</li>
+            </ul>
+            <p className="font-semibold text-foreground mt-4">💡 Every hardened layer means more revolutions per minute — with less wear per cycle.</p>
 
-            <h2 className="text-3xl font-bold mt-12">Crankshaft Induction Hardening Process</h2>
-            <p>The crankshaft induction hardening process involves selective hardening of main journals and crank pins using rotational and progressive scanning techniques.</p>
+            <h2 className="text-3xl font-bold mt-12">The Induction Hardening Process for Crankshafts</h2>
+            <p>At {SITE_NAME}, we use custom-designed coils and medium-frequency induction systems to precisely harden specific zones of the crankshaft — mainly bearing journals, pins, and fillets.</p>
             <h3 className="text-2xl font-semibold mt-6">Step-by-Step Process:</h3>
             <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                <li><strong>Preparation & Cleaning:</strong> The crankshaft is cleaned and pre-checked for surface defects.</li>
-                <li><strong>Induction Heating:</strong> Coils are positioned around each journal or pin, heating them precisely to hardening temperature.</li>
-                <li><strong>Polymer or Water Quenching:</strong> Controlled cooling forms a martensitic case layer (50–60 HRC).</li>
-                <li><strong>Tempering (Optional):</strong> Reduces internal stress for better toughness.</li>
-                <li><strong>Testing & Inspection:</strong> Hardness, case depth, and roundness are verified post-treatment.</li>
+                <li><strong>Pre-Cleaning and Inspection:</strong> The crankshaft is cleaned to remove oil, rust, or scale for uniform heating.</li>
+                <li><strong>Induction Heating:</strong> Using a medium-frequency electromagnetic field (10–30 kHz), the crankshaft surface is rapidly heated to 850–950°C.</li>
+                <li><strong>Quenching:</strong> Immediate polymer or water quenching transforms the heated surface into hard martensite, achieving surface hardness up to 58–60 HRC.</li>
+                <li><strong>Tempering (Optional):</strong> Tempering at 150–200°C relieves internal stress and improves structural balance.</li>
+                <li><strong>Hardness and Case Depth Testing:</strong> Each crankshaft undergoes Rockwell hardness testing and microhardness inspection to verify uniformity.</li>
             </ol>
-
-            <h2 className="text-3xl font-bold mt-12">Camshaft Heat Treatment Process</h2>
-            <p>The camshaft controls the opening and closing of engine valves — requiring extreme surface wear resistance on its lobes and bearing journals.</p>
-             <h3 className="text-2xl font-semibold mt-6">Step-by-Step Process:</h3>
-            <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                <li><strong>Setup & Coil Alignment:</strong> Coils are positioned on cam lobes or full-length scanning is applied.</li>
-                <li><strong>Localized Heating:</strong> Only the cam lobe area is heated to hardening temperature.</li>
-                <li><strong>Quenching:</strong> Rapid cooling ensures hard martensitic layer formation.</li>
-                <li><strong>Polishing & Testing:</strong> Post-hardening, cam lobes are ground to precise profiles.</li>
-            </ol>
-
-            <h2 className="text-3xl font-bold mt-12">Benefits of Induction Hardening for Crankshafts & Camshafts</h2>
-            <div className="my-8 overflow-x-auto">
-                <Table>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead>Benefit</TableHead>
-                            <TableHead>Resulting Improvement</TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {benefitsData.map((row) => (
-                            <TableRow key={row.benefit}>
-                                <TableCell className="font-medium">{row.benefit}</TableCell>
-                                <TableCell>{row.result}</TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </div>
+             <p className="font-semibold text-foreground mt-4">🔍 Every journal and fillet receives precision heat treatment — micrometer by micrometer.</p>
             
-            <h2 className="text-3xl font-bold mt-12">Materials Suitable for Crankshaft and Camshaft Hardening</h2>
+            <h2 className="text-3xl font-bold mt-12">Materials Suitable for Induction Hardening Crankshafts</h2>
             <div className="my-8 overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow>
                             <TableHead>Material</TableHead>
                             <TableHead>Type</TableHead>
-                            <TableHead>Applications</TableHead>
+                            <TableHead>Common Applications</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -154,35 +124,23 @@ export default function BlogPostPage() {
                     </TableBody>
                 </Table>
             </div>
+             <p className="font-semibold text-foreground">We adjust frequency, power, and quenching based on each steel’s metallurgical response.</p>
 
-            <h2 className="text-3xl font-bold mt-12">Comparison: Induction Hardening vs Traditional Heat Treatment</h2>
-             <div className="my-8 overflow-x-auto">
-                <Table>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead>Parameter</TableHead>
-                            <TableHead>Induction Hardening</TableHead>
-                            <TableHead>Conventional Heat Treatment</TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {comparisonData.map((row) => (
-                            <TableRow key={row.parameter}>
-                                <TableCell className="font-medium">{row.parameter}</TableCell>
-                                <TableCell><CheckCircle className="inline-block mr-2 h-5 w-5 text-green-500" />{row.induction}</TableCell>
-                                <TableCell>{row.conventional}</TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </div>
-            
-            <h2 className="text-3xl font-bold mt-12">Conclusion: Reliable Hardening for Engine Longevity</h2>
-            <p>A well-hardened crankshaft and camshaft are the foundation of a strong, reliable engine. Through precision induction hardening, {SITE_NAME} ensures these components can withstand millions of stress cycles, providing smooth performance, wear resistance, and long service life.</p>
+            <h2 className="text-3xl font-bold mt-12">Case Study: Crankshaft Hardening for Tractor Engine Manufacturer</h2>
+             <ul className="list-disc list-inside space-y-2 text-muted-foreground my-4">
+                <li><strong>Surface hardness achieved:</strong> {caseStudyResults.surfaceHardness}</li>
+                <li><strong>Fatigue life improved by:</strong> {caseStudyResults.fatigueLifeImprovement}</li>
+                <li><strong>Dimensional accuracy maintained:</strong> {caseStudyResults.dimensionalAccuracy}</li>
+             </ul>
+             <p className="font-semibold text-foreground">🏅 A perfect balance of strength, surface hardness, and precision — achieved through controlled induction.</p>
+
+            <h2 className="text-3xl font-bold mt-12">Conclusion: Powering Performance with Induction Hardening</h2>
+            <p>In today’s high-performance automotive world, precision heat treatment defines engine reliability. Through controlled induction hardening, crankshafts gain the strength to handle high torque, friction, and continuous stress — ensuring smooth power delivery and extended engine life.</p>
+            <p>At {SITE_NAME}, Ludhiana, we bring engineering excellence and metallurgical precision to every crankshaft we treat — powering Punjab’s automotive growth with technology and trust.</p>
             
             <div className="mt-12 not-prose rounded-lg bg-secondary p-8 text-center">
-                <h3 className="text-2xl font-bold">Looking for Crankshaft & Camshaft Hardening Job Work in Punjab?</h3>
-                <p className="mt-2 text-muted-foreground">Contact {SITE_NAME}, Ludhiana — your trusted partner for induction hardening services for crankshafts, camshafts, and automotive components.</p>
+                <h3 className="text-2xl font-bold">Looking for Crankshaft Induction Hardening Job Work in Punjab?</h3>
+                <p className="mt-2 text-muted-foreground">Contact {SITE_NAME}, your reliable name in industrial and automotive heat treatment solutions.</p>
                 <div className="mt-6 flex justify-center gap-4">
                     <Button asChild>
                         <Link href="/contact">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
@@ -197,3 +155,5 @@ export default function BlogPostPage() {
     </>
   );
 }
+
+    
