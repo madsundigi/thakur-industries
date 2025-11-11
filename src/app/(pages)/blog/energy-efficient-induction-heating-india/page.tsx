@@ -74,7 +74,7 @@ export default function BlogPostPage() {
                 <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl my-8">
                     <Image
                         src={featureImage.imageUrl}
-                        alt="Energy efficient induction hardening diagram"
+                        alt={featureImage.description}
                         data-ai-hint={featureImage.imageHint}
                         fill
                         className="object-cover"
