@@ -65,7 +65,8 @@ const blogPosts = [
     'importance-of-proper-coil-alignment-in-induction-systems',
     'advantages-of-polymer-quenching-over-oil',
     'case-hardening-for-automotive-transmission-components',
-    'advanced-induction-hardening-for-precision-components'
+    'advanced-induction-hardening-for-precision-components',
+    'heat-treatment-for-heavy-duty-shafts-and-rollers'
 ];
 
 export async function GET() {

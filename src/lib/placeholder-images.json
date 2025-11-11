@@ -367,6 +367,12 @@
       "imageHint": "industrial shaft"
     },
     {
+      "id": "blogHeavyDutyShafts",
+      "description": "A large industrial shaft used in heavy machinery.",
+      "imageUrl": "https://images.unsplash.com/photo-1616422285852-24318c651f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2hhZnR8ZW58MHx8fHwxNzYzOTYxMjMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial shaft"
+    },
+    {
       "id": "blogCracks",
       "description": "An illustration showing a magnified view of a crack-free metal surface versus a cracked one after heat treatment.",
       "imageUrl": "https://images.unsplash.com/photo-1641605272318-5cf11f8de2c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWV0YWwlMjBzdXJmYWNlJTIwY3JhY2t8ZW58MHx8fHwxNzYyNzgzNTA3fDA&ixlib-rb-4.1.0&q=80&w=1080",

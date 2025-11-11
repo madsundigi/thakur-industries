@@ -460,6 +460,13 @@ const blogPosts = [
     description: 'Discover how advanced induction hardening enhances precision component reliability and performance in Punjab industries.',
     date: 'February 23, 2025',
     imageId: 'heroMachine'
+  },
+  {
+    slug: 'heat-treatment-for-heavy-duty-shafts-and-rollers',
+    title: 'Heat Treatment for Heavy-Duty Shafts and Rollers',
+    description: 'Learn how heat treatment improves durability and surface strength of heavy-duty shafts and rollers in Ludhiana industries.',
+    date: 'February 25, 2025',
+    imageId: 'blogHeavyDutyShafts'
   }
 ];
 
