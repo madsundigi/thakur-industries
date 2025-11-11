@@ -344,8 +344,8 @@ const blogPosts = [
   },
   {
     slug: 'role-of-process-automation-in-induction-heat-treatment',
-    title: 'Automation Trends in Induction Heat Treatment',
-    description: 'Explore how automation and digital controls are transforming induction heat treatment in industrial applications.',
+    title: 'PLC Automation in Induction Hardening Systems',
+    description: 'Learn how PLC-based control systems ensure consistent, automated, and repeatable induction hardening processes.',
     date: 'January 18, 2025',
     imageId: 'blogAutomation'
   },
