@@ -474,6 +474,13 @@ const blogPosts = [
     description: 'See how surface hardening strengthens automotive engine components for improved wear resistance and performance.',
     date: 'February 27, 2025',
     imageId: 'blogEngineParts'
+  },
+  {
+    slug: 'en19-and-en24-alloy-steel-induction-hardening-guide',
+    title: 'EN19 and EN24 Alloy Steel Induction Hardening Guide',
+    description: 'Detailed guide on induction hardening of EN19 and EN24 steels for automotive and heavy equipment manufacturing.',
+    date: 'March 01, 2025',
+    imageId: 'blogEN19_EN24'
   }
 ];
 
@@ -518,3 +525,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

@@ -9,7 +9,7 @@
     {
       "id": "heroIndustries",
       "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650436986857-83a895e46daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwY29sbGFnZXxlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial collage"
     },
     {
@@ -515,6 +515,12 @@
       "description": "A close-up of various automotive engine parts like pistons, connecting rods, and valves, neatly arranged.",
       "imageUrl": "https://images.unsplash.com/photo-1605513226483-c5587843519c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZW5naW5lJTIwcGFydHN8ZW58MHx8fHwxNzYyODU4OTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive engine parts"
+    },
+    {
+      "id": "blogEN19_EN24",
+      "description": "Close-up of heavy-duty EN19 and EN24 alloy steel gears and shafts.",
+      "imageUrl": "https://images.unsplash.com/photo-1563291833-c2885e3c1f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbGxveSUyMHN0ZWVsJTIwZ2VhcnN8ZW58MHx8fHwxNzY3MzQ0MzAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "alloy steel gears"
     }
   ]
 }
