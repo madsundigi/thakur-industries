@@ -63,7 +63,8 @@ const blogPosts = [
     'induction-hardening-job-work-for-export-units',
     'common-misconceptions-about-induction-hardening',
     'importance-of-proper-coil-alignment-in-induction-systems',
-    'advantages-of-polymer-quenching-over-oil'
+    'advantages-of-polymer-quenching-over-oil',
+    'case-hardening-for-automotive-transmission-components'
 ];
 
 export async function GET() {

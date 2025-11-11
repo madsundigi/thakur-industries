@@ -439,6 +439,13 @@ const blogPosts = [
     description: 'See how polymer quenching provides better control, safety, and environmental benefits over traditional oil cooling.',
     date: 'February 17, 2025',
     imageId: 'blogPolymerVsOil'
+  },
+  {
+    slug: 'case-hardening-for-automotive-transmission-components',
+    title: 'Case Hardening for Automotive Transmission Components',
+    description: 'Enhance transmission performance and reliability through case hardening of gears, shafts, and couplings.',
+    date: 'February 19, 2025',
+    imageId: 'blogTransmissionComponents'
   }
 ];
 
