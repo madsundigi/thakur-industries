@@ -397,6 +397,13 @@ const blogPosts = [
     description: 'Learn about surface hardening processes that provide heavy engineering components with wear-resistant strength.',
     date: 'February 05, 2025',
     imageId: 'blogSurfaceHardeningTechniques'
+  },
+  {
+    slug: 'temperature-monitoring-systems-in-induction-hardening',
+    title: 'Temperature Monitoring in Induction Hardening',
+    description: 'Explore how advanced temperature monitoring systems improve accuracy and control in induction hardening operations.',
+    date: 'February 07, 2025',
+    imageId: 'blogTempMonitoring'
   }
 ];
 
