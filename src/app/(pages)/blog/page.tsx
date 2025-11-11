@@ -141,8 +141,8 @@ const blogPosts = [
   },
   {
     slug: 'case-depth-control-in-induction-hardening',
-    title: 'Factors Affecting Case Depth in Induction Hardening',
-    description: 'Understand the variables that influence case depth, including power, frequency, and quenching conditions.',
+    title: 'Optimizing Case Depth for Gear Components',
+    description: 'Learn how controlled case depth enhances wear resistance and fatigue life in automotive gear components.',
     date: 'October 20, 2024',
     imageId: 'blogCaseDepth'
   },
@@ -502,6 +502,13 @@ const blogPosts = [
     description: 'Learn essential safety standards and best practices for operating induction heat treatment equipment.',
     date: 'March 05, 2025',
     imageId: 'blogSafetyStandards'
+  },
+  {
+    slug: 'tool-and-die-induction-hardening-processes-explained',
+    title: 'Tool and Die Induction Hardening Processes Explained',
+    description: 'Explore the process and benefits of induction hardening for tools and dies used in precision manufacturing.',
+    date: 'January 21, 2025',
+    imageId: 'blogToolAndDieHardening'
   }
 ];
 
@@ -546,5 +553,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    
