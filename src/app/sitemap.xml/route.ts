@@ -71,7 +71,8 @@ const blogPosts = [
     'en19-and-en24-alloy-steel-induction-hardening-guide',
     'preventing-soft-spots-in-induction-hardening',
     'induction-heating-safety-standards',
-    'tool-and-die-induction-hardening-processes-explained'
+    'tool-and-die-induction-hardening-processes-explained',
+    'advantages-of-water-based-cooling-in-heat-treatment'
 ];
 
 export async function GET() {
@@ -108,5 +109,3 @@ export async function GET() {
     },
   });
 }
-
-    

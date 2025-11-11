@@ -509,6 +509,13 @@ const blogPosts = [
     description: 'Explore the process and benefits of induction hardening for tools and dies used in precision manufacturing.',
     date: 'January 21, 2025',
     imageId: 'blogToolAndDieHardening'
+  },
+  {
+    slug: 'advantages-of-water-based-cooling-in-heat-treatment',
+    title: 'Advantages of Water-Based Cooling in Heat Treatment',
+    description: 'See how water-based cooling improves energy efficiency and reduces environmental impact in induction hardening.',
+    date: 'March 07, 2025',
+    imageId: 'blogWaterCooling'
   }
 ];
 
@@ -553,5 +560,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    
