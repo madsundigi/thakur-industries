@@ -10,43 +10,41 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Induction Hardening vs Flame Hardening - Which Is Better?',
-  description: 'Comparing induction and flame hardening for precision, speed, and energy efficiency in industrial metal parts.',
+  title: 'Why Induction Hardening is Preferred Over Flame Hardening',
+  description: 'Compare flame and induction hardening processes to see why induction is the superior choice for modern industries.',
 };
 
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Induction Hardening vs Flame Hardening — Which Is Better for Your Components?",
+  "headline": "Why Induction Hardening is Preferred Over Flame Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
   "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
-  "keywords": ["induction hardening vs flame hardening", "difference between induction and flame hardening", "heat treating comparison"],
+  "keywords": ["induction hardening vs flame hardening", "industrial hardening process Punjab", "heat treatment comparison Ludhiana"],
   "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-vs-flame-hardening",
   "inLanguage": "en"
 };
 
 const comparisonData = [
-    { aspect: "Heating Source", induction: "Electromagnetic induction", flame: "Oxy-acetylene flame" },
-    { aspect: "Temperature Control", induction: "Precise (via automation)", flame: "Manual, operator dependent" },
-    { aspect: "Heating Speed", induction: "Very fast (seconds)", flame: "Slow (minutes)" },
-    { aspect: "Uniformity", induction: "High consistency", flame: "May vary with operator skill" },
-    { aspect: "Energy Efficiency", induction: "80–90% efficient", flame: "40–50% efficient" },
-    { aspect: "Distortion Risk", induction: "Low (localized heating)", flame: "Higher (wide heat spread)" },
-    { aspect: "Surface Finish", induction: "Clean, no oxidation", flame: "Scaling and oxidation possible" },
-    { aspect: "Automation", induction: "Easily automated", flame: "Manual process" },
-    { aspect: "Environmental Impact", induction: "Clean, no fuel combustion", flame: "Uses fossil fuels, emits gases" },
-    { aspect: "Repeatability", induction: "Excellent", flame: "Moderate" },
-    { aspect: "Best For", induction: "Precision parts (gears, shafts)", flame: "Large components (rollers, beds)" },
+    { aspect: "Heat Source", induction: "Electromagnetic Field", flame: "Oxy-Fuel Flame" },
+    { aspect: "Heating Speed", induction: "2–10 seconds", flame: "1–5 minutes" },
+    { aspect: "Surface Control", induction: "Precise (±0.1 mm)", flame: "Limited" },
+    { aspect: "Temperature Monitoring", induction: "Digital / Automated", flame: "Manual" },
+    { aspect: "Energy Efficiency", induction: "85–90%", flame: "40–50%" },
+    { aspect: "Distortion Risk", induction: "Very Low", flame: "Moderate to High" },
+    { aspect: "Environmental Impact", induction: "Clean / No Emissions", flame: "Polluting" },
+    { aspect: "Repeatability", induction: "Excellent", flame: "Inconsistent" },
+    { aspect: "Case Depth Uniformity", induction: "Highly Controllable", flame: "Variable" },
 ];
 
 const caseStudyData = [
-    { parameter: "Heating Time", flame: "~3 minutes", induction: "~20 seconds" },
-    { parameter: "Surface Hardness", flame: "48–52 HRC", induction: "55–60 HRC" },
-    { parameter: "Distortion", flame: "Moderate", induction: "Negligible" },
-    { parameter: "Energy Consumption", flame: "High", induction: "Low" },
-    { parameter: "Production Output", flame: "30 pcs/hour", induction: "120 pcs/hour" },
+    { parameter: "Cycle Time", flame: "6 minutes", induction: "30 seconds" },
+    { parameter: "Surface Hardness", flame: "50–54 HRC", induction: "58–60 HRC" },
+    { parameter: "Distortion", flame: "Moderate", induction: "Minimal" },
+    { parameter: "Repeatability", flame: "Inconsistent", induction: "Excellent" },
+    { parameter: "Energy Consumption", flame: "High", induction: "40% Lower" },
 ];
 
 
@@ -66,8 +64,8 @@ export default function BlogPostPage() {
                     <ChevronRight className="inline-block w-4 h-4 mx-1" />
                     <span className='truncate'>Induction vs Flame Hardening</span>
                 </div>
-                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Induction Hardening vs Flame Hardening — Which Is Better for Your Components?</h1>
-                <p className="mt-4 text-xl text-muted-foreground">Both processes strengthen the outer layer of steel parts while keeping the core tough. However, they differ in precision, control, cost, and repeatability.</p>
+                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">Why Induction Hardening is Preferred Over Flame Hardening</h1>
+                <p className="mt-4 text-xl text-muted-foreground">In the world of industrial heat treatment, the demand for precision, consistency, and energy efficiency has led many manufacturers to replace traditional flame hardening with induction hardening.</p>
             </div>
           
             {featureImage && (
@@ -82,20 +80,21 @@ export default function BlogPostPage() {
                 </div>
             )}
 
-            <p>In this blog, {SITE_NAME}, Ludhiana, explains the difference between induction and flame hardening, helping you decide which method best suits your components and production needs.</p>
+            <p>At {SITE_NAME}, Ludhiana, we specialize in modern induction hardening services for automotive, agricultural, and industrial components across Punjab — helping manufacturers move beyond conventional methods.</p>
+            <p className='font-semibold text-foreground'><Zap className="inline-block mr-2 h-5 w-5 text-primary" />Induction hardening delivers cleaner, faster, and more accurate results than flame hardening — the preferred choice for modern industries.</p>
             
             <h2 className="text-3xl font-bold mt-12">What Is Flame Hardening?</h2>
-            <p>Flame hardening uses a gas flame (usually oxy-acetylene) to heat the surface of a metal component to its transformation temperature (about 850–950°C). Once the correct temperature is reached, the surface is quenched rapidly using water or oil, converting the heated layer into a hard martensitic structure.</p>
+            <p>Flame hardening is a traditional surface heat treatment process that uses oxy-acetylene or oxy-gas flames to heat a specific area of the metal surface. Once the surface reaches the desired temperature (usually between 850°C and 950°C), it is rapidly quenched using water or oil.</p>
 
             <h2 className="text-3xl font-bold mt-12">What Is Induction Hardening?</h2>
-            <p>Induction hardening uses electromagnetic induction to generate heat directly within the metal’s surface. An induction coil surrounds the component, heating it rapidly and precisely to the desired temperature before quenching (using water or polymer).</p>
+            <p>Induction hardening uses electromagnetic induction to heat metal surfaces without direct contact. A coil generates alternating magnetic fields, inducing heat only in the desired area. The surface is then quenched using water or polymer, producing a hard martensitic layer while keeping the inner core tough.</p>
 
-            <h2 className="text-3xl font-bold mt-12">Induction Hardening vs Flame Hardening: Key Differences</h2>
+            <h2 className="text-3xl font-bold mt-12">Key Differences Between Induction and Flame Hardening</h2>
             <div className="my-8 overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow>
-                            <TableHead>Aspect</TableHead>
+                            <TableHead>Parameter</TableHead>
                             <TableHead>Induction Hardening</TableHead>
                             <TableHead>Flame Hardening</TableHead>
                         </TableRow>
@@ -113,23 +112,22 @@ export default function BlogPostPage() {
             </div>
             
             <h2 className="text-3xl font-bold mt-12">Advantages of Induction Hardening Over Flame Hardening</h2>
-            <h3 className="text-2xl font-semibold mt-6">1. Superior Precision & Control</h3>
-            <p>Induction hardening offers exact control over heating depth and temperature, ensuring each component receives identical treatment. In contrast, flame hardening depends on operator technique, which can lead to unevenness.</p>
-            <h3 className="text-2xl font-semibold mt-6">2. Faster Processing & Production Efficiency</h3>
-            <p>Induction heating generates heat in seconds, allowing for faster cycle times and high production throughput, ideal for mass production.</p>
-            <h3 className="text-2xl font-semibold mt-6">3. Lower Distortion & Consistent Case Depth</h3>
-            <p>Since induction hardening focuses heat on the desired surface zone, it minimizes distortion, crucial for precision parts like shafts and gears.</p>
-            <h3 className="text-2xl font-semibold mt-6">4. Environmentally Friendly & Energy Efficient</h3>
-            <p>Induction systems are highly efficient and produce no fuel combustion, making them a greener choice for modern manufacturing in Punjab.</p>
-            <h3 className="text-2xl font-semibold mt-6">5. Cleaner Surface & Better Metallurgical Results</h3>
-            <p>Induction hardening creates oxidation-free surfaces, reducing post-process cleaning and producing a uniform martensitic layer that maximizes wear resistance.</p>
+            <ul className="space-y-4 text-lg">
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" /><div><span className="font-semibold">Superior Precision:</span> Induction hardening provides targeted heating only to the critical wear zones, maintaining dimensional accuracy.</div></li>
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" /><div><span className="font-semibold">High Energy Efficiency:</span> Induction systems convert up to 90% of input energy into usable heat, compared to 40–50% in flame systems.</div></li>
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" /><div><span className="font-semibold">Shorter Cycle Time:</span> Parts can be hardened in seconds, not minutes, improving throughput and reducing costs.</div></li>
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" /><div><span className="font-semibold">Cleaner & Safer:</span> No flames, fumes, or combustion gases, making it environmentally friendly and operator-safe.</div></li>
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" /><div><span className="font-semibold">Automated & Repeatable:</span> Computer-controlled parameters ensure every part receives identical heat treatment.</div></li>
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" /><div><span className="font-semibold">Reduced Distortion:</span> Localized heating minimizes warping — a major drawback of flame hardening.</div></li>
+                <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" /><div><span className="font-semibold">Perfect for Complex Shapes:</span> Custom coils can precisely heat gears, shafts, and irregular profiles.</div></li>
+            </ul>
             
-            <h2 className="text-3xl font-bold mt-12">Case Study: Automotive Gear Hardening</h2>
+            <h2 className="text-3xl font-bold mt-12">Case Study: Automotive Shaft Hardening (Flame vs Induction)</h2>
              <div className="my-8 overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow>
-                            <TableHead>Parameter</TableHead>
+                            <TableHead>Aspect</TableHead>
                             <TableHead>Flame Hardening</TableHead>
                             <TableHead>Induction Hardening</TableHead>
                         </TableRow>
@@ -145,14 +143,15 @@ export default function BlogPostPage() {
                     </TableBody>
                 </Table>
             </div>
-            <p><strong>Result:</strong> Induction hardening proved to be 4x faster, more energy-efficient, and produced uniform hardness with minimal distortion, making it ideal for automotive and tractor parts.</p>
+            <p><strong>Result:</strong> After switching to induction hardening, the client reported a 25% increase in part life and 30% reduction in energy use.</p>
 
-            <h2 className="text-3xl font-bold mt-12">Conclusion: The Smarter, Cleaner, and Faster Choice</h2>
-            <p>When comparing induction hardening vs flame hardening, induction clearly leads in precision, energy efficiency, speed, consistency, and eco-friendliness. For industries in Ludhiana and Punjab, where quality and efficiency drive competitiveness, induction hardening is the future of modern heat treatment.</p>
-            
+            <h2 className="text-3xl font-bold mt-12">Conclusion: The Clear Winner — Induction Hardening</h2>
+            <p>In the debate of induction hardening vs flame hardening, the verdict is clear. Induction hardening offers unmatched precision, speed, and energy efficiency, making it the preferred choice for modern automotive and industrial applications.</p>
+            <p>At {SITE_NAME}, Ludhiana, we combine advanced machinery and metallurgical expertise to deliver superior heat treatment services trusted by manufacturers across Punjab and North India.</p>
+
             <div className="mt-12 not-prose rounded-lg bg-secondary p-8 text-center">
-                <h3 className="text-2xl font-bold">Looking for Professional Induction Hardening Services?</h3>
-                <p className="mt-2 text-muted-foreground">Partner with {SITE_NAME} for advanced surface hardening job work for all industrial components.</p>
+                <h3 className="text-2xl font-bold">Upgrade Your Heat Treatment Process Today</h3>
+                <p className="mt-2 text-muted-foreground">Get in touch with {SITE_NAME}, Ludhiana’s trusted name in industrial induction hardening and heat treatment job work.</p>
                 <div className="mt-6 flex justify-center gap-4">
                     <Button asChild>
                         <Link href="/contact">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>

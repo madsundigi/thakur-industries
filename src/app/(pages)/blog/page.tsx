@@ -85,8 +85,8 @@ const blogPosts = [
   },
   {
     slug: 'induction-hardening-vs-flame-hardening',
-    title: 'Induction Hardening vs Flame Hardening - Which Is Better?',
-    description: 'Comparing induction and flame hardening for precision, speed, and energy efficiency in industrial metal parts.',
+    title: 'Why Induction Hardening is Preferred Over Flame Hardening',
+    description: 'Compare flame and induction hardening processes to see why induction is the superior choice for modern industries.',
     date: 'September 15, 2024',
     imageId: 'blogFlameVsInduction'
   },
