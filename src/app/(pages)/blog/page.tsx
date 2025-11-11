@@ -376,6 +376,13 @@ const blogPosts = [
     description: 'Explore how induction heating revolutionizes modern manufacturing with precise, clean, and efficient heating.',
     date: 'January 26, 2025',
     imageId: 'blogInductionRole'
+  },
+  {
+    slug: 'induction-hardening-for-rolling-mill-components',
+    title: 'Induction Hardening for Rolling Mill Components',
+    description: 'Enhance durability and surface wear resistance of rolling mill rolls using precision induction hardening.',
+    date: 'February 01, 2025',
+    imageId: 'blogRollingMill'
   }
 ];
 
