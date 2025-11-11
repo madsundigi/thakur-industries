@@ -344,8 +344,8 @@ const blogPosts = [
   },
   {
     slug: 'role-of-process-automation-in-induction-heat-treatment',
-    title: 'Role of Process Automation in Induction Heat Treatment',
-    description: 'Learn how PLC and sensor-based systems improve repeatability and efficiency in heat treatment.',
+    title: 'Automation Trends in Induction Heat Treatment',
+    description: 'Explore how automation and digital controls are transforming induction heat treatment in industrial applications.',
     date: 'January 18, 2025',
     imageId: 'blogAutomation'
   },
