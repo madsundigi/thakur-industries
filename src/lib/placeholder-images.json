@@ -545,6 +545,12 @@
       "description": "A glowing red hot metal part being sprayed with jets of water for quenching.",
       "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal quenching"
+    },
+    {
+      "id": "blogQuenchingFlowRate",
+      "description": "Close-up of a high-pressure water jet spraying a metal component during the quenching process.",
+      "imageUrl": "https://images.unsplash.com/photo-1560192776-60a3bab7190d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3YXRlciUyMGpldCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI4Nzg0NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water jet quenching"
     }
   ]
 }

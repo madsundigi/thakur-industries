@@ -72,7 +72,8 @@ const blogPosts = [
     'preventing-soft-spots-in-induction-hardening',
     'induction-heating-safety-standards',
     'tool-and-die-induction-hardening-processes-explained',
-    'advantages-of-water-based-cooling-in-heat-treatment'
+    'advantages-of-water-based-cooling-in-heat-treatment',
+    'role-of-quenching-flow-rate-in-heat-treatment-quality'
 ];
 
 export async function GET() {

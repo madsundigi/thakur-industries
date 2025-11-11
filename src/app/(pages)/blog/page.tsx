@@ -259,11 +259,11 @@ const blogPosts = [
     imageId: 'blogMediumFrequency'
   },
   {
-    slug: 'induction-hardening-for-en24-and-4340-alloy-steels',
-    title: 'Induction Hardening for EN24 & 4340 Alloy Steels',
-    description: 'Learn how EN24 and 4340 alloy steels respond to induction heat treatment and offer superior hardness.',
+    slug: 'en19-and-en24-alloy-steel-induction-hardening-guide',
+    title: 'EN19 and EN24 Alloy Steel Induction Hardening Guide',
+    description: 'Detailed guide on induction hardening of EN19 and EN24 steels for automotive and heavy equipment manufacturing.',
     date: 'December 24, 2024',
-    imageId: 'blogEn24_4340'
+    imageId: 'blogEN19_EN24'
   },
   {
     slug: 'polymer-vs-water-quenching',
@@ -516,6 +516,13 @@ const blogPosts = [
     description: 'See how water-based cooling improves energy efficiency and reduces environmental impact in induction hardening.',
     date: 'March 07, 2025',
     imageId: 'blogWaterCooling'
+  },
+  {
+    slug: 'role-of-quenching-flow-rate-in-heat-treatment-quality',
+    title: 'Role of Quenching Flow Rate in Heat Treatment Quality',
+    description: 'Understand how precise control of quenching flow rate influences surface hardness and distortion control.',
+    date: 'March 09, 2025',
+    imageId: 'blogQuenchingFlowRate'
   }
 ];
 
