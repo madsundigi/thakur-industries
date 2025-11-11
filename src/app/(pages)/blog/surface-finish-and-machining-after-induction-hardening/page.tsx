@@ -27,19 +27,44 @@ const blogSchema = {
   "inLanguage": "en"
 };
 
-const surfaceFinishData = [
-    { component: "Gear Teeth", asHardened: "1.5–2.0", afterGrinding: "0.6–0.8", finalFinish: "Ground Finish" },
-    { component: "Shaft Journals", asHardened: "1.0–1.5", afterGrinding: "0.4–0.6", finalFinish: "Mirror Finish" },
-    { component: "Spindles / Pins", asHardened: "1.2–1.8", afterGrinding: "0.5–0.7", finalFinish: "Polished Finish" }
+const surfaceChallenges = [
+    { title: "Rapid Heating and Cooling", description: "Uneven heat penetration may cause slight expansion and contraction." },
+    { title: "Oxide Scaling", description: "Exposure to air at high temperatures leads to oxide layer formation." },
+    { title: "Quenching Distortion", description: "Improper quenching flow can leave the surface uneven." },
+    { title: "Coil Misalignment or Fixture Stress", description: "Can cause uneven heating zones and rough spots." }
 ];
 
-const qualityParamsData = [
-    { parameter: "Hardness Uniformity", advantage: "±2 HRC variation across surface" },
-    { parameter: "Case Depth Control", advantage: "2.0–4.0 mm (±0.1 mm accuracy)" },
-    { parameter: "Surface Oxidation", advantage: "Controlled atmosphere minimizes scaling" },
-    { parameter: "Distortion", advantage: "<0.05 mm for standard shafts" },
-    { parameter: "Post-Process Finish", advantage: "Ground & polished, assembly-ready finish" },
+const postHardeningTechniques = [
+    { title: "Cylindrical Grinding", description: "Removes surface irregularities and restores dimension after hardening. Ideal for shafts, axles, rollers, and spindles.", benefits: ["Precision roundness (±0.005 mm)", "Mirror-finish surface (Ra ≤ 0.4 µm)", "No micro-crack formation due to low-stress grinding"] },
+    { title: "Centerless Grinding", description: "Ideal for continuous production and uniform outer diameter control.", benefits: ["Fast, precise, and distortion-free", "Maintains high surface quality on long shafts"], useCase: "Automotive transmission shafts, hydraulic rods, and drive pins." },
+    { title: "Honing & Lapping", description: "Removes fine peaks on the surface left after grinding for ultra-smooth texture.", benefits: ["Enhanced fit between mating components", "Improved lubricant retention", "Reduced friction and wear"] },
+    { title: "Super Finishing (Mirror Polish)", description: "Achieves extremely low surface roughness (Ra ≤ 0.1 µm).", benefits: ["Eliminates grinding marks", "Improves fatigue life", "Reduces contact stress"] },
+    { title: "Post-Heat Machining", description: "Final machining (turning, boring, or milling) performed after heat treatment to correct size deviations using special carbide or CBN tools." }
 ];
+
+const bestPractices = [
+    { factor: "Hardness range", practice: "Maintain between 50–60 HRC for machinability" },
+    { factor: "Grinding speed", practice: "Use moderate wheel speed to avoid burn marks" },
+    { factor: "Cooling", practice: "Always use coolant to prevent micro-cracks" },
+    { factor: "Quenching type", practice: "Polymer quenching minimizes distortion" },
+    { factor: "Case depth", practice: "Ensure finishing doesn’t remove hardened layer" }
+];
+
+const caseStudy = {
+    surfaceHardness: "56–58 HRC",
+    finalRoughness: "Ra 0.35 µm",
+    dimensionalAccuracy: "±0.01 mm",
+    result: "Perfectly finished shafts ready for OEM-level performance."
+};
+
+const finalBenefits = [
+    "Improved Fatigue Life – Smooth surfaces prevent crack initiation.",
+    "Better Fit and Assembly – Ensures tight tolerance mating parts.",
+    "Enhanced Lubrication – Retains oil film for longer operational life.",
+    "Reduced Noise and Friction – Ideal for gears and rotating components.",
+    "Export-Ready Appearance – Shiny, uniform finish for international clients."
+];
+
 
 export default function BlogPostPage() {
   const featureImage = PlaceHolderImages.find(img => img.id === 'blogSurfaceFinish');
@@ -114,29 +139,23 @@ export default function BlogPostPage() {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    <TableRow>
-                        <TableCell className="font-medium">Hardness range</TableCell>
-                        <TableCell>Maintain between 50–60 HRC for machinability</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell className="font-medium">Grinding speed</TableCell>
-                        <TableCell>Use moderate wheel speed to avoid burn marks</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell className="font-medium">Cooling</TableCell>
-                        <TableCell>Always use coolant to prevent micro-cracks</TableCell>
-    
-                </TableRow>
-                    <TableRow>
-                        <TableCell className="font-medium">Quenching type</TableCell>
-                        <TableCell>Polymer quenching minimizes distortion</TableCell>
-                    </TableRow>
-                    <TableRow>
-                        <TableCell className="font-medium">Case depth</TableCell>
-                        <TableCell>Ensure finishing doesn’t remove hardened layer</TableCell>
-                    </TableRow>
+                    {bestPractices.map(item => (
+                        <TableRow key={item.factor}>
+                            <TableCell className="font-medium">{item.factor}</TableCell>
+                            <TableCell>{item.practice}</TableCell>
+                        </TableRow>
+                    ))}
                 </TableBody>
             </Table>
+
+            <h2 className="text-3xl font-bold mt-12">Case Study: Post-Hardening Finish for Automotive Shafts</h2>
+            <p>For a tractor transmission shaft made of EN19, our process includes induction hardening followed by cylindrical grinding. We consistently achieve:</p>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground my-4">
+                <li>Surface Hardness: {caseStudy.surfaceHardness}</li>
+                <li>Final Surface Roughness: {caseStudy.finalRoughness}</li>
+                <li>Dimensional Accuracy: {caseStudy.dimensionalAccuracy}</li>
+            </ul>
+            <p className="font-semibold text-foreground"><CheckCircle className="inline-block mr-2 h-5 w-5 text-green-500" />{caseStudy.result}</p>
             
             <h2 className="text-3xl font-bold mt-12">Conclusion: Strength with Smoothness</h2>
             <p>A component isn’t truly complete after hardening — it’s complete when its surface is strong, smooth, and precise. By combining controlled induction heating, proper quenching, and post-hardening finishing, manufacturers can achieve both mechanical durability and aesthetic perfection.</p>
