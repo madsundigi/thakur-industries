@@ -467,6 +467,12 @@
       "description": "A close-up of automotive gears and shafts arranged neatly.",
       "imageUrl": "https://images.unsplash.com/photo-1563291833-c2885e3c1f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZ2VhcnMlMjBhbmQlMjBzaGFmdHN8ZW58MHx8fHwxNzY2NzgwMDI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive gears shafts"
+    },
+    {
+      "id": "blogSurfaceHardeningTechniques",
+      "description": "A collage of different surface hardening techniques: induction coil, flame torch, and furnace interior.",
+      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoZWF0JTIwdHJlYXRtZW50JTIwY29sbGFnZXxlbnwwfHx8fDE3NjY4Mjg5ODh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "heat treatment collage"
     }
   ]
 }

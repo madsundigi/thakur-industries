@@ -56,7 +56,8 @@ const blogPosts = [
     'heat-treatment-for-high-performance-alloy-steels',
     'role-of-induction-heating-in-modern-manufacturing',
     'induction-hardening-for-rolling-mill-components',
-    'automotive-gear-and-shaft-induction-hardening'
+    'automotive-gear-and-shaft-induction-hardening',
+    'surface-hardening-techniques-for-heavy-engineering-components'
 ];
 
 export async function GET() {

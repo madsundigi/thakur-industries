@@ -390,6 +390,13 @@ const blogPosts = [
     description: 'Understand how induction hardening improves fatigue life and reduces wear in automotive gears and shafts.',
     date: 'February 03, 2025',
     imageId: 'blogAutomotiveGearShaft'
+  },
+  {
+    slug: 'surface-hardening-techniques-for-heavy-engineering-components',
+    title: 'Surface Hardening Techniques for Heavy Engineering Components',
+    description: 'Learn about surface hardening processes that provide heavy engineering components with wear-resistant strength.',
+    date: 'February 05, 2025',
+    imageId: 'blogSurfaceHardeningTechniques'
   }
 ];
 
