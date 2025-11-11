@@ -211,8 +211,8 @@ const blogPosts = [
   },
   {
     slug: 'hardness-testing-after-induction-hardening',
-    title: 'Hardness Testing After Induction Hardening',
-    description: 'Learn how hardness and case depth testing ensure quality and reliability in induction-treated parts.',
+    title: 'Role of Hardness Testing in Quality Control',
+    description: 'Understand the importance of hardness testing for validating induction hardening results and quality assurance.',
     date: 'December 05, 2024',
     imageId: 'blogHardnessTesting'
   },
