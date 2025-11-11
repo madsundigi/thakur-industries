@@ -68,7 +68,8 @@ const blogPosts = [
     'advanced-induction-hardening-for-precision-components',
     'heat-treatment-for-heavy-duty-shafts-and-rollers',
     'surface-hardening-for-automotive-engine-parts',
-    'en19-and-en24-alloy-steel-induction-hardening-guide'
+    'en19-and-en24-alloy-steel-induction-hardening-guide',
+    'preventing-soft-spots-in-induction-hardening'
 ];
 
 export async function GET() {

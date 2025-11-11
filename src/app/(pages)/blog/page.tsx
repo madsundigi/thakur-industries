@@ -481,6 +481,13 @@ const blogPosts = [
     description: 'Detailed guide on induction hardening of EN19 and EN24 steels for automotive and heavy equipment manufacturing.',
     date: 'March 01, 2025',
     imageId: 'blogEN19_EN24'
+  },
+  {
+    slug: 'preventing-soft-spots-in-induction-hardening',
+    title: 'Preventing Soft Spots in Induction Hardening',
+    description: 'Understand causes of soft spots in induction hardening and how to ensure uniform surface hardness for industrial parts.',
+    date: 'March 03, 2025',
+    imageId: 'blogSoftSpots'
   }
 ];
 
