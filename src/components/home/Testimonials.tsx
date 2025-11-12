@@ -13,6 +13,7 @@ import { JsonLd } from "@/components/shared/JsonLd";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Star } from "lucide-react";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 const testimonialsData = [
   {
@@ -39,6 +40,7 @@ const testimonialsData = [
 ];
 
 export function Testimonials() {
+    const isDesktop = useMediaQuery('(min-width: 768px)');
 
     const reviewSchema = {
         "@context": "https://schema.org/",
@@ -66,6 +68,83 @@ export function Testimonials() {
         }))
     };
 
+    const TestimonialGrid = () => (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
+            {testimonialsData.map((testimonial) => {
+                const avatar = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
+                return (
+                <Card key={testimonial.name} className="bg-card">
+                    <CardContent className="p-6 flex flex-col items-center text-center">
+                        <div className="flex mb-4">
+                            {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
+                        </div>
+                        <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
+                        <div className="flex items-center gap-4 mt-6">
+                             {avatar && (
+                                <Image
+                                    src={avatar.imageUrl}
+                                    alt={`Avatar of ${testimonial.name}`}
+                                    width={48}
+                                    height={48}
+                                    className="rounded-full"
+                                    data-ai-hint={avatar.imageHint}
+                                />
+                             )}
+                            <div>
+                                <p className="font-semibold text-foreground">{testimonial.name}</p>
+                                <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+            )})}
+        </div>
+    );
+
+    const TestimonialCarousel = () => (
+        <Carousel
+            opts={{ align: "start", loop: true }}
+            className="w-full max-w-md mx-auto mt-12"
+        >
+            <CarouselContent>
+                {testimonialsData.map((testimonial, index) => {
+                     const avatar = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
+                    return (
+                    <CarouselItem key={index}>
+                        <div className="p-1">
+                        <Card>
+                            <CardContent className="p-6 flex flex-col items-center text-center">
+                                 <div className="flex mb-4">
+                                    {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
+                                </div>
+                                <p className="text-muted-foreground italic text-base">"{testimonial.quote}"</p>
+                                <div className="flex items-center gap-4 mt-6">
+                                    {avatar && (
+                                        <Image
+                                            src={avatar.imageUrl}
+                                            alt={`Avatar of ${testimonial.name}`}
+                                            width={40}
+                                            height={40}
+                                            className="rounded-full"
+                                            data-ai-hint={avatar.imageHint}
+                                        />
+                                    )}
+                                    <div>
+                                        <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
+                                        <p className="text-xs text-muted-foreground">{testimonial.company}</p>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        </div>
+                    </CarouselItem>
+                )})}
+            </CarouselContent>
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
+        </Carousel>
+    );
+
     return (
         <section className="py-20 md:py-28 bg-secondary">
             <JsonLd data={reviewSchema} />
@@ -78,81 +157,8 @@ export function Testimonials() {
                         Trusted by Manufacturers Across Ludhiana, Punjab & Haryana for Precision Hardening Job Work
                     </p>
                 </div>
-
-                {/* Desktop Grid */}
-                <div className="hidden md:grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
-                    {testimonialsData.map((testimonial) => {
-                        const avatar = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
-                        return (
-                        <Card key={testimonial.name} className="bg-card">
-                            <CardContent className="p-6 flex flex-col items-center text-center">
-                                <div className="flex mb-4">
-                                    {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
-                                </div>
-                                <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
-                                <div className="flex items-center gap-4 mt-6">
-                                     {avatar && (
-                                        <Image
-                                            src={avatar.imageUrl}
-                                            alt={`Avatar of ${testimonial.name}`}
-                                            width={48}
-                                            height={48}
-                                            className="rounded-full"
-                                            data-ai-hint={avatar.imageHint}
-                                        />
-                                     )}
-                                    <div>
-                                        <p className="font-semibold text-foreground">{testimonial.name}</p>
-                                        <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    )})}
-                </div>
-
-                 {/* Mobile Carousel */}
-                <Carousel
-                    opts={{ align: "start", loop: true }}
-                    className="w-full max-w-md mx-auto md:hidden mt-12"
-                >
-                    <CarouselContent>
-                        {testimonialsData.map((testimonial, index) => {
-                             const avatar = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
-                            return (
-                            <CarouselItem key={index}>
-                                <div className="p-1">
-                                <Card>
-                                    <CardContent className="p-6 flex flex-col items-center text-center">
-                                         <div className="flex mb-4">
-                                            {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
-                                        </div>
-                                        <p className="text-muted-foreground italic text-base">"{testimonial.quote}"</p>
-                                        <div className="flex items-center gap-4 mt-6">
-                                            {avatar && (
-                                                <Image
-                                                    src={avatar.imageUrl}
-                                                    alt={`Avatar of ${testimonial.name}`}
-                                                    width={40}
-                                                    height={40}
-                                                    className="rounded-full"
-                                                    data-ai-hint={avatar.imageHint}
-                                                />
-                                            )}
-                                            <div>
-                                                <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
-                                                <p className="text-xs text-muted-foreground">{testimonial.company}</p>
-                                            </div>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                                </div>
-                            </CarouselItem>
-                        )})}
-                    </CarouselContent>
-                    <CarouselPrevious className="-left-4" />
-                    <CarouselNext className="-right-4" />
-                </Carousel>
+                
+                {isDesktop ? <TestimonialGrid /> : <TestimonialCarousel />}
             </div>
         </section>
     );

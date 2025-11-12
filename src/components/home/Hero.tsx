@@ -11,35 +11,14 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
   const prefersReducedMotion = usePrefersReducedMotion();
-  const title = "Induction Hardening & Heat Treatment Services in Ludhiana, Punjab".split(" ");
   const heroImage = PlaceHolderImages.find(p => p.id === 'heroMachine');
 
-  const container = {
-    hidden: { opacity: 0 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: { staggerChildren: 0.05, delayChildren: 0.2 * i },
-    }),
-  };
-
-  const child = {
-    visible: {
-      opacity: 1,
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
       y: 0,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      y: 20,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
+      transition: { duration: 0.8, ease: 'easeOut' }
     },
   };
 
@@ -51,20 +30,9 @@ export function Hero() {
         animate={prefersReducedMotion ? false : { scale: 1, opacity: 1 }}
         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute z-0 w-full h-full object-cover"
-          poster={heroImage?.imageUrl}
-          preload="metadata"
-        >
-          <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
-        </video>
         {heroImage && (
             <Image 
-                src={heroImage.imageUrl}
+                src={"https://picsum.photos/seed/hero/1920/1080"}
                 alt="Background video poster"
                 fill
                 priority
@@ -73,32 +41,35 @@ export function Hero() {
                 data-ai-hint={heroImage.imageHint}
             />
         )}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute z-0 w-full h-full object-cover"
+          poster={"https://picsum.photos/seed/hero/1920/1080"}
+          preload="none" 
+        >
+          <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/70" />
       </motion.div>
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
           <motion.h1
             className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
-            variants={prefersReducedMotion ? undefined : container}
+            variants={fadeIn}
             initial="hidden"
             animate="visible"
           >
-            {title.map((word, index) => (
-              <motion.span
-                key={index}
-                variants={prefersReducedMotion ? undefined : child}
-                className="inline-block mr-2"
-              >
-                {word}
-              </motion.span>
-            ))}
+            Induction Hardening & Heat Treatment Services in Ludhiana, Punjab
           </motion.h1>
 
           <motion.p 
             className="mx-auto mt-6 max-w-2xl text-lg text-gray-200"
             initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
             animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.5 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
           >
             Precision Heat Treatment Job Work for Automotive, Agricultural & Industrial Components.
           </motion.p>
@@ -107,7 +78,7 @@ export function Hero() {
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
             initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
             animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
-            transition={{ delay: 1.0, duration: 0.5 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
           >
             <Button asChild size="lg" className="w-full sm:w-auto text-lg py-6 px-8 bg-primary hover:bg-primary/80 text-primary-foreground">
               <Link href="/contact">
