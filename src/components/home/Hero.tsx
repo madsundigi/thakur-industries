@@ -8,16 +8,17 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useMediaQuery } from '@/hooks/use-media-query';
 
 export function Hero() {
   const prefersReducedMotion = usePrefersReducedMotion();
+  const isDesktop = useMediaQuery('(min-width: 768px)');
   const heroImage = PlaceHolderImages.find(p => p.id === 'heroMachine');
 
   const fadeIn = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0 },
     visible: { 
-      opacity: 1, 
-      y: 0,
+      opacity: 1,
       transition: { duration: 0.8, ease: 'easeOut' }
     },
   };
@@ -32,26 +33,28 @@ export function Hero() {
       >
         {heroImage && (
             <Image 
-                src={"https://picsum.photos/seed/hero/1920/1080"}
-                alt="Background video poster"
+                src={"https://picsum.photos/seed/hero/800/600"}
+                alt="Thakur Induction industrial machinery"
                 fill
                 priority
-                fetchPriority="high"
                 className="object-cover"
                 data-ai-hint={heroImage.imageHint}
+                sizes="100vw"
             />
         )}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute z-0 w-full h-full object-cover"
-          poster={"https://picsum.photos/seed/hero/1920/1080"}
-          preload="none" 
-        >
-          <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
-        </video>
+        {isDesktop && (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute z-0 w-full h-full object-cover"
+              poster={"https://picsum.photos/seed/hero/800/600"}
+              preload="auto"
+            >
+              <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            </video>
+        )}
         <div className="absolute inset-0 bg-black/70" />
       </motion.div>
       <div className="relative z-10 flex h-full items-center justify-center">
