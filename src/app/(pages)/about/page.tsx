@@ -46,6 +46,7 @@ export default function AboutPage() {
                     data-ai-hint={aboutImage.imageHint}
                     fill
                     className="object-cover"
+                    priority
                 />
             </div>
         )}

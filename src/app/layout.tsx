@@ -108,6 +108,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://videos.pexels.com" />
         <JsonLd data={organizationSchema} />
         <JsonLd data={serviceSchema} />
       </head>
