@@ -25,21 +25,19 @@ export function Hero() {
 
   return (
     <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden bg-black flex items-center justify-center">
-      <motion.div 
+      <div 
         className="absolute inset-0 z-0"
-        initial={prefersReducedMotion ? false : { scale: 1.1, opacity: 0.8 }}
-        animate={prefersReducedMotion ? false : { scale: 1, opacity: 1 }}
-        transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       >
         {heroImage && (
             <Image 
-                src={"https://picsum.photos/seed/hero/800/600"}
+                src={heroImage.imageUrl}
                 alt="Thakur Induction industrial machinery"
                 fill
                 priority
+                fetchPriority="high"
                 className="object-cover"
                 data-ai-hint={heroImage.imageHint}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 100vw"
             />
         )}
         {isDesktop && (
@@ -49,21 +47,21 @@ export function Hero() {
               muted
               playsInline
               className="absolute z-0 w-full h-full object-cover"
-              poster={"https://picsum.photos/seed/hero/800/600"}
+              poster={heroImage?.imageUrl}
               preload="auto"
             >
               <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
             </video>
         )}
         <div className="absolute inset-0 bg-black/70" />
-      </motion.div>
+      </div>
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
           <motion.h1
             className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
-            variants={fadeIn}
-            initial="hidden"
-            animate="visible"
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
+            animate={prefersReducedMotion ? false: { opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
           >
             Induction Hardening & Heat Treatment Services in Ludhiana, Punjab
           </motion.h1>
