@@ -6,16 +6,18 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 
 export function ProcessSection() {
     const quenchingImage = PlaceHolderImages.find(p => p.id === 'processHardening');
+    const prefersReducedMotion = usePrefersReducedMotion();
 
   return (
     <section className="py-20 md:py-28 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
-                initial={{ opacity: 0, x: -50 }}
+                initial={prefersReducedMotion ? false : { opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
@@ -28,13 +30,13 @@ export function ProcessSection() {
                             data-ai-hint={quenchingImage.imageHint}
                             fill
                             className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 50vw"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
                 )}
             </motion.div>
             <motion.div
-                initial={{ opacity: 0, x: 50 }}
+                initial={prefersReducedMotion ? false : { opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.7, ease: 'easeOut' }}

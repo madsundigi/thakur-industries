@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Check, Factory, Award } from 'lucide-react';
 import Link from 'next/link';
+import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 
 const stats = [
     {
@@ -25,6 +26,8 @@ const stats = [
 ];
 
 export function AboutSection() {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut', staggerChildren: 0.2 } },
@@ -34,7 +37,7 @@ export function AboutSection() {
     <section className="py-20 md:py-28 bg-secondary">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <motion.div
-            initial="hidden"
+            initial={prefersReducedMotion ? false : "hidden"}
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeIn}
@@ -49,7 +52,7 @@ export function AboutSection() {
         
         <motion.div 
             className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left"
-            initial="hidden"
+            initial={prefersReducedMotion ? false : "hidden"}
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeIn}
@@ -58,7 +61,7 @@ export function AboutSection() {
             <motion.div
               key={index}
               className="bg-card p-6 rounded-lg shadow-sm"
-              variants={fadeIn}
+              variants={prefersReducedMotion ? undefined : fadeIn}
             >
               <stat.icon className="h-10 w-10 text-primary mb-4" />
               <h3 className="text-xl font-bold text-foreground">{stat.text}</h3>
@@ -68,7 +71,7 @@ export function AboutSection() {
         </motion.div>
 
         <motion.div 
-            initial={{ opacity: 0 }}
+            initial={prefersReducedMotion ? false : { opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.4 }}

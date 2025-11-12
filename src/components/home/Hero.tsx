@@ -6,9 +6,10 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 
 export function Hero() {
-
+  const prefersReducedMotion = usePrefersReducedMotion();
   const title = "Induction Hardening & Heat Treatment Services in Ludhiana, Punjab".split(" ");
 
   const container = {
@@ -44,8 +45,8 @@ export function Hero() {
     <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden bg-black flex items-center justify-center">
       <motion.div 
         className="absolute inset-0 z-0"
-        initial={{ scale: 1.1, opacity: 0.8 }}
-        animate={{ scale: 1, opacity: 1 }}
+        initial={prefersReducedMotion ? false : { scale: 1.1, opacity: 0.8 }}
+        animate={prefersReducedMotion ? false : { scale: 1, opacity: 1 }}
         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       >
         <video
@@ -73,14 +74,14 @@ export function Hero() {
         <div className="container mx-auto px-4 text-center text-white">
           <motion.h1
             className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl"
-            variants={container}
+            variants={prefersReducedMotion ? undefined : container}
             initial="hidden"
             animate="visible"
           >
             {title.map((word, index) => (
               <motion.span
                 key={index}
-                variants={child}
+                variants={prefersReducedMotion ? undefined : child}
                 className="inline-block mr-2"
               >
                 {word}
@@ -90,8 +91,8 @@ export function Hero() {
 
           <motion.p 
             className="mx-auto mt-6 max-w-2xl text-lg text-gray-200"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
+            animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
             Precision Heat Treatment Job Work for Automotive, Agricultural & Industrial Components.
@@ -99,8 +100,8 @@ export function Hero() {
           
           <motion.div 
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
+            animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
             transition={{ delay: 1.0, duration: 0.5 }}
           >
             <Button asChild size="lg" className="w-full sm:w-auto text-lg py-6 px-8 bg-primary hover:bg-primary/80 text-primary-foreground">

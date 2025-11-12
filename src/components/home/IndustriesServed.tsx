@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Cog, Tractor, Wrench, Car } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 
 const industries = [
   {
@@ -31,6 +32,8 @@ const industries = [
 ];
 
 export function IndustriesServed() {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { 
@@ -49,7 +52,7 @@ export function IndustriesServed() {
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
           className="text-center"
-          initial={{ opacity: 0, y: 20 }}
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -64,13 +67,13 @@ export function IndustriesServed() {
 
         <motion.div
           className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-          variants={containerVariants}
+          variants={prefersReducedMotion ? undefined : containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {industries.map((industry, index) => (
-            <motion.div key={index} variants={itemVariants}>
+            <motion.div key={index} variants={prefersReducedMotion ? undefined : itemVariants}>
               <Card className="h-full text-center hover:shadow-md transition-shadow">
                 <CardHeader>
                   <industry.icon className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -84,7 +87,7 @@ export function IndustriesServed() {
 
         <motion.div 
             className="text-center mt-12"
-            initial={{ opacity: 0 }}
+            initial={prefersReducedMotion ? false : { opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}

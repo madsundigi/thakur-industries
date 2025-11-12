@@ -8,8 +8,10 @@ import { SERVICES } from '@/lib/constants';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 
 export function ServicesOverview() {
+  const prefersReducedMotion = usePrefersReducedMotion();
     
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -21,7 +23,7 @@ export function ServicesOverview() {
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
             className="text-center"
-            initial="hidden"
+            initial={prefersReducedMotion ? false : "hidden"}
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeIn}
@@ -36,7 +38,7 @@ export function ServicesOverview() {
 
         <motion.div 
             className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            initial="hidden"
+            initial={prefersReducedMotion ? false : "hidden"}
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeIn}
@@ -44,7 +46,7 @@ export function ServicesOverview() {
           {SERVICES.slice(0, 3).map((service) => {
             const image = PlaceHolderImages.find(img => img.id === service.image);
             return (
-              <motion.div key={service.id} variants={fadeIn}>
+              <motion.div key={service.id} variants={prefersReducedMotion ? undefined : fadeIn}>
                 <Link href={service.href || `/services#${service.id}`} className="block group">
                   <Card className="h-full overflow-hidden transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
                     {image && (
@@ -55,6 +57,7 @@ export function ServicesOverview() {
                               fill
                               className="object-cover"
                               data-ai-hint={image.imageHint}
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                       </div>
                     )}
