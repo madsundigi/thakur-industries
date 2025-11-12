@@ -7,10 +7,12 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
   const prefersReducedMotion = usePrefersReducedMotion();
   const title = "Induction Hardening & Heat Treatment Services in Ludhiana, Punjab".split(" ");
+  const heroImage = PlaceHolderImages.find(p => p.id === 'heroMachine');
 
   const container = {
     hidden: { opacity: 0 },
@@ -55,19 +57,22 @@ export function Hero() {
           muted
           playsInline
           className="absolute z-0 w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1733683296842-c5c32fe36a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0MjQ0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-          preload="true"
+          poster={heroImage?.imageUrl}
+          preload="metadata"
         >
           <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
         </video>
-        <Image 
-            src="https://images.unsplash.com/photo-1733683296842-c5c32fe36a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwbWFjaGluZXxlbnwwfHx8fDE3NjI0MjQ0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Background video poster"
-            fill
-            priority
-            fetchPriority="high"
-            className="object-cover"
-        />
+        {heroImage && (
+            <Image 
+                src={heroImage.imageUrl}
+                alt="Background video poster"
+                fill
+                priority
+                fetchPriority="high"
+                className="object-cover"
+                data-ai-hint={heroImage.imageHint}
+            />
+        )}
         <div className="absolute inset-0 bg-black/70" />
       </motion.div>
       <div className="relative z-10 flex h-full items-center justify-center">

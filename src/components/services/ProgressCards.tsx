@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
+import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 
 const processSteps = [
   {
@@ -37,16 +38,17 @@ const ANIMATION_DURATION = 5; // seconds
 export function ProgressCards() {
   const [activeCard, setActiveCard] = useState(0);
   const isDesktop = useMediaQuery('(min-width: 768px)');
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (!isDesktop) return;
+    if (!isDesktop || prefersReducedMotion) return;
 
     const interval = setInterval(() => {
       setActiveCard((prev) => (prev + 1) % processSteps.length);
     }, ANIMATION_DURATION * 1000);
 
     return () => clearInterval(interval);
-  }, [isDesktop]);
+  }, [isDesktop, prefersReducedMotion]);
   
   const stepsWithImages = useMemo(() => {
       return processSteps.map(step => ({
@@ -80,13 +82,15 @@ export function ProgressCards() {
   return (
     <div className="flex gap-8 items-start">
       <div className="relative w-8 h-[500px] bg-muted rounded-full overflow-hidden">
-        <motion.div
-          key={activeCard}
-          className="absolute top-0 left-0 w-full bg-primary"
-          initial={{ height: '0%' }}
-          animate={{ height: '100%' }}
-          transition={{ duration: ANIMATION_DURATION, ease: 'linear' }}
-        />
+        {!prefersReducedMotion && (
+            <motion.div
+              key={activeCard}
+              className="absolute top-0 left-0 w-full bg-primary"
+              initial={{ height: '0%' }}
+              animate={{ height: '100%' }}
+              transition={{ duration: ANIMATION_DURATION, ease: 'linear' }}
+            />
+        )}
       </div>
       <div className="flex-1 space-y-4">
         {stepsWithImages.map((step, index) => (
@@ -99,7 +103,7 @@ export function ProgressCards() {
             onClick={() => setActiveCard(index)}
             initial={false}
             animate={{ height: activeCard === index ? 'auto' : 60 }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.5, ease: 'easeInOut' }}
           >
             <div className="flex items-center justify-between">
               <div className='flex items-center gap-4'>
@@ -114,7 +118,7 @@ export function ProgressCards() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.3, delay: 0.2 }}
+                        transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.3, delay: 0.2 }}
                         className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6"
                     >
                         <p className="md:col-span-2 text-muted-foreground">{step.description}</p>
