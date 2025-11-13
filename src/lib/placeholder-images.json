@@ -15,13 +15,13 @@
     {
       "id": "serviceInductionHardening",
       "description": "A glowing red-hot metal cog being treated by an induction hardening machine.",
-      "imageUrl": "https://images.unsplash.com/photo-1557201874-98d4f7c33eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557201874-98d4f7c33eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal gear"
     },
     {
       "id": "serviceCaseHardening",
       "description": "Cross-section of a metal part showing the hardened outer case and softer core.",
-      "imageUrl": "https://images.unsplash.com/photo-1609192492693-15c6b06abfb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609192492693-15c6b06abfb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal part"
     },
     {
@@ -153,19 +153,19 @@
     {
       "id": "blogPost1",
       "description": "Visual representation of the induction hardening process.",
-      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageUrl": "/images/images/1.jpeg",
       "imageHint": "hardening process"
     },
     {
       "id": "blogPost2",
       "description": "Visual comparison of induction hardening and case hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1647032713701-a80d2b69e502?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHhjYWNlc2VzJTIwY29tcGFyaXNvbnxlbnwwfHx8fDE3NjM0MDI3ODR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/2.jpeg",
       "imageHint": "comparison diagram"
     },
     {
       "id": "blogPost4",
       "description": "Visual showing benefits of induction heat treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1679387062363-f589df49da6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZW5lZml0cyUyMGluZm9ncmFwaGljfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/3.jpeg",
       "imageHint": "benefits infographic"
     },
     {
@@ -255,7 +255,7 @@
     {
       "id": "blogCaseDepth",
       "description": "A diagram illustrating case depth in a gear tooth.",
-      "imageUrl": "https://images.unsplash.com/photo-1738028449238-fa5ae8c33bce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNlJTIwZGVwdGglMjBkaWFncmFtfGVufDB8fHx8MTc2Mjk1NDAxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1738028449238-fa5ae8c33bce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNlJTIwZGVwdGglMjBkaWFncmFtfGVufDB8fHx8MTc2Mjk1NDAxMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "case depth diagram"
     },
     {
@@ -279,7 +279,7 @@
     {
       "id": "blogOem",
       "description": "OEM components being prepared for induction hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1654965807196-5dbeffb70a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxPRU0lMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1654965807196-5dbeffb70a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxPRU0lMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "OEM components"
     },
     {
@@ -507,55 +507,55 @@
     {
       "id": "blogTransmissionComponents",
       "description": "A close-up of various automotive transmission components like gears and shafts.",
-      "imageUrl": "https://images.unsplash.com/photo-1629828522336-f94236a29731?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFuc21pc3Npb24lMjBjb21wb25lbnRzfGVufDB8fHx8MTc2NTI3NTg4N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629828522336-f94236a29731?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0cmFuc21pc3Npb24lMjBjb21wb25lbnRzfGVufDB8fHx8MTc2NTI3NTg4N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "transmission components"
     },
     {
       "id": "blogEngineParts",
       "description": "A close-up of various automotive engine parts like pistons, connecting rods, and valves, neatly arranged.",
-      "imageUrl": "https://images.unsplash.com/photo-1605513226483-c5587843519c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZW5naW5lJTIwcGFydHN8ZW58MHx8fHwxNzYyODU4OTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605513226483-c5587843519c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhdXRvbW90aXZlJTIwZW5naW5lJTIwcGFydHN8ZW58MHx8fHwxNzYyODU4OTI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive engine parts"
     },
     {
       "id": "blogEN19_EN24",
       "description": "Close-up of heavy-duty EN19 and EN24 alloy steel gears and shafts.",
-      "imageUrl": "https://images.unsplash.com/photo-1563291833-c2885e3c1f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbGxveSUyMHN0ZWVsJTIwZ2VhcnN8ZW58MHx8fHwxNzY3MzQ0MzAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1563291833-c2885e3c1f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbGxveSUyMHN0ZWVsJTIwZ2VhcnN8ZW58MHx8fHwxNzY3MzQ0MzAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "alloy steel gears"
     },
     {
       "id": "blogSoftSpots",
       "description": "A magnified view of a metal surface showing uniform hardness versus one with soft spots.",
-      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMHN1cmZhY2V8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZXRhbCUyMHN1cmZhY2V8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal surface"
     },
     {
       "id": "blogSafetyStandards",
       "description": "A factory worker wearing full Personal Protective Equipment (PPE), including a hard hat, safety glasses, and gloves, operating industrial machinery.",
-      "imageUrl": "https://images.unsplash.com/photo-1581092921434-80a133939a86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2FmZXR5fGVufDB8fHx8MTc2NzM4NTMwMnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581092921434-80a133939a86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpbmR1c3RyaWFsJTIwc2FmZXR5fGVufDB8fHx8MTc2NzM4NTMwMnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial safety"
     },
     {
       "id": "blogToolAndDieHardening",
       "description": "A close-up of various industrial tool and die components.",
-      "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b7179b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b7179b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tool die"
     },
     {
       "id": "blogWaterCooling",
       "description": "A glowing red hot metal part being sprayed with jets of water for quenching.",
-      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZXRhbCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal quenching"
     },
     {
       "id": "blogQuenchingFlowRate",
       "description": "Close-up of a high-pressure water jet spraying a metal component during the quenching process.",
-      "imageUrl": "https://images.unsplash.com/photo-1560192776-60a3bab7190d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3YXRlciUyMGpldCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI4Nzg0NDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560192776-60a3bab7190d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx3YXRlciUyMGpldCUyMHF1ZW5jaGluZ3xlbnwwfHx8fDE3NjI4Nzg0NDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "water jet quenching"
     },
     {
       "id": "blogEnergyEfficient",
       "description": "An infographic showing a leaf with a power plug, symbolizing green energy and efficiency.",
-      "imageUrl": "https://images.unsplash.com/photo-1623863479188-7824b0a430c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGVuZXJneSUyMGluZm9ncmFwaGljfGVufDB8fHx8MTc2NzQ2NTY4Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623863479188-7824b0a430c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncmVlbiUyMGVuZXJneSUyMGluZm9ncmFwaGljfGVufDB8fHx8MTc2NzQ2NTY4Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "green energy infographic"
     }
   ]
