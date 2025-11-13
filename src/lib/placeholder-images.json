@@ -21,7 +21,7 @@
     {
       "id": "serviceCaseHardening",
       "description": "Cross-section of a metal part showing the hardened outer case and softer core.",
-      "imageUrl": "https://images.unsplash.com/photo-1609192492693-15c6b06abfb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609192492693-15c6b06abfb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHBhcnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "metal part"
     },
     {
@@ -171,37 +171,37 @@
     {
       "id": "blogPost5",
       "description": "Various steel components suitable for induction hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1727413433599-496949ef8196?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdGVlbCUyMGNvbXBvbmVudHN8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/4.jpeg",
       "imageHint": "steel components"
     },
     {
       "id": "blogAutomotiveParts",
       "description": "Induction hardening of automotive components.",
-      "imageUrl": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdXRvbW90aXZlJTIwcGFydHN8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/5.jpeg",
       "imageHint": "automotive parts"
     },
     {
       "id": "blogQuenchingRole",
       "description": "Polymer and water quenching process.",
-      "imageUrl": "https://images.unsplash.com/photo-1712025853995-d59634cf86e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxxdWVuY2hpbmclMjBwcm9jZXNzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/6.jpeg",
       "imageHint": "quenching process"
     },
     {
       "id": "blogHardeningComparison",
       "description": "Comparison of surface hardening and through hardening.",
-      "imageUrl": "https://picsum.photos/seed/blogComparison/600/400",
+      "imageUrl": "/images/images/7.jpeg",
       "imageHint": "hardening comparison"
     },
     {
       "id": "blogEnSeries",
       "description": "Various EN series steel components.",
-      "imageUrl": "https://images.unsplash.com/photo-1758873263428-f4b2edb45fe1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMGNvbXBvbmVudHN8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/8.jpeg",
       "imageHint": "steel components"
     },
     {
       "id": "blogToolLife",
       "description": "A set of industrial tools like dies and punches after heat treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1751486403850-fae53b6ab0e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwdG9vbHN8ZW58MHx8fHwxNzYyNzA5MTg2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/9.jpeg",
       "imageHint": "industrial tools"
     },
     {
@@ -225,13 +225,13 @@
     {
       "id": "blogFrequencyComparison",
       "description": "Infographic comparing high frequency and medium frequency waves.",
-      "imageUrl": "https://images.unsplash.com/photo-1633519528991-3a8633912953?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb29saW5nJTIwY3VydmUlMjBkaWFncmFtfGVufDB8fHx8MTc2NDc4NjM0NXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633519528991-3a8633912953?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfGNvb2xpbmclMjBjdXJ2ZSUyMGRpYWdyYW18ZW58MHx8fHwxNzY0Nzg2MzQ1fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "frequency waves infographic"
     },
     {
       "id": "blogAgricultural",
       "description": "Induction hardening of agricultural components.",
-      "imageUrl": "https://images.unsplash.com/photo-1589556165541-4254aa9cfb39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589556165541-4254aa9cfb39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhZ3JpY3VsdHVyYWwlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mjc3MDIxMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "agricultural components"
     },
     {
@@ -255,7 +255,7 @@
     {
       "id": "blogCaseDepth",
       "description": "A diagram illustrating case depth in a gear tooth.",
-      "imageUrl": "https://images.unsplash.com/photo-1738028449238-fa5ae8c33bce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNlJTIwZGVwdGglMjBkaWFncmFtfGVufDB8fHx8MTc2Mjk1NDAxMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1738028449238-fa5ae8c33bce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXNlJTIwZGVwdGglMjBkaWFncmFmfGVufDB8fHx8MTc2Mjk1NDAxMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "case depth diagram"
     },
     {
@@ -285,7 +285,7 @@
     {
       "id": "blogCommonMaterials",
       "description": "An assortment of different steel bars and components suitable for induction hardening.",
-      "imageUrl": "https://images.unsplash.com/photo-1696582640607-150542f1eff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdGVlbCUyMGJhcnN8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1696582640607-150542f1eff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHN0ZWVsJTIwYmFyc3xlbnwwfHx8fDE3NjI3NzAyMTB8MA&ixlib-4.1.0&q=80&w=1080",
       "imageHint": "steel bars"
     },
     {
@@ -309,19 +309,19 @@
     {
       "id": "blogForgedParts",
       "description": "A pile of newly forged, rough metal components.",
-      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JnZWQlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621257409202-b3489a263102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmb3JnZWQlMjBjb21wb25lbnRzfGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "forged components"
     },
     {
       "id": "blogDistortionControl",
       "description": "An engineer measuring a metal part with calipers to ensure dimensional accuracy.",
-      "imageUrl": "https://images.unsplash.com/photo-1555627044-6aae1a7b4478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMG1lYXN1cmVtZW50fGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1555627044-6aae1a7b4478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZXRhbCUyMG1lYXN1cmVtZW50fGVufDB8fHx8MTc2Mzk1OTU4Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal measurement"
     },
     {
       "id": "blogTransmissionShaft",
       "description": "A close-up of a transmission shaft with gears.",
-      "imageUrl": "https://images.unsplash.com/photo-1676387164929-b647846873cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmFuc21pc3Npb24lMjBzaGFmdHxlbnwwfHx8fDE3NjI3NzMxNjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1676387164929-b647846873cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0cmFuc21pc3Npb24lMjBzaGFmdHxlbnwwfHx8fDE3NjI3NzMxNjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "transmission shaft"
     },
     {
@@ -333,175 +333,181 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1605334889058-294c65a363d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjM5NjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605334889058-294c65a363d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdGVlbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjM5NjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "steel roller"
     },
     {
       "id": "blogTemperatureControl",
       "description": "Technician monitoring a control panel with temperature gauges.",
-      "imageUrl": "https://images.unsplash.com/photo-1759216853052-883040267c8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZW1wZXJhdHVyZSUyMGNvbnRyb2x8ZW58MHx8fHwxNzYyNzc0MDkxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759216853052-883040267c8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0ZW1wZXJhdHVyZSUyMGNvbnRyb2x8ZW58MHx8fHwxNzYyNzc0MDkxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "temperature control"
     },
     {
       "id": "blogMediumFrequency",
       "description": "An induction coil glowing around a metal shaft, demonstrating medium frequency heating.",
-      "imageUrl": "https://images.unsplash.com/photo-1547186577-a3f4fa07c2ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpdW0lMjBmcmVxdWVuY3klMjBoZWF0aW5nfGVufDB8fHx8MTc2Mjc3NDU1OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1547186577-a3f4fa07c2ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZWRpdW0lMjBmcmVxdWVuY3klMjBoZWF0aW5nfGVufDB8fHx8MTc2Mjc3NDU1OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "medium frequency heating"
     },
     {
       "id": "blogEn24_4340",
       "description": "A close-up of a high-strength EN24 or 4340 alloy steel shaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1745449562896-71ba57d1e2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhbGxveSUyMHN0ZWVsfGVufDB8fHx8MTc2Mjc4MDMzMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1745449562896-71ba57d1e2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbGxveSUyMHN0ZWVsfGVufDB8fHx8MTc2Mjc4MDMzMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "alloy steel"
     },
     {
       "id": "blogQuenchingComparison",
-      "description": "A split-screen image showing water quenching on one side and polymer quenching on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1557256611-210fcc4476d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2Mjc4MDYxNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "description": "A split-screen image showing water quenching on one side and a dark oil bath on the other.",
+      "imageUrl": "https://images.unsplash.com/photo-1557256611-210fcc4476d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2Mjc4MDYxNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "quenching comparison"
     },
     {
       "id": "blogHeavyMachineryShafts",
       "description": "A large, heavy-duty industrial shaft used in machinery.",
-      "imageUrl": "https://images.unsplash.com/photo-1616422285852-24318c651f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2hhZnR8ZW58MHx8fHwxNzYzOTYxMjMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616422285852-24318c651f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpbmR1c3RyaWFsJTIwc2hhZnR8ZW58MHx8fHwxNzYzOTYxMjMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial shaft"
     },
     {
       "id": "blogHeavyDutyShafts",
       "description": "A large industrial shaft used in heavy machinery.",
-      "imageUrl": "https://images.unsplash.com/photo-1616422285852-24318c651f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwc2hhZnR8ZW58MHx8fHwxNzYzOTYxMjMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616422285852-24318c651f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpbmR1c3RyaWFsJTIwc2hhZnR8ZW58MHx8fHwxNzYzOTYxMjMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial shaft"
     },
     {
       "id": "blogCracks",
       "description": "An illustration showing a magnified view of a crack-free metal surface versus a cracked one after heat treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1641605272318-5cf11f8de2c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWV0YWwlMjBzdXJmYWNlJTIwY3JhY2t8ZW58MHx8fHwxNzYyNzgzNTA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1641605272318-5cf11f8de2c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZXRhbCUyMHN1cmZhY2UlMjBjcmFja3xlbnwwfHx8fDE3NjI3ODM1MDd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal surface crack"
     },
     {
       "id": "blogHydraulicRods",
       "description": "A close-up of a polished hydraulic cylinder rod.",
-      "imageUrl": "https://images.unsplash.com/photo-1650305161739-cd5eaf82b2a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoeWRyYXVsaWMlMjBjeWxpbmRlcnxlbnwwfHx8fDE3NjI3ODM4NDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650305161739-cd5eaf82b2a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxoeWRyYXVsaWMlMjBjeWxpbmRlcnxlbnwwfHx8fDE3NjI3ODM4NDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "hydraulic cylinder"
     },
     {
       "id": "blog4140_4150",
       "description": "Close-up of 4140 and 4150 alloy steel bars.",
-      "imageUrl": "https://images.unsplash.com/photo-1745449562896-71ba57d1e2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhbGxveSUyMHN0ZWVsfGVufDB8fHx8MTc2Mjc4MDMzMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1745449562896-71ba57d1e2b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbGxveSUyMHN0ZWVsfGVufDB8fHx8MTc2Mjc4MDMzMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "alloy steel"
     },
     {
       "id": "blogAerospace",
       "description": "An airplane wing being assembled in a modern factory, representing the precision of the aerospace industry.",
-      "imageUrl": "https://images.unsplash.com/photo-1559029676-9cf1c26b5d0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZXJvc3BhY2UlMjBwYXJ0fGVufDB8fHx8MTc2NDA0Mjk2N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559029676-9cf1c26b5d0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhZXJvc3BhY2UlMjBwYXJ0fGVufDB8fHx8MTc2NDA0Mjk2N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "aerospace part"
     },
     {
       "id": "blogPowerDensity",
       "description": "An infographic or diagram illustrating the concept of power density in induction heating.",
-      "imageUrl": "https://images.unsplash.com/photo-1698241318468-b39f150a0494?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbmVyZ3klMjBkaWFncmFtfGVufDB8fHx8MTc2NDY0MTk3N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1698241318468-b39f150a0494?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxlbmVyZ3klMjBkaWFncmFtfGVufDB8fHx8MTc2NDY0MTk3N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "energy diagram"
     },
     {
       "id": "blogSurfaceFinish",
       "description": "A close-up of a perfectly smooth, polished metal shaft reflecting light, showing a high-quality surface finish.",
-      "imageUrl": "https://images.unsplash.com/photo-1618172193763-c5242db039f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHN1cmZhY2V8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618172193763-c5242db039f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZXRhbCUyMHN1cmZhY2V8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "metal surface"
     },
     {
       "id": "blogCoolingTime",
       "description": "An infographic showing a temperature-time cooling curve for quenching.",
-      "imageUrl": "https://images.unsplash.com/photo-1633519528991-3a8633912953?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb29saW5nJTIwY3VydmUlMjBkaWFncmFtfGVufDB8fHx8MTc2NDc4NjM0NXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633519528991-3a8633912953?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjb29saW5nJTIwY3VydmUlMjBkaWFncmFtfGVufDB8fHx8MTc2NDc4NjM0NXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "cooling curve diagram"
     },
     {
       "id": "blogAutomotiveAxles",
       "description": "A close-up of several polished automotive axles lined up.",
-      "imageUrl": "https://images.unsplash.com/photo-1606571599814-8208f029c78d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwYXhsZXN8ZW58MHx8fHwxNzY0ODczNTY0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606571599814-8208f029c78d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhdXRvbW90aXZlJTIwYXhsZXN8ZW58MHx8fHwxNzY0ODczNTY0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive axles"
     },
     {
       "id": "blogAutomation",
       "description": "An automated industrial control panel with glowing blue lights, graphs, and data visualizations.",
-      "imageUrl": "https://images.unsplash.com/photo-1665686306574-1ace09918530?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhdXRvbWF0aW9uJTIwY29udHJvbCUyMHBhbmVsfGVufDB8fHx8MTc2NTExMzA2MHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1665686306574-1ace09918530?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhdXRvbWF0aW9uJTIwY29udHJvbCUyMHBhbmVsfGVufDB8fHx8MTc2NTExMzA2MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automation control panel"
     },
     {
       "id": "blogToolAndDie",
       "description": "A close-up of various industrial tool and die components.",
-      "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b7179b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b7179b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "tool die"
+    },
+    {
+      "id": "blogToolAndDieHardening",
+      "description": "A close-up of various industrial tool and die components.",
+      "imageUrl": "https://images.unsplash.com/photo-1579781830024-f48c3b7179b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0b29sJTIwYW5kJTIwZGllfGVufDB8fHx8MTc2NTE4Njc0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tool die"
     },
     {
       "id": "blogPowertrain",
       "description": "A close-up of powertrain components like gears and shafts.",
-      "imageUrl": "https://images.unsplash.com/photo-1629828522336-f94236a29731?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3dlcnRyYWluJTIwY29tcG9uZW50c3xlbnwwfHx8fDE3NjUyNzU4ODd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629828522336-f94236a29731?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwb3dlcnRyYWluJTIwY29tcG9uZW50c3xlbnwwfHx8fDE3NjUyNzU4ODd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "powertrain components"
     },
     {
       "id": "blogAlloySteels",
       "description": "A collection of various high-performance alloy steel bars and components.",
-      "imageUrl": "https://images.unsplash.com/photo-1558532454-9e7c5b6b1a45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhbGxveSUyMHN0ZWVsJTIwYmFyc3xlbnwwfHx8fDE3NjY1NTYyMDV8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558532454-9e7c5b6b1a45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbGxveSUyMHN0ZWVsJTIwYmFyc3xlbnwwfHx8fDE3NjY1NTYyMDV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "alloy steel bars"
     },
     {
       "id": "blogInductionRole",
       "description": "An infographic or diagram showing the various applications of induction heating in modern manufacturing.",
-      "imageUrl": "https://images.unsplash.com/photo-1601520525418-4d7ff1314879?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpbmR1Y3Rpb24lMjBoZWF0aW5nJTIwaW5mb2dyYXBoaWN8ZW58MHx8fHwxNzYyODU5NjkwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601520525418-4d7ff1314879?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpbmR1Y3Rpb24lMjBoZWF0aW5nJTIwaW5mb2dyYXBoaWN8ZW58MHx8fHwxNzYyODU5NjkwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "induction heating infographic"
     },
     {
       "id": "blogRollingMill",
       "description": "A close-up of a large industrial rolling mill in operation.",
-      "imageUrl": "https://images.unsplash.com/photo-1668715879690-fd7257feb179?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb2xsaW5nJTIwbWlsbHxlbnwwfHx8fDE3NjI4NjAwNzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1668715879690-fd7257feb179?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyb2xsaW5nJTIwbWlsbHxlbnwwfHx8fDE3NjI4NjAwNzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "rolling mill"
     },
     {
       "id": "blogAutomotiveGearShaft",
       "description": "A close-up of automotive gears and shafts arranged neatly.",
-      "imageUrl": "https://images.unsplash.com/photo-1563291833-c2885e3c1f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZ2VhcnMlMjBhbmQlMjBzaGFmdHN8ZW58MHx8fHwxNzY2NzgwMDI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1563291833-c2885e3c1f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhdXRvbW90aXZlJTIwZ2VhcnMlMjBhbmQlMjBzaGFmdHN8ZW58MHx8fHwxNzY2NzgwMDI5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "automotive gears shafts"
     },
     {
       "id": "blogSurfaceHardeningTechniques",
       "description": "A collage of different surface hardening techniques: induction coil, flame torch, and furnace interior.",
-      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoZWF0JTIwdHJlYXRtZW50JTIwY29sbGFnZXxlbnwwfHx8fDE3NjY4Mjg5ODh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxoZWF0JTIwdHJlYXRtZW50JTIwY29sbGFnZXxlbnwwfHx8fDE3NjY4Mjg5ODh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "heat treatment collage"
     },
     {
       "id": "blogTempMonitoring",
       "description": "A technician intently monitoring a digital control panel displaying temperature graphs and data.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW1wZXJhdHVyZSUyMG1vbml0b3Jpbmd8ZW58MHx8fHwxNzY2ODMxOTUxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0ZW1wZXJhdHVyZSUyMG1vbml0b3Jpbmd8ZW58MHx8fHwxNzY2ODMxOTUxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "temperature monitoring"
     },
     {
       "id": "blogEN8Steel",
       "description": "A close-up of a polished EN8 medium carbon steel shaft.",
-      "imageUrl": "https://images.unsplash.com/photo-1543252554-b58a183a651f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpdW0lMjBjYXJib24lMjBzdGVlbCUyMHNoYWZ0fGVufDB8fHx8MTc2Njg1NTM2MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543252554-b58a183a651f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZWRpdW0lMjBjYXJib24lMjBzdGVlbCUyMHNoYWZ0fGVufDB8fHx8MTc2Njg1NTM2MXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "EN8 steel shaft"
     },
     {
       "id": "blogExport",
       "description": "A shipping container being loaded onto a cargo ship, with a globe overlay, representing global export.",
-      "imageUrl": "https://images.unsplash.com/photo-1614036118491-a6bd838969a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbCUyMHNoaXAlMjBleHBvcnR8ZW58MHx8fHwxNzY2OTY1NTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614036118491-a6bd838969a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYXJnbCUyMHNoaXAlMjBleHBvcnR8ZW58MHx8fHwxNzY2OTY1NTc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "cargo ship export"
     },
     {
       "id": "blogMisconceptions",
       "description": "A magnifying glass over a metal gear, with question marks around, representing myths.",
-      "imageUrl": "https://images.unsplash.com/photo-1508345217145-99602e1b12b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdQE0fGVufDB8fHx8MTc2NzE2MzkxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1508345217145-99602e1b12b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdQE0fGVufDB8fHx8MTc2NzE2MzkxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "myth fact"
     },
     {
       "id": "blogCoilAlignment",
       "description": "An induction coil perfectly aligned around a metal shaft, glowing red hot during the heating process.",
-      "imageUrl": "https://images.unsplash.com/photo-1557201874-98d4f7c33eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1Y3Rpb24lMjBoZWF0aW5nJTIwc2hhZnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557201874-98d4f7c33eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpbmR1Y3Rpb24lMjBoZWF0aW5nJTIwc2hhZnR8ZW58MHx8fHwxNzYyNzcwMjEwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "induction heating shaft"
     },
     {
       "id": "blogPolymerVsOil",
       "description": "A split image showing a clean polymer quenching bath on one side and a dark oil bath on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2NzI0NzExNHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618935999324-781c3f35031b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxxdWVuY2hpbmclMjBjb21wYXJpc29ufGVufDB8fHx8MTc2NzI0NzExNHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "quenching comparison"
     },
     {
