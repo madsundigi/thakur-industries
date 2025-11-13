@@ -207,26 +207,26 @@
     {
       "id": "blogDefects",
       "description": "Illustration showing common induction hardening defects like cracks and soft spots.",
-      "imageUrl": "https://picsum.photos/seed/blogDefects/600/400",
+      "imageUrl": "/images/images/10.jpeg",
       "imageHint": "hardening defects"
     },
     {
       "id": "blogFlameVsInduction",
       "description": "Comparison of induction hardening coil and flame hardening torch.",
-      "imageUrl": "https://picsum.photos/seed/blogFlame/600/400",
+      "imageUrl": "/images/images/11.jpeg",
       "imageHint": "hardening comparison"
+    },
+    {
+      "id": "blogFrequencyComparison",
+      "description": "Infographic comparing high frequency and medium frequency waves.",
+      "imageUrl": "/images/images/12.jpeg",
+      "imageHint": "frequency waves infographic"
     },
     {
       "id": "blogFrequency",
       "description": "Diagram showing different frequencies for induction hardening.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1675627452903-082d0a77bc6f.jpeg?alt=media&token=8544f9de-3619-4824-a744-8d962a98ef75",
       "imageHint": "frequency diagram"
-    },
-    {
-      "id": "blogFrequencyComparison",
-      "description": "Infographic comparing high frequency and medium frequency waves.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1633519528991-3a8633912953.jpeg?alt=media&token=9635b44c-0d6c-48c9-9430-c3d6494ed6e7",
-      "imageHint": "frequency waves infographic"
     },
     {
       "id": "blogAgricultural",
