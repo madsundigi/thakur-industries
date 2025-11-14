@@ -447,49 +447,61 @@
     {
       "id": "blogToolAndDieHardening",
       "description": "An assortment of industrial tools and dies, some glowing red-hot.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "/images/images/51.png",
       "imageHint": "tools dies"
     },
     {
       "id": "blogPowertrain",
       "description": "An exploded view of an automotive powertrain with gears and shafts.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/52.png",
       "imageHint": "powertrain components"
     },
     {
       "id": "blogAlloySteels",
       "description": "High-performance alloy steel components like gears and shafts.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/53.png",
       "imageHint": "alloy steel components"
     },
     {
       "id": "blogInductionRole",
       "description": "A modern factory with automated machinery, highlighting the central role of induction heating.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageUrl": "/images/images/54.png",
       "imageHint": "modern factory"
+    },
+    {
+      "id": "blogRollingMill",
+      "description": "Enhance durability and surface wear resistance of rolling mill rolls using precision induction hardening.",
+      "imageUrl": "/images/images/55.png",
+      "imageHint": "rolling mill"
+    },
+    {
+      "id": "blogAutomotiveGearShaft",
+      "description": "Understand how induction hardening improves fatigue life and reduces wear in automotive gears and shafts.",
+      "imageUrl": "/images/images/56.png",
+      "imageHint": "automotive gear shaft"
     },
     {
       "id": "blogSurfaceHardeningTechniques",
       "description": "A visual comparison of different surface hardening techniques like induction, flame, and laser.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageUrl": "/images/images/57.png",
       "imageHint": "hardening techniques"
     },
     {
       "id": "blogTempMonitoring",
       "description": "A technician monitoring a digital control panel with temperature graphs.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageUrl": "/images/images/58.png",
       "imageHint": "temperature monitoring"
     },
     {
       "id": "blogEN8Steel",
       "description": "A close-up of a polished EN8 medium carbon steel shaft.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1601131129939-95248a3952f4.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
+      "imageUrl": "/images/images/59.png",
       "imageHint": "EN8 steel shaft"
     },
     {
       "id": "blogExport",
       "description": "A shipping container being loaded with industrial parts, ready for export.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1583773192802-173d212a2baa.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageUrl": "/images/images/60.png",
       "imageHint": "export shipping"
     },
     {
