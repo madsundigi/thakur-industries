@@ -561,7 +561,7 @@
     {
       "id": "blogQuenchingFlowRate",
       "description": "A digital meter showing the flow rate of a liquid in an industrial pipe.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageUrl": "/images/images/60.png",
       "imageHint": "digital meter"
     }
   ]
