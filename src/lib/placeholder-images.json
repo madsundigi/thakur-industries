@@ -345,7 +345,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "/images/images/33.png",
+      "imageUrl": "https://images.unsplash.com/photo-1662900547256-e4be25d6eb8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial roller"
     },
     {
@@ -399,7 +399,7 @@
     {
       "id": "blog4140_4150",
       "description": "Bars of 4140 and 4150 alloy steel.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1616422285852-24318c651f15.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageUrl": "/images/images/42.png",
       "imageHint": "steel bars"
     },
     {
