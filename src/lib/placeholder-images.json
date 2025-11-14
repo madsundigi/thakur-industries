@@ -51,25 +51,25 @@
     {
       "id": "processQuenching",
       "description": "A glowing hot metal part being submerged into a quenching tank, creating steam and bubbles.",
-      "imageUrl": "/images/images/6.jpeg",
+      "imageUrl": "/images/images/6.png",
       "imageHint": "metal quenching"
     },
     {
       "id": "processHardening",
       "description": "A close-up of a technician monitoring the induction hardening process on a control panel.",
-      "imageUrl": "/images/images/7.jpeg",
+      "imageUrl": "/images/images/7.png",
       "imageHint": "technician machine"
     },
     {
       "id": "processFinishing",
       "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
-      "imageUrl": "/images/images/8.jpeg",
+      "imageUrl": "/images/images/8.png",
       "imageHint": "metal gear"
     },
     {
       "id": "processPreparation",
       "description": "A clean and polished metal shaft ready for the heat treatment process.",
-      "imageUrl": "/images/images/9.jpeg",
+      "imageUrl": "/images/images/9.png",
       "imageHint": "metal shaft"
     },
     {
@@ -237,7 +237,7 @@
     {
       "id": "blogGearProcess",
       "description": "Illustration showing the gear hardening process.",
-      "imageUrl": "/images/images/19.png",
+      "imageUrl": "/images/images/16.png",
       "imageHint": "gear process"
     },
     {
@@ -255,31 +255,31 @@
     {
       "id": "blogCaseDepth",
       "description": "A diagram illustrating case depth in a gear tooth.",
-      "imageUrl": "/images/images/20.png",
+      "imageUrl": "/images/images/19.png",
       "imageHint": "case depth diagram"
     },
     {
       "id": "blogGearsAndPinions",
       "description": "Induction hardening of gears and pinions.",
-      "imageUrl": "/images/images/21.png",
+      "imageUrl": "/images/images/20.png",
       "imageHint": "gears pinions"
     },
     {
       "id": "blogToolSteel",
       "description": "Induction hardening of tool steel components.",
-      "imageUrl": "/images/images/22.png",
+      "imageUrl": "/images/images/21.png",
       "imageHint": "tool steel"
     },
     {
       "id": "blogGearbox",
       "description": "Close-up of industrial gearbox components.",
-      "imageUrl": "/images/images/23.png",
+      "imageUrl": "/images/images/22.png",
       "imageHint": "gearbox components"
     },
     {
       "id": "blogOem",
       "description": "OEM components being prepared for induction hardening.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1654965807196-5dbeffb70a47.jpeg?alt=media&token=b0213038-f9b1-4f1b-aa3e-324d9c7d42b9",
+      "imageUrl": "/images/images/23.png",
       "imageHint": "OEM components"
     },
     {
@@ -297,20 +297,32 @@
     {
       "id": "blogAutomotiveGears",
       "description": "A close-up shot of clean, polished automotive gears.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1726492740972-ea8d3b20b542.jpeg?alt=media&token=d1f85532-a5e2-45e3-a619-a1b9d4ac1d39",
+      "imageUrl": "/images/images/26.png",
       "imageHint": "automotive gears"
     },
     {
       "id": "blogCrankshafts",
       "description": "A close-up of a polished crankshaft and camshaft.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1616422285852-24318c651f15.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageUrl": "/images/images/27.png",
       "imageHint": "crankshaft camshaft"
+    },
+    {
+      "id": "blogEnergyEfficient",
+      "description": "A graphic showing a factory with green energy symbols like leaves and wind turbines.",
+      "imageUrl": "/images/images/28.png",
+      "imageHint": "green energy"
     },
     {
       "id": "blogForgedParts",
       "description": "A pile of newly forged, rough metal components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "/images/images/29.png",
       "imageHint": "forged components"
+    },
+    {
+      "id": "blogHardnessTesting",
+      "description": "A technician using a Rockwell hardness tester on a metal part.",
+      "imageUrl": "https://images.unsplash.com/photo-1577228161861-4e168d546169?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJkbmVzcyUyMHRlc3RlcnxlbnwwfHx8fDE3NjMxMjI4Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hardness tester"
     },
     {
       "id": "blogDistortionControl",
@@ -333,7 +345,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1760274844301-0b34c27657b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1662900547519-eeb199360d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial roller"
     },
     {
