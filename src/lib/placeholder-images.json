@@ -261,19 +261,19 @@
     {
       "id": "blogGearsAndPinions",
       "description": "Induction hardening of gears and pinions.",
-      "imageUrl": "/images/images/21.png",
+      "imageUrl": "/images/images/22.png",
       "imageHint": "gears pinions"
     },
     {
       "id": "blogToolSteel",
       "description": "Induction hardening of tool steel components.",
-      "imageUrl": "/images/images/22.png",
+      "imageUrl": "/images/images/23.png",
       "imageHint": "tool steel"
     },
     {
       "id": "blogGearbox",
       "description": "Close-up of industrial gearbox components.",
-      "imageUrl": "/images/images/23.png",
+      "imageUrl": "/images/images/24.png",
       "imageHint": "gearbox components"
     },
     {
@@ -341,12 +341,6 @@
       "description": "Diagram showing the working principle of induction heating with a coil and metal part.",
       "imageUrl": "/images/images/32.png",
       "imageHint": "induction heating diagram"
-    },
-    {
-      "id": "blogRollerHardening",
-      "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "/images/images/33.png",
-      "imageHint": "industrial roller"
     },
     {
       "id": "blogTemperatureControl",
@@ -557,6 +551,12 @@
       "description": "Clean water splashing over a hot metal part during quenching.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
       "imageHint": "water quenching"
+    },
+    {
+      "id": "blogRollerHardening",
+      "description": "A large industrial steel roller being manufactured.",
+      "imageUrl": "/images/images/33.png",
+      "imageHint": "industrial roller"
     },
     {
       "id": "blogQuenchingFlowRate",
