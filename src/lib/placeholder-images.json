@@ -207,19 +207,19 @@
     {
       "id": "blogDefects",
       "description": "Illustration showing common induction hardening defects like cracks and soft spots.",
-      "imageUrl": "/images/images/11.jpeg",
+      "imageUrl": "/images/images/11.png",
       "imageHint": "hardening defects"
     },
     {
       "id": "blogFlameVsInduction",
       "description": "Comparison of induction hardening coil and flame hardening torch.",
-      "imageUrl": "/images/images/12.jpeg",
+      "imageUrl": "/images/images/12.png",
       "imageHint": "hardening comparison"
     },
     {
       "id": "blogFrequencyComparison",
       "description": "Infographic comparing high frequency and medium frequency waves.",
-      "imageUrl": "/images/images/13.jpeg",
+      "imageUrl": "/images/images/13.png",
       "imageHint": "frequency waves infographic"
     },
     {
@@ -243,7 +243,7 @@
     {
       "id": "blogNorthIndia",
       "description": "Map of North India highlighting industrial regions.",
-      "imageUrl": "/images/images/17.png",
+      "imageUrl": "/images/images/19.png",
       "imageHint": "north india"
     },
     {
