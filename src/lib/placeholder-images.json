@@ -207,19 +207,19 @@
     {
       "id": "blogDefects",
       "description": "Illustration showing common induction hardening defects like cracks and soft spots.",
-      "imageUrl": "/images/images/11.png",
+      "imageUrl": "/images/images/11.jpeg",
       "imageHint": "hardening defects"
     },
     {
       "id": "blogFlameVsInduction",
       "description": "Comparison of induction hardening coil and flame hardening torch.",
-      "imageUrl": "/images/images/12.png",
+      "imageUrl": "/images/images/12.jpeg",
       "imageHint": "hardening comparison"
     },
     {
       "id": "blogFrequencyComparison",
       "description": "Infographic comparing high frequency and medium frequency waves.",
-      "imageUrl": "/images/images/13.png",
+      "imageUrl": "/images/images/13.jpeg",
       "imageHint": "frequency waves infographic"
     },
     {
@@ -255,7 +255,7 @@
     {
       "id": "blogCaseDepth",
       "description": "A diagram illustrating case depth in a gear tooth.",
-      "imageUrl": "/images/images/19.png",
+      "imageUrl": "/images/images/20.png",
       "imageHint": "case depth diagram"
     },
     {
