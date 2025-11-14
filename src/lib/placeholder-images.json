@@ -51,25 +51,25 @@
     {
       "id": "processQuenching",
       "description": "A glowing hot metal part being submerged into a quenching tank, creating steam and bubbles.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F6.jpeg?alt=media&token=93a1c893-6a58-4c25-8e7c-87a32bd8b9a1",
+      "imageUrl": "/images/images/6.jpeg",
       "imageHint": "metal quenching"
     },
     {
       "id": "processHardening",
       "description": "A close-up of a technician monitoring the induction hardening process on a control panel.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F7.jpeg?alt=media&token=6a12b7a8-3f5f-40c2-9e4a-4d767073b6b1",
+      "imageUrl": "/images/images/7.jpeg",
       "imageHint": "technician machine"
     },
     {
       "id": "processFinishing",
       "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F8.jpeg?alt=media&token=0b6a2b8e-8a0b-4b2a-8c8b-6a5a0a3b6a2b",
+      "imageUrl": "/images/images/8.jpeg",
       "imageHint": "metal gear"
     },
     {
       "id": "processPreparation",
       "description": "A clean and polished metal shaft ready for the heat treatment process.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F9.jpeg?alt=media&token=2a0c6d7e-2e4b-4c2a-8b8a-7e3b6a2b8e8a",
+      "imageUrl": "/images/images/9.jpeg",
       "imageHint": "metal shaft"
     },
     {
@@ -237,13 +237,13 @@
     {
       "id": "blogGearProcess",
       "description": "Illustration showing the gear hardening process.",
-      "imageUrl": "/images/images/16.png",
+      "imageUrl": "/images/images/19.png",
       "imageHint": "gear process"
     },
     {
       "id": "blogNorthIndia",
       "description": "Map of North India highlighting industrial regions.",
-      "imageUrl": "/images/images/19.png",
+      "imageUrl": "/images/images/17.png",
       "imageHint": "north india map"
     },
     {
@@ -261,7 +261,7 @@
     {
       "id": "blogGearsAndPinions",
       "description": "Induction hardening of gears and pinions.",
-      "imageUrl": "/images/images/20.png",
+      "imageUrl": "/images/images/21.png",
       "imageHint": "gears pinions"
     },
     {
@@ -333,236 +333,218 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1605334889058-294c65a363d3.jpeg?alt=media&token=f0d2c733-149b-449e-b9f4-18c7283c7a0c",
-      "imageHint": "steel roller"
+      "imageUrl": "https://images.unsplash.com/photo-1760274844301-0b34c27657b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial roller"
     },
     {
       "id": "blogTemperatureControl",
-      "description": "Technician monitoring a control panel with temperature gauges.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1759216853052-883040267c8c.jpeg?alt=media&token=7c16c4ed-208b-4972-880c-a9d060f64c67",
-      "imageHint": "temperature control"
+      "description": "A control panel with temperature gauges and dials for an industrial process.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1654965807196-5dbeffb70a47.jpeg?alt=media&token=b0213038-f9b1-4f1b-aa3e-324d9c7d42b9",
+      "imageHint": "control panel"
     },
     {
       "id": "blogMediumFrequency",
-      "description": "An induction coil glowing around a metal shaft, demonstrating medium frequency heating.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1547186577-a3f4fa07c2ef.jpeg?alt=media&token=82fc4dc6-4f7f-4424-9b2d-3c224213a48e",
-      "imageHint": "medium frequency heating"
+      "description": "An induction hardening machine with a metal part glowing red hot.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1549487425-635c9a923594.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
+      "imageHint": "induction hardening"
     },
     {
-      "id": "blogEn24_4340",
-      "description": "A close-up of a high-strength EN24 or 4340 alloy steel shaft.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1745449562896-71ba57d1e2b3.jpeg?alt=media&token=96359d99-d41c-43f1-9457-3f3301a243c7",
-      "imageHint": "alloy steel"
+      "id": "blogEN19_EN24",
+      "description": "An assortment of industrial shafts and gears made from EN19 and EN24 steel.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1543324838-8c1d683796d2.jpeg?alt=media&token=2409f53e-2b5d-4f1b-a5d5-827c1328373b",
+      "imageHint": "steel shafts gears"
     },
     {
       "id": "blogQuenchingComparison",
-      "description": "A split-screen image showing water quenching on one side and a dark oil bath on the other.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1557256611-210fcc4476d7.jpeg?alt=media&token=4042456b-3aa8-4506-8c65-b0726d4001d8",
+      "description": "A split image showing water quenching on one side and polymer quenching on the other.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
       "imageHint": "quenching comparison"
     },
     {
-      "id": "blogHeavyMachineryShafts",
-      "description": "A large, heavy-duty industrial shaft used in machinery.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1616422285852-24318c651f15.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
-      "imageHint": "industrial shaft"
+      "id": "blogCoilDesign",
+      "description": "A close-up of a custom-wound copper induction coil.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1715891157147-97d84a754162.jpeg?alt=media&token=d1f85532-a5e2-45e3-a619-a1b9d4ac1d39",
+      "imageHint": "copper coil"
     },
     {
-      "id": "blogHeavyDutyShafts",
-      "description": "A large industrial shaft used in heavy machinery.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1616422285852-24318c651f15.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
-      "imageHint": "industrial shaft"
+      "id": "blogHeavyMachineryShafts",
+      "description": "Several large, heavy-duty industrial shafts.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1715891157147-97d84a754162.jpeg?alt=media&token=d1f85532-a5e2-45e3-a619-a1b9d4ac1d39",
+      "imageHint": "heavy shafts"
     },
     {
       "id": "blogCracks",
-      "description": "An illustration showing a magnified view of a crack-free metal surface versus a cracked one after heat treatment.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1641605272318-5cf11f8de2c7.jpeg?alt=media&token=7b92ff15-5858-451e-8411-f155f9a65d83",
-      "imageHint": "metal surface crack"
+      "description": "A close-up of a metal surface showing micro-cracks.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageHint": "metal cracks"
     },
     {
       "id": "blogHydraulicRods",
-      "description": "A close-up of a polished hydraulic cylinder rod.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1650305161739-cd5eaf82b2a3.jpeg?alt=media&token=5b26282a-2814-419b-a320-f1d24efd8c1c",
-      "imageHint": "hydraulic cylinder"
+      "description": "A set of chrome-plated hydraulic cylinder rods.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageHint": "hydraulic rods"
     },
     {
       "id": "blog4140_4150",
-      "description": "Close-up of 4140 and 4150 alloy steel bars.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1745449562896-71ba57d1e2b3.jpeg?alt=media&token=96359d99-d41c-43f1-9457-3f3301a243c7",
-      "imageHint": "alloy steel"
+      "description": "Bars of 4140 and 4150 alloy steel.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1616422285852-24318c651f15.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageHint": "steel bars"
     },
     {
       "id": "blogAerospace",
-      "description": "An airplane wing being assembled in a modern factory, representing the precision of the aerospace industry.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1559029676-9cf1c26b5d0c.jpeg?alt=media&token=b7f58b73-057b-4028-98e3-a6b18a6e87f8",
-      "imageHint": "aerospace part"
+      "description": "A high-tech aerospace component, like a turbine blade or landing gear part.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1713894055910-1a8bdffc41ea.jpeg?alt=media&token=38a53106-f64f-4d9f-9c03-bb425c276537",
+      "imageHint": "aerospace component"
     },
     {
       "id": "blogPowerDensity",
-      "description": "An infographic or diagram illustrating the concept of power density in induction heating.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1698241318468-b39f150a0494.jpeg?alt=media&token=885834e5-947b-402a-9ac9-1a5c64360e28",
-      "imageHint": "energy diagram"
+      "description": "A diagram showing how power density affects heat penetration in metal.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1635179885954-c778885a1197.jpeg?alt=media&token=e93b6e87-a225-4c07-84d4-9d5f7de2226f",
+      "imageHint": "power density diagram"
     },
     {
       "id": "blogSurfaceFinish",
-      "description": "A close-up of a perfectly smooth, polished metal shaft reflecting light, showing a high-quality surface finish.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1618172193763-c5242db039f4.jpeg?alt=media&token=2480373c-70e1-455b-80a5-296b528b1e4a",
-      "imageHint": "metal surface"
+      "description": "A perfectly polished metal shaft after induction hardening and grinding.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1601131129939-95248a3952f4.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
+      "imageHint": "polished shaft"
     },
     {
       "id": "blogCoolingTime",
-      "description": "An infographic showing a temperature-time cooling curve for quenching.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1633519528991-3a8633912953.jpeg?alt=media&token=9635b44c-0d6c-48c9-9430-c3d6494ed6e7",
-      "imageHint": "cooling curve diagram"
+      "description": "A graph showing different cooling curves for water and polymer quenching.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1549487425-635c9a923594.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
+      "imageHint": "cooling graph"
     },
     {
       "id": "blogAutomotiveAxles",
-      "description": "A close-up of several polished automotive axles lined up.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1606571599814-8208f029c78d.jpeg?alt=media&token=6f2177f1-863a-4467-b52b-7b0a37910978",
+      "description": "A row of automotive axles ready for heat treatment.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1629851614275-3a0b65f3f03a.jpeg?alt=media&token=5b26282a-2814-419b-a320-f1d24efd8c1c",
       "imageHint": "automotive axles"
     },
     {
       "id": "blogAutomation",
-      "description": "An automated industrial control panel with glowing blue lights, graphs, and data visualizations.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1665686306574-1ace09918530.jpeg?alt=media&token=404284b3-c15c-4235-9003-85f850e04743",
-      "imageHint": "automation control panel"
+      "description": "An automated industrial control panel showing graphs and data.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageHint": "control panel"
     },
     {
       "id": "blogToolAndDie",
-      "description": "A close-up of various industrial tool and die components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1579781830024-f48c3b7179b9.jpeg?alt=media&token=547c1f10-1845-4203-9d11-57c4c3f875b0",
-      "imageHint": "tool die"
+      "description": "A close-up of a large industrial stamping die.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageHint": "stamping die"
     },
     {
       "id": "blogToolAndDieHardening",
-      "description": "A close-up of various industrial tool and die components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1579781830024-f48c3b7179b9.jpeg?alt=media&token=547c1f10-1845-4203-9d11-57c4c3f875b0",
-      "imageHint": "tool die"
+      "description": "An assortment of industrial tools and dies, some glowing red-hot.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageHint": "tools dies"
     },
     {
       "id": "blogPowertrain",
-      "description": "A close-up of powertrain components like gears and shafts.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1629828522336-f94236a29731.jpeg?alt=media&token=b668045f-40e1-4560-a29d-472e811c75c8",
+      "description": "An exploded view of an automotive powertrain with gears and shafts.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
       "imageHint": "powertrain components"
     },
     {
       "id": "blogAlloySteels",
-      "description": "A collection of various high-performance alloy steel bars and components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1558532454-9e7c5b6b1a45.jpeg?alt=media&token=d1f85532-a5e2-45e3-a619-a1b9d4ac1d39",
-      "imageHint": "alloy steel bars"
+      "description": "High-performance alloy steel components like gears and shafts.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageHint": "alloy steel components"
     },
     {
       "id": "blogInductionRole",
-      "description": "An infographic or diagram showing the various applications of induction heating in modern manufacturing.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1601520525418-4d7ff1314879.jpeg?alt=media&token=89437cd9-450f-4886-8b36-7c3ee4a530f2",
-      "imageHint": "induction heating infographic"
-    },
-    {
-      "id": "blogRollingMill",
-      "description": "A close-up of a large industrial rolling mill in operation.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1668715879690-fd7257feb179.jpeg?alt=media&token=e90e1f37-010b-46a4-972c-99c5685514f0",
-      "imageHint": "rolling mill"
-    },
-    {
-      "id": "blogAutomotiveGearShaft",
-      "description": "A close-up of automotive gears and shafts arranged neatly.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1563291833-c2885e3c1f3c.jpeg?alt=media&token=3b3109fc-77b3-469b-8e11-e40714264627",
-      "imageHint": "automotive gears shafts"
+      "description": "A modern factory with automated machinery, highlighting the central role of induction heating.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageHint": "modern factory"
     },
     {
       "id": "blogSurfaceHardeningTechniques",
-      "description": "A collage of different surface hardening techniques: induction coil, flame torch, and furnace interior.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1618935999324-781c3f35031b.jpeg?alt=media&token=f900e28f-7232-47c1-a20c-c695780d60c6",
-      "imageHint": "heat treatment collage"
+      "description": "A visual comparison of different surface hardening techniques like induction, flame, and laser.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageHint": "hardening techniques"
     },
     {
       "id": "blogTempMonitoring",
-      "description": "A technician intently monitoring a digital control panel displaying temperature graphs and data.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1551288049-bebda4e38f71.jpeg?alt=media&token=8544f9de-3619-4824-a744-8d962a98ef75",
+      "description": "A technician monitoring a digital control panel with temperature graphs.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
       "imageHint": "temperature monitoring"
     },
     {
       "id": "blogEN8Steel",
       "description": "A close-up of a polished EN8 medium carbon steel shaft.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1543252554-b58a183a651f.jpeg?alt=media&token=f0d2206c-84d2-436d-b8d4-f6b864a784d2",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1601131129939-95248a3952f4.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
       "imageHint": "EN8 steel shaft"
     },
     {
       "id": "blogExport",
-      "description": "A shipping container being loaded onto a cargo ship, with a globe overlay, representing global export.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1614036118491-a6bd838969a5.jpeg?alt=media&token=f1d2e1c3-228d-4a1b-a5d8-c68e1a1c3d0b",
-      "imageHint": "cargo ship export"
+      "description": "A shipping container being loaded with industrial parts, ready for export.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1583773192802-173d212a2baa.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageHint": "export shipping"
     },
     {
       "id": "blogMisconceptions",
-      "description": "A magnifying glass over a metal gear, with question marks around, representing myths.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1508345217145-99602e1b12b0.jpeg?alt=media&token=26206014-b81b-4f7f-856b-a81d115e5828",
-      "imageHint": "myth fact"
+      "description": "A mythbusters-style graphic with checkmarks and crosses over images of induction hardening.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1654965807196-5dbeffb70a47.jpeg?alt=media&token=b0213038-f9b1-4f1b-aa3e-324d9c7d42b9",
+      "imageHint": "mythbusters graphic"
     },
     {
       "id": "blogCoilAlignment",
-      "description": "An induction coil perfectly aligned around a metal shaft, glowing red hot during the heating process.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1557201874-98d4f7c33eb3.jpeg?alt=media&token=89437cd9-450f-4886-8b36-7c3ee4a530f2",
-      "imageHint": "induction heating shaft"
+      "description": "A diagram showing correct vs incorrect coil alignment for an induction heater.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1635179885954-c778885a1197.jpeg?alt=media&token=e93b6e87-a225-4c07-84d4-9d5f7de2226f",
+      "imageHint": "coil alignment"
     },
     {
       "id": "blogPolymerVsOil",
-      "description": "A split image showing a clean polymer quenching bath on one side and a dark oil bath on the other.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1618935999324-781c3f35031b.jpeg?alt=media&token=f900e28f-7232-47c1-a20c-c695780d60c6",
+      "description": "A split image showing clean polymer quenching vs smoky oil quenching.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
       "imageHint": "quenching comparison"
     },
     {
       "id": "blogTransmissionComponents",
-      "description": "A close-up of various automotive transmission components like gears and shafts.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1629828522336-f94236a29731.jpeg?alt=media&token=b668045f-40e1-4560-a29d-472e811c75c8",
-      "imageHint": "transmission components"
+      "description": "An exploded view of an automotive transmission gearbox.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1676387164929-b647846873cd.jpeg?alt=media&token=89437cd9-450f-4886-8b36-7c3ee4a530f2",
+      "imageHint": "transmission gearbox"
     },
     {
       "id": "blogEngineParts",
-      "description": "A close-up of various automotive engine parts like pistons, connecting rods, and valves, neatly arranged.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1605513226483-c5587843519c.jpeg?alt=media&token=e90e1f37-010b-46a4-972c-99c5685514f0",
-      "imageHint": "automotive engine parts"
+      "description": "A collection of various automotive engine parts like pistons, valves, and rods.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1616422285852-24318c651f15.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageHint": "engine parts"
     },
     {
-      "id": "blogEN19_EN24",
-      "description": "Close-up of heavy-duty EN19 and EN24 alloy steel gears and shafts.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1563291833-c2885e3c1f3c.jpeg?alt=media&token=3b3109fc-77b3-469b-8e11-e40714264627",
-      "imageHint": "alloy steel gears"
+      "id": "blogHeavyDutyShafts",
+      "description": "A large, heavy-duty industrial shaft being measured with a caliper.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1555627044-6aae1a7b4478.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageHint": "heavy shaft"
+    },
+    {
+      "id": "blogEn24_4340",
+      "description": "A close-up of a high-strength EN24 or 4340 alloy steel shaft.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1601131129939-95248a3952f4.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
+      "imageHint": "alloy steel shaft"
     },
     {
       "id": "blogSoftSpots",
       "description": "A magnified view of a metal surface showing uniform hardness versus one with soft spots.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1549487425-635c9a923594.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
       "imageHint": "metal surface"
     },
     {
       "id": "blogSafetyStandards",
-      "description": "A factory worker wearing full Personal Protective Equipment (PPE), including a hard hat, safety glasses, and gloves, operating industrial machinery.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1581092921434-80a133939a86.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
-      "imageHint": "industrial safety"
-    },
-    {
-      "id": "blogToolAndDieHardening",
-      "description": "A close-up of various industrial tool and die components.",
-      "imageUrl": "/images/images/17.png",
-      "imageHint": "tool die"
+      "description": "A worker wearing full safety gear (helmet, goggles, gloves) operating industrial machinery.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1562601555-513820e5d0eb.jpeg?alt=media&token=f900e28f-7232-47c1-a20c-c695780d60c6",
+      "imageHint": "industrial worker"
     },
     {
       "id": "blogWaterCooling",
-      "description": "A glowing red hot metal part being sprayed with jets of water for quenching.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1618935999324-781c3f35031b.jpeg?alt=media&token=f900e28f-7232-47c1-a20c-c695780d60c6",
-      "imageHint": "metal quenching"
+      "description": "Clean water splashing over a hot metal part during quenching.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageHint": "water quenching"
     },
     {
       "id": "blogQuenchingFlowRate",
-      "description": "Close-up of a high-pressure water jet spraying a metal component during the quenching process.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1560192776-60a3bab7190d.jpeg?alt=media&token=89437cd9-450f-4886-8b36-7c3ee4a530f2",
-      "imageHint": "water jet quenching"
-    },
-    {
-      "id": "blogEnergyEfficient",
-      "description": "An infographic showing a leaf with a power plug, symbolizing green energy and efficiency.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1623863479188-7824b0a430c4.jpeg?alt=media&token=e93b6e87-a225-4c07-84d4-9d5f7de2226f",
-      "imageHint": "green energy infographic"
+      "description": "A digital meter showing the flow rate of a liquid in an industrial pipe.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageHint": "digital meter"
     }
   ]
 }
