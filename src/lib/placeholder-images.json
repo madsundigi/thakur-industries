@@ -207,67 +207,67 @@
     {
       "id": "blogDefects",
       "description": "Illustration showing common induction hardening defects like cracks and soft spots.",
-      "imageUrl": "/images/images/10.jpeg",
+      "imageUrl": "/images/images/11.png",
       "imageHint": "hardening defects"
     },
     {
       "id": "blogFlameVsInduction",
       "description": "Comparison of induction hardening coil and flame hardening torch.",
-      "imageUrl": "/images/images/11.png",
+      "imageUrl": "/images/images/12.png",
       "imageHint": "hardening comparison"
     },
     {
       "id": "blogFrequencyComparison",
       "description": "Infographic comparing high frequency and medium frequency waves.",
-      "imageUrl": "/images/images/12.png",
+      "imageUrl": "/images/images/13.png",
       "imageHint": "frequency waves infographic"
     },
     {
       "id": "blogFrequency",
       "description": "Diagram showing different frequencies for induction hardening.",
-      "imageUrl": "/images/images/13.png",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2F14.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
       "imageHint": "frequency diagram"
     },
     {
       "id": "blogAgricultural",
       "description": "Induction hardening of agricultural components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F14.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2F15.jpeg?alt=media&token=b73d2f9e-c44d-4a1d-8e6d-628f8045610b",
       "imageHint": "agricultural components"
     },
     {
       "id": "blogGearProcess",
       "description": "Illustration showing the gear hardening process.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F15.jpeg?alt=media&token=b73d2f9e-c44d-4a1d-8e6d-628f8045610b",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2F16.jpeg?alt=media&token=c157f897-4402-4752-9602-5cfb386e8893",
       "imageHint": "gear process"
     },
     {
       "id": "blogNorthIndia",
       "description": "Map of North India highlighting industrial regions.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F16.jpeg?alt=media&token=c157f897-4402-4752-9602-5cfb386e8893",
+      "imageUrl": "/images/images/17.png",
       "imageHint": "north india"
     },
     {
       "id": "blogShaftsAndAxles",
       "description": "Induction hardening process for industrial shafts and axles.",
-      "imageUrl": "/images/images/17.png",
+      "imageUrl": "/images/images/18.png",
       "imageHint": "shafts axles"
     },
     {
       "id": "blogCaseDepth",
       "description": "A diagram illustrating case depth in a gear tooth.",
-      "imageUrl": "/images/images/18.png",
+      "imageUrl": "/images/images/19.png",
       "imageHint": "case depth diagram"
     },
     {
       "id": "blogGearsAndPinions",
       "description": "Induction hardening of gears and pinions.",
-      "imageUrl": "/images/images/19.png",
+      "imageUrl": "/images/images/20.png",
       "imageHint": "gears pinions"
     },
     {
       "id": "blogToolSteel",
       "description": "Induction hardening of tool steel components.",
-      "imageUrl": "/images/images/20.png",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2FblogToolSteel.jpg?alt=media",
       "imageHint": "tool steel"
     },
     {
