@@ -225,19 +225,19 @@
     {
       "id": "blogFrequency",
       "description": "Diagram showing different frequencies for induction hardening.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2F14.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/14.png",
       "imageHint": "frequency diagram"
     },
     {
       "id": "blogAgricultural",
       "description": "Induction hardening of agricultural components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2F15.jpeg?alt=media&token=b73d2f9e-c44d-4a1d-8e6d-628f8045610b",
+      "imageUrl": "/images/images/15.png",
       "imageHint": "agricultural components"
     },
     {
       "id": "blogGearProcess",
       "description": "Illustration showing the gear hardening process.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2F16.jpeg?alt=media&token=c157f897-4402-4752-9602-5cfb386e8893",
+      "imageUrl": "/images/images/16.png",
       "imageHint": "gear process"
     },
     {
