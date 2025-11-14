@@ -249,37 +249,37 @@
     {
       "id": "blogShaftsAndAxles",
       "description": "Induction hardening process for industrial shafts and axles.",
-      "imageUrl": "/images/images/18.png",
+      "imageUrl": "/images/images/19.png",
       "imageHint": "shafts axles"
     },
     {
       "id": "blogCaseDepth",
       "description": "A diagram illustrating case depth in a gear tooth.",
-      "imageUrl": "/images/images/19.png",
+      "imageUrl": "/images/images/20.png",
       "imageHint": "case depth diagram"
     },
     {
       "id": "blogGearsAndPinions",
       "description": "Induction hardening of gears and pinions.",
-      "imageUrl": "/images/images/20.png",
+      "imageUrl": "/images/images/21.png",
       "imageHint": "gears pinions"
     },
     {
       "id": "blogToolSteel",
       "description": "Induction hardening of tool steel components.",
-      "imageUrl": "/images/images/21.png",
+      "imageUrl": "/images/images/22.png",
       "imageHint": "tool steel"
     },
     {
       "id": "blogGearbox",
       "description": "Close-up of industrial gearbox components.",
-      "imageUrl": "/images/images/22.png",
+      "imageUrl": "/images/images/23.png",
       "imageHint": "gearbox components"
     },
     {
       "id": "blogOem",
       "description": "OEM components being prepared for induction hardening.",
-      "imageUrl": "/images/images/23.png",
+      "imageUrl": "/images/images/24.png",
       "imageHint": "OEM components"
     },
     {
@@ -297,31 +297,31 @@
     {
       "id": "blogAutomotiveGears",
       "description": "A close-up shot of clean, polished automotive gears.",
-      "imageUrl": "/images/images/26.png",
+      "imageUrl": "/images/images/25.png",
       "imageHint": "automotive gears"
     },
     {
       "id": "blogCrankshafts",
       "description": "A close-up of a polished crankshaft and camshaft.",
-      "imageUrl": "/images/images/27.png",
+      "imageUrl": "/images/images/26.png",
       "imageHint": "crankshaft camshaft"
     },
     {
       "id": "blogEnergyEfficient",
       "description": "A graphic showing a factory with green energy symbols like leaves and wind turbines.",
-      "imageUrl": "/images/images/28.png",
+      "imageUrl": "/images/images/27.png",
       "imageHint": "green energy"
     },
     {
       "id": "blogForgedParts",
       "description": "A pile of newly forged, rough metal components.",
-      "imageUrl": "/images/images/29.png",
+      "imageUrl": "/images/images/28.png",
       "imageHint": "forged components"
     },
     {
       "id": "blogHardnessTesting",
       "description": "A technician using a Rockwell hardness tester on a metal part.",
-      "imageUrl": "https://images.unsplash.com/photo-1577228161861-4e168d546169?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJkbmVzcyUyMHRlc3RlcnxlbnwwfHx8fDE3NjMxMjI4Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/29.png",
       "imageHint": "hardness tester"
     },
     {
@@ -345,7 +345,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1662900547519-eeb199360d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623742110056-e01d81db039d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial roller"
     },
     {
