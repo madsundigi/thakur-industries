@@ -165,43 +165,43 @@
     {
       "id": "blogPost4",
       "description": "Visual showing benefits of induction heat treatment.",
-      "imageUrl": "/images/images/3.jpeg",
+      "imageUrl": "/images/images/4.png",
       "imageHint": "benefits infographic"
     },
     {
       "id": "blogPost5",
       "description": "Various steel components suitable for induction hardening.",
-      "imageUrl": "/images/images/4.png",
+      "imageUrl": "/images/images/5.jpeg",
       "imageHint": "steel components"
     },
     {
       "id": "blogAutomotiveParts",
       "description": "Induction hardening of automotive components.",
-      "imageUrl": "/images/images/5.jpeg",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F5.jpeg?alt=media&token=381a1c97-4089-4d68-888d-6c1c3c97e79c",
       "imageHint": "automotive parts"
     },
     {
       "id": "blogQuenchingRole",
       "description": "Polymer and water quenching process.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F6.jpeg?alt=media&token=0981e813-f9c7-432a-8954-58a4362140f7",
+      "imageUrl": "/images/images/6.png",
       "imageHint": "quenching process"
     },
     {
       "id": "blogHardeningComparison",
       "description": "Comparison of surface hardening and through hardening.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F7.jpeg?alt=media&token=181515f4-2735-4303-9e46-f94d372579f1",
+      "imageUrl": "/images/images/7.png",
       "imageHint": "hardening comparison"
     },
     {
       "id": "blogEnSeries",
       "description": "Various EN series steel components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F8.jpeg?alt=media&token=7c1b29a7-4712-402a-9e1e-213c4c81014e",
+      "imageUrl": "/images/images/8.png",
       "imageHint": "steel components"
     },
     {
       "id": "blogToolLife",
       "description": "A set of industrial tools like dies and punches after heat treatment.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F9.jpeg?alt=media&token=7df17c37-9755-4a69-8083-2947d6928e08",
+      "imageUrl": "/images/images/9.png",
       "imageHint": "industrial tools"
     },
     {
