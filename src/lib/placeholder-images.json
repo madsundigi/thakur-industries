@@ -153,13 +153,13 @@
     {
       "id": "blogPost1",
       "description": "Visual representation of the induction hardening process.",
-      "imageUrl": "/images/images/1.jpeg",
+      "imageUrl": "/images/images/19.png",
       "imageHint": "hardening process"
     },
     {
       "id": "blogPost2",
       "description": "Visual comparison of induction hardening and case hardening.",
-      "imageUrl": "/images/images/2.jpeg",
+      "imageUrl": "/images/images/18.png",
       "imageHint": "comparison diagram"
     },
     {
@@ -447,61 +447,61 @@
     {
       "id": "blogToolAndDieHardening",
       "description": "An assortment of industrial tools and dies, some glowing red-hot.",
-      "imageUrl": "/images/images/51.png",
+      "imageUrl": "/images/images/50.png",
       "imageHint": "tools dies"
     },
     {
       "id": "blogPowertrain",
       "description": "An exploded view of an automotive powertrain with gears and shafts.",
-      "imageUrl": "/images/images/52.png",
+      "imageUrl": "/images/images/51.png",
       "imageHint": "powertrain components"
     },
     {
       "id": "blogAlloySteels",
       "description": "High-performance alloy steel components like gears and shafts.",
-      "imageUrl": "/images/images/53.png",
+      "imageUrl": "/images/images/52.png",
       "imageHint": "alloy steel components"
     },
     {
       "id": "blogInductionRole",
       "description": "A modern factory with automated machinery, highlighting the central role of induction heating.",
-      "imageUrl": "/images/images/54.png",
+      "imageUrl": "/images/images/53.png",
       "imageHint": "modern factory"
     },
     {
       "id": "blogRollingMill",
       "description": "Enhance durability and surface wear resistance of rolling mill rolls using precision induction hardening.",
-      "imageUrl": "/images/images/55.png",
+      "imageUrl": "/images/images/54.png",
       "imageHint": "rolling mill"
     },
     {
       "id": "blogAutomotiveGearShaft",
       "description": "Understand how induction hardening improves fatigue life and reduces wear in automotive gears and shafts.",
-      "imageUrl": "/images/images/56.png",
+      "imageUrl": "/images/images/55.png",
       "imageHint": "automotive gear shaft"
     },
     {
       "id": "blogSurfaceHardeningTechniques",
       "description": "A visual comparison of different surface hardening techniques like induction, flame, and laser.",
-      "imageUrl": "/images/images/57.png",
+      "imageUrl": "/images/images/56.png",
       "imageHint": "hardening techniques"
     },
     {
       "id": "blogTempMonitoring",
       "description": "A technician monitoring a digital control panel with temperature graphs.",
-      "imageUrl": "/images/images/58.png",
+      "imageUrl": "/images/images/57.png",
       "imageHint": "temperature monitoring"
     },
     {
       "id": "blogEN8Steel",
       "description": "A close-up of a polished EN8 medium carbon steel shaft.",
-      "imageUrl": "/images/images/59.png",
+      "imageUrl": "/images/images/58.png",
       "imageHint": "EN8 steel shaft"
     },
     {
       "id": "blogExport",
       "description": "A shipping container being loaded with industrial parts, ready for export.",
-      "imageUrl": "/images/images/60.png",
+      "imageUrl": "/images/images/59.png",
       "imageHint": "export shipping"
     },
     {
