@@ -261,7 +261,7 @@
     {
       "id": "blogGearsAndPinions",
       "description": "Induction hardening of gears and pinions.",
-      "imageUrl": "/images/images/22.png",
+      "imageUrl": "/images/images/21.png",
       "imageHint": "gears pinions"
     },
     {
@@ -275,24 +275,6 @@
       "description": "Close-up of industrial gearbox components.",
       "imageUrl": "/images/images/24.png",
       "imageHint": "gearbox components"
-    },
-    {
-      "id": "blogOem",
-      "description": "OEM components being prepared for induction hardening.",
-      "imageUrl": "/images/images/24.png",
-      "imageHint": "OEM components"
-    },
-    {
-      "id": "blogCommonMaterials",
-      "description": "An assortment of different steel bars and components suitable for induction hardening.",
-      "imageUrl": "/images/images/24.png",
-      "imageHint": "steel bars"
-    },
-    {
-      "id": "blogNitriding",
-      "description": "A chart comparing the properties of induction hardening and nitriding.",
-      "imageUrl": "/images/images/25.png",
-      "imageHint": "comparison chart"
     },
     {
       "id": "blogAutomotiveGears",
@@ -341,6 +323,12 @@
       "description": "Diagram showing the working principle of induction heating with a coil and metal part.",
       "imageUrl": "/images/images/32.png",
       "imageHint": "induction heating diagram"
+    },
+    {
+      "id": "blogRollerHardening",
+      "description": "A large industrial steel roller being manufactured.",
+      "imageUrl": "/images/images/33.png",
+      "imageHint": "industrial roller"
     },
     {
       "id": "blogTemperatureControl",
@@ -553,10 +541,22 @@
       "imageHint": "water quenching"
     },
     {
-      "id": "blogRollerHardening",
-      "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "/images/images/33.png",
-      "imageHint": "industrial roller"
+      "id": "blogOem",
+      "description": "OEM components being prepared for induction hardening.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1517245386807-bb43f82c33c4.jpeg?alt=media&token=16719b67-1779-42b7-873b-531121d5423f",
+      "imageHint": "OEM components"
+    },
+    {
+      "id": "blogCommonMaterials",
+      "description": "An assortment of different steel bars and components suitable for induction hardening.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1533628635777-112b22296161.jpeg?alt=media&token=42e584a5-b1a9-4674-8b63-1e5f8f8ed9c6",
+      "imageHint": "steel bars"
+    },
+    {
+      "id": "blogNitriding",
+      "description": "A chart comparing the properties of induction hardening and nitriding.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1543286386-2e659306cd6c.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageHint": "comparison chart"
     },
     {
       "id": "blogQuenchingFlowRate",
