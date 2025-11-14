@@ -327,37 +327,37 @@
     {
       "id": "blogDistortionControl",
       "description": "An engineer measuring a metal part with calipers to ensure dimensional accuracy.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1555627044-6aae1a7b4478.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/30.png",
       "imageHint": "metal measurement"
     },
     {
       "id": "blogTransmissionShaft",
       "description": "A close-up of a transmission shaft with gears.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1676387164929-b647846873cd.jpeg?alt=media&token=89437cd9-450f-4886-8b36-7c3ee4a530f2",
+      "imageUrl": "/images/images/31.png",
       "imageHint": "transmission shaft"
     },
     {
       "id": "blogInductionHeatingWorks",
       "description": "Diagram showing the working principle of induction heating with a coil and metal part.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1635179885954-c778885a1197.jpeg?alt=media&token=e93b6e87-a225-4c07-84d4-9d5f7de2226f",
+      "imageUrl": "/images/images/32.png",
       "imageHint": "induction heating diagram"
     },
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1651672394623-a7b218bfc067?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5kdXN0cmlhbCUyMHJvbGxlcnxlbnwwfHx8fDE3NjMxMjIwNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/33.png",
       "imageHint": "industrial roller"
     },
     {
       "id": "blogTemperatureControl",
       "description": "A control panel with temperature gauges and dials for an industrial process.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1654965807196-5dbeffb70a47.jpeg?alt=media&token=b0213038-f9b1-4f1b-aa3e-324d9c7d42b9",
+      "imageUrl": "/images/images/34.png",
       "imageHint": "control panel"
     },
     {
       "id": "blogMediumFrequency",
       "description": "An induction hardening machine with a metal part glowing red hot.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1549487425-635c9a923594.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
+      "imageUrl": "/images/images/35.png",
       "imageHint": "induction hardening"
     },
     {
