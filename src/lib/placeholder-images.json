@@ -213,19 +213,19 @@
     {
       "id": "blogFlameVsInduction",
       "description": "Comparison of induction hardening coil and flame hardening torch.",
-      "imageUrl": "/images/images/11.jpeg",
+      "imageUrl": "/images/images/11.png",
       "imageHint": "hardening comparison"
     },
     {
       "id": "blogFrequencyComparison",
       "description": "Infographic comparing high frequency and medium frequency waves.",
-      "imageUrl": "/images/images/12.jpeg",
+      "imageUrl": "/images/images/12.png",
       "imageHint": "frequency waves infographic"
     },
     {
       "id": "blogFrequency",
       "description": "Diagram showing different frequencies for induction hardening.",
-      "imageUrl": "/images/images/13.jpeg",
+      "imageUrl": "/images/images/13.png",
       "imageHint": "frequency diagram"
     },
     {
@@ -249,25 +249,25 @@
     {
       "id": "blogShaftsAndAxles",
       "description": "Induction hardening process for industrial shafts and axles.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1567748533458-bddb1377adbc.jpeg?alt=media&token=f1b954e3-6c84-4861-b51e-624e75618b0e",
+      "imageUrl": "/images/images/17.png",
       "imageHint": "shafts axles"
     },
     {
       "id": "blogCaseDepth",
       "description": "A diagram illustrating case depth in a gear tooth.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1738028449238-fa5ae8c33bce.jpeg?alt=media&token=78d40763-71d3-4639-9d7a-c6d9d437f10b",
+      "imageUrl": "/images/images/18.png",
       "imageHint": "case depth diagram"
     },
     {
       "id": "blogGearsAndPinions",
       "description": "Induction hardening of gears and pinions.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1701448150058-43d6d199b103.jpeg?alt=media&token=26206014-b81b-4f7f-856b-a81d115e5828",
+      "imageUrl": "/images/images/19.png",
       "imageHint": "gears pinions"
     },
     {
       "id": "blogToolSteel",
       "description": "Induction hardening of tool steel components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1617571607645-dd7dd3bf7f6b.jpeg?alt=media&token=b7f58b73-057b-4028-98e3-a6b18a6e87f8",
+      "imageUrl": "/images/images/20.png",
       "imageHint": "tool steel"
     },
     {
