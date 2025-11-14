@@ -15,19 +15,19 @@
     {
       "id": "serviceInductionHardening",
       "description": "A glowing red-hot metal cog being treated by an induction hardening machine.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1557201874-98d4f7c33eb3.jpeg?alt=media&token=89437cd9-450f-4886-8b36-7c3ee4a530f2",
+      "imageUrl": "/images/images/1.jpeg",
       "imageHint": "metal gear"
     },
     {
       "id": "serviceCaseHardening",
       "description": "Cross-section of a metal part showing the hardened outer case and softer core.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1609192492693-15c6b06abfb0.jpeg?alt=media&token=885834e5-947b-402a-9ac9-1a5c64360e28",
+      "imageUrl": "/images/images/2.jpeg",
       "imageHint": "metal part"
     },
     {
       "id": "caseHardeningProcess",
       "description": "A diagram or illustration showing the cross-section of a gear with a highlighted hardened outer case and a softer inner core.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1640556795357-71d4w4078d6228.jpeg?alt=media&token=82fc4dc6-4f7f-4424-9b2d-3c224213a48e",
+      "imageUrl": "/images/images/3.jpeg",
       "imageHint": "gear cross-section"
     },
     {
