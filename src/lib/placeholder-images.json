@@ -363,37 +363,37 @@
     {
       "id": "blogEN19_EN24",
       "description": "An assortment of industrial shafts and gears made from EN19 and EN24 steel.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1543324838-8c1d683796d2.jpeg?alt=media&token=2409f53e-2b5d-4f1b-a5d5-827c1328373b",
+      "imageUrl": "/images/images/36.png",
       "imageHint": "steel shafts gears"
     },
     {
       "id": "blogQuenchingComparison",
       "description": "A split image showing water quenching on one side and polymer quenching on the other.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/37.png",
       "imageHint": "quenching comparison"
     },
     {
       "id": "blogCoilDesign",
       "description": "A close-up of a custom-wound copper induction coil.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1715891157147-97d84a754162.jpeg?alt=media&token=d1f85532-a5e2-45e3-a619-a1b9d4ac1d39",
+      "imageUrl": "/images/images/38.png",
       "imageHint": "copper coil"
     },
     {
       "id": "blogHeavyMachineryShafts",
       "description": "Several large, heavy-duty industrial shafts.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1715891157147-97d84a754162.jpeg?alt=media&token=d1f85532-a5e2-45e3-a619-a1b9d4ac1d39",
+      "imageUrl": "/images/images/39.png",
       "imageHint": "heavy shafts"
     },
     {
       "id": "blogCracks",
       "description": "A close-up of a metal surface showing micro-cracks.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "/images/images/40.png",
       "imageHint": "metal cracks"
     },
     {
       "id": "blogHydraulicRods",
       "description": "A set of chrome-plated hydraulic cylinder rods.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "/images/images/41.png",
       "imageHint": "hydraulic rods"
     },
     {
@@ -527,12 +527,6 @@
       "description": "A large, heavy-duty industrial shaft being measured with a caliper.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1555627044-6aae1a7b4478.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
       "imageHint": "heavy shaft"
-    },
-    {
-      "id": "blogEn24_4340",
-      "description": "A close-up of a high-strength EN24 or 4340 alloy steel shaft.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1601131129939-95248a3952f4.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
-      "imageHint": "alloy steel shaft"
     },
     {
       "id": "blogSoftSpots",
