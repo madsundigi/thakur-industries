@@ -33,13 +33,13 @@
     {
       "id": "serviceHeatTreatment",
       "description": "Interior of an industrial furnace with glowing metal parts.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F4.jpeg?alt=media&token=e9621644-7e8c-4f9e-9311-b0e6e73f47e3",
+      "imageUrl": "/images/images/4.png",
       "imageHint": "industrial furnace"
     },
     {
       "id": "serviceSurfaceHardening",
       "description": "Close-up of a shaft being treated with localized induction heating, showing a glowing red ring.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1761472085200-52fa1b396f34.jpeg?alt=media&token=96359d99-d41c-43f1-9457-3f3301a243c7",
+      "imageUrl": "/images/images/5.jpeg",
       "imageHint": "shaft hardening"
     },
     {
@@ -177,7 +177,7 @@
     {
       "id": "blogAutomotiveParts",
       "description": "Induction hardening of automotive components.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thakur-industries.appspot.com/o/images%2F5.jpeg?alt=media&token=381a1c97-4089-4d68-888d-6c1c3c97e79c",
+      "imageUrl": "/images/images/26.png",
       "imageHint": "automotive parts"
     },
     {
@@ -345,7 +345,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1623742110056-e01d81db039d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1662900547256-e4be25d6eb8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial roller"
     },
     {
@@ -435,7 +435,7 @@
     {
       "id": "blogAutomation",
       "description": "An automated industrial control panel showing graphs and data.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1518770660439-4636190af475.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%_next.config.js",
       "imageHint": "control panel"
     },
     {
