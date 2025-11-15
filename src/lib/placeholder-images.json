@@ -3,7 +3,7 @@
     {
       "id": "heroMachine",
       "description": "A close-up of a modern industrial machine with glowing blue lights, representing precision engineering.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1496247749665-49cf5b1022e9.jpeg?alt=media&token=e90e1f37-010b-46a4-972c-99c5685514f0",
+      "imageUrl": "/images/images/62.png",
       "imageHint": "industrial machine"
     },
     {
@@ -327,7 +327,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "/images/images/33.png",
+      "imageUrl": "https://images.unsplash.com/photo-1651672395480-76f41eb0b591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial roller"
     },
     {
@@ -513,13 +513,13 @@
     {
       "id": "blogEngineParts",
       "description": "A collection of various automotive engine parts like pistons, valves, and rods.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1616422285852-24318c651f15.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageUrl": "/images/images/64.png",
       "imageHint": "engine parts"
     },
     {
       "id": "blogHeavyDutyShafts",
       "description": "A large, heavy-duty industrial shaft being measured with a caliper.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1555627044-6aae1a7b4478.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/63.png",
       "imageHint": "heavy shaft"
     },
     {
@@ -543,7 +543,7 @@
     {
       "id": "blogOem",
       "description": "OEM components being prepared for induction hardening.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1517245386807-bb43f82c33c4.jpeg?alt=media&token=16719b67-1779-42b7-873b-531121d5423f",
+      "imageUrl": "/images/images/61.png",
       "imageHint": "OEM components"
     },
     {
