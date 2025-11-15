@@ -327,7 +327,7 @@
     {
       "id": "blogRollerHardening",
       "description": "A large industrial steel roller being manufactured.",
-      "imageUrl": "https://images.unsplash.com/photo-1651672395480-76f41eb0b591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwcm9sbGVyfGVufDB8fHx8MTc2MzEyMjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/33.png",
       "imageHint": "industrial roller"
     },
     {
@@ -423,7 +423,7 @@
     {
       "id": "blogToolAndDie",
       "description": "A close-up of a large industrial stamping die.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489a263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
       "imageHint": "stamping die"
     },
     {
@@ -563,6 +563,24 @@
       "description": "A digital meter showing the flow rate of a liquid in an industrial pipe.",
       "imageUrl": "/images/images/60.png",
       "imageHint": "digital meter"
+    },
+    {
+      "id": "blogHeavyDutyShafts",
+      "description": "Learn how heat treatment improves durability and surface strength of heavy-duty shafts and rollers in Ludhiana industries.",
+      "imageUrl": "/images/images/63.png",
+      "imageHint": "heavy shafts"
+    },
+    {
+      "id": "blogEngineParts",
+      "description": "See how surface hardening strengthens automotive engine components for improved wear resistance and performance.",
+      "imageUrl": "/images/images/64.png",
+      "imageHint": "engine parts"
+    },
+    {
+      "id": "blogToolAndDieHardening",
+      "description": "Explore the process and benefits of induction hardening for tools and dies used in precision manufacturing.",
+      "imageUrl": "/images/images/65.png",
+      "imageHint": "tool die"
     }
   ]
 }
