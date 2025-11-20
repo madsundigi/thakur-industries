@@ -3,10 +3,11 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Phone } from 'lucide-react';
 import Image from 'next/image';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { SITE_PHONE_NUMBER } from '@/lib/constants';
 
 export function Hero() {
   const isDesktop = useMediaQuery('(min-width: 768px)');
@@ -66,9 +67,10 @@ export function Hero() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="w-full sm:w-auto text-lg py-6 px-8 border-white bg-transparent text-white hover:bg-white hover:text-black">
-              <Link href="/services">
-                View Our Services
-              </Link>
+               <a href={`tel:${SITE_PHONE_NUMBER}`}>
+                <Phone className="mr-2 h-5 w-5" />
+                Call for Consultation
+              </a>
             </Button>
           </div>
         </div>
