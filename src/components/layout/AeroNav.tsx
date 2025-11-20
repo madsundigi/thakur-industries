@@ -17,9 +17,11 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { usePathname } from 'next/navigation';
 
 export function AeroNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -54,7 +56,13 @@ export function AeroNav() {
                     </>
                   ) : (
                     <Link href={link.href} legacyBehavior passHref>
-                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent text-foreground hover:text-primary focus:text-primary")}>
+                      <NavigationMenuLink 
+                        className={cn(
+                          navigationMenuTriggerStyle(), 
+                          "bg-transparent text-foreground hover:text-primary focus:text-primary",
+                          pathname === link.href ? "text-primary" : ""
+                        )}
+                      >
                         {link.label}
                       </NavigationMenuLink>
                     </Link>

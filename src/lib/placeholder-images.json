@@ -9,7 +9,7 @@
     {
       "id": "heroIndustries",
       "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1650436986857-83a895e46daa.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "/images/images/10.png",
       "imageHint": "industrial collage"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "serviceCrossSection",
       "description": "Diagram showing the cross-section of a shaft with a hardened outer layer and a softer, ductile core.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1699221647092-c2ce96d2a675.jpeg?alt=media&token=7c16c4ed-208b-4972-880c-a9d060f64c67",
+      "imageUrl": "/images/images/12.png",
       "imageHint": "metal cross-section"
     },
     {
@@ -75,49 +75,49 @@
     {
       "id": "appShaftHardening",
       "description": "Close-up of a polished crankshaft with perfectly smooth journals.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1516408781690-faeabaf19679.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageUrl": "/images/images/13.png",
       "imageHint": "crankshaft close-up"
     },
     {
       "id": "appGearHardening",
       "description": "An assortment of different sized industrial gears.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1738918917045-ac8cf1289a48.jpeg?alt=media&token=5b26282a-2814-419b-a320-f1d24efd8c1c",
+      "imageUrl": "/images/images/14.png",
       "imageHint": "industrial gears"
     },
     {
       "id": "appBearingHardening",
       "description": "Close-up of a large industrial bearing assembly.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1717579033850-4fdb2049bd7f.jpeg?alt=media&token=2d119760-466a-4d33-8a9d-570a92d867c4",
+      "imageUrl": "/images/images/15.png",
       "imageHint": "industrial bearing"
     },
     {
       "id": "industryAutomotive",
       "description": "An assembly line of modern cars being manufactured.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1583773192802-173d212a2baa.jpeg?alt=media&token=8d234710-5390-4101-b547-ab0c0d0246fd",
+      "imageUrl": "/images/images/16.png",
       "imageHint": "automotive assembly"
     },
     {
       "id": "industryAgriculture",
       "description": "A modern tractor working in a vast agricultural field.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1643007654379-201cf89940ed4.jpeg?alt=media&token=c157f897-4402-4752-9602-5cfb386e8893",
+      "imageUrl": "/images/images/17.png",
       "imageHint": "agricultural field"
     },
     {
       "id": "industryMachineTool",
       "description": "A close-up of a CNC machine cutting a piece of metal with precision.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1666618090858-fbcee636bd3e.jpeg?alt=media&token=547c1f10-1845-4203-9d11-57c4c3f875b0",
+      "imageUrl": "/images/images/18.png",
       "imageHint": "CNC machine"
     },
     {
       "id": "serviceCustomSolutions",
       "description": "An engineer designing a custom part on a computer.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1562601555-513820e5d0eb.jpeg?alt=media&token=f900e28f-7232-47c1-a20c-c695780d60c6",
+      "imageUrl": "/images/images/11.png",
       "imageHint": "engineer designing"
     },
     {
       "id": "industryAerospace",
       "description": "An airplane wing being assembled in a modern factory.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1713894055910-1a8bdffc41ea.jpeg?alt=media&token=38a53106-f64f-4d9f-9c03-bb425c276537",
+      "imageUrl": "/images/images/43.png",
       "imageHint": "aerospace factory"
     },
     {
@@ -147,7 +147,7 @@
     {
       "id": "aboutTimeline",
       "description": "Thakur Industries factory floor showing advanced heat treatment machinery.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1654703681116-3988648da2b6.jpeg?alt=media&token=3b3109fc-77b3-469b-8e11-e40714264627",
+      "imageUrl": "/images/images/20.png",
       "imageHint": "factory floor"
     },
     {
@@ -423,7 +423,7 @@
     {
       "id": "blogToolAndDie",
       "description": "A close-up of a large industrial stamping die.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1621257409202-b3489263102.jpeg?alt=media&token=8544a496-d2da-4b71-b0e6-8c903964f51e",
+      "imageUrl": "/images/images/49.png",
       "imageHint": "stamping die"
     },
     {
@@ -531,7 +531,7 @@
     {
       "id": "blogSafetyStandards",
       "description": "A worker wearing full safety gear (helmet, goggles, gloves) operating industrial machinery.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1562601555-513820e5d0eb.jpeg?alt=media&token=f900e28f-7232-47c1-a20c-c695780d60c6",
+      "imageUrl": "/images/images/65.png",
       "imageHint": "industrial worker"
     },
     {
@@ -563,24 +563,6 @@
       "description": "A digital meter showing the flow rate of a liquid in an industrial pipe.",
       "imageUrl": "/images/images/60.png",
       "imageHint": "digital meter"
-    },
-    {
-      "id": "blogHeavyDutyShafts",
-      "description": "Learn how heat treatment improves durability and surface strength of heavy-duty shafts and rollers in Ludhiana industries.",
-      "imageUrl": "/images/images/63.png",
-      "imageHint": "heavy shafts"
-    },
-    {
-      "id": "blogEngineParts",
-      "description": "See how surface hardening strengthens automotive engine components for improved wear resistance and performance.",
-      "imageUrl": "/images/images/64.png",
-      "imageHint": "engine parts"
-    },
-    {
-      "id": "blogToolAndDieHardening",
-      "description": "Explore the process and benefits of induction hardening for tools and dies used in precision manufacturing.",
-      "imageUrl": "/images/images/65.png",
-      "imageHint": "tool die"
     }
   ]
 }
