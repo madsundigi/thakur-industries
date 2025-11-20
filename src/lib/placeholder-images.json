@@ -123,25 +123,25 @@
     {
       "id": "industryRailway",
       "description": "A close-up of train wheels on a track.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1753028196199-be701ae822d3.jpeg?alt=media&token=b3670605-6eb8-46da-b78b-59d43ac7c978",
+      "imageUrl": "/images/images/22.png",
       "imageHint": "railway wheels"
     },
     {
       "id": "testimonialAvatar1",
       "description": "Avatar for Karan Singh.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1640960543409-dbe56ccc30e2.jpeg?alt=media&token=6f2177f1-863a-4467-b52b-7b0a37910978",
+      "imageUrl": "/images/images/23.png",
       "imageHint": "male avatar"
     },
     {
       "id": "testimonialAvatar2",
       "description": "Avatar for Harpreet Singh.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1640952131659-49a06dd90ad2.jpeg?alt=media&token=b668045f-40e1-4560-a29d-472e811c75c8",
+      "imageUrl": "/images/images/24.png",
       "imageHint": "male avatar"
     },
     {
       "id": "testimonialAvatar3",
       "description": "Avatar for Rohit Verma.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1624561172888-ac93c696e10c.jpeg?alt=media&token=d1f85532-a5e2-45e3-a619-a1b9d4ac1d39",
+      "imageUrl": "/images/images/25.png",
       "imageHint": "male avatar"
     },
     {
@@ -489,25 +489,25 @@
     {
       "id": "blogMisconceptions",
       "description": "A mythbusters-style graphic with checkmarks and crosses over images of induction hardening.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1654965807196-5dbeffb70a47.jpeg?alt=media&token=b0213038-f9b1-4f1b-aa3e-324d9c7d42b9",
+      "imageUrl": "/images/images/21.png",
       "imageHint": "mythbusters graphic"
     },
     {
       "id": "blogCoilAlignment",
       "description": "A diagram showing correct vs incorrect coil alignment for an induction heater.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1635179885954-c778885a1197.jpeg?alt=media&token=e93b6e87-a225-4c07-84d4-9d5f7de2226f",
+      "imageUrl": "/images/images/38.png",
       "imageHint": "coil alignment"
     },
     {
       "id": "blogPolymerVsOil",
       "description": "A split image showing clean polymer quenching vs smoky oil quenching.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/37.png",
       "imageHint": "quenching comparison"
     },
     {
       "id": "blogTransmissionComponents",
       "description": "An exploded view of an automotive transmission gearbox.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1676387164929-b647846873cd.jpeg?alt=media&token=89437cd9-450f-4886-8b36-7c3ee4a530f2",
+      "imageUrl": "/images/images/51.png",
       "imageHint": "transmission gearbox"
     },
     {
@@ -525,7 +525,7 @@
     {
       "id": "blogSoftSpots",
       "description": "A magnified view of a metal surface showing uniform hardness versus one with soft spots.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1549487425-635c9a923594.jpeg?alt=media&token=e855c822-26f6-4d08-8e6c-a2928509b5e5",
+      "imageUrl": "/images/images/40.png",
       "imageHint": "metal surface"
     },
     {
@@ -537,7 +537,7 @@
     {
       "id": "blogWaterCooling",
       "description": "Clean water splashing over a hot metal part during quenching.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1707106037583-29472653a992.jpeg?alt=media&token=a62c6f14-9964-4e40-a38f-a957242c161a",
+      "imageUrl": "/images/images/37.png",
       "imageHint": "water quenching"
     },
     {
@@ -549,13 +549,13 @@
     {
       "id": "blogCommonMaterials",
       "description": "An assortment of different steel bars and components suitable for induction hardening.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1533628635777-112b22296161.jpeg?alt=media&token=42e584a5-b1a9-4674-8b63-1e5f8f8ed9c6",
+      "imageUrl": "/images/images/5.jpeg",
       "imageHint": "steel bars"
     },
     {
       "id": "blogNitriding",
       "description": "A chart comparing the properties of induction hardening and nitriding.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/test-project-339714.appspot.com/o/images%2Fphoto-1543286386-2e659306cd6c.jpeg?alt=media&token=3b3135b5-e408-410a-b210-9118c728e5a7",
+      "imageUrl": "/images/images/21.png",
       "imageHint": "comparison chart"
     },
     {
