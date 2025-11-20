@@ -23,7 +23,7 @@ const serviceSchema = {
     "serviceType": "Polymer and Water Quenching",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Thakur Induction",
+      "name": "Thakur Industries",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ludhiana",
@@ -145,7 +145,7 @@ export default function QuenchingProcessPage() {
                     <div className="container mx-auto px-4 md:px-6">
                         <PageHeader
                             title="Water Quenching Process in Punjab"
-                            description="For components requiring rapid and deep hardness, Thakur Induction also provides water quenching job work. Water quenching ensures high surface hardness for heavy-duty parts made from EN8, EN19, EN24, 4140, and 4340 steels commonly used across Punjab’s automotive and machinery industries."
+                            description="For components requiring rapid and deep hardness, Thakur Industries also provides water quenching job work. Water quenching ensures high surface hardness for heavy-duty parts made from EN8, EN19, EN24, 4140, and 4340 steels commonly used across Punjab’s automotive and machinery industries."
                             className="text-center mb-12"
                         />
                          <div className="max-w-4xl mx-auto">
@@ -164,7 +164,7 @@ export default function QuenchingProcessPage() {
                     <div className="container mx-auto px-4 md:px-6">
                         <PageHeader
                             title="Consistent Hardness, Zero Distortion, Longer Life"
-                            description="The quenching stage directly influences the performance and durability of hardened parts. Using controlled quenching systems, Thakur Induction ensures:"
+                            description="The quenching stage directly influences the performance and durability of hardened parts. Using controlled quenching systems, Thakur Industries ensures:"
                             className="text-center mb-12"
                         />
                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

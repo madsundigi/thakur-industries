@@ -10,16 +10,16 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Thakur Induction - Induction Hardening Services in North India',
+  title: 'Thakur Industries - Induction Hardening Services in North India',
   description: 'Serving Ludhiana, Punjab, Haryana & Delhi NCR with professional induction heat treatment & case hardening services.',
 };
 
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Thakur Induction – Leading Induction Hardening Services in North India",
-  "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "headline": "Thakur Industries – Leading Induction Hardening Services in North India",
+  "author": { "@type": "Organization", "name": "Thakur Industries" },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Services",
   "keywords": ["induction hardening north india", "heat treatment Punjab", "Haryana", "Delhi", "North India job work"],

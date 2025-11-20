@@ -60,8 +60,8 @@ export default function ContactPage() {
   const contactPageSchema = {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      "name": "Thakur Induction Contact Page",
-      "description": "Contact Thakur Induction for induction hardening, case hardening, and surface heat treatment job work in Ludhiana, Punjab.",
+      "name": "Thakur Industries Contact Page",
+      "description": "Contact Thakur Industries for induction hardening, case hardening, and surface heat treatment job work in Ludhiana, Punjab.",
       "publisher": {
         "@type": "LocalBusiness",
         "name": SITE_NAME,
@@ -253,7 +253,7 @@ export default function ContactPage() {
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Thakur Induction — Heat Treatment Job Work"
+                    title="Thakur Industries — Heat Treatment Job Work"
                   ></iframe>
             </div>
              <div className="text-center mt-4">

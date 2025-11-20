@@ -11,7 +11,7 @@ import { SITE_NAME } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Industries Served - Thakur Induction Ludhiana, Punjab',
+  title: 'Industries Served - Thakur Industries Ludhiana, Punjab',
   description: 'Heat treatment & hardening job work for automotive, agricultural, and machinery parts across Punjab.',
 };
 
@@ -21,7 +21,7 @@ const serviceSchema = {
     "serviceType": "Heat Treatment for Automotive, Agricultural, and Industrial Parts",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Thakur Induction",
+      "name": "Thakur Industries",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ludhiana",
@@ -37,7 +37,7 @@ const industries = [
     {
         icon: Car,
         title: "Automotive Parts Heat Treatment in Ludhiana",
-        description: "Automotive manufacturers across Ludhiana and Punjab rely on Thakur Induction for precision hardening of gears, shafts, axles, and crankshafts. Our induction heat treatment ensures components withstand high loads, friction, and continuous motion without failure.",
+        description: "Automotive manufacturers across Ludhiana and Punjab rely on Thakur Industries for precision hardening of gears, shafts, axles, and crankshafts. Our induction heat treatment ensures components withstand high loads, friction, and continuous motion without failure.",
         components: ["Gears & Pinions", "Drive Shafts & Camshafts", "Axles & Bearings", "Differential and Transmission Parts"],
         benefits: ["High fatigue and wear resistance", "Improved torque strength", "Zero distortion hardening", "Consistent results for OEM parts"],
         link: "/component-hardening",
@@ -46,7 +46,7 @@ const industries = [
     {
         icon: Tractor,
         title: "Tractor Parts Hardening & Agricultural Implements Heat Treatment in Punjab",
-        description: "Punjab’s agricultural industry depends on reliable tractor and implement components that can survive continuous stress, dust, and field loads. Thakur Induction provides localized surface hardening and induction heat treatment for tillers, ploughs, rotavator shafts, gear sets, and tractor transmission parts.",
+        description: "Punjab’s agricultural industry depends on reliable tractor and implement components that can survive continuous stress, dust, and field loads. Thakur Industries provides localized surface hardening and induction heat treatment for tillers, ploughs, rotavator shafts, gear sets, and tractor transmission parts.",
         components: ["PTO Shafts", "Rotavator Gears", "Axle Shafts", "Clutch Hubs & Bearings"],
         benefits: ["Increased operational life of implements", "Resistance to impact and abrasion", "Reduced replacement downtime", "Ideal for high-torque agricultural machinery"],
         link: "/material-heat-treatment",
@@ -55,7 +55,7 @@ const industries = [
     {
         icon: HardHat,
         title: "Industrial Equipment & Machinery Heat Treatment",
-        description: "Thakur Induction supports machinery and engineering industries by offering custom heat treatment for heavy-duty components requiring consistent hardness and low distortion. This includes parts used in machine tools, rolling mills, hydraulic systems, and general engineering setups across Punjab.",
+        description: "Thakur Industries supports machinery and engineering industries by offering custom heat treatment for heavy-duty components requiring consistent hardness and low distortion. This includes parts used in machine tools, rolling mills, hydraulic systems, and general engineering setups across Punjab.",
         components: ["Shafts, Spindles, and Couplings", "Rollers & Die Holders", "Machine Tool Beds & Rotors"],
         benefits: ["Ensures structural stability and endurance", "Improves longevity of machine tools", "Handles heavy-duty components"],
         link: "/surface-hardening",

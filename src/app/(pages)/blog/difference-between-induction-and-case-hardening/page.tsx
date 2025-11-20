@@ -18,8 +18,8 @@ const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Induction Hardening vs Case Hardening - Which Is Better for Steel Components?",
-  "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "author": { "@type": "Organization", "name": "Thakur Industries" },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
   "datePublished": "2024-11-08",
   "articleSection": "Heat Treatment Processes",
   "keywords": ["difference between induction hardening and case hardening", "induction hardening vs case hardening", "surface hardening comparison", "steel hardening types"],
@@ -187,7 +187,7 @@ export default function BlogPostPage() {
                 <p className="mt-2 text-muted-foreground">For industrial-grade heat treatment job work in Ludhiana and Punjab, contact {SITE_NAME} — your trusted partner for precision hardening.</p>
                 <div className="mt-6 flex justify-center gap-4">
                     <Button asChild>
-                        <Link href="/contact">Contact Thakur Induction <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                        <Link href="/contact">Contact Thakur Industries <ArrowRight className="ml-2 h-4 w-4" /></Link>
                     </Button>
                     <Button asChild variant="outline">
                         <Link href="/services">Explore Our Services</Link>

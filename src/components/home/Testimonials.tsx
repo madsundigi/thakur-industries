@@ -45,7 +45,7 @@ export function Testimonials() {
     const reviewSchema = {
         "@context": "https://schema.org/",
         "@type": "LocalBusiness",
-        "name": "Thakur Induction",
+        "name": "Thakur Industries",
         "image": "https://thakurinduction.com/logo.png",
         "address": {
             "@type": "PostalAddress",

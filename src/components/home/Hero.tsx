@@ -19,7 +19,7 @@ export function Hero() {
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
-            alt="Thakur Induction industrial machinery"
+            alt="Thakur Industries industrial machinery"
             fill
             priority
             fetchPriority="high"

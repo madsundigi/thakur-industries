@@ -23,7 +23,7 @@ const serviceSchema = {
   "serviceType": "Heat Treatment for Alloy Steels",
   "provider": {
     "@type": "LocalBusiness",
-    "name": "Thakur Induction",
+    "name": "Thakur Industries",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ludhiana",
@@ -59,7 +59,7 @@ const materials = [
     {
         name: '4140 & 4340',
         title: 'Induction Hardening for 4140 & 4340 Alloy Steel in Punjab',
-        description: 'Thakur Induction offers induction and surface hardening job work for 4140 and 4340 steels, widely used in power transmission and automotive components. Our polymer and water quenching control ensures tight tolerance on case depth and hardness.',
+        description: 'Thakur Industries offers induction and surface hardening job work for 4140 and 4340 steels, widely used in power transmission and automotive components. Our polymer and water quenching control ensures tight tolerance on case depth and hardness.',
         details: [
             '4140: Medium carbon alloy with good toughness',
             '4340: High strength for extreme fatigue environments',
@@ -205,7 +205,7 @@ export default function MaterialHeatTreatmentPage() {
                         </div>
                         <div className="md:order-first">
                             <h2 className="text-3xl font-bold mb-4">Controlled Quenching for Alloy Steel Components</h2>
-                            <p className="text-muted-foreground text-lg mb-6">Every heat treatment process at Thakur Induction is paired with customized quenching media — either polymer-based or water-based — depending on the alloy and desired hardness depth. This ensures minimal distortion, clean surface finish, and maximum hardness retention.</p>
+                            <p className="text-muted-foreground text-lg mb-6">Every heat treatment process at Thakur Industries is paired with customized quenching media — either polymer-based or water-based — depending on the alloy and desired hardness depth. This ensures minimal distortion, clean surface finish, and maximum hardness retention.</p>
                             <Button asChild>
                                 <Link href="/component-hardening">Learn more about our Component Hardening Process <ArrowRight className="ml-2 h-4 w-4" /></Link>
                             </Button>

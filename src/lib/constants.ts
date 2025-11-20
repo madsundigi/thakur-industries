@@ -1,5 +1,5 @@
 
-export const SITE_NAME = 'Thakur Induction';
+export const SITE_NAME = 'Thakur Industries';
 export const SITE_TAGLINE = 'Precision Induction Hardening & Heat Treatment in Ludhiana, Punjab.';
 export const SITE_DESCRIPTION = 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab. Serving nearby Haryana & Delhi industries.';
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://thakurinduction.com';
@@ -101,5 +101,3 @@ export const INDUSTRIES = [
     components: ['Axles', 'Gear wheels', 'Coupling rods', 'Rail pins', 'Brake discs']
   },
 ];
-
-    

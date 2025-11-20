@@ -24,7 +24,7 @@ const serviceSchema = {
   "serviceType": "Case Hardening",
   "provider": {
     "@type": "LocalBusiness",
-    "name": "Thakur Induction",
+    "name": "Thakur Industries",
     "address": { "@type": "PostalAddress", "addressLocality": "Ludhiana", "addressRegion": "Punjab", "addressCountry": "India" }
   },
   "areaServed": ["Ludhiana", "Punjab"],
