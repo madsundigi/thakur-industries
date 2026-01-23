@@ -88,7 +88,7 @@ export async function GET() {
   const servicePaths = SERVICES.map(service => service.href).filter(href => !href.includes('#'));
   const blogPaths = blogPosts.map(slug => `/blog/${slug}`);
   
-  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment'])];
+  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment', '/heat-treating-steel'])];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

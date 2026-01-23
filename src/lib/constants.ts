@@ -19,6 +19,7 @@ export const NAV_LINKS = [
       { href: '/case-hardening-heat-treatment', label: 'Case Hardening' },
       { href: '/surface-hardening', label: 'Surface Hardening' },
       { href: '/metal-heat-treatment', label: 'Metal Heat Treatment' },
+      { href: '/heat-treating-steel', label: 'Steel Heat Treating' },
       { href: '/quenching-process', label: 'Quenching Process' },
       { href: '/material-heat-treatment', label: 'Material Treatment' },
       { href: '/component-hardening', label: 'Component Hardening' },
