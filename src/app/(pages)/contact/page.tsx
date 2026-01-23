@@ -189,7 +189,7 @@ export default function ContactPage() {
                                 </FormControl>
                                 <SelectContent>
                                     <SelectItem value="induction-hardening">Induction Hardening</SelectItem>
-                                    <SelectItem value="case-hardening">Case Hardening</SelectItem>
+                                    <SelectItem value="case-hardening-heat-treatment">Case Hardening</SelectItem>
                                     <SelectItem value="surface-hardening">Surface Hardening</SelectItem>
                                     <SelectItem value="quenching">Quenching</SelectItem>
                                 </SelectContent>
