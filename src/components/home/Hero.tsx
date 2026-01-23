@@ -11,7 +11,7 @@ import { SITE_PHONE_NUMBER } from '@/lib/constants';
 
 export function Hero() {
   const isDesktop = useMediaQuery('(min-width: 768px)');
-  const heroImage = PlaceHolderImages.find(p => p.id === 'heroMachine');
+  const heroImage = PlaceHolderImages.find(p => p.id === 'serviceInductionHardening');
 
   return (
     <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden bg-black flex items-center justify-center">
@@ -38,7 +38,7 @@ export function Hero() {
             poster={heroImage?.imageUrl}
             preload="auto"
           >
-            <source src="https://videos.pexels.com/video-files/3252033/3252033-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            <source src="https://videos.pexels.com/video-files/3252030/3252030-hd_1920_1080_25fps.mp4" type="video/mp4" />
           </video>
         )}
         <div className="absolute inset-0 bg-black/70" />
