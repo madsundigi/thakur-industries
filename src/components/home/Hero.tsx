@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -19,7 +18,7 @@ export function Hero() {
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
-            alt="Thakur Industries industrial machinery"
+            alt="Induction hardening process in action"
             fill
             priority
             fetchPriority="high"
@@ -38,7 +37,7 @@ export function Hero() {
             poster={heroImage?.imageUrl}
             preload="auto"
           >
-            <source src="https://videos.pexels.com/video-files/3252030/3252030-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            <source src="https://videos.pexels.com/video-files/7578278/7578278-hd_1920_1080_25fps.mp4" type="video/mp4" />
           </video>
         )}
         <div className="absolute inset-0 bg-black/70" />
