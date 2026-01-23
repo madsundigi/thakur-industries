@@ -563,6 +563,12 @@
       "description": "A digital meter showing the flow rate of a liquid in an industrial pipe.",
       "imageUrl": "/images/images/60.png",
       "imageHint": "digital meter"
+    },
+    {
+      "id": "heroMetalTreatment",
+      "description": "An industrial worker in protective gear overseeing a metal heat treatment process.",
+      "imageUrl": "/images/images/4.png",
+      "imageHint": "industrial worker"
     }
   ]
 }

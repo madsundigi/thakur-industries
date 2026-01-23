@@ -18,6 +18,7 @@ export const NAV_LINKS = [
       { href: '/induction-hardening', label: 'Induction Hardening' },
       { href: '/case-hardening-heat-treatment', label: 'Case Hardening' },
       { href: '/surface-hardening', label: 'Surface Hardening' },
+      { href: '/metal-heat-treatment', label: 'Metal Heat Treatment' },
       { href: '/quenching-process', label: 'Quenching Process' },
       { href: '/material-heat-treatment', label: 'Material Treatment' },
       { href: '/component-hardening', label: 'Component Hardening' },
@@ -54,6 +55,14 @@ export const SERVICES = [
     description: 'Our surface hardening services in Punjab cover a range of processes to improve the mechanical properties of component surfaces for enhanced durability.',
     shortDescription: 'A range of processes to improve the mechanical properties of component surfaces.',
     image: 'serviceHeatTreatment'
+  },
+   {
+    id: 'metal-heat-treatment',
+    title: 'Metal Heat Treatment',
+    href: '/metal-heat-treatment',
+    description: 'Comprehensive metal heat treatment solutions including annealing, tempering, and stress relieving to achieve desired metallurgical properties.',
+    shortDescription: 'Altering physical and chemical properties of metals for industrial applications.',
+    image: 'heroMachine'
   },
 ];
 

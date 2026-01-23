@@ -21,6 +21,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import Link from 'next/link';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -191,6 +192,7 @@ export default function ContactPage() {
                                     <SelectItem value="induction-hardening">Induction Hardening</SelectItem>
                                     <SelectItem value="case-hardening-heat-treatment">Case Hardening</SelectItem>
                                     <SelectItem value="surface-hardening">Surface Hardening</SelectItem>
+                                    <SelectItem value="metal-heat-treatment">Metal Heat Treatment</SelectItem>
                                     <SelectItem value="quenching">Quenching</SelectItem>
                                 </SelectContent>
                             </Select>
