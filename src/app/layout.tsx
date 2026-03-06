@@ -1,4 +1,3 @@
-
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -8,6 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 import { SITE_NAME, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { AeroNav } from '@/components/layout/AeroNav';
+import Script from 'next/script';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -124,6 +124,19 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <Toaster />
+        <Script id="tawk-to" strategy="afterInteractive">
+          {`
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/69aac5268a31ef1c36f6cf6d/1jj1h48dd';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );
