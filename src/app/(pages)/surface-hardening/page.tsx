@@ -225,7 +225,8 @@ export default function SurfaceHardeningPage() {
                                         <CardHeader>
                                             <CardTitle>{app.title}</CardTitle>
                                         </CardHeader>
-                                    );
+                                    </Card>
+                                );
                             })}
                         </div>
                     </div>
