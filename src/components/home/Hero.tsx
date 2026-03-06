@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Phone, MessageSquare } from 'lucide-react';
 import Image from 'next/image';
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -57,18 +57,24 @@ export function Hero() {
           </p>
           
           <div 
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="mt-10 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4"
           >
             <Button asChild size="lg" className="w-full sm:w-auto text-lg py-6 px-8 bg-primary hover:bg-primary/80 text-primary-foreground">
               <Link href="/contact">
                 Get a Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="w-full sm:w-auto text-lg py-6 px-8 border-white bg-transparent text-white hover:bg-white hover:text-black">
                <a href={`tel:${SITE_PHONE_NUMBER}`}>
                 <Phone className="mr-2 h-5 w-5" />
-                Call for Consultation
+                Call Now
+              </a>
+            </Button>
+            <Button asChild size="lg" className="w-full sm:w-auto text-lg py-6 px-8 bg-[#25D366] hover:bg-[#25D366]/90 text-white border-none">
+               <a href="https://wa.me/917900000776" target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Send Drawing
               </a>
             </Button>
           </div>
