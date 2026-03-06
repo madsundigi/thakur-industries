@@ -111,13 +111,18 @@ export default function InductionHardeningPage() {
                     <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                          <div>
                             <h2 className="text-3xl font-bold mb-4">What Is Induction Hardening?</h2>
-                            <p className="text-muted-foreground text-lg">Induction hardening is a localized surface heat treatment process that uses electromagnetic induction to harden specific areas of a steel component. It enhances wear resistance, fatigue strength, and surface hardness while maintaining core toughness — ideal for shafts, gears, and industrial tools.</p>
+                            <p className="text-muted-foreground text-lg leading-relaxed">
+                                Induction hardening is a precision <strong>localized surface hardening</strong> technique within the broader <strong>induction heat treatment</strong> field. This highly efficient <strong>surface hardening process</strong> begins with non-contact <strong>electromagnetic heating</strong>, where an induction coil generates intense eddy currents that rapidly raise the temperature of the component's outer layer to its transformation range.
+                            </p>
+                            <p className="text-muted-foreground text-lg leading-relaxed mt-4">
+                                This targeted heat is immediately followed by <strong>rapid quenching</strong> in a controlled polymer or water medium, which triggers a complete <strong>martensitic transformation</strong> in the steel's microstructure. This specialized <strong>steel hardening</strong> method results in an extremely hard, wear-resistant outer shell while the inner core remains ductile and tough, ensuring superior fatigue life and dimensional stability for critical industrial components.
+                            </p>
                         </div>
                         <div className="relative h-80 w-full overflow-hidden rounded-lg shadow-xl">
                             {heroImage && (
                                 <Image
                                     src={heroImage.imageUrl}
-                                    alt="Close-up of induction hardening"
+                                    alt="Close-up of induction hardening process"
                                     data-ai-hint={heroImage.imageHint}
                                     fill
                                     className="object-cover"
