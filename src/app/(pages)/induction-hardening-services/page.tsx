@@ -33,23 +33,33 @@ const serviceSchema = {
 const processSteps = [
     {
         step: "01",
-        title: "Part Placement",
-        description: "The steel component is precisely positioned within a custom-made copper induction coil."
+        title: "Component Inspection",
+        description: "Initial analysis of material grade and dimensional tolerances to define precise process parameters."
     },
     {
         step: "02",
-        title: "Induction Heating",
-        description: "An alternating magnetic field generates rapid, localized heat on the part's surface."
+        title: "Surface Preparation",
+        description: "Cleaning and surface treatment to ensure uniform heat absorption and prevent scale formation."
     },
     {
         step: "03",
-        title: "Rapid Quenching",
-        description: "The heated area is immediately cooled using a controlled polymer or water quench."
+        title: "Induction Heating",
+        description: "Targeted electromagnetic heating using custom coils to reach critical transformation temperatures."
     },
     {
         step: "04",
-        title: "Testing & Inspection",
-        description: "We verify case depth and surface hardness to ensure it meets exact specifications."
+        title: "Controlled Quenching",
+        description: "Rapid, synchronized cooling in polymer or water media to lock in the martensitic transformation."
+    },
+    {
+        step: "05",
+        title: "Hardness Testing",
+        description: "Verification of surface hardness (HRC) and case depth accuracy using calibrated testing equipment."
+    },
+    {
+        step: "06",
+        title: "Final Inspection",
+        description: "Comprehensive quality check and dimensional validation to ensure compliance with OEM standards."
     }
 ];
 
@@ -172,11 +182,11 @@ export default function InductionHardeningPage() {
                 <section className="py-16 md:py-24 bg-secondary">
                     <div className="container mx-auto px-4 md:px-6">
                         <PageHeader
-                            title="How the Induction Hardening Process Works"
-                            description="Our systematic approach ensures every component achieves the desired metallurgical properties with precision and consistency."
+                            title="Our Induction Hardening Process"
+                            description="Our systematic six-step workflow ensures every component achieves the desired metallurgical properties with precision, repeatability, and certified quality."
                             className="text-center mb-12"
                         />
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {processSteps.map(step => (
                                 <div key={step.step} className="bg-card p-6 rounded-lg border text-center flex flex-col items-center">
                                     <div className="text-5xl font-bold text-primary/20 mb-3">{step.step}</div>
