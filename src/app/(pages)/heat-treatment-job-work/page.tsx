@@ -477,7 +477,7 @@ export default function HeatTreatmentJobWorkPage() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="w-full sm:w-auto px-10 py-8 text-xl border-primary text-primary hover:bg-primary/10 font-black animate-pulse">
-                  <Link href="/contact">Upload Drawing</Link>
+                  <a href="https://wa.me/917900000776" target="_blank" rel="noopener noreferrer">Upload Drawing</a>
                 </Button>
               </div>
             </motion.div>
