@@ -12,225 +12,173 @@ import {
 import { SERVICES, SITE_NAME, SITE_PHONE_NUMBER, CTA_PRIMARY, INDUSTRIES } from '@/lib/constants';
 import PageHeader from '@/components/shared/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { ChevronRight, HardHat, Zap, Award, Gauge } from 'lucide-react';
+import { ChevronRight, HardHat, Zap, Award, Gauge, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Testimonials } from '@/components/home/Testimonials';
 import { CTASection } from '@/components/home/CTASection';
 import { ProgressCards } from '@/components/services/ProgressCards';
+import { motion } from 'framer-motion';
 
 const benefits = [
-    { icon: Zap, title: "Precision & Consistency", description: "Achieve uniform hardness and case depth with our advanced induction hardening process, ensuring every component meets exact specifications." },
-    { icon: Gauge, title: "Faster Turnaround", description: "Our efficient heat treatment job work in Ludhiana ensures your production timelines are met without compromising on quality." },
-    { icon: HardHat, title: "Enhanced Durability", description: "Significantly increase wear resistance and fatigue life of your parts with our expert steel hardening services." },
-    { icon: Award, title: "ISO 9001 Certified", description: "As a leading heat treatment company in Punjab, our commitment to quality is validated by international standards." },
+    { icon: Zap, title: "Precision & Consistency", description: "Achieve uniform hardness and case depth with our advanced induction hardening process." },
+    { icon: Gauge, title: "Faster Turnaround", description: "Our efficient job work ensures your production timelines are met without compromising quality." },
+    { icon: HardHat, title: "Enhanced Durability", description: "Significantly increase wear resistance and fatigue life of your critical mechanical parts." },
+    { icon: Award, title: "ISO 9001 Certified", description: "As a leading company in Punjab, our commitment to quality is validated globally." },
 ];
 
 const faqs = [
   {
     question: "What is induction heat treatment?",
-    answer: "Induction heat treatment is a process used to harden the surface of steel and other alloy components. It uses electromagnetic induction to heat a targeted area, which is then rapidly cooled (quenched). This creates a hard, wear-resistant surface layer while the core of the component remains ductile and tough."
+    answer: "Induction heat treatment is a process used to harden the surface of steel and other alloy components. It uses electromagnetic induction to heat a targeted area, which is then rapidly cooled (quenched)."
   },
   {
     question: "What is the difference between induction hardening and case hardening?",
-    answer: "Induction hardening is a type of case hardening. 'Case hardening' is a general term for processes that harden the surface ('case') of a metal. Induction hardening does this using electromagnetic currents, offering precise control over the hardened area and depth. Other methods include carburizing or nitriding."
-  },
-  {
-    question: "How much does heat treatment cost in Punjab?",
-    answer: "The cost of heat treatment in Punjab varies based on the process (e.g., induction vs. case hardening), component size, material, and required hardness depth. Thakur Industries offers competitive pricing for all heat treatment job work. Contact us for a free quote and a complimentary test sample."
+    answer: "Induction hardening is a type of case hardening. Induction hardening uses electromagnetic currents for precise control, while other methods like carburizing involve chemical diffusion."
   },
   {
     question: "Which components can be hardened using induction heating?",
-    answer: "A wide variety of components can be treated, especially those requiring localized hardness. Common examples include gears, shafts, axles, spindles, cams, and automotive components. Our custom heat treatment in Ludhiana is tailored to your specific needs."
+    answer: "A wide variety of components can be treated, especially gears, shafts, axles, spindles, cams, and automotive components requiring localized hardness."
   }
 ];
 
+const fadeInBottom = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15 }
+  }
+};
+
 export default function ServicesPage() {
-    const serviceSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        'serviceType': 'Induction Heat Treatment in Ludhiana, Punjab, India',
-        'provider': {
-            '@type': 'LocalBusiness',
-            'name': SITE_NAME,
-            'address': {
-                '@type': 'PostalAddress',
-                'streetAddress': '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
-                'addressLocality': 'Ludhiana',
-                'addressRegion': 'PB',
-                'postalCode': '141003',
-                'addressCountry': 'IN'
-            },
-            'telephone': SITE_PHONE_NUMBER,
-        },
-        'areaServed': ['Ludhiana', 'Punjab', 'India'],
-        'description': `Thakur Industries provides precision induction heat treatment, case hardening, and industrial heat treatment services in Ludhiana, Punjab, India. Contact us for gear and shaft hardening job work.`,
-    };
-
-    const faqSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        'mainEntity': faqs.map(faq => ({
-            '@type': 'Question',
-            'name': faq.question,
-            'acceptedAnswer': {
-                '@type': 'Answer',
-                'text': faq.answer
-            }
-        }))
-    };
-
   return (
-    <>
-      <JsonLd data={serviceSchema} />
-      <JsonLd data={faqSchema} />
-      <div className="bg-background">
-        {/* Hero Section */}
-        <section className="relative py-24 md:py-32 bg-secondary text-foreground text-center">
-             <div className="container mx-auto px-4 md:px-6 z-10 relative">
-                <div className="text-sm text-muted-foreground mb-4">
-                    <Link href="/" className="hover:text-primary">Home</Link>
-                    <ChevronRight className="inline-block w-4 h-4 mx-1" />
-                    <span>Services</span>
-                </div>
-                <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-                    Industrial Induction Heat Treatment & Case Hardening Services — Ludhiana, Punjab
-                </h1>
-                <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground">
-                    As a premier heat treatment company in Punjab, we specialize in enhancing the strength and durability of critical industrial components for clients across India.
-                </p>
-                <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Button asChild size="lg">
-                        <Link href="/contact">{CTA_PRIMARY}</Link>
-                    </Button>
-                    <Button asChild size="lg" variant="outline">
-                        <a href={`tel:${SITE_PHONE_NUMBER}`}>Call Now: {SITE_PHONE_NUMBER}</a>
-                    </Button>
-                </div>
-            </div>
-        </section>
+    <div className="bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+            <PageHeader
+                title="Industrial Heat"
+                highlightedWord="Treatment"
+                description="As a premier heat treatment company in Punjab, we specialize in enhancing the strength and durability of critical industrial components."
+                className="text-center"
+            />
 
-        {/* Overview Section */}
-        <section className="py-16 md:py-24">
-            <div className="container mx-auto px-4 md:px-6">
-                 <PageHeader
-                    title="Why Choose Our Heat Treatment Services?"
-                    description="Our industrial heat treatment in Punjab combines precision, speed, and certified quality to give your components a competitive edge."
-                    className="text-center mb-12"
-                 />
-                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                     {benefits.map(benefit => (
-                         <div key={benefit.title} className="text-center p-6 border rounded-lg bg-card shadow-sm">
-                             <benefit.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                             <h3 className="text-xl font-bold">{benefit.title}</h3>
-                             <p className="mt-2 text-muted-foreground">{benefit.description}</p>
-                         </div>
-                     ))}
-                 </div>
-            </div>
-        </section>
-
-        {/* Service Grid Section */}
-        <section className="py-16 md:py-24 bg-secondary">
-            <div className="container mx-auto px-4 md:px-6">
-                <PageHeader
-                    title="Our Core Services"
-                    description="From induction hardening job work in Ludhiana to comprehensive case hardening in Punjab, we offer a full spectrum of steel hardening services."
-                    className="text-center mb-12"
-                />
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {SERVICES.map((service, index) => {
-                    const image = PlaceHolderImages.find(img => img.id === service.image);
-                    return (
-                    <Card key={service.id} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                        {image && (
-                        <div className="relative h-48 w-full">
-                            <Image
-                                src={image.imageUrl}
-                                alt={`${service.title} services for metal heat treatment in Ludhiana`}
-                                data-ai-hint={image.imageHint}
-                                fill
-                                className="object-cover"
-                            />
+            <motion.div 
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-16"
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
+                {benefits.map(benefit => (
+                    <motion.div key={benefit.title} variants={fadeInBottom} className="text-center p-10 border rounded-2xl bg-secondary/30 hover:border-primary/50 transition-all group">
+                        <div className="h-16 w-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                            <benefit.icon className="h-8 w-8 text-primary" />
                         </div>
-                        )}
-                        <CardHeader>
-                            <CardTitle className="text-xl">{service.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent className="flex-grow flex flex-col">
-                        <p className="text-muted-foreground text-sm flex-grow">{service.shortDescription}</p>
-                        <Button asChild variant="link" className="p-0 h-auto justify-start mt-4">
-                            <Link href={service.href}>
-                                Learn More <ChevronRight className="ml-1 h-4 w-4" />
-                            </Link>
-                            </Button>
-                        </CardContent>
-                    </Card>
-                    );
-                })}
-                </div>
-            </div>
-        </section>
+                        <h3 className="text-xl font-black uppercase italic tracking-tighter mb-4">{benefit.title}</h3>
+                        <p className="text-muted-foreground font-medium">{benefit.description}</p>
+                    </motion.div>
+                ))}
+            </motion.div>
 
-        {/* Technical Details Section */}
-        <section className="py-16 md:py-24">
-            <div className="container mx-auto px-4 md:px-6">
-                <PageHeader
-                    title="The Induction Hardening Process Explained"
-                    description="We utilize state-of-the-art equipment to deliver precise and repeatable results for all gear and shaft hardening job work."
-                    className="text-center mb-12"
-                />
+            <section className="py-24 border-t border-border">
+                <motion.h2 
+                    className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter"
+                    variants={fadeInBottom}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    Our Core <span className="text-primary">Capabilities</span>
+                </motion.h2>
+                <motion.div 
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+                    variants={staggerContainer}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    {SERVICES.map((service) => {
+                        const image = PlaceHolderImages.find(img => img.id === service.image);
+                        return (
+                        <motion.div key={service.id} variants={fadeInBottom} whileHover={{ y: -10 }}>
+                            <Card className="flex flex-col overflow-hidden bg-card/50 border-border hover:border-primary/30 transition-all duration-300 h-full group">
+                                {image && (
+                                <div className="relative h-64 w-full overflow-hidden">
+                                    <Image
+                                        src={image.imageUrl}
+                                        alt={service.title}
+                                        data-ai-hint={image.imageHint}
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                                </div>
+                                )}
+                                <CardHeader>
+                                    <CardTitle className="text-2xl font-black uppercase italic tracking-tighter group-hover:text-primary transition-colors">{service.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent className="flex-grow flex flex-col">
+                                    <p className="text-muted-foreground text-lg mb-8">{service.shortDescription}</p>
+                                    <Button asChild variant="link" className="p-0 h-auto justify-start mt-auto text-primary font-black uppercase tracking-widest">
+                                        <Link href={service.href} className="flex items-center gap-2">
+                                            Explore Service <ArrowRight className="h-4 w-4" />
+                                        </Link>
+                                    </Button>
+                                </CardContent>
+                            </Card>
+                        </motion.div>
+                        );
+                    })}
+                </motion.div>
+            </section>
+
+            <section className="py-24 bg-secondary/20 rounded-3xl p-8 md:p-16 border border-primary/10">
+                <motion.h2 
+                    className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter"
+                    variants={fadeInBottom}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    The Hardening <span className="text-primary">Process</span>
+                </motion.h2>
                 <ProgressCards />
-            </div>
-        </section>
+            </section>
 
-        {/* Industries Served Section */}
-        <section className="py-16 md:py-24 bg-secondary">
-             <div className="container mx-auto px-4 md:px-6 text-center">
-                <PageHeader 
-                    title="Serving Critical Industries Across India"
-                    description="Our automotive heat treatment services in India and expertise in other sectors make us a trusted partner for manufacturers nationwide."
-                    className="mb-8"
-                />
-                 <div className="flex flex-wrap justify-center gap-4 mb-8">
-                     {INDUSTRIES.map(industry => (
-                         <div key={industry.id} className="font-semibold bg-background py-2 px-4 rounded-full border">
-                             {industry.title}
-                         </div>
-                     ))}
-                 </div>
-                <Button asChild size="lg">
-                    <Link href="/industries">Explore Industry Solutions <ChevronRight className="ml-2 h-4 w-4" /></Link>
-                </Button>
-            </div>
-        </section>
+            <Testimonials />
 
-        {/* Testimonials Section */}
-        <Testimonials />
-
-        {/* FAQ Section */}
-        <section className="py-16 md:py-24">
-            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-                 <PageHeader
-                    title="Frequently Asked Questions"
-                    description={`Answers to common questions about our induction hardening and heat treatment services in Ludhiana.`}
-                    className="text-center mb-12"
-                 />
-                 <Accordion type="single" collapsible className="w-full">
-                     {faqs.map((faq, index) => (
-                         <AccordionItem key={index} value={`item-${index}`}>
-                             <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
-                             <AccordionContent className="text-base">{faq.answer}</AccordionContent>
-                         </AccordionItem>
-                     ))}
-                 </Accordion>
-            </div>
-        </section>
-
-        {/* CTA Section */}
+            <section className="py-24">
+                <div className="max-w-4xl mx-auto">
+                    <motion.h2 
+                        className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter"
+                        variants={fadeInBottom}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        Service <span className="text-primary">FAQs</span>
+                    </motion.h2>
+                    <Accordion type="single" collapsible className="w-full space-y-4">
+                        {faqs.map((faq, index) => (
+                            <AccordionItem key={index} value={`item-${index}`} className="border rounded-xl bg-secondary/30 px-8">
+                                <AccordionTrigger className="text-left text-xl font-bold uppercase italic tracking-tight hover:text-primary transition-colors py-8 hover:no-underline">
+                                    {faq.question}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-lg text-muted-foreground pb-8 leading-relaxed font-medium">
+                                    {faq.answer}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                </div>
+            </section>
+        </div>
         <CTASection />
-      </div>
-    </>
+    </div>
   );
 }

@@ -1,298 +1,191 @@
-import type { Metadata } from 'next';
+
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ChevronRight, Cpu, Gem, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowRight, ChevronRight, Cpu, Gem, ShieldCheck, Zap, CheckCircle2 } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
 import { SITE_NAME } from '@/lib/constants';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Testimonials } from '@/components/home/Testimonials';
 import { CTASection } from '@/components/home/CTASection';
-
-export const metadata: Metadata = {
-  title: 'Induction Hardening Services in Ludhiana & Punjab',
-  description: 'Professional induction hardening for steel components including EN8, EN19, EN24, 4140, 4340 materials.',
-};
-
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Induction Hardening",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Thakur Industries",
-    "address": { "@type": "PostalAddress", "addressLocality": "Ludhiana", "addressRegion": "Punjab", "addressCountry": "India" }
-  },
-  "areaServed": ["Ludhiana", "Punjab"],
-  "description": "Professional induction hardening services in Ludhiana & Punjab for EN8, EN19, EN24, 4140, and 4340 steel materials."
-};
+import { motion } from 'framer-motion';
 
 const processSteps = [
-    {
-        step: "01",
-        title: "Component Inspection",
-        description: "Initial analysis of material grade and dimensional tolerances to define precise process parameters."
-    },
-    {
-        step: "02",
-        title: "Surface Preparation",
-        description: "Cleaning and surface treatment to ensure uniform heat absorption and prevent scale formation."
-    },
-    {
-        step: "03",
-        title: "Induction Heating",
-        description: "Targeted electromagnetic heating using custom coils to reach critical transformation temperatures."
-    },
-    {
-        step: "04",
-        title: "Controlled Quenching",
-        description: "Rapid, synchronized cooling in polymer or water media to lock in the martensitic transformation."
-    },
-    {
-        step: "05",
-        title: "Hardness Testing",
-        description: "Verification of surface hardness (HRC) and case depth accuracy using calibrated testing equipment."
-    },
-    {
-        step: "06",
-        title: "Final Inspection",
-        description: "Comprehensive quality check and dimensional validation to ensure compliance with OEM standards."
-    }
+    { step: "01", title: "Inspection", description: "Analysis of material grade and tolerances to define precise parameters." },
+    { step: "02", title: "Preparation", description: "Cleaning to ensure uniform heat absorption and prevent scale formation." },
+    { step: "03", title: "Heating", description: "Targeted electromagnetic heating using custom coils to reach critical temps." },
+    { step: "04", title: "Quenching", description: "Rapid, synchronized cooling in polymer or water media to lock hardness." },
+    { step: "05", title: "Hardness Test", description: "Verification of surface hardness (HRC) using calibrated equipment." },
+    { step: "06", title: "Final Check", description: "Quality check and dimensional validation for OEM compliance." }
 ];
 
 const materials = ['EN8', 'EN19', 'EN24', '4140', '4340', 'Tool Steel', 'Mild Steel', 'Alloy Steels'];
 
 const benefits = [
-    { icon: ShieldCheck, title: "Increased Wear Resistance", description: "Creates a hard, durable surface that withstands abrasion and friction." },
-    { icon: Gem, title: "Maintains Core Ductility", description: "The core of the component remains tough and less brittle, preventing fractures." },
-    { icon: Zap, title: "Fast & Repeatable", description: "An efficient process that delivers consistent results for high-volume production." },
-    { icon: Cpu, title: "Localized & Precise", description: "Hardens only specific areas, reducing distortion and saving energy." },
+    { icon: ShieldCheck, title: "Wear Resistance", description: "Hard, durable surface that withstands intense friction." },
+    { icon: Gem, title: "Core Ductility", description: "Core remains tough and shock-resistant, preventing fractures." },
+    { icon: Zap, title: "Fast & Precise", description: "Rapid localized heating minimizes energy waste and distortion." },
+    { icon: Cpu, title: "Digital Control", description: "PLC-monitored cycles ensure identical results for every batch." },
 ];
 
-const applications = [
-    { title: "Shafts", keyword: "shaft hardening Ludhiana", desc: "Uniform hardening for transmission and drive shafts." },
-    { title: "Gears", keyword: "gear hardening Punjab", desc: "Tooth-by-tooth precision for gears and pinions." },
-    { title: "Pinions", keyword: "Pinion Hardening", desc: "Enhanced surface strength for high-torque pinions." },
-    { title: "Camshafts", keyword: "Camshaft Hardening", desc: "Localized lobe hardening for maximum wear resistance." },
-    { title: "Axles", keyword: "Axle Hardening", desc: "Increased load capacity and fatigue life for automotive axles." },
-    { title: "Rollers", keyword: "Roller Hardening", desc: "Deep case hardening for heavy-duty industrial rollers." },
-    { title: "Sprockets", keyword: "Sprocket Hardening", desc: "Induction hardened teeth for chain drive reliability." }
-];
+const fadeInBottom = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
 
-const industriesServed = [
-    "Automotive components",
-    "Agricultural machinery",
-    "Industrial equipment",
-    "Machine manufacturing",
-    "Engineering components",
-];
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1 }
+  }
+};
 
 export default function InductionHardeningPage() {
     const heroImage = PlaceHolderImages.find(img => img.id === 'serviceInductionHardening');
 
     return (
-        <>
-            <JsonLd data={serviceSchema} />
-            <div className="bg-background">
-                {/* Hero Section */}
-                <section className="relative py-24 md:py-32 bg-secondary text-foreground text-center">
-                    {heroImage && (
-                        <Image
-                            src={heroImage.imageUrl}
-                            alt="Induction Hardening Process"
-                            data-ai-hint={heroImage.imageHint}
-                            fill
-                            className="object-cover opacity-20"
-                            priority
-                        />
-                    )}
-                     <div className="container mx-auto px-4 md:px-6 z-10 relative">
-                        <div className="text-sm text-muted-foreground mb-4">
-                            <Link href="/" className="hover:text-primary">Home</Link>
-                            <ChevronRight className="inline-block w-4 h-4 mx-1" />
-                             <Link href="/services" className="hover:text-primary">Services</Link>
-                            <ChevronRight className="inline-block w-4 h-4 mx-1" />
-                            <span>Induction Hardening</span>
-                        </div>
-                        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-                            Induction Hardening Job Work in Ludhiana, Punjab
-                        </h1>
-                        <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground">
-                            Precision induction heat treatment services for EN8, EN19, EN24, 4140 & 4340 steel components.
-                        </p>
-                        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Button asChild size="lg">
-                                <Link href="/contact">Get a Free Quote</Link>
-                            </Button>
-                            <Button asChild size="lg" variant="outline">
-                                <Link href="/services">Explore All Services</Link>
-                            </Button>
-                        </div>
-                    </div>
-                </section>
+        <div className="bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <PageHeader
+                    title="Induction"
+                    highlightedWord="Hardening"
+                    description="Precision induction heat treatment services for EN8, EN19, EN24, 4140 & 4340 steel components."
+                    className="text-center"
+                />
 
-                {/* What is Section */}
-                <section className="py-16 md:py-24">
-                    <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                         <div>
-                            <h2 className="text-3xl font-bold mb-4">What Is Induction Hardening?</h2>
-                            <p className="text-muted-foreground text-lg leading-relaxed">
-                                Induction hardening is a precision <strong>localized surface hardening</strong> technique within the broader <strong>induction heat treatment</strong> field. This highly efficient <strong>surface hardening process</strong> begins with non-contact <strong>electromagnetic heating</strong>, where an induction coil generates intense eddy currents that rapidly raise the temperature of the component's outer layer to its transformation range.
+                <section className="py-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                         <motion.div 
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                         >
+                            <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">
+                                What Is <span className="text-primary">Induction</span> Hardening?
+                            </h2>
+                            <p className="text-xl text-muted-foreground font-medium leading-relaxed mb-6">
+                                Induction hardening is a <strong>localized surface hardening</strong> technique that uses electromagnetic induction to strengthen metal components. By rapidly heating the outer layer and immediately quenching it, we create a martensitic structure that is extremely hard while leaving the core ductile and tough.
                             </p>
-                            <p className="text-muted-foreground text-lg leading-relaxed mt-4">
-                                This targeted heat is immediately followed by <strong>rapid quenching</strong> in a controlled polymer or water medium, which triggers a complete <strong>martensitic transformation</strong> in the steel's microstructure. This specialized <strong>steel hardening</strong> method results in an extremely hard, wear-resistant outer shell while the inner core remains ductile and tough, ensuring superior fatigue life and dimensional stability for critical industrial components.
-                            </p>
-                        </div>
-                        <div className="relative h-80 w-full overflow-hidden rounded-lg shadow-xl">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                {["Gears & Pinions", "Drive Shafts", "Axles & Rollers", "Camshafts"].map(item => (
+                                    <div key={item} className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border">
+                                        <CheckCircle2 className="h-5 w-5 text-primary" />
+                                        <span className="font-bold text-foreground uppercase tracking-tight text-sm">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+                        <motion.div 
+                            className="relative h-96 w-full overflow-hidden rounded-3xl shadow-2xl border border-primary/20"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
                             {heroImage && (
                                 <Image
                                     src={heroImage.imageUrl}
-                                    alt="Close-up of induction hardening process"
-                                    data-ai-hint={heroImage.imageHint}
+                                    alt="Induction hardening process"
                                     fill
                                     className="object-cover"
                                 />
                             )}
-                        </div>
-                    </div>
-                </section>
-
-                {/* 4. APPLICATIONS OF INDUCTION HARDENING */}
-                <section className="py-16 md:py-24 bg-secondary/50">
-                    <div className="container mx-auto px-4 md:px-6">
-                        <PageHeader
-                            title="Components We Harden"
-                            description="Our precision induction hardening services are optimized for a wide range of industrial and automotive parts, delivering unmatched durability where it matters most."
-                            className="text-center mb-12"
-                        />
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {applications.map((item) => (
-                                <Card key={item.title} className="hover:border-primary/50 transition-colors bg-card/50 backdrop-blur-sm">
-                                    <CardHeader>
-                                        <CardTitle className="text-xl flex flex-col gap-1">
-                                            {item.title}
-                                            <span className="text-[10px] font-normal text-primary uppercase tracking-widest">{item.keyword}</span>
-                                        </CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                        </div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        </motion.div>
                     </div>
                 </section>
                 
-                {/* 6. PROCESS WORKFLOW */}
-                <section className="py-16 md:py-24 bg-secondary">
-                    <div className="container mx-auto px-4 md:px-6">
-                        <PageHeader
-                            title="Our Induction Hardening Process"
-                            description="Our systematic six-step workflow ensures every component achieves the desired metallurgical properties with precision, repeatability, and certified quality."
-                            className="text-center mb-12"
-                        />
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {processSteps.map(step => (
-                                <div key={step.step} className="bg-card p-6 rounded-lg border text-center flex flex-col items-center">
-                                    <div className="text-5xl font-bold text-primary/20 mb-3">{step.step}</div>
-                                    <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                                    <p className="text-muted-foreground text-sm flex-grow">{step.description}</p>
-                                </div>
-                            ))}
-                        </div>
-                         <div className="text-center mt-8">
-                             <Button asChild variant="link">
-                                 <Link href="/services#process">Learn about our Quenching Process <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                            </Button>
-                        </div>
-                    </div>
-                </section>
-
-                {/* 8. INDUSTRIES SERVED */}
-                <section className="py-16 md:py-24 bg-background overflow-hidden">
-                    <div className="container mx-auto px-4 md:px-6">
-                        <h2 className="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
-                    </div>
-                    <div className="relative">
-                        {/* Gradient Overlays for Side Blur */}
-                        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-                        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
-                        
-                        <div className="flex overflow-hidden">
-                            <div className="flex animate-marquee gap-12 whitespace-nowrap pr-12">
-                                {[...industriesServed, ...industriesServed, ...industriesServed, ...industriesServed].map((industry, index) => (
-                                    <span 
-                                        key={index} 
-                                        className="text-2xl md:text-4xl font-extrabold text-muted-foreground/20 uppercase tracking-tighter hover:text-primary transition-colors cursor-default select-none"
-                                    >
-                                        {industry}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Materials Section */}
-                 <section className="py-20 md:py-28 bg-secondary/30">
-                    <div className="container mx-auto px-4 md:px-6">
-                        <div className="text-center">
-                            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                                Heat Treatment for Alloy Steel, Shafts & Gears
-                            </h2>
-                            <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                                {SITE_NAME} specializes in induction hardening job work for all major steel grades used in manufacturing. We handle automotive, agricultural, and industrial components with precision control and minimal distortion.
-                            </p>
-                        </div>
-
-                        <div className="mt-12 flex flex-wrap justify-center gap-3">
-                        {materials.map((material) => (
-                            <div key={material}>
-                            <div className="bg-card text-card-foreground border rounded-full px-4 py-2 text-sm font-medium shadow-sm">
-                                {material}
-                            </div>
-                            </div>
+                <section className="py-24 bg-secondary/20 rounded-3xl px-8 md:px-16 border border-primary/10 my-24">
+                    <motion.h2 
+                        className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={fadeInBottom}
+                    >
+                        Our Process <span className="text-primary">Workflow</span>
+                    </motion.h2>
+                    <motion.div 
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        {processSteps.map(step => (
+                            <motion.div key={step.step} variants={fadeInBottom} className="bg-card/50 p-8 rounded-2xl border border-border hover:border-primary/30 transition-all group">
+                                <div className="text-5xl font-black text-primary/20 mb-4 italic tracking-tighter group-hover:text-primary/40 transition-colors">{step.step}</div>
+                                <h3 className="text-2xl font-black uppercase italic tracking-tighter mb-3">{step.title}</h3>
+                                <p className="text-muted-foreground font-medium">{step.description}</p>
+                            </motion.div>
                         ))}
-                        </div>
+                    </motion.div>
+                </section>
 
-                        <div className="text-center mt-12">
-                            <Button asChild>
-                                <Link href="/contact">Contact Us for EN8 & EN24 Hardening Services</Link>
+                <section className="py-24">
+                    <motion.div 
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        {benefits.map(benefit => (
+                            <motion.div key={benefit.title} variants={fadeInBottom} className="text-center p-8 border rounded-2xl bg-secondary/30 group hover:border-primary/50 transition-all">
+                                <div className="h-14 w-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                                    <benefit.icon className="h-7 w-7 text-primary group-hover:text-inherit" />
+                                </div>
+                                <h3 className="text-xl font-black uppercase italic tracking-tighter mb-2">{benefit.title}</h3>
+                                <p className="text-muted-foreground text-sm font-medium leading-relaxed">{benefit.description}</p>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </section>
+
+                 <section className="py-24 border-t border-border">
+                    <div className="text-center max-w-4xl mx-auto">
+                        <motion.h2 
+                            className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter text-foreground mb-8"
+                            variants={fadeInBottom}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                        >
+                            Heat Treatment for <span className="text-primary">Alloy Steels</span>
+                        </motion.h2>
+                        <p className="text-xl text-muted-foreground font-medium mb-12">
+                            {SITE_NAME} specializes in induction hardening job work for all major steel grades used in manufacturing.
+                        </p>
+                        <motion.div 
+                            className="flex flex-wrap justify-center gap-4"
+                            variants={staggerContainer}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                        >
+                            {materials.map((material) => (
+                                <motion.div key={material} variants={fadeInBottom} className="bg-secondary text-foreground border border-border rounded-xl px-8 py-4 text-sm font-black uppercase italic tracking-tighter shadow-sm">
+                                    {material}
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                        <div className="mt-16">
+                            <Button asChild size="lg" className="bg-primary text-primary-foreground font-black uppercase italic tracking-tight py-8 px-12 text-xl">
+                                <Link href="/contact">Contact for Bulk Job Work</Link>
                             </Button>
                         </div>
                     </div>
                 </section>
 
-                {/* Benefits Section */}
-                <section className="py-16 md:py-24 bg-secondary">
-                    <div className="container mx-auto px-4 md:px-6">
-                        <PageHeader
-                            title="Why Choose Induction Hardening?"
-                            description="This process offers significant advantages for improving the durability and performance of steel components."
-                            className="text-center mb-12"
-                        />
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {benefits.map(benefit => (
-                                <Card key={benefit.title} className="text-center">
-                                    <CardHeader>
-                                        <benefit.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                                        <CardTitle className="text-xl">{benefit.title}</CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="text-muted-foreground text-sm">{benefit.description}</p>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                 <Testimonials />
-                 <CTASection />
-
+                <Testimonials />
+                <CTASection />
             </div>
-        </>
-    )
+        </div>
+    );
 }
