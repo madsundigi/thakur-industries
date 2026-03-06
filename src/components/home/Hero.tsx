@@ -57,14 +57,14 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-background" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
+      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-24">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInBottom}
         >
-          <h1 className="text-4xl font-black tracking-tighter text-white sm:text-6xl md:text-8xl uppercase italic leading-[0.9]">
-            INDUCTION <span className="text-primary block sm:inline">HARDENING</span>
+          <h1 className="text-4xl font-black tracking-tighter text-white sm:text-6xl md:text-7xl lg:text-8xl uppercase italic leading-[0.9]">
+            Induction Hardening <span className="text-primary block lg:inline">and heat treatment services</span>
           </h1>
           <p className="mt-8 text-xl font-bold text-primary/90 uppercase tracking-widest max-w-3xl mx-auto">
             Precision Job Work for Automotive, Agricultural & Industrial Components
