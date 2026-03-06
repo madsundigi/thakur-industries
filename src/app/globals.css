@@ -1,26 +1,26 @@
 /* inter-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/inter-v13-latin-regular.woff2') format('woff2');
 }
 /* inter-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/inter-v13-latin-700.woff2') format('woff2');
 }
 /* inter-800 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
-  src: url('/fonts/inter-v13-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/inter-v13-latin-800.woff2') format('woff2');
 }
 
 @tailwind base;
@@ -29,7 +29,7 @@
 
 @layer base {
   :root {
-    --background: 216 19% 9%; /* Very Dark Desaturated Blue */
+    --background: 216 19% 9%;
     --foreground: 210 40% 98%;
     
     --card: 216 19% 11%;
@@ -38,7 +38,7 @@
     --popover: 216 19% 11%;
     --popover-foreground: 210 40% 98%;
     
-    --primary: 182 100% 74%; /* Electric Blue */
+    --primary: 182 100% 74%;
     --primary-foreground: 216 19% 11%;
     
     --secondary: 216 19% 14%;
@@ -47,7 +47,7 @@
     --muted: 216 19% 14%;
     --muted-foreground: 215 20.2% 65.1%;
     
-    --accent: 205 100% 50%; /* Saturated Medium Blue */
+    --accent: 205 100% 50%;
     --accent-foreground: 210 40% 98%;
     
     --destructive: 0 62.8% 30.6%;
@@ -55,38 +55,8 @@
     
     --border: 216 19% 20%;
     --input: 216 19% 20%;
-    --ring: 182 100% 74%; /* Electric Blue for ring */
+    --ring: 182 100% 74%;
     --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 216 19% 9%; /* Very Dark Desaturated Blue */
-    --foreground: 210 40% 98%;
-    
-    --card: 216 19% 11%;
-    --card-foreground: 210 40% 98%;
-    
-    --popover: 216 19% 11%;
-    --popover-foreground: 210 40% 98%;
-    
-    --primary: 182 100% 74%; /* Electric Blue */
-    --primary-foreground: 216 19% 11%;
-    
-    --secondary: 216 19% 14%;
-    --secondary-foreground: 210 40% 98%;
-    
-    --muted: 216 19% 14%;
-    --muted-foreground: 215 20.2% 65.1%;
-    
-    --accent: 205 100% 50%; /* Saturated Medium Blue */
-    --accent-foreground: 210 40% 98%;
-    
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    
-    --border: 216 19% 20%;
-    --input: 216 19% 20%;
-    --ring: 182 100% 74%; /* Electric Blue for ring */
   }
 }
 
@@ -96,11 +66,19 @@
   }
   html {
     @apply scroll-smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 5rem;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden break-words;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight break-words;
+  }
+}
+
+/* Custom utility for glass effect */
+.glass-effect {
+  @apply bg-background/80 backdrop-blur-md border border-white/10;
 }
