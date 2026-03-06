@@ -30,6 +30,7 @@ export const NAV_LINKS = [
   { href: '/industries', label: 'Industries' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact Us' },
+  { href: '/privacy-policy', label: 'Privacy Policy' },
 ];
 
 export const SERVICES = [
