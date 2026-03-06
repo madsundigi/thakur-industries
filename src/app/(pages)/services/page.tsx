@@ -161,7 +161,7 @@ export default function ServicesPage() {
                         <CardContent className="flex-grow flex flex-col">
                         <p className="text-muted-foreground text-sm flex-grow">{service.shortDescription}</p>
                         <Button asChild variant="link" className="p-0 h-auto justify-start mt-4">
-                            <Link href={`/services#${service.id}`}>
+                            <Link href={service.href}>
                                 Learn More <ChevronRight className="ml-1 h-4 w-4" />
                             </Link>
                             </Button>

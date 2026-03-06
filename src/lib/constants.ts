@@ -15,7 +15,7 @@ export const NAV_LINKS = [
     href: '/services', 
     label: 'Services',
     subLinks: [
-      { href: '/induction-hardening', label: 'Induction Hardening' },
+      { href: '/induction-hardening-services', label: 'Induction Hardening' },
       { href: '/case-hardening-heat-treatment', label: 'Case Hardening' },
       { href: '/surface-hardening', label: 'Surface Hardening' },
       { href: '/metal-heat-treatment', label: 'Metal Heat Treatment' },
@@ -36,7 +36,7 @@ export const SERVICES = [
   {
     id: 'induction-hardening',
     title: 'Induction Hardening',
-    href: '/induction-hardening',
+    href: '/induction-hardening-services',
     description: 'A precision surface hardening process using electromagnetic induction to increase wear resistance and fatigue life of steel components. We are a leader in induction hardening in Ludhiana.',
     shortDescription: 'Precision surface hardening to increase wear resistance and fatigue life of steel parts.',
     image: 'serviceInductionHardening'

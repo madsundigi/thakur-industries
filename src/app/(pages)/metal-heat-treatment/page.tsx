@@ -96,7 +96,7 @@ export default function MetalHeatTreatmentPage() {
                 <section className="py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                         <h2 className="text-3xl font-bold mb-4">What is Metal Heat Treatment?</h2>
-                        <p className="text-muted-foreground text-lg">Metal heat treatment is a controlled process of heating and cooling metals to alter their physical and mechanical properties without changing their shape. The purpose is to improve a material's properties, such as increasing hardness, toughness, or ductility. Our services include popular methods like <Link href="/induction-hardening" className="text-primary hover:underline">induction hardening</Link>, <Link href="/case-hardening-heat-treatment" className="text-primary hover:underline">case hardening</Link>, and surface hardening.</p>
+                        <p className="text-muted-foreground text-lg">Metal heat treatment is a controlled process of heating and cooling metals to alter their physical and mechanical properties without changing their shape. The purpose is to improve a material's properties, such as increasing hardness, toughness, or ductility. Our services include popular methods like <Link href="/induction-hardening-services" className="text-primary hover:underline">induction hardening</Link>, <Link href="/case-hardening-heat-treatment" className="text-primary hover:underline">case hardening</Link>, and surface hardening.</p>
                     </div>
                 </section>
 

@@ -120,7 +120,7 @@ export default function HeatTreatingSteelPage() {
                 <section className="py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
                         <h2 className="text-3xl font-bold mb-4">An Overview of Steel Heat Treatment</h2>
-                        <p className="text-muted-foreground text-lg">Steel heat treatment is a controlled process involving heating and cooling to alter the steel's microstructure. This enhances its mechanical properties, such as hardness, toughness, and wear resistance, to meet the demands of high-performance industrial applications. At {SITE_NAME}, we use advanced methods like <Link href="/induction-hardening" className="text-primary hover:underline">induction hardening</Link> and <Link href="/case-hardening-heat-treatment" className="text-primary hover:underline">case hardening</Link> to achieve precise results.</p>
+                        <p className="text-muted-foreground text-lg">Steel heat treatment is a controlled process involving heating and cooling to alter the steel's microstructure. This enhances its mechanical properties, such as hardness, toughness, and wear resistance, to meet the demands of high-performance industrial applications. At {SITE_NAME}, we use advanced methods like <Link href="/induction-hardening-services" className="text-primary hover:underline">induction hardening</Link> and <Link href="/case-hardening-heat-treatment" className="text-primary hover:underline">case hardening</Link> to achieve precise results.</p>
                     </div>
                 </section>
 

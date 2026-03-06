@@ -90,7 +90,7 @@ export default function SurfaceHardeningPage() {
                                 <Link href="/contact">Get a Free Quote</Link>
                             </Button>
                             <Button asChild size="lg" variant="outline">
-                                <Link href="/induction-hardening">Explore Induction Hardening</Link>
+                                <Link href="/induction-hardening-services">Explore Induction Hardening</Link>
                             </Button>
                         </div>
                     </div>
@@ -198,7 +198,7 @@ export default function SurfaceHardeningPage() {
                         </div>
                          <div className="text-center mt-12">
                             <Button asChild>
-                                <Link href="/induction-hardening">Explore Induction Hardening Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                                <Link href="/induction-hardening-services">Explore Induction Hardening Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
                             </Button>
                         </div>
                     </div>
@@ -225,8 +225,7 @@ export default function SurfaceHardeningPage() {
                                         <CardHeader>
                                             <CardTitle>{app.title}</CardTitle>
                                         </CardHeader>
-                                    </Card>
-                                );
+                                    );
                             })}
                         </div>
                     </div>
