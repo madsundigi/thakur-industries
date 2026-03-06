@@ -1,50 +1,76 @@
 
 'use client';
-import { SITE_NAME } from "@/lib/constants";
+
+import { motion } from 'framer-motion';
+import { SITE_NAME } from '@/lib/constants';
 
 export function Logo() {
-  return (
-    <div className="flex items-center gap-2">
-      <svg
-        width="36"
-        height="36"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-primary"
-      >
-        <path 
-          d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2Z" 
-          stroke="hsl(var(--primary))" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M10.5 14C10.5 14 11 12 12 12C13 12 13.5 14 13.5 14" 
-          stroke="hsl(var(--primary-foreground))"
-          strokeOpacity="0.7"
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-         <path 
-          d="M12 12C13.5 12 15 10 15 8C15 6 12 2 12 2"
-          stroke="hsl(var(--primary))" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-         <path 
-          d="M12 12C10.5 12 9 10 9 8C9 6 12 2 12 2"
-          stroke="hsl(var(--primary))" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-      </svg>
+  // Split the name for styling if it matches "Thakur Industries"
+  const firstName = "Thakur";
+  const secondName = "Industries";
 
-      <span className="font-bold text-lg text-foreground hidden sm:inline-block">{SITE_NAME}</span>
-    </div>
+  return (
+    <motion.div 
+      className="flex items-center gap-1 cursor-pointer select-none"
+      whileHover="hover"
+      initial="initial"
+    >
+      {/* Stylized "T" Icon representing a heat coil */}
+      <motion.div
+        className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-secondary border border-border overflow-hidden"
+        variants={{
+          hover: { borderColor: 'hsl(var(--primary))' }
+        }}
+      >
+        <motion.span 
+          className="text-2xl font-black text-primary z-10"
+          variants={{
+            initial: { y: 0 },
+            hover: { y: -2, scale: 1.1 }
+          }}
+        >
+          T
+        </motion.span>
+        
+        {/* Animated "Heat" Glow Effect */}
+        <motion.div 
+          className="absolute inset-0 bg-primary/10 opacity-0"
+          variants={{
+            hover: { 
+              opacity: 1,
+              transition: { duration: 0.3 } 
+            }
+          }}
+        />
+        
+        {/* Bottom "Heat Bar" */}
+        <motion.div 
+          className="absolute bottom-0 left-0 right-0 h-1 bg-primary"
+          initial={{ scaleX: 0 }}
+          variants={{
+            hover: { scaleX: 1, transition: { duration: 0.4 } }
+          }}
+        />
+      </motion.div>
+
+      <div className="flex flex-col leading-none ml-1">
+        <motion.span 
+          className="text-xl font-extrabold tracking-tighter text-foreground"
+          variants={{
+            hover: { color: 'hsl(var(--primary))' }
+          }}
+        >
+          {firstName.toUpperCase()}
+        </motion.span>
+        <motion.span 
+          className="text-[10px] font-bold tracking-[0.3em] text-muted-foreground uppercase"
+          variants={{
+            hover: { color: 'hsl(var(--foreground))', x: 2 }
+          }}
+        >
+          {secondName}
+        </motion.span>
+      </div>
+    </motion.div>
   );
 }
