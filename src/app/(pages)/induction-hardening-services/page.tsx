@@ -62,6 +62,16 @@ const benefits = [
     { icon: Cpu, title: "Localized & Precise", description: "Hardens only specific areas, reducing distortion and saving energy." },
 ];
 
+const applications = [
+    { title: "Shafts", keyword: "Shaft Hardening Ludhiana", desc: "Uniform hardening for transmission and drive shafts." },
+    { title: "Gears", keyword: "Gear Hardening Punjab", desc: "Tooth-by-tooth precision for gears and pinions." },
+    { title: "Pinions", keyword: "Pinion Hardening", desc: "Enhanced surface strength for high-torque pinions." },
+    { title: "Camshafts", keyword: "Camshaft Hardening", desc: "Localized lobe hardening for maximum wear resistance." },
+    { title: "Axles", keyword: "Axle Hardening", desc: "Increased load capacity and fatigue life for automotive axles." },
+    { title: "Rollers", keyword: "Roller Hardening", desc: "Deep case hardening for heavy-duty industrial rollers." },
+    { title: "Sprockets", keyword: "Sprocket Hardening", desc: "Induction hardened teeth for chain drive reliability." }
+];
+
 export default function InductionHardeningPage() {
     const heroImage = PlaceHolderImages.find(img => img.id === 'serviceInductionHardening');
 
@@ -128,6 +138,32 @@ export default function InductionHardeningPage() {
                                     className="object-cover"
                                 />
                             )}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Applications Section */}
+                <section className="py-16 md:py-24 bg-secondary/50">
+                    <div className="container mx-auto px-4 md:px-6">
+                        <PageHeader
+                            title="Components We Harden"
+                            description="Our precision induction hardening services are optimized for a wide range of industrial and automotive parts, delivering unmatched durability where it matters most."
+                            className="text-center mb-12"
+                        />
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {applications.map((item) => (
+                                <Card key={item.title} className="hover:border-primary/50 transition-colors bg-card/50 backdrop-blur-sm">
+                                    <CardHeader>
+                                        <CardTitle className="text-xl flex flex-col gap-1">
+                                            {item.title}
+                                            <span className="text-[10px] font-normal text-primary uppercase tracking-widest">{item.keyword}</span>
+                                        </CardTitle>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
+                                    </CardContent>
+                                </Card>
+                            ))}
                         </div>
                     </div>
                 </section>
