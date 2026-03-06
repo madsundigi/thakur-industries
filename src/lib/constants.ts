@@ -15,6 +15,7 @@ export const NAV_LINKS = [
     href: '/services', 
     label: 'Services',
     subLinks: [
+      { href: '/heat-treatment-job-work', label: 'Heat Treatment Job Work' },
       { href: '/induction-hardening-services', label: 'Induction Hardening' },
       { href: '/case-hardening-heat-treatment', label: 'Case Hardening' },
       { href: '/surface-hardening', label: 'Surface Hardening' },
