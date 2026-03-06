@@ -1,7 +1,8 @@
+
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, CheckCircle, Globe } from 'lucide-react';
+import { MapPin, CheckCircle } from 'lucide-react';
 import { JsonLd } from '@/components/shared/JsonLd';
 
 const locations = [
@@ -85,7 +86,8 @@ export function ServiceArea() {
             <p className="text-lg text-muted-foreground mb-8">
               We provide timely and reliable heat treatment job work to key industrial centers. Our proximity to major manufacturing zones allows for fast turnaround times.
             </p>
-            <div className="flex items-center gap-3 p-6 bg-primary/10 rounded-xl border border-primary/30 shadow-[0_0_20px_rgba(125,249,255,0.1)]">
+            {/* Updated Shadow to Red */}
+            <div className="flex items-center gap-3 p-6 bg-primary/10 rounded-xl border border-primary/30 shadow-[0_0_20px_rgba(255,50,50,0.1)]">
               <CheckCircle className="h-8 w-8 text-primary shrink-0" />
               <p className="text-primary font-black uppercase tracking-tight text-sm">
                 Serving Punjab, Haryana, Himachal & Delhi NCR
@@ -116,4 +118,28 @@ export function ServiceArea() {
       </div>
     </section>
   );
+}
+
+function Globe(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20" />
+      <path d="M2 12h20" />
+      <path d="M12 2a14.5 14.5 0 0 1 0 20" />
+      <path d="M2 12a14.5 14.5 0 0 0 20 0" />
+      <path d="M2 12a14.5 14.5 0 0 1 20 0" />
+    </svg>
+  )
 }

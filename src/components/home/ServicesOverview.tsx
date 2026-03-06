@@ -28,7 +28,8 @@ const staggerContainer = {
 const hoverGlow = {
   whileHover: { 
     scale: 1.03, 
-    boxShadow: "0 0 20px rgba(125, 249, 255, 0.2)",
+    /* Updated Shadow to Red */
+    boxShadow: "0 0 20px rgba(255, 50, 50, 0.2)",
     transition: { duration: 0.2 }
   }
 };

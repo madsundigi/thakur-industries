@@ -30,7 +30,8 @@ export function CTASection() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button asChild size="lg" className="w-full sm:w-auto px-10 py-8 text-xl bg-primary hover:bg-primary/80 text-primary-foreground font-black group shadow-[0_0_20px_rgba(125,249,255,0.3)]">
+              {/* Updated Shadow to Red */}
+              <Button asChild size="lg" className="w-full sm:w-auto px-10 py-8 text-xl bg-primary hover:bg-primary/80 text-primary-foreground font-black group shadow-[0_0_20px_rgba(255,50,50,0.3)]">
                 <Link href="/contact" className="flex items-center gap-2">
                   Send Inquiry
                   <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-2" />

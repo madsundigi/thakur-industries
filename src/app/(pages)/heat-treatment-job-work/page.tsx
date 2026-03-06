@@ -147,10 +147,10 @@ export default function HeatTreatmentJobWorkPage() {
               viewport={{ once: true }}
             >
               {[
-                { icon: Award, text: "Heat Treatment Experts" },
-                { icon: Factory, text: "Serving Punjab Units" },
-                { icon: Cpu, text: "Hardening Technology" },
-                { icon: ShieldCheck, text: "Reliable Job Work" }
+                { icon: Award, text: "Industrial Heat Treatment Experts" },
+                { icon: Factory, text: "Serving Punjab Manufacturers" },
+                { icon: Cpu, text: "Precision Hardening Technology" },
+                { icon: ShieldCheck, text: "Reliable Job Work Support" }
               ].map((item, i) => (
                 <motion.div key={i} variants={fadeInBottom} className="flex flex-col items-center text-center gap-3">
                   <item.icon className="h-8 w-8 md:h-10 md:w-10 text-primary" />
@@ -172,7 +172,7 @@ export default function HeatTreatmentJobWorkPage() {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-foreground mb-6 uppercase italic">
-                  What is <span className="text-primary">Heat Treatment</span>?
+                  What is <span className="text-primary">Heat Treatment</span> Job Work?
                 </h2>
                 <div className="space-y-6 text-base sm:text-lg text-muted-foreground">
                   <p>
@@ -212,8 +212,8 @@ export default function HeatTreatmentJobWorkPage() {
         <section className="py-16 md:py-24 bg-secondary/30">
           <div className="container mx-auto px-4 md:px-6">
             <PageHeader 
-              title="Components" 
-              highlightedWord="Suitable"
+              title="Components Suitable for" 
+              highlightedWord="Heat Treatment"
               description="We provide precision surface hardening for a variety of critical mechanical parts."
               className="mb-12 pt-0"
             />
@@ -250,8 +250,208 @@ export default function HeatTreatmentJobWorkPage() {
           </div>
         </section>
 
-        {/* ... Rest of the page content refined similarly ... */}
-        {/* Shortened for brevity in thought, but applying to the final content */}
+        {/* 5. MATERIALS WE TREAT */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter">
+              Steel Grades We <span className="text-primary">Heat Treat</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { name: "EN8 Steel", range: "50-55 HRC" },
+                { name: "EN19 Steel", range: "52-58 HRC" },
+                { name: "EN24 Steel", range: "55-60 HRC" },
+                { name: "4140 Alloy Steel", range: "50-58 HRC" },
+                { name: "4340 Steel", range: "55-60 HRC" },
+                { name: "Carbon Steel", range: "Varies by grade" }
+              ].map((material, i) => (
+                <motion.div 
+                  key={i}
+                  className="p-6 bg-secondary/50 rounded-xl border border-border hover:border-primary/20 transition-all group"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05 }}
+                >
+                  <h3 className="font-bold text-lg text-foreground mb-1 group-hover:text-primary transition-colors">{material.name}</h3>
+                  <p className="text-xs font-black uppercase tracking-widest text-muted-foreground">{material.range}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 6. OUR HEAT TREATMENT PROCESS */}
+        <section className="py-16 md:py-24 bg-secondary/20">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter">
+              Our Heat Treatment <span className="text-primary">Process</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {[
+                { title: "Component Inspection", icon: Search },
+                { title: "Surface Preparation", icon: Wrench },
+                { title: "Induction Heating", icon: Flame },
+                { title: "Controlled Quenching", icon: Droplet },
+                { title: "Hardness Testing", icon: Settings },
+                { title: "Final Quality Inspection", icon: ShieldCheck }
+              ].map((step, i) => (
+                <motion.div 
+                  key={i} 
+                  className="flex flex-col items-center text-center p-8 bg-card rounded-2xl border border-border hover:border-primary/20 transition-all group"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                >
+                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                    <step.icon className="h-8 w-8 text-primary group-hover:text-inherit" />
+                  </div>
+                  <div className="text-xs font-black text-primary/50 mb-2">STEP 0{i+1}</div>
+                  <h3 className="text-xl font-bold uppercase italic tracking-tight">{step.title}</h3>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 7. INDUSTRIES WE SERVE */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6 text-center">
+            <h2 className="text-3xl md:text-5xl font-black mb-16 uppercase italic tracking-tighter">
+              Industries <span className="text-primary">We Serve</span>
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+              {[
+                "Automotive Components",
+                "Agricultural Machinery",
+                "Industrial Equipment",
+                "Engineering Components",
+                "Machine Manufacturers"
+              ].map((industry, i) => (
+                <motion.div 
+                  key={i}
+                  whileHover={{ y: -5 }}
+                  className="p-6 bg-secondary/30 rounded-xl border border-border flex items-center justify-center text-center group hover:border-primary/30 transition-all"
+                >
+                  <span className="text-sm font-bold uppercase italic tracking-tight group-hover:text-primary transition-colors">{industry}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 8. SERVICE AREA */}
+        <section className="py-16 md:py-24 bg-card relative overflow-hidden">
+          <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter text-white mb-6">
+                  Heat Treatment Job Work in <span className="text-primary">Punjab & Nearby Regions</span>
+                </h2>
+                <p className="text-gray-400 mb-8 font-medium">
+                  We are strategically located to serve the industrial hubs of North India with high-quality induction hardening job work.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  {['Ludhiana', 'Khanna', 'Mandi Gobindgarh', 'Sangrur', 'Phillaur', 'Rajpura', 'Ambala', 'Baddi'].map(city => (
+                    <div key={city} className="flex items-center gap-2 text-gray-300 font-bold uppercase tracking-tight text-sm">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      {city}
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+              <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-white/5 bg-secondary/20 flex items-center justify-center">
+                <motion.div
+                  className="absolute inset-0 bg-primary/5"
+                  animate={{ opacity: [0.05, 0.1, 0.05] }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                />
+                <Globe className="h-48 w-48 text-primary/20" />
+                {/* Visual pulse for Ludhiana */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <motion.div 
+                    className="h-4 w-4 bg-primary rounded-full"
+                    animate={{ scale: [1, 2, 1], opacity: [1, 0, 1] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 9. WHY CHOOSE THAKUR INDUSTRIES */}
+        <section className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter">
+              Why <span className="text-primary">Choose</span> Thakur Industries?
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { title: "Consistent Hardness Control", desc: "Digital monitoring for uniform results." },
+                { title: "Modern Induction Equipment", desc: "High-frequency precision technology." },
+                { title: "Reliable Industrial Job Work", desc: "Trusted by top OEMs and local shops." },
+                { title: "Fast Turnaround Time", desc: "Efficient processes to meet your deadlines." }
+              ].map((item, i) => (
+                <motion.div 
+                  key={i}
+                  className="p-8 bg-secondary/30 rounded-2xl border border-border group hover:border-primary/30 transition-all"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                >
+                  <CheckCircle className="h-8 w-8 text-primary mb-6" />
+                  <h3 className="text-xl font-bold uppercase italic tracking-tight mb-3 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground font-medium">{item.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 10. CLIENT TESTIMONIAL */}
+        <section className="py-16 md:py-24 bg-secondary/30">
+          <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
+            <div className="mb-8 flex justify-center">
+              <MessageSquare className="h-12 w-12 text-primary/40" />
+            </div>
+            <h2 className="text-2xl md:text-4xl font-black uppercase italic tracking-tighter text-foreground mb-8">
+              "Reliable heat treatment partner for our <span className="text-primary">shaft hardening</span> requirements. Consistent results and timely delivery."
+            </h2>
+            <div className="flex flex-col items-center">
+              <div className="font-bold text-foreground uppercase tracking-widest text-sm">Industrial Client</div>
+              <div className="text-xs font-black text-primary uppercase mt-1">Ludhiana Manufacturing Unit</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 11. FAQ SECTION */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+            <h2 className="text-3xl md:text-5xl font-black text-center mb-16 uppercase italic tracking-tighter">
+              Common <span className="text-primary">Questions</span>
+            </h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              {[
+                { q: "What hardness can be achieved through induction hardening?", a: "Depending on the steel grade, we typically achieve surface hardness between 50 to 62 HRC while maintaining a ductile core." },
+                { q: "Which materials are suitable for heat treatment?", a: "Medium carbon and alloy steels like EN8, EN19, EN24, 4140, 4340, and various tool steels respond best to our process." },
+                { q: "Is heat treatment required before machining?", a: "Generally, components are pre-machined to near-final dimensions, then heat-treated, followed by final grinding or finishing if required." },
+                { q: "How long does heat treatment take?", a: "Induction hardening is a very rapid process, with heating cycles often taking only seconds to minutes per part, allowing for high productivity." }
+              ].map((item, i) => (
+                <AccordionItem key={i} value={`item-${i}`} className="border rounded-xl bg-secondary/30 px-6">
+                  <AccordionTrigger className="text-left font-bold uppercase italic tracking-tight text-lg hover:text-primary py-6">{item.q}</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-6 font-medium leading-relaxed">{item.a}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
 
         {/* 12. STRONG CALL TO ACTION */}
         <section className="py-16 md:py-24 bg-card border-t border-primary/10">
@@ -295,4 +495,28 @@ export default function HeatTreatmentJobWorkPage() {
       </div>
     </>
   );
+}
+
+function Globe(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20" />
+      <path d="M2 12h20" />
+      <path d="M12 2a14.5 14.5 0 0 1 0 20" />
+      <path d="M2 12a14.5 14.5 0 0 0 20 0" />
+      <path d="M2 12a14.5 14.5 0 0 1 20 0" />
+    </svg>
+  )
 }

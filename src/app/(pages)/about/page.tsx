@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -126,7 +125,8 @@ export default function AboutPage() {
                     <p className="text-foreground font-bold uppercase tracking-tight text-sm mb-2">Thakur Industries Landmark</p>
                     <p className="text-muted-foreground text-lg">{item.event}</p>
                   </div>
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 z-10 h-10 w-10 items-center justify-center rounded-full bg-background border-4 border-primary shadow-[0_0_15px_rgba(125,249,255,0.4)]">
+                  {/* Updated Shadow to Red */}
+                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 z-10 h-10 w-10 items-center justify-center rounded-full bg-background border-4 border-primary shadow-[0_0_15px_rgba(255,50,50,0.4)]">
                     <div className="h-2 w-2 rounded-full bg-primary" />
                   </div>
                   <div className="w-full md:w-5/12"></div>
