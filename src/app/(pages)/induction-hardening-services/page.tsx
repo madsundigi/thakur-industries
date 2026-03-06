@@ -1,11 +1,10 @@
-
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, ChevronRight, Cpu, Gem, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowRight, ChevronRight, Cpu, Gem, ShieldCheck, Zap } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
 import { SITE_NAME } from '@/lib/constants';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -73,13 +72,21 @@ const benefits = [
 ];
 
 const applications = [
-    { title: "Shafts", keyword: "Shaft Hardening Ludhiana", desc: "Uniform hardening for transmission and drive shafts." },
-    { title: "Gears", keyword: "Gear Hardening Punjab", desc: "Tooth-by-tooth precision for gears and pinions." },
+    { title: "Shafts", keyword: "shaft hardening Ludhiana", desc: "Uniform hardening for transmission and drive shafts." },
+    { title: "Gears", keyword: "gear hardening Punjab", desc: "Tooth-by-tooth precision for gears and pinions." },
     { title: "Pinions", keyword: "Pinion Hardening", desc: "Enhanced surface strength for high-torque pinions." },
     { title: "Camshafts", keyword: "Camshaft Hardening", desc: "Localized lobe hardening for maximum wear resistance." },
     { title: "Axles", keyword: "Axle Hardening", desc: "Increased load capacity and fatigue life for automotive axles." },
     { title: "Rollers", keyword: "Roller Hardening", desc: "Deep case hardening for heavy-duty industrial rollers." },
     { title: "Sprockets", keyword: "Sprocket Hardening", desc: "Induction hardened teeth for chain drive reliability." }
+];
+
+const industriesServed = [
+    "Automotive components",
+    "Agricultural machinery",
+    "Industrial equipment",
+    "Machine manufacturing",
+    "Engineering components",
 ];
 
 export default function InductionHardeningPage() {
@@ -152,7 +159,7 @@ export default function InductionHardeningPage() {
                     </div>
                 </section>
 
-                {/* Applications Section */}
+                {/* 4. APPLICATIONS OF INDUCTION HARDENING */}
                 <section className="py-16 md:py-24 bg-secondary/50">
                     <div className="container mx-auto px-4 md:px-6">
                         <PageHeader
@@ -178,7 +185,7 @@ export default function InductionHardeningPage() {
                     </div>
                 </section>
                 
-                {/* Process Section */}
+                {/* 6. PROCESS WORKFLOW */}
                 <section className="py-16 md:py-24 bg-secondary">
                     <div className="container mx-auto px-4 md:px-6">
                         <PageHeader
@@ -203,8 +210,33 @@ export default function InductionHardeningPage() {
                     </div>
                 </section>
 
+                {/* 8. INDUSTRIES SERVED */}
+                <section className="py-16 md:py-24 bg-background overflow-hidden">
+                    <div className="container mx-auto px-4 md:px-6">
+                        <h2 className="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
+                    </div>
+                    <div className="relative">
+                        {/* Gradient Overlays for Side Blur */}
+                        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+                        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+                        
+                        <div className="flex overflow-hidden">
+                            <div className="flex animate-marquee gap-12 whitespace-nowrap pr-12">
+                                {[...industriesServed, ...industriesServed, ...industriesServed, ...industriesServed].map((industry, index) => (
+                                    <span 
+                                        key={index} 
+                                        className="text-2xl md:text-4xl font-extrabold text-muted-foreground/20 uppercase tracking-tighter hover:text-primary transition-colors cursor-default select-none"
+                                    >
+                                        {industry}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Materials Section */}
-                 <section className="py-20 md:py-28 bg-background">
+                 <section className="py-20 md:py-28 bg-secondary/30">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="text-center">
                             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
