@@ -1,9 +1,8 @@
-
 'use client';
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Check, Factory, Award } from 'lucide-react';
+import { Check, Factory, Award, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 
@@ -20,66 +19,82 @@ const stats = [
     },
     {
       icon: Check,
-      text: '1000+ Components Treated Monthly',
+      text: '1000+ Components Monthly',
       desc: 'Trusted by leading manufacturers for high-volume work.'
     }
 ];
 
+const fadeInBottom = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15
+    }
+  }
+};
+
 export function AboutSection() {
   const prefersReducedMotion = usePrefersReducedMotion();
 
-  const fadeIn = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut', staggerChildren: 0.2 } },
-  };
-
   return (
-    <section className="py-20 md:py-28 bg-secondary">
-      <div className="container mx-auto px-4 md:px-6 text-center">
-        <motion.div
+    <section className="py-24 md:py-32 bg-secondary border-y border-border">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
             initial={prefersReducedMotion ? false : "hidden"}
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            variants={fadeIn}
-        >
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Trusted Heat Treatment Experts in Punjab
+            variants={fadeInBottom}
+          >
+            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-foreground mb-6 uppercase italic">
+              Trusted <span className="text-primary">Heat Treatment</span> Experts
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-              With a legacy of precision and reliability, we are the trusted partner for leading industrial and automotive companies in Ludhiana and beyond.
-            </p>
-        </motion.div>
-        
-        <motion.div 
-            className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left"
-            initial={prefersReducedMotion ? false : "hidden"}
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p>
+                With a legacy of precision and reliability, Thakur Industries is the preferred partner for leading industrial and automotive companies in Ludhiana and North India.
+              </p>
+              <p>
+                We specialize in induction hardening, a process that creates a wear-resistant surface while maintaining a tough core, significantly extending the life of your mechanical parts.
+              </p>
+            </div>
+            <Button asChild className="mt-10 bg-primary text-primary-foreground font-bold" size="lg">
+              <Link href="/about" className="flex items-center gap-2">
+                Learn More About Us
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
+          </motion.div>
+          
+          <motion.div 
+            className="grid grid-cols-1 gap-6"
+            variants={staggerContainer}
+            initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            variants={fadeIn}
-        >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={index}
-              className="bg-card p-6 rounded-lg shadow-sm"
-              variants={prefersReducedMotion ? undefined : fadeIn}
-            >
-              <stat.icon className="h-10 w-10 text-primary mb-4" />
-              <h3 className="text-xl font-bold text-foreground">{stat.text}</h3>
-              <p className="mt-2 text-muted-foreground">{stat.desc}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <motion.div 
-            initial={prefersReducedMotion ? false : { opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-        >
-            <Button asChild className="mt-12" size="lg">
-              <Link href="/about">Learn More About Us</Link>
-            </Button>
-        </motion.div>
+          >
+            {stats.map((stat, index) => (
+              <motion.div
+                key={index}
+                className="bg-card p-8 rounded-xl border border-border flex items-start gap-6 group hover:border-primary/50 transition-colors"
+                variants={prefersReducedMotion ? undefined : fadeInBottom}
+              >
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <stat.icon className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground uppercase italic tracking-tight">{stat.text}</h3>
+                  <p className="mt-2 text-muted-foreground">{stat.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );

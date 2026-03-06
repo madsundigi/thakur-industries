@@ -1,6 +1,6 @@
-
 'use client'
 
+import { motion } from 'framer-motion';
 import {
   Accordion,
   AccordionContent,
@@ -12,7 +12,7 @@ import { JsonLd } from "@/components/shared/JsonLd";
 const faqs = [
   {
     question: "What is induction hardening, and how does it work?",
-    answer: "Induction hardening is a surface heat treatment process using electromagnetic induction to strengthen metal parts such as shafts, gears, and axles. We specialize in industrial hardening job work in Ludhiana and Punjab. You can <a href='/services' class='text-primary hover:underline'>learn more on our services page</a>."
+    answer: "Induction hardening is a surface heat treatment process using electromagnetic induction to strengthen metal parts such as shafts, gears, and axles. We specialize in industrial hardening job work in Ludhiana and Punjab. You can <a href='/services' class='text-primary hover:underline font-bold'>learn more on our services page</a>."
   },
   {
     question: "Do you offer induction heat treatment services in Punjab and Haryana?",
@@ -32,6 +32,11 @@ const faqs = [
   },
 ];
 
+const fadeInBottom = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
+
 export function Faq() {
 
   const faqSchema = {
@@ -48,32 +53,44 @@ export function Faq() {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="py-24 md:py-32 bg-background">
       <JsonLd data={faqSchema} />
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Frequently Asked Questions About Induction Hardening
+        <motion.div 
+          className="text-center max-w-3xl mx-auto mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInBottom}
+        >
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-foreground uppercase italic leading-none">
+            Job Work <span className="text-primary">FAQs</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Find quick answers to common questions about our heat treatment job work in Ludhiana.
+            Find quick answers to common questions about our heat treatment services in Ludhiana.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="mt-12 max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
+        <motion.div 
+          className="max-w-4xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left text-lg hover:no-underline">
+              <AccordionItem key={index} value={`item-${index}`} className="border rounded-xl bg-secondary/30 px-6">
+                <AccordionTrigger className="text-left text-lg font-bold uppercase italic tracking-tight hover:text-primary transition-colors py-6 hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground">
+                <AccordionContent className="text-base text-muted-foreground pb-6 leading-relaxed">
                     <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
