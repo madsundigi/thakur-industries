@@ -19,7 +19,7 @@ export const NAV_LINKS = [
       { href: '/induction-heat-treatment/induction-hardening-shafts-ludhiana', label: 'Shaft Hardening' },
       { href: '/induction-heat-treatment/induction-hardening-gears-ludhiana', label: 'Gear Hardening' },
       { href: '/induction-heat-treatment/on-site', label: 'On-site Services' },
-      { href: '/induction-heat-treatment/crankshafts', label: 'Crankshaft Hardening' },
+      { href: '/induction-heat-treatment/crankshafts-induction-hardening-ludhiana', label: 'Crankshaft Hardening' },
       { href: '/induction-heat-treatment/bearings', label: 'Bearing Hardening' },
     ] 
   },

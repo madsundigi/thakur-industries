@@ -300,13 +300,13 @@ export default function GearHardeningSEOPage() {
               {[
                 { title: "Shaft Hardening", href: "/induction-heat-treatment/induction-hardening-shafts-ludhiana", icon: Settings, label: "Transmission Shafts" },
                 { title: "Induction Pillar", href: "/induction-heat-treatment", icon: Cpu, label: "Main Guide" },
-                { title: "Crankshaft Hardening", href: "/induction-heat-treatment/crankshafts", icon: History, label: "Engine Components" }
+                { title: "Crankshaft Hardening", href: "/induction-heat-treatment/crankshafts-induction-hardening-ludhiana", icon: History, label: "Engine Components" }
               ].map((link, i) => (
                 <Link key={i} href={link.href} className="group">
                   <motion.div 
                     variants={scaleUp}
                     whileHover={{ y: -5 }}
-                    className="p-8 bg-secondary/30 border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center"
+                    className="p-8 bg-secondary/30 border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center shadow-sm"
                   >
                     <link.icon className="h-8 w-8 text-primary mb-4" />
                     <h4 className="font-black uppercase italic text-foreground group-hover:text-primary transition-colors text-sm">{link.title}</h4>
