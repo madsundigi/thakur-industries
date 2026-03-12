@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState } from 'react';
@@ -23,7 +22,7 @@ import { Button } from '@/components/ui/button';
 
 export function AeroNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [openSubMenus, setOpenSubMenus] = useState<string[]>(['/services']); // Keep services open by default for visibility
+  const [openSubMenus, setOpenSubMenus] = useState<string[]>(['/induction-heat-treatment', '/locations']); 
   const pathname = usePathname();
 
   const toggleSubMenu = (e: React.MouseEvent, href: string) => {
@@ -58,7 +57,10 @@ export function AeroNav() {
                         <Link href={link.href} className="font-bold uppercase tracking-wider text-xs italic">{link.label}</Link>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
-                        <ul className="grid w-[200px] gap-1 p-2 md:w-[280px]">
+                        <ul className={cn(
+                          "grid gap-1 p-2",
+                          link.label === 'Locations We Serve' ? "w-[300px] grid-cols-2 md:w-[450px]" : "w-[200px] md:w-[280px]"
+                        )}>
                           {link.subLinks.map((subLink) => (
                             <ListItem key={subLink.label} href={subLink.href} title={subLink.label} />
                           ))}
@@ -113,7 +115,9 @@ export function AeroNav() {
                     <div className="flex items-center justify-between">
                       <Link
                         href={link.href}
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => {
+                          if (!link.subLinks) setIsOpen(false);
+                        }}
                         className={cn(
                           "text-lg font-black uppercase italic tracking-tighter py-4 transition-colors flex-1",
                           pathname === link.href ? "text-primary" : "text-foreground"

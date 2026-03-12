@@ -22,6 +22,24 @@ export const NAV_LINKS = [
       { href: '/induction-heat-treatment/induction-hardening-bearings-ludhiana', label: 'Bearing Hardening' },
     ] 
   },
+  {
+    href: '/locations',
+    label: 'Locations We Serve',
+    subLinks: [
+      { href: '/contact', label: 'Malerkotla' },
+      { href: '/contact', label: 'Jagraon' },
+      { href: '/contact', label: 'Samrala' },
+      { href: '/contact', label: 'Khanna' },
+      { href: '/contact', label: 'Mandi Gobindgarh' },
+      { href: '/contact', label: 'Patiala' },
+      { href: '/contact', label: 'Phagwara' },
+      { href: '/contact', label: 'Sangrur' },
+      { href: '/contact', label: 'Dhuri' },
+      { href: '/contact', label: 'Dehlon' },
+      { href: '/contact', label: 'Sirhind' },
+      { href: '/contact', label: 'Jalandhar' },
+    ]
+  },
   { href: '/industries', label: 'Industries' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact Us' },
