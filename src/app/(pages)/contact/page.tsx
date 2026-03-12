@@ -75,7 +75,7 @@ export default function ContactPage() {
         "telephone": SITE_PHONE_NUMBER,
         "email": "sales@thakurinduction.com"
       },
-      "areaServed": ["Ludhiana", "Punjab", "Haryana", "Delhi"]
+      "areaServed": ["Ludhiana", "Nawanshahr", "Punjab", "Haryana", "Delhi"]
   };
 
   return (

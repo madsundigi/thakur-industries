@@ -81,7 +81,7 @@ export default function RootLayout({
       '@type': 'ContactPoint',
       telephone: SITE_PHONE_NUMBER,
       contactType: 'Customer Service',
-      areaServed: ["Ludhiana", "Punjab", "India", "Haryana", "Delhi"],
+      areaServed: ["Ludhiana", "Nawanshahr", "Punjab", "India", "Haryana", "Delhi"],
       availableLanguage: ["en", "pa", "hi"]
     },
     description: 'Thakur Induction provides precision heat treatment and induction hardening job work for industries in Ludhiana, Punjab, Haryana & Delhi NCR.',

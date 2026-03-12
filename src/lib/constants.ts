@@ -26,6 +26,8 @@ export const NAV_LINKS = [
     href: '/locations',
     label: 'Locations We Serve',
     subLinks: [
+      { href: '/contact', label: 'Ludhiana' },
+      { href: '/contact', label: 'Nawanshahr' },
       { href: '/contact', label: 'Malerkotla' },
       { href: '/contact', label: 'Jagraon' },
       { href: '/contact', label: 'Samrala' },
