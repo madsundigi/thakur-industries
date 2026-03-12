@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -23,7 +22,7 @@ const clusters = [
   { title: "Gear Hardening", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana", desc: "Tooth-by-tooth hardening for maximum wear resistance." },
   { title: "On-site Services", href: "/induction-heat-treatment/on-site", desc: "Mobile induction solutions for large components." },
   { title: "Crankshafts", href: "/induction-heat-treatment/crankshafts-induction-hardening-ludhiana", desc: "Specialized engine component heat treatment." },
-  { title: "Bearings & Races", href: "/induction-heat-treatment/bearings", desc: "Hardening solutions for rotational stability." },
+  { title: "Bearings & Races", href: "/induction-heat-treatment/induction-hardening-bearings-ludhiana", desc: "Hardening solutions for rotational stability." },
 ];
 
 export default function PillarPage() {

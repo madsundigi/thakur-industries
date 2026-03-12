@@ -1,4 +1,3 @@
-
 export const SITE_NAME = 'Thakur Industries';
 export const SITE_TAGLINE = 'Precision Induction Hardening & Heat Treatment in Ludhiana, Punjab.';
 export const SITE_DESCRIPTION = 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab. Serving nearby Haryana & Delhi industries.';
@@ -20,7 +19,7 @@ export const NAV_LINKS = [
       { href: '/induction-heat-treatment/induction-hardening-gears-ludhiana', label: 'Gear Hardening' },
       { href: '/induction-heat-treatment/on-site', label: 'On-site Services' },
       { href: '/induction-heat-treatment/crankshafts-induction-hardening-ludhiana', label: 'Crankshaft Hardening' },
-      { href: '/induction-heat-treatment/bearings', label: 'Bearing Hardening' },
+      { href: '/induction-heat-treatment/induction-hardening-bearings-ludhiana', label: 'Bearing Hardening' },
     ] 
   },
   { href: '/industries', label: 'Industries' },
