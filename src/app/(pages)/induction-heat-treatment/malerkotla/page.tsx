@@ -74,15 +74,19 @@ export default function MalerkotlaPage() {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    "Shaft Hardening",
-                    "Gear Tooth Induction",
-                    "Bearing Race Treatment",
-                    "On-site Hardening"
+                    { title: "Shaft Hardening", href: "/induction-heat-treatment/induction-hardening-shafts-ludhiana" },
+                    { title: "Gear Tooth Induction", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana" },
+                    { title: "Bearing Race Treatment", href: "/induction-heat-treatment/induction-hardening-bearings-ludhiana" },
+                    { title: "On-site Hardening", href: "/induction-heat-treatment/on-site" }
                   ].map(item => (
-                    <div key={item} className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border">
-                      <CheckCircle2 className="h-5 w-5 text-primary" />
-                      <span className="font-bold text-foreground uppercase tracking-tight text-xs">{item}</span>
-                    </div>
+                    <Link 
+                      key={item.title} 
+                      href={item.href}
+                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group"
+                    >
+                      <CheckCircle2 className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+                      <span className="font-bold text-foreground uppercase tracking-tight text-xs group-hover:text-primary transition-colors">{item.title}</span>
+                    </Link>
                   ))}
                 </div>
               </div>

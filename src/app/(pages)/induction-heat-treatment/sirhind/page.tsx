@@ -50,7 +50,7 @@ export default function SirhindPage() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">
-                Technical <span className="text-primary">Support</span>
+                Industrial <span className="text-primary">Capabilities</span>
               </h2>
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground">
@@ -58,15 +58,19 @@ export default function SirhindPage() {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    "Crankshaft Hardening",
-                    "Gear Surface Treatment",
-                    "Stress Relief",
-                    "Local logistics support"
+                    { title: "Shaft Hardening", href: "/induction-heat-treatment/induction-hardening-shafts-ludhiana" },
+                    { title: "Gear Tooth Induction", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana" },
+                    { title: "Bearing Race Treatment", href: "/induction-heat-treatment/induction-hardening-bearings-ludhiana" },
+                    { title: "On-site Hardening", href: "/induction-heat-treatment/on-site" }
                   ].map(item => (
-                    <div key={item} className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border">
-                      <ShieldCheck className="h-5 w-5 text-primary" />
-                      <span className="font-bold text-foreground uppercase tracking-tight text-xs">{item}</span>
-                    </div>
+                    <Link 
+                      key={item.title} 
+                      href={item.href}
+                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group"
+                    >
+                      <ShieldCheck className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+                      <span className="font-bold text-foreground uppercase tracking-tight text-xs group-hover:text-primary transition-colors">{item.title}</span>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -99,7 +103,7 @@ export default function SirhindPage() {
               {[
                 { title: "Shaft Hardening", href: "/induction-heat-treatment/induction-hardening-shafts-ludhiana", icon: Settings },
                 { title: "Gear Hardening", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana", icon: Boxes },
-                { title: "Main Guide", href: "/induction-heat-treatment", icon: Cpu }
+                { title: "Main Process", href: "/induction-heat-treatment", icon: Cpu }
               ].map((link, i) => (
                 <Link key={i} href={link.href} className="group">
                   <motion.div 
@@ -109,7 +113,7 @@ export default function SirhindPage() {
                   >
                     <link.icon className="h-8 w-8 text-primary mb-4" />
                     <h4 className="font-black uppercase italic text-foreground group-hover:text-primary transition-colors text-sm">{link.title}</h4>
-                    <p className="text-xs text-muted-foreground mt-2">View Process Details</p>
+                    <p className="text-xs text-muted-foreground mt-2">Explore Our Process</p>
                   </motion.div>
                 </Link>
               ))}

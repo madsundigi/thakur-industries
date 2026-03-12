@@ -50,7 +50,7 @@ export default function DhuriPage() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">
-                Precision <span className="text-primary">Induction</span>
+                Industrial <span className="text-primary">Capabilities</span>
               </h2>
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground">
@@ -58,15 +58,19 @@ export default function DhuriPage() {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    "Shaft Tempering",
-                    "Internal Bore Hardening",
-                    "On-site mobile units",
-                    "Rapid Quote Response"
+                    { title: "Shaft Hardening", href: "/induction-heat-treatment/induction-hardening-shafts-ludhiana" },
+                    { title: "Gear Tooth Induction", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana" },
+                    { title: "Bearing Race Treatment", href: "/induction-heat-treatment/induction-hardening-bearings-ludhiana" },
+                    { title: "On-site Hardening", href: "/induction-heat-treatment/on-site" }
                   ].map(item => (
-                    <div key={item} className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border">
-                      <ShieldCheck className="h-5 w-5 text-primary" />
-                      <span className="font-bold text-foreground uppercase tracking-tight text-xs">{item}</span>
-                    </div>
+                    <Link 
+                      key={item.title} 
+                      href={item.href}
+                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group"
+                    >
+                      <ShieldCheck className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+                      <span className="font-bold text-foreground uppercase tracking-tight text-xs group-hover:text-primary transition-colors">{item.title}</span>
+                    </Link>
                   ))}
                 </div>
               </div>
