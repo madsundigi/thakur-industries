@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -16,7 +15,8 @@ import {
   Clock,
   Gauge,
   Cpu,
-  Search
+  Search,
+  Droplet
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
@@ -336,4 +336,28 @@ export default function ShaftHardeningSEOPage() {
       </div>
     </>
   );
+}
+
+function Globe(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20" />
+      <path d="M2 12h20" />
+      <path d="M12 2a14.5 14.5 0 0 1 0 20" />
+      <path d="M2 12a14.5 14.5 0 0 0 20 0" />
+      <path d="M2 12a14.5 14.5 0 0 1 20 0" />
+    </svg>
+  )
 }
