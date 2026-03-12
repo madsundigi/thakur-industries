@@ -1,3 +1,4 @@
+
 export const SITE_NAME = 'Thakur Industries';
 export const SITE_TAGLINE = 'Precision Induction Hardening & Heat Treatment in Ludhiana, Punjab.';
 export const SITE_DESCRIPTION = 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab. Serving nearby Haryana & Delhi industries.';
@@ -15,7 +16,7 @@ export const NAV_LINKS = [
     label: 'Heat Treatment',
     subLinks: [
       { href: '/induction-heat-treatment', label: 'Main Guide (Pillar)' },
-      { href: '/induction-heat-treatment/shafts', label: 'Shaft Hardening' },
+      { href: '/induction-heat-treatment/induction-hardening-shafts-ludhiana', label: 'Shaft Hardening' },
       { href: '/induction-heat-treatment/gears', label: 'Gear Hardening' },
       { href: '/induction-heat-treatment/on-site', label: 'On-site Services' },
       { href: '/induction-heat-treatment/crankshafts', label: 'Crankshaft Hardening' },
@@ -47,7 +48,7 @@ export const SERVICES = [
   {
     id: 'shaft-hardening',
     title: 'Shaft Hardening',
-    href: '/induction-heat-treatment/shafts',
+    href: '/induction-heat-treatment/induction-hardening-shafts-ludhiana',
     description: 'Specialized induction hardening for automotive, industrial, and agricultural shafts.',
     shortDescription: 'Focused heat treatment for all types of industrial shafts.',
     image: 'appShaftHardening'

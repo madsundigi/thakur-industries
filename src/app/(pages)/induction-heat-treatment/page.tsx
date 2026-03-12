@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -18,7 +19,7 @@ const fadeInBottom = {
 };
 
 const clusters = [
-  { title: "Shaft Hardening", href: "/induction-heat-treatment/shafts", desc: "Precision treatment for drive and transmission shafts." },
+  { title: "Shaft Hardening", href: "/induction-heat-treatment/induction-hardening-shafts-ludhiana", desc: "Precision treatment for drive and transmission shafts." },
   { title: "Gear Hardening", href: "/induction-heat-treatment/gears", desc: "Tooth-by-tooth hardening for maximum wear resistance." },
   { title: "On-site Services", href: "/induction-heat-treatment/on-site", desc: "Mobile induction solutions for large components." },
   { title: "Crankshafts", href: "/induction-heat-treatment/crankshafts", desc: "Specialized engine component heat treatment." },

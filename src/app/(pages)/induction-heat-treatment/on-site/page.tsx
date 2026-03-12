@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -79,7 +80,7 @@ export default function OnSiteClusterPage() {
           <section className="py-16 border-t border-border">
             <h2 className="text-2xl font-black uppercase italic tracking-tighter mb-8 text-center">Related <span className="text-primary">Clusters</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Link href="/induction-heat-treatment/shafts" className="p-6 bg-card border border-border rounded-xl hover:border-primary/30 transition-all flex items-center justify-between group">
+              <Link href="/induction-heat-treatment/induction-hardening-shafts-ludhiana" className="p-6 bg-card border border-border rounded-xl hover:border-primary/30 transition-all flex items-center justify-between group">
                 <div>
                   <h4 className="font-black uppercase italic text-foreground group-hover:text-primary transition-colors">Shaft Hardening</h4>
                   <p className="text-xs text-muted-foreground mt-1">Drive & Transmission solutions.</p>
