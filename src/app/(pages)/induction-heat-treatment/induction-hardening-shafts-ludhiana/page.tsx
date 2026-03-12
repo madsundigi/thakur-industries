@@ -13,15 +13,29 @@ import {
   Search, 
   Droplet,
   Gauge,
-  FileText
+  FileText,
+  Phone,
+  MessageSquare,
+  Boxes,
+  Truck
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_URL, SITE_PHONE_NUMBER, SITE_ADDRESS } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+
+// Helper for event tracking
+const trackEvent = (action: string, label: string) => {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', action, {
+      'event_category': 'Engagement',
+      'event_label': label
+    });
+  }
+};
 
 // Diverse animation variants for different sections
 const slideInLeft = {
@@ -56,31 +70,29 @@ export default function ShaftHardeningSEOPage() {
   const machineImage = PlaceHolderImages.find(img => img.id === 'blogShaftsAndAxles');
   const testImage = PlaceHolderImages.find(img => img.id === 'blogHardnessTesting');
 
-  const pageSchema = {
+  const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Induction Hardening for Shafts — Precision Induction Heat Treatment in Ludhiana",
-    "description": "Precision induction hardening for drive shafts, spindles & axles. On-site & workshop services in Ludhiana — case depths to spec, hardness testing, fast quotes.",
+    "@type": "Service",
+    "name": "Induction Hardening for Shafts",
     "url": `${SITE_URL}/induction-heat-treatment/induction-hardening-shafts-ludhiana/`,
-    "mainEntity": {
-      "@type": "Service",
-      "serviceType": "Induction Hardening for Shafts",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": SITE_NAME,
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ludhiana",
-          "addressRegion": "Punjab",
-          "addressCountry": "IN"
-        }
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": SITE_NAME,
+      "telephone": SITE_PHONE_NUMBER,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri",
+        "addressLocality": "Ludhiana",
+        "addressRegion": "Punjab",
+        "addressCountry": "IN"
       }
-    }
+    },
+    "areaServed": ["Ludhiana","Jalandhar","Nawanshahr","Jagraon","Chandigarh"]
   };
 
   return (
     <>
-      <JsonLd data={pageSchema} />
+      <JsonLd data={serviceSchema} />
       <div className="bg-background overflow-x-hidden">
         <div className="container mx-auto px-4 md:px-6">
           
@@ -135,7 +147,7 @@ export default function ShaftHardeningSEOPage() {
                 {machineImage && (
                   <Image 
                     src={machineImage.imageUrl} 
-                    alt="Induction hardening machine treating a drive shaft" 
+                    alt="Induction hardening machine treating a drive shaft in Ludhiana workshop" 
                     fill 
                     className="object-cover"
                   />
@@ -350,13 +362,45 @@ export default function ShaftHardeningSEOPage() {
               {testImage && (
                 <Image 
                   src={testImage.imageUrl} 
-                  alt="Rockwell hardness test" 
+                  alt="Rockwell hardness test of induction hardened shaft" 
                   fill 
                   className="object-cover"
                 />
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </motion.div>
+          </section>
+
+          {/* Internal Linking / Related Services */}
+          <section className="py-24 border-t border-border">
+            <motion.h2 
+              className="text-2xl md:text-4xl font-black uppercase italic tracking-tighter mb-12 text-center"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              Explore <span className="text-primary">Related</span> Services
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {[
+                { title: "Induction Hardening Pillar", href: "/induction-heat-treatment", icon: Cpu, label: "Main Guide" },
+                { title: "Induction Hardening for Gears", href: "/induction-heat-treatment/gears", icon: Boxes, label: "Specialized Gears" },
+                { title: "On-site Induction Hardening", href: "/induction-heat-treatment/on-site", icon: Truck, label: "Mobile Units" }
+              ].map((link, i) => (
+                <Link key={i} href={link.href} className="group">
+                  <motion.div 
+                    variants={scaleUp}
+                    whileHover={{ y: -5 }}
+                    className="p-8 bg-secondary/30 border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center"
+                  >
+                    <link.icon className="h-8 w-8 text-primary mb-4" />
+                    <h4 className="font-black uppercase italic text-foreground group-hover:text-primary transition-colors text-sm">{link.title}</h4>
+                    <p className="text-xs text-muted-foreground mt-2">{link.label}</p>
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
           </section>
 
           {/* FAQ - Bottom Slide Up */}
@@ -400,6 +444,24 @@ export default function ShaftHardeningSEOPage() {
 
         </div>
         <CTASection />
+
+        {/* Mobile Sticky CTA */}
+        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden flex border-t border-border shadow-2xl">
+          <a 
+            href={`tel:${SITE_PHONE_NUMBER}`} 
+            className="flex-1 bg-accent text-accent-foreground py-4 text-center text-sm font-bold flex items-center justify-center gap-2"
+            onClick={() => trackEvent('phone_call_click', 'Mobile Sticky Call')}
+          >
+            <Phone className="h-4 w-4" /> Call Now
+          </a>
+          <Link 
+            href="/contact" 
+            className="flex-1 bg-primary text-primary-foreground py-4 text-center text-sm font-bold flex items-center justify-center gap-2"
+            onClick={() => trackEvent('cta_click', 'Mobile Sticky Quote')}
+          >
+            <CheckCircle2 className="h-4 w-4" /> Get Quote
+          </Link>
+        </div>
       </div>
     </>
   );
