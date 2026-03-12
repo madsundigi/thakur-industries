@@ -20,7 +20,8 @@ import {
   Settings,
   Activity,
   Circle,
-  Package
+  Package,
+  Truck
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
