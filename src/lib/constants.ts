@@ -1,4 +1,3 @@
-
 export const SITE_NAME = 'Thakur Industries';
 export const SITE_TAGLINE = 'Precision Induction Hardening & Heat Treatment in Ludhiana, Punjab.';
 export const SITE_DESCRIPTION = 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab. Serving nearby Haryana & Delhi industries.';
@@ -12,34 +11,28 @@ export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { 
-    href: '/services', 
-    label: 'Services',
+    href: '/induction-heat-treatment', 
+    label: 'Heat Treatment',
     subLinks: [
-      { href: '/heat-treatment-job-work', label: 'Heat Treatment Job Work' },
-      { href: '/induction-hardening-services', label: 'Induction Hardening' },
-      { href: '/case-hardening-heat-treatment', label: 'Case Hardening' },
-      { href: '/surface-hardening', label: 'Surface Hardening' },
-      { href: '/metal-heat-treatment', label: 'Metal Heat Treatment' },
-      { href: '/heat-treating-steel', label: 'Steel Heat Treating' },
-      { href: '/quenching-process', label: 'Quenching Process' },
-      { href: '/material-heat-treatment', label: 'Material Treatment' },
-      { href: '/component-hardening', label: 'Component Hardening' },
-      { href: '/gear-hardening', label: 'Gear Hardening' },
-      { href: '/shaft-hardening', label: 'Shaft Hardening' },
+      { href: '/induction-heat-treatment', label: 'Main Guide (Pillar)' },
+      { href: '/induction-heat-treatment/shafts', label: 'Shaft Hardening' },
+      { href: '/induction-heat-treatment/gears', label: 'Gear Hardening' },
+      { href: '/induction-heat-treatment/on-site', label: 'On-site Services' },
+      { href: '/induction-heat-treatment/crankshafts', label: 'Crankshaft Hardening' },
+      { href: '/induction-heat-treatment/bearings', label: 'Bearing Hardening' },
     ] 
   },
   { href: '/industries', label: 'Industries' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact Us' },
-  { href: '/privacy-policy', label: 'Privacy Policy' },
 ];
 
 export const SERVICES = [
   {
     id: 'induction-hardening',
     title: 'Induction Hardening',
-    href: '/induction-hardening-services',
-    description: 'A precision surface hardening process using electromagnetic induction to increase wear resistance and fatigue life of steel components. We are a leader in induction hardening in Ludhiana.',
+    href: '/induction-heat-treatment',
+    description: 'A precision surface hardening process using electromagnetic induction to increase wear resistance and fatigue life of steel components.',
     shortDescription: 'Precision surface hardening to increase wear resistance and fatigue life of steel parts.',
     image: 'serviceInductionHardening'
   },
@@ -47,69 +40,16 @@ export const SERVICES = [
     id: 'case-hardening-heat-treatment',
     title: 'Case Hardening',
     href: '/case-hardening-heat-treatment',
-    description: 'We provide expert case hardening job work in Punjab, hardening the surface of a metal object while the core remains soft, creating a durable "case". Ideal for gears and shafts.',
-    shortDescription: 'Hardening the surface of a metal object while the core remains soft, creating a durable "case".',
+    description: 'Expert case hardening job work in Punjab, hardening the surface of a metal object while the core remains soft.',
+    shortDescription: 'Hardening the surface of a metal object while the core remains soft.',
     image: 'serviceCaseHardening'
   },
   {
-    id: 'surface-hardening',
-    title: 'Surface Hardening',
-    href: '/surface-hardening',
-    description: 'Our surface hardening services in Punjab cover a range of processes to improve the mechanical properties of component surfaces for enhanced durability.',
-    shortDescription: 'A range of processes to improve the mechanical properties of component surfaces.',
-    image: 'serviceHeatTreatment'
-  },
-   {
-    id: 'metal-heat-treatment',
-    title: 'Metal Heat Treatment',
-    href: '/metal-heat-treatment',
-    description: 'Comprehensive metal heat treatment solutions including annealing, tempering, and stress relieving to achieve desired metallurgical properties.',
-    shortDescription: 'Altering physical and chemical properties of metals for industrial applications.',
-    image: 'heroMachine'
-  },
-];
-
-export const INDUSTRIES = [
-  {
-    id: 'automotive',
-    title: 'Automotive Parts',
-    description: 'Providing critical automotive component hardening for engine parts, gears, and transmission components to enhance performance and durability in Ludhiana.',
-    image: 'industryAutomotive',
-    components: ['Gears', 'Shafts', 'Axles', 'Camshafts', 'Crankshafts', 'Steering racks', 'Transmission shafts', 'CV joints']
-  },
-  {
-    id: 'agriculture',
-    title: 'Agricultural Implements',
-    description: 'Specializing in agricultural tool heat treatment, hardening parts such as plowshares, harvester blades, and gearbox components to withstand harsh field conditions.',
-    image: 'industryAgriculture',
-    components: ['Tractor Parts', 'Farm Tools', 'Harvester components', 'Tillage tools', 'Gear wheels', 'Axles', 'Shafts']
-  },
-  {
-    id: 'machine-tool',
-    title: 'Machinery & Engineering',
-    description: 'Hardening precision components for machine tools, engineering components, and other industrial machinery to ensure accuracy and longevity.',
-    image: 'industryMachineTool',
-    components: ['Tool spindles', 'Lead screws', 'Guide rails', 'Hardened slides', 'Mandrels', 'Precision Gears']
-  },
-   {
-    id: 'custom-job-work',
-    title: 'Custom Job Work for OEMs',
-    description: 'We partner with Original Equipment Manufacturers (OEMs) to provide custom heat treatment solutions tailored to their unique specifications and production needs.',
-    image: 'serviceCustomSolutions',
-    components: ['Custom Gears', 'Specialized Shafts', 'OEM Components', 'Bespoke Parts', 'High-volume production runs']
-  },
-  {
-    id: 'aerospace',
-    title: 'Aerospace Industry',
-    description: 'Meeting stringent standards with precise aerospace part hardening for landing gear, turbine blades, and other flight-critical components for clients across India.',
-    image: 'industryAerospace',
-    components: ['Landing gear components', 'Actuator parts', 'Drive shafts', 'Helicopter transmission parts', 'Jet engine components']
-  },
-  {
-    id: 'railway',
-    title: 'Railway Industry',
-    description: 'Enhancing the strength and wear resistance of railway components like axles, wheels, and tracks with specialized metal heat treatment in Punjab.',
-    image: 'industryRailway',
-    components: ['Axles', 'Gear wheels', 'Coupling rods', 'Rail pins', 'Brake discs']
+    id: 'shaft-hardening',
+    title: 'Shaft Hardening',
+    href: '/induction-heat-treatment/shafts',
+    description: 'Specialized induction hardening for automotive, industrial, and agricultural shafts.',
+    shortDescription: 'Focused heat treatment for all types of industrial shafts.',
+    image: 'appShaftHardening'
   },
 ];
