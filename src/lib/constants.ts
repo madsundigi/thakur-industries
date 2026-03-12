@@ -17,7 +17,7 @@ export const NAV_LINKS = [
     subLinks: [
       { href: '/induction-heat-treatment', label: 'Main Guide (Pillar)' },
       { href: '/induction-heat-treatment/induction-hardening-shafts-ludhiana', label: 'Shaft Hardening' },
-      { href: '/induction-heat-treatment/gears', label: 'Gear Hardening' },
+      { href: '/induction-heat-treatment/induction-hardening-gears-ludhiana', label: 'Gear Hardening' },
       { href: '/induction-heat-treatment/on-site', label: 'On-site Services' },
       { href: '/induction-heat-treatment/crankshafts', label: 'Crankshaft Hardening' },
       { href: '/induction-heat-treatment/bearings', label: 'Bearing Hardening' },

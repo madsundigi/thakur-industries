@@ -18,7 +18,8 @@ import {
   Phone,
   MessageSquare,
   Boxes,
-  Truck
+  History,
+  Settings
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
@@ -27,6 +28,7 @@ import { SITE_NAME, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 // Helper for event tracking
 const trackEvent = (action: string, label: string) => {
@@ -38,7 +40,7 @@ const trackEvent = (action: string, label: string) => {
   }
 };
 
-// Diverse animation variants
+// Animations
 const slideInLeft = {
   hidden: { opacity: 0, x: -60 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeOut' } }
@@ -67,15 +69,16 @@ const staggerContainer = {
   }
 };
 
-export default function ShaftHardeningSEOPage() {
-  const machineImage = PlaceHolderImages.find(img => img.id === 'blogShaftsAndAxles');
-  const testImage = PlaceHolderImages.find(img => img.id === 'blogHardnessTesting');
+export default function GearHardeningSEOPage() {
+  const gearImage = PlaceHolderImages.find(img => img.id === 'appGearHardening');
+  const qcImage = PlaceHolderImages.find(img => img.id === 'processHardening');
 
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Induction Hardening for Shafts",
-    "url": `${SITE_URL}/induction-heat-treatment/induction-hardening-shafts-ludhiana/`,
+    "name": "Induction Hardening for Gears",
+    "url": `${SITE_URL}/induction-heat-treatment/induction-hardening-gears-ludhiana/`,
+    "description": "Precision induction hardening for gears and gear teeth. Improve wear life and fatigue resistance in Ludhiana heat treatment workshop.",
     "provider": {
       "@type": "LocalBusiness",
       "name": SITE_NAME,
@@ -88,7 +91,7 @@ export default function ShaftHardeningSEOPage() {
         "addressCountry": "IN"
       }
     },
-    "areaServed": ["Ludhiana","Jalandhar","Nawanshahr","Jagraon","Chandigarh"]
+    "areaServed": ["Ludhiana","Jalandhar","Rajpura","Ambala","Delhi NCR"]
   };
 
   return (
@@ -98,9 +101,9 @@ export default function ShaftHardeningSEOPage() {
         <div className="container mx-auto px-4 md:px-6">
           
           <PageHeader
-            title="Shaft Induction"
+            title="Gear Induction"
             highlightedWord="Hardening"
-            description="Precision-engineered surface hardening for drive shafts, spindles, axles, and custom profiles. We deliver repeatable case depths and surface hardness tailored to your exact drawing specifications."
+            description="Extend gear life with precision tooth-by-tooth surface hardening. We specialize in enhancing wear resistance and load-bearing capacity for spur, helical, and bevel gears used in automotive and industrial transmissions."
             className="text-center"
           />
 
@@ -113,11 +116,11 @@ export default function ShaftHardeningSEOPage() {
             variants={fadeInUp}
           >
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-medium">
-              Thakur Industries provides professional heat treatment job work across Ludhiana's manufacturing clusters. Whether you require high-volume OEM batch processing or specialized custom hardening, our metallurgical expertise ensures your shafts withstand the most demanding torsional and bending loads.
+              Gears and pinions are the heart of power transmission. At <strong>{SITE_NAME}</strong>, our induction heat treatment ensures gear teeth achieve maximum HRC levels while the core remains ductile enough to absorb sudden impact and vibration. Serving Ludhiana's OEM and industrial clusters with consistent, high-accuracy job work.
             </p>
           </motion.section>
 
-          {/* Localized Heating - Split Slide Reveal */}
+          {/* What we treat - Split Reveal */}
           <section className="py-16 md:py-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               <motion.div
@@ -127,15 +130,27 @@ export default function ShaftHardeningSEOPage() {
                 variants={slideInLeft}
               >
                 <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">
-                  Advanced <span className="text-primary">Localized</span> Heating
+                  Types of <span className="text-primary">Gears</span> We Harden
                 </h2>
                 <div className="space-y-6 text-base md:text-lg text-muted-foreground font-medium">
                   <p>
-                    Induction hardening is a sophisticated surface heat treatment that uses electromagnetic fields to heat the outer surface layer of a shaft rapidly. This localized approach allows for extreme precision.
+                    Different gear geometries require specialized induction coil designs. We provide customized hardening profiles for:
                   </p>
-                  <p>
-                    Once the target temperature is reached, the component is immediately quenched, transforming the surface into a hard martensitic structure while preserving a tough, ductile core.
-                  </p>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {[
+                      "Spur & Helical Gears",
+                      "Bevel & Miter Gears",
+                      "Internal & Ring Gears",
+                      "Pinions & Splines",
+                      "Worm Gears",
+                      "Drive Sprockets"
+                    ].map(item => (
+                      <li key={item} className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border">
+                        <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />
+                        <span className="font-bold text-foreground uppercase tracking-tight text-xs">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
               <motion.div 
@@ -145,10 +160,10 @@ export default function ShaftHardeningSEOPage() {
                 viewport={{ once: true }}
                 variants={slideInRight}
               >
-                {machineImage && (
+                {gearImage && (
                   <Image 
-                    src={machineImage.imageUrl} 
-                    alt="Induction hardening machine treating a drive shaft in Ludhiana workshop" 
+                    src={gearImage.imageUrl} 
+                    alt="Operator preparing gear for induction hardening in Ludhiana workshop" 
                     fill 
                     className="object-cover"
                   />
@@ -158,7 +173,7 @@ export default function ShaftHardeningSEOPage() {
             </div>
           </section>
 
-          {/* Advantage Section - Staggered Scale Reveal */}
+          {/* Technical Targets - Staggered Scale */}
           <section className="py-16 md:py-24 bg-secondary/20 rounded-[2rem] px-6 md:px-12 border border-primary/10">
             <motion.h2 
               className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-12 text-center leading-none"
@@ -167,7 +182,7 @@ export default function ShaftHardeningSEOPage() {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              The <span className="text-primary">Induction</span> Advantage
+              Technical <span className="text-primary">Targets</span>
             </motion.h2>
             <motion.div 
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
@@ -177,14 +192,14 @@ export default function ShaftHardeningSEOPage() {
               viewport={{ once: true }}
             >
               {[
-                { title: "Localized Heating", desc: "Hardens only the critical journals or splines, protecting the rest of the component." },
-                { title: "Zero Distortion", desc: "Localized heat prevents thermal warping, maintaining tight dimensional tolerances." },
-                { title: "High Productivity", desc: "Fast cycle times (seconds per part) enable high-volume manufacturing throughput." },
-                { title: "Digital Precision", desc: "PLC-controlled cycles ensure identical hardness and case depth for every part." },
-                { title: "Energy Efficient", desc: "Optimized power usage focused strictly on the surface area being treated." }
+                { title: "Hardness Range", desc: "HRC 55–62 for maximum wear resistance, tailored to steel grades like 20MnCr5 or EN24." },
+                { title: "Case Depth", desc: "Precise control from 0.8 mm up to 3.5 mm, ensuring load support without tooth brittleness." },
+                { title: "Profile Control", desc: "Targeted root and flank hardening to prevent pitting and fatigue failure." },
+                { title: "Distortion Control", desc: "Selective heating minimizes bore warping, reducing post-process grinding time." },
+                { title: "Material Science", desc: "Expertise in Carbon Steels, Case Hardening Alloys, and Tool Steels." }
               ].map((item, i) => (
                 <motion.div key={i} variants={scaleUp} className="bg-card/50 p-8 rounded-2xl border border-border group hover:border-primary/30 transition-all">
-                  <CheckCircle2 className="h-8 w-8 text-primary mb-6 transition-transform group-hover:scale-110" />
+                  <Zap className="h-8 w-8 text-primary mb-6" />
                   <h3 className="font-bold text-xl mb-3 uppercase italic tracking-tighter group-hover:text-primary transition-colors">{item.title}</h3>
                   <p className="text-sm text-muted-foreground font-medium leading-relaxed">{item.desc}</p>
                 </motion.div>
@@ -192,8 +207,59 @@ export default function ShaftHardeningSEOPage() {
             </motion.div>
           </section>
 
-          {/* Workflow Section */}
+          {/* Profile & Distortion Section */}
           <section className="py-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <motion.div 
+                className="relative h-80 md:h-[400px] rounded-3xl overflow-hidden border border-primary/20 shadow-2xl lg:order-last"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={slideInRight}
+              >
+                {qcImage && (
+                  <Image 
+                    src={qcImage.imageUrl} 
+                    alt="Gear tooth hardness test using digital microhardness tester" 
+                    fill 
+                    className="object-cover"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={slideInLeft}
+              >
+                <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">
+                  Distortion <span className="text-primary">Mitigation</span>
+                </h2>
+                <div className="space-y-6 text-lg text-muted-foreground font-medium">
+                  <p>
+                    Unlike case carburizing which heats the entire gear, induction only targets the teeth. This results in:
+                  </p>
+                  <ul className="space-y-4">
+                    {[
+                      "Maintained bore size and concentricity",
+                      "Minimal flank distortion for better tooth contact",
+                      "Reduced internal stresses compared to furnace methods",
+                      "Pre-fixturing to guarantee geometric accuracy"
+                    ].map(item => (
+                      <li key={item} className="flex items-start gap-3">
+                        <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            </div>
+          </section>
+
+          {/* Workflow/Quality Section */}
+          <section className="py-24 border-t border-border">
             <motion.h2 
               className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-16 text-center leading-none"
               initial="hidden"
@@ -201,92 +267,25 @@ export default function ShaftHardeningSEOPage() {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Process <span className="text-primary">Workflow</span>
+              Quality <span className="text-primary">Assurance</span>
             </motion.h2>
-            <motion.div 
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: FileText, title: "Engineering Review", desc: "Technical assessment of your drawings (DWG/STEP) for metallurgical planning." },
-                { icon: Gauge, title: "Target Definition", desc: "Confirmation of surface hardness (HRC) and case depth specifications." },
-                { icon: Cpu, title: "Custom Coil Setup", desc: "In-house coil design perfectly matched to your shaft's unique geometry." },
-                { icon: Zap, title: "Induction Heating", desc: "Programmable digital profiles for high-accuracy temperature control." },
-                { icon: Droplet, title: "Controlled Quench", desc: "Advanced polymer or water quenching based on material characteristics." },
-                { icon: Search, title: "Final QA", desc: "Comprehensive Rockwell testing and runout verification for OEM compliance." }
+                { icon: Search, title: "Tooth Root Hardness", desc: "Ensuring maximum bending strength at the root fillet." },
+                { icon: Gauge, title: "Flank Profiling", desc: "Uniform hardness across the active tooth flank." },
+                { icon: Cpu, title: "Form Inspection", desc: "Dimensional verification of tooth profile and lead." },
+                { icon: FileText, title: "Traceability", desc: "Digital logging of every cycle for OEM documentation." }
               ].map((step, i) => (
-                <motion.div key={i} variants={fadeInUp} className="flex flex-col items-center text-center group">
-                  <motion.div 
-                    whileHover={{ rotate: 5, scale: 1.1 }}
-                    className="h-20 w-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 shadow-[0_0_15px_rgba(255,0,0,0.1)] group-hover:shadow-[0_0_25px_rgba(255,0,0,0.3)]"
-                  >
-                    <step.icon className="h-10 w-10 text-primary group-hover:text-inherit" />
-                  </motion.div>
-                  <h3 className="text-2xl font-bold uppercase italic tracking-tighter mb-3">{step.title}</h3>
-                  <p className="text-muted-foreground font-medium max-w-xs mx-auto leading-relaxed">{step.desc}</p>
+                <motion.div key={i} variants={scaleUp} className="flex flex-col items-center text-center p-8 bg-card rounded-2xl border border-border group hover:border-primary/30 transition-all">
+                  <step.icon className="h-12 w-12 text-primary mb-6" />
+                  <h3 className="text-xl font-bold uppercase italic tracking-tighter mb-3">{step.title}</h3>
+                  <p className="text-xs text-muted-foreground font-medium leading-relaxed">{step.desc}</p>
                 </motion.div>
               ))}
-            </motion.div>
+            </div>
           </section>
 
-          {/* Verification Section */}
-          <section className="py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start border-t border-border">
-            <motion.div 
-              className="space-y-8"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={slideInLeft}
-            >
-              <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter leading-none">
-                Quality <span className="text-primary">Verification</span>
-              </h2>
-              <p className="text-lg text-muted-foreground font-medium">
-                We maintain full traceability for all OEM batches. Every component is verified against your internal standards using precision laboratory equipment.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  "HRC Hardness Profiling",
-                  "Microhardness Traverse",
-                  "Magnetic Particle (NDT)",
-                  "Concentricity Validation"
-                ].map((test, idx) => (
-                  <motion.div 
-                    key={test} 
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: idx * 0.1 }}
-                    className="flex items-center gap-3 p-5 bg-secondary/30 rounded-xl border border-border"
-                  >
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />
-                    <span className="font-bold text-foreground uppercase tracking-tight text-xs">{test}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-            <motion.div 
-              className="relative h-80 md:h-[400px] rounded-3xl overflow-hidden border border-primary/20 shadow-2xl"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={slideInRight}
-            >
-              {testImage && (
-                <Image 
-                  src={testImage.imageUrl} 
-                  alt="Rockwell hardness test of induction hardened shaft" 
-                  fill 
-                  className="object-cover"
-                />
-              )}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            </motion.div>
-          </section>
-
-          {/* Internal Linking */}
+          {/* Related Clusters */}
           <section className="py-24 border-t border-border">
             <motion.h2 
               className="text-2xl md:text-4xl font-black uppercase italic tracking-tighter mb-12 text-center"
@@ -295,13 +294,13 @@ export default function ShaftHardeningSEOPage() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              Explore <span className="text-primary">Related</span> Services
+              Related <span className="text-primary">Services</span>
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
-                { title: "Induction Hardening Pillar", href: "/induction-heat-treatment", icon: Cpu, label: "Main Guide" },
-                { title: "Induction Hardening for Gears", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana", icon: Boxes, label: "Specialized Gears" },
-                { title: "On-site Induction Hardening", href: "/induction-heat-treatment/on-site", icon: Truck, label: "Mobile Units" }
+                { title: "Shaft Hardening", href: "/induction-heat-treatment/induction-hardening-shafts-ludhiana", icon: Settings, label: "Transmission Shafts" },
+                { title: "Induction Pillar", href: "/induction-heat-treatment", icon: Cpu, label: "Main Guide" },
+                { title: "Crankshaft Hardening", href: "/induction-heat-treatment/crankshafts", icon: History, label: "Engine Components" }
               ].map((link, i) => (
                 <Link key={i} href={link.href} className="group">
                   <motion.div 
@@ -327,31 +326,31 @@ export default function ShaftHardeningSEOPage() {
             variants={fadeInUp}
           >
             <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-12 text-center leading-none">
-              Process <span className="text-primary">Insights</span>
+              Gear Hardening <span className="text-primary">FAQs</span>
             </h2>
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="border rounded-2xl bg-secondary/30 px-8 transition-all hover:border-primary/20 group">
                 <AccordionTrigger className="text-left font-bold uppercase italic tracking-tight text-lg md:text-xl hover:text-primary py-8 hover:no-underline">
-                  Will induction hardening change shaft dimensions?
+                  Is induction hardening better than case carburizing for gears?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-8 font-medium leading-relaxed text-base">
-                  Minor surface expansion is normal. However, our programmable quench systems limit runout to within extreme tolerances (typically ±0.02mm), greatly reducing post-process grinding time.
+                  Induction hardening is significantly faster and creates far less distortion because only the teeth are heated. However, for extremely high-load small pitch gears, carburizing may be preferred. We consult on each application to ensure the best fit.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2" className="border rounded-2xl bg-secondary/30 px-8 transition-all hover:border-primary/20 group">
                 <AccordionTrigger className="text-left font-bold uppercase italic tracking-tight text-lg md:text-xl hover:text-primary py-8 hover:no-underline">
-                  Do you provide full metallurgical test reports?
+                  Can you harden only the tooth flank or root as well?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-8 font-medium leading-relaxed text-base">
-                  Yes. We provide digital hardness maps and certificates of compliance for every batch, including case depth verification and surface integrity checks.
+                  Yes. Using contour-following induction coils, we can precisely target the root for bending strength and the flank for wear resistance, tailored to your gear pitch and module.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3" className="border rounded-2xl bg-secondary/30 px-8 transition-all hover:border-primary/20 group">
                 <AccordionTrigger className="text-left font-bold uppercase italic tracking-tight text-lg md:text-xl hover:text-primary py-8 hover:no-underline">
-                  What is the turnaround time for bulk orders?
+                  What is the largest gear diameter you can handle?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-8 font-medium leading-relaxed text-base">
-                  Small-batch workshop processing typically takes 3–7 business days. For massive urgent requirements, we offer scheduled priority slots to keep your production lines moving.
+                  Our workshop can accommodate gears up to 1500mm in diameter. For even larger ring gears or heavy mill components, we offer on-site induction hardening services.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
