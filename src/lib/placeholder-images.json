@@ -1,0 +1,580 @@
+{
+  "placeholderImages": [
+    {
+      "id": "heroMachine",
+      "description": "A close-up of a modern industrial machine with glowing blue lights, representing precision engineering.",
+      "imageUrl": "/images/images/62.png",
+      "imageHint": "industrial machine"
+    },
+    {
+      "id": "heroIndustries",
+      "description": "A collage of industrial parts: a large gear, a tractor plowing a field, and a shiny crankshaft.",
+      "imageUrl": "/images/images/10.png",
+      "imageHint": "industrial collage"
+    },
+    {
+      "id": "serviceInductionHardening",
+      "description": "A glowing red-hot metal cog being treated by an induction hardening machine.",
+      "imageUrl": "https://images.unsplash.com/photo-1735212215919-4a1d7d0917a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMGdlYXJ8ZW58MHx8fHwxNzY5MDg0OTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal gear"
+    },
+    {
+      "id": "serviceCaseHardening",
+      "description": "Cross-section of a metal part showing the hardened outer case and softer core.",
+      "imageUrl": "/images/images/2.jpeg",
+      "imageHint": "metal part"
+    },
+    {
+      "id": "caseHardeningProcess",
+      "description": "A diagram or illustration showing the cross-section of a gear with a highlighted hardened outer case and a softer inner core.",
+      "imageUrl": "/images/images/3.jpeg",
+      "imageHint": "gear cross-section"
+    },
+    {
+      "id": "serviceHeatTreatment",
+      "description": "Interior of an industrial furnace with glowing metal parts.",
+      "imageUrl": "/images/images/4.png",
+      "imageHint": "industrial furnace"
+    },
+    {
+      "id": "serviceSurfaceHardening",
+      "description": "Close-up of a shaft being treated with localized induction heating, showing a glowing red ring.",
+      "imageUrl": "/images/images/5.jpeg",
+      "imageHint": "shaft hardening"
+    },
+    {
+      "id": "serviceCrossSection",
+      "description": "Diagram showing the cross-section of a shaft with a hardened outer layer and a softer, ductile core.",
+      "imageUrl": "/images/images/12.png",
+      "imageHint": "metal cross-section"
+    },
+    {
+      "id": "processQuenching",
+      "description": "A glowing hot metal part being submerged into a quenching tank, creating steam and bubbles.",
+      "imageUrl": "/images/images/6.png",
+      "imageHint": "metal quenching"
+    },
+    {
+      "id": "processHardening",
+      "description": "A close-up of a technician monitoring the induction hardening process on a control panel.",
+      "imageUrl": "/images/images/7.png",
+      "imageHint": "technician machine"
+    },
+    {
+      "id": "processFinishing",
+      "description": "A finished, perfectly hardened and polished metal gear reflecting light.",
+      "imageUrl": "/images/images/8.png",
+      "imageHint": "metal gear"
+    },
+    {
+      "id": "processPreparation",
+      "description": "A clean and polished metal shaft ready for the heat treatment process.",
+      "imageUrl": "/images/images/9.png",
+      "imageHint": "metal shaft"
+    },
+    {
+      "id": "appShaftHardening",
+      "description": "Close-up of a polished crankshaft with perfectly smooth journals.",
+      "imageUrl": "/images/images/13.png",
+      "imageHint": "crankshaft close-up"
+    },
+    {
+      "id": "appGearHardening",
+      "description": "An assortment of different sized industrial gears.",
+      "imageUrl": "/images/images/14.png",
+      "imageHint": "industrial gears"
+    },
+    {
+      "id": "appBearingHardening",
+      "description": "Close-up of a large industrial bearing assembly.",
+      "imageUrl": "/images/images/15.png",
+      "imageHint": "industrial bearing"
+    },
+    {
+      "id": "industryAutomotive",
+      "description": "An assembly line of modern cars being manufactured.",
+      "imageUrl": "/images/images/16.png",
+      "imageHint": "automotive assembly"
+    },
+    {
+      "id": "industryAgriculture",
+      "description": "A modern tractor working in a vast agricultural field.",
+      "imageUrl": "/images/images/17.png",
+      "imageHint": "agricultural field"
+    },
+    {
+      "id": "industryMachineTool",
+      "description": "A close-up of a CNC machine cutting a piece of metal with precision.",
+      "imageUrl": "/images/images/18.png",
+      "imageHint": "CNC machine"
+    },
+    {
+      "id": "serviceCustomSolutions",
+      "description": "An engineer designing a custom part on a computer.",
+      "imageUrl": "/images/images/11.png",
+      "imageHint": "engineer designing"
+    },
+    {
+      "id": "industryAerospace",
+      "description": "An airplane wing being assembled in a modern factory.",
+      "imageUrl": "/images/images/43.png",
+      "imageHint": "aerospace factory"
+    },
+    {
+      "id": "industryRailway",
+      "description": "A close-up of train wheels on a track.",
+      "imageUrl": "/images/images/22.png",
+      "imageHint": "railway wheels"
+    },
+    {
+      "id": "testimonialAvatar1",
+      "description": "Avatar for Karan Singh.",
+      "imageUrl": "/images/images/23.png",
+      "imageHint": "male avatar"
+    },
+    {
+      "id": "testimonialAvatar2",
+      "description": "Avatar for Harpreet Singh.",
+      "imageUrl": "/images/images/24.png",
+      "imageHint": "male avatar"
+    },
+    {
+      "id": "testimonialAvatar3",
+      "description": "Avatar for Rohit Verma.",
+      "imageUrl": "/images/images/25.png",
+      "imageHint": "male avatar"
+    },
+    {
+      "id": "aboutTimeline",
+      "description": "Thakur Industries factory floor showing advanced heat treatment machinery.",
+      "imageUrl": "/images/images/20.png",
+      "imageHint": "factory floor"
+    },
+    {
+      "id": "blogPost1",
+      "description": "Visual representation of the induction hardening process.",
+      "imageUrl": "/images/images/19.png",
+      "imageHint": "hardening process"
+    },
+    {
+      "id": "blogPost2",
+      "description": "Visual comparison of induction hardening and case hardening.",
+      "imageUrl": "/images/images/18.png",
+      "imageHint": "comparison diagram"
+    },
+    {
+      "id": "blogPost4",
+      "description": "Visual showing benefits of induction heat treatment.",
+      "imageUrl": "/images/images/4.png",
+      "imageHint": "benefits infographic"
+    },
+    {
+      "id": "blogPost5",
+      "description": "Various steel components suitable for induction hardening.",
+      "imageUrl": "/images/images/5.jpeg",
+      "imageHint": "steel components"
+    },
+    {
+      "id": "blogAutomotiveParts",
+      "description": "Induction hardening of automotive components.",
+      "imageUrl": "/images/images/26.png",
+      "imageHint": "automotive parts"
+    },
+    {
+      "id": "blogQuenchingRole",
+      "description": "Polymer and water quenching process.",
+      "imageUrl": "/images/images/6.png",
+      "imageHint": "quenching process"
+    },
+    {
+      "id": "blogHardeningComparison",
+      "description": "Comparison of surface hardening and through hardening.",
+      "imageUrl": "/images/images/7.png",
+      "imageHint": "hardening comparison"
+    },
+    {
+      "id": "blogEnSeries",
+      "description": "Various EN series steel components.",
+      "imageUrl": "/images/images/8.png",
+      "imageHint": "steel components"
+    },
+    {
+      "id": "blogToolLife",
+      "description": "A set of industrial tools like dies and punches after heat treatment.",
+      "imageUrl": "/images/images/9.png",
+      "imageHint": "industrial tools"
+    },
+    {
+      "id": "blogDefects",
+      "description": "Illustration showing common induction hardening defects like cracks and soft spots.",
+      "imageUrl": "/images/images/11.png",
+      "imageHint": "hardening defects"
+    },
+    {
+      "id": "blogFlameVsInduction",
+      "description": "Comparison of induction hardening coil and flame hardening torch.",
+      "imageUrl": "/images/images/12.png",
+      "imageHint": "hardening comparison"
+    },
+    {
+      "id": "blogFrequencyComparison",
+      "description": "Infographic comparing high frequency and medium frequency waves.",
+      "imageUrl": "/images/images/13.png",
+      "imageHint": "frequency waves infographic"
+    },
+    {
+      "id": "blogFrequency",
+      "description": "Diagram showing different frequencies for induction hardening.",
+      "imageUrl": "/images/images/14.png",
+      "imageHint": "frequency diagram"
+    },
+    {
+      "id": "blogAgricultural",
+      "description": "Induction hardening of agricultural components.",
+      "imageUrl": "/images/images/15.png",
+      "imageHint": "agricultural components"
+    },
+    {
+      "id": "blogGearProcess",
+      "description": "Illustration showing the gear hardening process.",
+      "imageUrl": "/images/images/16.png",
+      "imageHint": "gear process"
+    },
+    {
+      "id": "blogNorthIndia",
+      "description": "Map of North India highlighting industrial regions.",
+      "imageUrl": "/images/images/17.png",
+      "imageHint": "north india map"
+    },
+    {
+      "id": "blogShaftsAndAxles",
+      "description": "Induction hardening process for industrial shafts and axles.",
+      "imageUrl": "/images/images/19.png",
+      "imageHint": "shafts axles"
+    },
+    {
+      "id": "blogCaseDepth",
+      "description": "A diagram illustrating case depth in a gear tooth.",
+      "imageUrl": "/images/images/20.png",
+      "imageHint": "case depth diagram"
+    },
+    {
+      "id": "blogGearsAndPinions",
+      "description": "Induction hardening of gears and pinions.",
+      "imageUrl": "/images/images/21.png",
+      "imageHint": "gears pinions"
+    },
+    {
+      "id": "blogToolSteel",
+      "description": "Induction hardening of tool steel components.",
+      "imageUrl": "/images/images/23.png",
+      "imageHint": "tool steel"
+    },
+    {
+      "id": "blogGearbox",
+      "description": "Close-up of industrial gearbox components.",
+      "imageUrl": "/images/images/24.png",
+      "imageHint": "gearbox components"
+    },
+    {
+      "id": "blogAutomotiveGears",
+      "description": "A close-up shot of clean, polished automotive gears.",
+      "imageUrl": "/images/images/25.png",
+      "imageHint": "automotive gears"
+    },
+    {
+      "id": "blogCrankshafts",
+      "description": "A close-up of a polished crankshaft and camshaft.",
+      "imageUrl": "/images/images/26.png",
+      "imageHint": "crankshaft camshaft"
+    },
+    {
+      "id": "blogEnergyEfficient",
+      "description": "A graphic showing a factory with green energy symbols like leaves and wind turbines.",
+      "imageUrl": "/images/images/27.png",
+      "imageHint": "green energy"
+    },
+    {
+      "id": "blogForgedParts",
+      "description": "A pile of newly forged, rough metal components.",
+      "imageUrl": "/images/images/28.png",
+      "imageHint": "forged components"
+    },
+    {
+      "id": "blogHardnessTesting",
+      "description": "A technician using a Rockwell hardness tester on a metal part.",
+      "imageUrl": "/images/images/29.png",
+      "imageHint": "hardness tester"
+    },
+    {
+      "id": "blogDistortionControl",
+      "description": "An engineer measuring a metal part with calipers to ensure dimensional accuracy.",
+      "imageUrl": "/images/images/30.png",
+      "imageHint": "metal measurement"
+    },
+    {
+      "id": "blogTransmissionShaft",
+      "description": "A close-up of a transmission shaft with gears.",
+      "imageUrl": "/images/images/31.png",
+      "imageHint": "transmission shaft"
+    },
+    {
+      "id": "blogInductionHeatingWorks",
+      "description": "Diagram showing the working principle of induction heating with a coil and metal part.",
+      "imageUrl": "/images/images/32.png",
+      "imageHint": "induction heating diagram"
+    },
+    {
+      "id": "blogRollerHardening",
+      "description": "A large industrial steel roller being manufactured.",
+      "imageUrl": "/images/images/33.png",
+      "imageHint": "industrial roller"
+    },
+    {
+      "id": "blogTemperatureControl",
+      "description": "A control panel with temperature gauges and dials for an industrial process.",
+      "imageUrl": "/images/images/34.png",
+      "imageHint": "control panel"
+    },
+    {
+      "id": "blogMediumFrequency",
+      "description": "An induction hardening machine with a metal part glowing red hot.",
+      "imageUrl": "/images/images/35.png",
+      "imageHint": "induction hardening"
+    },
+    {
+      "id": "blogEN19_EN24",
+      "description": "An assortment of industrial shafts and gears made from EN19 and EN24 steel.",
+      "imageUrl": "/images/images/36.png",
+      "imageHint": "steel shafts gears"
+    },
+    {
+      "id": "blogQuenchingComparison",
+      "description": "A split image showing water quenching on one side and polymer quenching on the other.",
+      "imageUrl": "/images/images/37.png",
+      "imageHint": "quenching comparison"
+    },
+    {
+      "id": "blogCoilDesign",
+      "description": "A close-up of a custom-wound copper induction coil.",
+      "imageUrl": "/images/images/38.png",
+      "imageHint": "copper coil"
+    },
+    {
+      "id": "blogHeavyMachineryShafts",
+      "description": "Several large, heavy-duty industrial shafts.",
+      "imageUrl": "/images/images/39.png",
+      "imageHint": "heavy shafts"
+    },
+    {
+      "id": "blogCracks",
+      "description": "A close-up of a metal surface showing micro-cracks.",
+      "imageUrl": "/images/images/40.png",
+      "imageHint": "metal cracks"
+    },
+    {
+      "id": "blogHydraulicRods",
+      "description": "A set of chrome-plated hydraulic cylinder rods.",
+      "imageUrl": "/images/images/41.png",
+      "imageHint": "hydraulic rods"
+    },
+    {
+      "id": "blog4140_4150",
+      "description": "Bars of 4140 and 4150 alloy steel.",
+      "imageUrl": "/images/images/42.png",
+      "imageHint": "steel bars"
+    },
+    {
+      "id": "blogAerospace",
+      "description": "A high-tech aerospace component, like a turbine blade or landing gear part.",
+      "imageUrl": "/images/images/43.png",
+      "imageHint": "aerospace component"
+    },
+    {
+      "id": "blogPowerDensity",
+      "description": "A diagram showing how power density affects heat penetration in metal.",
+      "imageUrl": "/images/images/44.png",
+      "imageHint": "power density diagram"
+    },
+    {
+      "id": "blogSurfaceFinish",
+      "description": "A perfectly polished metal shaft after induction hardening and grinding.",
+      "imageUrl": "/images/images/45.png",
+      "imageHint": "polished shaft"
+    },
+    {
+      "id": "blogCoolingTime",
+      "description": "A graph showing different cooling curves for water and polymer quenching.",
+      "imageUrl": "/images/images/46.png",
+      "imageHint": "cooling graph"
+    },
+    {
+      "id": "blogAutomotiveAxles",
+      "description": "A row of automotive axles ready for heat treatment.",
+      "imageUrl": "/images/images/47.png",
+      "imageHint": "automotive axles"
+    },
+    {
+      "id": "blogAutomation",
+      "description": "An automated industrial control panel showing graphs and data.",
+      "imageUrl": "/images/images/48.png",
+      "imageHint": "control panel"
+    },
+    {
+      "id": "blogToolAndDie",
+      "description": "A close-up of a large industrial stamping die.",
+      "imageUrl": "/images/images/49.png",
+      "imageHint": "stamping die"
+    },
+    {
+      "id": "blogToolAndDieHardening",
+      "description": "An assortment of industrial tools and dies, some glowing red-hot.",
+      "imageUrl": "/images/images/50.png",
+      "imageHint": "tools dies"
+    },
+    {
+      "id": "blogPowertrain",
+      "description": "An exploded view of an automotive powertrain with gears and shafts.",
+      "imageUrl": "/images/images/51.png",
+      "imageHint": "powertrain components"
+    },
+    {
+      "id": "blogAlloySteels",
+      "description": "High-performance alloy steel components like gears and shafts.",
+      "imageUrl": "/images/images/52.png",
+      "imageHint": "alloy steel components"
+    },
+    {
+      "id": "blogInductionRole",
+      "description": "A modern factory with automated machinery, highlighting the central role of induction heating.",
+      "imageUrl": "/images/images/53.png",
+      "imageHint": "modern factory"
+    },
+    {
+      "id": "blogRollingMill",
+      "description": "Enhance durability and surface wear resistance of rolling mill rolls using precision induction hardening.",
+      "imageUrl": "/images/images/54.png",
+      "imageHint": "rolling mill"
+    },
+    {
+      "id": "blogAutomotiveGearShaft",
+      "description": "Understand how induction hardening improves fatigue life and reduces wear in automotive gears and shafts.",
+      "imageUrl": "/images/images/55.png",
+      "imageHint": "automotive gear shaft"
+    },
+    {
+      "id": "blogSurfaceHardeningTechniques",
+      "description": "A visual comparison of different surface hardening techniques like induction, flame, and laser.",
+      "imageUrl": "/images/images/56.png",
+      "imageHint": "hardening techniques"
+    },
+    {
+      "id": "blogTempMonitoring",
+      "description": "A technician monitoring a digital control panel with temperature graphs.",
+      "imageUrl": "/images/images/57.png",
+      "imageHint": "temperature monitoring"
+    },
+    {
+      "id": "blogEN8Steel",
+      "description": "A close-up of a polished EN8 medium carbon steel shaft.",
+      "imageUrl": "/images/images/58.png",
+      "imageHint": "EN8 steel shaft"
+    },
+    {
+      "id": "blogExport",
+      "description": "A shipping container being loaded with industrial parts, ready for export.",
+      "imageUrl": "/images/images/59.png",
+      "imageHint": "export shipping"
+    },
+    {
+      "id": "blogMisconceptions",
+      "description": "A mythbusters-style graphic with checkmarks and crosses over images of induction hardening.",
+      "imageUrl": "/images/images/21.png",
+      "imageHint": "mythbusters graphic"
+    },
+    {
+      "id": "blogCoilAlignment",
+      "description": "A diagram showing correct vs incorrect coil alignment for an induction heater.",
+      "imageUrl": "/images/images/38.png",
+      "imageHint": "coil alignment"
+    },
+    {
+      "id": "blogPolymerVsOil",
+      "description": "A split image showing clean polymer quenching vs smoky oil quenching.",
+      "imageUrl": "/images/images/37.png",
+      "imageHint": "quenching comparison"
+    },
+    {
+      "id": "blogTransmissionComponents",
+      "description": "An exploded view of an automotive transmission gearbox.",
+      "imageUrl": "/images/images/51.png",
+      "imageHint": "transmission gearbox"
+    },
+    {
+      "id": "blogEngineParts",
+      "description": "A collection of various automotive engine parts like pistons, valves, and rods.",
+      "imageUrl": "/images/images/64.png",
+      "imageHint": "engine parts"
+    },
+    {
+      "id": "blogHeavyDutyShafts",
+      "description": "A large, heavy-duty industrial shaft being measured with a caliper.",
+      "imageUrl": "/images/images/63.png",
+      "imageHint": "heavy shaft"
+    },
+    {
+      "id": "blogSoftSpots",
+      "description": "A magnified view of a metal surface showing uniform hardness versus one with soft spots.",
+      "imageUrl": "/images/images/40.png",
+      "imageHint": "metal surface"
+    },
+    {
+      "id": "blogSafetyStandards",
+      "description": "A worker wearing full safety gear (helmet, goggles, gloves) operating industrial machinery.",
+      "imageUrl": "/images/images/65.png",
+      "imageHint": "industrial worker"
+    },
+    {
+      "id": "blogWaterCooling",
+      "description": "Clean water splashing over a hot metal part during quenching.",
+      "imageUrl": "/images/images/37.png",
+      "imageHint": "water quenching"
+    },
+    {
+      "id": "blogOem",
+      "description": "OEM components being prepared for induction hardening.",
+      "imageUrl": "/images/images/61.png",
+      "imageHint": "OEM components"
+    },
+    {
+      "id": "blogCommonMaterials",
+      "description": "An assortment of different steel bars and components suitable for induction hardening.",
+      "imageUrl": "/images/images/5.jpeg",
+      "imageHint": "steel bars"
+    },
+    {
+      "id": "blogNitriding",
+      "description": "A chart comparing the properties of induction hardening and nitriding.",
+      "imageUrl": "/images/images/21.png",
+      "imageHint": "comparison chart"
+    },
+    {
+      "id": "blogQuenchingFlowRate",
+      "description": "A digital meter showing the flow rate of a liquid in an industrial pipe.",
+      "imageUrl": "/images/images/60.png",
+      "imageHint": "digital meter"
+    },
+    {
+      "id": "heroMetalTreatment",
+      "description": "An industrial worker in protective gear overseeing a metal heat treatment process.",
+      "imageUrl": "/images/images/4.png",
+      "imageHint": "industrial worker"
+    },
+    {
+      "id": "heroHeatTreatingSteel",
+      "description": "An assortment of different steel alloy bars and rods.",
+      "imageUrl": "/images/images/5.jpeg",
+      "imageHint": "steel bars"
+    }
+  ]
+}

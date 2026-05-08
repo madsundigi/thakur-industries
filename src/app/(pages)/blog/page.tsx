@@ -1,0 +1,569 @@
+
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import Image from 'next/image';
+import PageHeader from '@/components/shared/PageHeader';
+import { SITE_NAME } from '@/lib/constants';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+export const metadata: Metadata = {
+  title: `Blog & Articles on Heat Treatment | ${SITE_NAME}`,
+  description: `Explore informational articles about heat treatment. Learn what is induction hardening, its advantages, and the difference between case hardening and induction hardening.`,
+};
+
+const blogPosts = [
+  {
+    slug: 'what-is-induction-hardening-ludhiana',
+    title: 'A Step-by-Step Guide to the Induction Hardening Process',
+    description: 'A look into the induction hardening process, its advantages, and why it is a critical manufacturing step for Ludhiana\'s industrial sector.',
+    date: 'October 25, 2023',
+    imageId: 'blogPost1'
+  },
+  {
+    slug: 'difference-between-induction-and-case-hardening',
+    title: 'Induction Hardening vs Case Hardening – Which Is Better for Steel Components?',
+    description: 'Understand the key differences, benefits, and applications when choosing between case hardening and induction hardening for your components.',
+    date: 'November 08, 2024',
+    imageId: 'blogPost2'
+  },
+  {
+    slug: 'top-benefits-of-induction-heat-treatment',
+    title: 'Top Benefits of Induction Heat Treatment for Industrial Components',
+    description: 'Discover how induction heat treatment improves component strength, precision, and durability in Ludhiana and Punjab industries.',
+    date: 'July 26, 2024',
+    imageId: 'blogPost4'
+  },
+  {
+    slug: 'materials-suitable-for-induction-hardening',
+    title: 'Top Materials Suitable for Induction Hardening — EN8, EN19, 4140 & More',
+    description: 'Find out which steel materials give the best results under induction hardening for industrial components in Punjab.',
+    date: 'January 15, 2024',
+    imageId: 'blogPost5'
+  },
+  {
+    slug: 'induction-hardening-for-automotive-parts',
+    title: 'Induction Hardening for Automotive Parts — Strength That Drives Performance',
+    description: 'Specialized induction hardening for automotive gears, shafts, and crankshafts for Punjab\'s automotive industry.',
+    date: 'July 30, 2024',
+    imageId: 'blogAutomotiveParts'
+  },
+  {
+    slug: 'role-of-quenching-in-induction-hardening',
+    title: 'Understanding the Role of Polymer & Water Quenching in Induction Hardening',
+    description: 'Explore how polymer and water quenching affect the hardness, cooling rate, and structure of heat-treated metals.',
+    date: 'August 15, 2024',
+    imageId: 'blogQuenchingRole'
+  },
+  {
+    slug: 'surface-vs-through-hardening',
+    title: 'Surface Hardening vs. Through Hardening: Which is Right for You?',
+    description: 'Understand the differences between surface hardening and through hardening and which process is right for your industrial components.',
+    date: 'August 20, 2024',
+    imageId: 'blogHardeningComparison'
+  },
+  {
+    slug: 'heat-treatment-for-en-series-steels',
+    title: 'Heat Treatment & Induction Hardening for EN Series Steels — EN8, EN19, EN24',
+    description: 'Detailed guide on induction hardening & heat treatment processes for EN steels widely used in Punjab\'s industries.',
+    date: 'August 25, 2024',
+    imageId: 'blogEnSeries'
+  },
+  {
+    slug: 'how-induction-heat-treatment-extends-tool-life',
+    title: 'How Induction Heat Treatment Extends Tool Life',
+    description: 'Discover how proper heat treatment increases tool hardness, wear resistance, and lifespan.',
+    date: 'November 25, 2024',
+    imageId: 'blogToolLife'
+  },
+  {
+    slug: 'common-defects-in-induction-hardening-and-how-to-prevent-them',
+    title: 'Common Challenges in Induction Heat Treatment and How to Overcome Them',
+    description: 'Identify and solve common induction heat treatment issues such as distortion, cracking, and uneven hardness.',
+    date: 'September 10, 2024',
+    imageId: 'blogDefects'
+  },
+  {
+    slug: 'induction-hardening-vs-flame-hardening',
+    title: 'Why Induction Hardening is Preferred Over Flame Hardening',
+    description: 'Compare flame and induction hardening processes to see why induction is the superior choice for modern industries.',
+    date: 'September 15, 2024',
+    imageId: 'blogFlameVsInduction'
+  },
+  {
+    slug: 'high-frequency-vs-medium-frequency-induction-hardening',
+    title: 'High-Frequency vs Medium-Frequency Induction Hardening Systems',
+    description: 'Compare frequency systems and their influence on case depth, heating rate, and metallurgical structure.',
+    date: 'September 18, 2024',
+    imageId: 'blogFrequencyComparison'
+  },
+  {
+    slug: 'importance-of-frequency-in-induction-hardening',
+    title: 'Choosing the Right Frequency for Induction Hardening Applications',
+    description: 'Learn how frequency impacts heat penetration, case depth, and hardness during the induction hardening process.',
+    date: 'September 20, 2024',
+    imageId: 'blogFrequency'
+  },
+  {
+    slug: 'induction-hardening-for-agricultural-implements',
+    title: 'Induction Hardening for Agricultural Equipment Parts',
+    description: 'Increase the strength and life of agricultural machinery parts like spindles, axles, and blades using induction hardening.',
+    date: 'September 25, 2024',
+    imageId: 'blogAgricultural'
+  },
+  {
+    slug: 'gear-hardening-process-explained',
+    title: 'Understanding the Gear Hardening Process in Induction Heat Treatment',
+    description: 'Step-by-step explanation of induction gear hardening, quenching, and hardness testing in Ludhiana & Punjab.',
+    date: 'October 01, 2024',
+    imageId: 'blogGearProcess'
+  },
+  {
+    slug: 'induction-hardening-services-in-north-india',
+    title: 'Thakur Induction – Leading Induction Hardening Services in North India',
+    description: 'Serving Ludhiana, Punjab, Haryana & Delhi NCR with professional induction heat treatment & case hardening services.',
+    date: 'October 05, 2024',
+    imageId: 'blogNorthIndia'
+  },
+  {
+    slug: 'induction-hardening-process-explained',
+    title: 'Step-by-Step Guide to the Induction Hardening Process',
+    description: 'Learn about the induction hardening process, frequency selection, quenching types, and its use for gears and shafts.',
+    date: 'October 10, 2024',
+    imageId: 'blogGearProcess'
+  },
+  {
+    slug: 'induction-hardening-for-shafts-and-axles',
+    title: 'Induction Hardening for Shafts & Axles in Ludhiana, Punjab',
+    description: 'Learn how induction hardening improves the strength and fatigue life of shafts and axles in Punjab’s industries.',
+    date: 'October 15, 2024',
+    imageId: 'blogShaftsAndAxles'
+  },
+  {
+    slug: 'case-depth-control-in-induction-hardening',
+    title: 'Optimizing Case Depth for Gear Components',
+    description: 'Learn how controlled case depth enhances wear resistance and fatigue life in automotive gear components.',
+    date: 'October 20, 2024',
+    imageId: 'blogCaseDepth'
+  },
+  {
+    slug: 'induction-hardening-for-gears-and-pinions',
+    title: 'Gear & Pinion Induction Hardening Services in Punjab',
+    description: 'Explore gear and pinion hardening processes that enhance wear resistance for automotive and farm machinery parts.',
+    date: 'October 22, 2024',
+    imageId: 'blogGearsAndPinions'
+  },
+  {
+    slug: 'induction-hardening-for-tool-steel-components',
+    title: 'Tool Steel Induction Hardening Services in Ludhiana',
+    description: 'Learn how induction hardening enhances D2, H13, and M2 tool steels for superior strength and durability.',
+    date: 'November 01, 2024',
+    imageId: 'blogToolSteel'
+  },
+  {
+    slug: 'induction-hardening-for-gearbox-components',
+    title: 'Induction Hardening for Gearbox Components',
+    description: 'Discover how induction heat treatment improves the durability and performance of gearbox parts.',
+    date: 'November 05, 2024',
+    imageId: 'blogGearbox'
+  },
+  {
+    slug: 'common-materials-used-in-induction-hardening',
+    title: 'Common Steels Used for Induction Hardening',
+    description: 'A guide to materials that respond best to induction hardening and their ideal applications.',
+    date: 'November 12, 2024',
+    imageId: 'blogCommonMaterials'
+  },
+  {
+    slug: 'induction-hardening-vs-nitriding',
+    title: 'Induction Hardening vs Nitriding: Key Differences',
+    description: 'Compare induction hardening and nitriding for surface hardness, depth, and cost-effectiveness.',
+    date: 'November 15, 2024',
+    imageId: 'blogNitriding'
+  },
+  {
+    slug: 'surface-hardening-benefits-for-automotive-gears',
+    title: 'Surface Hardening Benefits for Automotive Gears',
+    description: 'Learn how surface hardening boosts gear life and performance in Punjab’s automotive industry.',
+    date: 'November 18, 2024',
+    imageId: 'blogAutomotiveGears'
+  },
+  {
+    slug: 'induction-hardening-for-crankshafts-and-camshafts',
+    title: 'Induction Hardening for Crankshafts in Automotive Engines',
+    description: 'Understand how induction hardening enhances durability and torque performance of automotive crankshafts.',
+    date: 'November 22, 2024',
+    imageId: 'blogCrankshafts'
+  },
+  {
+    slug: 'energy-efficient-induction-heating-india',
+    title: 'Energy-Efficient Induction Hardening for Punjab Industries',
+    description: 'Learn how induction heating saves energy and supports sustainable manufacturing.',
+    date: 'November 28, 2024',
+    imageId: 'blogEnergyEfficient'
+  },
+  {
+    slug: 'induction-hardening-for-forged-and-machined-parts',
+    title: 'Induction Hardening for Forged Shafts and Spindles',
+    description: 'Boost the fatigue resistance of forged shafts and spindles with localized induction hardening.',
+    date: 'December 02, 2024',
+    imageId: 'blogForgedParts'
+  },
+  {
+    slug: 'hardness-testing-after-induction-hardening',
+    title: 'Role of Hardness Testing in Quality Control',
+    description: 'Understand the importance of hardness testing for validating induction hardening results and quality assurance.',
+    date: 'December 05, 2024',
+    imageId: 'blogHardnessTesting'
+  },
+  {
+    slug: 'how-to-prevent-distortion-in-induction-hardening',
+    title: 'How to Prevent Distortion in Induction Hardening',
+    description: 'Explore techniques to control distortion and maintain dimensional accuracy during heat treatment.',
+    date: 'December 10, 2024',
+    imageId: 'blogDistortionControl'
+  },
+  {
+    slug: 'transmission-shaft-induction-hardening',
+    title: 'Transmission Shaft Induction Hardening Services in Punjab',
+    description: 'Learn how induction hardening increases the strength and fatigue resistance of transmission shafts.',
+    date: 'December 12, 2024',
+    imageId: 'blogTransmissionShaft'
+  },
+  {
+    slug: 'how-induction-heating-works-in-metal-hardening',
+    title: 'How Induction Heating Works in Metal Hardening',
+    description: 'A detailed explanation of electromagnetic heating used in industrial hardening processes.',
+    date: 'December 15, 2024',
+    imageId: 'blogInductionHeatingWorks'
+  },
+  {
+    slug: 'induction-hardening-for-heavy-duty-rollers',
+    title: 'Induction Hardening for Heavy-Duty Rollers in Punjab',
+    description: 'Learn about induction hardening techniques for large rollers used in machinery and manufacturing.',
+    date: 'December 18, 2024',
+    imageId: 'blogRollerHardening'
+  },
+  {
+    slug: 'importance-of-temperature-control-in-induction-hardening',
+    title: 'Importance of Temperature Control in Induction Hardening',
+    description: 'Discover how temperature control ensures hardness accuracy and prevents metallurgical defects.',
+    date: 'December 20, 2024',
+    imageId: 'blogTemperatureControl'
+  },
+  {
+    slug: 'advantages-of-medium-frequency-induction-hardening',
+    title: 'Advantages of Medium Frequency Induction Hardening',
+    description: 'Discover why medium frequency induction hardening is ideal for shafts, gears, and heavy components in Punjab.',
+    date: 'December 22, 2024',
+    imageId: 'blogMediumFrequency'
+  },
+  {
+    slug: 'en19-and-en24-alloy-steel-induction-hardening-guide',
+    title: 'EN19 and EN24 Alloy Steel Induction Hardening Guide',
+    description: 'Detailed guide on induction hardening of EN19 and EN24 steels for automotive and heavy equipment manufacturing.',
+    date: 'December 24, 2024',
+    imageId: 'blogEN19_EN24'
+  },
+  {
+    slug: 'polymer-vs-water-quenching',
+    title: 'Polymer Quenching vs Water Quenching in Induction Hardening',
+    description: 'Compare polymer and water quenching methods for achieving precise cooling and minimal distortion.',
+    date: 'December 26, 2024',
+    imageId: 'blogQuenchingComparison'
+  },
+  {
+    slug: 'importance-of-coil-design-in-induction-heating',
+    title: 'Importance of Coil Design in Induction Heating',
+    description: 'Explore how coil geometry affects heat distribution and hardness uniformity in induction systems.',
+    date: 'December 28, 2024',
+    imageId: 'blogCoilDesign'
+  },
+  {
+    slug: 'surface-hardening-for-heavy-machinery-shafts',
+    title: 'Surface Hardening for Heavy Machinery Shafts',
+    description: 'Improve load-bearing capacity and wear resistance of heavy-duty shafts using induction hardening.',
+    date: 'December 30, 2024',
+    imageId: 'blogHeavyMachineryShafts'
+  },
+  {
+    slug: 'how-to-prevent-cracks-in-induction-hardened-components',
+    title: 'How to Prevent Cracks in Induction Hardened Components',
+    description: 'Learn techniques to control quenching and minimize surface cracking during induction hardening.',
+    date: 'December 31, 2024',
+    imageId: 'blogCracks'
+  },
+  {
+    slug: 'induction-hardening-for-hydraulic-cylinder-rods',
+    title: 'Induction Hardening for Hydraulic Cylinder Rods',
+    description: 'Explore induction hardening methods to enhance wear resistance in hydraulic and pneumatic rods.',
+    date: 'January 02, 2025',
+    imageId: 'blogHydraulicRods'
+  },
+  {
+    slug: 'induction-heat-treatment-for-4140-and-4150-steel-grades',
+    title: 'Induction Heat Treatment for 4140 & 4150 Steel Grades',
+    description: 'Detailed guide to hardening processes and ideal temperatures for 4140 and 4150 alloy steels.',
+    date: 'January 05, 2025',
+    imageId: 'blog4140_4150'
+  },
+  {
+    slug: 'induction-hardening-for-aerospace-industry-components',
+    title: 'Induction Hardening for Aerospace Industry Components',
+    description: 'Understand how induction hardening ensures fatigue strength and dimensional control in aerospace parts.',
+    date: 'January 08, 2025',
+    imageId: 'blogAerospace'
+  },
+  {
+    slug: 'power-density-in-induction-hardening',
+    title: 'Understanding Power Density in Induction Hardening',
+    description: 'Learn how adjusting power density controls heating efficiency and surface hardness depth.',
+    date: 'January 10, 2025',
+    imageId: 'blogPowerDensity'
+  },
+  {
+    slug: 'surface-finish-and-machining-after-induction-hardening',
+    title: 'Improving Surface Finish After Induction Hardening',
+    description: 'Learn post-hardening machining and grinding techniques that ensure precise surface finishes.',
+    date: 'January 12, 2025',
+    imageId: 'blogSurfaceFinish'
+  },
+  {
+    slug: 'importance-of-cooling-time-in-quenching',
+    title: 'Importance of Cooling Time in Quenching',
+    description: 'Discover how quenching delay and cooling time affect final hardness and structural integrity.',
+    date: 'January 14, 2025',
+    imageId: 'blogCoolingTime'
+  },
+  {
+    slug: 'induction-hardening-for-automotive-axles',
+    title: 'Induction Hardening for Automotive Axles in Punjab',
+    description: 'Find out how induction hardening improves wear resistance and load capacity in automotive axles.',
+    date: 'January 16, 2025',
+    imageId: 'blogAutomotiveAxles'
+  },
+  {
+    slug: 'role-of-process-automation-in-induction-heat-treatment',
+    title: 'PLC Automation in Induction Hardening Systems',
+    description: 'Learn how PLC-based control systems ensure consistent, automated, and repeatable induction hardening processes.',
+    date: 'January 18, 2025',
+    imageId: 'blogAutomation'
+  },
+  {
+    slug: 'induction-hardening-for-industrial-tools-and-dies',
+    title: 'Induction Hardening for Industrial Tools & Dies',
+    description: 'Enhance the lifespan and performance of dies and industrial tools through precision induction hardening.',
+    date: 'January 20, 2025',
+    imageId: 'blogToolAndDie'
+  },
+  {
+    slug: 'tool-and-die-induction-hardening-processes-explained',
+    title: 'Tool and Die Induction Hardening Processes Explained',
+    description: 'Explore the process and benefits of induction hardening for tools and dies used in precision manufacturing.',
+    date: 'January 21, 2025',
+    imageId: 'blogToolAndDieHardening'
+  },
+  {
+    slug: 'induction-hardening-for-powertrain-components',
+    title: 'Induction Hardening for Powertrain Components in Punjab',
+    description: 'Learn how induction hardening enhances powertrain durability and strength for automotive applications in Ludhiana and Punjab.',
+    date: 'January 22, 2025',
+    imageId: 'blogPowertrain'
+  },
+  {
+    slug: 'heat-treatment-for-high-performance-alloy-steels',
+    title: 'Heat Treatment for High-Performance Alloy Steels',
+    description: 'Discover the heat treatment process that strengthens EN and alloy steels for industrial machinery and automotive parts.',
+    date: 'January 24, 2025',
+    imageId: 'blogAlloySteels'
+  },
+  {
+    slug: 'role-of-induction-heating-in-modern-manufacturing',
+    title: 'Role of Induction Heating in Modern Manufacturing',
+    description: 'Explore how induction heating revolutionizes modern manufacturing with precise, clean, and efficient heating.',
+    date: 'January 26, 2025',
+    imageId: 'blogInductionRole'
+  },
+  {
+    slug: 'induction-hardening-for-rolling-mill-components',
+    title: 'Induction Hardening for Rolling Mill Components',
+    description: 'Enhance durability and surface wear resistance of rolling mill rolls using precision induction hardening.',
+    date: 'February 01, 2025',
+    imageId: 'blogRollingMill'
+  },
+  {
+    slug: 'automotive-gear-and-shaft-induction-hardening',
+    title: 'Automotive Gear and Shaft Induction Hardening',
+    description: 'Understand how induction hardening improves fatigue life and reduces wear in automotive gears and shafts.',
+    date: 'February 03, 2025',
+    imageId: 'blogAutomotiveGearShaft'
+  },
+  {
+    slug: 'surface-hardening-techniques-for-heavy-engineering-components',
+    title: 'Surface Hardening Techniques for Heavy Engineering Components',
+    description: 'Learn about surface hardening processes that provide heavy engineering components with wear-resistant strength.',
+    date: 'February 05, 2025',
+    imageId: 'blogSurfaceHardeningTechniques'
+  },
+  {
+    slug: 'temperature-monitoring-systems-in-induction-hardening',
+    title: 'Temperature Monitoring in Induction Hardening',
+    description: 'Explore how advanced temperature monitoring systems improve accuracy and control in induction hardening operations.',
+    date: 'February 07, 2025',
+    imageId: 'blogTempMonitoring'
+  },
+  {
+    slug: 'induction-heat-treatment-for-en8-steel-components',
+    title: 'Induction Heat Treatment for EN8 Steel Components',
+    description: 'Find out how EN8 steel benefits from controlled induction heat treatment for superior strength and hardness.',
+    date: 'February 09, 2025',
+    imageId: 'blogEN8Steel'
+  },
+  {
+    slug: 'induction-hardening-job-work-for-export-units',
+    title: 'Induction Hardening Job Work for Export Units',
+    description: 'Providing precise induction heat treatment solutions tailored for export and OEM-grade industrial components.',
+    date: 'February 11, 2025',
+    imageId: 'blogExport'
+  },
+  {
+    slug: 'common-misconceptions-about-induction-hardening',
+    title: 'Common Misconceptions About Induction Hardening',
+    description: 'Debunk myths about induction hardening and learn why it\'s the most effective surface hardening method available.',
+    date: 'February 13, 2025',
+    imageId: 'blogMisconceptions'
+  },
+  {
+    slug: 'importance-of-proper-coil-alignment-in-induction-systems',
+    title: 'Importance of Proper Coil Alignment in Induction Systems',
+    description: 'Discover how correct coil alignment ensures uniform heating, prevents overheating, and maintains quality control.',
+    date: 'February 15, 2025',
+    imageId: 'blogCoilAlignment'
+  },
+  {
+    slug: 'advantages-of-polymer-quenching-over-oil',
+    title: 'Advantages of Polymer Quenching Over Oil Cooling',
+    description: 'See how polymer quenching provides better control, safety, and environmental benefits over traditional oil cooling.',
+    date: 'February 17, 2025',
+    imageId: 'blogPolymerVsOil'
+  },
+  {
+    slug: 'case-hardening-for-automotive-transmission-components',
+    title: 'Case Hardening for Automotive Transmission Components',
+    description: 'Enhance transmission performance and reliability through case hardening of gears, shafts, and couplings.',
+    date: 'February 19, 2025',
+    imageId: 'blogTransmissionComponents'
+  },
+   {
+    slug: 'induction-hardening-job-work-for-oems',
+    title: 'Precision Induction Hardening Services for OEMs',
+    description: 'Delivering OEM-standard induction hardening services with tight tolerance and high-quality assurance across Punjab.',
+    date: 'February 21, 2025',
+    imageId: 'blogOem'
+  },
+  {
+    slug: 'advanced-induction-hardening-for-precision-components',
+    title: 'Advanced Induction Hardening for Precision Components',
+    description: 'Discover how advanced induction hardening enhances precision component reliability and performance in Punjab industries.',
+    date: 'February 23, 2025',
+    imageId: 'heroMachine'
+  },
+  {
+    slug: 'heat-treatment-for-heavy-duty-shafts-and-rollers',
+    title: 'Heat Treatment for Heavy-Duty Shafts and Rollers',
+    description: 'Learn how heat treatment improves durability and surface strength of heavy-duty shafts and rollers in Ludhiana industries.',
+    date: 'February 25, 2025',
+    imageId: 'blogHeavyDutyShafts'
+  },
+  {
+    slug: 'surface-hardening-for-automotive-engine-parts',
+    title: 'Surface Hardening for Automotive Engine Parts',
+    description: 'See how surface hardening strengthens automotive engine components for improved wear resistance and performance.',
+    date: 'February 27, 2025',
+    imageId: 'blogEngineParts'
+  },
+  {
+    slug: 'en19-and-en24-alloy-steel-induction-hardening-guide',
+    title: 'EN19 and EN24 Alloy Steel Induction Hardening Guide',
+    description: 'Detailed guide on induction hardening of EN19 and EN24 steels for automotive and heavy equipment manufacturing.',
+    date: 'March 01, 2025',
+    imageId: 'blogEN19_EN24'
+  },
+  {
+    slug: 'preventing-soft-spots-in-induction-hardening',
+    title: 'Preventing Soft Spots in Induction Hardening',
+    description: 'Understand causes of soft spots in induction hardening and how to ensure uniform surface hardness for industrial parts.',
+    date: 'March 03, 2025',
+    imageId: 'blogSoftSpots'
+  },
+  {
+    slug: 'induction-heating-safety-standards',
+    title: 'Induction Heating Safety Standards for Industries',
+    description: 'Learn essential safety standards and best practices for operating induction heat treatment equipment.',
+    date: 'March 05, 2025',
+    imageId: 'blogSafetyStandards'
+  },
+  {
+    slug: 'tool-and-die-induction-hardening-processes-explained',
+    title: 'Tool and Die Induction Hardening Processes Explained',
+    description: 'Explore the process and benefits of induction hardening for tools and dies used in precision manufacturing.',
+    date: 'January 21, 2025',
+    imageId: 'blogToolAndDieHardening'
+  },
+  {
+    slug: 'advantages-of-water-based-cooling-in-heat-treatment',
+    title: 'Advantages of Water-Based Cooling in Heat Treatment',
+    description: 'See how water-based cooling improves energy efficiency and reduces environmental impact in induction hardening.',
+    date: 'March 07, 2025',
+    imageId: 'blogWaterCooling'
+  },
+  {
+    slug: 'role-of-quenching-flow-rate-in-heat-treatment-quality',
+    title: 'Role of Quenching Flow Rate in Heat Treatment Quality',
+    description: 'Understand how precise control of quenching flow rate influences surface hardness and distortion control.',
+    date: 'March 09, 2025',
+    imageId: 'blogQuenchingFlowRate'
+  }
+];
+
+export default function BlogPage() {
+  return (
+    <div className="container mx-auto px-4 md:px-6">
+      <PageHeader
+        title="Insights & Case Studies"
+        description="Your expert resource for the latest in industrial heat treatment technology, process advantages, and best practices."
+        className="mb-12 text-center"
+      />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {blogPosts.map((post) => {
+          const image = PlaceHolderImages.find(img => img.id === post.imageId);
+          return (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+              <Card className="h-full overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+                {image && (
+                  <div className="relative h-56 w-full">
+                    <Image
+                      src={image.imageUrl}
+                      alt={post.title}
+                      data-ai-hint={image.imageHint}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">{post.title}</CardTitle>
+
+                  <CardDescription>{post.date}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{post.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

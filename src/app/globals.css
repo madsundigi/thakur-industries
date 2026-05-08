@@ -1,0 +1,94 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inter-v13-latin-regular.woff2') format('woff2');
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/inter-v13-latin-700.woff2') format('woff2');
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/inter-v13-latin-800.woff2') format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 19% 7%;
+    --foreground: 210 40% 98%;
+    
+    --card: 216 19% 9%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 216 19% 9%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Flaming Industrial Red */
+    --primary: 0 100% 50%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 216 19% 12%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 216 19% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    --accent: 0 100% 40%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 216 19% 18%;
+    --input: 216 19% 18%;
+    --ring: 0 100% 50%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-background text-foreground overflow-x-hidden break-words;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight break-words;
+  }
+}
+
+@keyframes flame-pulse {
+  0% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+  50% { text-shadow: 0 0 25px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 50, 0, 0.4); }
+  100% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+}
+
+.animate-flame {
+  animation: flame-pulse 3s infinite ease-in-out;
+}
+
+.glass-effect {
+  @apply bg-background/80 backdrop-blur-md border border-white/10;
+}
