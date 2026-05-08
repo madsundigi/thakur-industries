@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Gearbox Components",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Automotive Heat Treatment",
   "keywords": ["gearbox hardening Ludhiana", "gear heat treatment Punjab", "case hardening for transmissions"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-gearbox-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-gearbox-components",
   "inLanguage": "en"
 };
 

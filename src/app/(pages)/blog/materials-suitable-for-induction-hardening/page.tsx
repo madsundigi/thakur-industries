@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Top Materials Suitable for Induction Hardening — EN8, EN19, 4140 & More",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-01-15",
   "articleSection": "Heat Treatment Materials",
   "keywords": ["materials suitable for induction hardening", "EN8 heat treatment", "EN19 heat treatment", "4140 steel hardening"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/materials-suitable-for-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/materials-suitable-for-induction-hardening",
   "inLanguage": "en"
 };
 

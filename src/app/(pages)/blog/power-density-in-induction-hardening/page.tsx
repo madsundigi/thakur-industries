@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Understanding Power Density in Induction Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["power density in induction heating", "heating rate control", "energy transfer Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/power-density-in-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/power-density-in-induction-hardening",
   "inLanguage": "en"
 };
 

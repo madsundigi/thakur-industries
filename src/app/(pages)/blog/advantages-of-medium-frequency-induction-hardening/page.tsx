@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Advantages of Medium Frequency Induction Hardening",
   "author": { "@type": "Organization", "name": "Thakur Industries" },
-  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["medium frequency induction hardening", "induction heat treatment frequency Punjab", "heat penetration control"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/advantages-of-medium-frequency-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/advantages-of-medium-frequency-induction-hardening",
   "inLanguage": "en"
 };
 

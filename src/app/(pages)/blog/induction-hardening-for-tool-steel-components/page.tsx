@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Tool Steel Induction Hardening Services in Ludhiana",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Materials",
   "keywords": ["tool steel induction hardening", "D2 heat treatment Ludhiana", "H13 heat treatment Ludhiana", "M2 heat treatment Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-tool-steel-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-tool-steel-components",
   "inLanguage": "en"
 };
 

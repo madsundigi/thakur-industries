@@ -38,7 +38,7 @@ export function Footer() {
                     <a href={`tel:${SITE_PHONE_NUMBER}`} className="hover:text-primary transition-colors">{SITE_PHONE_NUMBER}</a>
                 </p>
                 <p>
-                    <a href="mailto:sales@thakurinduction.com" className="hover:text-primary transition-colors">sales@thakurinduction.com</a>
+                    <a href="mailto:sales@thakurindustries.in" className="hover:text-primary transition-colors">sales@thakurindustries.in</a>
                 </p>
                 <p>{SITE_ADDRESS}</p>
             </address>

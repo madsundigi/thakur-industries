@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Common Misconceptions About Induction Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Facts",
   "keywords": ["induction hardening myths", "heat treatment facts Punjab", "industrial process clarity Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/common-misconceptions-about-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/common-misconceptions-about-induction-hardening",
   "inLanguage": "en"
 };
 

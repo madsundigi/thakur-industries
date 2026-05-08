@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Gear & Pinion Induction Hardening Services in Punjab",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["gear induction hardening Punjab", "pinion hardening process", "gear teeth heat treatment"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-gears-and-pinions",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-gears-and-pinions",
   "inLanguage": "en"
 };
 

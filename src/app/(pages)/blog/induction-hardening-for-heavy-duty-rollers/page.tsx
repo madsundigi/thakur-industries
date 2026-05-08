@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Heavy-Duty Rollers in Punjab",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Industrial Heat Treatment",
   "keywords": ["roller hardening Punjab", "surface hardening for rollers", "industrial component treatment"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-heavy-duty-rollers",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-heavy-duty-rollers",
   "inLanguage": "en"
 };
 

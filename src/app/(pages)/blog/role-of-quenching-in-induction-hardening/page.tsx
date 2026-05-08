@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Understanding the Role of Polymer & Water Quenching in Induction Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-08-15",
   "articleSection": "Heat Treatment Processes",
   "keywords": ["role of quenching in induction hardening", "polymer quenching", "water quenching", "induction cooling process"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/role-of-quenching-in-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/role-of-quenching-in-induction-hardening",
   "inLanguage": "en"
 };
 

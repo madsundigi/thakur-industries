@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Aerospace Industry Components",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Aerospace Heat Treatment",
   "keywords": ["aerospace component heat treatment", "precision hardening Ludhiana", "lightweight alloy treatment Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-aerospace-industry-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-aerospace-industry-components",
   "inLanguage": "en"
 };
 

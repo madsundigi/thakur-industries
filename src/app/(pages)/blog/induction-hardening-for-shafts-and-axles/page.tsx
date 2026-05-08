@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Shafts & Axles in Ludhiana, Punjab",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["shaft hardening process", "axle hardening Ludhiana", "drive shaft heat treatment"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-shafts-and-axles",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-shafts-and-axles",
   "inLanguage": "en"
 };
 

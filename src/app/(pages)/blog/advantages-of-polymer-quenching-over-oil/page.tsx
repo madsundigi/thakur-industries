@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Advantages of Using Polymer Quenching Over Oil",
   "author": { "@type": "Organization", "name": "Thakur Industries" },
-  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["polymer quenching vs oil", "heat treatment cooling Ludhiana", "industrial quenching Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/advantages-of-polymer-quenching-over-oil",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/advantages-of-polymer-quenching-over-oil",
   "inLanguage": "en"
 };
 

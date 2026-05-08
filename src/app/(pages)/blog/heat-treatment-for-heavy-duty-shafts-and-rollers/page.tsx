@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Heat Treatment for Heavy-Duty Shafts and Rollers",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Industrial Heat Treatment",
   "keywords": ["heavy duty shaft heat treatment", "roller induction hardening Ludhiana", "machinery shaft Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/heat-treatment-for-heavy-duty-shafts-and-rollers",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/heat-treatment-for-heavy-duty-shafts-and-rollers",
   "inLanguage": "en"
 };
 

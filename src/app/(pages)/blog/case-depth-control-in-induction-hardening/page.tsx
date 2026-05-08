@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Optimizing Case Depth for Gear Components",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Quality Control",
   "keywords": ["case depth optimization gears", "gear heat treatment Punjab", "automotive gear hardening Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/case-depth-control-in-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/case-depth-control-in-induction-hardening",
   "inLanguage": "en"
 };
 

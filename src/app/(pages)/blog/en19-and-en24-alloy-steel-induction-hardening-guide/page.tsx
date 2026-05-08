@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "EN19 and EN24 Alloy Steel Induction Hardening Guide",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Materials",
   "keywords": ["EN19 EN24 induction hardening", "alloy steel heat treatment Punjab", "Ludhiana industrial steels"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/en19-and-en24-alloy-steel-induction-hardening-guide",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/en19-and-en24-alloy-steel-induction-hardening-guide",
   "inLanguage": "en"
 };
 

@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Preventing Soft Spots in Induction Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Quality Control",
   "keywords": ["induction hardening defects", "surface uniformity Punjab", "quality heat treatment Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/preventing-soft-spots-in-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/preventing-soft-spots-in-induction-hardening",
   "inLanguage": "en"
 };
 

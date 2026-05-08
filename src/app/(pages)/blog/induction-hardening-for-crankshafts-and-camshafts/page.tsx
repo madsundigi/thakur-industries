@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Crankshafts in Automotive Engines",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Automotive Heat Treatment",
   "keywords": ["automotive crankshaft hardening", "engine component heat treatment Ludhiana", "precision hardening Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-crankshafts-and-camshafts",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-crankshafts-and-camshafts",
   "inLanguage": "en"
 };
 

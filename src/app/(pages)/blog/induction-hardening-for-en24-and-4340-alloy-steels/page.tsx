@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for EN24 & 4340 Alloy Steels",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Materials",
   "keywords": ["EN24 induction hardening", "4340 heat treatment Ludhiana", "alloy steel surface hardening Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-en24-and-4340-alloy-steels",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-en24-and-4340-alloy-steels",
   "inLanguage": "en"
 };
 

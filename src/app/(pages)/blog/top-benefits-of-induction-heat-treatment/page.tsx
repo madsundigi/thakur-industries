@@ -18,11 +18,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Top Benefits of Induction Heat Treatment for Industrial Components",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-07-26",
   "articleSection": "Heat Treatment Processes",
   "keywords": ["benefits of induction heat treatment", "advantages of induction hardening", "industrial heat treatment process Punjab"],
-  "mainEntityOfPage": "https://thakurinduction.com/blog/top-benefits-of-induction-heat-treatment",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/top-benefits-of-induction-heat-treatment",
   "inLanguage": "en"
 };
 

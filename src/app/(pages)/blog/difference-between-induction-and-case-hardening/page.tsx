@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening vs Case Hardening - Which Is Better for Steel Components?",
   "author": { "@type": "Organization", "name": "Thakur Industries" },
-  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-11-08",
   "articleSection": "Heat Treatment Processes",
   "keywords": ["difference between induction hardening and case hardening", "induction hardening vs case hardening", "surface hardening comparison", "steel hardening types"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/difference-between-induction-and-case-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/difference-between-induction-and-case-hardening",
   "inLanguage": "en"
 };
 

@@ -73,7 +73,7 @@ export default function ContactPage() {
           "addressCountry": "India"
         },
         "telephone": SITE_PHONE_NUMBER,
-        "email": "sales@thakurinduction.com"
+        "email": "sales@thakurindustries.in"
       },
       "areaServed": ["Ludhiana", "Nawanshahr", "Punjab", "Haryana", "Delhi"]
   };
@@ -231,7 +231,7 @@ export default function ContactPage() {
                 </div>
                  <div className="flex items-center gap-4">
                     <Mail className="h-6 w-6 text-primary flex-shrink-0" />
-                    <a href="mailto:sales@thakurinduction.com" className="hover:text-primary">sales@thakurinduction.com</a>
+                    <a href="mailto:sales@thakurindustries.in" className="hover:text-primary">sales@thakurindustries.in</a>
                 </div>
             </div>
              <div className="mt-8">

@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Importance of Coil Design in Induction Heating",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["induction coil design", "custom induction coils Punjab", "heat concentration efficiency"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/importance-of-coil-design-in-induction-heating",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/importance-of-coil-design-in-induction-heating",
   "inLanguage": "en"
 };
 

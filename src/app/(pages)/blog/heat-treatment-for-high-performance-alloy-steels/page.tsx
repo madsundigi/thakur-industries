@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Heat Treatment for High-Performance Alloy Steels",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Materials",
   "keywords": ["high performance alloy heat treatment", "EN19 EN24 heat treatment Punjab", "alloy steel induction hardening Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/heat-treatment-for-high-performance-alloy-steels",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/heat-treatment-for-high-performance-alloy-steels",
   "inLanguage": "en"
 };
 

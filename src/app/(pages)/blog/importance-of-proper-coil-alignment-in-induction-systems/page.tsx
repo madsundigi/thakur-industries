@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Importance of Proper Coil Alignment in Induction Systems",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Quality Control",
   "keywords": ["coil alignment in induction systems", "induction coil adjustment Ludhiana", "precise heating control Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/importance-of-proper-coil-alignment-in-induction-systems",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/importance-of-proper-coil-alignment-in-induction-systems",
   "inLanguage": "en"
 };
 

@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Surface Hardening Techniques for Heavy Engineering Components",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Industrial Heat Treatment",
   "keywords": ["surface hardening techniques", "industrial component hardening Ludhiana", "alloy surface heat treatment Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/surface-hardening-techniques-for-heavy-engineering-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/surface-hardening-techniques-for-heavy-engineering-components",
   "inLanguage": "en"
 };
 

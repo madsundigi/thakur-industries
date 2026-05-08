@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Automotive Gear and Shaft Induction Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Automotive Heat Treatment",
   "keywords": ["automotive gear and shaft hardening", "gear induction heat treatment Punjab", "automotive shafts Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/automotive-gear-and-shaft-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/automotive-gear-and-shaft-induction-hardening",
   "inLanguage": "en"
 };
 

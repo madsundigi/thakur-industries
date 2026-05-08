@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Case Hardening for Automotive Transmission Components",
   "author": { "@type": "Organization", "name": "Thakur Industries" },
-  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Automotive Heat Treatment",
   "keywords": ["case hardening transmission components", "gearbox heat treatment Ludhiana", "automotive case depth Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/case-hardening-for-automotive-transmission-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/case-hardening-for-automotive-transmission-components",
   "inLanguage": "en"
 };
 

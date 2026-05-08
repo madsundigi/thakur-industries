@@ -1,7 +1,7 @@
 export const SITE_NAME = 'Thakur Industries';
 export const SITE_TAGLINE = 'Precision Induction Hardening & Heat Treatment in Ludhiana, Punjab.';
 export const SITE_DESCRIPTION = 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab. Serving nearby Haryana & Delhi industries.';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://thakurinduction.com';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://thakurindustries.in';
 export const SITE_PHONE_NUMBER = '+91 7900000776';
 export const SITE_ADDRESS = '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri, Ludhiana, Punjab 141003';
 export const CTA_PRIMARY = 'Get a Quote';

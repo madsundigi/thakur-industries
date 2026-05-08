@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Choosing the Right Frequency for Induction Hardening Applications",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["frequency in induction hardening", "high frequency hardening", "medium frequency induction heat treatment"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/importance-of-frequency-in-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/importance-of-frequency-in-induction-hardening",
   "inLanguage": "en"
 };
 

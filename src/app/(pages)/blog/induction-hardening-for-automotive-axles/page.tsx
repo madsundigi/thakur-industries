@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Automotive Axles in Punjab",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Automotive Heat Treatment",
   "keywords": ["automotive axle hardening", "rear axle heat treatment Ludhiana", "differential shaft hardening Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-automotive-axles",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-automotive-axles",
   "inLanguage": "en"
 };
 

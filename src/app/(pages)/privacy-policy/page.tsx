@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
           <div className="mt-4 bg-secondary p-6 rounded-lg border">
             <p className="font-bold text-foreground">{SITE_NAME}</p>
             <p className="mt-1">{SITE_ADDRESS}</p>
-            <p className="mt-1">Email: sales@thakurinduction.com</p>
+            <p className="mt-1">Email: sales@thakurindustries.in</p>
           </div>
         </section>
 

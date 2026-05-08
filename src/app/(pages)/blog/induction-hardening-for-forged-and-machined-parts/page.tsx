@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Forged Shafts and Spindles",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["forged shaft hardening", "spindle heat treatment Punjab", "induction heating Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-forged-and-machined-parts",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-forged-and-machined-parts",
   "inLanguage": "en"
 };
 

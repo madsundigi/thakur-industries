@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Heat Treatment for EN8 Steel Components",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Materials",
   "keywords": ["EN8 induction heat treatment", "EN8 surface hardening Punjab", "medium carbon steel Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-heat-treatment-for-en8-steel-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-heat-treatment-for-en8-steel-components",
   "inLanguage": "en"
 };
 

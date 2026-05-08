@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Surface Hardening vs. Through Hardening: Which is Right for You?",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-08-20",
   "articleSection": "Heat Treatment Processes",
   "keywords": ["surface hardening vs through hardening", "induction hardening", "heat treatment ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/surface-vs-through-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/surface-vs-through-hardening",
   "inLanguage": "en"
 };
 

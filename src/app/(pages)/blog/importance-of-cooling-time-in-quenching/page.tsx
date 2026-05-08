@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Importance of Cooling Time in Quenching",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Quality Control",
   "keywords": ["cooling time in quenching", "heat treatment cooling control", "quenching delay Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/importance-of-cooling-time-in-quenching",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/importance-of-cooling-time-in-quenching",
   "inLanguage": "en"
 };
 

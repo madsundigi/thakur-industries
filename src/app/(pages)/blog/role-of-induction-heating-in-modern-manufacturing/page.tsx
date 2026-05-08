@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Role of Induction Heating in Modern Manufacturing",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Manufacturing Technology",
   "keywords": ["induction heating in manufacturing", "industrial heat treatment Ludhiana", "metal hardening technology Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/role-of-induction-heating-in-modern-manufacturing",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/role-of-induction-heating-in-modern-manufacturing",
   "inLanguage": "en"
 };
 

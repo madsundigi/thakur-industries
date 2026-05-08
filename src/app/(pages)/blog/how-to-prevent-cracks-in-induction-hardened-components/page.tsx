@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "How to Prevent Cracks in Induction Hardened Components",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Quality Control",
   "keywords": ["crack prevention in induction hardening", "surface stress control", "quenching management Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/how-to-prevent-cracks-in-induction-hardened-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/how-to-prevent-cracks-in-induction-hardened-components",
   "inLanguage": "en"
 };
 

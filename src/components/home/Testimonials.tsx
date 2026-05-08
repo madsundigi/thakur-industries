@@ -46,7 +46,7 @@ export function Testimonials() {
         "@context": "https://schema.org/",
         "@type": "LocalBusiness",
         "name": "Thakur Industries",
-        "image": "https://thakurinduction.com/logo.png",
+        "image": "https://thakurindustries.in/logo.png",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri",

@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Thakur Industries – Leading Induction Hardening Services in North India",
   "author": { "@type": "Organization", "name": "Thakur Industries" },
-  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Services",
   "keywords": ["induction hardening north india", "heat treatment Punjab", "Haryana", "Delhi", "North India job work"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-services-in-north-india",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-services-in-north-india",
   "inLanguage": "en"
 };
 

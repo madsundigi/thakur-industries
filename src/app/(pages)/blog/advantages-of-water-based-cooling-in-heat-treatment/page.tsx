@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Advantages of Water-Based Cooling in Heat Treatment",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["water cooling heat treatment", "polymer quenching alternatives Punjab", "eco-friendly cooling Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/advantages-of-water-based-cooling-in-heat-treatment",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/advantages-of-water-based-cooling-in-heat-treatment",
   "inLanguage": "en"
 };
 

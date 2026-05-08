@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Step-by-Step Guide to the Induction Hardening Process",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-10-25",
   "articleSection": "Heat Treatment Processes",
   "keywords": ["induction hardening process", "induction heat treatment process", "how induction hardening works"],
-  "mainEntityOfPage": "https://thakurinduction.com/blog/what-is-induction-hardening-ludhiana",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/what-is-induction-hardening-ludhiana",
   "inLanguage": "en"
 };
 

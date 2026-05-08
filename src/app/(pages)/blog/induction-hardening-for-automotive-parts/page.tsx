@@ -18,11 +18,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Automotive Parts — Strength That Drives Performance",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-07-30",
   "articleSection": "Automotive Heat Treatment",
   "keywords": ["induction hardening for automotive parts", "automotive shaft heat treatment", "gear hardening", "crankshaft hardening Ludhiana"],
-  "mainEntityOfPage": "https://thakurinduction.com/blog/induction-hardening-for-automotive-parts",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-automotive-parts",
   "inLanguage": "en"
 };
 

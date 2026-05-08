@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Agricultural Equipment Parts",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Agricultural Heat Treatment",
   "keywords": ["agricultural equipment heat treatment", "tractor component hardening Punjab", "spindle heat treatment Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-for-agricultural-implements",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-for-agricultural-implements",
   "inLanguage": "en"
 };
 

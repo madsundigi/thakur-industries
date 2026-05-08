@@ -84,7 +84,7 @@ export default function RootLayout({
       areaServed: ["Ludhiana", "Nawanshahr", "Punjab", "India", "Haryana", "Delhi"],
       availableLanguage: ["en", "pa", "hi"]
     },
-    description: 'Thakur Induction provides precision heat treatment and induction hardening job work for industries in Ludhiana, Punjab, Haryana & Delhi NCR.',
+    description: 'Thakur Industries provides precision heat treatment and induction hardening job work for industries in Ludhiana, Punjab, Haryana & Delhi NCR.',
   };
 
   const serviceSchema = {
@@ -93,7 +93,7 @@ export default function RootLayout({
       "serviceType": "Induction Hardening Job Work",
       "provider": {
         "@type": "LocalBusiness",
-        "name": "Thakur Induction"
+        "name": "Thakur Industries"
       },
       "areaServed": {
         "@type": "AdministrativeArea",
@@ -101,7 +101,7 @@ export default function RootLayout({
       },
       "broker": {
         "@type": "Organization",
-        "name": "Thakur Induction"
+        "name": "Thakur Industries"
       }
   }
 

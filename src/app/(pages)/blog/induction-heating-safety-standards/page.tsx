@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Induction Heating Safety Standards for Industries",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Industrial Safety",
   "keywords": ["induction heating safety", "industrial safety Punjab", "heat treatment precautions Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-heating-safety-standards-for-industries",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-heating-safety-standards-for-industries",
   "inLanguage": "en"
 };
 

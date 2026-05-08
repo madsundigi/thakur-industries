@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Heat Treatment & Induction Hardening for EN Series Steels — EN8, EN19, EN24",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": "2024-08-25",
   "articleSection": "Heat Treatment Materials",
   "keywords": ["heat treatment for EN steels", "EN8 heat treatment", "EN19 induction hardening", "EN24 steel hardening Punjab"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/heat-treatment-for-en-series-steels",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/heat-treatment-for-en-series-steels",
   "inLanguage": "en"
 };
 

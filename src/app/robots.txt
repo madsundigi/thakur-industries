@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thakurinduction.com/sitemap.xml
+Sitemap: https://thakurindustries.in/sitemap.xml

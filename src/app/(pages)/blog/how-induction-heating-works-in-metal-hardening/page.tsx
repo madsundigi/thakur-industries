@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "How Induction Heating Works in Metal Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["induction heating working principle", "electromagnetic heat treatment", "industrial induction process"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/how-induction-heating-works-in-metal-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/how-induction-heating-works-in-metal-hardening",
   "inLanguage": "en"
 };
 

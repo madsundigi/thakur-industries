@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Role of Hardness Testing in Quality Control",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Quality Control",
   "keywords": ["hardness testing quality control", "Rockwell test Punjab", "case depth verification Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/hardness-testing-after-induction-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/hardness-testing-after-induction-hardening",
   "inLanguage": "en"
 };
 

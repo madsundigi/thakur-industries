@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Why Induction Hardening is Preferred Over Flame Hardening",
   "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Heat Treatment Processes",
   "keywords": ["induction hardening vs flame hardening", "industrial hardening process Punjab", "heat treatment comparison Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/induction-hardening-vs-flame-hardening",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/induction-hardening-vs-flame-hardening",
   "inLanguage": "en"
 };
 

@@ -19,11 +19,11 @@ const blogSchema = {
   "@type": "BlogPosting",
   "headline": "Advanced Induction Hardening for Precision Components",
   "author": { "@type": "Organization", "name": "Thakur Industries" },
-  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurinduction.com/logo.png"} },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Industrial Heat Treatment",
   "keywords": ["precision induction hardening", "industrial heat treatment Punjab", "component hardening Ludhiana"],
-  "mainEntityOfPage": "https://www.thakurinduction.com/blog/advanced-induction-hardening-for-precision-components",
+  "mainEntityOfPage": "https://thakurindustries.in/blog/advanced-induction-hardening-for-precision-components",
   "inLanguage": "en"
 };
 
