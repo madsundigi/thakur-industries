@@ -24,7 +24,7 @@ const serviceSchema = {
     "serviceType": "Gear Hardening",
     "provider": {
         "@type": "LocalBusiness",
-        "name": "Thakur Induction",
+        "name": "Thakur Industries",
         "address": {
         "@type": "PostalAddress",
         "addressLocality": "Ludhiana",
@@ -204,7 +204,7 @@ export default function GearHardeningPage() {
                      <div className="container mx-auto px-4 md:px-6 max-w-5xl">
                         <PageHeader
                             title="Industrial & Automotive Gear Applications"
-                            description="Thakur Induction provides gear induction hardening for components used in automobiles, tractors, machinery, and power transmission systems."
+                            description="Thakur Industries provides gear induction hardening for components used in automobiles, tractors, machinery, and power transmission systems."
                             className="text-center mb-12"
                         />
                         <Table>

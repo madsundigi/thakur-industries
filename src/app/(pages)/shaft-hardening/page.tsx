@@ -23,7 +23,7 @@ const serviceSchema = {
   "serviceType": "Shaft Hardening",
   "provider": {
     "@type": "LocalBusiness",
-    "name": "Thakur Induction",
+    "name": "Thakur Industries",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ludhiana",
@@ -198,7 +198,7 @@ export default function ShaftHardeningPage() {
                 <section className="py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6">
                         <PageHeader
-                            title="Why Choose Thakur Induction for Shaft Hardening?"
+                            title="Why Choose Thakur Industries for Shaft Hardening?"
                             className="text-center mb-12"
                         />
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

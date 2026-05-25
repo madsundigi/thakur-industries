@@ -18,8 +18,8 @@ const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Precision Induction Hardening Services for OEMs",
-  "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
+  "author": { "@type": "Organization", "name": "Thakur Industries" },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "OEM Heat Treatment",
   "keywords": ["OEM induction hardening services", "industrial job work Punjab", "automotive OEM Ludhiana"],
@@ -163,7 +163,7 @@ export default function BlogPostPage() {
             </ul>
             <p>Each batch undergoes digital documentation and traceability — a must for export and OEM validation.</p>
 
-            <h2 className="text-3xl font-bold mt-12">Why Exporters Choose Thakur Induction</h2>
+            <h2 className="text-3xl font-bold mt-12">Why Exporters Choose Thakur Industries</h2>
             <p>Based in Ludhiana, Punjab’s industrial hub, {SITE_NAME} provides specialized heat treatment job work designed for exporters, OEM suppliers, and precision engineering firms.</p>
             <h3 className='text-2xl font-semibold mt-4'>Our Competitive Advantages:</h3>
              <ul className="list-disc list-inside space-y-2 text-muted-foreground my-4">

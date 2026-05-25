@@ -12,8 +12,21 @@ import { Testimonials } from '@/components/home/Testimonials';
 import { Faq } from '@/components/home/Faq';
 
 export const metadata: Metadata = {
-  title: 'Induction Hardening & Heat Treatment in Ludhiana, Punjab',
-  description: 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab. Serving nearby Haryana & Delhi industries.',
+  title: 'Induction Hardening Job Work in Ludhiana Punjab | Thakur Industries',
+  description: 'Top induction hardening & heat treatment job work company in Ludhiana, Punjab. Gear hardening, shaft hardening, bearing race & case hardening. Serving Punjab, Haryana & Delhi. Call +91 7900000776.',
+  keywords: [
+    'induction hardening Ludhiana',
+    'heat treatment job work Punjab',
+    'gear hardening Ludhiana',
+    'shaft hardening Punjab',
+    'induction hardening job work',
+    'case hardening Ludhiana',
+    'heat treatment company Punjab',
+    'induction heat treatment Ludhiana',
+    'surface hardening Punjab',
+    'bearing race hardening',
+  ],
+  alternates: { canonical: '/' },
 };
 
 

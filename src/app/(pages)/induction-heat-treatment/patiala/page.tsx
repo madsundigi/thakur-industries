@@ -7,6 +7,7 @@ import { ShieldCheck, Zap, Cpu, CheckCircle2, ArrowRight, MapPin, Settings, Boxe
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/shared/BreadcrumbJsonLd';
 import { SITE_NAME, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 
@@ -21,6 +22,7 @@ export default function PatialaPage() {
   return (
     <>
       <JsonLd data={schema} />
+      <BreadcrumbJsonLd items={[{ name: 'Heat Treatment', href: '/induction-heat-treatment' }, { name: 'Patiala', href: '/induction-heat-treatment/patiala' }]} />
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <PageHeader
@@ -38,7 +40,7 @@ export default function PatialaPage() {
             variants={fadeInUp}
           >
             <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-              Thakur Induction provides Patiala industries with induction hardening and heat treatment for components requiring controlled case depth and high fatigue life. Options include in-workshop service and mobile on-site hardening for large or fixed parts.
+              Thakur Industries provides Patiala industries with induction hardening and heat treatment for components requiring controlled case depth and high fatigue life. Options include in-workshop service and mobile on-site hardening for large or fixed parts.
             </p>
           </motion.section>
 

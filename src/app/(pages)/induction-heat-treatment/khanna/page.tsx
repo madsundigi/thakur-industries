@@ -7,6 +7,7 @@ import { ShieldCheck, Zap, Cpu, CheckCircle2, ArrowRight, MapPin, Settings, Boxe
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/shared/BreadcrumbJsonLd';
 import { SITE_NAME, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 
@@ -21,6 +22,7 @@ export default function KhannaPage() {
   return (
     <>
       <JsonLd data={schema} />
+      <BreadcrumbJsonLd items={[{ name: 'Heat Treatment', href: '/induction-heat-treatment' }, { name: 'Khanna', href: '/induction-heat-treatment/khanna' }]} />
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <PageHeader
@@ -38,7 +40,7 @@ export default function KhannaPage() {
             variants={fadeInUp}
           >
             <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-              Thakur Induction provides Khanna manufacturers with repeatable induction hardening and stress-relief services. Controlled case depths, minimal distortion and documented test reports for quality assurance.
+              Thakur Industries provides Khanna manufacturers with repeatable induction hardening and stress-relief services. Controlled case depths, minimal distortion and documented test reports for quality assurance.
             </p>
           </motion.section>
 

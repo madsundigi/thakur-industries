@@ -32,7 +32,7 @@ export function ServiceArea() {
     'serviceType': 'Induction Hardening',
     'provider': {
       '@type': 'LocalBusiness',
-      'name': 'Thakur Induction'
+      'name': 'Thakur Industries'
     },
     'areaServed': [
         { '@type': 'AdministrativeArea', 'name': 'Punjab'},

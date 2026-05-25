@@ -18,8 +18,8 @@ const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Induction Hardening for Agricultural Equipment Parts",
-  "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
+  "author": { "@type": "Organization", "name": "Thakur Industries" },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Agricultural Heat Treatment",
   "keywords": ["agricultural equipment heat treatment", "tractor component hardening Punjab", "spindle heat treatment Ludhiana"],
@@ -193,7 +193,7 @@ export default function BlogPostPage() {
             </div>
             <p className='font-semibold text-foreground'>Induction hardening is faster, cleaner, and far more precise — ideal for modern agricultural manufacturing.</p>
             
-            <h2 className="text-3xl font-bold mt-12">Why Choose Thakur Induction in Ludhiana</h2>
+            <h2 className="text-3xl font-bold mt-12">Why Choose Thakur Industries in Ludhiana</h2>
             <p>As one of Punjab’s leading induction hardening service providers, {SITE_NAME} works closely with tractor OEMs, implement manufacturers, and farm machinery suppliers to deliver reliable, high-quality heat treatment job work.</p>
             <h3 className="text-2xl font-semibold mt-6">Our Capabilities Include:</h3>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">

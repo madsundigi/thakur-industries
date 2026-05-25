@@ -23,7 +23,7 @@ const serviceSchema = {
   "serviceType": "Component Hardening",
   "provider": {
     "@type": "LocalBusiness",
-    "name": "Thakur Induction",
+    "name": "Thakur Industries",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ludhiana",

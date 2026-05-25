@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Footer } from '@/components/layout/Footer';
 import { SITE_NAME, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { JsonLd } from '@/components/shared/JsonLd';
+import { WhatsAppButton } from '@/components/shared/WhatsAppButton';
 import { AeroNav } from '@/components/layout/AeroNav';
 import Script from 'next/script';
 
@@ -85,6 +86,28 @@ export default function RootLayout({
       availableLanguage: ["en", "pa", "hi"]
     },
     description: 'Thakur Industries provides precision heat treatment and induction hardening job work for industries in Ludhiana, Punjab, Haryana & Delhi NCR.',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '09:00',
+        closes: '19:00',
+      },
+    ],
+    priceRange: '₹₹',
+    currenciesAccepted: 'INR',
+    paymentAccepted: 'Cash, Bank Transfer, UPI',
+    areaServed: [
+      { '@type': 'City', name: 'Ludhiana' },
+      { '@type': 'City', name: 'Jalandhar' },
+      { '@type': 'City', name: 'Patiala' },
+      { '@type': 'City', name: 'Mandi Gobindgarh' },
+      { '@type': 'City', name: 'Khanna' },
+      { '@type': 'State', name: 'Punjab' },
+    ],
+    sameAs: [
+      'https://thakurindustries.in',
+    ],
   };
 
   const serviceSchema = {
@@ -123,6 +146,7 @@ export default function RootLayout({
         <AeroNav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
         <Toaster />
         {/* Google Tag (gtag.js) */}
         <Script

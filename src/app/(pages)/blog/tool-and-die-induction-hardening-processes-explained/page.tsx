@@ -18,8 +18,8 @@ const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Tool and Die Induction Hardening Processes Explained",
-  "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
+  "author": { "@type": "Organization", "name": "Thakur Industries" },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Industrial Heat Treatment",
   "keywords": ["tool and die induction hardening", "industrial die heat treatment Punjab", "tool life enhancement Ludhiana"],
@@ -89,7 +89,7 @@ export default function BlogPostPage() {
             <p>Induction hardening is a localized surface heat treatment process that strengthens the outer layer of a component while maintaining a tough and ductile core. For tools and dies, this ensures surface wear resistance, impact toughness, and dimensional precision — three factors that define tool life. The process uses an electromagnetic coil to generate heat rapidly on the tool surface, which is then quenched (cooled) to form a hard martensitic structure. The result is a tough core with a hard outer shell — ideal for resisting wear and fatigue.</p>
             <p className='font-semibold'>Induction hardening is precision-engineered for precision tools.</p>
 
-            <h2 className="text-3xl font-bold mt-12">Step-by-Step Process: Tool & Die Induction Hardening at Thakur Induction</h2>
+            <h2 className="text-3xl font-bold mt-12">Step-by-Step Process: Tool & Die Induction Hardening at Thakur Industries</h2>
             <p>At {SITE_NAME}, we employ custom-designed induction coils and digital process control systems to deliver uniform heating and exact case depths for every tool or die.</p>
             <ol className="list-decimal list-inside space-y-2 text-muted-foreground my-4">
                 <li><strong>Pre-Cleaning and Preparation:</strong> All components are cleaned to remove oil, rust, or coatings that can affect heat transfer.</li>

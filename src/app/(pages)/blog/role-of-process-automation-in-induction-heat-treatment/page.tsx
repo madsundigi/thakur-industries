@@ -18,8 +18,8 @@ const blogSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "PLC Automation in Induction Hardening Systems",
-  "author": { "@type": "Organization", "name": "Thakur Induction" },
-  "publisher": { "@type": "Organization", "name": "Thakur Induction", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
+  "author": { "@type": "Organization", "name": "Thakur Industries" },
+  "publisher": { "@type": "Organization", "name": "Thakur Industries", "logo": {"@type": "ImageObject", "url": "https://thakurindustries.in/logo.png"} },
   "datePublished": new Date().toISOString().split('T')[0],
   "articleSection": "Technology",
   "keywords": ["PLC induction automation", "digital heat treatment Punjab", "automatic coil control Ludhiana"],
@@ -109,7 +109,7 @@ export default function BlogPostPage() {
             <p className='mt-4 font-semibold'>Every parameter — automatically monitored, adjusted, and verified.</p>
 
 
-            <h2 className="text-3xl font-bold mt-12">Technological Features in Thakur Induction’s PLC Systems</h2>
+            <h2 className="text-3xl font-bold mt-12">Technological Features in Thakur Industries’s PLC Systems</h2>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground my-4">
                 <li><strong>Touchscreen HMI Interface:</strong> A user-friendly display for real-time monitoring of heat treatment parameters, process graphs, and case depth control.</li>
                 <li><strong>PID Temperature Control:</strong> Ensures precise heating without overshoot, critical for alloy steels like EN8, EN19, EN24, and 4140.</li>

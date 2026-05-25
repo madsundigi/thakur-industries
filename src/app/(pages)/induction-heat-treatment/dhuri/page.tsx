@@ -7,6 +7,7 @@ import { ShieldCheck, Zap, Cpu, CheckCircle2, ArrowRight, MapPin, Settings, Boxe
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/shared/BreadcrumbJsonLd';
 import { SITE_NAME, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 
@@ -21,12 +22,13 @@ export default function DhuriPage() {
   return (
     <>
       <JsonLd data={schema} />
+      <BreadcrumbJsonLd items={[{ name: 'Heat Treatment', href: '/induction-heat-treatment' }, { name: 'Dhuri', href: '/induction-heat-treatment/dhuri' }]} />
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <PageHeader
             title="Induction Heat Treatment Services"
             highlightedWord="Dhuri"
-            description="Dhuri manufacturers — increase component life with induction hardening from Thakur Induction. specialists in shaft, gear and bearing hardening."
+            description="Dhuri manufacturers — increase component life with induction hardening from Thakur Industries. specialists in shaft, gear and bearing hardening."
             className="text-center"
           />
 
@@ -38,7 +40,7 @@ export default function DhuriPage() {
             variants={fadeInUp}
           >
             <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-              Dhuri manufacturers — increase component life with induction hardening from Thakur Induction. We handle small samples to large production runs and provide hardness testing, microhardness traverses and certification. Mobile on-site units available.
+              Dhuri manufacturers — increase component life with induction hardening from Thakur Industries. We handle small samples to large production runs and provide hardness testing, microhardness traverses and certification. Mobile on-site units available.
             </p>
           </motion.section>
 

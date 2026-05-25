@@ -8,6 +8,7 @@ import { CheckCircle2, Zap, ShieldCheck, Factory, Cpu, Gauge, ArrowRight, Flame 
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/shared/BreadcrumbJsonLd';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CTASection } from '@/components/home/CTASection';
@@ -30,6 +31,7 @@ export default function PillarPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: 'Induction Heat Treatment', href: '/induction-heat-treatment' }]} />
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "WebPage",

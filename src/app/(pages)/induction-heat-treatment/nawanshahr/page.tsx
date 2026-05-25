@@ -7,6 +7,7 @@ import { ShieldCheck, Zap, Cpu, CheckCircle2, ArrowRight, MapPin, Settings, Boxe
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
+import { BreadcrumbJsonLd } from '@/components/shared/BreadcrumbJsonLd';
 import { SITE_NAME, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 
@@ -21,6 +22,7 @@ export default function NawanshahrPage() {
   return (
     <>
       <JsonLd data={schema} />
+      <BreadcrumbJsonLd items={[{ name: 'Heat Treatment', href: '/induction-heat-treatment' }, { name: 'Nawanshahr', href: '/induction-heat-treatment/nawanshahr' }]} />
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <PageHeader

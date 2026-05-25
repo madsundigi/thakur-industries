@@ -87,7 +87,52 @@ export async function GET() {
   const servicePaths = SERVICES.map(service => service.href).filter(href => !href.includes('#'));
   const blogPaths = blogPosts.map(slug => `/blog/${slug}`);
   
-  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment', '/heat-treating-steel', '/heat-treatment-job-work', '/induction-heat-treatment/induction-hardening-gears-ludhiana', '/induction-heat-treatment/induction-hardening-shafts-ludhiana', '/induction-heat-treatment/crankshafts-induction-hardening-ludhiana', '/induction-heat-treatment/induction-hardening-bearings-ludhiana'])];
+  const corePaths = ['/', '/about', '/contact', '/induction-heat-treatment', '/services', '/industries'];
+  const servicePagesHighPriority = [
+    '/induction-heat-treatment/induction-hardening-shafts-ludhiana',
+    '/induction-heat-treatment/induction-hardening-gears-ludhiana',
+    '/induction-heat-treatment/crankshafts-induction-hardening-ludhiana',
+    '/induction-heat-treatment/induction-hardening-bearings-ludhiana',
+    '/induction-heat-treatment/on-site',
+    '/case-hardening-heat-treatment',
+    '/shaft-hardening',
+    '/gear-hardening',
+    '/surface-hardening',
+    '/induction-hardening',
+    '/induction-hardening-services',
+  ];
+  const locationPaths = [
+    '/induction-heat-treatment/mandi-gobindgarh',
+    '/induction-heat-treatment/jalandhar',
+    '/induction-heat-treatment/patiala',
+    '/induction-heat-treatment/khanna',
+    '/induction-heat-treatment/phagwara',
+    '/induction-heat-treatment/nawanshahr',
+    '/induction-heat-treatment/malerkotla',
+    '/induction-heat-treatment/sangrur',
+    '/induction-heat-treatment/dhuri',
+    '/induction-heat-treatment/jagraon',
+    '/induction-heat-treatment/samrala',
+    '/induction-heat-treatment/sirhind',
+    '/induction-heat-treatment/dehlon',
+  ];
+  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment', '/heat-treating-steel', '/heat-treatment-job-work'])];
+
+  const getPriority = (path: string): string => {
+    if (path === '/') return '1.0';
+    if (corePaths.includes(path)) return '0.95';
+    if (servicePagesHighPriority.includes(path)) return '0.90';
+    if (locationPaths.includes(path)) return '0.85';
+    if (path.startsWith('/blog/')) return '0.60';
+    if (path === '/blog') return '0.70';
+    return '0.75';
+  };
+
+  const getChangeFreq = (path: string): string => {
+    if (path === '/' || corePaths.includes(path)) return 'weekly';
+    if (servicePagesHighPriority.includes(path) || locationPaths.includes(path)) return 'monthly';
+    return 'monthly';
+  };
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -97,8 +142,8 @@ export async function GET() {
     <url>
       <loc>${SITE_URL}${path}</loc>
       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>${path === '/' ? '1.0' : '0.8'}</priority>
+      <changefreq>${getChangeFreq(path)}</changefreq>
+      <priority>${getPriority(path)}</priority>
     </url>
   `}).join('')}
 </urlset>`;
