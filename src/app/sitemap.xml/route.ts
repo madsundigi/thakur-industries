@@ -116,13 +116,26 @@ export async function GET() {
     '/induction-heat-treatment/sirhind',
     '/induction-heat-treatment/dehlon',
   ];
-  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment', '/heat-treating-steel', '/heat-treatment-job-work'])];
+  const tier2Pages = [
+    '/get-quote',
+    '/our-work',
+    '/quality-certifications',
+    '/industries/automotive',
+    '/industries/agricultural',
+    '/induction-heat-treatment/focal-point-ludhiana',
+    '/induction-heat-treatment/sherpur-ludhiana',
+  ];
+  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, ...tier2Pages, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment', '/heat-treating-steel', '/heat-treatment-job-work'])];
+
+  const tier2HighValue = ['/get-quote', '/our-work', '/quality-certifications', '/industries/automotive', '/industries/agricultural'];
+  const tier2Location = ['/induction-heat-treatment/focal-point-ludhiana', '/induction-heat-treatment/sherpur-ludhiana'];
 
   const getPriority = (path: string): string => {
     if (path === '/') return '1.0';
     if (corePaths.includes(path)) return '0.95';
     if (servicePagesHighPriority.includes(path)) return '0.90';
-    if (locationPaths.includes(path)) return '0.85';
+    if (tier2HighValue.includes(path)) return '0.88';
+    if (locationPaths.includes(path) || tier2Location.includes(path)) return '0.85';
     if (path.startsWith('/blog/')) return '0.60';
     if (path === '/blog') return '0.70';
     return '0.75';
