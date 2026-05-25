@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle2, Phone, MessageSquare, Clock, IndianRupee, Layers, Gauge, Flame } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
@@ -117,6 +118,25 @@ export default function GetQuotePage() {
             description="Transparent job work pricing for Punjab industries. Tell us your component, material, and quantity — we'll send a competitive quote within 24 hours."
             className="text-center"
           />
+
+          {/* Hero image banner */}
+          <div className="relative h-52 md:h-64 rounded-3xl overflow-hidden mb-12 border border-primary/20 shadow-[0_0_30px_rgba(255,0,0,0.08)]">
+            <Image
+              src="/images/images/6.png"
+              alt="Induction hardening job work — precision heat treatment Ludhiana"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+            <div className="absolute inset-0 flex items-center px-8 md:px-16">
+              <div className="max-w-md">
+                <p className="text-primary font-black uppercase tracking-widest text-xs mb-3">Get Competitive Rates</p>
+                <h2 className="text-2xl md:text-3xl font-black uppercase italic tracking-tighter text-foreground">Quote in 24 hours.<br />Pickup across Punjab.</h2>
+                <p className="text-muted-foreground text-sm mt-2">Serving 500+ manufacturers. OEM-grade with test reports.</p>
+              </div>
+            </div>
+          </div>
 
           {/* Quick Contact Strip */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">

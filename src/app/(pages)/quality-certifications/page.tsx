@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Award, CheckCircle2, FileText, Gauge, Microscope, ShieldCheck, Zap, ClipboardList } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
@@ -129,6 +130,27 @@ export default function QualityCertificationsPage() {
             description={`Every component treated at ${SITE_NAME} goes through a documented quality process — from pre-inspection to hardness testing and certification. OEM and export-ready standards.`}
             className="text-center"
           />
+
+          {/* Hero image banner */}
+          <div className="relative h-60 md:h-80 rounded-3xl overflow-hidden mb-16 border border-primary/20 shadow-[0_0_40px_rgba(255,0,0,0.10)]">
+            <Image
+              src="/images/images/7.png"
+              alt="Quality control and hardness testing at Thakur Industries"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-transparent" />
+            <div className="absolute inset-0 flex items-center px-8 md:px-16">
+              <div className="max-w-lg">
+                <span className="inline-block bg-primary text-primary-foreground text-xs font-black uppercase px-3 py-1 rounded-full tracking-widest mb-4">ISO-Process Standards</span>
+                <h2 className="text-2xl md:text-4xl font-black uppercase italic tracking-tighter text-foreground leading-tight">
+                  Every batch tested.<br />Every report documented.
+                </h2>
+                <p className="text-muted-foreground text-sm mt-3 font-medium">Rockwell HRC testing on calibrated equipment — minimum 3 test points per batch.</p>
+              </div>
+            </div>
+          </div>
 
           {/* Trust Badges */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">

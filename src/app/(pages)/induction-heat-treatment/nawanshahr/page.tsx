@@ -10,6 +10,7 @@ import { JsonLd } from '@/components/shared/JsonLd';
 import { BreadcrumbJsonLd } from '@/components/shared/BreadcrumbJsonLd';
 import { SITE_NAME, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
+import Image from 'next/image';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -31,6 +32,23 @@ export default function NawanshahrPage() {
             description="Nawanshahr induction hardening & heat treatment — on-site & workshop services for shafts, gears and bearings."
             className="text-center"
           />
+
+          {/* Process image banner */}
+          <div className="relative h-52 md:h-64 rounded-3xl overflow-hidden mb-4 border border-primary/20 shadow-[0_0_30px_rgba(255,0,0,0.08)]">
+            <Image
+              src="/images/images/5.jpeg"
+              alt="Induction hardening process — precision heat treatment"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
+            <div className="absolute inset-0 flex items-end p-6 md:p-8">
+              <div>
+                <span className="bg-primary text-primary-foreground text-xs font-black uppercase px-3 py-1 rounded-full tracking-widest">Induction Hardening</span>
+                <p className="text-white font-black uppercase italic text-xl md:text-2xl mt-2 tracking-tighter">Precision. Certified. Fast Turnaround.</p>
+              </div>
+            </div>
+          </div>
 
           <motion.section 
             className="py-12 text-center max-w-4xl mx-auto"

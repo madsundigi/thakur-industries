@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { CheckCircle2, MapPin, Settings, Boxes, Cpu, ArrowRight, Factory } from 'lucide-react';
@@ -57,6 +58,23 @@ export default function FocalPointLudhianaPage() {
             description="Serving Focal Point — Punjab's largest and most active industrial estate — with precision induction hardening, case hardening, and surface heat treatment. All phases covered with fast pickup & delivery."
             className="text-center"
           />
+
+          {/* Process image banner */}
+          <div className="relative h-52 md:h-64 rounded-3xl overflow-hidden mb-4 border border-primary/20 shadow-[0_0_30px_rgba(255,0,0,0.08)]">
+            <Image
+              src="/images/images/5.jpeg"
+              alt="Induction hardening process — precision heat treatment"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
+            <div className="absolute inset-0 flex items-end p-6 md:p-8">
+              <div>
+                <span className="bg-primary text-primary-foreground text-xs font-black uppercase px-3 py-1 rounded-full tracking-widest">Induction Hardening</span>
+                <p className="text-white font-black uppercase italic text-xl md:text-2xl mt-2 tracking-tighter">Precision. Certified. Fast Turnaround.</p>
+              </div>
+            </div>
+          </div>
 
           <motion.section
             className="py-12 text-center max-w-4xl mx-auto"

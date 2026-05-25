@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Check, Factory, Award, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const stats = [
     {
@@ -41,10 +43,24 @@ const staggerContainer = {
 
 export function AboutSection() {
   const prefersReducedMotion = usePrefersReducedMotion();
+  const factoryImage = PlaceHolderImages.find(img => img.id === 'aboutTimeline');
 
   return (
-    <section className="py-24 md:py-32 bg-secondary border-y border-border">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="relative py-24 md:py-32 border-y border-border overflow-hidden">
+      {/* Subtle factory background */}
+      {factoryImage && (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={factoryImage.imageUrl}
+            alt="Thakur Industries factory floor"
+            fill
+            className="object-cover opacity-[0.08]"
+            data-ai-hint={factoryImage.imageHint}
+          />
+        </div>
+      )}
+      <div className="absolute inset-0 z-0 bg-secondary/90" />
+      <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={prefersReducedMotion ? false : "hidden"}
