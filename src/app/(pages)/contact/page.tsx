@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -35,27 +36,59 @@ const formSchema = z.object({
 
 export default function ContactPage() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: { 
-        name: "", 
+    defaultValues: {
+        name: "",
         phone: "",
-        email: "", 
-        city: "", 
+        email: "",
+        city: "",
         componentType: "",
         requiredService: "",
-        message: "" 
+        message: ""
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you shortly.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '',
+          subject: `New Enquiry from ${values.name} — Thakur Industries`,
+          from_name: 'Thakur Industries Website',
+          name: values.name,
+          phone: values.phone,
+          email: values.email,
+          city: values.city || '—',
+          component_type: values.componentType || '—',
+          required_service: values.requiredService || '—',
+          message: values.message,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast({
+          title: '✅ Enquiry Sent Successfully!',
+          description: 'Thank you. Our team will respond within 24 hours.',
+        });
+        form.reset();
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch {
+      toast({
+        title: 'Submission Failed',
+        description: 'Please call us directly at +91 7900000776 or try again.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   const contactPageSchema = {
@@ -214,7 +247,9 @@ export default function ContactPage() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" size="lg">Submit Inquiry</Button>
+                <Button type="submit" size="lg" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending…' : 'Submit Inquiry'}
+                </Button>
               </form>
             </Form>
           </div>
@@ -248,19 +283,19 @@ export default function ContactPage() {
             <h3 className="text-3xl font-bold text-center mb-8">Our Location & Service Area</h3>
              <div className="relative h-[400px] w-full overflow-hidden rounded-lg border">
                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.498305727938!2d75.875935!3d30.871576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a82605f8c6b75%3A0x2d81577c38724734!2sThakur%20Induction!5e0!3m2!1sen!2sus!4v1646322895696"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.498305727938!2d75.875935!3d30.871576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a82605f8c6b75%3A0x2d81577c38724734!2sThakur%20Industries!5e0!3m2!1sen!2sin!4v1716800000000"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Thakur Industries — Heat Treatment Job Work"
+                    title="Thakur Industries — Induction Hardening Job Work Ludhiana"
                   ></iframe>
             </div>
              <div className="text-center mt-4">
                 <Button asChild variant="outline">
-                    <a href="https://www.google.com/maps/dir//Thakur+Induction/data=!4m2!4m1!3e0?entry=ttu" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.google.com/maps/search/Thakur+Industries+Shimlapuri+Ludhiana+Punjab" target="_blank" rel="noopener noreferrer">
                         Get Directions
                     </a>
                 </Button>

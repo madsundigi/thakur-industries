@@ -49,7 +49,7 @@ export function AeroNav() {
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
-              {NAV_LINKS.map((link) => (
+              {NAV_LINKS.filter(l => l.href !== '/contact').map((link) => (
                 <NavigationMenuItem key={link.href}>
                   {link.subLinks ? (
                     <>
@@ -85,6 +85,16 @@ export function AeroNav() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
+
+          {/* Desktop CTA buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <Button asChild variant="outline" size="sm" className="font-black uppercase italic tracking-tight border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+              <Link href="/contact">Contact Us</Link>
+            </Button>
+            <Button asChild size="sm" className="font-black uppercase italic tracking-tight bg-primary text-primary-foreground hover:bg-primary/90">
+              <Link href="/get-quote">Get a Quote</Link>
+            </Button>
+          </div>
 
           <div className="md:hidden">
             <button 

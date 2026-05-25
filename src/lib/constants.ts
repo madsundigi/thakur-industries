@@ -39,9 +39,20 @@ export const NAV_LINKS = [
       { href: '/induction-heat-treatment/sirhind', label: 'Sirhind' },
       { href: '/induction-heat-treatment/jalandhar', label: 'Jalandhar' },
       { href: '/induction-heat-treatment/nawanshahr', label: 'Nawanshahr' },
+      { href: '/induction-heat-treatment/focal-point-ludhiana', label: 'Focal Point Ludhiana' },
+      { href: '/induction-heat-treatment/sherpur-ludhiana', label: 'Sherpur Ludhiana' },
     ]
   },
-  { href: '/industries', label: 'Industries' },
+  {
+    href: '/industries',
+    label: 'Industries',
+    subLinks: [
+      { href: '/industries', label: 'All Industries' },
+      { href: '/industries/automotive', label: 'Automotive' },
+      { href: '/industries/agricultural', label: 'Agricultural' },
+    ]
+  },
+  { href: '/our-work', label: 'Our Work' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact Us' },
 ];
