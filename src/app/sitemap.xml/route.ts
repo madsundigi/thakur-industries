@@ -100,6 +100,10 @@ export async function GET() {
     '/surface-hardening',
     '/induction-hardening',
     '/induction-hardening-services',
+    '/induction-heat-treatment/en8-steel-induction-hardening',
+    '/induction-heat-treatment/en19-steel-induction-hardening',
+    '/induction-heat-treatment/en24-steel-hardening',
+    '/induction-heat-treatment/4140-steel-hardening',
   ];
   const locationPaths = [
     '/induction-heat-treatment/mandi-gobindgarh',

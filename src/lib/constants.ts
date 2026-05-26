@@ -20,7 +20,11 @@ export const NAV_LINKS = [
       { href: '/induction-heat-treatment/on-site', label: 'On-site Services' },
       { href: '/induction-heat-treatment/crankshafts-induction-hardening-ludhiana', label: 'Crankshaft Hardening' },
       { href: '/induction-heat-treatment/induction-hardening-bearings-ludhiana', label: 'Bearing Hardening' },
-    ] 
+      { href: '/induction-heat-treatment/en8-steel-induction-hardening', label: 'EN8 Steel Hardening' },
+      { href: '/induction-heat-treatment/en19-steel-induction-hardening', label: 'EN19 Steel Hardening' },
+      { href: '/induction-heat-treatment/en24-steel-hardening', label: 'EN24 Steel Hardening' },
+      { href: '/induction-heat-treatment/4140-steel-hardening', label: '4140 Steel Hardening' },
+    ]
   },
   {
     href: '/locations',
