@@ -71,7 +71,7 @@ const services = [
 ];
 
 const whyUs = [
-  '25+ years in Ludhiana's industrial belt',
+  "25+ years in Ludhiana's industrial belt",
   'Hardness achieved: 55–62 HRC consistently',
   'Case depth range: 0.5mm to 10mm',
   'Serving 500+ manufacturers across Punjab',
