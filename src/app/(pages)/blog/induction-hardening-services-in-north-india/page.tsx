@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronRight, CheckCircle, Zap, Shield, Thermometer, AlertTriangle } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { SITE_NAME } from '@/lib/constants';
+import { BlogRelatedLinks } from '@/components/shared/BlogRelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Thakur Industries - Induction Hardening Services in North India',
@@ -134,6 +135,7 @@ export default function BlogPostPage() {
                     </Button>
                 </div>
             </div>
+          <BlogRelatedLinks />
         </article>
       </div>
     </>

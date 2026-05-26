@@ -7,6 +7,7 @@ import { JsonLd } from '@/components/shared/JsonLd';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronRight, CheckCircle } from 'lucide-react';
 import { SITE_NAME } from '@/lib/constants';
+import { BlogRelatedLinks } from '@/components/shared/BlogRelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Top Benefits of Induction Heat Treatment for Industrial Components',
@@ -148,6 +149,7 @@ export default function BlogPostPage() {
                     </Button>
                 </div>
             </div>
+          <BlogRelatedLinks />
         </article>
       </div>
     </>

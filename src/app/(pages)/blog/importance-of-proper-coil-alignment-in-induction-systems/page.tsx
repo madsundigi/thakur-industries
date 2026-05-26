@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronRight, Zap, Shield, CheckCircle } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { SITE_NAME } from '@/lib/constants';
+import { BlogRelatedLinks } from '@/components/shared/BlogRelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Importance of Proper Coil Alignment in Induction Systems',
@@ -147,6 +148,7 @@ export default function BlogPostPage() {
                     </Button>
                 </div>
             </div>
+          <BlogRelatedLinks />
         </article>
       </div>
     </>

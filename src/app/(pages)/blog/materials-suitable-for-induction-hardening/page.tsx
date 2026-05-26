@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronRight, CheckCircle } from 'lucide-react';
 import { SITE_NAME } from '@/lib/constants';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { BlogRelatedLinks } from '@/components/shared/BlogRelatedLinks';
 
 export const metadata: Metadata = {
   title: 'Top Materials Suitable for Induction Hardening - EN8, EN19, 4140, and More',
@@ -175,6 +176,7 @@ export default function BlogPostPage() {
                     </Button>
                 </div>
             </div>
+          <BlogRelatedLinks />
         </article>
       </div>
     </>
