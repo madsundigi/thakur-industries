@@ -26,9 +26,10 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     images: [
       {
-        url: `/og-image.jpg`,
+        url: `/opengraph-image`,
         width: 1200,
         height: 630,
+        alt: 'Thakur Industries — Induction Hardening & Heat Treatment, Ludhiana',
       },
     ],
     locale: 'en_IN',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${SITE_NAME} | Induction Hardening & Heat Treatment in Ludhiana, Punjab`,
     description: 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab.',
-    images: [`/og-image.jpg`],
+    images: [`/opengraph-image`],
   },
   alternates: {
     canonical: '/',
