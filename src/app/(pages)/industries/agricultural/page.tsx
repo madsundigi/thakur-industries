@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceFAQ } from '@/components/shared/ServiceFAQ';
 import { CheckCircle2, ArrowRight, Tractor, ShieldCheck, Zap, Gauge } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
@@ -180,6 +181,18 @@ export default function AgriculturalPage() {
               ))}
             </div>
           </section>
+
+          {/* FAQ */}
+          <ServiceFAQ
+            heading="Agricultural Hardening FAQs"
+            faqItems={[
+              { question: 'Can you harden PTO shafts for tractors in Punjab?', answer: 'Yes. Tractor PTO shafts in EN8 (C45) or EN19 steel typically achieve 52–56 HRC with 2–4mm case depth after induction hardening. We handle high-volume monthly batches for Punjab tractor OEMs with pickup from your facility.' },
+              { question: 'Do you harden rotavator gears and blades?', answer: 'Yes. Rotavator gears are hardened tooth-by-tooth to 55–60 HRC. Rotavator blades get surface hardening for abrasion resistance in soil contact — significantly extending field life by 3–5 seasons.' },
+              { question: 'What is your capacity for pre-season agricultural batches?', answer: 'We handle high-volume seasonal batches to meet pre-sowing and pre-harvest demand peaks. Monthly production contracts with scheduled pickup from your facility in Ludhiana, Hoshiarpur, or Nawanshahr are available.' },
+              { question: 'Which Punjab districts do you cover for agricultural parts pickup?', answer: 'We serve tractor and agricultural parts manufacturers across Ludhiana, Jalandhar, Hoshiarpur, Nawanshahr, Phagwara, Sangrur, Mandi Gobindgarh, Khanna, Malerkotla, and all major Punjab industrial clusters.' },
+              { question: 'What tractor axle shaft hardness do you achieve?', answer: 'Tractor rear axle shafts in EN19 or EN24 typically achieve 54–58 HRC with 3–5mm case depth. This provides the combination of surface wear resistance and core toughness required for field torque loads.' },
+            ]}
+          />
 
           {/* CTA */}
           <section className="py-16 border-t border-border text-center">

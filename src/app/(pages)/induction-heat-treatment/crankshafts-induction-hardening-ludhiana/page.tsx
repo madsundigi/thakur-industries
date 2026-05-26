@@ -95,9 +95,22 @@ export default function CrankshaftHardeningSEOPage() {
     "areaServed": ["Ludhiana", "Jalandhar", "Khanna", "Mandi Gobindgarh", "North India"]
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Do you harden the entire crankshaft or just the journals?', acceptedAnswer: { '@type': 'Answer', text: 'We use localized induction hardening targeting specifically the journals, crank pins, and fillets. This preserves the core strength and ductility of the main shaft, preventing brittle failure under engine loads.' } },
+      { '@type': 'Question', name: 'What is the maximum crankshaft length you can handle in Ludhiana?', acceptedAnswer: { '@type': 'Answer', text: 'Our workshop handles crankshafts up to 2.5 metres in length. For larger marine or power-plant engine crankshafts, we offer mobile on-site induction hardening across Punjab and North India.' } },
+      { '@type': 'Question', name: 'How do you prevent cracks at oil holes during crankshaft hardening?', acceptedAnswer: { '@type': 'Answer', text: 'We use custom copper coils and digital power modulation to ensure the electromagnetic field does not concentrate excessively at oil hole edges, preventing localised overheating and thermal stress cracks.' } },
+      { '@type': 'Question', name: 'What hardness is achievable on crankshaft journals?', acceptedAnswer: { '@type': 'Answer', text: 'EN24 (4340) crankshafts typically achieve 55–60 HRC on journal surfaces with a case depth of 2–4mm, while maintaining a tough ductile core for fatigue resistance.' } },
+      { '@type': 'Question', name: 'Do you provide reports for crankshaft hardening job work?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every crankshaft job includes a Rockwell hardness test report with HRC values at each journal, case depth measurements, and process parameter documentation for your quality records.' } },
+    ],
+  };
+
   return (
     <>
       <JsonLd data={serviceSchema} />
+      <JsonLd data={faqSchema} />
       <div className="bg-background overflow-x-hidden">
         <div className="container mx-auto px-4 md:px-6">
           

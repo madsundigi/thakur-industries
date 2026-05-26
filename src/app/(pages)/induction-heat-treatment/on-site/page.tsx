@@ -10,6 +10,7 @@ import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
+import { ServiceFAQ } from '@/components/shared/ServiceFAQ';
 
 export default function OnSiteClusterPage() {
   return (
@@ -96,6 +97,16 @@ export default function OnSiteClusterPage() {
               </Link>
             </div>
           </section>
+          <ServiceFAQ
+            heading="On-site Hardening FAQs"
+            faqItems={[
+              { question: 'When do you recommend on-site induction hardening instead of workshop?', answer: 'On-site is ideal for components too large to transport safely (crankshafts over 2.5m, heavy rollers, press beds, fixed machinery), or when production shutdown time must be minimised. We bring our mobile induction equipment to your Punjab facility.' },
+              { question: 'What components can be hardened on-site at our factory?', answer: 'Large crankshafts, press rollers, mill rolls, machine bed guideways, spindles, lathe beds, large gears, and any component where transportation would risk damage, delay, or excess cost.' },
+              { question: 'What is the geographic range for your on-site induction hardening services?', answer: 'We cover all of Punjab, Haryana, Himachal Pradesh, and Delhi NCR for on-site induction hardening. Contact us with your location and component details for scheduling and mobilisation costs.' },
+              { question: 'What equipment do you bring for on-site hardening jobs?', answer: 'We deploy portable induction generators (25–300 kW), application-specific coils, integrated quench systems, and portable Rockwell hardness testers to verify quality on-site before leaving your facility.' },
+              { question: 'How long does an on-site induction hardening job take?', answer: 'A typical on-site session for 10–50 components takes 1–2 days including setup, processing, and testing. Large shutdowns with hundreds of components are scheduled over multiple days. We work around your production shifts.' },
+            ]}
+          />
         </div>
         <CTASection />
       </div>

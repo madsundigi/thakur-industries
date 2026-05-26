@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceFAQ } from '@/components/shared/ServiceFAQ';
 import { CheckCircle2, Phone, MessageSquare, Clock, IndianRupee, Layers, Gauge, Flame } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
@@ -283,6 +284,16 @@ export default function GetQuotePage() {
               ))}
             </div>
           </section>
+          <ServiceFAQ
+            heading="Job Work Rate FAQs"
+            faqItems={[
+              { question: 'How do I get a rate for induction hardening job work in Ludhiana?', answer: 'Call us at +91 7900000776, send a WhatsApp with your component details (material, size, quantity, required hardness), or fill the enquiry form. We confirm rates within 24 hours.' },
+              { question: 'What information do I need to provide for a quote?', answer: 'Component name, material grade (EN8/EN19/EN24/4140/4340), component dimensions (diameter, length), required surface hardness (HRC target), required case depth (mm), and batch quantity per month.' },
+              { question: 'Is there a minimum order quantity for induction hardening?', answer: 'There is no minimum order — we accept even single pieces for trial or sample jobs. Batch orders of 50+ pieces get better per-piece pricing. Monthly OEM contracts are also available.' },
+              { question: 'Do you offer pickup from our factory in Punjab?', answer: 'Yes. We offer pickup and delivery across Ludhiana, Jalandhar, Phagwara, Patiala, Mandi Gobindgarh, and most Punjab cities. Standard delivery back within 2–4 working days of processing.' },
+              { question: 'Is the Rockwell hardness test report included in the rate?', answer: 'Yes. Rockwell HRC test reports are included at no extra charge with every batch. Metallurgical cross-section reports and case depth verification are available on request.' },
+            ]}
+          />
         </div>
         <CTASection />
       </div>

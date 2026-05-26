@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceFAQ } from '@/components/shared/ServiceFAQ';
 import { CheckCircle2, ArrowRight, Car, Gauge, ShieldCheck, Zap } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
@@ -177,6 +178,18 @@ export default function AutomotivePage() {
               </Link>
             </div>
           </section>
+
+          {/* FAQ */}
+          <ServiceFAQ
+            heading="Automotive Heat Treatment FAQs"
+            faqItems={[
+              { question: 'What automotive components do you harden at Thakur Industries?', answer: 'We harden transmission gears, drive shafts, crankshafts, rear axles, differential gears, bearing races, and camshafts for automotive OEMs and Tier-1 suppliers across Punjab. All jobs come with Rockwell hardness test reports.' },
+              { question: 'What hardness is achieved on automotive gears and shafts?', answer: 'Transmission gears typically achieve 58–62 HRC with 1.0–2.0mm case depth. Drive shafts achieve 55–60 HRC with 2–4mm case depth. Crankshaft journals achieve 55–58 HRC. All within ±2 HRC tolerance.' },
+              { question: 'Do you supply to Tier-1 automotive OEMs in Punjab?', answer: 'Yes. We supply to automotive Tier-1 and Tier-2 manufacturers in Ludhiana, Phagwara, and Jalandhar. Our quality documentation — Rockwell reports, process parameter sheets — meets OEM incoming inspection requirements.' },
+              { question: 'What is the turnaround time for automotive production batches?', answer: 'Standard 2–4 working days. For monthly production contracts, we schedule dedicated processing slots aligned to your production schedule. High-volume OEM batches of 500+ pieces are handled regularly.' },
+              { question: 'Can you harden EN19, EN24, or 4140 steel automotive parts?', answer: 'Yes. EN19 (4140), EN24 (4340), and 20MnCr5 are the most common automotive gear and shaft steels we process. Each material grade has specific heating and quench parameters dialled in for consistent results.' },
+            ]}
+          />
 
           {/* CTA */}
           <section className="py-16 border-t border-border text-center">

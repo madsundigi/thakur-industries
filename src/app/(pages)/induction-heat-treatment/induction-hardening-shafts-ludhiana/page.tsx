@@ -92,9 +92,22 @@ export default function ShaftHardeningSEOPage() {
     "areaServed": ["Ludhiana","Jalandhar","Nawanshahr","Jagraon","Chandigarh"]
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Will induction hardening change shaft dimensions?', acceptedAnswer: { '@type': 'Answer', text: 'Minor surface expansion is normal. However, our programmable quench systems limit runout to within extreme tolerances (typically ±0.02mm), greatly reducing post-process grinding time.' } },
+      { '@type': 'Question', name: 'What is the turnaround time for shaft hardening job work?', acceptedAnswer: { '@type': 'Answer', text: 'Small-batch workshop processing typically takes 3–7 business days. For urgent requirements, we offer scheduled priority slots to keep your production lines moving.' } },
+      { '@type': 'Question', name: 'Do you provide hardness test reports for shaft hardening?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide Rockwell HRC test reports and certificates of compliance for every batch, including case depth verification and surface integrity checks.' } },
+      { '@type': 'Question', name: 'What shaft sizes can you harden in Ludhiana?', acceptedAnswer: { '@type': 'Answer', text: 'We handle shafts from 20mm to 500mm diameter and up to 4 metres in length. Larger shafts can be treated on-site at your Punjab facility.' } },
+      { '@type': 'Question', name: 'What hardness is achievable on EN19 or EN24 shafts?', acceptedAnswer: { '@type': 'Answer', text: 'EN19 (4140) typically achieves 52–58 HRC and EN24 (4340) achieves 55–62 HRC after induction hardening with polymer quench, with a case depth of 2–5mm.' } },
+    ],
+  };
+
   return (
     <>
       <JsonLd data={serviceSchema} />
+      <JsonLd data={faqSchema} />
       <div className="bg-background overflow-x-hidden">
         <div className="container mx-auto px-4 md:px-6">
           

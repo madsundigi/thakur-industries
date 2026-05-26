@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ServiceFAQ } from '@/components/shared/ServiceFAQ';
 import { Award, CheckCircle2, FileText, Gauge, Microscope, ShieldCheck, Zap, ClipboardList } from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
@@ -220,6 +221,18 @@ export default function QualityCertificationsPage() {
               ))}
             </div>
           </section>
+
+          {/* FAQ */}
+          <ServiceFAQ
+            heading="Quality & Certification FAQs"
+            faqItems={[
+              { question: 'Is Thakur Industries ISO certified for heat treatment?', answer: 'Our quality management system follows ISO 9001 principles with standardised process documentation, equipment calibration schedules, and full traceability for every job. We supply to ISO-certified OEMs across Punjab.' },
+              { question: 'What hardness test reports do you provide with each batch?', answer: 'Every batch includes a Rockwell HRC test report showing component ID, material grade, target vs achieved hardness, case depth measurement, and operator sign-off. Available digitally or in print.' },
+              { question: 'How do you control case depth accuracy in induction hardening?', answer: 'CNC-controlled induction systems with precision coil gap control and real-time infrared pyrometer monitoring. Case depth tolerance is ±0.3mm on standard components. Deeper cases (3–8mm) are verified via cross-section on sample pieces.' },
+              { question: 'Can your quality documentation be used for OEM or export audits?', answer: 'Yes. Our hardness reports, process parameter sheets, and batch traceability records are designed to meet Tier-1 OEM incoming inspection requirements and export quality audit needs.' },
+              { question: 'How often are your hardness testing instruments calibrated?', answer: 'Our Rockwell hardness testers, case depth instruments, and infrared pyrometers are calibrated on a regular schedule. Calibration certificates are available on request for your quality records.' },
+            ]}
+          />
 
           {/* Documents we provide */}
           <section className="py-16 border-t border-border">

@@ -94,9 +94,22 @@ export default function GearHardeningSEOPage() {
     "areaServed": ["Ludhiana","Jalandhar","Rajpura","Ambala","Delhi NCR"]
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is induction hardening better than case carburizing for gears?', acceptedAnswer: { '@type': 'Answer', text: 'Induction hardening is significantly faster and creates far less distortion because only the teeth are heated. For most automotive and industrial gears, induction hardening is preferred. For extremely high-load fine-pitch gears, carburizing may be recommended — we consult on each application.' } },
+      { '@type': 'Question', name: 'Can you harden only the gear tooth flank or root as well?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Using contour-following induction coils, we precisely target the root for bending strength and the flank for wear resistance, tailored to your gear pitch and module.' } },
+      { '@type': 'Question', name: 'What is the largest gear size you can harden in Ludhiana?', acceptedAnswer: { '@type': 'Answer', text: 'Our workshop accommodates gears up to 1500mm in diameter. For larger ring gears or mill gears, we offer on-site induction hardening services across Punjab.' } },
+      { '@type': 'Question', name: 'What hardness is achievable on gear teeth?', acceptedAnswer: { '@type': 'Answer', text: '58–62 HRC is typical for gear tooth surfaces with a case depth of 1.0–2.5mm, depending on module size and load requirements. EN24 gears can achieve up to 62 HRC.' } },
+      { '@type': 'Question', name: 'What gear materials are suitable for induction hardening?', acceptedAnswer: { '@type': 'Answer', text: 'EN8, EN19 (4140), EN24 (4340), 20MnCr5, and EN36C are the most commonly hardened gear steels. Carbon content of 0.35–0.60% is ideal for maximum hardness response.' } },
+    ],
+  };
+
   return (
     <>
       <JsonLd data={serviceSchema} />
+      <JsonLd data={faqSchema} />
       <div className="bg-background overflow-x-hidden">
         <div className="container mx-auto px-4 md:px-6">
           

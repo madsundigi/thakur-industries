@@ -12,6 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Testimonials } from '@/components/home/Testimonials';
 import { CTASection } from '@/components/home/CTASection';
+import { ServiceFAQ } from '@/components/shared/ServiceFAQ';
 
 export const metadata: Metadata = {
   title: 'Case Hardening Services in Ludhiana, Punjab',
@@ -290,6 +291,18 @@ export default function CaseHardeningPage() {
                 </section>
 
 
+                 <div className="container mx-auto px-4 md:px-6">
+                   <ServiceFAQ
+                     heading="Case Hardening FAQs"
+                     faqItems={[
+                       { question: 'What is the difference between case hardening and induction hardening?', answer: 'Case hardening (carburizing) is a thermo-chemical process where carbon diffuses into the surface at 900–950°C over several hours — ideal for small-to-medium batch production of mild steel parts. Induction hardening uses electromagnetic heating, takes minutes per part, and is suited for precision localized hardening of medium-high carbon steels. Case hardening achieves 0.2–2mm depth; induction achieves 0.5–5mm. We offer both at our Ludhiana facility.' },
+                       { question: 'Which steel grades are suitable for case hardening?', answer: 'Low-carbon steels and alloy steels are ideal: EN8 (C45), Mild Steel, 20MnCr5, 16MnCr5, EN36, and similar grades. These steels have insufficient carbon to harden by induction alone, so case hardening adds carbon to the surface layer. EN19, EN24, and higher-carbon steels are better suited to induction or through-hardening.' },
+                       { question: 'What case depth can you achieve with carburizing?', answer: 'Standard case depths of 0.3–1.5mm are achieved for most gear, shaft, and pin components. Deeper cases up to 2mm are possible with extended carburizing cycles. Case depth is verified on sample cross-sections and reported with each batch. Specify your required case depth when requesting a quote.' },
+                       { question: 'What components do you process for case hardening in Ludhiana?', answer: 'We process gears (spur, helical, bevel), shafts, pins, cams, bolts, bearing surfaces, and general steel components for automotive, agricultural, and industrial customers across Punjab. Both small batches and high-volume monthly production runs are accepted.' },
+                       { question: 'Do you provide hardness test reports for case hardened components?', answer: 'Yes. Every batch includes a Rockwell hardness test report (HRC surface and core) and case depth measurement. Documentation is available for OEM incoming inspection and export quality requirements. Metallurgical cross-section reports are available on request.' },
+                     ]}
+                   />
+                 </div>
                  <Testimonials />
                  <CTASection />
 

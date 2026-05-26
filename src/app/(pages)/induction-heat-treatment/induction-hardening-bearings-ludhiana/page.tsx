@@ -95,9 +95,22 @@ export default function BearingHardeningSEOPage() {
     "areaServed": ["Ludhiana", "Jalandhar", "Khanna", "Mandi Gobindgarh", "North India"]
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Can you harden internal bearing raceways?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Using specialised internal induction coils, we harden the ID (Internal Diameter) of bearing hubs and rings without affecting external mounting surfaces or dimensional accuracy.' } },
+      { '@type': 'Question', name: 'What is the smallest bearing race size you can treat?', acceptedAnswer: { '@type': 'Answer', text: 'We handle precision bearing rings from 25mm in diameter up to large industrial slew rings exceeding 2000mm. Contact us with your bearing dimensions for a rate.' } },
+      { '@type': 'Question', name: 'What hardness is achievable on bearing races?', acceptedAnswer: { '@type': 'Answer', text: 'EN31 (52100) bearing races typically achieve 60–64 HRC after induction hardening. Case depth of 1–3mm provides excellent wear and fatigue resistance for rolling contact loads.' } },
+      { '@type': 'Question', name: 'Do you offer trial hardening for new bearing alloys?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. We encourage OEMs to send samples for trial hardening. We provide a full test report including HRC profile and case depth measurement before proceeding with bulk job work.' } },
+      { '@type': 'Question', name: 'What bearing types do you harden at your Ludhiana facility?', acceptedAnswer: { '@type': 'Answer', text: 'We harden ball bearing races, roller bearing races, tapered roller bearing cups and cones, needle bearing tracks, slew ring raceways, and wheel hub bearing surfaces.' } },
+    ],
+  };
+
   return (
     <>
       <JsonLd data={serviceSchema} />
+      <JsonLd data={faqSchema} />
       <div className="bg-background overflow-x-hidden">
         <div className="container mx-auto px-4 md:px-6">
           
