@@ -115,6 +115,14 @@ export async function GET() {
     '/induction-heat-treatment/samrala',
     '/induction-heat-treatment/sirhind',
     '/induction-heat-treatment/dehlon',
+    '/induction-heat-treatment/ambala',
+    '/induction-heat-treatment/yamunanagar',
+    '/induction-heat-treatment/panipat',
+    '/induction-heat-treatment/faridabad',
+    '/induction-heat-treatment/gurugram',
+    '/induction-heat-treatment/chandigarh',
+    '/induction-heat-treatment/delhi',
+    '/induction-heat-treatment/noida',
   ];
   const tier2Pages = [
     '/get-quote',

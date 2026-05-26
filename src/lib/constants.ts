@@ -41,6 +41,14 @@ export const NAV_LINKS = [
       { href: '/induction-heat-treatment/nawanshahr', label: 'Nawanshahr' },
       { href: '/induction-heat-treatment/focal-point-ludhiana', label: 'Focal Point Ludhiana' },
       { href: '/induction-heat-treatment/sherpur-ludhiana', label: 'Sherpur Ludhiana' },
+      { href: '/induction-heat-treatment/ambala', label: 'Ambala' },
+      { href: '/induction-heat-treatment/yamunanagar', label: 'Yamunanagar' },
+      { href: '/induction-heat-treatment/panipat', label: 'Panipat' },
+      { href: '/induction-heat-treatment/faridabad', label: 'Faridabad' },
+      { href: '/induction-heat-treatment/gurugram', label: 'Gurugram' },
+      { href: '/induction-heat-treatment/chandigarh', label: 'Chandigarh' },
+      { href: '/induction-heat-treatment/delhi', label: 'Delhi' },
+      { href: '/induction-heat-treatment/noida', label: 'Noida' },
     ]
   },
   {
