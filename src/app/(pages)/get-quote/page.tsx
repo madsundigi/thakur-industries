@@ -80,6 +80,50 @@ const whyUs = [
   'Pickup & delivery across Punjab available',
 ];
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': 'How to Get an Induction Hardening Quote in Punjab',
+  'description': 'Step-by-step process to place an induction hardening job work order with Thakur Industries, Ludhiana. Get a competitive rate within 24 hours.',
+  'totalTime': 'PT10M',
+  'supply': [
+    { '@type': 'HowToSupply', 'name': 'Component drawing or photo' },
+    { '@type': 'HowToSupply', 'name': 'Material grade specification (EN8, EN19, EN24, 4140)' },
+  ],
+  'step': [
+    {
+      '@type': 'HowToStep',
+      'position': 1,
+      'name': 'Provide Component Name & Drawing',
+      'text': 'Share the component name and a drawing, sketch, or photo. This helps us identify the hardening zone, coil requirements, and fixturing needed for your part.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 2,
+      'name': 'Specify Material Grade',
+      'text': 'Tell us the material grade — EN8, EN19, EN24, 4140, 4340, 20MnCr5, or similar. Each grade requires specific heating frequency and quench parameters for optimal results.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 3,
+      'name': 'State Required Hardness & Case Depth',
+      'text': 'Specify the target surface hardness (HRC) and required case depth in mm. For example: 58–62 HRC with 2mm case depth for a transmission gear.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 4,
+      'name': 'Confirm Batch Quantity',
+      'text': 'Provide your quantity per batch and monthly frequency. Larger batches receive better per-piece pricing. OEM monthly contracts available.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 5,
+      'name': 'Choose Pickup or Workshop Drop-off',
+      'text': 'Decide whether you will drop components at our Ludhiana workshop or need pickup from your factory. We offer pickup and delivery across Punjab, Haryana, and Delhi NCR.',
+    },
+  ],
+};
+
 export default function GetQuotePage() {
   const schema = {
     '@context': 'https://schema.org',
@@ -110,6 +154,7 @@ export default function GetQuotePage() {
     <>
       <BreadcrumbJsonLd items={[{ name: 'Get a Quote', href: '/get-quote' }]} />
       <JsonLd data={schema} />
+      <JsonLd data={howToSchema} />
 
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">

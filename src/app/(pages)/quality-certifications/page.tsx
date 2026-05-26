@@ -101,6 +101,52 @@ const specs = [
   { label: 'Documentation', value: 'Hardness Test Report per batch' },
 ];
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': 'How Induction Hardening Quality Control Works at Thakur Industries',
+  'description': 'The 6-step quality control process followed for every induction hardening batch at Thakur Industries, Ludhiana — from pre-process inspection to hardness certification.',
+  'totalTime': 'PT2H',
+  'step': [
+    {
+      '@type': 'HowToStep',
+      'position': 1,
+      'name': 'Pre-Process Inspection',
+      'text': 'Every incoming component is inspected for material grade, dimensional accuracy, and surface condition before heat treatment begins. Non-conforming parts are flagged immediately.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 2,
+      'name': 'Controlled Induction Process',
+      'text': 'CNC-controlled induction systems maintain precise power density, heating time, and coil gap. Each parameter is set and locked per component specification to ensure repeatable results.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 3,
+      'name': 'Real-Time Temperature Monitoring',
+      'text': 'Infrared pyrometers and temperature sensors monitor the surface temperature throughout the heating cycle. Deviations trigger automatic adjustment or process halt.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 4,
+      'name': 'Quench Control & Verification',
+      'text': 'Polymer and water quench concentration, temperature, and flow rate are precisely controlled for every batch to ensure uniform martensite formation and prevent cracking or soft spots.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 5,
+      'name': 'Rockwell Hardness Testing',
+      'text': 'Every batch is tested on calibrated Rockwell hardness testers. Surface hardness (HRC), core hardness, and case depth are verified on sample pieces — minimum 3 test points per batch.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 6,
+      'name': 'Hardness Report & Certification',
+      'text': 'A documented hardness test report is issued with every batch — showing component ID, material, target vs achieved HRC, case depth, and operator sign-off.',
+    },
+  ],
+};
+
 export default function QualityCertificationsPage() {
   const schema = {
     '@context': 'https://schema.org',
@@ -122,6 +168,7 @@ export default function QualityCertificationsPage() {
     <>
       <BreadcrumbJsonLd items={[{ name: 'Quality & Certifications', href: '/quality-certifications' }]} />
       <JsonLd data={schema} />
+      <JsonLd data={howToSchema} />
 
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">

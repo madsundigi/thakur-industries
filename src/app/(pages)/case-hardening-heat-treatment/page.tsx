@@ -78,6 +78,40 @@ const comparisonData = [
 ];
 
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': 'How Case Hardening Works — Steel Components',
+  'description': 'Step-by-step explanation of the case hardening (carburizing) process for steel components — from heating to final inspection at Thakur Industries, Ludhiana.',
+  'totalTime': 'PT8H',
+  'step': [
+    {
+      '@type': 'HowToStep',
+      'position': 1,
+      'name': 'Heating in Carbon-Rich Atmosphere',
+      'text': 'Components are heated to 900°C–950°C in a carbon-rich atmosphere (carburizing gas or solid/liquid carburizing medium). The steel surface absorbs carbon atoms, increasing surface carbon content.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 2,
+      'name': 'Carburizing or Nitriding Diffusion',
+      'text': 'Carbon or nitrogen diffuses into the steel surface layer over several hours, creating the hardened "case". The depth of this case (0.2–2mm) is controlled by temperature and soak time.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 3,
+      'name': 'Quenching for Surface Hardness',
+      'text': 'After carburizing, components are rapidly cooled (quenched) using polymer or water to lock in the martensitic surface structure. This achieves 58–65 HRC surface hardness while the core remains tough.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 4,
+      'name': 'Tempering and Quality Inspection',
+      'text': 'Components are reheated to 150–200°C (tempering) to reduce brittleness while retaining hardness. Final Rockwell hardness testing, case depth verification, and hardness report are issued per batch.',
+    },
+  ],
+};
+
 export default function CaseHardeningPage() {
     const heroImage = PlaceHolderImages.find(img => img.id === 'serviceCaseHardening');
     const processImage = PlaceHolderImages.find(img => img.id === 'caseHardeningProcess');
@@ -86,6 +120,7 @@ export default function CaseHardeningPage() {
     return (
         <>
             <JsonLd data={serviceSchema} />
+            <JsonLd data={howToSchema} />
             <div className="bg-background">
                 {/* Hero Section */}
                 <section className="relative py-24 md:py-32 bg-secondary text-foreground text-center">

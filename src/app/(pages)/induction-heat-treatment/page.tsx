@@ -26,12 +26,47 @@ const clusters = [
   { title: "Bearings & Races", href: "/induction-heat-treatment/induction-hardening-bearings-ludhiana", desc: "Hardening solutions for rotational stability." },
 ];
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': 'How Induction Hardening Works — Step-by-Step Process',
+  'description': 'A step-by-step guide to the induction hardening process used at Thakur Industries, Ludhiana — from coil setup to certified hardness testing.',
+  'totalTime': 'PT30M',
+  'step': [
+    {
+      '@type': 'HowToStep',
+      'position': 1,
+      'name': 'Coil Setup & Component Positioning',
+      'text': 'An application-specific induction coil is selected and positioned around the target zone of the steel component (gear tooth, shaft journal, bearing race). The coil gap is set precisely to control heat distribution.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 2,
+      'name': 'Electromagnetic Induction Heating',
+      'text': 'High or medium-frequency alternating current flows through the coil, generating a rapidly alternating magnetic field. This induces eddy currents in the steel surface, resistively heating it to 850–950°C in seconds — without any contact.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 3,
+      'name': 'Controlled Quenching',
+      'text': 'Immediately after reaching the target temperature, the component is quenched using polymer or water spray. Rapid cooling transforms the heated surface layer into hard martensite (55–65 HRC) while the core remains tough and ductile.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 4,
+      'name': 'Rockwell Hardness Testing & Certification',
+      'text': 'Each batch undergoes Rockwell HRC testing at minimum 3 points per piece. Case depth is verified on sample cross-sections. A hardness test report documenting target vs achieved values is issued with every batch.',
+    },
+  ],
+};
+
 export default function PillarPage() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'serviceInductionHardening');
 
   return (
     <>
       <BreadcrumbJsonLd items={[{ name: 'Induction Heat Treatment', href: '/induction-heat-treatment' }]} />
+      <JsonLd data={howToSchema} />
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "WebPage",

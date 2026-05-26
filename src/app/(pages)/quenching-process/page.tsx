@@ -49,6 +49,40 @@ const applications = [
     { component: "Tools & Dies", quenchType: "Water", result: "High surface strength" },
 ];
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': 'How to Choose the Right Quenching Method for Induction Hardening',
+  'description': 'A step-by-step guide to selecting between polymer quenching and water quenching for induction hardening of steel components.',
+  'totalTime': 'PT15M',
+  'step': [
+    {
+      '@type': 'HowToStep',
+      'position': 1,
+      'name': 'Identify the Steel Grade and Component Type',
+      'text': 'Start with the steel grade — EN8, EN19, EN24, 4140, or alloy steel. Higher alloy steels (EN24, 4340) are more quench-sensitive and prone to cracking with rapid water quench. Component geometry (thin walls, sharp transitions) also affects quench choice.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 2,
+      'name': 'Determine the Required Case Depth and Hardness',
+      'text': 'For shallow case depths (0.5–2mm) and precision components, polymer quenching is preferred — it provides a controlled cooling rate with less distortion. For deep case depths (3–8mm) and robust components, water quenching delivers faster, deeper hardness.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 3,
+      'name': 'Select Polymer or Water Quenching',
+      'text': 'Choose polymer quenching for: precision gears, shafts with tight tolerances, thin-walled components, and high-alloy steels. Choose water quenching for: heavy-duty rollers, large-diameter shafts, low-carbon steels, and components requiring deep rapid hardness.',
+    },
+    {
+      '@type': 'HowToStep',
+      'position': 4,
+      'name': 'Verify Results with Rockwell Hardness Testing',
+      'text': 'After quenching, verify surface hardness with Rockwell HRC testing on calibrated equipment. Check case depth on sample cross-sections. Adjust polymer concentration or water pressure for future batches if target hardness is not achieved.',
+    },
+  ],
+};
+
 export default function QuenchingProcessPage() {
     const heroImage = PlaceHolderImages.find(img => img.id === 'processQuenching');
     const processImage = PlaceHolderImages.find(img => img.id === 'processHardening');
@@ -57,6 +91,7 @@ export default function QuenchingProcessPage() {
     return (
         <>
             <JsonLd data={serviceSchema} />
+            <JsonLd data={howToSchema} />
             <div className="bg-background">
                 {/* Hero Section */}
                 <section className="relative py-24 md:py-32 bg-secondary text-foreground text-center">
