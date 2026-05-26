@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     description: 'Leading induction heat treatment and case hardening job work provider in Ludhiana & Punjab.',
     images: [`/opengraph-image`],
   },
+  verification: {
+    google: 'w4xQsQ2g4noos0NORMwRmLI1vx3SMR08DpXcTzCE3UM',
+  },
   alternates: {
     canonical: '/',
   },
