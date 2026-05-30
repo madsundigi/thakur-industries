@@ -1,9 +1,11 @@
-'use client';
-
-import { motion } from 'framer-motion';
+// No 'use client' — Radix Accordion handles its own state internally.
+// framer-motion entrance animation replaced with CSS (no JS bundle cost).
 import { JsonLd } from '@/components/shared/JsonLd';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { SITE_URL } from '@/lib/constants';
+
+// Suppress unused import warning — SITE_URL is used in buildFaqSchema
+void SITE_URL;
 
 export type FAQItem = {
   question: string;
@@ -18,30 +20,30 @@ interface ServiceFAQProps {
 
 /**
  * ServiceFAQ — renders a visible accordion FAQ section + FAQPage JSON-LD schema.
- * Use on service pages that don't already have an FAQ accordion.
- * For pages with existing accordions, use <JsonLd data={buildFaqSchema(items)} /> directly.
+ * Server Component: no 'use client', no framer-motion, no hydration cost.
  */
 export function ServiceFAQ({ faqItems, heading = 'Frequently Asked Questions' }: ServiceFAQProps) {
+  // Schema built on the server at render time — never shipped to the client
   const schema = buildFaqSchema(faqItems);
+
+  // Split heading once — avoid calling .split(' ') twice
+  const words = heading.split(' ');
+  const lastWord = words[words.length - 1];
+  const prefix = words.slice(0, -1).join(' ');
 
   return (
     <>
       <JsonLd data={schema} />
-      <motion.section
-        className="py-20 border-t border-border"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
+      {/* animate-in uses Tailwind's built-in CSS animation — zero JS */}
+      <section className="py-20 border-t border-border animate-in fade-in slide-in-from-bottom-6 duration-700">
         <h2 className="text-2xl md:text-4xl font-black uppercase italic tracking-tighter mb-12 text-center">
-          {heading.split(' ').slice(0, -1).join(' ')}{' '}
-          <span className="text-primary">{heading.split(' ').slice(-1)}</span>
+          {prefix}{' '}
+          <span className="text-primary">{lastWord}</span>
         </h2>
         <Accordion type="single" collapsible className="space-y-4 max-w-4xl mx-auto">
           {faqItems.map((item, i) => (
             <AccordionItem
-              key={i}
+              key={item.question}
               value={`faq-${i}`}
               className="border rounded-2xl bg-secondary/30 px-8 transition-all hover:border-primary/20 group"
             >
@@ -54,7 +56,7 @@ export function ServiceFAQ({ faqItems, heading = 'Frequently Asked Questions' }:
             </AccordionItem>
           ))}
         </Accordion>
-      </motion.section>
+      </section>
     </>
   );
 }

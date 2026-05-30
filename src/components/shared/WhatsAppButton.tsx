@@ -1,16 +1,15 @@
-'use client';
-
+// No 'use client' needed — pure static markup, no hooks or browser APIs
 import Link from 'next/link';
 import { SITE_PHONE_NUMBER } from '@/lib/constants';
 
-export function WhatsAppButton() {
-  // Strip non-digits from phone number for WhatsApp URL
-  const phoneDigits = SITE_PHONE_NUMBER.replace(/\D/g, '');
-  const message = encodeURIComponent(
-    'Hello, I need induction hardening / heat treatment job work. Please share details and rates.'
-  );
-  const whatsappUrl = `https://wa.me/${phoneDigits}?text=${message}`;
+// Computed once at module load — never rebuilt on re-render
+const phoneDigits = SITE_PHONE_NUMBER.replace(/\D/g, '');
+const waMessage = encodeURIComponent(
+  'Hello, I need induction hardening / heat treatment job work. Please share details and rates.'
+);
+const whatsappUrl = `https://wa.me/${phoneDigits}?text=${waMessage}`;
 
+export function WhatsAppButton() {
   return (
     <Link
       href={whatsappUrl}
@@ -20,9 +19,7 @@ export function WhatsAppButton() {
       className="fixed bottom-6 left-6 z-50 flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group"
       style={{ boxShadow: '0 4px 24px rgba(37,211,102,0.45)' }}
     >
-      {/* WhatsApp Icon + Tooltip label */}
       <span className="flex items-center gap-2 px-4 py-3">
-        {/* WhatsApp SVG */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"

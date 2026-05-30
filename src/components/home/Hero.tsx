@@ -21,12 +21,8 @@ export function Hero() {
   return (
     <section className="relative min-h-[600px] h-[85vh] w-full overflow-hidden bg-black flex items-center justify-center">
       <div className="absolute inset-0 z-0">
-        <motion.div 
-          className="absolute inset-0 z-0"
-          initial={{ scale: 1 }}
-          animate={{ scale: 1.05 }}
-          transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-        >
+        {/* Ken Burns zoom via CSS — GPU-composited, zero JS overhead */}
+        <div className="hero-kenburns absolute inset-0 z-0">
           {heroImage && (
             <Image
               src={heroImage.imageUrl}
@@ -39,7 +35,7 @@ export function Hero() {
               sizes="100vw"
             />
           )}
-        </motion.div>
+        </div>
         {isDesktop && (
           <video
             autoPlay
@@ -48,7 +44,7 @@ export function Hero() {
             playsInline
             className="absolute z-0 w-full h-full object-cover opacity-40"
             poster={heroImage?.imageUrl}
-            preload="auto"
+            preload="none"
           >
             <source src="https://videos.pexels.com/video-files/7578278/7578278-hd_1920_1080_25fps.mp4" type="video/mp4" />
           </video>

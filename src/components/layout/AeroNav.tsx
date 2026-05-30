@@ -22,7 +22,7 @@ import { Button } from '@/components/ui/button';
 
 export function AeroNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [openSubMenus, setOpenSubMenus] = useState<string[]>(['/induction-heat-treatment', '/locations']); 
+  const [openSubMenus, setOpenSubMenus] = useState<string[]>([]); // Start collapsed — avoids rendering 25+ menu items on first mobile paint
   const pathname = usePathname();
 
   const toggleSubMenu = (e: React.MouseEvent, href: string) => {

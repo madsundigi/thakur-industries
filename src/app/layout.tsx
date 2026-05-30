@@ -13,6 +13,7 @@ import Script from 'next/script';
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -56,87 +57,89 @@ export const viewport: Viewport = {
   ],
 };
 
+// ─── JSON-LD schemas hoisted to module scope ───────────────────────────────
+// Static objects — defined once at module load, not rebuilt on every request.
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+  telephone: SITE_PHONE_NUMBER,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
+    addressLocality: 'Ludhiana',
+    addressRegion: 'Punjab',
+    postalCode: '141003',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 30.871576,
+    longitude: 75.875935,
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: SITE_PHONE_NUMBER,
+    contactType: 'Customer Service',
+    areaServed: ['Ludhiana', 'Nawanshahr', 'Punjab', 'India', 'Haryana', 'Delhi'],
+    availableLanguage: ['en', 'pa', 'hi'],
+  },
+  description:
+    'Thakur Industries provides precision heat treatment and induction hardening job work for industries in Ludhiana, Punjab, Haryana & Delhi NCR.',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '09:00',
+      closes: '19:00',
+    },
+  ],
+  priceRange: '₹₹',
+  currenciesAccepted: 'INR',
+  paymentAccepted: 'Cash, Bank Transfer, UPI',
+  areaServed: [
+    { '@type': 'City', name: 'Ludhiana' },
+    { '@type': 'City', name: 'Jalandhar' },
+    { '@type': 'City', name: 'Patiala' },
+    { '@type': 'City', name: 'Mandi Gobindgarh' },
+    { '@type': 'City', name: 'Khanna' },
+    { '@type': 'State', name: 'Punjab' },
+  ],
+  sameAs: ['https://thakurindustries.in'],
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Induction Hardening Job Work',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'Thakur Industries',
+  },
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: 'Punjab',
+  },
+  broker: {
+    '@type': 'Organization',
+    name: 'Thakur Industries',
+  },
+};
+// ───────────────────────────────────────────────────────────────────────────
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: SITE_NAME,
-    url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
-    telephone: SITE_PHONE_NUMBER,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
-      addressLocality: 'Ludhiana',
-      addressRegion: 'Punjab',
-      postalCode: '141003',
-      addressCountry: 'IN',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.871576,
-      longitude: 75.875935,
-    },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: SITE_PHONE_NUMBER,
-      contactType: 'Customer Service',
-      areaServed: ["Ludhiana", "Nawanshahr", "Punjab", "India", "Haryana", "Delhi"],
-      availableLanguage: ["en", "pa", "hi"]
-    },
-    description: 'Thakur Industries provides precision heat treatment and induction hardening job work for industries in Ludhiana, Punjab, Haryana & Delhi NCR.',
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '09:00',
-        closes: '19:00',
-      },
-    ],
-    priceRange: '₹₹',
-    currenciesAccepted: 'INR',
-    paymentAccepted: 'Cash, Bank Transfer, UPI',
-    areaServed: [
-      { '@type': 'City', name: 'Ludhiana' },
-      { '@type': 'City', name: 'Jalandhar' },
-      { '@type': 'City', name: 'Patiala' },
-      { '@type': 'City', name: 'Mandi Gobindgarh' },
-      { '@type': 'City', name: 'Khanna' },
-      { '@type': 'State', name: 'Punjab' },
-    ],
-    sameAs: [
-      'https://thakurindustries.in',
-    ],
-  };
-
-  const serviceSchema = {
-      '@context': "https://schema.org",
-      '@type': "Service",
-      "serviceType": "Induction Hardening Job Work",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Thakur Industries"
-      },
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Punjab"
-      },
-      "broker": {
-        "@type": "Organization",
-        "name": "Thakur Industries"
-      }
-  }
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="preconnect" href="https://videos.pexels.com" />
+        {/* preconnect with crossOrigin so CORS connections are reused */}
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://videos.pexels.com" crossOrigin="anonymous" />
         <JsonLd data={organizationSchema} />
         <JsonLd data={serviceSchema} />
       </head>
@@ -162,12 +165,11 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-57XJYQB95C');
           `}
         </Script>
-        {/* Tawk.to Chat */}
-        <Script id="tawk-to" strategy="afterInteractive">
+        {/* Tawk.to Chat — lazyOnload defers until after page is fully loaded */}
+        <Script id="tawk-to" strategy="lazyOnload">
           {`
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){

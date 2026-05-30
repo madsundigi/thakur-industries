@@ -1,27 +1,4 @@
-/* inter-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/inter-v13-latin-regular.woff2') format('woff2');
-}
-/* inter-700 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/inter-v13-latin-700.woff2') format('woff2');
-}
-/* inter-800 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  src: url('/fonts/inter-v13-latin-800.woff2') format('woff2');
-}
+/* Fonts are self-hosted via next/font/google in layout.tsx — no @font-face needed here */
 
 @tailwind base;
 @tailwind components;
@@ -79,14 +56,27 @@
   }
 }
 
+/* flame-pulse: use filter (GPU-composited) instead of text-shadow (causes repaint) */
 @keyframes flame-pulse {
-  0% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
-  50% { text-shadow: 0 0 25px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 50, 0, 0.4); }
-  100% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+  0%   { filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.5)); }
+  50%  { filter: drop-shadow(0 0 16px rgba(255, 0, 0, 0.85)) drop-shadow(0 0 28px rgba(255, 50, 0, 0.4)); }
+  100% { filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.5)); }
 }
 
 .animate-flame {
   animation: flame-pulse 3s infinite ease-in-out;
+  will-change: filter;
+}
+
+/* Ken Burns hero zoom — GPU-composited via transform, no JS needed */
+@keyframes kenburns {
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+.hero-kenburns {
+  animation: kenburns 20s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .glass-effect {

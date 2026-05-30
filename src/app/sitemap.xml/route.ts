@@ -1,5 +1,11 @@
 import { SITE_URL, NAV_LINKS, SERVICES } from '@/lib/constants';
 
+// Revalidate once per day — sitemap content is static between deployments
+export const revalidate = 86400;
+
+// Build date used as lastmod — reflects when the site was last deployed
+const BUILD_DATE = new Date().toISOString().split('T')[0];
+
 const blogPosts = [
     'what-is-induction-hardening-ludhiana',
     'difference-between-induction-and-case-hardening',
@@ -166,7 +172,7 @@ export async function GET() {
     return `
     <url>
       <loc>${SITE_URL}${path}</loc>
-      <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+      <lastmod>${BUILD_DATE}</lastmod>
       <changefreq>${getChangeFreq(path)}</changefreq>
       <priority>${getPriority(path)}</priority>
     </url>
