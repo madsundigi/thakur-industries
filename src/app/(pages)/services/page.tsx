@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { SERVICES, SITE_NAME, SITE_PHONE_NUMBER, CTA_PRIMARY, INDUSTRIES } from '@/lib/constants';
+import { SERVICES, SITE_NAME, SITE_PHONE_NUMBER, CTA_PRIMARY } from '@/lib/constants';
 import PageHeader from '@/components/shared/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ChevronRight, HardHat, Zap, Award, Gauge, ArrowRight, CheckCircle2 } from 'lucide-react';
