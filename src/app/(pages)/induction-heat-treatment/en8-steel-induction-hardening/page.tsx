@@ -74,6 +74,7 @@ export default function EN8SteelPage() {
           </motion.section>
 
           {/* Material Properties Card */}
+          {/* MATERIAL GRADE */}
           <motion.section
             className="py-8 mb-8"
             initial="hidden"
@@ -83,13 +84,21 @@ export default function EN8SteelPage() {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { value: '52–58 HRC', label: 'Surface Hardness' },
-                { value: '1–5 mm', label: 'Case Depth Range' },
-                { value: '0.36–0.44%', label: 'Carbon Content' },
-                { value: '2–4 Days', label: 'Turnaround' },
-              ].map(stat => (
-                <div key={stat.label} className="bg-secondary/30 border border-border rounded-2xl p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-black text-primary mb-1">{stat.value}</div>
+                { value: '52–58 HRC', label: 'Surface Hardness', primary: true },
+                { value: '1–5 mm', label: 'Case Depth Range', primary: false },
+                { value: '0.36–0.44%', label: 'Carbon Content', primary: false },
+                { value: '2–4 Days', label: 'Turnaround', primary: false },
+              ].map((stat, i) => (
+                <div
+                  key={stat.label}
+                  className="bg-secondary/30 border border-border rounded-2xl p-6 text-center animate-in fade-in slide-in-from-bottom-4 duration-500"
+                  style={{ animationDelay: `${i * 100}ms` }}
+                >
+                  {stat.primary ? (
+                    <div className="text-2xl md:text-3xl font-black text-primary mb-1 [text-shadow:0_0_20px_hsl(var(--primary)/0.3)]">{stat.value}</div>
+                  ) : (
+                    <div className="text-2xl md:text-3xl font-black text-primary mb-1">{stat.value}</div>
+                  )}
                   <div className="text-xs text-muted-foreground uppercase tracking-widest font-bold">{stat.label}</div>
                 </div>
               ))}
@@ -116,11 +125,12 @@ export default function EN8SteelPage() {
                     { title: 'Gear Blank Hardening', href: '/induction-heat-treatment/induction-hardening-gears-ludhiana' },
                     { title: 'Bearing Race Treatment', href: '/induction-heat-treatment/induction-hardening-bearings-ludhiana' },
                     { title: 'Crankshaft Hardening', href: '/induction-heat-treatment/crankshafts-induction-hardening-ludhiana' },
-                  ].map(item => (
+                  ].map((item, i) => (
                     <Link
                       key={item.title}
                       href={item.href}
-                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group"
+                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group animate-in fade-in slide-in-from-bottom-4 duration-500"
+                      style={{ animationDelay: `${i * 100}ms` }}
                     >
                       <CheckCircle2 className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
                       <span className="font-bold text-foreground uppercase tracking-tight text-xs group-hover:text-primary transition-colors">{item.title}</span>
@@ -144,8 +154,12 @@ export default function EN8SteelPage() {
                   'No distortion — localised heating only',
                   'Eliminates carburizing or nitriding for surface wear',
                   'Repeated batches with consistent HRC results',
-                ].map(point => (
-                  <li key={point} className="flex items-start gap-3">
+                ].map((point, i) => (
+                  <li
+                    key={point}
+                    className="flex items-start gap-3 transition-all duration-300 hover:border-l-2 hover:border-l-primary hover:pl-2 animate-in fade-in slide-in-from-bottom-4 duration-500"
+                    style={{ animationDelay: `${i * 100}ms` }}
+                  >
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -174,7 +188,8 @@ export default function EN8SteelPage() {
                   <motion.div
                     variants={fadeInUp}
                     whileHover={{ y: -5 }}
-                    className="p-8 bg-card border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center shadow-sm"
+                    className="p-8 bg-card border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-500"
+                    style={{ animationDelay: `${i * 100}ms` }}
                   >
                     <link.icon className="h-8 w-8 text-primary mb-4" />
                     <h4 className="font-black uppercase italic text-foreground group-hover:text-primary transition-colors text-sm">{link.title}</h4>

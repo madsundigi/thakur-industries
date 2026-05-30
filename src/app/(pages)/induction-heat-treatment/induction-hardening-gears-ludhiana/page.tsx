@@ -330,8 +330,42 @@ export default function GearHardeningSEOPage() {
             </div>
           </section>
 
+          {/* 3-Step Workflow */}
+          <section className="py-16 border-t border-border">
+            <p className="section-label text-center">// PROCESS //</p>
+            <h2 className="text-2xl md:text-3xl font-black uppercase italic tracking-tighter text-center mb-12">
+              Our <span className="text-primary">Process</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+              {/* Connecting line on desktop */}
+              <div className="hidden md:block absolute top-8 left-1/3 right-1/3 h-0.5 bg-primary/20" />
+              {[
+                {
+                  title: "Gear Profile Analysis",
+                  description: "We assess gear tooth geometry, module, material, and required case depth specification."
+                },
+                {
+                  title: "Precision Induction Hardening",
+                  description: "Custom-wound induction coils ensure uniform tooth-surface heating at 900–950°C with controlled polymer quenching."
+                },
+                {
+                  title: "Quality Testing & Certification",
+                  description: "HRC testing on multiple teeth, case depth verification, and dimensional inspection before dispatch."
+                }
+              ].map((step, i) => (
+                <div key={i} className="flex flex-col items-center text-center gap-4 relative">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/30 flex items-center justify-center text-primary font-black text-xl">
+                    {i + 1}
+                  </div>
+                  <h3 className="font-black uppercase italic text-sm md:text-base">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
           {/* FAQ */}
-          <motion.section 
+          <motion.section
             className="py-24 max-w-4xl mx-auto"
             initial="hidden"
             whileInView="visible"
@@ -372,22 +406,15 @@ export default function GearHardeningSEOPage() {
         </div>
         <CTASection />
 
-        {/* Mobile Sticky CTA */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden flex border-t border-border shadow-2xl">
-          <a 
-            href={`tel:${SITE_PHONE_NUMBER}`} 
-            className="flex-1 bg-accent text-accent-foreground py-4 text-center text-sm font-bold flex items-center justify-center gap-2"
-            onClick={() => trackEvent('phone_call_click', 'Mobile Sticky Call')}
-          >
-            <Phone className="h-4 w-4" /> Call Now
+        {/* Mobile sticky CTA — hidden on md+ */}
+        <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur border-t border-border px-4 py-3 flex gap-3 animate-in slide-in-from-bottom duration-500">
+          <a href="tel:+917900000776" className="flex-1 flex items-center justify-center gap-2 bg-primary text-primary-foreground font-black uppercase text-xs py-3 rounded-lg">
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z" /></svg>
+            Call Now
           </a>
-          <Link 
-            href="/contact" 
-            className="flex-1 bg-primary text-primary-foreground py-4 text-center text-sm font-bold flex items-center justify-center gap-2"
-            onClick={() => trackEvent('cta_click', 'Mobile Sticky Quote')}
-          >
-            <CheckCircle2 className="h-4 w-4" /> Get Quote
-          </Link>
+          <a href="/contact" className="flex-1 flex items-center justify-center gap-2 bg-secondary text-foreground font-black uppercase text-xs py-3 rounded-lg border border-border">
+            Get Quote
+          </a>
         </div>
       </div>
     </>

@@ -67,6 +67,7 @@ export function ProcessSection() {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
+                <p className="section-label text-center">// HOW IT WORKS //</p>
                 <h2 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-foreground uppercase italic leading-none mb-8">
                     Advanced <span className="text-primary">Quenching</span> Technology
                 </h2>
@@ -79,8 +80,12 @@ export function ProcessSection() {
                       "Reduced Distortion",
                       "Surface Integrity",
                       "Repeatable Results"
-                    ].map((item) => (
-                      <div key={item} className="flex items-center gap-3 p-4 bg-background/50 rounded-lg border border-border">
+                    ].map((item, i) => (
+                      <div
+                        key={item}
+                        className="group flex items-center gap-3 p-4 bg-background/50 rounded-lg border border-border animate-in fade-in slide-in-from-bottom-4 duration-500 hover:-translate-y-1 transition-transform duration-300"
+                        style={{ animationDelay: `${i * 150}ms` }}
+                      >
                         <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />
                         <span className="font-bold text-foreground text-sm uppercase tracking-tight">{item}</span>
                       </div>

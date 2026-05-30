@@ -50,7 +50,7 @@ export default function AboutPage() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-16">
-          <motion.div 
+          <motion.div
             className="relative h-[450px] w-full overflow-hidden rounded-2xl shadow-2xl border border-primary/20"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -69,17 +69,20 @@ export default function AboutPage() {
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="space-y-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
           >
-            <motion.h3 variants={fadeInBottom} className="text-3xl font-black uppercase italic tracking-tighter text-foreground">
-              Our <span className="text-primary">Mission</span>
-            </motion.h3>
+            <motion.div variants={fadeInBottom}>
+              <p className="section-label">// ABOUT US //</p>
+              <h3 className="text-3xl font-black uppercase italic tracking-tighter text-foreground">
+                Our <span className="text-primary">Mission</span>
+              </h3>
+            </motion.div>
             <motion.p variants={fadeInBottom} className="text-xl text-muted-foreground leading-relaxed font-medium">
               To be the most reliable and technologically advanced partner for our clients, ensuring the enhanced durability and performance of their critical components through precision heat treatment.
             </motion.p>
@@ -90,9 +93,9 @@ export default function AboutPage() {
                   "Technical Expertise",
                   "Customer Focus"
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-3 p-4 bg-secondary/50 rounded-lg border border-border">
+                  <div key={item} className="group flex items-center gap-3 p-4 bg-secondary/50 rounded-lg border border-border hover:border-primary/30 transition-colors duration-300">
                     <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />
-                    <span className="font-bold text-foreground text-sm uppercase tracking-tight">{item}</span>
+                    <span className="font-bold text-foreground text-sm uppercase tracking-tight group-hover:translate-y-[-2px] transition-transform duration-300">{item}</span>
                   </div>
                 ))}
             </motion.div>
@@ -100,36 +103,46 @@ export default function AboutPage() {
         </div>
         
         <div className="py-24 md:py-32">
-          <motion.h3 
-            className="text-3xl md:text-5xl font-black text-center mb-20 uppercase italic tracking-tighter"
+          <motion.div
+            className="text-center mb-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInBottom}
           >
-            Our <span className="text-primary">Journey</span>
-          </motion.h3>
-          <div className="relative max-w-4xl mx-auto">
-            <div className="absolute left-1/2 top-0 h-full w-0.5 bg-primary/20 -translate-x-1/2 hidden md:block"></div>
-            <motion.div 
-              className="space-y-12"
+            <p className="section-label text-center">// OUR STORY //</p>
+            <h3 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter">
+              Our <span className="text-primary">Journey</span>
+            </h3>
+          </motion.div>
+          <div className="relative max-w-2xl mx-auto">
+            <motion.div
+              className="timeline-line space-y-0"
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
             >
               {timelineEvents.map((item, index) => (
-                <motion.div key={index} variants={fadeInBottom} className={`relative flex items-center justify-between w-full flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                  <div className="w-full md:w-5/12 bg-secondary/30 p-8 rounded-xl border border-border hover:border-primary/30 transition-all group">
+                <motion.div
+                  key={index}
+                  variants={fadeInBottom}
+                  className="animate-in fade-in slide-in-from-left-4 duration-500 flex gap-6 pb-12 last:pb-0"
+                  style={{ animationDelay: `${index * 120}ms` }}
+                >
+                  <div className="flex flex-col items-center shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-black text-sm shrink-0">
+                      {index + 1}
+                    </div>
+                    {index < timelineEvents.length - 1 && (
+                      <div className="flex-1 w-0.5 bg-primary/20 mt-2" />
+                    )}
+                  </div>
+                  <div className="group flex-1 bg-secondary/30 p-8 rounded-xl border border-border hover:border-primary/30 transition-colors duration-300 mb-2">
                     <p className="text-2xl font-black text-primary mb-2 italic tracking-tighter">{item.year}</p>
-                    <p className="text-foreground font-bold uppercase tracking-tight text-sm mb-2">Thakur Industries Landmark</p>
+                    <p className="text-foreground font-bold uppercase tracking-tight text-sm mb-2 group-hover:translate-y-[-2px] transition-transform duration-300">Thakur Industries Landmark</p>
                     <p className="text-muted-foreground text-lg">{item.event}</p>
                   </div>
-                  {/* Updated Shadow to Red */}
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 z-10 h-10 w-10 items-center justify-center rounded-full bg-background border-4 border-primary shadow-[0_0_15px_rgba(255,50,50,0.4)]">
-                    <div className="h-2 w-2 rounded-full bg-primary" />
-                  </div>
-                  <div className="w-full md:w-5/12"></div>
                 </motion.div>
               ))}
             </motion.div>
@@ -137,8 +150,16 @@ export default function AboutPage() {
         </div>
         
         <div className="py-24 border-t border-border">
-          <motion.div 
-            className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center"
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInBottom}
+          >
+            <p className="section-label text-center">// BY THE NUMBERS //</p>
+          </motion.div>
+          <motion.div
+            className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-4"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -150,7 +171,7 @@ export default function AboutPage() {
                         <stat.icon className="h-8 w-8 text-primary group-hover:text-inherit" />
                     </div>
                     <div>
-                        <p className="text-4xl md:text-5xl font-black tracking-tighter italic text-foreground leading-none">{stat.value}</p>
+                        <p className="text-4xl md:text-5xl font-black tracking-tighter italic leading-none [text-shadow:0_0_20px_hsl(var(--primary)/0.3)] text-primary">{stat.value}</p>
                         <p className="text-xs font-bold text-primary uppercase tracking-widest mt-2">{stat.label}</p>
                     </div>
                 </motion.div>

@@ -73,11 +73,11 @@ export function CTASection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           {/* CSS hover scale — no JS animation runtime needed */}
-          <div className="transition-transform hover:scale-105 active:scale-95">
+          <div className="transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,50,50,0.3)] hover:shadow-[0_0_40px_rgba(255,50,50,0.5)] transition-shadow duration-300">
             <Button
               asChild
               size="lg"
-              className="w-full sm:w-auto px-10 py-8 text-xl bg-primary hover:bg-primary/80 text-primary-foreground font-black group shadow-[0_0_20px_rgba(255,50,50,0.3)]"
+              className="w-full sm:w-auto px-10 py-8 text-xl bg-primary hover:bg-primary/80 text-primary-foreground font-black group relative overflow-hidden after:absolute after:inset-0 after:translate-x-[-150%] after:bg-gradient-to-r after:from-transparent after:via-white/10 after:to-transparent after:skew-x-[-20deg] hover:after:translate-x-[150%] after:transition-transform after:duration-700"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 Send Inquiry
@@ -100,11 +100,11 @@ export function CTASection() {
             </Button>
           </div>
 
-          <div className="transition-transform hover:scale-105 active:scale-95">
+          <div className="transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(37,211,102,0.2)] hover:shadow-[0_0_40px_rgba(37,211,102,0.4)] transition-shadow duration-300">
             <Button
               asChild
               size="lg"
-              className="w-full sm:w-auto px-10 py-8 text-xl bg-[#25D366] hover:bg-[#25D366]/90 text-white font-black border-none shadow-[0_0_20px_rgba(37,211,102,0.2)]"
+              className="w-full sm:w-auto px-10 py-8 text-xl bg-[#25D366] hover:bg-[#25D366]/90 text-white font-black border-none"
             >
               <a
                 href="https://wa.me/917900000776"

@@ -115,18 +115,23 @@ export default function PillarPage() {
           </section>
 
           <section className="py-24">
+            <p className="section-label">// SERVICES //</p>
             <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-16 text-center">
               Our Specialized <span className="text-primary">Clusters</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {clusters.map((cluster) => (
+              {clusters.map((cluster, i) => (
                 <Link key={cluster.title} href={cluster.href} className="group">
-                  <div className="p-8 bg-secondary/30 border border-border rounded-2xl transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(255,0,0,0.1)] h-full">
+                  <div
+                    className="p-8 bg-secondary/30 border border-border rounded-2xl transition-all hover:border-primary/30 hover:shadow-[0_0_20px_rgba(255,0,0,0.1)] hover:-translate-y-1 duration-300 h-full animate-in fade-in slide-in-from-bottom-4 duration-500"
+                    style={{ animationDelay: `${i * 100}ms` }}
+                  >
                     <Zap className="h-10 w-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
                     <h3 className="text-2xl font-black uppercase italic tracking-tighter mb-4 group-hover:text-primary transition-colors">{cluster.title}</h3>
                     <p className="text-muted-foreground mb-6">{cluster.desc}</p>
                     <div className="flex items-center text-primary font-bold text-xs uppercase tracking-widest">
                       Explore Service <ArrowRight className="ml-2 h-4 w-4" />
+                      <ArrowRight className="h-4 w-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-200 ml-auto" />
                     </div>
                   </div>
                 </Link>
@@ -172,7 +177,7 @@ export default function PillarPage() {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {["EN8 (C45)", "EN19 (4140)", "EN24 (4340)", "EN31", "20MnCr5", "Tool Steel", "Cast Iron", "Alloy Steels"].map(m => (
-                <div key={m} className="p-6 bg-secondary/50 rounded-xl border border-border text-center font-black uppercase italic tracking-tighter text-sm hover:border-primary/30 transition-colors">
+                <div key={m} className="group p-6 bg-secondary/50 rounded-xl border border-border text-center font-black uppercase italic tracking-tighter text-sm hover:border-primary/30 hover:bg-secondary/50 transition-colors duration-200">
                   {m}
                 </div>
               ))}

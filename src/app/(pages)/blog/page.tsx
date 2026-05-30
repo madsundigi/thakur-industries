@@ -527,33 +527,71 @@ const blogPosts = [
 ];
 
 export default function BlogPage() {
+  const [featuredPost, ...remainingPosts] = blogPosts;
+  const featuredImage = PlaceHolderImages.find(img => img.id === featuredPost.imageId);
+
   return (
     <div className="container mx-auto px-4 md:px-6">
+      {/* INSIGHTS & ARTICLES */}
+      <p className="text-center text-xs font-semibold tracking-[0.25em] uppercase text-primary mb-3">
+        // INSIGHTS &amp; ARTICLES //
+      </p>
       <PageHeader
         title="Insights & Case Studies"
         description="Your expert resource for the latest in industrial heat treatment technology, process advantages, and best practices."
         className="mb-12 text-center"
       />
+
+      {/* Featured Post */}
+      <Link href={`/blog/${featuredPost.slug}`} className="group block mb-12">
+        <Card className="overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+          {featuredImage && (
+            <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
+              <Image
+                src={featuredImage.imageUrl}
+                alt={featuredPost.title}
+                data-ai-hint={featuredImage.imageHint}
+                fill
+                priority
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <span className="absolute top-4 left-4 z-10 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1 rounded">
+                Featured
+              </span>
+            </div>
+          )}
+          <CardHeader className="pt-6 pb-2">
+            <CardDescription className="mb-1">{featuredPost.date}</CardDescription>
+            <CardTitle className="text-2xl md:text-3xl lg:text-4xl leading-snug group-hover:text-primary transition-colors">
+              {featuredPost.title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground text-base md:text-lg">{featuredPost.description}</p>
+          </CardContent>
+        </Card>
+      </Link>
+
+      {/* Remaining Posts Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogPosts.map((post) => {
+        {remainingPosts.map((post) => {
           const image = PlaceHolderImages.find(img => img.id === post.imageId);
           return (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
               <Card className="h-full overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                 {image && (
-                  <div className="relative h-56 w-full">
+                  <div className="relative h-56 w-full overflow-hidden">
                     <Image
                       src={image.imageUrl}
                       alt={post.title}
                       data-ai-hint={image.imageHint}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 )}
                 <CardHeader>
                   <CardTitle className="group-hover:text-primary transition-colors">{post.title}</CardTitle>
-
                   <CardDescription>{post.date}</CardDescription>
                 </CardHeader>
                 <CardContent>

@@ -14,18 +14,8 @@ const fadeInBottom = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
 };
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
 export function ServiceArea() {
-    
+
   const serviceAreaSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -47,22 +37,39 @@ export function ServiceArea() {
   return (
     <section className="py-24 md:py-32 bg-background relative overflow-hidden">
       <JsonLd data={serviceAreaSchema} />
-      
+
+      {/* Marquee keyframes */}
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+          animation: marquee 22s linear infinite;
+        }
+        .marquee-wrapper:hover .marquee-track {
+          animation-play-state: paused;
+        }
+      `}</style>
+
       {/* Decorative Map Background */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none flex items-center justify-center">
         <Globe className="w-[800px] h-[800px]" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInBottom}
         >
+            <p className="text-xs font-bold tracking-[0.3em] text-primary/60 mb-3 uppercase">
+              // SERVICE AREAS //
+            </p>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-foreground uppercase italic leading-none">
-                Serving <span className="text-primary">Punjab</span> & North India
+                Serving <span className="text-primary">Punjab</span> &amp; North India
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
                 Strategically located in Ludhiana to serve all major industrial hubs in the region.
@@ -90,29 +97,49 @@ export function ServiceArea() {
             <div className="flex items-center gap-3 p-6 bg-primary/10 rounded-xl border border-primary/30 shadow-[0_0_20px_rgba(255,50,50,0.1)]">
               <CheckCircle className="h-8 w-8 text-primary shrink-0" />
               <p className="text-primary font-black uppercase tracking-tight text-sm">
-                Serving Punjab, Haryana, Himachal & Delhi NCR
+                Serving Punjab, Haryana, Himachal &amp; Delhi NCR
               </p>
             </div>
           </motion.div>
 
-          <motion.div 
-              className="grid grid-cols-2 sm:grid-cols-3 gap-4"
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
+          {/* Infinite marquee ticker */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
           >
-            {locations.map((location) => (
-              <motion.div 
-                  key={location} 
-                  variants={fadeInBottom}
-                  whileHover={{ scale: 1.05, borderColor: "hsl(var(--primary))" }}
-                  className="bg-secondary/50 p-6 rounded-xl border border-border text-center flex flex-col items-center justify-center transition-all group"
+            <div className="overflow-hidden marquee-wrapper rounded-xl border border-primary/10 bg-secondary/30 py-6">
+              <div
+                className="marquee-track flex"
+                style={{ width: 'max-content' }}
               >
-                  <MapPin className="h-5 w-5 text-primary mb-3 transition-transform group-hover:scale-125" />
-                  <span className="font-bold text-foreground uppercase tracking-tight text-xs">{location}</span>
-              </motion.div>
-            ))}
+                {/* First copy */}
+                {locations.map((location) => (
+                  <div
+                    key={`a-${location}`}
+                    className="flex items-center gap-2 mx-6 shrink-0"
+                  >
+                    <MapPin className="h-4 w-4 text-primary shrink-0" />
+                    <span className="font-bold text-foreground uppercase tracking-widest text-sm whitespace-nowrap">
+                      {location}
+                    </span>
+                  </div>
+                ))}
+                {/* Duplicate copy for seamless loop */}
+                {locations.map((location) => (
+                  <div
+                    key={`b-${location}`}
+                    className="flex items-center gap-2 mx-6 shrink-0"
+                  >
+                    <MapPin className="h-4 w-4 text-primary shrink-0" />
+                    <span className="font-bold text-foreground uppercase tracking-widest text-sm whitespace-nowrap">
+                      {location}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

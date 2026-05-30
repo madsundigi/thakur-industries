@@ -54,6 +54,9 @@ export default function OurWorkPage() {
 
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
+          <p className="text-center text-xs font-black uppercase tracking-[0.25em] text-primary mb-3">
+            // OUR WORK //
+          </p>
           <PageHeader
             title="Our Work —"
             highlightedWord="Job Work Portfolio"
@@ -67,10 +70,10 @@ export default function OurWorkPage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 rounded-full font-black uppercase italic tracking-tight text-sm border transition-all ${
+                className={`px-5 py-2 rounded-full font-black uppercase italic tracking-tight text-sm border transition-all duration-200 ${
                   activeCategory === cat
                     ? 'bg-primary text-primary-foreground border-primary'
-                    : 'border-border text-muted-foreground hover:border-primary/60 hover:text-foreground'
+                    : 'border-border text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary'
                 }`}
               >
                 {cat}
@@ -91,7 +94,7 @@ export default function OurWorkPage() {
                 <motion.div
                   key={item.id + item.title}
                   variants={fadeInUp}
-                  className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-[0_0_24px_rgba(255,0,0,0.08)] transition-all group"
+                  className="group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
                 >
                   {/* Image */}
                   <div className="relative h-52 w-full overflow-hidden">
@@ -115,7 +118,13 @@ export default function OurWorkPage() {
                     <h3 className="font-black uppercase italic tracking-tight text-foreground mb-2 group-hover:text-primary transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{item.desc}</p>
+                    <p className="text-muted-foreground text-sm mb-3 leading-relaxed">{item.desc}</p>
+
+                    {item.hardness && (
+                      <span className="inline-block bg-primary/10 border border-primary/20 text-primary text-xs font-black uppercase px-2 py-0.5 rounded mb-4">
+                        {item.hardness}
+                      </span>
+                    )}
 
                     <div className="grid grid-cols-2 gap-3 text-xs mb-4">
                       <div className="bg-secondary/50 rounded-lg p-2">

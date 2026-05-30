@@ -72,14 +72,25 @@ export function Testimonials() {
 
     const TestimonialGrid = () => (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
-            {testimonialsData.map((testimonial) => {
+            {testimonialsData.map((testimonial, i) => {
                 const avatar = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
                 return (
-                <Card key={testimonial.name} className="bg-card">
+                <Card
+                    key={testimonial.name}
+                    className="bg-card hover:border-primary/20 transition-colors duration-300 hover:shadow-lg hover:shadow-primary/5 animate-in fade-in slide-in-from-bottom-4 duration-500"
+                    style={{ animationDelay: `${i * 150}ms` }}
+                >
                     <CardContent className="p-6 flex flex-col items-center text-center">
                         <div className="flex mb-4">
-                            {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
+                            {[1,2,3,4,5].map((_, si) => (
+                                <Star
+                                    key={si}
+                                    className="h-4 w-4 fill-yellow-400 text-yellow-400 animate-in fade-in zoom-in-50 duration-300"
+                                    style={{ animationDelay: `${si * 80}ms` }}
+                                />
+                            ))}
                         </div>
+                        <div className="text-5xl text-primary/20 font-serif leading-none mb-2">"</div>
                         <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
                         <div className="flex items-center gap-4 mt-6">
                              {avatar && (
@@ -114,11 +125,21 @@ export function Testimonials() {
                     return (
                     <CarouselItem key={index}>
                         <div className="p-1">
-                        <Card>
+                        <Card
+                            className="hover:border-primary/20 transition-colors duration-300 hover:shadow-lg hover:shadow-primary/5 animate-in fade-in slide-in-from-bottom-4 duration-500"
+                            style={{ animationDelay: `${index * 150}ms` }}
+                        >
                             <CardContent className="p-6 flex flex-col items-center text-center">
                                  <div className="flex mb-4">
-                                    {Array(testimonial.rating).fill(0).map((_, i) => <Star key={i} className="h-5 w-5 text-primary fill-primary" />)}
+                                    {[1,2,3,4,5].map((_, si) => (
+                                        <Star
+                                            key={si}
+                                            className="h-4 w-4 fill-yellow-400 text-yellow-400 animate-in fade-in zoom-in-50 duration-300"
+                                            style={{ animationDelay: `${si * 80}ms` }}
+                                        />
+                                    ))}
                                 </div>
+                                <div className="text-5xl text-primary/20 font-serif leading-none mb-2">"</div>
                                 <p className="text-muted-foreground italic text-base">"{testimonial.quote}"</p>
                                 <div className="flex items-center gap-4 mt-6">
                                     {avatar && (
@@ -163,6 +184,7 @@ export function Testimonials() {
                         <span className="text-muted-foreground text-xs">·</span>
                         <span className="text-muted-foreground text-xs font-medium">127+ verified client reviews</span>
                     </div>
+                    <p className="section-label text-center">// WHAT CLIENTS SAY //</p>
                     <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                         What Our Clients Say About Our Heat Treatment Services
                     </h2>

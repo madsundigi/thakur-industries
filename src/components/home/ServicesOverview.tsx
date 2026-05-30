@@ -40,13 +40,14 @@ export function ServicesOverview() {
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <motion.div 
+        <motion.div
             className="text-center mb-16"
             initial={prefersReducedMotion ? false : "hidden"}
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeInBottom}
         >
+            <p className="section-label text-center">// SERVICES //</p>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-foreground uppercase italic">
               Our <span className="text-primary">Hardening</span> Services
             </h2>
@@ -62,13 +63,16 @@ export function ServicesOverview() {
             viewport={{ once: true, amount: 0.2 }}
             variants={staggerContainer}
         >
-          {SERVICES.slice(0, 3).map((service) => {
+          {SERVICES.slice(0, 3).map((service, i) => {
             const image = PlaceHolderImages.find(img => img.id === service.image);
             return (
               <motion.div key={service.id} variants={prefersReducedMotion ? undefined : fadeInBottom}>
                 <Link href={service.href || `/services#${service.id}`} className="block group">
                   <motion.div {...hoverGlow}>
-                    <Card className="h-full overflow-hidden bg-secondary/30 border-border group-hover:border-primary/50 transition-all">
+                    <Card
+                      className="group h-full overflow-hidden bg-secondary/30 border-border group-hover:border-primary/50 border-b-2 border-b-transparent hover:border-b-primary transition-colors duration-300 animate-in fade-in slide-in-from-bottom-4 duration-500"
+                      style={{ animationDelay: `${i * 100}ms` }}
+                    >
                       {image && (
                         <div className="relative h-56 w-full overflow-hidden">
                             <Image
@@ -81,7 +85,7 @@ export function ServicesOverview() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                             <div className="absolute bottom-4 left-6">
-                              <Zap className="h-6 w-6 text-primary" />
+                              <Zap className="h-6 w-6 text-primary group-hover:text-primary group-hover:scale-110 transition-all duration-300" />
                             </div>
                         </div>
                       )}
@@ -96,6 +100,10 @@ export function ServicesOverview() {
                         </p>
                         <div className="text-primary font-bold text-xs uppercase tracking-widest mt-6 flex items-center gap-2 opacity-70 group-hover:opacity-100 transition-opacity">
                             View Details <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </div>
+                        <div className="flex items-center justify-between mt-3">
+                          <span className="text-xs font-bold uppercase text-primary/60">Learn More</span>
+                          <ArrowRight className="h-4 w-4 text-primary translate-x-[-4px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-200" />
                         </div>
                       </CardContent>
                     </Card>

@@ -172,6 +172,8 @@ export default function QualityCertificationsPage() {
 
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
+          {/* // QUALITY ASSURANCE // */}
+          <p className="text-center text-xs font-black uppercase tracking-[0.3em] text-primary/60 mb-2 mt-8">// Quality Assurance //</p>
           <PageHeader
             title="Quality Control &"
             highlightedWord="Certifications"
@@ -191,7 +193,7 @@ export default function QualityCertificationsPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-transparent" />
             <div className="absolute inset-0 flex items-center px-8 md:px-16">
               <div className="max-w-lg">
-                <span className="inline-block bg-primary text-primary-foreground text-xs font-black uppercase px-3 py-1 rounded-full tracking-widest mb-4">ISO-Process Standards</span>
+                <span className="inline-block bg-primary/10 border border-primary/20 text-primary text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full mb-4">ISO-Process Standards</span>
                 <h2 className="text-2xl md:text-4xl font-black uppercase italic tracking-tighter text-foreground leading-tight">
                   Every batch tested.<br />Every report documented.
                 </h2>
@@ -210,8 +212,8 @@ export default function QualityCertificationsPage() {
             ].map((badge) => (
               <div key={badge.label} className="p-6 bg-secondary/30 border border-border rounded-2xl text-center">
                 <badge.icon className="h-8 w-8 text-primary mx-auto mb-3" />
-                <p className="font-black uppercase italic tracking-tight text-foreground">{badge.label}</p>
-                <p className="text-xs text-muted-foreground mt-1">{badge.sub}</p>
+                <span className="inline-block bg-primary/10 border border-primary/20 text-primary text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full">{badge.label}</span>
+                <p className="text-xs text-muted-foreground mt-2">{badge.sub}</p>
               </div>
             ))}
           </div>
@@ -258,8 +260,8 @@ export default function QualityCertificationsPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {certifications.map((cert) => (
-                <div key={cert.title} className="flex gap-6 p-8 bg-secondary/20 border border-border rounded-2xl">
-                  <cert.icon className="h-10 w-10 text-primary shrink-0 mt-1" />
+                <div key={cert.title} className="flex gap-6 p-8 bg-secondary/20 border border-border rounded-2xl group hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                  <cert.icon className="h-10 w-10 text-primary shrink-0 mt-1 group-hover:scale-105 transition-transform duration-300" />
                   <div>
                     <h3 className="font-black uppercase italic tracking-tight text-foreground mb-2">{cert.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{cert.desc}</p>
@@ -296,9 +298,12 @@ export default function QualityCertificationsPage() {
                   'Material Grade Confirmation',
                   'Batch traceability record',
                   'Metallurgical cross-section report (on request)',
-                ].map((doc) => (
-                  <div key={doc} className="flex items-start gap-3 p-4 bg-secondary/30 rounded-xl border border-border">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                ].map((doc, i) => (
+                  <div key={doc} className="flex items-start gap-3 p-3 bg-secondary/30 rounded-xl border border-border hover:bg-secondary/30 hover:border-l-2 hover:border-primary hover:pl-4 transition-all duration-200">
+                    <CheckCircle2
+                      className="h-5 w-5 text-primary shrink-0 mt-0.5 animate-in zoom-in-50 duration-300"
+                      style={{ animationDelay: `${i * 50}ms` }}
+                    />
                     <span className="text-foreground font-medium text-sm">{doc}</span>
                   </div>
                 ))}

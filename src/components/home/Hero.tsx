@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Phone, MessageSquare } from 'lucide-react';
+import { ArrowRight, Phone, MessageSquare, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from '@/hooks/use-media-query';
@@ -96,6 +96,14 @@ export function Hero() {
             </a>
           </Button>
         </motion.div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+        <a href="#services" aria-label="Scroll to services" className="flex flex-col items-center gap-1 text-white/50 hover:text-white/80 transition-colors">
+          <span className="text-[10px] font-bold uppercase tracking-[0.2em] hidden sm:block">Scroll</span>
+          <ChevronDown className="h-6 w-6 animate-bounce" />
+        </a>
       </div>
     </section>
   );

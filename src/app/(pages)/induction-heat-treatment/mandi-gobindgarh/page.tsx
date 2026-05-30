@@ -69,6 +69,7 @@ export default function MandiGobindgarhPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
+              {/* LOCATION */}
               <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">
                 Industrial <span className="text-primary">Capabilities</span>
               </h2>
@@ -82,11 +83,12 @@ export default function MandiGobindgarhPage() {
                     { title: "Gear Tooth Induction", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana" },
                     { title: "Bearing Race Treatment", href: "/induction-heat-treatment/induction-hardening-bearings-ludhiana" },
                     { title: "On-site Hardening", href: "/induction-heat-treatment/on-site" }
-                  ].map(item => (
-                    <Link 
-                      key={item.title} 
+                  ].map((item, i) => (
+                    <Link
+                      key={item.title}
                       href={item.href}
-                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group"
+                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all duration-200 hover:pl-3 hover:border-l-2 hover:border-l-primary group animate-in fade-in slide-in-from-bottom-4 duration-500"
+                      style={{ animationDelay: `${i * 100}ms` }}
                     >
                       <CheckCircle2 className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
                       <span className="font-bold text-foreground uppercase tracking-tight text-xs group-hover:text-primary transition-colors">{item.title}</span>
@@ -109,7 +111,7 @@ export default function MandiGobindgarhPage() {
               <div className="flex items-center gap-3 text-primary font-black uppercase tracking-widest text-sm mb-8">
                 <MapPin className="h-5 w-5" /> Area: Mandi Gobindgarh, Fatehgarh Sahib
               </div>
-              <Button asChild className="w-full py-8 text-lg font-black uppercase italic">
+              <Button asChild className="w-full py-8 text-lg font-black uppercase italic hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-shadow duration-300">
                 <Link href="/contact">Inquire for Steel City</Link>
               </Button>
             </motion.div>

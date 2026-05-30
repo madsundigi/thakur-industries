@@ -37,6 +37,8 @@ const formSchema = z.object({
 export default function ContactPage() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -53,6 +55,7 @@ export default function ContactPage() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
+    setSubmitError(null);
     try {
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -77,10 +80,13 @@ export default function ContactPage() {
           description: 'Thank you. Our team will respond within 24 hours.',
         });
         form.reset();
+        setIsSuccess(true);
       } else {
         throw new Error(data.message || 'Submission failed');
       }
     } catch {
+      const errorMsg = 'Submission failed. Please call us directly at +91 7900000776 or try again.';
+      setSubmitError(errorMsg);
       toast({
         title: 'Submission Failed',
         description: 'Please call us directly at +91 7900000776 or try again.',
@@ -123,8 +129,41 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
+            <p className="text-sm font-semibold tracking-widest text-primary uppercase mb-3">// GET IN TOUCH //</p>
              <h2 className="text-3xl font-bold mb-6">Get a Quote for Job Work</h2>
              <p className='mb-6 text-muted-foreground'>Please fill out the form below, and our technical team will respond with a suitable process plan and quotation within 24 hours.</p>
+
+            {isSuccess ? (
+              <div className="flex flex-col items-center justify-center gap-4 rounded-lg border border-green-200 bg-green-50 px-8 py-14 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-16 w-16 text-green-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" strokeOpacity="0.25" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 13l3 3 7-7" />
+                </svg>
+                <h3 className="text-2xl font-bold text-green-800">Message Sent!</h3>
+                <p className="text-green-700 max-w-sm">
+                  We&apos;ll get back to you within 24 hours. For urgent queries, call us at{' '}
+                  <a href={`tel:${SITE_PHONE_NUMBER}`} className="font-semibold underline underline-offset-2">
+                    {SITE_PHONE_NUMBER}
+                  </a>
+                  .
+                </p>
+                <Button
+                  variant="outline"
+                  className="mt-2"
+                  onClick={() => setIsSuccess(false)}
+                >
+                  Send Another Message
+                </Button>
+              </div>
+            ) : (
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -247,11 +286,44 @@ export default function ContactPage() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" size="lg" disabled={isSubmitting}>
-                  {isSubmitting ? 'Sending…' : 'Submit Inquiry'}
+                <Button type="submit" size="lg" disabled={isSubmitting} className={isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}>
+                  {isSubmitting ? (
+                    <span className="flex items-center gap-2">
+                      <svg
+                        className="h-4 w-4 animate-spin"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                        />
+                      </svg>
+                      Sending…
+                    </span>
+                  ) : (
+                    'Submit Inquiry'
+                  )}
                 </Button>
+                {submitError && (
+                  <p role="alert" className="mt-2 text-sm font-medium text-red-600">
+                    {submitError}
+                  </p>
+                )}
               </form>
             </Form>
+            )}
           </div>
           <div className="space-y-6">
             <h3 className="text-2xl font-bold">Contact Information</h3>
@@ -281,7 +353,7 @@ export default function ContactPage() {
 
         <div className="mt-16 md:mt-24">
             <h3 className="text-3xl font-bold text-center mb-8">Our Location & Service Area</h3>
-             <div className="relative h-[400px] w-full overflow-hidden rounded-lg border">
+             <div className="relative h-[400px] w-full overflow-hidden rounded-lg border animate-in fade-in duration-700">
                  <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.498305727938!2d75.875935!3d30.871576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a82605f8c6b75%3A0x2d81577c38724734!2sThakur%20Industries!5e0!3m2!1sen!2sin!4v1716800000000"
                     width="100%"

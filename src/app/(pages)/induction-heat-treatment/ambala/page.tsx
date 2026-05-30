@@ -65,6 +65,7 @@ export default function AmbalaPage() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
+            <p className="section-label">// LOCATION //</p>
             <p className="text-xl text-muted-foreground font-medium leading-relaxed">
               Ambala is one of North India&apos;s most important industrial cities — home to over 3,000 scientific instrument manufacturers and a growing auto parts cluster. <strong>{SITE_NAME}</strong> provides precision <strong>induction hardening and heat treatment</strong> for Ambala&apos;s manufacturers, with pickup and delivery to Ambala Cantt, Chandigarh, and Panchkula. Certified Rockwell hardness test reports with every batch.
             </p>
@@ -90,13 +91,16 @@ export default function AmbalaPage() {
                     { title: "Gear Tooth Induction", href: "/induction-heat-treatment/induction-hardening-gears-ludhiana" },
                     { title: "Bearing Race Treatment", href: "/induction-heat-treatment/induction-hardening-bearings-ludhiana" },
                     { title: "On-site Hardening", href: "/induction-heat-treatment/on-site" }
-                  ].map(item => (
+                  ].map((item, i) => (
                     <Link
                       key={item.title}
                       href={item.href}
-                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group"
+                      className="flex items-center gap-3 p-4 bg-secondary/30 rounded-xl border border-border hover:border-primary/50 transition-all group animate-in fade-in slide-in-from-bottom-4 duration-500 hover:pl-3 hover:border-l-2 hover:border-l-primary"
+                      style={{ animationDelay: `${i * 100}ms` }}
                     >
-                      <CheckCircle2 className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
+                      <div className="text-primary animate-in zoom-in-50 duration-300" style={{ animationDelay: `${i * 50}ms` }}>
+                        <CheckCircle2 className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                      </div>
                       <span className="font-bold text-foreground uppercase tracking-tight text-xs group-hover:text-primary transition-colors">{item.title}</span>
                     </Link>
                   ))}
@@ -117,7 +121,7 @@ export default function AmbalaPage() {
               <div className="flex items-center gap-3 text-primary font-black uppercase tracking-widest text-sm mb-8">
                 <MapPin className="h-5 w-5" /> Area: Ambala, Chandigarh, Panchkula, Kurukshetra
               </div>
-              <Button asChild className="w-full py-8 text-lg font-black uppercase italic">
+              <Button asChild className="w-full py-8 text-lg font-black uppercase italic hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-shadow duration-300">
                 <Link href="/contact">Inquire for Ambala</Link>
               </Button>
             </motion.div>
@@ -137,7 +141,8 @@ export default function AmbalaPage() {
                   <motion.div
                     variants={fadeInUp}
                     whileHover={{ y: -5 }}
-                    className="p-8 bg-card border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center shadow-sm"
+                    className="p-8 bg-card border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-500"
+                    style={{ animationDelay: `${i * 100}ms` }}
                   >
                     <link.icon className="h-8 w-8 text-primary mb-4" />
                     <h4 className="font-black uppercase italic text-foreground group-hover:text-primary transition-colors text-sm">{link.title}</h4>

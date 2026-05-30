@@ -82,3 +82,88 @@
 .glass-effect {
   @apply bg-background/80 backdrop-blur-md border border-white/10;
 }
+
+/* Pull quote blockquote styling */
+blockquote.pull-quote {
+  border-left: 3px solid hsl(var(--primary));
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  background: hsl(var(--secondary) / 0.3);
+  border-radius: 0 1rem 1rem 0;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: hsl(var(--foreground));
+  position: relative;
+}
+blockquote.pull-quote::before {
+  content: '"';
+  position: absolute;
+  top: -0.5rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: hsl(var(--primary) / 0.3);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+/* Marquee animation (for ServiceArea) */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+.animate-marquee-pause:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Section label style utility */
+.section-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: hsl(var(--primary) / 0.6);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* Timeline connector line */
+.timeline-line {
+  position: relative;
+}
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 2.5rem;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, hsl(var(--primary) / 0.6), transparent);
+}
+
+/* Button fill-slide hover effect */
+.btn-fill-slide {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+.btn-fill-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: hsl(var(--primary-foreground));
+  transform: translateX(-101%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+.btn-fill-slide:hover::before {
+  transform: translateX(0);
+}
+.btn-fill-slide > * {
+  position: relative;
+  z-index: 1;
+}

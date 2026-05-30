@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Cpu, MapPin, Settings, Boxes, CheckCircle2 } from 'lucide-react';
+import { Cpu, MapPin, Settings, Boxes, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
@@ -37,6 +37,7 @@ export default function EN24SteelPage() {
       ]} />
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
+          <p className="section-label">// MATERIAL GRADE //</p>
           <PageHeader
             title="EN24 Steel Induction Hardening"
             highlightedWord="Punjab"
@@ -87,9 +88,9 @@ export default function EN24SteelPage() {
                 { value: '0.5–3 mm', label: 'Case Depth Range' },
                 { value: 'Ni-Cr-Mo', label: 'Alloy System' },
                 { value: '2–4 Days', label: 'Turnaround' },
-              ].map(stat => (
-                <div key={stat.label} className="bg-secondary/30 border border-border rounded-2xl p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-black text-primary mb-1">{stat.value}</div>
+              ].map((stat, i) => (
+                <div key={stat.label} className="bg-secondary/30 border border-border rounded-2xl p-6 text-center animate-in fade-in slide-in-from-bottom-4 duration-500" style={{ animationDelay: `${i * 100}ms` }}>
+                  <div className={stat.label === 'Surface Hardness' ? 'text-4xl font-black text-primary [text-shadow:0_0_20px_hsl(var(--primary)/0.3)] mb-1' : 'text-2xl md:text-3xl font-black text-primary mb-1'}>{stat.value}</div>
                   <div className="text-xs text-muted-foreground uppercase tracking-widest font-bold">{stat.label}</div>
                 </div>
               ))}
@@ -145,7 +146,7 @@ export default function EN24SteelPage() {
                   'Superior fatigue life under reversed bending and torsion',
                   'Retains mechanical properties after repeated thermal cycling',
                 ].map(point => (
-                  <li key={point} className="flex items-start gap-3">
+                  <li key={point} className="flex items-start gap-3 transition-all duration-200 hover:pl-2 hover:border-l-2 hover:border-l-primary">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>{point}</span>
                   </li>
@@ -174,11 +175,13 @@ export default function EN24SteelPage() {
                   <motion.div
                     variants={fadeInUp}
                     whileHover={{ y: -5 }}
-                    className="p-8 bg-card border border-border rounded-2xl transition-all hover:border-primary/50 flex flex-col items-center text-center shadow-sm"
+                    className="p-8 bg-card border border-border rounded-2xl transition-all animate-in fade-in slide-in-from-bottom-4 duration-500 group hover:border-primary/50 transition-colors duration-200 flex flex-col items-center text-center shadow-sm"
+                    style={{ animationDelay: `${i * 100}ms` }}
                   >
                     <link.icon className="h-8 w-8 text-primary mb-4" />
                     <h4 className="font-black uppercase italic text-foreground group-hover:text-primary transition-colors text-sm">{link.title}</h4>
                     <p className="text-xs text-muted-foreground mt-2">{link.sub}</p>
+                    <ArrowRight className="h-4 w-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity mt-3" />
                   </motion.div>
                 </Link>
               ))}
