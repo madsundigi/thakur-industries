@@ -3,17 +3,17 @@
 import { cn } from "@/lib/utils";
 import { motion } from 'framer-motion';
 
-interface PageHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
+interface PageHeaderProps {
   title: string;
   description?: string;
   highlightedWord?: string;
+  className?: string;
 }
 
-export default function PageHeader({ title, description, highlightedWord, className, ...props }: PageHeaderProps) {
+export default function PageHeader({ title, description, highlightedWord, className }: PageHeaderProps) {
   return (
-    <motion.div 
-      className={cn("space-y-4 pt-28 mb-12", className)} 
-      {...props}
+    <motion.div
+      className={cn("space-y-4 pt-28 mb-12", className)}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
