@@ -107,9 +107,23 @@ export function Footer() {
           <p className="text-center">
             Induction Hardening &amp; Heat Treatment Job Work — Ludhiana, Punjab, India
           </p>
-          <div className="flex gap-4">
-            <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy</Link>
-            <Link href="/sitemap.xml" className="hover:text-primary transition-colors">Sitemap</Link>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex gap-4">
+              <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy</Link>
+              <Link href="/sitemap.xml" className="hover:text-primary transition-colors">Sitemap</Link>
+            </div>
+            <span className="hidden sm:block text-gray-700">|</span>
+            <p className="text-gray-600 text-[11px]">
+              Digital Marketing by{' '}
+              <a
+                href="https://madsunmedia.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-primary transition-colors font-medium"
+              >
+                Madsun Media
+              </a>
+            </p>
           </div>
         </div>
       </div>
