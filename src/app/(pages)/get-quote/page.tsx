@@ -2,73 +2,115 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ServiceFAQ } from '@/components/shared/ServiceFAQ';
-import { CheckCircle2, Phone, MessageSquare, Clock, IndianRupee, Layers, Gauge, Flame } from 'lucide-react';
+import {
+  CheckCircle2,
+  Phone,
+  MessageSquare,
+  Clock,
+  IndianRupee,
+  Layers,
+  Gauge,
+  Flame,
+  Scale,
+  Award,
+  ShieldCheck,
+  FileCheck,
+  Truck,
+} from 'lucide-react';
 import PageHeader from '@/components/shared/PageHeader';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { BreadcrumbJsonLd } from '@/components/shared/BreadcrumbJsonLd';
 import { SITE_NAME, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { CTASection } from '@/components/home/CTASection';
 
+const TITLE = 'Induction Hardening Rate Per Kg & Quote in Ludhiana | Thakur Industries';
+const DESCRIPTION =
+  'Get the induction hardening rate per kg for gears, shafts & crankshafts in Ludhiana, Punjab. Transparent per-kg & per-piece job work pricing with bulk discounts — free quote within 24 hours. Call +91 7900000776.';
+
 export const metadata: Metadata = {
-  title: 'Induction Hardening Rate & Quote in Ludhiana Punjab | Thakur Industries',
-  description: 'Get competitive induction hardening job work rates in Ludhiana, Punjab. Pricing for gear hardening, shaft hardening, bearing race & case hardening. Free quote in 24 hours. Call +91 7900000776.',
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: '/get-quote' },
   keywords: [
-    'induction hardening rate Ludhiana',
-    'heat treatment job work rate Punjab',
+    'induction hardening rate per kg',
+    'heat treatment cost',
+    'hardening job work price',
     'gear hardening rate',
-    'shaft hardening price Punjab',
+    'shaft hardening rate per kg',
     'induction hardening cost India',
     'case hardening rate Ludhiana',
-    'heat treatment job work quotation',
+    'heat treatment job work quotation Punjab',
   ],
   openGraph: {
-    title: 'Induction Hardening Rate & Free Quote | Thakur Industries Ludhiana',
-    description: 'Get competitive induction hardening job work rates in Ludhiana, Punjab. Free quote in 24 hours.',
+    title: 'Induction Hardening Rate Per Kg & Free Quote | Thakur Industries Ludhiana',
+    description:
+      'Per-kg & per-piece induction hardening job work rates in Ludhiana, Punjab. Bulk discounts and a free quote within 24 hours.',
     url: `${SITE_URL}/get-quote`,
+    siteName: SITE_NAME,
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Induction Hardening Rate Per Kg & Free Quote | Thakur Industries',
+    description:
+      'Transparent per-kg induction hardening job work pricing in Ludhiana, Punjab. Free quote within 24 hours.',
   },
 };
 
+const WHATSAPP_URL =
+  `https://wa.me/${SITE_PHONE_NUMBER.replace(/\D/g, '')}?text=` +
+  encodeURIComponent(
+    'Hello, please send me your induction hardening rate per kg. Component: ___ Material: ___ Weight/Qty: ___ Required HRC & case depth: ___',
+  );
+
 const pricingFactors = [
   {
-    icon: Layers,
-    title: 'Component Size & Weight',
-    desc: 'Larger or heavier components require longer heating cycles and more energy. Rate is typically calculated per kilogram or per piece for standard parts.',
+    icon: Scale,
+    title: 'Component Weight (Per Kg)',
+    desc: 'The induction hardening rate per kg is the core of most quotes. Heavier components draw more energy and longer cycles, so weight is the primary driver for shafts, axles and large gears.',
   },
   {
     icon: Gauge,
     title: 'Required Case Depth',
-    desc: 'Deeper case depth (e.g. 3–6mm for shafts vs 0.5–1.5mm for gears) requires more controlled heating time, affecting the per-piece rate.',
+    desc: 'Deeper case depth (e.g. 3–6mm for shafts vs 0.5–1.5mm for gears) needs more controlled heating time, which raises the per-kg or per-piece rate.',
   },
   {
     icon: Flame,
-    title: 'Material Grade',
-    desc: 'EN8, EN19, EN24, 4140, and tool steels have different heating requirements. Higher alloy steels need precise temperature control and may cost more.',
+    title: 'Steel Grade',
+    desc: 'EN8, EN19, EN24, 4140 and tool steels respond differently. Higher alloy steels need precise temperature control and may carry a slightly higher rate.',
   },
   {
     icon: Layers,
-    title: 'Batch Quantity',
-    desc: 'Larger batch orders get better per-piece pricing. We offer special rates for OEM orders, export units, and repeat production batches.',
+    title: 'Geometry & Quantity',
+    desc: 'Tooth profiles, splines and bores need custom coils. Larger batch quantities unlock better per-piece pricing through bulk discounts and repeat-order rates.',
   },
   {
     icon: Clock,
     title: 'Turnaround Time',
-    desc: 'Standard delivery: 2–4 working days. Urgent/same-day processing is available at a priority rate for time-critical orders.',
+    desc: 'Standard delivery is 2–4 working days. Urgent or same-week processing is available at a priority rate for time-critical orders.',
   },
   {
-    icon: CheckCircle2,
+    icon: FileCheck,
     title: 'Testing & Certification',
-    desc: 'All batches include Rockwell hardness test reports at no extra charge. Metallurgical reports and cross-section analysis available on request.',
+    desc: 'Every batch includes Rockwell hardness (HRC) test reports at no extra charge. Metallurgical and cross-section reports are available on request.',
   },
 ];
 
 const services = [
-  { name: 'Shaft Hardening', details: 'All diameters — drive, transmission, agricultural shafts', href: '/induction-heat-treatment/induction-hardening-shafts-ludhiana' },
-  { name: 'Gear Tooth Induction Hardening', details: 'Tooth-by-tooth or full-face gear hardening', href: '/induction-heat-treatment/induction-hardening-gears-ludhiana' },
+  { name: 'Shaft Hardening Rate', details: 'All diameters — drive, transmission, agricultural shafts', href: '/induction-heat-treatment/induction-hardening-shafts-ludhiana' },
+  { name: 'Gear Hardening Rate Per Kg', details: 'Tooth-by-tooth or full-face gear hardening', href: '/induction-heat-treatment/induction-hardening-gears-ludhiana' },
   { name: 'Bearing Race Hardening', details: 'Inner & outer races, needle tracks', href: '/induction-heat-treatment/induction-hardening-bearings-ludhiana' },
   { name: 'Crankshaft Hardening', details: 'Journal pins, crank pins, bearing surfaces', href: '/induction-heat-treatment/crankshafts-induction-hardening-ludhiana' },
-  { name: 'Case Hardening', details: 'Carburizing & surface case hardening', href: '/case-hardening-heat-treatment' },
+  { name: 'Case Hardening Rate', details: 'Carburizing & surface case hardening', href: '/case-hardening-heat-treatment' },
   { name: 'On-site Mobile Service', details: 'For large/fixed components across Punjab', href: '/induction-heat-treatment/on-site' },
+];
+
+const materialLinks = [
+  { grade: 'EN8', href: '/induction-heat-treatment/en8-steel-induction-hardening' },
+  { grade: 'EN19', href: '/induction-heat-treatment/en19-steel-induction-hardening' },
+  { grade: 'EN24', href: '/induction-heat-treatment/en24-steel-hardening' },
+  { grade: '4140', href: '/induction-heat-treatment/4140-steel-hardening' },
 ];
 
 const whyUs = [
@@ -78,6 +120,48 @@ const whyUs = [
   'Serving 500+ manufacturers across Punjab',
   'OEM & export-grade quality with test reports',
   'Pickup & delivery across Punjab available',
+];
+
+const trustBadges = [
+  { icon: Award, label: '25+ Years' },
+  { icon: ShieldCheck, label: 'OEM-Grade Process' },
+  { icon: Clock, label: 'Quote in 24 Hours' },
+  { icon: Truck, label: 'Pickup Across Punjab' },
+];
+
+// FAQ — single source of truth for the visible accordion (ServiceFAQ) AND its
+// FAQPage schema, kept in sync to avoid schema mismatch.
+const PRICING_FAQ = [
+  {
+    question: 'How much does induction hardening cost per kg?',
+    answer:
+      'The induction hardening rate per kg depends on component weight, required case depth, steel grade, geometry and order quantity. We price most work on a per-kg or per-piece basis and confirm an exact figure once we see your drawing. Call +91 7900000776 or send your details on WhatsApp for a free quote within 24 hours.',
+  },
+  {
+    question: 'What is the minimum order quantity for induction hardening job work?',
+    answer:
+      'There is no rigid minimum order. We accept single-piece trial and sample jobs as well as bulk production batches. Batch orders of 50+ pieces receive better per-piece pricing, and monthly OEM contracts are available.',
+  },
+  {
+    question: 'How fast is the turnaround for induction hardening?',
+    answer:
+      'Standard turnaround is 2–4 working days after we receive the components and an approved specification. Urgent and same-week jobs can be arranged at a priority rate for regular clients.',
+  },
+  {
+    question: 'Do you offer bulk discounts on induction hardening rates?',
+    answer:
+      'Yes. We offer reduced per-kg and per-piece rates for bulk batches, regular production runs, OEM suppliers and export units. Long-term partners also receive priority scheduling and preferential pricing.',
+  },
+  {
+    question: 'Do you offer pickup and delivery across Punjab?',
+    answer:
+      'Yes, we provide pickup and delivery to major industrial areas in Ludhiana, Jalandhar, Patiala, Mandi Gobindgarh, Phagwara, Khanna and other Punjab cities. Standard delivery is within 2–4 working days of processing.',
+  },
+  {
+    question: 'Is the Rockwell hardness test report included in the rate?',
+    answer:
+      'Yes. Rockwell HRC test reports are included at no extra charge with every batch. Metallurgical cross-section reports and case-depth verification are available on request.',
+  },
 ];
 
 const howToSchema = {
@@ -112,8 +196,8 @@ const howToSchema = {
     {
       '@type': 'HowToStep',
       'position': 4,
-      'name': 'Confirm Batch Quantity',
-      'text': 'Provide your quantity per batch and monthly frequency. Larger batches receive better per-piece pricing. OEM monthly contracts available.',
+      'name': 'Confirm Component Weight & Batch Quantity',
+      'text': 'Provide the component weight and your quantity per batch and monthly frequency. The induction hardening rate per kg and bulk discounts are calculated from this. OEM monthly contracts available.',
     },
     {
       '@type': 'HowToStep',
@@ -129,6 +213,8 @@ export default function GetQuotePage() {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Induction Hardening Job Work',
+    serviceType: 'Induction Hardening Rate Per Kg & Job Work',
+    url: `${SITE_URL}/get-quote`,
     provider: {
       '@type': 'LocalBusiness',
       name: SITE_NAME,
@@ -136,17 +222,21 @@ export default function GetQuotePage() {
       url: SITE_URL,
       address: {
         '@type': 'PostalAddress',
+        streetAddress: '1486/5, Street Number 1, Harkrishan Nagar, Shimlapuri',
         addressLocality: 'Ludhiana',
         addressRegion: 'Punjab',
+        postalCode: '141003',
         addressCountry: 'IN',
       },
     },
-    areaServed: { '@type': 'State', name: 'Punjab' },
-    description: 'Precision induction hardening and heat treatment job work for gears, shafts, bearings, and crankshafts in Ludhiana, Punjab.',
+    areaServed: ['Ludhiana', 'Mandi Gobindgarh', 'Jalandhar', 'Khanna', 'Patiala', 'Punjab', 'Haryana', 'Delhi NCR'],
+    description: 'Precision induction hardening and heat treatment job work for gears, shafts, bearings, and crankshafts in Ludhiana, Punjab. Priced per kilogram or per piece.',
     offers: {
       '@type': 'Offer',
       priceCurrency: 'INR',
-      description: 'Competitive job work rates. Free quote within 24 hours.',
+      availability: 'https://schema.org/InStock',
+      description: 'Induction hardening job work priced per kg or per piece, with bulk discounts. Free quote within 24 hours.',
+      url: `${SITE_URL}/get-quote`,
     },
   };
 
@@ -158,19 +248,43 @@ export default function GetQuotePage() {
 
       <div className="bg-background">
         <div className="container mx-auto px-4 md:px-6">
+
+          {/* Visible breadcrumb trail (matches BreadcrumbList schema) */}
+          <nav aria-label="Breadcrumb" className="pt-24 md:pt-28">
+            <ol className="flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-wider text-muted-foreground">
+              <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
+              <li aria-hidden="true">/</li>
+              <li className="text-primary">Get a Quote</li>
+            </ol>
+          </nav>
+
           <PageHeader
-            title="Induction Hardening Rates &"
-            highlightedWord="Free Quote"
-            description="Transparent job work pricing for Punjab industries. Tell us your component, material, and quantity — we'll send a competitive quote within 24 hours."
-            className="text-center"
+            title="Get an Induction Hardening"
+            highlightedWord="Quote"
+            description="Transparent per-kg job work pricing for Punjab industries. Tell us your component, material, weight and quantity — we'll send a competitive quote within 24 hours."
+            className="text-center !pt-6"
           />
+
+          {/* Trust badges */}
+          <div className="-mt-2 mb-8 flex flex-wrap items-center justify-center gap-3">
+            {trustBadges.map((badge) => (
+              <span
+                key={badge.label}
+                className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary text-xs font-black uppercase tracking-tight px-3 py-1.5 rounded-full"
+              >
+                <badge.icon className="h-3.5 w-3.5" />
+                {badge.label}
+              </span>
+            ))}
+          </div>
 
           {/* Hero image banner */}
           <div className="relative h-52 md:h-64 rounded-3xl overflow-hidden mb-12 border border-primary/20 shadow-[0_0_30px_rgba(255,0,0,0.08)]">
             <Image
               src="/images/images/6.png"
-              alt="Induction hardening job work — precision heat treatment Ludhiana"
+              alt="Induction hardening rate per kg job work — precision heat treatment in Ludhiana, Punjab"
               fill
+              sizes="(max-width: 768px) 100vw, 1152px"
               className="object-cover"
               priority
             />
@@ -184,7 +298,7 @@ export default function GetQuotePage() {
             </div>
           </div>
 
-          {/* Quick Contact Strip */}
+          {/* Quick Contact Strip — primary conversion CTAs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
             <a
               href={`tel:${SITE_PHONE_NUMBER.replace(/\s/g, '')}`}
@@ -194,15 +308,50 @@ export default function GetQuotePage() {
               Call for Instant Rate: {SITE_PHONE_NUMBER}
             </a>
             <a
-              href={`https://wa.me/${SITE_PHONE_NUMBER.replace(/\D/g, '')}?text=${encodeURIComponent('Hello, I need a quote for induction hardening job work. Component: ___ Material: ___ Quantity: ___')}`}
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-4 p-6 bg-[#25D366] text-white rounded-2xl font-black uppercase italic tracking-tight text-lg hover:opacity-90 transition-opacity"
             >
               <MessageSquare className="h-6 w-6" />
-              WhatsApp Quote Request
+              WhatsApp Rate Request
             </a>
           </div>
+
+          {/* How Induction Hardening Pricing Works — primary price-intent section */}
+          <section className="py-16 border-t border-border max-w-4xl mx-auto">
+            <p className="section-label text-center">// PRICING EXPLAINED //</p>
+            <h2 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 text-center leading-none">
+              How Induction Hardening <span className="text-primary">Pricing Works</span>
+            </h2>
+            <div className="space-y-6 text-base md:text-lg text-muted-foreground font-medium leading-relaxed">
+              <p>
+                The <strong>induction hardening rate per kg</strong> is the single most common way OEMs and workshops in Punjab budget
+                their heat-treatment job work. Rather than publishing one flat figure, we calculate every quote from the real cost
+                drivers of your part — component weight, required case depth, steel grade, geometry and order quantity — so you only
+                pay for the energy and cycle time your job actually needs.
+              </p>
+              <p>
+                For shafts, axles and heavy components, pricing is usually <strong>per kilogram</strong>, because weight directly tracks
+                the heating energy and cycle time involved. For gears, pinions, bearing races and small repeat parts, a{' '}
+                <strong>per-piece rate</strong> is often clearer and easier to plan around. We will recommend whichever basis gives you
+                the most predictable, competitive cost for your component mix.
+              </p>
+              <p>
+                Quantity matters too. There is <strong>no rigid minimum order quantity (MOQ)</strong> — we accept single trial pieces as
+                well as multi-thousand-piece lots — but larger batches unlock meaningful <strong>bulk discounts</strong> on the per-kg
+                and per-piece rate. Regular production runs, OEM suppliers and export units receive our best pricing along with priority
+                scheduling. Standard <strong>turnaround is 2–4 working days</strong>, with urgent same-week processing available at a
+                priority rate.
+              </p>
+              <p>
+                To keep things honest, we do not advertise fixed published rates that could mislead — the right number depends on your
+                exact drawing. Share your component, material grade, weight and quantity and we will return an exact{' '}
+                <strong>induction hardening rate per kg</strong> (or per piece) within 24 hours. You can review the specific factors that
+                shape your quote below.
+              </p>
+            </div>
+          </section>
 
           {/* Services & Rates */}
           <section className="py-16 border-t border-border">
@@ -225,6 +374,21 @@ export default function GetQuotePage() {
                   </div>
                 </Link>
               ))}
+            </div>
+
+            {/* Material-grade internal links */}
+            <div className="mt-10 text-center">
+              <p className="text-sm text-muted-foreground font-medium mb-4">
+                Need a rate by steel grade? Explore hardness, case depth and pricing notes for{' '}
+                {materialLinks.map((m, i) => (
+                  <span key={m.grade}>
+                    <Link href={m.href} className="text-primary font-bold hover:underline">
+                      {m.grade} hardening
+                    </Link>
+                    {i < materialLinks.length - 1 ? ', ' : '.'}
+                  </span>
+                ))}
+              </p>
             </div>
           </section>
 
@@ -271,7 +435,7 @@ export default function GetQuotePage() {
                     { step: '01', text: 'Component name & drawing / photo' },
                     { step: '02', text: 'Material grade (EN8, EN19, EN24, 4140, etc.)' },
                     { step: '03', text: 'Required hardness (HRC) and case depth (mm)' },
-                    { step: '04', text: 'Quantity per batch / per month' },
+                    { step: '04', text: 'Component weight & quantity per batch / per month' },
                     { step: '05', text: 'Delivery: workshop drop-off or pickup from your factory' },
                   ].map((item) => (
                     <li key={item.step} className="flex items-start gap-4">
@@ -287,6 +451,14 @@ export default function GetQuotePage() {
                   >
                     <Phone className="h-5 w-5" /> Call Now: {SITE_PHONE_NUMBER}
                   </a>
+                  <a
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 py-4 px-6 bg-[#25D366] text-white rounded-xl font-black uppercase italic tracking-tight hover:opacity-90 transition-opacity"
+                  >
+                    <MessageSquare className="h-5 w-5" /> WhatsApp a Rate Request
+                  </a>
                   <Link
                     href="/contact"
                     className="flex items-center justify-center gap-3 py-4 px-6 border border-primary text-primary rounded-xl font-black uppercase italic tracking-tight hover:bg-primary hover:text-primary-foreground transition-all"
@@ -298,49 +470,46 @@ export default function GetQuotePage() {
             </div>
           </section>
 
-          {/* FAQ */}
-          <section className="py-16 border-t border-border max-w-3xl mx-auto">
-            <h2 className="text-3xl font-black uppercase italic tracking-tighter mb-10 text-center">
-              Pricing <span className="text-primary">FAQs</span>
-            </h2>
-            <div className="space-y-6">
-              {[
-                {
-                  q: 'What is the minimum order quantity for induction hardening job work?',
-                  a: 'We accept single-piece urgent orders as well as bulk production batches. No minimum order quantity — small workshops and large OEMs are both welcome.',
-                },
-                {
-                  q: 'Do you offer pickup and delivery across Punjab?',
-                  a: 'Yes, we provide pickup and delivery to major industrial areas in Ludhiana, Jalandhar, Patiala, Mandi Gobindgarh, Phagwara, Khanna, and other Punjab cities.',
-                },
-                {
-                  q: 'How soon can I get a rate/quotation?',
-                  a: 'Call or WhatsApp us with component details and we provide a rate within 24 hours. For standard components (shafts, gears, bearings), we can often quote immediately over the phone.',
-                },
-                {
-                  q: 'Do you give discounts for regular job work orders?',
-                  a: 'Yes, we offer special rates for regular production batches, OEM suppliers, and export units. Long-term partnerships get priority scheduling and preferential pricing.',
-                },
-              ].map((faq, i) => (
-                <div key={i} className="p-6 bg-secondary/30 border border-border rounded-xl">
-                  <h3 className="font-black uppercase italic tracking-tight text-foreground mb-3">{faq.q}</h3>
-                  <p className="text-muted-foreground">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-          <ServiceFAQ
-            heading="Job Work Rate FAQs"
-            faqItems={[
-              { question: 'How do I get a rate for induction hardening job work in Ludhiana?', answer: 'Call us at +91 7900000776, send a WhatsApp with your component details (material, size, quantity, required hardness), or fill the enquiry form. We confirm rates within 24 hours.' },
-              { question: 'What information do I need to provide for a quote?', answer: 'Component name, material grade (EN8/EN19/EN24/4140/4340), component dimensions (diameter, length), required surface hardness (HRC target), required case depth (mm), and batch quantity per month.' },
-              { question: 'Is there a minimum order quantity for induction hardening?', answer: 'There is no minimum order — we accept even single pieces for trial or sample jobs. Batch orders of 50+ pieces get better per-piece pricing. Monthly OEM contracts are also available.' },
-              { question: 'Do you offer pickup from our factory in Punjab?', answer: 'Yes. We offer pickup and delivery across Ludhiana, Jalandhar, Phagwara, Patiala, Mandi Gobindgarh, and most Punjab cities. Standard delivery back within 2–4 working days of processing.' },
-              { question: 'Is the Rockwell hardness test report included in the rate?', answer: 'Yes. Rockwell HRC test reports are included at no extra charge with every batch. Metallurgical cross-section reports and case depth verification are available on request.' },
-            ]}
-          />
+          {/* FAQ — synced with FAQPage schema via ServiceFAQ */}
+          <ServiceFAQ heading="Pricing & Rate FAQs" faqItems={PRICING_FAQ} />
+
+          {/* Authority outbound reference + freshness signal */}
+          <div className="pb-12 pt-4 text-center text-xs text-muted-foreground font-medium">
+            <p className="mb-2">
+              Learn more about the metallurgy behind surface hardening from the{' '}
+              <a
+                href="https://www.asminternational.org/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="text-primary hover:underline font-bold"
+              >
+                ASM International
+              </a>{' '}
+              heat-treatment resources.
+            </p>
+            <p className="uppercase tracking-widest">Last updated: June 2026 · {SITE_NAME}, Ludhiana, Punjab</p>
+          </div>
+
         </div>
         <CTASection />
+
+        {/* Mobile sticky CTA bar — hidden on md+ (CSS only, no hooks) */}
+        <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur border-t border-border px-4 py-3 flex gap-3">
+          <a
+            href={`tel:${SITE_PHONE_NUMBER.replace(/\s/g, '')}`}
+            className="flex-1 flex items-center justify-center gap-2 bg-primary text-primary-foreground font-black uppercase text-xs py-3 rounded-lg"
+          >
+            <Phone className="h-4 w-4" /> Call Now
+          </a>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white font-black uppercase text-xs py-3 rounded-lg"
+          >
+            <MessageSquare className="h-4 w-4" /> WhatsApp
+          </a>
+        </div>
       </div>
     </>
   );
