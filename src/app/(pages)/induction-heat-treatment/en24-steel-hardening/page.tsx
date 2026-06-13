@@ -87,6 +87,10 @@ const FAQ_ITEMS = [
     q: 'What EN24 components do you process at Thakur Industries?',
     a: 'We regularly process EN24 high-speed machine spindles, heavy gearbox output shafts, press-tool guide pins and pillars, large-diameter crankshaft journals, aerospace-specification fastener bodies and defence component shafts. Component diameter from 15 mm to 250 mm, length up to 2,000 mm. Complex profiles are quoted individually.',
   },
+  {
+    q: 'What HRC can EN24 reach with induction hardening?',
+    a: 'EN24 (817M40 / SAE 4340) reaches 55–62 HRC surface hardness with induction hardening. Its nickel-chromium-molybdenum alloy system gives outstanding hardenability and core toughness — the hardened-and-tempered core holds 35–45 HRC, case depth runs 0.5–3 mm, and austenitizing is done at 850–900 °C. This EN24 induction hardening HRC range is documented with a certified Rockwell report on every batch.',
+  },
 ];
 
 export default function EN24SteelPage() {
@@ -363,6 +367,51 @@ export default function EN24SteelPage() {
                     ['Quench Medium', 'Polymer / oil-based, controlled'],
                     ['Turnaround', '2–4 working days (standard)'],
                     ['Testing', 'HRC verification, case-depth check, dimensional inspection'],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? 'bg-secondary/30' : 'bg-card'}>
+                      <th scope="row" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground align-top w-1/2">
+                        {k}
+                      </th>
+                      <td className="py-4 px-5 text-muted-foreground font-medium">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </motion.div>
+          </section>
+
+          {/* Induction Hardening HRC Range — spec-research target */}
+          <section className="py-16 md:py-20 border-t border-border">
+            <p className="section-label text-center">// HRC RANGE //</p>
+            <motion.h2
+              className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 text-center leading-none"
+              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
+            >
+              EN24 Induction Hardening <span className="text-primary">HRC Range</span>
+            </motion.h2>
+            <p className="text-center text-muted-foreground font-medium max-w-3xl mx-auto mb-12">
+              The <strong>EN24 induction hardening HRC range</strong> is the highest in the EN-series. EN24 (817M40 / 4340)
+              reaches 55–62 HRC at the surface while its nickel-chromium-molybdenum core stays tough — the table below
+              summarises the hardness, case depth, alloy content and austenitizing temperature you can specify.
+            </p>
+            <motion.div
+              className="max-w-3xl mx-auto overflow-hidden rounded-2xl border border-border"
+              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
+            >
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="bg-primary/10">
+                    <th scope="col" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground w-1/2">Property</th>
+                    <th scope="col" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground">Value</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm md:text-base">
+                  {[
+                    ['Surface Hardness', '55–62 HRC'],
+                    ['Core Hardness', '35–45 HRC (hardened & tempered)'],
+                    ['Case Depth', '0.5–3 mm (controlled to spec)'],
+                    ['Alloy Content', 'Ni-Cr-Mo · ~0.36–0.44% C'],
+                    ['Austenitizing Temp', '850–900 °C'],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? 'bg-secondary/30' : 'bg-card'}>
                       <th scope="row" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground align-top w-1/2">

@@ -14,6 +14,34 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'which-components-can-be-induction-hardened',
+    title: 'Which Components Can Be Induction Hardened?',
+    description: 'A guide to the automotive, agricultural and industrial components that can be induction hardened — with typical materials and HRC values.',
+    date: 'June 13, 2026',
+    imageId: 'appGearHardening'
+  },
+  {
+    slug: 'best-steel-grade-for-induction-hardening',
+    title: 'Best Steel Grades for Induction Hardening (With HRC)',
+    description: 'Compare EN8, EN19, EN24, 4140 and 20MnCr5 to choose the best steel grade for induction hardening, with achievable hardness and applications.',
+    date: 'June 13, 2026',
+    imageId: 'blogEnSeries'
+  },
+  {
+    slug: '4140-vs-4340-steel-hardening',
+    title: '4140 vs 4340 Steel Hardening: Differences & HRC',
+    description: 'How 4140 and 4340 alloy steels compare for hardening — composition, hardenability, achievable HRC and which to choose for your part.',
+    date: 'June 13, 2026',
+    imageId: 'blogEnSeries'
+  },
+  {
+    slug: 'difference-between-hardening-and-tempering',
+    title: 'Difference Between Hardening and Tempering Explained',
+    description: 'Hardening vs tempering explained simply — what each does, why they are done together, and how they apply to induction hardening.',
+    date: 'June 13, 2026',
+    imageId: 'processHardening'
+  },
+  {
     slug: 'what-is-induction-hardening-ludhiana',
     title: 'A Step-by-Step Guide to the Induction Hardening Process',
     description: 'A look into the induction hardening process, its advantages, and why it is a critical manufacturing step for Ludhiana\'s industrial sector.',

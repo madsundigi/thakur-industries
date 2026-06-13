@@ -7,6 +7,10 @@ export const revalidate = 86400;
 const BUILD_DATE = new Date().toISOString().split('T')[0];
 
 const blogPosts = [
+    'difference-between-hardening-and-tempering',
+    'best-steel-grade-for-induction-hardening',
+    '4140-vs-4340-steel-hardening',
+    'which-components-can-be-induction-hardened',
     'what-is-induction-hardening-ludhiana',
     'difference-between-induction-and-case-hardening',
     'top-benefits-of-induction-heat-treatment',

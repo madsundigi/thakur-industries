@@ -88,6 +88,10 @@ const FAQ_ITEMS = [
     q: 'Do you harden EN19 crankshafts, gearbox shafts and hydraulic rods?',
     a: 'Yes. Crankshaft journals, main and big-end bearing surfaces, gearbox output shafts, camshaft lobes and hydraulic cylinder piston rods in EN19 / 4140 are processed regularly. We use specialised scanning and single-shot coil setups depending on the geometry. Components up to 2,000 mm length and 300 mm diameter are accommodated in-house, with straightness held better than 0.1 mm per metre on long rods.',
   },
+  {
+    q: 'What HRC can EN19 reach with induction hardening?',
+    a: 'EN19 (709M40 / AISI 4140) reaches 55–62 HRC surface hardness with induction hardening. Its chromium-molybdenum chemistry (0.38–0.45% C, 0.9–1.2% Cr, 0.2–0.35% Mo) gives deep, consistent hardenability even on large diameters. The hardened-and-tempered core typically holds 28–38 HRC, case depth is 1–3 mm (up to 4 mm to spec), and austenitizing is done at 840–880 °C. This EN19 induction hardening HRC range is verified by a Rockwell report on every batch.',
+  },
 ];
 
 export default function EN19SteelPage() {
@@ -382,6 +386,51 @@ export default function EN19SteelPage() {
                     ['Straightness (long rods)', 'Better than 0.1 mm per metre'],
                     ['Turnaround', '2–4 working days (standard)'],
                     ['Testing', 'Rockwell HRC verification, case-depth check, dimensional inspection'],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? 'bg-secondary/30' : 'bg-card'}>
+                      <th scope="row" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground align-top w-1/2">
+                        {k}
+                      </th>
+                      <td className="py-4 px-5 text-muted-foreground font-medium">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </motion.div>
+          </section>
+
+          {/* Induction Hardening HRC Range — spec-research target */}
+          <section className="py-16 md:py-20 border-t border-border">
+            <p className="section-label text-center">// HRC RANGE //</p>
+            <motion.h2
+              className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 text-center leading-none"
+              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
+            >
+              EN19 Induction Hardening <span className="text-primary">HRC Range</span>
+            </motion.h2>
+            <p className="text-center text-muted-foreground font-medium max-w-3xl mx-auto mb-12">
+              The <strong>EN19 induction hardening HRC range</strong> reflects its chromium-molybdenum alloy chemistry. EN19
+              (709M40 / 4140) reaches 55–62 HRC at the surface with deep, even hardenability — the table below summarises the
+              hardness, case depth, alloy content and austenitizing temperature for your specification.
+            </p>
+            <motion.div
+              className="max-w-3xl mx-auto overflow-hidden rounded-2xl border border-border"
+              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
+            >
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="bg-primary/10">
+                    <th scope="col" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground w-1/2">Property</th>
+                    <th scope="col" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground">Value</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm md:text-base">
+                  {[
+                    ['Surface Hardness', '55–62 HRC'],
+                    ['Core Hardness', '28–38 HRC (hardened & tempered)'],
+                    ['Case Depth', '1–3 mm (up to 4 mm to spec)'],
+                    ['Alloy Content', '0.38–0.45% C · 0.9–1.2% Cr · 0.2–0.35% Mo'],
+                    ['Austenitizing Temp', '840–880 °C'],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? 'bg-secondary/30' : 'bg-card'}>
                       <th scope="row" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground align-top w-1/2">

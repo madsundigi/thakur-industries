@@ -83,6 +83,10 @@ const FAQ_ITEMS = [
     q: 'What hardness and case depth does 4140 achieve after induction hardening?',
     a: 'AISI 4140 achieves 54–60 HRC surface hardness with induction hardening at our facility, with controlled case depth from 0.5 mm to 4 mm depending on cross-section, frequency and your specification. All batches include certified Rockwell test reports verifying HRC at the surface and at the specified depth.',
   },
+  {
+    q: 'What HRC can 4140 reach with induction hardening?',
+    a: 'AISI 4140 reaches 54–60 HRC surface hardness with induction hardening. Its chromium-molybdenum chemistry (0.38–0.43% C, 0.8–1.1% Cr, 0.15–0.25% Mo) supports deep, repeatable hardenability across export lots. The hardened-and-tempered core typically holds 28–38 HRC, case depth runs 0.5–4 mm, and austenitizing is done at 840–870 °C. This 4140 induction hardening HRC range is backed by a certified Rockwell report on every batch.',
+  },
 ];
 
 export default function Steel4140Page() {
@@ -364,6 +368,51 @@ export default function Steel4140Page() {
                     ['Turnaround', '2–4 working days (standard)'],
                     ['Testing', 'Certified Rockwell HRC reports, case-depth & dimensional check'],
                     ['Service Area', 'Ludhiana, Punjab, Haryana, Delhi NCR · All-India · Export'],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? 'bg-secondary/30' : 'bg-card'}>
+                      <th scope="row" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground align-top w-1/2">
+                        {k}
+                      </th>
+                      <td className="py-4 px-5 text-muted-foreground font-medium">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </motion.div>
+          </section>
+
+          {/* Induction Hardening HRC Range — spec-research target */}
+          <section className="py-16 md:py-20 border-t border-border">
+            <p className="section-label text-center">// HRC RANGE //</p>
+            <motion.h2
+              className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 text-center leading-none"
+              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
+            >
+              4140 Induction Hardening <span className="text-primary">HRC Range</span>
+            </motion.h2>
+            <p className="text-center text-muted-foreground font-medium max-w-3xl mx-auto mb-12">
+              The <strong>4140 induction hardening HRC range</strong> is defined by its chromium-molybdenum chemistry. AISI 4140
+              (EN19 / 42CrMo4 / SCM440) reaches 54–60 HRC at the surface with deep hardenability suited to OEM and export work —
+              the table below summarises the hardness, case depth, alloy content and austenitizing temperature for your drawing.
+            </p>
+            <motion.div
+              className="max-w-3xl mx-auto overflow-hidden rounded-2xl border border-border"
+              initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
+            >
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="bg-primary/10">
+                    <th scope="col" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground w-1/2">Property</th>
+                    <th scope="col" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground">Value</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm md:text-base">
+                  {[
+                    ['Surface Hardness', '54–60 HRC'],
+                    ['Core Hardness', '28–38 HRC (hardened & tempered)'],
+                    ['Case Depth', '0.5–4 mm (controlled to spec)'],
+                    ['Alloy Content', '0.38–0.43% C · 0.8–1.1% Cr · 0.15–0.25% Mo'],
+                    ['Austenitizing Temp', '840–870 °C'],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? 'bg-secondary/30' : 'bg-card'}>
                       <th scope="row" className="py-4 px-5 font-black uppercase italic tracking-tight text-foreground align-top w-1/2">
