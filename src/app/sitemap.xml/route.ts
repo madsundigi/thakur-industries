@@ -114,6 +114,8 @@ export async function GET() {
     '/induction-heat-treatment/en19-steel-induction-hardening',
     '/induction-heat-treatment/en24-steel-hardening',
     '/induction-heat-treatment/4140-steel-hardening',
+    '/induction-hardening-cost',
+    '/oem-induction-hardening',
   ];
   const locationPaths = [
     '/induction-heat-treatment/mandi-gobindgarh',
@@ -147,7 +149,7 @@ export async function GET() {
     '/induction-heat-treatment/focal-point-ludhiana',
     '/induction-heat-treatment/sherpur-ludhiana',
   ];
-  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, ...tier2Pages, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment', '/heat-treating-steel', '/heat-treatment-job-work'])];
+  const allPaths = [...new Set([...navLinks, ...servicePaths, ...blogPaths, ...tier2Pages, '/about', '/blog', '/quenching-process', '/material-heat-treatment', '/component-hardening', '/gear-hardening', '/shaft-hardening', '/metal-heat-treatment', '/heat-treating-steel', '/heat-treatment-job-work', '/induction-hardening-cost', '/oem-induction-hardening'])];
 
   const tier2HighValue = ['/get-quote', '/our-work', '/quality-certifications', '/industries/automotive', '/industries/agricultural'];
   const tier2Location = ['/induction-heat-treatment/focal-point-ludhiana', '/induction-heat-treatment/sherpur-ludhiana'];

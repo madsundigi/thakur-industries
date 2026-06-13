@@ -24,6 +24,8 @@ export const NAV_LINKS = [
       { href: '/induction-heat-treatment/en19-steel-induction-hardening', label: 'EN19 Steel Hardening' },
       { href: '/induction-heat-treatment/en24-steel-hardening', label: 'EN24 Steel Hardening' },
       { href: '/induction-heat-treatment/4140-steel-hardening', label: '4140 Steel Hardening' },
+      { href: '/oem-induction-hardening', label: 'OEM & Export Job Work' },
+      { href: '/induction-hardening-cost', label: 'Pricing & Rates' },
     ]
   },
   {
