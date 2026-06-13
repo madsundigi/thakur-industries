@@ -1,13 +1,35 @@
 import type { Metadata } from 'next';
 
+const TITLE = 'Induction Hardening in Jagraon, Ludhiana | Thakur';
+const DESCRIPTION =
+  'Induction hardening in Jagraon for agri-implement, hosiery-machinery & auto-parts units. Just ~35 km from our Ludhiana plant — same-district pickup & delivery. Send your drawing for a free quote.';
+const URL = 'https://thakurindustries.in/induction-heat-treatment/jagraon';
+
 export const metadata: Metadata = {
-  title: 'Induction Hardening Job Work in Jagraon, Ludhiana | Thakur Industries',
-  description: 'Expert induction hardening & case hardening services for Jagraon industries. Shaft hardening, gear hardening, bearing race treatment. Punjab-wide pickup & delivery available.',
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: [
+    'induction hardening Jagraon',
+    'heat treatment Jagraon',
+    'agri implement hardening Jagraon',
+    'auto parts hardening Jagraon',
+    'hosiery machinery hardening Jagraon',
+    'induction hardening Ludhiana district',
+    'gear and shaft hardening Jagraon',
+  ],
   alternates: { canonical: '/induction-heat-treatment/jagraon' },
   openGraph: {
-    title: 'Induction Hardening Job Work in Jagraon, Ludhiana | Thakur Industries',
-    description: 'Expert induction hardening & case hardening for Jagraon industries. Shaft, gear & bearing hardening.',
-    url: 'https://thakurindustries.in/induction-heat-treatment/jagraon',
+    title: TITLE,
+    description: DESCRIPTION,
+    url: URL,
+    siteName: 'Thakur Industries',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 
