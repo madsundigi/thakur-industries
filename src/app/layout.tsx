@@ -166,6 +166,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-57XJYQB95C');
+            gtag('config', 'AW-11523491329');
           `}
         </Script>
         {/* Tawk.to Chat — lazyOnload defers until after page is fully loaded */}
