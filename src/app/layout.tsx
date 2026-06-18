@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Footer } from '@/components/layout/Footer';
 import { SITE_NAME, SITE_URL, SITE_PHONE_NUMBER } from '@/lib/constants';
 import { JsonLd } from '@/components/shared/JsonLd';
-import { WhatsAppButton } from '@/components/shared/WhatsAppButton';
+import { FloatingCTA } from '@/components/shared/FloatingCTA';
 import { AeroNav } from '@/components/layout/AeroNav';
 import { ConversionTracker } from '@/components/shared/ConversionTracker';
 import Script from 'next/script';
@@ -154,7 +154,7 @@ export default function RootLayout({
         <AeroNav />
         <main className="flex-1">{children}</main>
         <Footer />
-        <WhatsAppButton />
+        <FloatingCTA />
         <Toaster />
         <ConversionTracker />
         {/* Google Tag (gtag.js) */}
