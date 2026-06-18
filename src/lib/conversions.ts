@@ -3,8 +3,8 @@
 export const ADS_CONVERSIONS = {
   // WhatsApp click conversion (live)
   whatsapp: 'AW-11523491329/XYyeCJneg8EcEIGM6vYq',
-  // Lead form submit conversion — paste the label here when created in Google Ads
-  leadForm: '',
+  // Lead form submit conversion (live)
+  leadForm: 'AW-11523491329/ptlMCK6Sm7YaEIGM6vYq',
 } as const;
 
 /**
