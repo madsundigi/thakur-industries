@@ -35,6 +35,7 @@ import {
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Link from 'next/link';
+import { ADS_CONVERSIONS, fireConversion } from '@/lib/conversions';
 
 const PHONE_TEL = SITE_PHONE_NUMBER.replace(/[^\d+]/g, '');
 const WHATSAPP_URL =
@@ -121,6 +122,7 @@ export default function ContactPage() {
         });
         form.reset();
         setIsSuccess(true);
+        fireConversion(ADS_CONVERSIONS.leadForm);
       } else {
         throw new Error(data.message || 'Submission failed');
       }
