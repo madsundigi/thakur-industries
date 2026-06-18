@@ -171,20 +171,6 @@ export default function RootLayout({
             gtag('config', 'AW-11523491329');
           `}
         </Script>
-        {/* Tawk.to Chat — lazyOnload defers until after page is fully loaded */}
-        <Script id="tawk-to" strategy="lazyOnload">
-          {`
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/69aac5268a31ef1c36f6cf6d/1jj1h48dd';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-            })();
-          `}
-        </Script>
       </body>
     </html>
   );
