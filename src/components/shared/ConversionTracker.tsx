@@ -17,6 +17,8 @@ export function ConversionTracker() {
       const href = anchor.getAttribute('href') || '';
       if (href.includes('wa.me') || href.includes('api.whatsapp.com')) {
         fireConversion(ADS_CONVERSIONS.whatsapp);
+      } else if (href.startsWith('tel:')) {
+        fireConversion(ADS_CONVERSIONS.call);
       }
     };
     document.addEventListener('click', onClick, { capture: true });
