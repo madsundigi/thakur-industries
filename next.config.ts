@@ -20,6 +20,22 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      // Canonical host: force www -> non-www (308 permanent) so the host that is
+      // actually served matches the canonical tags, sitemap, and schema — all of
+      // which use the non-www apex (https://thakurindustries.in). Removing this
+      // www/non-www split lets Google index a single canonical URL per page.
+      // NOTE: the Vercel project's Primary Domain must also be set to the
+      // non-www apex, otherwise the edge redirect fights this one.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.thakurindustries.in' }],
+        destination: 'https://thakurindustries.in/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       // Immutable cache for all versioned static assets
